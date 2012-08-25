@@ -4,7 +4,10 @@ window.initGoogleMaps = function() {
 	new google.maps.Map(mapEl, {
  		center: new google.maps.LatLng(60.200833, 24.9375), // Helsinki
   	zoom: 12,
-  	mapTypeId: google.maps.MapTypeId.ROADMAP
+  	mapTypeId: google.maps.MapTypeId.ROADMAP,
+  	mapTypeControlOptions: {
+  		position: google.maps.ControlPosition.TOP_CENTER
+  	}
 	});
 }
 
