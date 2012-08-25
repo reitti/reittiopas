@@ -1,7 +1,38 @@
 html, body {
 	height: 100%;
+	background-color: #444;
 }
+#controls {
+	position: fixed;
+	width: 265px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: scroll;
+
+	/* http://gradients.glrzad.com/ */
+	background-image: linear-gradient(left , rgb(255,255,255) 97%, rgb(160,170,160) 100%);
+	background-image: -o-linear-gradient(left , rgb(255,255,255) 97%, rgb(160,170,160) 100%);
+	background-image: -moz-linear-gradient(left , rgb(255,255,255) 97%, rgb(160,170,160) 100%);
+	background-image: -webkit-linear-gradient(left , rgb(255,255,255) 97%, rgb(160,170,160) 100%);
+	background-image: -ms-linear-gradient(left , rgb(255,255,255) 97%, rgb(160,170,160) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right bottom,
+		color-stop(0.97, rgb(255,255,255)),
+		color-stop(1, rgb(160,170,160))
+	);
+
+}
+#controls h1 {
+	font-size: 2.0em;
+}
+#controls > h1, #controls > p , #controls > a{
+	margin: 10px;
+}
+
 #map {
-	width: 100%;
+	margin-left: 265px;
 	height: 100%;
 }
