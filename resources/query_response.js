@@ -1,4 +1,5 @@
 //Example response from the datasource.
+
 [
   {
     "city": "Helsinki", 
