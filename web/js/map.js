@@ -1,3 +1,6 @@
+// TODO: Do this stuff through requireJS async plugin instead?
+// TODO: Make the map a Backbone view?
+
 // Called by Google Maps once it has loaded everything it needs (specified as ballcack in the Maps API URL)
 window.initGoogleMaps = function() {
 	var mapEl = $('#map')[0];
@@ -11,10 +14,12 @@ window.initGoogleMaps = function() {
 	});
 }
 
-$(function() {
-	var url = 'http://maps.googleapis.com/maps/api/js?sensor=true&callback=initGoogleMaps';
-	if (window.location.hostname !== 'localhost') { // Don't use API key in local development
-		url += '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk';
-	}
-	$.getScript(url);
+// TODO: Put this in a config somewhere
+var gmapsUrl = 'http://maps.googleapis.com/maps/api/js?sensor=true&callback=initGoogleMaps';
+if (window.location.hostname !== 'localhost') { // Don't use API key in local development
+	gmapsUrl += '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk';
+}
+
+require([gmapsUrl], function() {
+
 });
