@@ -8,7 +8,7 @@ var server = vertx.createHttpServer()
 // --- Routes ---
 
 routeMatcher.get('/ping', function(req) {
-  hsl.geocode('Kuortaneenkatu', function(pt) {
+  hsl.geocode('Kuortaneenkatu', function(error, pt) {
       req.response.end(JSON.stringify({pong: pt}));
   })
 });
