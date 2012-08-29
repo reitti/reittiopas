@@ -14,7 +14,19 @@ define(['jquery', 'async!http://maps.googleapis.com/maps/api/js?sensor=true' + (
           position: google.maps.ControlPosition.TOP_CENTER
         }
       });
+      this.centerOnCurrentLocation();
+
       return this;
+    },
+
+    centerOnCurrentLocation: function () {
+      if (navigator.geolocation) {
+        var that = this;
+        navigator.geolocation.getCurrentPosition(function (position) {
+          var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          that.map.setCenter(latLng);
+        });
+      }
     }
 
   });
