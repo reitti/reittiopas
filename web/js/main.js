@@ -20,7 +20,7 @@ require.config({
   }
 });
 
-require(['jquery', 'underscore', 'router'], function($, _, AppRouter) {
+require(['jquery', 'underscore', 'router'], function ($, _, AppRouter) {
   $(function () {
     window.Router = new AppRouter();
     Backbone.history.start();
