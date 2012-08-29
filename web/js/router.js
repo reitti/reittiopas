@@ -1,4 +1,4 @@
-define(['backbone'], function(Backbone) {
+define(['backbone', 'views/map_view'], function(Backbone, MapView) {
 
   var Router = Backbone.Router.extend({
 
@@ -7,12 +7,14 @@ define(['backbone'], function(Backbone) {
     },
 
     initialize: function() {
+      this.mapView = new MapView();
     },
 
     home: function() {
+      this.mapView.render();
     }
   });
 
   return Router;
-  
+
 });
