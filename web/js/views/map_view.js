@@ -1,12 +1,10 @@
-define(['jquery', 'async!http://maps.googleapis.com/maps/api/js?sensor=true' + (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk')], function($) {
+define(['jquery', 'backbone', 'async!http://maps.googleapis.com/maps/api/js?sensor=true' + (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk')], function ($, Backbone) {
   return Backbone.View.extend({
 
     el: $('#map'),
 
-    render: function() {
+    render: function () {
       this.map = new google.maps.Map(this.el, {
-        center: new google.maps.LatLng(60.200833, 24.9375), // Helsinki
-        zoom: 12,
         center: new google.maps.LatLng(60.171, 24.941), // Rautatieasema
         zoom: 16,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
