@@ -15,6 +15,7 @@ require.config({
     underscore: 'lib/underscore',
     backbone: 'lib/backbone',
     text: 'lib/text',
+    async: 'lib/async',
     templates: '../templates'
   }
 });

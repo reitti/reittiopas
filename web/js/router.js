@@ -1,17 +1,18 @@
 define(['backbone'], function(Backbone) {
 
-    var Router = Backbone.Router.extend({
+  var Router = Backbone.Router.extend({
 
-        routes: {
-            '': 'home'
-        },
+    routes: {
+      '': 'home'
+    },
 
-        initialize: function() {
-        },
+    initialize: function() {
+    },
 
-        home: function() {
-        }
-    });
+    home: function() {
+    }
+  });
 
-    return Router;
+  return Router;
+  
 });
