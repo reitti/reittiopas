@@ -13,7 +13,7 @@ var hsl = {
   geocode: function(query, callback) {
     client.getNow('/hsl/prod/?request=geocode&key='+query+'&user='+hslApiUsername+'&pass='+hslApiPassword, function(res) {
       res.bodyHandler(function(body) {
-        if (res.statusCode == 200) {
+        if (res.statusCode === 200) {
           var data = JSON.parse(body.getString(0, body.length()));
           if (data && data.length > 0) {
             callback(data[0].coords);
