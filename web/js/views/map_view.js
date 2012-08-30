@@ -12,34 +12,42 @@ define(['jquery', 'underscore', 'backbone', 'async!http://maps.googleapis.com/ma
           position: google.maps.ControlPosition.TOP_CENTER
         }
       });
-      this.centerOnCurrentLocation();
+
+      EventBus.on('position:updated', function (position) {
+        _.once(this.centerMapOnCurrentPosition(position));
+      }, this);
+
+      EventBus.on('position:updated', function (position) {
+        this.displayCurrentPosition(position);
+      }, this);
 
       return this;
     },
 
-    centerOnCurrentLocation: function () {
-      if (navigator.geolocation) {
-        var that = this;
-        navigator.geolocation.getCurrentPosition(function (position) {
-          var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-          that.map.setCenter(latLng);
+    centerMapOnCurrentPosition: function (position) {
+      var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      this.map.setCenter(latLng);
+    },
 
-          // Testing routing
-          $.getJSON('routes?from='+latLng.lng()+','+latLng.lat()+'&to=Leikkikuja 2', function(res) {
-            var shapes = _(res[0][0].legs).map(function(leg) { return leg.shape; })
-              , points = _(shapes).reduce(function(res, shape) { return res.concat(shape); }, [])
-              , latLngs = _(points).map(function(point) { return new google.maps.LatLng(point.y, point.x); });
-            new google.maps.Polyline({
-              map: that.map,
-              path: latLngs,
-              strokeColor: '#0000ee',
-              strokeWeight: 4
-            });
-          });
+    displayCurrentPosition: function (position) {
+      var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      var accuracy = position.coords.accuracy;
 
-        }, function() { /* error callback */ }, {enableHighAccuracy: true});
+      if (this.positionIndicator === undefined) {
+        this.positionIndicator = new google.maps.Circle({
+          strokeColor: '#0000FF',
+          strokeOpacity: 0.50,
+          strokeWeight: 2,
+          fillColor: '#0000FF',
+          fillOpacity: 0.10,
+          map: this.map,
+          center: latLng,
+          radius: accuracy
+        });
+      } else {
+        this.positionIndicator.setCenter(latLng);
+        this.positionIndicator.setRadius(accuracy);
       }
     }
-
   });
 });

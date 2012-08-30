@@ -21,9 +21,23 @@ require.config({
   }
 });
 
-require(['jquery', 'underscore', 'router', 'bootstrap'], function ($, _, AppRouter) {
+require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($, _, Backbone, Router) {
+
+  window.EventBus = _.extend({}, Backbone.Events);
+
   $(function () {
-    window.Router = new AppRouter();
+    // Update location every 5 seconds
+    (function run() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          EventBus.trigger('position:updated', position);
+        }, function () {
+        }, {enableHighAccuracy: true, maximumAge: 2500});
+      }
+      setTimeout(run, 5000);
+    })();
+
+    window.Router = new Router();
     Backbone.history.start();
   });
 });
