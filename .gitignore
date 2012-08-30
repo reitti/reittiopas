@@ -2,3 +2,4 @@ mods/
 .idea/
 *.iml
 /*.js
+.DS_Store
