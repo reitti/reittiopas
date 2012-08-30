@@ -3,7 +3,6 @@ define(['jquery', 'underscore', 'backbone', 'text!templates/search.handlebars'],
   return Backbone.View.extend({
 
     el: $('#search'),
-    template: template,
 
     initialize: function () {
       var that = this;
@@ -15,7 +14,6 @@ define(['jquery', 'underscore', 'backbone', 'text!templates/search.handlebars'],
     },
 
     render: function () {
-      this.$el.html(template);
       this.$el.find('#from').focus();
       return this;
     },
