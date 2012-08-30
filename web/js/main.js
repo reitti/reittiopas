@@ -11,6 +11,7 @@ require.config({
     }
   },
   paths: {
+    bootstrap: 'lib/bootstrap',
     jquery: 'lib/jquery-1.7.2',
     underscore: 'lib/underscore',
     backbone: 'lib/backbone',
@@ -20,7 +21,7 @@ require.config({
   }
 });
 
-require(['jquery', 'underscore', 'router'], function ($, _, AppRouter) {
+require(['jquery', 'underscore', 'router', 'bootstrap'], function ($, _, AppRouter) {
   $(function () {
     window.Router = new AppRouter();
     Backbone.history.start();

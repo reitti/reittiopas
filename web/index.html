@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Parempi Reittiopas</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-  <div id="controls">
+  <head>
+    <title>Parempi Reittiopas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
 
-  <h1>Biodiesel</h1>
-  <p>Terry richardson bicycle rights occupy beard, keytar next level vegan brunch pork belly leggings trust fund. Sriracha twee readymade butcher. Leggings salvia chambray wes anderson, put a bird on it williamsburg fap semiotics helvetica. Forage sartorial high life, williamsburg before they sold out freegan polaroid sustainable iphone. Fixie brunch pitchfork, dreamcatcher craft beer 3 wolf moon biodiesel brooklyn godard retro mumblecore bespoke. Pop-up helvetica terry richardson trust fund scenester, ethnic fixie typewriter williamsburg jean shorts lomo hoodie sriracha flexitarian. Chambray tofu keytar typewriter gentrify squid.</p>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#"></a>
+        <ul class="nav">
+        </ul>
+      </div>
+    </div>
+    <div id="controls">
+      <div class="page-header"><h3 class="centered">Minne mennään?</h3></div>
 
-  <h1>Post-ironic</h1>
-  <p>Tumblr raw denim swag keffiyeh master cleanse art party chillwave, american apparel dreamcatcher ethical flexitarian quinoa locavore. Photo booth brunch skateboard, pinterest pork belly dreamcatcher bushwick locavore retro next level you probably haven't heard of them. Truffaut squid iphone williamsburg, bicycle rights umami forage carles single-origin coffee cred. Street art marfa skateboard, cliche polaroid 3 wolf moon bicycle rights echo park forage fap williamsburg. Single-origin coffee brooklyn Austin bicycle rights. DIY hella biodiesel craft beer, VHS mumblecore whatever bushwick hoodie gentrify cred chambray chillwave single-origin coffee. Vinyl whatever craft beer, vice banh mi williamsburg post-ironic.</p>
+      <form class="form">
+        <input type="text" class="input-full" placeholder="Mistä…">
+        <input type="text" class="input-full" placeholder="Minne…">
 
-  </div>
-  <div id="map"></div>
-  <a href="https://github.com/reitti/reittiopas"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
-  <script data-main="js/main" src="js/lib/require.js"></script>
-</body>
+        <button type="submit" class="btn btn-primary pull-right"><i class="icon-search icon-white"></i>Hae</button>
+
+      </form>
+    </div>
+    <div id="map" class="span9 full-height no-margin"></div>
+    <a href="https://github.com/reitti/reittiopas">
+      <img style="position: absolute; top: 0; right: 0; border: 0;"
+           src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+           alt="Fork me on GitHub">
+    </a>
+    </div>
+    <script data-main="js/main" src="js/lib/require.js"></script>
+  </body>
 </html>
