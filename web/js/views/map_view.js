@@ -13,9 +13,7 @@ define(['jquery', 'underscore', 'backbone', 'async!http://maps.googleapis.com/ma
         }
       });
 
-      EventBus.on('position:updated', function (position) {
-        _.once(this.centerMapOnCurrentPosition(position));
-      }, this);
+      EventBus.on('position:updated', _.once(this.centerMapOnCurrentPosition), this);
 
       EventBus.on('position:updated', function (position) {
         this.displayCurrentPosition(position);
