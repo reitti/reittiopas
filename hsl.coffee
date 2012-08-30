@@ -6,7 +6,7 @@ hslApiPassword = vertx.env['HSL_API_PASSWORD']
 
 this.hsl =
   geocode: (query, callback) ->
-    client.getNow "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&user=#{hslApiUsername}&pass=#{hslApiPassword}", (res) ->
+    client.getNow "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_out=4326", (res) ->
       res.bodyHandler (body) ->
         if res.statusCode is 200 and body.length()
           data = JSON.parse body.getString(0, body.length())
@@ -18,6 +18,6 @@ this.hsl =
           callback null
 
   findRoutes: (fromPt, toPt, writeStream, endCallback) ->
-    client.getNow "/hsl/prod/?request=route&from=#{fromPt}&to=#{toPt}&detail=full&user=#{hslApiUsername}&pass=#{hslApiPassword}", (res) ->
+    client.getNow "/hsl/prod/?request=route&from=#{fromPt}&to=#{toPt}&detail=full&user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_in=4326&epsg_out=4326", (res) ->
       new vertx.Pump(res, writeStream).start()
       res.endHandler(endCallback)
