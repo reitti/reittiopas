@@ -5,6 +5,9 @@ hslApiUsername = vertx.env['HSL_API_USERNAME']
 hslApiPassword = vertx.env['HSL_API_PASSWORD']
 constantQueryParams = "user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_in=4326&epsg_out=4326"
 
+isCoordinate = (str) ->
+  /\d+\.\d+,\d+\.\d+/.test str
+   
 getNowWithJSONBody = (url, callback) ->
   client.getNow url, (res) ->
     res.bodyHandler (body) ->
@@ -16,11 +19,14 @@ getNowWithJSONBody = (url, callback) ->
 
 this.hsl =
   geocode: (query, callback) ->
-    getNowWithJSONBody "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
-      if json? and json.length
-        callback json[0].coords
-      else
-        callback null
+    if isCoordinate(query)
+      callback query
+    else
+      getNowWithJSONBody "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
+        if json? and json.length
+          callback json[0].coords
+        else
+          callback null
 
   reverseGeocode: (query, callback) ->
     getNowWithJSONBody "/hsl/prod/?request=reverse_geocode&coordinate=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
