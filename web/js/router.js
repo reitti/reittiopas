@@ -1,20 +1,19 @@
-define(['backbone', 'views/map_view'], function(Backbone, MapView) {
+define(['backbone', 'views/map_view', 'views/search_view'], function (Backbone, MapView, SearchView) {
 
-  var Router = Backbone.Router.extend({
+  return Backbone.Router.extend({
 
     routes: {
       '': 'home'
     },
 
-    initialize: function() {
+    initialize: function () {
       this.mapView = new MapView();
+      this.searchBox = new SearchView();
     },
 
-    home: function() {
+    home: function () {
       this.mapView.render();
+      this.searchBox.render();
     }
   });
-
-  return Router;
-
 });

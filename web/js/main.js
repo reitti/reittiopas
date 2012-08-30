@@ -8,12 +8,16 @@ require.config({
     },
     underscore: {
       exports: '_'
+    },
+    handlebars: {
+      exports: 'Handlebars'
     }
   },
   paths: {
     bootstrap: 'lib/bootstrap',
     jquery: 'lib/jquery-1.7.2',
     underscore: 'lib/underscore',
+    handlebars: 'lib/handlebars-1.0.0.beta.6',
     backbone: 'lib/backbone',
     text: 'lib/text',
     async: 'lib/async',
@@ -26,6 +30,9 @@ require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($
   window.EventBus = _.extend({}, Backbone.Events);
 
   $(function () {
+    window.Router = new Router();
+    Backbone.history.start();
+
     // Update location every 5 seconds
     (function run() {
       if (navigator.geolocation) {
@@ -36,8 +43,5 @@ require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($
       }
       setTimeout(run, 5000);
     })();
-
-    window.Router = new Router();
-    Backbone.history.start();
   });
 });
