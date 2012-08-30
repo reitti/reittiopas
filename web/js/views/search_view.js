@@ -4,18 +4,34 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
     el: $('#search'),
 
+    events: {
+      'submit form': 'searchRoute'
+    },
+
     initialize: function () {
+      this.$from = this.$el.find('#from');
+      this.$to = this.$el.find('#to');
+
       var that = this;
       EventBus.on('position:updated', _.once(function (position) {
         that.populateFromBox(position, function () {
-          that.$el.find('#to').focus();
+          that.$to.focus();
         });
       }));
     },
 
     render: function () {
-      this.$el.find('#from').focus();
+      this.$from.focus();
       return this;
+    },
+
+    searchRoute: function (event) {
+      event.preventDefault();
+
+      // TODO: Move this logic somewhere else
+      $.getJSON('/routes?from=' + this.$from.val() + '&to=' + this.$to.val(), function (data) {
+        EventBus.trigger('route:change', data[0]);
+      });
     },
 
     populateFromBox: function (position, callback) {

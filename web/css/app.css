@@ -19,8 +19,10 @@
 
 #map {
     position: absolute;
-    margin-left: 28em;
-    width: 100%;
+    top: 42px;
+    left: 28em;
+    right: 0;
+    bottom: 0;
 }
 
 #map img {
@@ -30,6 +32,10 @@
 html, body {
     height: 100%;
     position: relative;
+}
+
+body {
+    paddingz-bottom: 42px;
 }
 
 .full-height {
