@@ -34,14 +34,14 @@ require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($
     Backbone.history.start();
 
     // Update location every 5 seconds
-    (function run() {
-      if (navigator.geolocation) {
+    if (navigator.geolocation) {
+      (function run() {
         navigator.geolocation.getCurrentPosition(function (position) {
           EventBus.trigger('position:updated', position);
         }, function () {
         }, {enableHighAccuracy: true, maximumAge: 2500});
-      }
-      setTimeout(run, 5000);
-    })();
+        setTimeout(run, 5000);
+      })();
+    }
   });
 });
