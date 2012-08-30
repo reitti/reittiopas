@@ -24,16 +24,5 @@ require(['jquery', 'underscore', 'router'], function ($, _, AppRouter) {
   $(function () {
     window.Router = new AppRouter();
     Backbone.history.start();
-
-    // Testing server comm
-    $('#ping-form').on('submit', function() {
-      var ping = JSON.stringify(new Date());
-      $.getJSON('/ping', function(res) {
-        window.alert(ping + ' -> ' + res.pong);
-      });
-      return false;
-    });
-
-
   });
 });
