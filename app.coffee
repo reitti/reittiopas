@@ -12,7 +12,15 @@ routeMatcher.get '/routes', (req) ->
         hsl.findRoutes pt1, pt2, req.response, req.response.end
       else
         req.response.statusCode = 400
-        req.response.end(JSON.stringify({from: !!pt1, to: !!pt2}))
+        req.response.end JSON.stringify(from: !!pt1, to: !!pt2)
+
+routeMatcher.get '/address', (req) ->
+  hsl.reverseGeocode req.params().coords, (address) ->
+    if address
+      req.response.end JSON.stringify(address)
+    else
+      req.response.statusCode = 400
+      req.response.end()
 
 # TODO: Might want to disable this in production since files are served by Nginx.
 routeMatcher.noMatch (req) ->
@@ -23,4 +31,4 @@ routeMatcher.noMatch (req) ->
     file = req.path;
   req.response.sendFile 'web/'+file
 
-server.requestHandler(routeMatcher).listen(8080)
+server.requestHandler(routeMatcher).listen 8080

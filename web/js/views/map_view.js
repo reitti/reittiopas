@@ -23,6 +23,12 @@ define(['jquery', 'backbone', 'async!http://maps.googleapis.com/maps/api/js?sens
         navigator.geolocation.getCurrentPosition(function (position) {
           var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
           that.map.setCenter(latLng);
+
+          // Testing geocoding
+          $.get('address?coords='+latLng.lng()+','+latLng.lat(), function(res) {
+            alert("I know where you live: "+res);
+          });
+
         });
       }
     }
