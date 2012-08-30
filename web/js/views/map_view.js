@@ -29,7 +29,7 @@ define(['jquery', 'backbone', 'async!http://maps.googleapis.com/maps/api/js?sens
             alert("I know where you live: "+res);
           });
 
-        });
+        }, function() { /* error callback */ }, {enableHighAccuracy: true});
       }
     }
 
