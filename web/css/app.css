@@ -34,10 +34,6 @@ html, body {
     position: relative;
 }
 
-body {
-    paddingz-bottom: 42px;
-}
-
 .full-height {
     height: 100%;
 }
@@ -48,7 +44,7 @@ body {
 
 input.input-full {
     width: 100%;
-    -webkit-box-sizing:border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-bottom: 12px;
