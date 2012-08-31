@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
+define ['jquery', 'underscore', 'backbone', 'bootstrap'], ($, _, Backbone) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
