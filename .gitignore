@@ -1,5 +1,5 @@
 mods/
 .idea/
 *.iml
-/*.js
+*.js
 .DS_Store
