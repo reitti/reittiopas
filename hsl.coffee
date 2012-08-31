@@ -8,16 +8,16 @@ hslApiPassword = vertx.env['HSL_API_PASSWORD']
 isCoordinate = (str) ->
   /\d+\.\d+,\d+\.\d+/.test str
    
-getQueryString = (request, params) ->
+getHslQueryString = (request, params) ->
   qry = "/hsl/prod/?request=#{request}&user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_in=4326&epsg_out=4326"
   qry += "&#{k}=#{encodeURIComponent(v)}" for own k,v of params    
   
-getBodyNow = (request, params, callback) ->
-  client.getNow getQueryString(request, params), (res) ->
+hslRequest = (request, params, callback) ->
+  client.getNow getHslQueryString(request, params), (res) ->
     res.bodyHandler (body) -> callback(res, body)
     
-getJSONBodyNow = (request, params, callback) ->
-  getBodyNow request, params, (res, body) ->
+hslRequestWithJSONRes = (request, params, callback) ->
+  hslRequest request, params, (res, body) ->
     if res.statusCode is 200 and body.length()
       data = JSON.parse body.getString(0, body.length())
       callback data
@@ -30,19 +30,19 @@ eb.registerHandler 'reitti.hsl.geocode', (query, replier) ->
   if isCoordinate(query)
     replier query
   else
-    getJSONBodyNow 'geocode', {key: query}, (json) ->
+    hslRequestWithJSONRes 'geocode', {key: query}, (json) ->
       if json? and json.length
         replier json[0].coords
       else
         replier null
 
 eb.registerHandler 'reitti.hsl.reverseGeocode', (params, replier) ->
-  getJSONBodyNow 'reverse_geocode', {coordinate: params.query}, (json) ->
+  hslRequestWithJSONRes 'reverse_geocode', {coordinate: params.query}, (json) ->
     if json? and json.length
       replier {name: json[0].name, coords: json[0].coords}
     else
       replier null
 
 eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
-  getBodyNow 'route', {from: params.from, to: params.to, detail: 'full'}, (res, body) ->
+  hslRequest 'route', {from: params.from, to: params.to, detail: 'full'}, (res, body) ->
     replier {body: body.getString(0, body.length())}
