@@ -1,6 +1,5 @@
 mods/
 .idea/
 *.iml
-/*.js
-search_index/*.js
+*.js
 .DS_Store
