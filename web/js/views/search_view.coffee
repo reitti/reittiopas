@@ -6,13 +6,24 @@ define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
     events:
       'submit form': 'searchRoute'
 
+    typeaheadOptions:
+      source: (query, process) ->
+        params = $.param { query: query }
+        $.getJSON "/autocomplete?#{params}", (addresses) =>
+          process(addresses)
+      minLength: 3
+
     initialize: ->
+      @$to = @$el.find('#to');
+      @$from = @$el.find('#from')
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
-          @$el.find('#to').focus()
+          @$to.focus()
+      @$from.typeahead(@typeaheadOptions)
+      @$to.typeahead(@typeaheadOptions)
 
     render: ->
-      @$el.find('#from').focus()
+      @$from.focus()
 
     searchRoute: (event) ->
       event.preventDefault()
@@ -25,5 +36,5 @@ define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
       $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
-        @$el.find('#from').val location.name
+        @$from.val location.name
         callback()
