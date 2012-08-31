@@ -1,9 +1,16 @@
-define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
+define(['jquery', 'underscore', 'backbone', 'jqueryAutocomplete'], function ($, _, Backbone) {
 
   return Backbone.View.extend({
 
     el: $('#search'),
-
+    
+    autoCompleteOptions: {
+      delay: 200,
+      filter: function(qry) {
+        return $.getJSON('/autocomplete?query='+qry);
+      }
+    },
+    
     events: {
       'submit form': 'searchRoute'
     },
@@ -12,6 +19,9 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
       this.$from = this.$el.find('#from');
       this.$to = this.$el.find('#to');
 
+      this.$from.smartAutoComplete(this.autoCompleteOptions);
+      this.$to.smartAutoComplete(this.autoCompleteOptions);
+      
       var that = this;
       Reitti.Event.on('position:updated', _.once(function (position) {
         that.populateFromBox(position, function () {

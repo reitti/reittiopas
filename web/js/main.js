@@ -16,6 +16,7 @@ require.config({
   paths: {
     bootstrap: 'lib/bootstrap',
     jquery: 'lib/jquery-1.7.2',
+    jqueryAutocomplete: 'lib/jQuery.smart_autocomplete',
     underscore: 'lib/underscore',
     handlebars: 'lib/handlebars-1.0.0.beta.6',
     backbone: 'lib/backbone',
