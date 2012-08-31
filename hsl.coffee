@@ -1,5 +1,6 @@
 load 'vertx.js'
 
+eb = vertx.eventBus
 client = vertx.createHttpClient().setHost('api.reittiopas.fi').setMaxPoolSize(3)
 hslApiUsername = vertx.env['HSL_API_USERNAME']
 hslApiPassword = vertx.env['HSL_API_PASSWORD']
@@ -17,25 +18,24 @@ getNowWithJSONBody = (url, callback) ->
       else
         callback null
 
-this.hsl =
-  geocode: (query, callback) ->
-    if isCoordinate(query)
-      callback query
-    else
-      getNowWithJSONBody "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
-        if json? and json.length
-          callback json[0].coords
-        else
-          callback null
-
-  reverseGeocode: (query, callback) ->
-    getNowWithJSONBody "/hsl/prod/?request=reverse_geocode&coordinate=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
+eb.registerHandler 'reitti.hsl.geocode', (query, replier) ->
+  if isCoordinate(query)
+    replier query
+  else
+    getNowWithJSONBody "/hsl/prod/?request=geocode&key=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
       if json? and json.length
-        callback {name: json[0].name, coords: json[0].coords}
+        replier json[0].coords
       else
-        callback null
+        replier null
 
-  findRoutes: (fromPt, toPt, writeStream, endCallback) ->
-    client.getNow "/hsl/prod/?request=route&from=#{fromPt}&to=#{toPt}&detail=full&#{constantQueryParams}", (res) ->
-      new vertx.Pump(res, writeStream).start()
-      res.endHandler(endCallback)
+eb.registerHandler 'reitti.hsl.reverseGeocode', (query, replier) ->
+  getNowWithJSONBody "/hsl/prod/?request=reverse_geocode&coordinate=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
+    if json? and json.length
+      replier {name: json[0].name, coords: json[0].coords}
+    else
+      replier null
+
+eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
+  [fromPt, toPt] = params
+  client.getNow "/hsl/prod/?request=route&from=#{fromPt}&to=#{toPt}&detail=full&#{constantQueryParams}", (res) ->
+    res.bodyHandler replier
