@@ -4,4 +4,5 @@ load 'vertx.js'
 # coffee vertices in parallel, hence the chain.
 
 vertx.deployVerticle 'hsl.coffee', null, 1, ->
-  vertx.deployVerticle 'server.coffee'
+  vertx.deployWorkerVerticle 'search_index/search_index.coffee', null, 1, ->
+    vertx.deployVerticle 'server.coffee'

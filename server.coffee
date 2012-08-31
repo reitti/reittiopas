@@ -21,6 +21,10 @@ routeMatcher.get '/address', (req) ->
     else
       req.response.statusCode = 400
       req.response.end()
+      
+routeMatcher.get '/autocomplete', (req) ->
+  eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
+    req.response.end JSON.stringify(data.results)
 
 # TODO: Might want to disable this in production since files are served by Nginx.
 routeMatcher.noMatch (req) ->
@@ -32,3 +36,5 @@ routeMatcher.noMatch (req) ->
   req.response.sendFile 'web/'+file
 
 server.requestHandler(routeMatcher).listen 8080
+
+stdout.println "Server started"
