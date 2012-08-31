@@ -18,6 +18,8 @@ getNowWithJSONBody = (url, callback) ->
       else
         callback null
 
+# ToDo: Fix https://github.com/vert-x/vert.x/issues/205 :)
+
 eb.registerHandler 'reitti.hsl.geocode', (query, replier) ->
   if isCoordinate(query)
     replier query
@@ -28,14 +30,14 @@ eb.registerHandler 'reitti.hsl.geocode', (query, replier) ->
       else
         replier null
 
-eb.registerHandler 'reitti.hsl.reverseGeocode', (query, replier) ->
-  getNowWithJSONBody "/hsl/prod/?request=reverse_geocode&coordinate=#{encodeURIComponent(query)}&#{constantQueryParams}", (json) ->
+eb.registerHandler 'reitti.hsl.reverseGeocode', (params, replier) ->
+  getNowWithJSONBody "/hsl/prod/?request=reverse_geocode&coordinate=#{encodeURIComponent(params.query)}&#{constantQueryParams}", (json) ->
     if json? and json.length
       replier {name: json[0].name, coords: json[0].coords}
     else
       replier null
 
 eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
-  [fromPt, toPt] = params
+  {from: fromPt, to: toPt} = params
   client.getNow "/hsl/prod/?request=route&from=#{fromPt}&to=#{toPt}&detail=full&#{constantQueryParams}", (res) ->
-    res.bodyHandler replier
+    res.bodyHandler (body) -> replier {body: body.getString(0, body.length())}
