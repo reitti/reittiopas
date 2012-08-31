@@ -30,11 +30,11 @@ define [
 
     drawRoute: (route) ->
       @clearRoute()
-      shapes = leg.shape for leg in route[0].legs
+      shapes = (leg.shape for leg in route[0].legs)
       points = _.reduce shapes,
         (res, shape) -> res.concat shape,
         []
-      latLngs = new google.maps.LatLng point.y, point.x for point in points
+      latLngs = (new google.maps.LatLng point.y, point.x for point in points)
 
 
       @route = new google.maps.Polyline(
