@@ -27,7 +27,9 @@ require.config({
 
 require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($, _, Backbone, Router) {
 
-  window.EventBus = _.extend({}, Backbone.Events);
+  window.Reitti = {};
+
+  Reitti.Event = _.extend({}, Backbone.Events);
 
   $(function () {
     window.Router = new Router();
@@ -35,7 +37,7 @@ require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($
 
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(function (position) {
-        EventBus.trigger('position:updated', position);
+        Reitti.Event.trigger('position:updated', position);
       }, function () {
       }, {enableHighAccuracy: true});
     }

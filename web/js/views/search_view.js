@@ -13,7 +13,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
       this.$to = this.$el.find('#to');
 
       var that = this;
-      EventBus.on('position:updated', _.once(function (position) {
+      Reitti.Event.on('position:updated', _.once(function (position) {
         that.populateFromBox(position, function () {
           that.$to.focus();
         });
@@ -30,7 +30,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, Backbone) {
 
       // TODO: Move this logic somewhere else
       $.getJSON('/routes?from=' + this.$from.val() + '&to=' + this.$to.val(), function (data) {
-        EventBus.trigger('route:change', data[0]);
+        Reitti.Event.trigger('route:change', data[0]);
       });
     },
 

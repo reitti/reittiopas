@@ -1,20 +1,20 @@
-define(['jquery', 'underscore', 'backbone', 'async!http://maps.googleapis.com/maps/api/js?sensor=true' + (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk')], function ($, _, Backbone) {
+define(['jquery', 'underscore', 'backbone', 'async!http://maps.googleapis.com/maps/api/js?sensor=true' + (window.location.host === 'localhost' || window.location.protocol === 'file:' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk')], function ($, _, Backbone) {
   return Backbone.View.extend({
 
     el: $('#map'),
 
     initialize: function () {
-      EventBus.on('position:updated', function (position) {
+      Reitti.Event.on('position:updated', function (position) {
         this.currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       }, this);
 
-      EventBus.on('position:updated', _.once(this.centerMapOnCurrentPosition), this);
+      Reitti.Event.on('position:updated', _.once(this.centerMapOnCurrentPosition), this);
 
-      EventBus.on('position:updated', function (position) {
+      Reitti.Event.on('position:updated', function (position) {
         this.displayCurrentPosition(position);
       }, this);
 
-      EventBus.on('route:change', this.drawRoute, this);
+      Reitti.Event.on('route:change', this.drawRoute, this);
     },
 
     render: function () {
