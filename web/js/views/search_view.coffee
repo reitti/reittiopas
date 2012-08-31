@@ -9,7 +9,7 @@ define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
     typeaheadOptions:
       source: (query, process) ->
         params = $.param { query: query }
-        $.getJSON "/autocomplete?#{params}", (addresses) =>
+        $.getJSON "/autocomplete?#{params}", (addresses) ->
           process(addresses)
       minLength: 3
 
@@ -27,7 +27,7 @@ define ['jquery', 'underscore', 'backbone'], ($, _, Backbone) ->
 
     searchRoute: (event) ->
       event.preventDefault()
-      params = $.serialize @el.find('form')
+      params = $.param { from: @$from.val(), to: @$to.val() }
 
       # TODO: Move this logic somewhere else
       $.getJSON "/routes?#{params}", (data) ->
