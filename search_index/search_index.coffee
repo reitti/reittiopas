@@ -43,12 +43,26 @@ class Trie
 trie = new Trie
 eb = vertx.eventBus
 
+# Make yourself available via the event bus
 eb.registerHandler 'reitti.searchIndex.find', (params, replier) ->
   replier {results: trie.find(params.query.toLowerCase(), 30)}
   
-vertx.fileSystem.readFile 'search_index/streets.txt', (err, res) ->
-  if err
-    stdout.println err
-  else
-    streets = res.getString(0, res.length(), 'UTF-8').split '\n'
-    trie.build(street) for street in streets
+# Index all the resource files into the trie
+files =
+  'Espoo': 'search_index/data/espoo.txt'
+  'Helsinki': 'search_index/data/helsinki.txt'
+  'Kauniainen': 'search_index/data/kauniainen.txt'
+  'Kerava': 'search_index/data/kerava.txt'
+  'Kirkkonummi': 'search_index/data/kirkkonummi.txt'
+  'Vantaa': 'search_index/data/vantaa.txt'
+
+for own city, f of files
+  do (city, f) ->
+    vertx.fileSystem.readFile f, (err, res) ->
+      if err
+        stdout.println err
+      else
+        streets = res.getString(0, res.length(), 'UTF-8').split '\n'
+        trie.build("#{street}, #{city}") for street in streets
+  
+
