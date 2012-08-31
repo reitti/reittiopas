@@ -28,11 +28,10 @@ require.config({
 require(['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], function ($, _, Backbone, Router) {
 
   window.Reitti = {};
-
   Reitti.Event = _.extend({}, Backbone.Events);
 
   $(function () {
-    window.Router = new Router();
+    Reitti.Router = new Router();
     Backbone.history.start();
 
     if (navigator.geolocation) {
