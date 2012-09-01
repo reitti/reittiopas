@@ -7,6 +7,8 @@ require.config
       exports: '_'
     handlebars:
       exports: 'Handlebars'
+    bootstrap:
+      deps: ['jquery']
   paths:
     bootstrap: 'lib/bootstrap'
     jquery: 'lib/jquery-1.7.2'
