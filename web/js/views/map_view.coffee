@@ -2,9 +2,8 @@ define [
   'jquery'
   'underscore'
   'backbone'
-  'async!http://maps.googleapis.com/maps/api/js?sensor=true' + if window.location.host is 'localhost' or window.location.protocol is 'file:' then '' else '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk'
+  'async!http://maps.googleapis.com/maps/api/js?sensor=true' + if window.location.host is 'localhost' then '' else '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk'
 ], ($, _, Backbone) ->
-
   class MapView extends Backbone.View
 
     el: $('#map')
@@ -41,12 +40,12 @@ define [
 
     drawRoute: (route) ->
       @clearRoute()
-      shapes = (leg.shape for leg in route[0].legs)
-      points = _.reduce shapes,
-        (res, shape) -> res.concat shape,
-        []
-      latLngs = (new google.maps.LatLng point.y, point.x for point in points)
 
+      shapes = (leg.shape for leg in route[0].legs)
+      points = _.reduce(shapes,
+        (res, shape) -> res.concat shape,
+        [])
+      latLngs = (new google.maps.LatLng point.y, point.x for point in points)
 
       @route = new google.maps.Polyline(
         map: @map
