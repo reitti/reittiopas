@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'bootstrap'], ($, _, Backbone) ->
+define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range'], ($, _, Backbone) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
@@ -6,22 +6,29 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap'], ($, _, Backbone) ->
     events:
       'submit form': 'searchRoute'
 
-    typeaheadOptions:
-      source: (query, process) ->
-        params = $.param { query: query }
-        $.getJSON "/autocomplete?#{params}", (addresses) ->
-          process(addresses)
-      minLength: 3
-
     initialize: ->
       @$to = @$el.find('#to');
       @$from = @$el.find('#from')
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
           @$to.focus()
-      @$from.typeahead(@typeaheadOptions)
-      @$to.typeahead(@typeaheadOptions)
+      @$from.typeahead(@makeTypeaheadOptions(@$from))
+      @$to.typeahead(@makeTypeaheadOptions(@$to))
 
+    makeTypeaheadOptions: (input) =>
+      source: (query, process) ->
+        params = $.param { query: query }
+        $.getJSON "/autocomplete?#{params}", (addresses) ->
+          process(addresses)
+      updater: (item) =>
+        _.defer (=> @afterTypeahead(input))
+        item
+      minLength: 3
+      
+    afterTypeahead: (input) ->
+      idx = input.val().lastIndexOf(',')
+      input.selectRange(idx) if idx? and idx > 0
+        
     render: ->
       @$from.focus()
 
@@ -38,3 +45,5 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap'], ($, _, Backbone) ->
       $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
         @$from.val location.name
         callback()
+        
+    
