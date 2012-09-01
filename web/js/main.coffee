@@ -27,5 +27,7 @@ require ['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], ($, _, Back
 
   $ ->
     if navigator.geolocation
-      navigator.geolocation.watchPosition((position) -> Reitti.Event.trigger 'position:change', position,
-        () ->, { enableHighAccuracy: true })
+      navigator.geolocation.watchPosition(
+        (position) -> Reitti.Event.trigger 'position:change', position,
+        () ->,
+        { enableHighAccuracy: true})
