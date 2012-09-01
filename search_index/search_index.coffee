@@ -46,7 +46,7 @@ eb = vertx.eventBus
 
 # Make yourself available via the event bus
 eb.registerHandler 'reitti.searchIndex.find', (params, replier) ->
-  replier {results: trie.find(params.query.toLowerCase(), 30)}
+  replier {results: trie.find(params.query.toLowerCase(), 10)}
   
 # Index all the resource files into the trie
 files =
