@@ -860,7 +860,6 @@ Laaksotie
 Laastikuja
 Laavatie
 Lahdentie
-Lahdenväylä
 Lahnakuja
 Lahnapolku
 Lahnatie
@@ -1414,7 +1413,6 @@ Pakkalankuja
 Pakkalanrinne
 Pakkalantie
 Pakkasraitti
-Paljetie
 Palmusalontie
 Palokalliontie
 Palokellonkuja
@@ -1541,7 +1539,6 @@ Porttipuistontie
 Porttirinne
 Porttirinteenpolku
 Porttisuontie
-Porvoonväylä
 Potinkuja
 Prinsessakuja
 Prinsessantie
@@ -2099,7 +2096,6 @@ Tuupakantie
 Tuurakuja
 Tuusulan itäväylä
 Tuusulantie
-Tuusulanväylä
 Tytinkuja
 Tyyneläntie
 Tädyketie

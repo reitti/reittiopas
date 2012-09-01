@@ -1275,7 +1275,6 @@ Länsiportti
 Länsitie
 Länsituulentie
 Länsiviitta
-Länsiväylä
 Läntinen jokitie
 Läntinen rantatie
 Läntinen teollisuuskatu
@@ -2478,7 +2477,6 @@ Turkismiehentie
 Turkistie
 Turuntie
 Turuntie; Pitäjänmäentie
-Turunväylä
 Turveradantie
 Turvesuontie
 Tuulenpesä

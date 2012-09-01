@@ -1708,7 +1708,6 @@ Länsireimarintie
 Länsirinnetie
 Länsisalmentie
 Länsisatamankatu
-Länsiväylä
 Läntinen Alppirinne
 Läntinen Brahenkatu
 Läntinen Papinkatu
@@ -2408,7 +2407,6 @@ Porttitie
 Porvarinsilta
 Porvarintie
 Porvoonkatu
-Porvoonväylä
 Posetiivarinkuja
 Posliinikatu
 Posliinipiha
@@ -3351,7 +3349,6 @@ Turkhaudantie
 Tursontie
 Turunlinnanpolku
 Turunlinnantie
-Turunväylä
 Turvapolku
 Turvekuja
 Tuubakuja
@@ -3366,7 +3363,6 @@ Tuulimyllyntie
 Tuulitie
 Tuurholmanpolku
 Tuurholmantie
-Tuusulanväylä
 Tykistönkatu
 Tykkikuja
 Tykkitie
