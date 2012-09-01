@@ -6,8 +6,8 @@ routeMatcher = new vertx.RouteMatcher
 
 routeMatcher.get '/routes', (req) ->
   req.response.setChunked true
-  eb.send 'reitti.hsl.geocode', req.params().from, (pt1) ->
-    eb.send 'reitti.hsl.geocode', req.params().to, (pt2) ->
+  eb.send 'reitti.geocode', req.params().from, (pt1) ->
+    eb.send 'reitti.geocode', req.params().to, (pt2) ->
       if pt1 and pt2
         eb.send 'reitti.hsl.findRoutes', {from: pt1, to: pt2}, (data) -> req.response.end data.body
       else
