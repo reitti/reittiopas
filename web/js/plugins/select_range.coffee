@@ -12,4 +12,3 @@ require ['jquery'], ($) ->
         range.moveEnd 'character', end
         range.moveStart 'character', start
         range.select()
-    this
