@@ -9,20 +9,31 @@ define [
 
     el: $('#map')
 
+    initialize: ->
+      # If we already have the user's current position, use it. If not, center
+      # the map to it as soon as everything is initialized and we have the
+      # location.
+      if window.initialPosition
+        @currentPosition = new google.maps.LatLng(window.initialPosition.coords.latitude,
+          window.initialPosition.coords.longitude)
+      else
+        Reitti.Event.on 'position:change', (position) =>
+          _.once @centerMap(position)
+
+      Reitti.Event.on 'position:change', (position) =>
+        @displayCurrentPosition position
+
+      Reitti.Event.on 'route:change', @drawRoute, @
+
+
     render: ->
       @map = new google.maps.Map(@el,
-        center: new google.maps.LatLng(60.171, 24.941) # Rautatieasema
+        center: @currentPosition or new google.maps.LatLng(60.171, 24.941) # Rautatieasema
         zoom: 16
         mapTypeId: google.maps.MapTypeId.ROADMAP
         mapTypeControlOptions:
           position: google.maps.ControlPosition.TOP_CENTER
       )
-
-      Reitti.Event.on 'position:change', (position) =>
-        _.once @centerMap(position)
-        @displayCurrentPosition position
-
-      Reitti.Event.on 'route:change', @drawRoute, @
       @
 
     clearRoute: ->
