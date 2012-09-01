@@ -66,6 +66,6 @@ for own city, f of files
         lines = res.getString(0, res.length(), 'UTF-8').split '\n'
         for line in lines
           [place, loc] = line.split '|'
-          trie.build("#{place}, #{city}", loc) 
+          trie.build("#{place}, #{city}", if loc? and loc?.length > 0 then loc else undefined) 
   
 

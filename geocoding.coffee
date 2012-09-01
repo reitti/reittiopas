@@ -10,7 +10,7 @@ eb.registerHandler 'reitti.geocode', (query, replier) ->
     replier query
   else
     eb.send 'reitti.searchIndex.find', query: query, (data) ->
-      if data.results.length > 0
+      if data.results.length > 0 and data.results[0].loc?
         replier data.results[0].loc
       else
         eb.send 'reitti.hsl.geocode', query, replier
