@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'views/search_input_view'], ($, _, Backbone, SearchInputView) ->
+define ['jquery', 'underscore', 'backbone', 'views/search_input_view', 'utils'], ($, _, Backbone, SearchInputView, Utils) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
@@ -8,13 +8,16 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view'], ($, _, B
 
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
-      @to.val localStorage.to if @localStorageEnabled 
 
       @from = new SearchInputView(el: @$el.find('#from'))
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
           @to.focus()
-       
+
+      if Utils.isLocalStorageEnabled()
+        @from.val localStorage.from unless localStorage.from?
+        @to.val localStorage.to
+ 
     render: ->
       @from.focus()
 
@@ -22,7 +25,9 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view'], ($, _, B
       event.preventDefault()
       params = $.param { from: @from.val(), to: @to.val() }
 
-      localStorage.to = @to.val() if @localStorageEnabled 
+      if Utils.isLocalStorageEnabled()
+        localStorage.from = @from.val()
+        localStorage.to = @to.val()
 
       # TODO: Move this logic somewhere else
       $.getJSON "/routes?#{params}", (data) ->
@@ -33,7 +38,4 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view'], ($, _, B
       $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
         @from.val location.name
         callback()
-        
-    localStorageEnabled: ->
-      typeof(Storage) != "undefined"
       
