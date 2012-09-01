@@ -1,30 +1,38 @@
 @import url("lib/bootstrap.css");
+@import url("lib/bootstrap-responsive.css");
 
-.no-margin {
-    margin: 0;
+body {
+    position :relative;
+    padding: 0;
 }
 
-.navbar {
-    margin-bottom: 0;
+.no-margin {
+    margin: 0 !important;
+}
+
+.full-height {
+    height: 100%;
+}
+
+#content {
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+}
+
+#navbar-wrapper {
+    height: 100%;
+    margin-bottom: -42px;
+    box-sizing: border-box;
 }
 
 #controls {
-    position: absolute;
-    top: 42px;
-    bottom: 0;
-    width: 28em;
-    border-right: 1px solid #D4D4D4;
-    z-index: 1;
-    box-sizing: border-box;
-    padding: 0 2em;
+    padding: 0 20px;
 }
 
 #map {
-    position: absolute;
-    top: 42px;
-    left: 28em;
-    right: 0;
-    bottom: 0;
+    z-index: 1;
+    border-left: 1px solid #D4D4D4;
 }
 
 #map img {
@@ -33,7 +41,7 @@
 
 html, body {
     height: 100%;
-    position: relative;
+    min-height: 100%;
 }
 
 .centered {
