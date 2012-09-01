@@ -12,7 +12,7 @@ class Node
     
   putMatches: (to, n) ->
     if @end
-      to.push @prefix
+      to.push {name: @prefix, loc: @loc}
       n -= 1
     for own ch,child of @children
       return 0 if n <= 0
@@ -24,11 +24,12 @@ class Trie
   constructor: () ->
     @root = new Node('')
   
-  build: (str) ->
+  build: (str, loc) ->
     node = @root
     for i in [0...str.length]
       node = node.ensure(str.charAt(i))
     node.end = true
+    node.loc = loc
     
   find: (str, max) ->
     node = @root
@@ -62,7 +63,9 @@ for own city, f of files
       if err
         stdout.println err
       else
-        streets = res.getString(0, res.length(), 'UTF-8').split '\n'
-        trie.build("#{street}, #{city}") for street in streets
+        lines = res.getString(0, res.length(), 'UTF-8').split '\n'
+        for line in lines
+          [place, loc] = line.split '|'
+          trie.build("#{place}, #{city}", loc) 
   
 

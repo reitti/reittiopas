@@ -24,7 +24,7 @@ routeMatcher.get '/address', (req) ->
       
 routeMatcher.get '/autocomplete', (req) ->
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
-    req.response.end JSON.stringify(data.results)
+    req.response.end JSON.stringify(itm.name for itm in data.results)
 
 # TODO: Might want to disable this in production since files are served by Nginx.
 routeMatcher.noMatch (req) ->
