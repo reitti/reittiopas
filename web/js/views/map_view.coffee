@@ -24,6 +24,18 @@ define [
     36:   '#193695' # Kirkkonummi internal bus lines
     39:   '#193695' # Kerava internal bus lines
 
+  legStyles =
+    walk: 
+      strokeOpacity: 0
+      icons: [{
+        icon:
+          path: 'M 0,-0.2 0,0.2'
+          strokeOpacity: 1
+          strokeColor: legColors['walk']
+        offset: '0',
+        repeat: '7px'
+      }]
+      
   class MapView extends Backbone.View
 
     el: $('#map')
@@ -63,11 +75,13 @@ define [
       @clearRoute()
       @route = for leg in route[0].legs
         latLngs = (new google.maps.LatLng point.y, point.x for point in leg.shape)
-        new google.maps.Polyline
-          map: @map
-          path: latLngs
-          strokeColor: legColors[leg.type] or '#0000ee'
-          strokeWeight: 4
+
+        new google.maps.Polyline _.extend({
+            map: @map
+            path: latLngs
+            strokeWeight: 4
+            strokeColor: legColors[leg.type]
+          }, legStyles[leg.type])
 
       @panToRouteBounds()
 
