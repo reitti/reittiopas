@@ -5,8 +5,8 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
     tagName: 'li'
       
     events:
-      "click li": "selectLeg"
-      "click": "select"
+      "click ol li": "selectLeg"
+      "click a": "select"
       
     initialize: (@route) ->
       Reitti.Event.on 'route:change', @onRouteChanged
@@ -23,6 +23,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
       
     select: =>
       Reitti.Event.trigger 'route:change', @route
+      false
       
     selectLeg: (evt) =>
       @select()

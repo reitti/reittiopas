@@ -26,7 +26,7 @@ define [
 
       Reitti.Event.on 'route:change', @drawRoute
       
-      Reitti.Event.on 'leg:select', @panToLegBounds
+      Reitti.Event.on 'leg:change', @panToLegBounds
 
     render: ->
       @map = new google.maps.Map(@el,
