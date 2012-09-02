@@ -9,10 +9,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
       "click": "select"
       
     initialize: (@route) ->
-      Reitti.Event.on 'route:change', @onRouteSelected
+      Reitti.Event.on 'route:change', @onRouteChanged
       
     dispose: ->
-      Reitti.Event.off 'route:change', @onRouteSelected
+      Reitti.Event.off 'route:change', @onRouteChanged
       
     render: ->
       @$el.html template
