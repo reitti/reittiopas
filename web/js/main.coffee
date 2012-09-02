@@ -11,7 +11,6 @@ require.config
       deps: ['jquery']
   paths:
     bootstrap: 'lib/bootstrap'
-    json2: 'lib/json2'
     jquery: 'lib/jquery-1.7.2'
     underscore: 'lib/underscore'
     handlebars: 'lib/handlebars-1.0.0.beta.6'
@@ -22,6 +21,10 @@ require.config
     templates: '../templates'
   hbs:
     disableI18n: true
+  pragmasOnSave:
+    excludeHbsParser : true,
+    excludeHbs: true,
+    excludeAfterBuild: true
 
 window.Reitti ?= {}
 
