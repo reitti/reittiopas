@@ -1,8 +1,9 @@
-define ['jquery', 'backbone'], ($, Backbone) ->
+define ['jquery', 'backbone', 'handlebars', 'text!templates/route_view.handlebars'], ($, Backbone, Handlebars, template) ->
   
   class RouteView extends Backbone.View
     
     tagName: 'li'
+    template: Handlebars.compile(template)
     
     events:
       "click": "select"
@@ -10,9 +11,8 @@ define ['jquery', 'backbone'], ($, Backbone) ->
     initialize: (@route, @idx) ->
       
     render: ->
-      @$el.html("Show #{@idx+1}.")
+      @$el.html(@template(idx: @idx))
       this
       
     select: ->
       Reitti.Event.trigger 'route:select', @idx
-      
