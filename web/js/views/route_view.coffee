@@ -10,6 +10,9 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!templates/route_view']
     initialize: (@route, @idx) ->
       Reitti.Event.on 'route:select', @onRouteSelected
       
+    dispose: ->
+      Reitti.Event.off 'route:select', @onRouteSelected
+      
     render: ->
       @$el.html template
         depTime: Utils.formatTime @_depTime()

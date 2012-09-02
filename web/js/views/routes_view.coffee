@@ -5,10 +5,12 @@ define ['jquery', 'backbone', 'views/route_view'], ($, Backbone, RouteView) ->
     el: $('#routes')
     
     initialize: ->
+      @routeViews = []
       Reitti.Event.on 'routes:change', @showNewRoutes
       Reitti.Event.on 'route:select', @selectRoute
       
     showNewRoutes: (@routes) =>
+      routeView.dispose() for routeView in @routeViews
       @routeViews = (new RouteView(route[0], idx) for route, idx in @routes)
       @render()
       Reitti.Event.trigger 'route:select', 0
