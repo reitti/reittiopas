@@ -41,7 +41,7 @@ define ['underscore'], (_) ->
       this
       
     render: (route, gMap) ->
-      @legs = for leg in route[0].legs
+      @legs = for leg in route.legs
         latLngs = (new google.maps.LatLng point.y, point.x for point in leg.shape)
         new google.maps.Polyline _.extend({
             map: gMap

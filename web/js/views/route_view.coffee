@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'hbs!templates/route_view'], ($, Backbone, template) ->
+define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!templates/route_view'], ($, _, Backbone, Utils, template) ->
   
   class RouteView extends Backbone.View
     
@@ -11,7 +11,9 @@ define ['jquery', 'backbone', 'hbs!templates/route_view'], ($, Backbone, templat
       Reitti.Event.on 'route:select', @onRouteSelected
       
     render: ->
-      @$el.html(template(idx: @idx + 1))
+      @$el.html template
+        depTime: Utils.formatTime @_depTime()
+        arrTime: Utils.formatTime @_arrTime()
       this
       
     select: ->
@@ -19,3 +21,9 @@ define ['jquery', 'backbone', 'hbs!templates/route_view'], ($, Backbone, templat
       
     onRouteSelected: (idx) =>
       @$el.toggleClass 'active', idx is @idx
+
+    _depTime: () ->
+      Utils.parseDateTime _.first(_.first(@route.legs).locs).arrTime
+      
+    _arrTime: () ->
+      Utils.parseDateTime _.last(_.last(@route.legs).locs).arrTime
