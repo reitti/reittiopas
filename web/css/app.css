@@ -58,10 +58,19 @@ input.input-full {
 }
 
 #routes {
-  list-style-type: none;
+  margin-top: 50px;
   padding: 0;
-  margin: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
-#routes li {
-  cursor: pointer;
+#routes li a {
+  display: block;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #E5E5E5;
+}
+#routes li .icon-chevron-right {
+  float: right;
+  opacity: 0.25;
 }

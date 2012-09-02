@@ -11,7 +11,7 @@ define ['jquery', 'backbone', 'views/route_view'], ($, Backbone, RouteView) ->
     showNewRoutes: (@routes) =>
       @routeViews = (new RouteView(route, idx) for route, idx in @routes)
       @render()
-      @selectRoute 0
+      Reitti.Event.trigger 'route:select', 0
       
     selectRoute: (n) =>
       Reitti.Event.trigger 'route:change', @routes[n]
