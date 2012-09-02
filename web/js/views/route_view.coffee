@@ -1,9 +1,8 @@
-define ['jquery', 'backbone', 'handlebars', 'text!templates/route_view.handlebars'], ($, Backbone, Handlebars, template) ->
+define ['jquery', 'backbone', 'hbs!templates/route_view'], ($, Backbone, template) ->
   
   class RouteView extends Backbone.View
     
     tagName: 'li'
-    template: Handlebars.compile(template)
     
     events:
       "click": "select"
@@ -11,7 +10,7 @@ define ['jquery', 'backbone', 'handlebars', 'text!templates/route_view.handlebar
     initialize: (@route, @idx) ->
       
     render: ->
-      @$el.html(@template(idx: @idx))
+      @$el.html(template(idx: @idx + 1))
       this
       
     select: ->
