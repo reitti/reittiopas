@@ -1,23 +1,4 @@
-define ['underscore'], (_) ->
-  
-  legColors =
-    walk: '#1e74fc'
-    1:    '#193695' # Helsinki internal bus lines
-    2:    '#00ab66' # Trams
-    3:    '#193695' # Espoo internal bus lines
-    4:    '#193695' # Vantaa internal bus lines
-    5:    '#193695' # Regional bus lines
-    6:    '#fb6500' # Metro
-    7:    '#00aee7' # Ferry
-    8:    '#193695' # U-lines
-    12:   '#ce1141' # Commuter trains
-    21:   '#193695' # Helsinki service lines
-    22:   '#193695' # Helsinki night buses
-    23:   '#193695' # Espoo service lines
-    24:   '#193695' # Vantaa service lines
-    25:   '#193695' # Region night buses
-    36:   '#193695' # Kirkkonummi internal bus lines
-    39:   '#193695' # Kerava internal bus lines
+define ['underscore', 'utils'], (_, Utils) ->
 
   legStyles =
     walk: 
@@ -26,7 +7,7 @@ define ['underscore'], (_) ->
         icon:
           path: 'M 0,-0.2 0,0.2'
           strokeOpacity: 1
-          strokeColor: legColors['walk']
+          strokeColor: Utils.transportColors['walk']
         offset: '0',
         repeat: '7px'
       }]
@@ -47,7 +28,7 @@ define ['underscore'], (_) ->
             map: gMap
             path: latLngs
             strokeWeight: 4
-            strokeColor: legColors[leg.type]
+            strokeColor: Utils.transportColors[leg.type]
           }, legStyles[leg.type])
       this
 

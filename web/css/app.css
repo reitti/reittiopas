@@ -64,13 +64,46 @@ input.input-full {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+
+#routes li {
+  margin-bottom: 5px;
+}
+
 #routes li a {
   display: block;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #E5E5E5;
+  clear: both;
 }
+#routes li.selected a {
+  background-color: #F1F1F1;
+  border: 1px solid #C5C5C5;
+}
+
+#routes li .times {
+  margin: 0;
+}
+
 #routes li .icon-chevron-right {
   float: right;
+  margin-top: 25px;
+  margin-right: 0;
   opacity: 0.25;
+}
+
+.leg-icons {
+  margin: 5px 0;
+}
+.leg-icons li {
+  display: inline-block;
+  color: white;
+  margin-top: 5px;
+  padding: 5px;
+  min-width: 20px;
+  text-align: center;
+}
+.leg-icons li.leg-icon-walk {
+  font-style: italic;
+  font-weight: 100;
 }
