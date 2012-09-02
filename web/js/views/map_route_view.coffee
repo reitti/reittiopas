@@ -1,40 +1,27 @@
-define ['underscore', 'utils'], (_, Utils) ->
+define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteLegView) ->
 
-  legStyles =
-    walk: 
-      strokeOpacity: 0
-      icons: [{
-        icon:
-          path: 'M 0,-0.2 0,0.2'
-          strokeOpacity: 1
-          strokeColor: Utils.transportColors['walk']
-        offset: '0',
-        repeat: '7px'
-      }]
-      
   class MapRouteView
     
-    constructor: ->
-      @legs = []
-      
+    constructor: (@route, @map) ->
+      @legViews = (new MapRouteLegView(leg, @map) for leg in route.legs)
+        
     remove: ->
-      leg.setMap(null) for leg in @legs
+      legView.remove() for legView in @legViews
       this
       
-    render: (route, gMap) ->
-      @legs = for leg in route.legs
-        latLngs = (new google.maps.LatLng point.y, point.x for point in leg.shape)
-        new google.maps.Polyline _.extend({
-            map: gMap
-            path: latLngs
-            strokeWeight: 4
-            strokeColor: Utils.transportColors[leg.type]
-          }, legStyles[leg.type])
+    render: ->
+      legView.render() for legView in @legViews
       this
 
     getBounds: () ->
       bounds = new google.maps.LatLngBounds()
-      for leg in @legs
-        for latLng in leg.getPath().getArray()
-          bounds.extend(latLng)
+      bounds.union(legView.getBounds()) for legView in @legViews 
       bounds
+      
+    getBoundsForLeg: (leg) ->
+      @findLegView(leg).getBounds()
+
+    findLegView: (leg) ->
+      for legView in @legViews
+        return legView if legView.leg is leg
+      null

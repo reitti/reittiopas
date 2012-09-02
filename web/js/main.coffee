@@ -18,7 +18,7 @@ require.config
     text: 'lib/text'
     async: 'lib/async'
     hbs: 'lib/hbs'
-    templates: '../templates'
+    template: '../template'
   hbs:
     disableI18n: true
   pragmasOnSave:
@@ -33,7 +33,7 @@ require ['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], ($, _, Back
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
   Backbone.history.start()
-
+    
   $ ->
     if navigator.geolocation
       navigator.geolocation.watchPosition(

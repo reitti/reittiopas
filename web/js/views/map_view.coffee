@@ -11,8 +11,6 @@ define [
     el: $('#map')
 
     initialize: ->
-      @routeView = new MapRouteView
-      
       # If we already have the user's current position, use it. If not, center
       # the map to it as soon as everything is initialized and we have the
       # location.
@@ -26,8 +24,9 @@ define [
       Reitti.Event.on 'position:change', (position) =>
         @displayCurrentPosition position
 
-      Reitti.Event.on 'route:change', @drawRoute, @
-
+      Reitti.Event.on 'route:change', @drawRoute
+      
+      Reitti.Event.on 'leg:select', @panToLegBounds
 
     render: ->
       @map = new google.maps.Map(@el,
@@ -39,14 +38,19 @@ define [
       )
       @
 
-    drawRoute: (route) ->
-      @routeView.remove()
-      @routeView.render route, @map
+    drawRoute: (route) =>
+      return if @routeView?.route is route
+      
+      @routeView?.remove()
+      @routeView = new MapRouteView(route, @map).render()
       @panToRouteBounds()
 
-    panToRouteBounds: () ->
+    panToRouteBounds: () =>
       @map.fitBounds @routeView.getBounds()
 
+    panToLegBounds: (leg) =>
+      @map.fitBounds @routeView.getBoundsForLeg(leg)
+      
     centerMap: (position) ->
       latLng = new google.maps.LatLng position.coords.latitude, position.coords.longitude
       @map.setCenter latLng

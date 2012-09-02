@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!templates/route_view'], ($, _, Backbone, Utils, template) ->
+define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'], ($, _, Backbone, Utils, template) ->
   
   class RouteView extends Backbone.View
     
@@ -6,25 +6,31 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!templates/route_view']
       
     events:
       "click": "select"
+      "click li": "selectLeg"
       
-    initialize: (@route, @idx) ->
-      Reitti.Event.on 'route:select', @onRouteSelected
+    initialize: (@route) ->
+      Reitti.Event.on 'route:change', @onRouteSelected
       
     dispose: ->
-      Reitti.Event.off 'route:select', @onRouteSelected
+      Reitti.Event.off 'route:change', @onRouteSelected
       
     render: ->
       @$el.html template
         depTime: Utils.formatTime @_depTime()
         arrTime: Utils.formatTime @_arrTime()
-        legs: @_legs()
+        legs: @_legData()
       this
       
-    select: ->
-      Reitti.Event.trigger 'route:select', @idx
+    select: =>
+      Reitti.Event.trigger 'route:change', @route
       
-    onRouteSelected: (idx) =>
-      @$el.toggleClass 'selected', idx is @idx
+    selectLeg: (evt) =>
+      @select()
+      Reitti.Event.trigger 'leg:change', @route.legs[$(evt.target).data('leg')]
+      false
+      
+    onRouteChanged: (route) =>
+      @$el.toggleClass 'selected', route is @route
 
     _depTime: () ->
       Utils.parseDateTime _.first(_.first(@route.legs).locs).arrTime
@@ -32,7 +38,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!templates/route_view']
     _arrTime: () ->
       Utils.parseDateTime _.last(_.last(@route.legs).locs).arrTime
       
-    _legs: () ->
+    _legData: () ->
       for leg in @route.legs
         {
           type: leg.type

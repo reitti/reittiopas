@@ -2,11 +2,10 @@
   <i class="icon-chevron-right"></i>
   <h4 class="times">{{depTime}} &rarr; {{arrTime}}</h4>
   <ol class="leg-icons unstyled">
-    {{#each legs}}
-      <li class="leg-icon-{{type}}" style="background-color: {{color}}">
+    {{#each_with_index legs}}
+      <li data-leg="{{index}}" class="leg-icon-{{type}}" style="background-color: {{color}}">
         {{indicator}}
       </li>
-    {{/each}}
+    {{/each_with_index}}
   </ol>
 </a>
-
