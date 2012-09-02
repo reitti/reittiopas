@@ -39,8 +39,6 @@ define [
       @
 
     drawRoute: (route) =>
-      return if @routeView?.route is route
-      
       @routeView?.remove()
       @routeView = new MapRouteView(route, @map).render()
       @panToRouteBounds()

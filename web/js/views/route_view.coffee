@@ -5,8 +5,8 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
     tagName: 'li'
       
     events:
-      "click": "select"
       "click li": "selectLeg"
+      "click": "select"
       
     initialize: (@route) ->
       Reitti.Event.on 'route:change', @onRouteSelected
