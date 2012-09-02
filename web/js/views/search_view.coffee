@@ -31,7 +31,7 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view', 'utils'],
 
       # TODO: Move this logic somewhere else
       $.getJSON "/routes?#{params}", (data) ->
-        Reitti.Event.trigger 'route:change', data[0]
+        Reitti.Event.trigger 'routes:change', data
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else

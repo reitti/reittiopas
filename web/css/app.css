@@ -56,3 +56,12 @@ input.input-full {
     padding-bottom: 12px;
     padding-top: 12px;
 }
+
+#routes {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#routes li {
+  cursor: pointer;
+}

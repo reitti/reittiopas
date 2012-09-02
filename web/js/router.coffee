@@ -1,4 +1,4 @@
-define ['backbone', 'views/map_view', 'views/search_view'], (Backbone, MapView, SearchView) ->
+define ['backbone', 'views/map_view', 'views/search_view', 'views/routes_view'], (Backbone, MapView, SearchView, RoutesView) ->
   Backbone.Router.extend
     routes:
       '': 'home'
@@ -6,6 +6,7 @@ define ['backbone', 'views/map_view', 'views/search_view'], (Backbone, MapView, 
     initialize: ->
       @mapView   = new MapView()
       @searchBox = new SearchView()
+      @routesView = new RoutesView()
 
     home: ->
       @mapView.render()
