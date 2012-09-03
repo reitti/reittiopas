@@ -35,6 +35,8 @@ define [
         mapTypeId: google.maps.MapTypeId.ROADMAP
         mapTypeControlOptions:
           position: google.maps.ControlPosition.TOP_CENTER
+        minZoom: 10,
+        maxZoom: 18
       )
       @
 
