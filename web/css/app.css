@@ -2,7 +2,7 @@
 @import url("lib/bootstrap-responsive.css");
 
 body {
-    position :relative;
+    position: relative;
     padding: 0;
 }
 
@@ -58,52 +58,80 @@ input.input-full {
 }
 
 #routes {
-  margin-top: 50px;
-  padding: 0;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+    padding: 0;
 }
 
-#routes li {
-  margin-bottom: 5px;
+li.route {
+    margin: 1em 0;
+
 }
 
-#routes li a {
-  display: block;
-  margin: 0 0 -1px;
-  padding: 8px 14px;
-  border: 1px solid #E5E5E5;
-  clear: both;
+li.route > a {
+    display: block;
+    margin: 0;
+    border: 1px solid #E5E5E5;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
-#routes li.selected a {
-  background-color: #F1F1F1;
-  border: 1px solid #C5C5C5;
+
+#routes li.selected > a {
+    background-color: #F1F1F1;
+    border: 1px solid #C5C5C5;
 }
 
 #routes li .times {
-  margin: 0;
+    margin: 0;
 }
 
-#routes li .icon-chevron-right {
-  float: right;
-  margin-top: 25px;
-  margin-right: 0;
-  opacity: 0.25;
+.departure-time, .arrive-time {
+    margin: 20.5px 0;
+}
+
+.departure-time {
+    text-align: left;
+}
+
+.arrive-time {
+    text-align: right;
 }
 
 .leg-icons {
-  margin: 5px 0;
+    margin: auto;
 }
+
 .leg-icons li {
-  display: inline-block;
-  color: white;
-  margin-top: 5px;
-  padding: 5px;
-  min-width: 20px;
-  text-align: center;
+    display: inline-block;
+    margin: 13.3px 0 0 0;
+    font-size: 10px;
+    font-family: arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
 }
-.leg-icons li.leg-icon-walk {
-  font-style: italic;
-  font-weight: 100;
+
+.leg-icons li .leg-icon {
+    display: block;
+    background-image: url('../img/vehicles_small.png');
+    width: 34px;
+    height: 34px;
+}
+
+.leg-icon-2 {
+    background-position: 34px -34px;
+}
+
+.leg-icon-walk {
+    background-position: 34px 34px;
+}
+
+.leg-icon-6 {
+    background-position: 0 -34px;
+}
+
+.leg-icon-7 {
+    background-position: 0 34px;
+}
+
+.leg-icon-12 {
+    background-position: 34px 0;
 }
