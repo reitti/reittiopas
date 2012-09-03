@@ -53,3 +53,9 @@ define ->
       else
         km = (d / 1000).toPrecision(3).replace '.', ','
         "#{km}km"  
+
+    # Checks if the given geoposition is within the bounds supported
+    # by this application (Greater Helsinki Area)
+    @isWithinBounds: (location) ->
+      {longitude: lng, latitude: lat} = location.coords
+      24.152104 < lng < 25.535784 and 59.99907 < lat < 60.446654

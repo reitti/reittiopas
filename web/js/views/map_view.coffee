@@ -2,17 +2,11 @@ define [
   'jquery'
   'underscore'
   'backbone'
+  'utils'
   'views/map_route_view'
   'async!http://maps.googleapis.com/maps/api/js?sensor=true' + if window.location.host is 'localhost' then '' else '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk'
-], ($, _, Backbone, MapRouteView) ->
+], ($, _, Backbone, Utils, MapRouteView) ->
       
-
-  # Roughly the greater Helsinki area
-  maxBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng 59.99907, 24.152104
-    new google.maps.LatLng 60.446654, 25.535784
-  )
-
   class MapView extends Backbone.View
 
     el: $('#map')
@@ -39,13 +33,14 @@ define [
       # If we already have the user's current position, use it. If not, center
       # the map to it as soon as everything is initialized and we have the
       # location.
-      if initPos = window.initialPosition
+      initPos = window.initialPosition
+      if initPos? and Utils.isWithinBounds(initPos)
         @centerMap(initPos.coords.latitude, initPos.coords.longitude)
       else
         @centerMap(60.171, 24.941) # Rautatieasema
-        Reitti.Event.on 'position:change', (position) =>
-          _.once @centerMap(position.coords.latitude, position.coords.longitude)
-
+        Reitti.Event.on 'position:change', _.once (position) =>
+          if Utils.isWithinBounds(position)
+            @centerMap position.coords.latitude, position.coords.longitude
       @
 
     drawRoute: (route) =>
@@ -61,7 +56,7 @@ define [
       
     centerMap: (lat, lng) ->
       latLng = new google.maps.LatLng lat, lng
-      @map.setCenter(latLng) if maxBounds.contains(latLng)
+      @map.setCenter(latLng)
 
     displayCurrentPosition: (position) ->
       latLng   = new google.maps.LatLng position.coords.latitude, position.coords.longitude

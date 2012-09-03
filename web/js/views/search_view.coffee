@@ -35,7 +35,8 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view', 'utils'],
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
-      $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
-        @from.val location.name
-        callback()
+      if Utils.isWithinBounds(position)
+        $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
+          @from.val location.name
+          callback()
       
