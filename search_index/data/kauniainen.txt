@@ -1,630 +1,137 @@
-Taavintörmä|
-Ingaksentie|
-Viherkalliontie|
-Riistarinne|
-Poutahaukankuja|
 Koivuhovintie|
-Mankkaanmalmi|
-Etelärinne|
-Kilonrinne|
-Aspelinintie|
 Teboil|24.7344649,60.2098394
-Linnustajantie|
-Haukkakallio|
-Scandic|24.7557623,60.2072186
-Kaivosmiehentie|24.7678073,60.2519922
-Runkotie|
-Kelkkamäentie|
 Stockmannintie|
 Kylpyläntie|
-Peuramäentie|
-Träskändan puisto|24.7164683,60.2340933
-Viherlaakson tori|24.7411821,60.226837
-Ravintola BlueBell|24.777838,60.2049626
 Pohjoinen Heikelintie|
 Kasavuorentie|
-Nihtisilta|
-Vehkamäentie|
-Klovi|24.7498086,60.2021281
-Tolsanpiha|
 Eteläinen Heikelintie|
-Klovinrinne|
-Luuvanpuisto|
-Porttipolku|
-Säterinpuistontie|
-Kruununkuja|
 Vilhontie|
 Stensintie|
-ABC|24.7496328,60.2072369
-Tornihaukantie|
-Nuumäentie|
-Riihiniityntie|
-Ajomiehentie|
 Kavallinkallio|
-Leppälinnunkuja|
-Klovinmäki|
 Forsellesintie|
-Kavallinniitynkuja|
 Juusintie|
-Kuudes huvilatie|
-Riistatie|
-Linkopolku|
-Leppäsillantie|
-Karakorpi|24.7555637,60.2190342
-Jahtitorventie|
 Puutarhatie|
-Kuurinrinne|
-Alasin|
-Sinitiaisentie|
-Etelätie|
-Nihtikuja|
-Karakalliontie|
-Kilontie|
-Stensinmäki|
-Lansakallio|24.7638284,60.2122955
 Silmukka|
-Kolmas järvikuja|
-Kilonportti|
-Torpparintie|
-Herttuantie|
+Jarl Hemmerin kuja|
 Käsityönkatu|
-Nummikuja|
-Kuusiniementie|
-Klovinportti|
-Pääskyskuja|
-Lansankallio|
-Ruotutie|
-Riihikulma|
-Vasamatie|
-Lähderannantie|
 Martankuja|
-Toinen huvilatie|
-Vehkamäki|
-Kuurinmäentie|
-Keltarousku|
-Kelkkamäki|
-Varpushaukankuja|
-Siuntionkuja|
 Kauniaistentie|
-Rastaanpesä|
-Kutojankulma|
-Klovinristi|24.7620364,60.2035396
-Töyhtötiaisentie|
-Lintukorvenkuja|
-KilonRisti|24.7825466,60.2171011
-VIP Club - Viherpool|24.7400145,60.2270254
-Friisinmäentie|
-Lintukulma|
-Rastaalanrinne|
-Kirkkonummentie|
-Parrukuja|
-Pertuskatie|
-Laguuna|24.7271607,60.2255343
-Rajamännynpolku|
-Hirsikalliontie|
-Kutojanpolku|
+Karvasmäentie|
 Lippajärventie|
 Siirinkuja|
 Jondalintie|
-Kuusinevantie|
-Kuusiniemi|
 Palokunnantie|
-Neljäskuja|
-Haarniskakuja|
-Leica Geosystems Oy|24.7639388,60.2053631
 Ersintie|
 Turuntie|
-Keihäsrinne|
-Lippajärven uimapaikka|24.733905,60.2310579
-Taavinsuo|
-Ylänkörinne|
-Olkiniitty|
-Hiidenkuja|
-Ysi5|24.7524525,60.2089451
-Hedelmäkuja|
 Kerankuja|
-Nihtisillankuja|
-Kilonkallionkuja|
-Vähäntorpantie|
-Oksatie|
-Vehkaniityntie|
-Humiseva|
-Vanha Stensintie|24.7462785,60.2015761
 Helenankuja|
-Latvatie|
-Haarakas|
-Kilon koulu|24.7711747,60.2099887
-Vehkakulma|
 Eteläinen suotie|
-Honkavaarankuja|
-Lähderannan koulu|24.7440868,60.242947
 Leankuja|
-Vanha Kilontie|
-Karantie|
 Torpankuja|
 Pohjoinen Suotie|
-Jahtikuja|
-Rastaalantie|
-Oravamäentie|
-Neste Mankkaa|24.7679178,60.2052957
-Suohaukantie|
-Kavallinkuja|
-Kotkakuja|
-Runoratsun päiväkoti|24.7494632,60.2327802
-Vahverotie|
-Kuttulammentie|
-Maneesipolku|
 Venevalkamantie|
 Kavallinrinne|
 Junghansinkuja|
 Dosentintie|
-Lansankuja|
 Stenberginkuja|
 Uimahalli|24.7119552,60.215709
 Maisterintie|
-Ullantorpantie|
-Kilpikuja|
-Kahdeksas huvilatie|
-Ylänkötie|
-Viides järvikuja|
-Seitsemäs huvilatie|
-Posti Karakallio |24.7639587,60.2290264
 Moms|24.7287505,60.2106078
-Lukiotie|
-Auroran koulu|24.7163282,60.2320666
-Karanristi|24.7606441,60.2255306
-Punavarpusentie|
 Sveanpolku|
 Asematie|
-St1 Espoo Lähderanta|24.7415669,60.2401615
-Punavarpusenkuja|
-Kilonkallio|
-Lähderannan päiväkoti|24.7440835,60.2441417
-Inkoonkuja|
 Samis|24.7208283,60.2138719
-Ymmerstanmäki|
-Törmänsilmänkuja|
-Espoon kihlakunnan poliisilaitos|24.7620512,60.2084646
-Klovinkallio|
-Kavallinsuontie|
-Hirsitie|
-Kilpitie|
-Herttuankallio|
-Nygrannaksentie|
-Äraportti|
 Stenbergintie|
 Jalmarinpolku|
 Borgintie|
-Lansantie|
 Valmukuja|
+Kulopolku|
 Vanha Turuntie|
 Lindstedtintie|
-Balderinkuja|
 Kehä II|
-Ymmerstanportti|
-Vahverokuja|
-Kolkeranta|24.7098163,60.2280432
-Huvilamäki|
-Suohaukankuja|
 Gresantie|
-Kotkatie|
 Kavallintie|
-Palomäenportti|
-Nuuniitynkuja|
-Kuninkaistenportti|
-Jahtitie|
 Kylätie|
 Torpantie|
-Linkomäki|
-Pesätie|
 Leantie|
-Tikankolo|
-Honkavaarantie|
-Lipparinne|
-Vehkaniitynkuja|
-Lansanpurontie|
-Vähäntorpankuja|
-Tapiontie|
-Espoon käräjäoikeus|24.7638656,60.2084964
-Vilniementie|
-Nihtisillantie|
-Hiidentie|
-Haapaniementie|
-Vanha maantie|
-Cafe Domino|24.7425826,60.22659
-Vanha Rastaalantie|
-Karvarousku|
-Harjutie|
-Viherlaakson Terveysasema|24.7422322,60.2276841
-Kavallinpelto|
-Viherkallion päiväkoti|24.7462924,60.228631
-Nihtirinne|
 Palokunnankuja|
-Nihtitorppa|24.7620292,60.2103021
-Lehtitie|
-Temppelipelto|24.7157004,60.2351325
-Jondalinkuja|
-Neljästie|
-Karakallion sivuapteekki|24.7642591,60.2287614
 Heikelinkuja|
-Degerbyntie|
-Köysitie|
-Ullantorppa|
-Lansankallionkuja|
 Mätäskuja|
-Kuninkainen|24.7653917,60.2256613
-Taavinkylä|24.7546362,60.1998738
-Vilniemi|24.7221437,60.2354224
 Koivuhaanpolku|
-Neste|24.742636,60.2261803
 Anna-Muorin tie|
 Helsingintie|
-Latvapolku|
-Kehä II (Karakallion tunneli)|
-Siuntiontie|
-Alihaka|
-Pizza Center|24.7634276,60.2286603
-Kauppalanportti|
-Leppälinnunrinne|
-Vahveropolku|
-Herttuankuja|
-Lukionahde|
-Törmäniityntie|
 Päärynäkuja|
-Nuijamäki|
-Kruununrinne|
-Kauniaisten ratsastuskeskus|24.7201971,60.2014288
-Veininmäki|
-Ullanmäentie|
-Nummitie|
-Kilonpuistonkatu|
-Taavilankallio|
-Nurminiityntie|
-Hiiralantie|24.7944109,60.2092269
-Ensimmäinen huvilatie|
-Kilonkuja|
-Turveradantie|
-Ymmerstan koulu|24.7149057,60.2047021
-Tammihaantie|
-Nuijavuori|
-Rastaspuistontie|
-Nuolihaukantie|
+Marcus Collinin kuja|
 Tunnelitie|
-Neste Oil Express|24.7774143,60.2293098
-Seurakuntatalo|24.7696719,60.2486463
-Huvilaharju|
-Juuritie|
-Turvesuontie|
-Törmänahde|
-Magnus Enckellin kuja|
+Suokrouvintie|
 Oppilaskodintie|
-Punavarpusenpolku|
-Klovinpellontie|
-Kahisevanmäki|
-Sinikalliontie|
-Karamalmi|24.7513144,60.217655
-Ajomiehenkuja|
-Haikaranportti|
-Vasarapolku|
-Sinitiaisenkuja|
-Laaksonpohjantie|
-Kallionlaita|
-Träskändan puistotie|
-Kilon terveysasema|24.7863028,60.2180971
 Ingankuja|
 Tohtorinkuja|
-Karaniityntie|
-Neljäs järvikuja|
-Kruununtie|
-Kalasääksenkatu|
-Kavallinpuisto|
-Peuramäenkuja|
-Ajokoirantie|
+Magnus Hagelstamin tie|
 Stockmanninkuja|
-Herraskuja|
-Nihtirinteenkuja|
-Nuijalantie|
-Kaivosmiehenkuja|
-Jupperinmetsä|
-Veininkatu|
-Linnustajankuja|
-Leppärousku|
-Riihiuunintie|
-Aspelininkuja|
-Kotipesänkuja|
-Vehkakuja|
-Hirsipolku|
-Karaniitty|
-Kasimirinkuja|
-Shell Espoo Express Sepänkylä|24.7432656,60.2085622
-Mankkaankallio|
 Kauniaisten kaupunginkirjasto|24.7257877,60.2108404
-Lansantorppa|
-Jänismetsäntie|
-Friisinmäenaukio|
-Säkkijärventie|
-Peshawar|24.754144,60.2098738
 Läntinen koulupolku|
-Rakuunanpiha|
-Petas|24.7071971,60.2237243
-Kavallinniitty|
-Viherkallionkuja|
+Petas|24.7083415,60.2238868
 Sailonkuja|
-Scandic Colonial bar & Kitchen|24.755419,60.2070054
-Mankkaan Pizza Boss|24.7655384,60.196389
-Ison-Henttaan tie|
-Kottaraisentie|
-Tiaisentie|
 Smedsintie|
-Kilonpuiston koulu|24.7904758,60.2163573
 St1 Kauniainen Bensowinkuja|24.7390557,60.2090917
-Kelanpiha|
-Kilonpurontie|
-Pitkäjärvenranta|
-Kreivinkuja|
-Ratamotie|
-Aurinkoniitty|
-Kuusitiaisentie|
-Kolmikulma|
 Alppitie|
-St1 Espoo Automat Karamalmi|24.7511082,60.2177139
-Kolkerannantie|
-Ajojahdintie|
-Kilonkallionpolku|
 Kaupungintalo|24.7278112,60.2093836
-Kolmas huvilatie|
 Bredanportti|
-Viherlaakson kirjasto|24.7422411,60.2273609
-Kievarinpolku|
-Ryijykuja|
-Hiidenpolku|
 Kandidaatinkuja|
-Lounasravintola Carte|24.7661956,60.2083454
 Tornikuja|
-Kuudes järvikuja|
-Jänismäki|
-Tuokkoskuja|
-Rajamännynkuja|
-Rastasniityntie|
-Taavilankuja|
-Poliisitalo|24.758471,60.2096594
-Katri Valan tie|
-Nurmilinnuntie|
-Alilähde|
-Viherlaakson apteekki|24.7422842,60.2268325
-Riihikuja|
-Kievarinraitti|
-Puintimäki|
-Kalkkikuja|
-Hilparikuja|
 Thurmanin puistotie|
 Mikael Lybeckin tie|
-Pakastiaisenkuja|
-Redbell|24.7750399,60.2042717
 Kauniaisten uimahalli|24.7100847,60.2162942
 Bredantie|
-Uuraantie|
-Kappalaisenkuja|
-Alankotie|
-Lakeanmäentie|
 Mäntymäentie|
 Teinikuja|
-Palomiehentie|
-Metsänvartijantie|
-Tammimäentie|
-Neste Nihtisilta|24.7588522,60.2093119
 Riekontie|
-Ingas|24.6959154,60.2234714
 Lehmustie|
-Heurlinintie|
 Yhtiöntie|
-Lähdepurontie|
-Nihtisalontie|
-Veininrinne|
-Lintukorpi|
-Luumukuja|
-Kuninkaistenkuja|
-Kypäräkuja|
-Stensinsilta|24.7419658,60.2028596
 Kauniainen|24.7287655,60.2110655
 Smedsinportti|
 Työväen akatemia|24.7153597,60.2214782
-Makaksentie|
-Ullanmäenpolku|
-Pitkäjärventie|
+Kulovalkeantie|
 Kirkkotie|
-Palokunnanpuisto|
-Ansatie|
-Rakuunanportti|24.8016962,60.2201541
 Laaksotie|
-Toinen järvikuja|
 Vanha tienhaara|
-Rypälekuja|
 Bensowinkuja|
-Leppävaaran urheilupuisto|24.7987431,60.2254144
-Luuvanmetsä|
-Kahisevantie|
-Veräjävahdinraitti|
 Vesitorninpolku|
-Laguna|24.7279158,60.2256638
-Jahtimestarinkuja|
-Louhostie|
-Kolkekannaksentie|
-Mankkaanpuro|
-Palje|
-Karakaarenkuja|
-Leppälinnunpolku|
 Bjorndals Cafe|24.7272249,60.2103182
-Tuokkonen|
 Liikekeskus|24.7273232,60.2095687
-Ullanmäki|
-Vehkasyrjä|
 Karapellontie|
-Lähdesuoni|
-Tuohistanhua|
-Nihtimäki|
-Ruotutorppa|
-Laaksolahtitalo. Koulun ala-aste|24.7693715,60.2489977
-Rautiaisentie|
-Kahisevantie 5-9|
-Kalasääksentie|
-Kotitie|
-Heiniitty|
-Laaksolahden urheilupuisto|24.7502444,60.2456665
-Viides huvilatie|
 Matkakuja|
-Porttikuja|
-Kilonpuisto|
-Lepotie|
-Luuvankuja|
 Urheilutie|
-Koivistontie|
-McDonald's|24.7440482,60.2085491
-Vanha-Stens|
 Mariantie|
-Stensintila|
-Yhteistuvantie|
 Rantamajankuja|
-Viputie|
 Kauniaisten Apteekki|24.7267342,60.2099053
-Leppäsilta|24.7776671,60.2257131
-Happy Night|24.742469,60.2267758
 Valkonauhantie|
-Pappa Pizza|24.7418332,60.2269863
-Kirsikkakuja|
-Kilonpuiston Lastentalo|24.7877394,60.213865
-Tatartie|
-Pizza express|24.7417087,60.2285274
-Scottish Arms|24.7427613,60.2266559
-Karkelo|24.7640258,60.2286882
-Huvilarinne|
-Kuusitiaisenpolku|
-Kolapuuntie|
 Rantamajantie|
-Kahdeksas järvikuja|
-Jalkajousentie|
-Luuvantie|
-Vitikka|
-Seitsemäs järvikuja|
-Ristihaantie|
 Kasavuoren koulukeskus|24.7036208,60.2139668
 Bembölentie|
-Linkorinne|
-Parsitie|
-Laaksolahden uimaranta|24.7494414,60.2466639
 Kauppalantie|
-Leppävaaran Kuntokihara|
-Siuntionportti|
+Yrjö Liipolan tie|
 Bio Grani|24.725284,60.2144237
-Ymmerstanrinne|
 Kaikupolku|
-Vehkaniitty|
-Rajamännynahde|
 Terveyskeskus|24.7159068,60.2142884
-Paalukuja|
-Heiniemi|
-Porttitie|
-Aurikoniitty|
-Tähtimötie|
-Ymmersta|24.7106896,60.2013694
-Kalasääksenkuja|
-Rautiaisenkuja|
-Lintuparvenpuisto|
-Palomäenrinne|
-Veininkuja|
-Kahisevankuja|
-Tapionportti|
-Kalliopolku|
 Ratapolku|
-Puutarhurintie|
-Karaportti|
-Vohveli|24.7672568,60.2478853
-Viherlaaksonranta|
 Mäkitie|
-Hiidenportti|
 Hesburger Kauniainen Grani|24.73439,60.20999
-Louhoskuja|
-Kavallinmäki|
-Vanha Sveinsintie|
-Riihirinne|
-Lähderanta|
-Jahtimestarintie|
-Laaksolahdentie|
 Palloiluhalli|24.7184846,60.2163434
-Nauhakuja|
-Puistopiha|
-Hiirihaukankuja|
-Olkipolku|
-Kuninkaistentie|
-Karamalmens skola|24.7599316,60.2240661
-Palomäentie|
-Louhoskulma|
 Laaksokuja|
-Mankkaantie|
-Ukinpolku|
 Fasaaninpolku|
-Ritarintie|
-Kyyhkysmäki|
-Sinimäenrinne|
-Kappalaisentie|
-Smedsby skola|24.7433577,60.2001195
 Yhtiönkuja|
-Lansanportti|
 Richardinkuja|
 Petaksentie|
-Pakastiaisentie|
 Jollakuja|
-Mustarousku|
 Hovineuvoksettarenpolku|
-Taavinharju|
-Laaksolahden Urheilukenttä|24.7470392,60.2448518
-Riihitie|
-Karakaari|
 Mäntymäenkuja|
-Lansaportti|24.7650619,60.2158256
-Kilonkartano|24.7860959,60.2237655
-Alankokuja|
-Meiramikuja|
-Viinirinne|
 Bredankuja|
-Jääskeläntie|
-Vasaramäki|
-Taavilantie|
 Kauniaisten pujottelurinne|24.7032885,60.220037
-Kutojantie|
-Rautiaisenpolku|
-Kotipolku|
 Siestankuja|
-Tuokkostie|
 Niinimäki|
 Krouvikalliontie|
 Kandidaatintie|
-Humisevanportti|
 Elinanpolku|
-Vahveromäki|
-Oravamäki|24.7359203,60.2054169
-Snällbackankuja|
-Jupperinkuja|
-Haaparousku|
-Vanharaide|
-Pohtimenpolku|
-Kellarikuja|
-Koppelikuja|
-Lähderannantori|24.7395959,60.2414882
-Puistomäki|
-Ensimmäinen järvikuja|
-Neljäs huvilatie|
-Alberga golf [range]|24.8000337,60.2182482
-Orapihlajantie|
-Heiniemenpolku|
-Kilonkartanontie|
 Akatemiantie|
-Linnustaja|24.7063801,60.225496
-Porttiniityntie|
-Ryijytie|
 Alppikuja|
-Ravintola Lähderanta|24.7417401,60.239617
-Sinimäentie|
-Viherlaaksontie|
-Vehkarinne|
-Luuvankulma|

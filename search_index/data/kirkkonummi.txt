@@ -3,7 +3,6 @@ Hevoshaansilta|
 Kauppalanpolku|
 Tarutie|
 Koivuniementie|
-Siikajärventie|
 Juusjärventie|
 Pitäjäntuvanpolku|
 Seminaaripolku|
@@ -14,7 +13,6 @@ Peuramaantie|
 Harakantie|
 Hevosenkavio|
 Raaseporin käräjäoikeus/Kirkkonummen istuntosali|24.4392285,60.1223246
-Fiskarsinmäen luontopolku|
 Hanhilahdentie|
 Kanervamäentie|
 Kirnukallionpolku|
@@ -24,18 +22,17 @@ Stenkalvintie|
 Osmussaarentie|
 Bergkullantie|
 Tanskarlantie|
+Hagvikintie|
 Satutie|
 Puoshaantie|
 Kivilammentie|
 Tolsantie|
 Asentajantie|
-Siikajärven uimapaikka|24.5173113,60.2807359
 Sepänkylänkuja|
 Ingelsintie|
 Satamatie|
 Svartvikin uimaranta|24.4592516,60.1847402
 Västeråsintie|
-Vuohilammentie|
 Pulmutie|
 Haggbolentie|
 Sokeririnne|
@@ -47,11 +44,12 @@ Masalan sivuapteekki|24.5353883,60.1582228
 Rajakallio|
 Muorinpiha|
 Kantohaka|
+Rinnetie|
 Nissnikuntie|
+Joutsensalmi|
 Linturannantie|
 Lövuddintie|
 Ramsaynkuja|
-Siikajärvi|24.516712,60.2806526
 Winellintie|
 Kaarenpiha|
 Kalvholmintie|
@@ -62,7 +60,6 @@ Solvikintie|
 Vivastenintie|
 Kaksosvuorentie|
 Karlbergintie|
-Lakkasuontie|
 Koivurinteentie|
 Läntinen Bölentie|
 Lerbackantie|
@@ -72,7 +69,6 @@ Siikaranta|24.5003304,60.2791437
 Solbergintie|
 Kirkkotallintie|
 Axbodantie|
-Tunfallintie|
 Muonamiehenkuja|
 Paadistenkaari|
 Orvokkitie|
@@ -87,20 +83,19 @@ Kuninkaantie|
 Brudholmintie|
 Harju|
 Haagantie|
-Korpinkierros|
 Petäjärventie|
 Marjaraitti|
+Båtvikintie|
 Tolsanmäki|
 Sinipiiantie|
 Masantie|
+Suolampi|
 Lohansuonpolku|
 Peuramaa Golf|24.4648984,60.1027404
 Kirkkonummentie|
 Klobbsundintie|
-Nupurintie|
 Hommaksentie|
 Navalanpuisto|
-Kuninkaanlähde|
 Porkkalantie|
 Peltopolku|
 Gesterbyntie|
@@ -115,6 +110,7 @@ Turuntie|
 Mariefredintie|
 Hopeakuja|
 Tuomitie|
+Isonsuontie|
 Kvarngränden|
 Framnäsintie|
 Neidonpolku|
@@ -146,6 +142,7 @@ Pilvikuja|
 Kirkkonummi|24.4388778,60.1197039
 Rajakuja|
 Hummelvikintie|
+Suonsyrjäntie|
 Heparintie|
 Seurakunnantie|
 Kurkistonkuja|
@@ -156,7 +153,6 @@ Pelastustie|24.5638437,60.0519708
 Pilvimetsä|
 Oravatie|
 1. Apteekki|24.4433889,60.1211619
-Halujärventie|
 Impivaarankuja|
 Timmermossintie|
 Tallinmäki|
@@ -170,6 +166,7 @@ Puronsuunkuja|
 Puoshaanpolku|
 Kolmenkylänkaari|
 Metsähovinkuja|
+Takkumäentie|
 Henriksdalentie|
 Lemetintie|
 Jättiläisenkaari|
@@ -186,6 +183,7 @@ Itäinen Bölentie|
 Ankis|24.4587842,60.2224763
 Pilvipuro|
 Saarentie|
+Ylitalontie|
 Vileninkuja|
 Asematie|
 Rovastinpolku|
@@ -200,6 +198,7 @@ Keihäskuja|
 Omenaraitti|
 Siirappitie|
 Metsähovintie|
+Siltaranta|
 Puronsuuntie|
 Majvikintie|
 Luomanmäki|
@@ -211,7 +210,6 @@ Torsnäsintie|
 Näsentie|
 Dalkullantie|
 Impivaarantie|
-Halujärvenkuja|
 Ravalsintie|
 Majvik Kokous- ja Kongressihotelli|24.5524129,60.1657552
 Emännäntie|
@@ -248,7 +246,6 @@ Kanelikuja|
 Vanha Jorvaksentie|
 Volsintie|
 Hietapellontie|
-Soidinkorpi|
 Kisapolku|
 Pampartie|
 Makasiinitie|
@@ -256,12 +253,13 @@ Hirvitie|
 Hevoshaka|
 Sokeritehtaantie|
 Isännäntie|
+Harjutie|
 Gesterbynpolku|
 Sundsbergin luontopolku|
 Ekebergantie|
 Gränsnäsintie|
+Koivutie|
 Grandalantie|
-Naruportti|
 Masalan kirjasto|24.5310721,60.1541757
 Veikkolantie|
 Kurjenpolku|
@@ -270,9 +268,9 @@ Pilvipelto|
 Nybronpiha|
 Lumikinkuja|
 Isonniityntie|
+Mosabackantie|
 Morbackantie|
 Metsärinteentie|
-Råbackanraja|
 Lindalintie|
 Mutkankuja|
 Lövkullantie|
@@ -280,6 +278,7 @@ Nybackanranta|
 Bondarbyntie|
 Kaivokuja|
 Bistro O'Mat|24.4446612,60.1208885
+Ollaksentie|
 Leppäsuonkuja|
 Björkebergantie|
 Mattanrinne|
@@ -297,7 +296,6 @@ Purotie|
 Laitamaantie|
 Kappelintie|
 Testamenttitie|
-Kolmperäntie|
 Ruhnuntie|
 Länsituulenkuja|
 Tampajankannas|
@@ -333,15 +331,16 @@ Majbyntie|
 Leppäpurontie|
 Kolsarintie|
 Ristikalliontie|
+Stora Brändö|24.601253,60.044457
 Sisar Ellenintie|
 Lamminjärventie|
-Vanha Järvikyläntie|
 Autioniityntie|
 Kirkkonummen katukeittiö|24.4434135,60.124138
 Korkkullankallio|
 Kirkkonummen kirkko|24.4392985,60.1248441
 Lillvedsintie|
 Kuusalantie|
+Alitalontie|
 Yhdyskuja|
 Puoshaankuja|
 St1|24.4588604,60.2679887
@@ -365,7 +364,6 @@ Kolmirannantie|
 Pilviniitty|
 Storträskintie|
 Rajapolku|
-Soittilanrinne|
 Knuutinlaakso|
 Luostarinrinne|
 Rusthollinkuja|
@@ -386,12 +384,12 @@ Kaarenkuja|
 Elfvinginkuja|
 Mintun kulma|24.4389432,60.1221736
 Kurkistonpolku|
+Östermalmintie|
 Leinikkitie|
 Ervastintie|
 Lähdekuja|
 Hevosmäki|
 Jänistie|
-Soittilanmäki|
 Lustbackantie|
 Neidonkuja|
 Sundetin puistotie|
@@ -409,10 +407,7 @@ Brunnebergintie|
 Adantpolku|
 Rajanotkontie|
 Humalistonmäki|
-Kauristie|
-Soittilantie|
 Laajakallionkaari|
-Ouritie|
 Jorvaksenpuisto|
 Pakrintie|
 Kotieläintila|24.4446437,60.0746256
@@ -428,6 +423,7 @@ Luostarinportti|
 Kirkkonummen uimahalli|24.4467265,60.1280396
 Nissenpolku|
 Honkatie|
+Hiekkamäentie|
 Karhunkorva|
 Hopeahaka|
 Eskonmäentie|
@@ -437,9 +433,9 @@ Mäntytie|
 Kiseleffin puistotie|
 Jättiläisenrinne|
 Jorvaksenniitty|
-Rantavallintie|
 Pokrova|24.5058486,60.137152
 Tammitie|
+Ratatie|
 Kuuselantie|
 Herrlantie|
 Naruportintie|
@@ -467,6 +463,7 @@ Kirkkotie|
 Myllykyläntie|
 Nymaninkuja|
 Sandalinkuja|
+Sarfvikintie|
 Veräjätie|
 Sammalkallio|
 Kirkkonummen Plus Apteekki|24.4464473,60.1177608
@@ -490,6 +487,7 @@ Linlontie|
 Rajontie|
 Lehtikuusenkuja|
 Soidentaantie|
+Rönnskär lintutorni|24.3885591,59.9365703
 Puukontie|
 Saltfjärdenin lintutorni|24.4861411,60.0879746
 Kaksosmäki|
@@ -503,7 +501,6 @@ Susisuontie|
 Sarvirinne|
 Wiikintie|
 Heikkiläntie|
-Kotimäentie|
 Kylänraitti|
 Pranglintie|
 Satulinnantie|
@@ -529,6 +526,7 @@ New City chinese|24.4387698,60.1230808
 Malmströmintie|
 Vaeltajantie|
 Avokalliontie|
+Järvö|24.4849998,59.9594767
 Lamminpääntie|
 Luoman uimaranta|24.5134164,60.1773359
 Kirsikkakuja|
@@ -540,6 +538,7 @@ Jalavatie|
 Jeppaksentie|
 02400 Kirkkonummi|24.4404478,60.121578
 Hummelrödslanintie|
+Lammenpolku|
 Masalantie|
 Kirsikkatie|
 Broåkerintie|
@@ -557,12 +556,10 @@ Veklahdentie|
 Töpöhäntä|
 Storträsk|24.3398564,60.1912387
 Mankintie|
-Espoonlahden lintutorni|24.5708252,60.1762426
 Vuorelantie|
 Jyrkänpesäntie|
 Isonpellonpolku|
 Lövnäsintie|
-Kolmoislammenranta|
 Samkullantie|
 Knuutintie|
 Kotikuja|
@@ -573,9 +570,11 @@ Mäntypolku|
 Pedersinpolku|
 Jussinniitty|
 Vanha Heikkiläntie|
+Ratapolku|
 Omenakuja|
 Haapapuronrinne|
 Norrbackantie|
+Mäkitie|
 Lehtikuusentie|
 Hvittotpintie|
 Virkatie|
@@ -592,6 +591,7 @@ Morsfjärdintie|
 Klinthallantie|
 Laaksokuja|
 Finnbyntie|
+Sarfvikinkuja|
 Kotiniityntie|
 Langnäsintie|
 Vetehisenpolku|
@@ -606,15 +606,12 @@ Haapapurontie|
 Tumppi|
 Nissnikunraitti|
 Pääskyrinne|
-Siikaniemi|
 Riihitie|
 Allastie|
-Naruportinkuja|
 Järsöntie|
 Omenapolku|
 Buraksentie|
 Piisamipolku|
-Loojärventie|
 Lohansuontie|
 Kehäniittty|
 Pizza Service|24.4385213,60.1233199
@@ -631,6 +628,7 @@ Mäntykuja|
 Heikkilänpolku|
 Kapteeninpolku|
 Länsipiha|
+Talvitie|
 Fariinitie|
 Kotipolku|
 Lohantie|
@@ -642,8 +640,8 @@ Oikkalantie|
 Sammalnotko|
 Kelokuja|
 Piennarkuja|
-Kolmoislammentie|
 Kirkkonummen pääkirjasto|24.4381101,60.1253759
+Törnäsintie|
 Bronrinne|
 Onnenpolku|
 Koholmintie|
