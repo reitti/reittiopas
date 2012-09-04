@@ -27,7 +27,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
 
     selectLeg: (evt) =>
       @select()
-      Reitti.Event.trigger 'leg:change', @route.legs[$(evt.target).data('leg')]
+      Reitti.Event.trigger 'leg:change', @route.legs[$(evt.target).closest('[data-leg]').data('leg')]
       false
 
     _lineCode: () ->

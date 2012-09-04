@@ -3,8 +3,8 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
   class MapRouteView
     
     constructor: (@route, @map) ->
-      @legViews = (new MapRouteLegView(leg, @map) for leg in route.legs)
-        
+      @legViews = (new MapRouteLegView(leg, @map) for leg in @route.legs)
+
     remove: ->
       legView.remove() for legView in @legViews
       this
