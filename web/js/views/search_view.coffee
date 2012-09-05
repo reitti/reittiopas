@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'views/search_input_view', 'utils'], ($, _, Backbone, SearchInputView, Utils) ->
+define ['jquery', 'underscore', 'backbone', 'models/route', 'views/search_input_view', 'utils'], ($, _, Backbone, Route, SearchInputView, Utils) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
@@ -23,15 +23,14 @@ define ['jquery', 'underscore', 'backbone', 'views/search_input_view', 'utils'],
 
     searchRoute: (event) ->
       event.preventDefault()
-      params = $.param { from: @from.val(), to: @to.val() }
+
+      Route.find @from.val(), @to.val(), (routes) ->
+        Reitti.Event.trigger 'routes:change', routes
 
       if Utils.isLocalStorageEnabled()
         localStorage.from = @from.val()
         localStorage.to = @to.val()
 
-      # TODO: Move this logic somewhere else
-      $.getJSON "/routes?#{params}", (data) ->
-        Reitti.Event.trigger 'routes:change', data
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
