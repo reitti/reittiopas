@@ -8,6 +8,7 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
           _.defer @afterTypeahead
           item
         minLength: 3
+      @$el.on 'focus', => @$el.select()
             
     getTypeaheadAddresses: (query, callback) =>
       params = $.param { query: query }
