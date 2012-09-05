@@ -48,13 +48,12 @@ html, body {
     text-align: center;
 }
 
+.full-width-fix {
+    padding: 0 12px;
+}
+
 input.input-full {
     width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-bottom: 12px;
-    padding-top: 12px;
 }
 
 #routes {
