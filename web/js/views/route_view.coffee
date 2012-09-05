@@ -1,14 +1,14 @@
-define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'], ($, _, Backbone, Utils, template) ->
+define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', 'hbs!template/route_view'], ($, _, Backbone, Utils, RouteGraphView, template) ->
   class RouteView extends Backbone.View
 
     tagName: 'li'
     className: 'route'
 
     events:
-      "click ol li": "selectLeg"
       "click a": "select"
 
     initialize: (@route) ->
+      @graphView = new RouteGraphView(@route)
       Reitti.Event.on 'route:change', @onRouteChanged
 
     dispose: ->
@@ -18,16 +18,11 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
       @$el.html template
         depTime: Utils.formatTime(@route.departureTime())
         arrTime: Utils.formatTime(@route.arrivalTime())
-        legs: @_legData()
+      @graphView.setElement(@$el.find('.leg-icons')).render()
       this
 
     select: =>
       Reitti.Event.trigger 'route:change', @route
-      false
-
-    selectLeg: (evt) =>
-      @select()
-      Reitti.Event.trigger 'leg:change', @route.getLeg($(evt.target).closest('[data-leg]').data('leg'))
       false
 
     _lineCode: () ->
@@ -36,10 +31,3 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
     onRouteChanged: (route) =>
       @$el.toggleClass 'selected', route is @route
 
-    _legData: () ->
-      for leg in @route.get('legs')
-        {
-        type: leg.get('type')
-        indicator: if leg.isWalk() then Utils.formatDistance(leg.get('length')) else leg.lineName()
-        color: Utils.transportColors[leg.get('type')]
-        }
