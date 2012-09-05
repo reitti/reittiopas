@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'utils'], ($, _, Backbone, Utils) ->
+define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone, RouteLeg) ->
 
   class Route extends Backbone.Model
 
@@ -7,8 +7,13 @@ define ['jquery', 'underscore', 'backbone', 'utils'], ($, _, Backbone, Utils) ->
       $.getJSON "/routes?#{params}", (data) ->
         callback(new Route(routeData[0]) for routeData in data)
 
+    initialize: (a) ->
+      @set 'legs', (new RouteLeg(legData) for legData in a.legs)
+
     departureTime: ->
-      Utils.parseDateTime _.first(_.first(@get('legs')).locs).arrTime
+      _.first(@get('legs')).firstArrivalTime()
 
     arrivalTime: () ->
-      Utils.parseDateTime _.last(_.last(@get('legs')).locs).arrTime
+      _.last(@get('legs')).lastArrivalTime()
+
+    getLeg: (idx) -> @get('legs')[idx]

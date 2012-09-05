@@ -32,16 +32,6 @@ define ->
     @formatTime: (d) ->
       minZero = if d.getMinutes() < 10 then '0' else ''
       "#{d.getHours()}:#{minZero}#{d.getMinutes()}"
-
-    @parseLineCode: (type, code) ->
-      switch type
-        when 'walk', '7' then '&nbsp;'            # Walking, ferry -> no code
-        when '6' then 'M'                         # Metro -> 'M'
-        when '12' then code.substring(4, 5)       # Commuter trains -> Character only
-        else                                      # Anything else -> number + possible character
-          n = parseInt(code.substring(1, 4), 10)
-          chr = code.substring(4, 5)
-          "#{n}#{chr}"
           
     # From a numeric distance in meters to a formatted value
     @formatDistance: (d) ->

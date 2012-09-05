@@ -23,15 +23,15 @@ define ['underscore', 'utils'], (_, Utils) ->
     render: () ->
       @line = new google.maps.Polyline _.extend({
           map: @map
-          path: (new google.maps.LatLng point.y, point.x for point in @leg.shape)
+          path: (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
           strokeWeight: 4
-          strokeColor: Utils.transportColors[@leg.type]
-        }, legStyles[@leg.type])
+          strokeColor: Utils.transportColors[@leg.get('type')]
+        }, legStyles[@leg.get('type')])
       google.maps.event.addListener @line, 'click', @onLineClicked
       this
       
     onLineClicked: () =>
-      Reitti.Event.trigger 'leg:select', @leg
+      Reitti.Event.trigger 'leg:change', @leg
 
     getBounds: () ->
       bounds = new google.maps.LatLngBounds()

@@ -27,7 +27,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
 
     selectLeg: (evt) =>
       @select()
-      Reitti.Event.trigger 'leg:change', @route.legs[$(evt.target).closest('[data-leg]').data('leg')]
+      Reitti.Event.trigger 'leg:change', @route.getLeg($(evt.target).closest('[data-leg]').data('leg'))
       false
 
     _lineCode: () ->
@@ -40,6 +40,6 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
       for leg in @route.get('legs')
         {
         type: leg.type
-        indicator: if leg.type is 'walk' then Utils.formatDistance(leg.length) else Utils.parseLineCode(leg.type, leg.code)
-        color: Utils.transportColors[leg.type]
+        indicator: if leg.isWalk() then Utils.formatDistance(leg.get('length')) else leg.lineName()
+        color: Utils.transportColors[leg.get('type')]
         }
