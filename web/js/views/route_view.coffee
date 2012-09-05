@@ -39,7 +39,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
     _legData: () ->
       for leg in @route.get('legs')
         {
-        type: leg.type
+        type: leg.get('type')
         indicator: if leg.isWalk() then Utils.formatDistance(leg.get('length')) else leg.lineName()
         color: Utils.transportColors[leg.get('type')]
         }
