@@ -8,8 +8,8 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'views/search_input_
 
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
-
       @from = new SearchInputView(el: @$el.find('#from'))
+
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
           @to.focus()

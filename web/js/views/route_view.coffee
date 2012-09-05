@@ -16,8 +16,8 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
 
     render: ->
       @$el.html template
-        depTime: Utils.formatTime @_depTime()
-        arrTime: Utils.formatTime @_arrTime()
+        depTime: Utils.formatTime(@route.departureTime())
+        arrTime: Utils.formatTime(@route.arrivalTime())
         legs: @_legData()
       this
 
@@ -36,14 +36,8 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'hbs!template/route_view'],
     onRouteChanged: (route) =>
       @$el.toggleClass 'selected', route is @route
 
-    _depTime: () ->
-      Utils.parseDateTime _.first(_.first(@route.legs).locs).arrTime
-
-    _arrTime: () ->
-      Utils.parseDateTime _.last(_.last(@route.legs).locs).arrTime
-
     _legData: () ->
-      for leg in @route.legs
+      for leg in @route.get('legs')
         {
         type: leg.type
         indicator: if leg.type is 'walk' then Utils.formatDistance(leg.length) else Utils.parseLineCode(leg.type, leg.code)
