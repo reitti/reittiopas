@@ -24,13 +24,12 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'views/search_input_
     searchRoute: (event) ->
       event.preventDefault()
 
-      Route.find @from.val(), @to.val(), (routes) ->
+      Route.find @from.val(), @to.val(), @transportTypes(), (routes) ->
         Reitti.Event.trigger 'routes:change', routes
 
-      if Utils.isLocalStorageEnabled()
-        localStorage.from = @from.val()
-        localStorage.to = @to.val()
-
+    transportTypes: () ->
+      _.filter ['bus', 'tram', 'metro', 'train', 'ferry'], (vehicle) =>
+        @$el.find('#' + vehicle).hasClass('active')
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
