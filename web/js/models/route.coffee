@@ -2,13 +2,13 @@ define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone
 
   class Route extends Backbone.Model
 
-    @find: (from, to, callback) ->
-      params = $.param {from: from, to: to}
+    @find: (from, to, transportTypes = 'all', callback) ->
+      params = $.param {from: from, to: to, transport_types: transportTypes.join('|')}
       $.getJSON "/routes?#{params}", (data) ->
         callback(new Route(routeData[0]) for routeData in data)
 
-    initialize: (a) ->
-      @set 'legs', (new RouteLeg(legData) for legData in a.legs)
+    initialize: (routeData) ->
+      @set 'legs', (new RouteLeg(legData) for legData in routeData.legs)
 
     departureTime: ->
       _.first(@get('legs')).firstArrivalTime()

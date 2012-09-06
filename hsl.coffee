@@ -38,5 +38,5 @@ eb.registerHandler 'reitti.hsl.reverseGeocode', (params, replier) ->
       replier null
 
 eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
-  hslRequest 'route', {from: params.from, to: params.to, detail: 'full', show: 5}, (res, body) ->
+  hslRequest 'route', {from: params.from, to: params.to, detail: 'full', show: 5, transport_types: params.transport_types or 'all'}, (res, body) ->
     replier {body: body.getString(0, body.length())}

@@ -27,9 +27,15 @@
     </div>
     <div id="content" class="row-fluid">
       <div id="controls" class="span4 no-margin">
-        <div class="page-header"><h3 class="centered">Minne mennään?</h3></div>
         <div id="search">
           <form class="form clearfix">
+            <div class="control-group centered" data-toggle="buttons-checkbox" id="transport-types">
+              <button type="button" id="bus" class="btn btn-small active"><i class="icon-bus" alt="Bussi"></i></button>
+              <button type="button" id="tram" class="btn btn-small active"><i class="icon-tram"></i></button>
+              <button type="button" id="metro" class="btn btn-small active"><i class="icon-metro"></i></button>
+              <button type="button" id="train" class="btn btn-small active"><i class="icon-train"></i></button>
+              <button type="button" id="ferry" class="btn btn-small active"><i class="icon-ferry"></i></button>
+            </div>
             <div class="control-group full-width-fix">
               <label for="from" class="hide">Mistä…</label>
               <input type="text" class="input-full" name="from" id="from" placeholder="Mistä…" autocomplete="off"
@@ -41,10 +47,10 @@
                      autocorrect="off">
             </div>
             <div class="control-group">
-              <button type="submit" class="btn btn-primary pull-right" data-loading-text="Ladataan reitit"><i
-                      class="icon-search icon-white"></i>&nbsp;Hae reitit
+              <button type="submit" class="btn btn-primary pull-right" data-loading-text="Ladataan…">
+                <i class="icon-search icon-white"></i>&nbsp;Hae reitit
+              </button>
             </div>
-            </button>
           </form>
         </div>
         <ul id="routes" class="nav nav-list">

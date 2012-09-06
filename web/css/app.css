@@ -39,6 +39,10 @@ body {
     max-width: none;
 }
 
+#transport-types {
+    margin: 1.5em 0;
+}
+
 html, body {
     height: 100%;
     min-height: 100%;
@@ -49,7 +53,7 @@ html, body {
 }
 
 .full-width-fix {
-    padding: 0 12px;
+    padding-right: 12px;
 }
 
 input.input-full {
@@ -133,4 +137,44 @@ li.route > a {
 
 .leg-icon-12 {
     background-position: 34px 0;
+}
+
+i.icon-bus {
+    background-image: url('../img/vehicles_tiny.png');
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+i.icon-tram {
+    background-image: url('../img/vehicles_tiny.png');
+    background-position: -20px -20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+i.icon-metro {
+    background-image: url('../img/vehicles_tiny.png');
+    background-position: 0 -20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+i.icon-train {
+    background-image: url('../img/vehicles_tiny.png');
+    background-position: -20px 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+i.icon-ferry {
+    background-image: url('../img/vehicles_tiny.png');
+    background-position: 0 -40px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
