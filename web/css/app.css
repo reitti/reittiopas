@@ -133,6 +133,10 @@ li.route .attribute dd {
     margin: 5px 0 0 0;
     font-size: 0.7em;
     color: black;
+    min-width: 20px;
+}
+.route-graph li.leg-walk {
+    min-width: 10px;
 }
 
 .route-graph li .leg-bar {
