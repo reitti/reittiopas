@@ -197,6 +197,7 @@ li.route .attribute dd {
     background-image: url('../img/walk.png');
     background-repeat: no-repeat;
     background-position: center;
+    width: auto;
 }
 
 i.icon-bus {
