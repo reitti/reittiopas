@@ -133,19 +133,11 @@ li.route > a {
     background-position: -2px -2px;
 }
 
-
 .leg-2 .leg-bar {
     background-color: #1a9b63;
 }
 .leg-2 .leg-icon {
     background-position: 18px -22px;
-}
-
-.leg-walk .leg-bar {
-    background-color: rgb(149,176,255);
-}
-.leg-walk .leg-icon {
-    background-position: 18px 18px;
 }
 
 .leg-6 .leg-bar {
@@ -167,6 +159,15 @@ li.route > a {
 }
 .leg-12 .leg-icon {
     background-position: 18px -2px;
+}
+
+.leg-walk .leg-bar {
+    background-color: rgb(149,176,255);
+}
+.leg-icons li.leg-walk .leg-icon {
+    background-image: url('../img/walk.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 i.icon-bus {
