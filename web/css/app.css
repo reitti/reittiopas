@@ -91,6 +91,15 @@ li.route dl {
     margin: 0;
 }
 
+li.route .departure-time {
+    float: left;
+    text-align: left;
+}
+li.route .arrive-time {
+    float: right;
+    text-align: right;
+}
+
 li.route .time dt, li.route .attribute dt {
     font-size: 0.8em;
     font-weight: normal;
@@ -105,23 +114,15 @@ li.route .time .secondary {
     display: inline;
 }
 
-li.route .time {
-    float: left;
-    text-align: left;
-}
-li.route .arrive-time {
-    margin-left: 30px;
-}
-
 li.route .attribute {
-    float: right;
-    text-align: left;
-    margin-left: 30px;
+    text-align: center;
+}
+li.route .attribute dd, li.route .attribute dt {
+    display: inline;
 }
 li.route .attribute dd {
-    margin: 0;
+    font-size: 0.8em;
 }
-
 
 .route-graph {
     clear: both;
