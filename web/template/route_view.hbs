@@ -1,14 +1,27 @@
 <a href="#">
-  <div class="row-fluid">
-    <div class="span2">
-      <h4 class="departure-time">{{depTime}}</h4>
-    </div>
-    <div class="span8">
-      <ol class="leg-icons unstyled centered">
-      </ol>
-    </div>
-    <div class="span2">
-      <h4 class="arrive-time">{{arrTime}}</h4>
-    </div>
-  </div>
+  <dl class="time departure-time">
+    <dt>Lähtö</dt>
+    <dd>{{depTime}}</dd>
+    {{#if boardingTime}}
+      <dt class="secondary">{{boardingType}}</dt>
+      <dd class="secondary">{{boardingTime}}</dd>
+    {{/if}}
+  </dl>
+  <dl class="time arrive-time">
+    <dt>Perillä</dt>
+    <dd>{{arrTime}}</dd>
+  </dl>
+  <dl class="attribute">
+    <dt>Kävelyä</dt>
+    <dd>{{totalWalkingDistance}}</dd>
+  </dl>
+  <dl class="attribute">
+    <dt>Kesto</dt>
+    <dd>{{totalDuration}}</dd>
+  </dl>
+
+  <ol class="route-graph unstyled centered">
+  </ol>
+
+  <div class="clear"></div>
 </a>

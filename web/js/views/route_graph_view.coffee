@@ -21,7 +21,7 @@ define ['backbone', 'utils', 'hbs!template/route_graph'], (Backbone, Utils, temp
       for leg,idx in @route.get('legs')
         {
         type: leg.get('type')
-        indicator: if leg.isWalk() then Utils.formatDistance(leg.get('length')) else leg.lineName()
+        indicator: if leg.isWalk() then "" else leg.lineName()
         color: Utils.transportColors[leg.get('type')]
         percentage: @route.getLegDurationPercentage(idx)
         last: if idx is @route.getLegCount() - 1 then 'last' else ''

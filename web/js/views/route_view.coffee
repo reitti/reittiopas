@@ -18,7 +18,11 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       @$el.html template
         depTime: Utils.formatTime(@route.departureTime())
         arrTime: Utils.formatTime(@route.arrivalTime())
-      @graphView.setElement(@$el.find('.leg-icons')).render()
+        boardingType: @_boardingLabel(@route.getFirstTransportType())
+        boardingTime: Utils.formatTime(@route.boardingTime())
+        totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
+        totalDuration: Utils.formatDuration(@route.getTotalDuration())
+      @graphView.setElement(@$el.find('.route-graph')).render()
       this
 
     select: =>
@@ -27,6 +31,15 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     _lineCode: () ->
       Utils.parseLineCode _.first()
+
+    # TODO: This should be somewhere in i18n
+    _boardingLabel: (type) ->
+      switch type
+        when '2' then "Ratikkaan"
+        when '6' then "Metroon"
+        when '7' then "Lauttaan"
+        when '12' then "Junaan"
+        else "Bussiin"
 
     onRouteChanged: (route) =>
       @$el.toggleClass 'selected', route is @route

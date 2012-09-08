@@ -30,6 +30,7 @@ define ->
       
     # From Date to H:mm
     @formatTime: (d) ->
+      return null unless d?
       minZero = if d.getMinutes() < 10 then '0' else ''
       "#{d.getHours()}:#{minZero}#{d.getMinutes()}"
           
@@ -43,6 +44,17 @@ define ->
       else
         km = (d / 1000).toPrecision(3).replace '.', ','
         "#{km}km"  
+
+    @formatDuration: (d) ->
+      d = d / 60
+      hours = Math.floor d / 60
+      mins = Math.round d % 60
+      if hours > 0 and mins > 0
+        "#{hours}h #{mins}min"
+      else if hours > 0
+        "#{hours}h"
+      else
+        "#{mins}min"
 
     # Checks if the given geoposition is within the bounds supported
     # by this application (Greater Helsinki Area)

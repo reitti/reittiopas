@@ -16,6 +16,15 @@ define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone
     arrivalTime: () ->
       _.last(@get('legs')).lastArrivalTime()
 
+    boardingTime: ->
+      @getFirstNonWalkingLeg()?.firstArrivalTime()
+
+    getFirstTransportType: ->
+      @getFirstNonWalkingLeg()?.get('type')
+
+    getFirstNonWalkingLeg: ->
+      _.find @get('legs'), ((leg) -> !leg.isWalk())
+
     getLeg: (idx) -> @get('legs')[idx]
 
     getLegDurationPercentage: (idx) ->
@@ -24,6 +33,12 @@ define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone
     # Total duration of legs is _not_ the same as the duration attribute
     getTotalDuration: () ->
       @_totalDuration ?= _.reduce @getLegDurations(), ((sum, dur) -> sum + dur), 0
+
+    getTotalWalkingDistance: () ->
+      _.reduce @getWalkLegs(), ((sum, leg) -> sum + leg.get('length')), 0
+
+    getWalkLegs: () ->
+      _.select @get('legs'), ((leg) -> leg.isWalk())
 
     getLegDurations: () ->
       leg.get('duration') for leg in @get('legs')

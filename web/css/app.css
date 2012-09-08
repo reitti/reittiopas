@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
 #content {
     position: absolute;
     top: 42px;
@@ -83,43 +87,63 @@ li.route > a {
     border: 1px solid #C5C5C5;
 }
 
-#routes li .times {
+li.route dl {
     margin: 0;
 }
 
-.departure-time, .arrive-time {
-    margin: 20.5px 0;
+li.route .time dt, li.route .attribute dt {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: black;
+}
+li.route .time dd {
+    margin: 0;
+    font-size: 2.0em;
+}
+li.route .time .secondary {
+    font-size: 0.8em;
+    display: inline;
 }
 
-.departure-time {
+li.route .time {
+    float: left;
     text-align: left;
 }
-
-.arrive-time {
-    text-align: right;
+li.route .arrive-time {
+    margin-left: 30px;
 }
 
-.leg-icons {
-    margin: auto;
+li.route .attribute {
+    float: right;
+    text-align: left;
+    margin-left: 30px;
+}
+li.route .attribute dd {
+    margin: 0;
 }
 
-.leg-icons li {
+
+.route-graph {
+    clear: both;
+}
+
+.route-graph li {
     float: left;
-    margin: 13.3px 0 0 0;
+    margin: 5px 0 0 0;
     font-size: 0.7em;
     color: black;
 }
 
-.leg-icons li .leg-bar {
+.route-graph li .leg-bar {
     height: 20px;
     padding: 2px;
     border-right: 1px solid #eee;
 }
-.leg-icons li.last .leg-bar {
+.route-graph  li.last .leg-bar {
     border-width: 0;
 }
 
-.leg-icons li .leg-icon {
+.route-graph  li .leg-icon {
     background-image: url('../img/vehicles_tiny.png');
     width: 16px;
     height: 16px;
@@ -168,7 +192,7 @@ li.route > a {
 .leg-walk .leg-bar {
     background-color: #1e74fc;
 }
-.leg-icons li.leg-walk .leg-icon {
+.route-graph  li.leg-walk .leg-icon {
     background-image: url('../img/walk.png');
     background-repeat: no-repeat;
     background-position: center;
