@@ -19,3 +19,4 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
           "#{n}#{chr}"
 
     isWalk: () -> @get('type') is 'walk'
+    
