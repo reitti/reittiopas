@@ -162,7 +162,7 @@ li.route > a {
 }
 
 .leg-walk .leg-bar {
-    background-color: rgb(149,176,255);
+    background-color: #1e74fc;
 }
 .leg-icons li.leg-walk .leg-icon {
     background-image: url('../img/walk.png');
