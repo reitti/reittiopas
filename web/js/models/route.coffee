@@ -27,3 +27,6 @@ define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone
 
     getLegDurations: () ->
       leg.get('duration') for leg in @get('legs')
+
+    getLegCount: () ->
+      @get('legs').length

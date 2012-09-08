@@ -113,6 +113,10 @@ li.route > a {
 .leg-icons li .leg-bar {
     height: 20px;
     padding: 2px;
+    border-right: 1px solid #eee;
+}
+.leg-icons li.last .leg-bar {
+    border-width: 0;
 }
 
 .leg-icons li .leg-icon {
