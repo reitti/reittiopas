@@ -1,6 +1,8 @@
 {{#each_with_index legs}}
-  <li data-leg="{{index}}">
-    <span class="leg-icon leg-icon-{{type}}" href="#"></span>
+  <li data-leg="{{index}}" class="leg-{{type}}" style="width: {{percentage}}%;">
+    <div class="leg-bar">
+      <div class="leg-icon"></div>
+    </div>
     <span>{{indicator}}</span>
   </li>
 {{/each_with_index}}

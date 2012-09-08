@@ -17,3 +17,13 @@ define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone
       _.last(@get('legs')).lastArrivalTime()
 
     getLeg: (idx) -> @get('legs')[idx]
+
+    getLegDurationPercentage: (idx) ->
+      Math.floor @getLeg(idx).get('duration') * 100 / @getTotalDuration()
+
+    # Total duration of legs is _not_ the same as the duration attribute
+    getTotalDuration: () ->
+      @_totalDuration ?= _.reduce @getLegDurations(), ((sum, dur) -> sum + dur), 0
+
+    getLegDurations: () ->
+      leg.get('duration') for leg in @get('legs')

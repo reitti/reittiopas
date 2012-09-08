@@ -104,39 +104,61 @@ li.route > a {
 }
 
 .leg-icons li {
-    display: inline-block;
+    float: left;
     margin: 13.3px 0 0 0;
-    font-size: 10px;
-    font-family: arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-size: 0.7em;
     color: black;
 }
 
+.leg-icons li .leg-bar {
+    height: 20px;
+}
+
 .leg-icons li .leg-icon {
-    display: block;
-    background-image: url('../img/vehicles_small.png');
-    width: 34px;
-    height: 34px;
+    background-image: url('../img/vehicles_tiny.png');
+    width: 20px;
+    height: 20px;
+    margin: 0px auto;
 }
 
-.leg-icon-2 {
-    background-position: 34px -34px;
+.leg-1 .leg-bar, .leg-3 .leg-bar, .leg-4 .leg-bar, .leg-5 .leg-bar, .leg-21 .leg-bar,
+.leg-23 .leg-bar, .leg-24 .leg-bar, .leg-25 .leg-bar, .leg-36 .leg-bar, .leg-39 .leg-bar {
+    background-color: #1b76bc;
 }
 
-.leg-icon-walk {
-    background-position: 34px 34px;
+.leg-2 .leg-bar {
+    background-color: #1a9b63;
+}
+.leg-2 .leg-icon {
+    background-position: 20px -20px;
 }
 
-.leg-icon-6 {
-    background-position: 0 -34px;
+.leg-walk .leg-bar {
+    background-color: rgb(149,176,255);
+}
+.leg-walk .leg-icon {
+    background-position: 20px 20px;
 }
 
-.leg-icon-7 {
-    background-position: 0 34px;
+.leg-6 .leg-bar {
+    background-color: #ed6227;
+}
+.leg-6 .leg-icon {
+    background-position: 0 -20px;
 }
 
-.leg-icon-12 {
-    background-position: 34px 0;
+.leg-7 .leg-bar {
+    background-color: #17b9e8;
+}
+.leg-7 .leg-icon {
+    background-position: 0 20px;
+}
+
+.leg-12 .leg-bar {
+    background-color: #3cac40;
+}
+.leg-12 .leg-icon {
+    background-position: 20px 0;
 }
 
 i.icon-bus {

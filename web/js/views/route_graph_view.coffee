@@ -12,14 +12,16 @@ define ['backbone', 'utils', 'hbs!template/route_graph'], (Backbone, Utils, temp
       this
 
     selectLeg: (evt) =>
+      legIndex = $(evt.target).closest('[data-leg]').data('leg')
       Reitti.Event.trigger 'route:change', @route
-      Reitti.Event.trigger 'leg:change', @route.getLeg($(evt.target).closest('[data-leg]').data('leg'))
+      Reitti.Event.trigger 'leg:change', @route.getLeg(legIndex)
       false
 
     _legData: () ->
-      for leg in @route.get('legs')
+      for leg,idx in @route.get('legs')
         {
         type: leg.get('type')
         indicator: if leg.isWalk() then Utils.formatDistance(leg.get('length')) else leg.lineName()
         color: Utils.transportColors[leg.get('type')]
+        percentage: @route.getLegDurationPercentage(idx)
         }
