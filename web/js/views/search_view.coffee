@@ -2,11 +2,11 @@ define [
   'jquery'
   'underscore'
   'backbone'
-  'models/route'
+  'models/routes'
   'views/search_input_view'
   'utils'
   'timepicker'
-], ($, _, Backbone, Route, SearchInputView, Utils) ->
+], ($, _, Backbone, Routes, SearchInputView, Utils) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
@@ -35,7 +35,7 @@ define [
       event.preventDefault()
       @$el.find('.btn-primary').button('loading')
 
-      Route.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), (routes) =>
+      Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), (routes) =>
         @$el.find('.btn-primary').button('reset')
         Reitti.Event.trigger 'routes:change', routes
 

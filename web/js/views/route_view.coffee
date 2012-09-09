@@ -7,8 +7,9 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
     events:
       "click a": "select"
 
-    initialize: (@route) ->
-      @graphView = new RouteGraphView(@route)
+    initialize: (routes: routes, index: index) ->
+      @route = routes.getRoute(index)
+      @graphView = new RouteGraphView(routes: routes, index: index)
       Reitti.Event.on 'route:change', @onRouteChanged
 
     dispose: ->
@@ -16,12 +17,12 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     render: ->
       @$el.html template
-        depTime: Utils.formatTime(@route.departureTime())
-        arrTime: Utils.formatTime(@route.arrivalTime())
+        depTime: Utils.formatTime(@route.getDepartureTime())
+        arrTime: Utils.formatTime(@route.getArrivalTime())
         boardingType: @_boardingLabel(@route.getFirstTransportType())
         boardingTime: Utils.formatTime(@route.boardingTime())
         totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
-        totalDuration: Utils.formatDuration(@route.getTotalDuration())
+        totalDuration: Utils.formatDuration(@route.get('duration'))
       @graphView.setElement(@$el.find('.route-graph')).render()
       this
 

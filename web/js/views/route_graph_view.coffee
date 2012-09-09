@@ -5,10 +5,15 @@ define ['backbone', 'utils', 'hbs!template/route_graph'], (Backbone, Utils, temp
     events:
       'click li': 'selectLeg'
 
-    initialize: (@route) ->
+    initialize: (routes: routes, index: index) ->
+      @routes = routes
+      @index = index
+      @route = routes.getRoute(@index)
 
     render: ->
-      @$el.html template(legs: @_legData())
+      @$el.html template
+        legs: @_legData()
+        percentageBeforeDeparture: @routes.getDurationPercentageBeforeDeparture(@index)
       this
 
     selectLeg: (evt) =>
@@ -18,11 +23,13 @@ define ['backbone', 'utils', 'hbs!template/route_graph'], (Backbone, Utils, temp
       false
 
     _legData: () ->
-      for leg,idx in @route.get('legs')
+      for leg,legIdx in @route.get('legs')
+        percentage = @routes.getLegDurationPercentage(@index, legIdx)
         {
         type: leg.get('type')
         indicator: if leg.isWalk() then "" else leg.lineName()
         color: Utils.transportColors[leg.get('type')]
-        percentage: @route.getLegDurationPercentage(idx)
-        last: if idx is @route.getLegCount() - 1 then 'last' else ''
+        percentage: percentage
+        iconVisible: percentage > 4
+        last: if legIdx is @route.getLegCount() - 1 then 'last' else ''
         }
