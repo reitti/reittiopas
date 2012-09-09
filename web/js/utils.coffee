@@ -59,8 +59,9 @@ define ->
     @nextQuarterOfHour: (d) ->
       new Date(new Date().setMinutes(Math.floor((d.getMinutes() + 14) / 15) * 15))
 
+    # From a number (of seconds) to a formatted value
     @formatDuration: (d) ->
-      d = d / 60
+      d = d / 60 # Seconds to minutes
       hours = Math.floor d / 60
       mins = Math.round d % 60
       if hours > 0 and mins > 0
