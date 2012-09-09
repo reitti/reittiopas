@@ -1,5 +1,6 @@
 @import url("lib/bootstrap.css");
 @import url("lib/bootstrap-responsive.css");
+@import url("lib/timePicker.css");
 
 body {
     position: relative;
@@ -22,6 +23,22 @@ body {
     position: absolute;
     top: 42px;
     bottom: 0;
+}
+
+#time-settings {
+    margin-bottom: 18px;
+}
+
+#time-settings > span > a, #time-settings select {
+    margin-right: 1em !important;
+}
+
+#time {
+    width: 48px;
+}
+
+#time-type {
+    width: 15ex;
 }
 
 #navbar-wrapper {
@@ -204,42 +221,34 @@ li.route .attribute dd {
     width: auto;
 }
 
-i.icon-bus {
+.transport-icon {
     background-image: url('../img/vehicles_tiny.png');
-    background-position: 0 0;
     width: 20px;
     height: 20px;
     line-height: 20px;
+}
+
+i.icon-bus {
+    .transport-icon;
+    background-position: 0 0;
 }
 
 i.icon-tram {
-    background-image: url('../img/vehicles_tiny.png');
+    .transport-icon;
     background-position: -20px -20px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
 }
 
 i.icon-metro {
-    background-image: url('../img/vehicles_tiny.png');
+    .transport-icon;
     background-position: 0 -20px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
 }
 
 i.icon-train {
-    background-image: url('../img/vehicles_tiny.png');
+    .transport-icon;
     background-position: -20px 0;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
 }
 
 i.icon-ferry {
-    background-image: url('../img/vehicles_tiny.png');
+    .transport-icon;
     background-position: 0 -40px;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
 }
