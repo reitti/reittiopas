@@ -28,10 +28,6 @@ define [
         @populateFromBox position, =>
           @to.focus()
 
-      if Utils.isLocalStorageEnabled()
-        @from.val localStorage.from unless localStorage.from?
-        @to.val localStorage.to
-
     render: ->
       @from.focus()
 
