@@ -43,7 +43,10 @@ define ->
         "#{km}km"
       else
         km = (d / 1000).toPrecision(3).replace '.', ','
-        "#{km}km"  
+        "#{km}km"
+
+    @nextQuarterOfHour: (d) ->
+      new Date(new Date().setMinutes(Math.floor((d.getMinutes() + 14) / 15) * 15))
 
     @formatDuration: (d) ->
       d = d / 60

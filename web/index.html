@@ -46,6 +46,25 @@
               <input type="text" class="input-full" name="to" id="to" placeholder="Minne…" autocomplete="off"
                      autocorrect="off">
             </div>
+            <div class="controls controls-row" id="time-settings">
+              <span class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Tänään
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Tänään</a></li>
+                  <li><a href="#">Huomenna</a></li>
+                  <li><a href="#">Valitse päivämäärä</a></li>
+                </ul>
+                </a>
+              </span>
+              <select class="input-small no-margin" id="time-type">
+                <option>Lähtöaika</option>
+                <option>Tuloaika</option>
+              </select>
+              <input type="time" name="time" id="time" class="no-margin" />
+            </div>
             <div class="control-group">
               <button type="submit" class="btn btn-primary pull-right" data-loading-text="Ladataan…">
                 <i class="icon-search icon-white"></i>&nbsp;Hae reitit

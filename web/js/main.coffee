@@ -15,6 +15,7 @@ require.config
     underscore: 'lib/underscore'
     handlebars: 'lib/handlebars-1.0.0.beta.6'
     backbone: 'lib/backbone'
+    timepicker: 'lib/jquery.timePicker'
     text: 'lib/text'
     async: 'lib/async'
     hbs: 'lib/hbs'

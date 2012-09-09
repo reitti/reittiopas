@@ -1,0 +1,43 @@
+div.time-picker {
+    position: absolute;
+    height: 168px; /* (20px + 8px) * 6 */
+    width: 60px;
+    overflow: auto;
+    background: #fff;
+    border: 1px solid #aaa;
+    z-index: 99;
+    margin: 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.time-picker-12hours {
+    width: 60px;
+}
+
+div.time-picker ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+div.time-picker li {
+    line-height: 20px;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 4px 3px;
+}
+
+div.time-picker li.selected {
+    color: white;
+    background-color: #08C;
+    background-color: #0081C2;
+    background-image: -moz-linear-gradient(top, #08C, #0077B3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#0077B3));
+    background-image: -webkit-linear-gradient(top, #08C, #0077B3);
+    background-image: -o-linear-gradient(top, #08C, #0077B3);
+    background-image: linear-gradient(to bottom, #08C, #0077B3);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0077b3', GradientType = 0);
+}
