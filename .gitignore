@@ -4,3 +4,5 @@ public/
 *.iml
 *.js
 .DS_Store
+
+web/css/app.css
