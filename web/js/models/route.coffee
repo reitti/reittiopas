@@ -1,9 +1,14 @@
-define ['jquery', 'underscore', 'backbone', 'models/route_leg'], ($, _, Backbone, RouteLeg) ->
-
+define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _, Backbone, Utils, RouteLeg) ->
   class Route extends Backbone.Model
 
-    @find: (from, to, transportTypes = 'all', callback) ->
-      params = $.param {from: from, to: to, transport_types: transportTypes.join('|')}
+    @find: (from, to, date, arrivalOrDeparture = 'departure', transportTypes = 'all', callback) ->
+      params = $.param
+        from: from
+        to: to
+        date: Utils.formatDate(date)
+        time: Utils.formatHSLTime(date)
+        arrivalOrDeparture: arrivalOrDeparture
+        transportTypes: transportTypes.join('|')
       $.getJSON "/routes?#{params}", (data) ->
         callback(new Route(routeData[0]) for routeData in data)
 

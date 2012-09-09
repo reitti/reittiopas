@@ -7,7 +7,7 @@ hslApiPassword = vertx.env['HSL_API_PASSWORD']
 
 getHslQueryString = (request, params) ->
   qry = "/hsl/prod/?request=#{request}&user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_in=4326&epsg_out=4326"
-  qry += "&#{k}=#{encodeURIComponent(v)}" for own k,v of params    
+  qry += "&#{k}=#{encodeURIComponent(v)}" for own k,v of params
   
 hslRequest = (request, params, callback) ->
   client.getNow getHslQueryString(request, params), (res) ->
@@ -38,5 +38,14 @@ eb.registerHandler 'reitti.hsl.reverseGeocode', (params, replier) ->
       replier null
 
 eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
-  hslRequest 'route', {from: params.from, to: params.to, detail: 'full', show: 5, transport_types: params.transport_types or 'all'}, (res, body) ->
+  params =
+    from: params.from
+    to: params.to
+    date: params.date
+    time: params.time
+    detail: 'full'
+    show: 5
+    timetype: params.arrivalOrDeparture or 'departure'
+    transport_types: params.transportTypes or 'all'
+  hslRequest 'route', params, (res, body) ->
     replier {body: body.getString(0, body.length())}

@@ -9,7 +9,15 @@ routeMatcher.get '/routes', (req) ->
   eb.send 'reitti.geocode', req.params().from, (pt1) ->
     eb.send 'reitti.geocode', req.params().to, (pt2) ->
       if pt1 and pt2
-        eb.send 'reitti.hsl.findRoutes', {from: pt1, to: pt2, transport_types: req.params().transport_types}, (data) -> req.response.end data.body
+        params =
+          from: pt1
+          to: pt2
+          date: req.params().date
+          time: req.params().time
+          arrivalOrDeparture: req.params().arrivalOrDeparture
+          transportTypes: req.params().transportTypes
+        eb.send 'reitti.hsl.findRoutes', params, (data) ->
+          req.response.end data.body
       else
         req.response.statusCode = 400
         req.response.end JSON.stringify(from: !!pt1, to: !!pt2)

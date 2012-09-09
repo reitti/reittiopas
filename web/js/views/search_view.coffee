@@ -12,7 +12,7 @@ define [
     el: $('#search')
 
     events:
-      'submit form': 'searchRoute'
+      'submit form': 'searchRoutes'
 
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
@@ -31,21 +31,31 @@ define [
       if Utils.isLocalStorageEnabled()
         @from.val localStorage.from unless localStorage.from?
         @to.val localStorage.to
- 
+
     render: ->
       @from.focus()
 
-    searchRoute: (event) ->
+    searchRoutes: (event) ->
       event.preventDefault()
       @$el.find('.btn-primary').button('loading')
 
-      Route.find @from.val(), @to.val(), @transportTypes(), (routes) =>
+      Route.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), (routes) =>
         @$el.find('.btn-primary').button('reset')
         Reitti.Event.trigger 'routes:change', routes
 
     transportTypes: () ->
-      _.filter ['bus', 'tram', 'metro', 'train', 'ferry'], (vehicle) =>
-        @$el.find('#' + vehicle).hasClass('active')
+      transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']
+      transportType for transportType in transportTypes when @$el.find('#' + transportType).hasClass('active')
+
+    date: () ->
+      time = @$el.find('#time').val()
+      date = new Date()
+      timeZone = date.getTimezoneOffset() / 60
+      dateString = "#{Utils.formatDate(date, '-')}T#{time}"
+      new Date(Date.parse(dateString))
+
+    arrivalOrDeparture: () ->
+      timeType = @$el.find('#time-type').val()
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
