@@ -21,4 +21,7 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
     destinationName: () ->
       _(@get('locs')).last()?.name
 
+    duration: () ->
+      Utils.getDuration @firstArrivalTime(), @lastArrivalTime()
+
     isWalk: () -> @get('type') is 'walk'

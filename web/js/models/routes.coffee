@@ -21,12 +21,12 @@ define ['jquery', 'backbone', 'models/route', 'utils'], ($, Backbone, Route, Uti
     getRoute: (idx) -> @get('routes')[idx]
 
     getLegDurationPercentage: (routeIdx, legIdx) ->
-      percentage = Math.floor @getRoute(routeIdx).getLeg(legIdx).get('duration') * 95 / @getTotalDuration()
+      percentage = Math.floor @getRoute(routeIdx).getLeg(legIdx).duration() * 95 / @getTotalDuration()
       if percentage > 0 then percentage else 1
 
     getDurationPercentageBeforeDeparture: (routeIdx) ->
-      duration = @getRoute(routeIdx).getDepartureTime().getTime() - @getFirstDepartureTime()
-      Math.floor duration / 9.5 / @getTotalDuration()
+      duration = Utils.getDuration(@getRoute(routeIdx).getDepartureTime(), @getFirstDepartureTime())
+      Math.floor duration * 95 / @getTotalDuration()
 
     getTotalDuration: () ->
       Utils.getDuration @getFirstDepartureTime(), @getLastArrivalTime()

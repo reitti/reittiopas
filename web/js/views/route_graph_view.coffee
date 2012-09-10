@@ -1,4 +1,4 @@
-define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!template/route_leg_info'], (Backbone, Utils, Handlebars, template, legInfoTemplate) ->
+define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (Backbone, Utils, Handlebars, template) ->
 
   class RouteGraphView extends Backbone.View
 
@@ -29,26 +29,42 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!temp
 
         percentBefore = cumulativePercentage - percentage
         percentAfter = 95 - cumulativePercentage
+        infoMap = @_legInfoLayoutMap(leg, legIdx, percentBefore, percentAfter)
 
-        infoAtLeft = percentBefore > percentage and percentBefore > percentAfter
-        infoInside = percentage > percentBefore and percentage > percentAfter
-        infoAtRight = not infoAtLeft and not infoInside
+        _.extend infoMap,
+          type: leg.get('type')
+          indicator: if leg.isWalk() then "" else leg.lineName()
+          firstArrivalTime: Utils.formatTime(leg.firstArrivalTime())
+          transportType: @_transportLabel(leg)
+          destinationName: @_destinationLabel(leg, legIdx)
+          color: Utils.transportColors[leg.get('type')]
+          percentage: percentage
+          percentageBefore: percentBefore
+          percentageAfter: percentAfter
+          iconVisible: percentage > 4
 
-        {
-        type: leg.get('type')
-        indicator: if leg.isWalk() then "" else leg.lineName()
-        firstArrivalTime: Utils.formatTime(leg.firstArrivalTime())
-        transportType: @_transportLabel(leg)
-        destinationName: @_destinationLabel(leg, legIdx)
-        color: Utils.transportColors[leg.get('type')]
-        percentage: percentage
-        percentageBefore: percentBefore
-        percentageAfter: percentAfter
-        iconVisible: percentage > 4
-        outerLeftInfo: if infoAtLeft then @_legInfoLabel(leg, legIdx) else ""
-        innerLeftInfo: if infoInside then @_legInfoLabel(leg, legIdx)  else ""
-        outerRightInfo: if infoAtRight then @_legInfoLabel(leg, legIdx)  else ""
-        }
+    _legInfoLayoutMap: (leg, legIdx, percentBefore, percentAfter) ->
+      time = @_timeLabel(leg)
+      transport = @_transportLabel(leg)
+      arrow = "&rarr;"
+      dest = @_destinationLabel(leg, legIdx)
+
+      result = {}
+      if percentBefore >= 40
+        result.outerLeft = [time, transport, arrow, dest]
+      else if percentAfter >= 40
+        result.outerRight = [time, transport, arrow, dest]
+      else if percentBefore >= 30
+        result.outerLeft = [time, transport, arrow, dest]
+      else if percentAfter >= 30          
+        result.outerRight = [time, transport, arrow, dest]
+      else if percentBefore >= 20 and percentAfter >= 20
+        result.outerLeft= [time, transport]
+        result.outerRight = [dest]
+      else
+        result.innerLeft = [time, transport]
+        result.innerRight = [dest]
+      result
 
     _legInfoLabel: (leg, legIdx) ->
       new Handlebars.SafeString(
@@ -57,6 +73,9 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!temp
           transport: @_transportLabel(leg)
           destination: @_destinationLabel(leg,legIdx)
       )
+
+    _timeLabel: (leg) ->
+      Utils.formatTime(leg.firstArrivalTime())
 
     _destinationLabel: (leg, legIdx) ->
       if legIdx is @route.getLegCount() - 1
@@ -68,11 +87,12 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!temp
 
     _transportLabel: (leg) ->
       type = leg.get('type')
-      switch type
+      content = switch type
         when 'walk' then "#{@_transportTypeLabel(type)} (#{Utils.formatDistance(leg.get('length'))})"
         when '6','7' then @_transportTypeLabel(type)
         when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
         else "#{@_transportTypeLabel(type)} #{leg.lineName()}"
+      new Handlebars.SafeString "<strong>#{content}</strong>"
 
     # TODO: This should be somewhere in i18n
     _transportTypeLabel: (type) ->

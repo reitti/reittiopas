@@ -30,8 +30,5 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
     getWalkLegs: () ->
       _.select @get('legs'), ((leg) -> leg.isWalk())
 
-    getLegDurations: () ->
-      leg.get('duration') for leg in @get('legs')
-
     getLegCount: () ->
       @get('legs').length

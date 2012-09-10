@@ -108,7 +108,7 @@ li.route > a {
 }
 
 li.route dl {
-    margin: 0;
+    margin: 0 0 5px 0;
 }
 
 li.route .departure-time {
@@ -144,8 +144,8 @@ li.route .attribute dd {
     font-size: 0.8em;
 }
 
-.route-graph {
-    clear: both;
+.route-graph .clear {
+    margin-bottom: 5px;
 }
 
 .route-graph li {
@@ -233,8 +233,15 @@ li.route .attribute dd {
     padding: 0 4px;
 }
 .route-graph .leg-bar .leg-info {
-    float: left;
     color: white;
+    text-shadow: none;
+    line-height: 20px;
+}
+.route-graph .leg-bar .leg-info-inner-left {
+    float: left;
+}
+.route-graph .leg-bar .leg-info-inner-right {
+    float: right;
 }
 
 .route-graph.not-expanded .bumper {
