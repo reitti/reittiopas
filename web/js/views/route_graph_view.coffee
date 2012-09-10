@@ -27,6 +27,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       return if @route.getLegCount() <= 1 
       isThis = route is @route
       _.defer =>
+        @$el.toggleClass 'expanded', isThis
         @$el.css 'height', if isThis then "#{@route.getLegCount() * 24}px" else ''
         @$el.find('li[data-leg]').each ->
           if isThis
