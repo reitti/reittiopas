@@ -1,0 +1,133 @@
+@graphHeight: 40px;
+@barHeight: 20px;
+@animationDuration: 0.2s;
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+ 
+
+.route-graph {
+    position: relative;
+    height: @graphHeight;
+    .transition(all, @animationDuration, ease-out);
+
+
+    li {
+        position: absolute;
+        top: 0;
+        height: @barHeight + 4px;
+        font-size: 0.7em;
+        color: black;
+        .transition(all, @animationDuration, ease-out);
+    }
+
+    .leg-bar {
+        height: @barHeight;
+        padding: 2px;
+        border-right: 1px solid white;
+    }
+
+    i {
+        display: block;
+        background-image: url('../img/vehicles_tiny.png');
+        width: 16px;
+        height: 16px;
+        margin: 2px auto;
+    }
+
+    // Bus
+    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-23, .leg-24, .leg-26, .leg-36, .leg-39 {
+        .leg-bar {
+            background-color: #1b76bc;
+        }
+        i {
+            background-position: -2px -2px;
+        }
+    }
+
+    // Tram
+    .leg-2 {
+        .leg-bar {
+            background-color: #1a9b63;
+        }
+        i {
+            background-position: 18px -22px;
+        }
+    }
+
+    // Metro
+    .leg-6 {
+        .leg-bar {
+            background-color: #ed6227;
+        }
+        i {
+            background-position: -2px -22px;
+        }
+    }
+
+    // Ferry
+    .leg-7 {
+        .leg-bar {
+            background-color: #17b9e8;
+        }
+        i {
+            background-position: -2px 18px;
+        }
+    }
+
+    // Train
+    .leg-12 {
+        .leg-bar {
+            background-color: #3cac40;
+        }
+        i {
+            background-position: 18px -2px;
+        }
+    }
+
+    .leg-walk {
+        .leg-bar {
+            background-color: #1e74fc;
+        }
+        i {
+            background-image: url('../img/walk.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: auto;
+        }
+    }
+
+    .leg-info {
+        display: table;
+        line-height: 105%;
+        opacity: 0;
+
+        .leg-info-content { 
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 4px;
+        }
+    }
+    .leg-info-left {
+        text-align: right;
+    }
+    .leg-info-right {
+        text-align: left;
+    }
+    .leg-info.expanded {
+        opacity: 1;
+    }
+
+    .leg-indicator {
+        .transition(all, @animationDuration, ease-out);
+        opacity: 1;
+    }
+    .leg-indicator.expanded {
+        opacity: 0;
+    }
+}

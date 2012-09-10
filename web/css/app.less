@@ -1,15 +1,7 @@
 @import url("lib/bootstrap.css");
 @import url("lib/bootstrap-responsive.css");
 @import url("lib/timePicker.css");
-
-.transition (@prop: all, @time: 1s, @ease: linear) {
-    -webkit-transition: @prop @time @ease;
-    -moz-transition: @prop @time @ease;
-    -o-transition: @prop @time @ease;
-    -ms-transition: @prop @time @ease;
-    transition: @prop @time @ease;
-}
- 
+@import url("route_graph.css");
 
 body {
     position: relative;
@@ -143,117 +135,6 @@ li.route .attribute dd, li.route .attribute dt {
 }
 li.route .attribute dd {
     font-size: 0.8em;
-}
-
-.route-graph {
-    position: relative;
-    height: 40px;
-}
-
-.route-graph li {
-    position: absolute;
-    top: 0;
-    height: 24px;
-    font-size: 0.7em;
-    color: black;
-}
-
-.route-graph li .leg-bar {
-    height: 20px;
-    padding: 2px;
-    border-right: 1px solid white;
-}
-
-
-.route-graph li .leg-icon {
-    background-image: url('../img/vehicles_tiny.png');
-    width: 16px;
-    height: 16px;
-    margin: 2px auto;
-}
-
-.leg-1 .leg-bar, .leg-3 .leg-bar, .leg-4 .leg-bar, .leg-5 .leg-bar, .leg-8 .leg-bar,
-.leg-21 .leg-bar, .leg-23 .leg-bar, .leg-24 .leg-bar, .leg-25 .leg-bar, .leg-36 .leg-bar,
-.leg-39 .leg-bar {
-    background-color: #1b76bc;
-}
-.leg-1 .leg-icon, .leg-3 .leg-icon, .leg-4 .leg-icon, .leg-5 .leg-icon, .leg-8 .leg-icon,
-.leg-21 .leg-icon, .leg-23 .leg-icon, .leg-24 .leg-icon, .leg-25 .leg-icon, .leg-36 .leg-icon,
-.leg-39 .leg-icon {
-    background-position: -2px -2px;
-}
-
-.leg-2 .leg-bar {
-    background-color: #1a9b63;
-}
-.leg-2 .leg-icon {
-    background-position: 18px -22px;
-}
-
-.leg-6 .leg-bar {
-    background-color: #ed6227;
-}
-.leg-6 .leg-icon {
-    background-position: -2px -22px;
-}
-
-.leg-7 .leg-bar {
-    background-color: #17b9e8;
-}
-.leg-7 .leg-icon {
-    background-position: -2px 18px;
-}
-
-.leg-12 .leg-bar {
-    background-color: #3cac40;
-}
-.leg-12 .leg-icon {
-    background-position: 18px -2px;
-}
-
-.leg-walk .leg-bar {
-    background-color: #1e74fc;
-}
-.route-graph  li.leg-walk .leg-icon {
-    background-image: url('../img/walk.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: auto;
-}
-
-
-.route-graph .leg-info {
-    display: table;
-    line-height: 105%;
-}
-.route-graph .leg-info-left {
-    text-align: right;
-}
-.route-graph .leg-info-right {
-    text-align: left;
-}
-.route-graph .leg-info .leg-info-content {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 4px;
-}
-
-.route-graph, .route-graph li, .route-graph .leg-indicator {
-    .transition(all, 0.4s, ease-out);
-}
-
-.route-graph .leg-info {
-    opacity: 0;
-}
-.route-graph .leg-info.expanded {
-    opacity: 1;
-}
-
-.route-graph .leg-indicator {
-    opacity: 1;
-}
-.route-graph .leg-indicator.expanded {
-    opacity: 0;
 }
 
 

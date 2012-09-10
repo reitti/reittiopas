@@ -5,4 +5,4 @@ public/
 *.js
 .DS_Store
 
-web/css/app.css
+web/css/*.css

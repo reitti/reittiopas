@@ -1,4 +1,5 @@
 {{#each_with_index legs}}
+
   <li data-leg="{{index}}" class="leg-info leg-info-left" style="left: 0; width: {{percentageBefore}}%;">
     <div class="leg-info-content">
       {{#each outerLeft}}
@@ -6,21 +7,24 @@
       {{/each}}
     </div>
   </li>
+
   <li data-leg="{{index}}"
       class="leg-{{type}}"
       style="left: {{percentageBefore}}%; width: {{percentage}}%;">
     <div class="leg-bar">
       {{#if iconVisible}}
-        <div class="leg-icon"></div>
+        <i></i>
       {{/if}}
     </div>
     <span class="leg-indicator">{{indicator}}</span>
   </li>
+
   <li data-leg="{{index}}" class="leg-info leg-info-right" style="left: {{percentageBeforeAndDuring}}%; width: {{percentageAfter}}%;">
     <div class="leg-info-content">
       {{#each outerRight}}
         {{this}}
       {{/each}}
-    </div>
+    </div>  
   </li>
+
 {{/each_with_index}}
