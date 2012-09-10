@@ -28,7 +28,7 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!temp
         cumulativePercentage += percentage
 
         percentBefore = cumulativePercentage - percentage
-        percentAfter = 100 - cumulativePercentage
+        percentAfter = 95 - cumulativePercentage
 
         infoAtLeft = percentBefore > percentage and percentBefore > percentAfter
         infoInside = percentage > percentBefore and percentage > percentAfter
@@ -42,7 +42,8 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'hbs!temp
         destinationName: @_destinationLabel(leg, legIdx)
         color: Utils.transportColors[leg.get('type')]
         percentage: percentage
-        percentageBefore: cumulativePercentage - percentage
+        percentageBefore: percentBefore
+        percentageAfter: percentAfter
         iconVisible: percentage > 4
         outerLeftInfo: if infoAtLeft then @_legInfoLabel(leg, legIdx) else ""
         innerLeftInfo: if infoInside then @_legInfoLabel(leg, legIdx)  else ""
