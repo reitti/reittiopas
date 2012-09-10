@@ -39,7 +39,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
 
     _legData: () ->
-      cumulativePercentage = @routes.getDurationPercentageBeforeDeparture(@index)
+      cumulativePercentage = 0
       for leg,legIdx in @route.get('legs')
         percentage = @routes.getLegDurationPercentage(@index, legIdx)
         cumulativePercentage += percentage
@@ -78,7 +78,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         result.outerRight = [time, transport, arrow, dest]
       else
         result.outerLeft= [time, transport]
-        result.outerRight = [dest]
+        result.outerRight = [arrow, dest]
       result
 
     _timeLabel: (leg) ->
@@ -95,7 +95,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportLabel: (leg) ->
       type = leg.get('type')
       content = switch type
-        when 'walk' then "#{@_transportTypeLabel(type)} #{Utils.formatDistance(leg.get('length'))}"
+        when 'walk' then "#{@_transportTypeLabel(type)}, #{Utils.formatDistance(leg.get('length'))}"
         when '6','7' then @_transportTypeLabel(type)
         when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
         else "#{@_transportTypeLabel(type)} #{leg.lineName()}"

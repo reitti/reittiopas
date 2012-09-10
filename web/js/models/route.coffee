@@ -13,6 +13,9 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
     getArrivalTime: () ->
       _.last(@get('legs')).lastArrivalTime()
 
+    duration: () ->
+      Utils.getDuration @getDepartureTime(), @getArrivalTime()
+      
     boardingTime: ->
       @getFirstNonWalkingLeg()?.firstArrivalTime()
 
