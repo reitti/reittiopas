@@ -18,6 +18,9 @@ body {
 .clear {
     clear: both;
 }
+.clear-left {
+    clear: left;
+}
 
 #content {
     position: absolute;
@@ -147,7 +150,7 @@ li.route .attribute dd {
 
 .route-graph li {
     float: left;
-    margin: 5px 1px 0 0;
+    margin-right: 1px;
     font-size: 0.7em;
     color: black;
 }
@@ -156,9 +159,7 @@ li.route .attribute dd {
     height: 20px;
     padding: 2px;
 }
-.route-graph  li.last .leg-bar {
-    border-width: 0;
-}
+
 
 .route-graph  li .leg-icon {
     background-image: url('../img/vehicles_tiny.png');
@@ -215,6 +216,39 @@ li.route .attribute dd {
     background-position: center;
     width: auto;
 }
+
+.route-graph .bumper {
+    height: 24px;
+    text-align: right;
+}
+.route-graph .leg-info {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 105%;
+    padding: 0 4px;
+}
+.route-graph .leg-bar .leg-info {
+    float: left;
+    color: white;
+}
+
+.route-graph.not-expanded .bumper {
+    display: none;
+}
+.route-graph.not-expanded .bumper:first-child {
+    display: block;
+}
+.route-graph.expanded .leg-before-departure {
+    display: none;
+}
+
+.route-graph.expanded .leg-indicator {
+    display: none;
+}
+.route-graph.not-expanded .leg-info {
+    display: none;
+}
+
 
 .transport-icon {
     background-image: url('../img/vehicles_tiny.png');

@@ -18,5 +18,7 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
           chr = @get('code').substring(4, 5)
           "#{n}#{chr}"
 
+    destinationName: () ->
+      _(@get('locs')).last()?.name
+
     isWalk: () -> @get('type') is 'walk'
-    

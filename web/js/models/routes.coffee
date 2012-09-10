@@ -11,26 +11,25 @@ define ['jquery', 'backbone', 'models/route', 'utils'], ($, Backbone, Route, Uti
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
       $.getJSON "/routes?#{params}", (data) ->
-        callback(new Routes(data))
+        callback(new Routes(from, to, data))
 
-    initialize: (data) ->
-      @set 'routes', (new Route(routeData[0]) for routeData in data)
+    initialize: (from, to, data) ->
+      @set 'routes', (new Route(from, to, routeData[0]) for routeData in data)
 
     length: () -> @get('routes').length
 
     getRoute: (idx) -> @get('routes')[idx]
 
     getLegDurationPercentage: (routeIdx, legIdx) ->
-      Math.floor @getRoute(routeIdx).getLeg(legIdx).get('duration') * 95 / @getTotalDuration()
+      percentage = Math.floor @getRoute(routeIdx).getLeg(legIdx).get('duration') * 95 / @getTotalDuration()
+      if percentage > 0 then percentage else 1
 
     getDurationPercentageBeforeDeparture: (routeIdx) ->
       duration = @getRoute(routeIdx).getDepartureTime().getTime() - @getFirstDepartureTime()
-      Math.floor duration / 10 / @getTotalDuration()
+      Math.floor duration / 9.5 / @getTotalDuration()
 
     getTotalDuration: () ->
-      depSeconds = @getFirstDepartureTime().getTime() / 1000
-      arrSeconds = @getLastArrivalTime().getTime() / 1000
-      arrSeconds - depSeconds
+      Utils.getDuration @getFirstDepartureTime(), @getLastArrivalTime()
 
     getFirstDepartureTime: () ->
       @_sortedByDeparture ?= _.sortBy @get('routes'), (route) -> route.getDepartureTime().getTime()

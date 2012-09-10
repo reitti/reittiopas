@@ -45,3 +45,4 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
     onRouteChanged: (route) =>
       @$el.toggleClass 'selected', route is @route
 
+

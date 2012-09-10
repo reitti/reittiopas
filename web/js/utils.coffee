@@ -26,11 +26,12 @@ define ->
       [all, year, month, date, hour, min] = str.match /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})/
       new Date year, month, date, hour, min
 
-    # From Date to H:mm
+    # From Date to HH:mm
     @formatTime: (d) ->
       return null unless d instanceof Date
+      hourZero = if d.getHours() < 10 then '0' else ''
       minZero = if d.getMinutes() < 10 then '0' else ''
-      "#{d.getHours()}:#{minZero}#{d.getMinutes()}"
+      "#{hourZero}#{d.getHours()}:#{minZero}#{d.getMinutes()}"
 
     @formatHSLTime: (d) ->
       return null unless d instanceof Date
@@ -58,6 +59,10 @@ define ->
 
     @nextQuarterOfHour: (d) ->
       new Date(new Date().setMinutes(Math.floor((d.getMinutes() + 14) / 15) * 15))
+
+    # (absolute) seconds between two dates
+    @getDuration: (d1, d2) ->
+      Math.abs(d1.getTime() - d2.getTime()) / 1000
 
     # From a number (of seconds) to a formatted value
     @formatDuration: (d) ->

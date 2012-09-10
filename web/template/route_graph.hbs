@@ -1,11 +1,23 @@
-<li class="leg-before-departure" style="width: {{percentageBeforeDeparture}}%;"></li>
 {{#each_with_index legs}}
-  <li data-leg="{{index}}" class="leg-{{type}} {{last}}" style="width: {{percentage}}%;">
+  <li class="bumper clear-left" style="width: {{percentageBefore}}%;">
+    <span class="leg-info">
+      {{outerLeftInfo}}
+    </span>
+  </li>
+  <li data-leg="{{index}}" class="leg-{{type}}" style="width: {{percentage}}%;">
     <div class="leg-bar">
+      <span class="leg-info">
+        {{innerLeftInfo}}
+      </span>
       {{#if iconVisible}}
         <div class="leg-icon"></div>
       {{/if}}
     </div>
-    <span>{{indicator}}</span>
+    <span class="leg-indicator">{{indicator}}</span>
+  </li>
+  <li>
+    <span class="leg-info">
+      {{outerRightInfo}}
+    </span>
   </li>
 {{/each_with_index}}
