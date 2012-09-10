@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'views/route_view'], ($, Backbone, RouteView) ->
+define ['jquery', 'underscore', 'backbone', 'views/route_view'], ($, _, Backbone, RouteView) ->
   
   class RoutesView extends Backbone.View
     
@@ -12,7 +12,7 @@ define ['jquery', 'backbone', 'views/route_view'], ($, Backbone, RouteView) ->
       routeView.dispose() for routeView in @routeViews
       @routeViews = (new RouteView(routes: @routes, index: idx) for idx in [0..@routes.length() - 1])
       @render()
-      Reitti.Event.trigger 'route:change', @routeViews[0].route
+      _.delay (=> Reitti.Event.trigger 'route:change', @routeViews[0].route), 50
       
     render: ->
       @$el.empty()

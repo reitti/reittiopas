@@ -119,15 +119,19 @@
     .leg-info-right {
         text-align: left;
     }
-    .leg-info.expanded {
-        opacity: 1;
-    }
 
     .leg-indicator {
         .transition(all, @animationDuration, ease-out);
         opacity: 1;
     }
-    .leg-indicator.expanded {
+
+}
+
+.selected {
+    .leg-info {
+        opacity: 1;
+    }
+    .leg-indicator {
         opacity: 0;
     }
 }

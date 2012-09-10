@@ -3,33 +3,38 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
   class RouteGraphView extends Backbone.View
 
     events:
-      'click li': 'expand'
+      'click .transport-link': 'selectLeg'
 
     initialize: (routes: routes, index: index) ->
       @routes = routes
       @index = index
       @route = routes.getRoute(@index)
+      Reitti.Event.on 'route:change', @onRouteChanged
+
+    dispose: ->
+      Reitti.Event.off 'route:change', @onRouteChanged
 
     render: ->
-      @$el.html template
-        legs: @_legData()
-      @$el.toggleClass 'not-expanded'
+      @$el.html template(legs: @_legData())
       this
 
-    expand: (evt) =>
-      if @route.getLegCount() > 1
-        wasExpanded = @$el.hasClass 'expanded'
-        @$el.toggleClass 'expanded' 
-        _.defer =>
-          @$el.find('.leg-info, .leg-indicator').toggleClass 'expanded'
-          @$el.css 'height', if wasExpanded then '' else "#{@route.getLegCount() * 24}px"
-          @$el.find('li[data-leg]').each ->
-            if wasExpanded
-              $(this).css 'top', '0'
-            else
-              legNr = $(this).data 'leg'
-              top = legNr * 24
-              $(this).css 'top', "#{top}px"
+    selectLeg: (e) =>
+      idx = $(e.target).closest('[data-leg]').data('leg')
+      Reitti.Event.trigger 'leg:change', @route.getLeg(idx)
+      false
+
+    onRouteChanged: (route) =>
+      return if @route.getLegCount() <= 1 
+      isThis = route is @route
+      _.defer =>
+        @$el.css 'height', if isThis then "#{@route.getLegCount() * 24}px" else ''
+        @$el.find('li[data-leg]').each ->
+          if isThis
+            legNr = $(this).data 'leg'
+            top = legNr * 24
+            $(this).css 'top', "#{top}px"
+          else
+            $(this).css 'top', '0'
 
 
     _legData: () ->
@@ -93,7 +98,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         when '6','7' then @_transportTypeLabel(type)
         when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
         else "#{@_transportTypeLabel(type)} #{leg.lineName()}"
-      new Handlebars.SafeString "<strong>#{content}</strong>"
+      new Handlebars.SafeString "<a class='transport-link' href='#'>#{content}</a>"
 
     # TODO: This should be somewhere in i18n
     _transportTypeLabel: (type) ->
