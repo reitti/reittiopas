@@ -2,6 +2,15 @@
 @import url("lib/bootstrap-responsive.css");
 @import url("lib/timePicker.css");
 
+.transition (@prop: all, @time: 1s, @ease: linear) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+ 
+
 body {
     position: relative;
     padding: 0;
@@ -13,13 +22,6 @@ body {
 
 .full-height {
     height: 100%;
-}
-
-.clear {
-    clear: both;
-}
-.clear-left {
-    clear: left;
 }
 
 #content {
@@ -90,7 +92,6 @@ input.input-full {
 
 li.route {
     margin: 1em 0;
-
 }
 
 li.route > a {
@@ -108,7 +109,7 @@ li.route > a {
 }
 
 li.route dl {
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
 }
 
 li.route .departure-time {
@@ -144,13 +145,15 @@ li.route .attribute dd {
     font-size: 0.8em;
 }
 
-.route-graph .clear {
-    margin-bottom: 5px;
+.route-graph {
+    position: relative;
+    height: 40px;
 }
 
 .route-graph li {
-    float: left;
-    margin-right: 1px;
+    position: absolute;
+    top: 0;
+    height: 24px;
     font-size: 0.7em;
     color: black;
 }
@@ -158,10 +161,11 @@ li.route .attribute dd {
 .route-graph li .leg-bar {
     height: 20px;
     padding: 2px;
+    border-right: 1px solid white;
 }
 
 
-.route-graph  li .leg-icon {
+.route-graph li .leg-icon {
     background-image: url('../img/vehicles_tiny.png');
     width: 16px;
     height: 16px;
@@ -217,49 +221,42 @@ li.route .attribute dd {
     width: auto;
 }
 
-.route-graph .bumper {
-    height: 24px;
+
+.route-graph .leg-info {
+    display: table;
+    line-height: 105%;
 }
-.route-graph .bumper-left {
+.route-graph .leg-info-left {
     text-align: right;
 }
-.route-graph .bumper-right {
+.route-graph .leg-info-right {
     text-align: left;
 }
-.route-graph .leg-info {
-    display: inline-block;
+.route-graph .leg-info .leg-info-content {
+    display: table-cell;
     vertical-align: middle;
-    line-height: 105%;
     padding: 0 4px;
 }
-.route-graph .leg-bar .leg-info {
-    color: white;
-    text-shadow: none;
-    line-height: 20px;
-}
-.route-graph .leg-bar .leg-info-inner-left {
-    float: left;
-}
-.route-graph .leg-bar .leg-info-inner-right {
-    float: right;
+
+.route-graph, .route-graph li, .route-graph .leg-indicator {
+    .transition(all, 0.4s, ease-out);
 }
 
-.route-graph.not-expanded .bumper {
-    display: none;
+.route-graph .leg-info {
+    opacity: 0;
 }
-.route-graph.not-expanded .bumper:first-child {
-    display: block;
-}
-.route-graph.expanded .leg-before-departure {
-    display: none;
+.route-graph .leg-info.expanded {
+    opacity: 1;
 }
 
-.route-graph.expanded .leg-indicator {
-    display: none;
+.route-graph .leg-indicator {
+    opacity: 1;
 }
-.route-graph.not-expanded .leg-info {
-    display: none;
+.route-graph .leg-indicator.expanded {
+    opacity: 0;
 }
+
+
 
 
 .transport-icon {

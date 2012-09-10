@@ -1,4 +1,4 @@
-define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (Backbone, Utils, Handlebars, template) ->
+define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (_, Backbone, Utils, Handlebars, template) ->
 
   class RouteGraphView extends Backbone.View
 
@@ -18,8 +18,19 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (Backbon
 
     expand: (evt) =>
       if @route.getLegCount() > 1
-        @$el.toggleClass 'expanded'
-        @$el.toggleClass 'not-expanded'
+        wasExpanded = @$el.hasClass 'expanded'
+        @$el.toggleClass 'expanded' 
+        _.defer =>
+          @$el.find('.leg-info, .leg-indicator').toggleClass 'expanded'
+          @$el.css 'height', if wasExpanded then '' else "#{@route.getLegCount() * 24}px"
+          @$el.find('li[data-leg]').each ->
+            if wasExpanded
+              $(this).css 'top', '0'
+            else
+              legNr = $(this).data 'leg'
+              top = legNr * 24
+              $(this).css 'top', "#{top}px"
+
 
     _legData: () ->
       cumulativePercentage = @routes.getDurationPercentageBeforeDeparture(@index)
@@ -40,6 +51,7 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (Backbon
           color: Utils.transportColors[leg.get('type')]
           percentage: percentage
           percentageBefore: percentBefore
+          percentageBeforeAndDuring: percentBefore + percentage
           percentageAfter: percentAfter
           iconVisible: percentage > 4
 
@@ -58,21 +70,10 @@ define ['backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (Backbon
         result.outerLeft = [time, transport, arrow, dest]
       else if percentAfter >= 30          
         result.outerRight = [time, transport, arrow, dest]
-      else if percentBefore >= 20 and percentAfter >= 20
+      else
         result.outerLeft= [time, transport]
         result.outerRight = [dest]
-      else
-        result.innerLeft = [time, transport]
-        result.innerRight = [dest]
       result
-
-    _legInfoLabel: (leg, legIdx) ->
-      new Handlebars.SafeString(
-        legInfoTemplate
-          time: Utils.formatTime(leg.firstArrivalTime())
-          transport: @_transportLabel(leg)
-          destination: @_destinationLabel(leg,legIdx)
-      )
 
     _timeLabel: (leg) ->
       Utils.formatTime(leg.firstArrivalTime())

@@ -1,34 +1,26 @@
 {{#each_with_index legs}}
-  <li class="bumper bumper-left clear-left" style="width: {{percentageBefore}}%;">
-    <span class="leg-info">
+  <li data-leg="{{index}}" class="leg-info leg-info-left" style="left: 0; width: {{percentageBefore}}%;">
+    <div class="leg-info-content">
       {{#each outerLeft}}
         {{this}}
       {{/each}}
-    </span>
+    </div>
   </li>
-  <li data-leg="{{index}}" class="leg-{{type}}" style="width: {{percentage}}%;">
+  <li data-leg="{{index}}"
+      class="leg-{{type}}"
+      style="left: {{percentageBefore}}%; width: {{percentage}}%;">
     <div class="leg-bar">
-      <span class="leg-info leg-info-inner-left">
-        {{#each innerLeft}}
-          {{this}}
-        {{/each}}
-      </span>
-      <span class="leg-info leg-info-inner-right">
-        {{#each innerRight}}
-          {{this}}
-        {{/each}}
-      </span>
       {{#if iconVisible}}
         <div class="leg-icon"></div>
       {{/if}}
     </div>
     <span class="leg-indicator">{{indicator}}</span>
   </li>
-  <li class="bumper bumper-right" style="width: {{percentageAfter}}%;">
-    <span class="leg-info">
+  <li data-leg="{{index}}" class="leg-info leg-info-right" style="left: {{percentageBeforeAndDuring}}%; width: {{percentageAfter}}%;">
+    <div class="leg-info-content">
       {{#each outerRight}}
         {{this}}
       {{/each}}
-    </span>
+    </div>
   </li>
 {{/each_with_index}}
