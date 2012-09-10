@@ -3,6 +3,12 @@
 @import url("lib/timePicker.css");
 @import url("route_graph.css");
 
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
 body {
     position: relative;
     padding: 0;
@@ -80,61 +86,52 @@ input.input-full {
 
 #routes {
     padding: 0;
-}
 
-li.route {
-    margin: 1em 0;
-}
+    li.route {
+        margin: 1em 0;
 
-li.route > a {
-    display: block;
-    margin: 0;
-    border: 1px solid #E5E5E5;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
+        > a {
+            display: block;
+            margin: 0;
+            border: 1px solid #E5E5E5;
+            .border-radius(4px);
+        }
 
-#routes li.selected > a {
-    background-color: #F1F1F1;
-    border: 1px solid #C5C5C5;
-}
+        dl {
+            margin: 0;
 
-li.route dl {
-    margin: 0 0 10px 0;
-}
+            dt {
+                font-size: 0.8em;
+                font-weight: normal;
+                color: black;
+            }
+        }
 
-li.route .departure-time {
-    float: left;
-    text-align: left;
-}
-li.route .arrive-time {
-    float: right;
-    text-align: right;
-}
+        dl.time {
+            dd {
+                margin: 0;
+                font-size: 2.0em;
+            }
+            .secondary {
+                font-size: 0.8em;
+                display: inline;
+            }
+        }
 
-li.route .time dt, li.route .attribute dt {
-    font-size: 0.8em;
-    font-weight: normal;
-    color: black;
-}
-li.route .time dd {
-    margin: 0;
-    font-size: 2.0em;
-}
-li.route .time .secondary {
-    font-size: 0.8em;
-    display: inline;
-}
+        dl.attribute {
+            text-align: center;
 
-li.route .attribute {
-    text-align: center;
-}
-li.route .attribute dd, li.route .attribute dt {
-    display: inline;
-}
-li.route .attribute dd {
-    font-size: 0.8em;
+            dd, dt {
+                display: inline;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    li.selected > a {
+        background-color: #F1F1F1;
+        border: 1px solid #C5C5C5; 
+    }
 }
 
 

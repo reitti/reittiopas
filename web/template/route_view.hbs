@@ -1,5 +1,5 @@
 <a href="#">
-  <dl class="time departure-time">
+  <dl class="time pull-left">
     <dt>Lähtö</dt>
     <dd>{{depTime}}</dd>
     {{#if boardingTime}}
@@ -7,17 +7,17 @@
       <dd class="secondary">{{boardingTime}}</dd>
     {{/if}}
   </dl>
-  <dl class="time arrive-time">
+  <dl class="time pull-right">
     <dt>Perillä</dt>
     <dd>{{arrTime}}</dd>
   </dl>
   <dl class="attribute">
-    <dt>Kävelyä</dt>
-    <dd>{{totalWalkingDistance}}</dd>
-  </dl>
-  <dl class="attribute">
     <dt>Kesto</dt>
     <dd>{{totalDuration}}</dd>
+  </dl>
+  <dl class="attribute">
+    <dt>Kävelyä</dt>
+    <dd>{{totalWalkingDistance}}</dd>
   </dl>
 
   <ol class="route-graph unstyled centered">
