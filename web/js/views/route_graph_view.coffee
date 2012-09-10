@@ -81,7 +81,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       result
 
     _timeLabel: (leg) ->
-      Utils.formatTime(leg.firstArrivalTime())
+      "#{Utils.formatTime(leg.firstArrivalTime())}-#{Utils.formatTime(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
       if legIdx is @route.getLegCount() - 1
@@ -94,7 +94,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportLabel: (leg) ->
       type = leg.get('type')
       content = switch type
-        when 'walk' then "#{@_transportTypeLabel(type)} (#{Utils.formatDistance(leg.get('length'))})"
+        when 'walk' then "#{@_transportTypeLabel(type)} #{Utils.formatDistance(leg.get('length'))}"
         when '6','7' then @_transportTypeLabel(type)
         when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
         else "#{@_transportTypeLabel(type)} #{leg.lineName()}"
