@@ -3,6 +3,9 @@
 @import url("lib/timePicker.css");
 @import url("route_graph.css");
 
+@navbarHeight: 42px;
+@controlsWidth: 400px;
+
 .border-radius (@radius) {
   border-radius: @radius;
   -moz-border-radius: @radius;
@@ -22,10 +25,41 @@ body {
     height: 100%;
 }
 
-#content {
-    position: absolute;
-    top: 42px;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#map-wrap {
+    position: fixed;
+    top: @navbarHeight;
+    left: @controlsWidth;
+    right: 0;
     bottom: 0;
+    
+    #map {
+        z-index: 1;
+        border-left: 1px solid #D4D4D4;
+    
+        img {
+            max-width: none;
+        }
+    }
+}
+
+#controls {
+    padding-top: @navbarHeight;
+}
+@media (min-width: 767px) {
+    #controls {
+        width: @controlsWidth;        
+    }
+}
+
+#search, #routes {
+    margin: 0 20px;
 }
 
 #time-settings {
@@ -50,18 +84,6 @@ body {
     box-sizing: border-box;
 }
 
-#controls {
-    padding: 0 20px;
-}
-
-#map {
-    z-index: 1;
-    border-left: 1px solid #D4D4D4;
-}
-
-#map img {
-    max-width: none;
-}
 
 #transport-types {
     margin: 1.5em 0;
