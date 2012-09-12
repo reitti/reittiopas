@@ -67,6 +67,10 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       arrow = "&rarr;"
       dest = @_destinationLabel(leg, legIdx)
 
+      if leg.isPreDeparture()
+        return {outerRight: [transport]}
+
+
       result = {}
       if percentBefore >= 40
         result.outerLeft = [time, transport, arrow, dest]
@@ -105,6 +109,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportTypeLabel: (type) ->
       switch type
         when 'walk' then 'kävely'
+        when 'pre_departure' then ''
         when '2' then "ratikka"
         when '6' then "metro"
         when '7' then "lautta"
