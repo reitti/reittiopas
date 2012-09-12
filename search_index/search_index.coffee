@@ -57,6 +57,9 @@ files =
   'Kirkkonummi': 'search_index/data/kirkkonummi.txt'
   'Vantaa': 'search_index/data/vantaa.txt'
 
+verySpecialPlaces =
+  'Eficode, Helsinki': '24.947197,60.196284'
+
 for own city, f of files
   do (city, f) ->
     vertx.fileSystem.readFile f, (err, res) ->
@@ -66,6 +69,9 @@ for own city, f of files
         lines = res.getString(0, res.length(), 'UTF-8').split '\n'
         for line in lines
           [place, loc] = line.split '|'
-          trie.build("#{place}, #{city}", if loc? and loc?.length > 0 then loc else undefined) 
-  
+          trie.build("#{place}, #{city}", if loc? and loc?.length > 0 then loc else undefined)
+
+for own place, loc of verySpecialPlaces
+  trie.build place, loc
+
 
