@@ -50,7 +50,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
         _.extend infoMap,
           type: leg.get('type')
-          indicator: if leg.isWalk() then "" else leg.lineName()
+          indicator: @_legIndicator(leg)
           firstArrivalTime: Utils.formatTime(leg.firstArrivalTime())
           transportType: @_transportLabel(leg)
           destinationName: @_destinationLabel(leg, legIdx)
@@ -61,15 +61,23 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           percentageAfter: percentAfter
           iconVisible: percentage > 5
 
+    _legIndicator: (leg) ->
+      switch leg.get('type')
+        when 'walk' then ''
+        when 'pre_departure' then (if @routes.isBasedOnArrivalTime() then '' else leg.preDepartureTime())
+        when 'post_arrival' then (if @routes.isBasedOnArrivalTime() then leg.postArrivalTime() else '')
+        else leg.lineName()
+
     _legInfoLayoutMap: (leg, legIdx, percentBefore, percentAfter) ->
       time = @_timeLabel(leg)
       transport = @_transportLabel(leg)
       arrow = "&rarr;"
       dest = @_destinationLabel(leg, legIdx)
 
-      if leg.isFiller()
+      if leg.isPreDeparture()
         return {outerRight: [transport]}
-
+      else if leg.isPostArrival()
+        return {outerLeft: [transport]}
 
       result = {}
       if percentBefore >= 40
@@ -105,6 +113,8 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         when 'walk' then "#{@_transportTypeLabel(type)}, #{Utils.formatDistance(leg.get('length'))}"
         when '6','7' then @_transportTypeLabel(type)
         when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
+        when 'pre_departure' then (if @routes.isBasedOnArrivalTime() then '' else leg.preDepartureTime())
+        when 'post_arrival' then (if @routes.isBasedOnArrivalTime() then leg.postArrivalTime() else '')
         else "#{@_transportTypeLabel(type)} #{leg.lineName()}"
       new Handlebars.SafeString "<a class='transport-link' href='#'>#{content}</a>"
 

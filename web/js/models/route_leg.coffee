@@ -13,8 +13,7 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
         when 'walk', '7' then '&nbsp;'                   # Walking, ferry -> no code
         when '6' then 'M'                                # Metro -> 'M'
         when '12' then @get('code').substring(4, 5)      # Commuter trains -> Character only
-        when 'pre_departure' then @preDepartureTime()    # Pre-departure -> Show the time
-        when 'post_arrival' then ''                      # Post-arrival -> Show nothing
+        when 'pre_departure', 'post_arrival' then ''    
         else                                             # Anything else -> number + possible character
           n = parseInt(@get('code').substring(1, 4), 10)
           chr = @get('code').substring(4, 5)
@@ -29,7 +28,11 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
     preDepartureTime: () ->
       "+#{Utils.formatDuration(@duration())}"
 
+    postArrivalTime: () ->
+      "-#{Utils.formatDuration(@duration())}"
 
     isWalk: () -> @get('type') is 'walk'
-    isFiller: () -> @get('type') is 'pre_departure' or @get('type') is 'post_arrival'
+    isPreDeparture: () -> @get('type') is 'pre_departure'
+    isPostArrival: () -> @get('type') is 'post_arrival'
+    isFiller: () -> @isPreDeparture() or @isPostArrival()
 
