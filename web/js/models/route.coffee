@@ -15,20 +15,31 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
         firstArrivalTime: fromTime
         lastArrivalTime: firstLeg.firstArrivalTime()
 
+    addPostArrivalLeg: (toTime) ->
+      lastLeg = _.last(@get('legs'))
+      @get('legs').push new RouteLeg
+        type: 'post_arrival'
+        locs: []
+        firstArrivalTime: lastLeg.lastArrivalTime()
+        lastArrivalTime: toTime
+
     getFirstTime: ->
       _.first(@get('legs')).firstArrivalTime()
-      
+    
+    getLastTime: ->
+      _.last(@get('legs')).lastArrivalTime()
+
     getDepartureTime: ->
       @getFirstLegAfterDeparture().firstArrivalTime()
 
     getArrivalTime: () ->
-      _.last(@get('legs')).lastArrivalTime()
+      @getLastLegBeforeArrival().lastArrivalTime()
 
     duration: () ->
       Utils.getDuration @getDepartureTime(), @getArrivalTime()
 
-    durationFromPreDeparture: () ->
-      Utils.getDuration @getFirstTime(), @getArrivalTime()
+    durationWithFill: () ->
+      Utils.getDuration @getFirstTime(), @getLastTime()
 
     boardingTime: ->
       @getFirstNonWalkingLeg()?.firstArrivalTime()
@@ -40,7 +51,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
       _.find @get('legs'), ((leg) -> !leg.isWalk())
 
     getFirstLegAfterDeparture: ->
-      _.find @get('legs'), ((leg) -> !leg.isPreDeparture())
+      if @getLeg(0).isFiller() then @getLeg(1) else @getLeg(0)
+    getLastLegBeforeArrival: -> 
+      lastIdx = @getLegCount() - 1
+      if @getLeg(lastIdx).isFiller() then @getLeg(lastIdx - 1) else @getLeg(lastIdx)
 
     getLeg: (idx) -> @get('legs')[idx]
 

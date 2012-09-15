@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'models/route', 'utils'], ($, Backbone, Route, Utils) ->
+define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Backbone, Route, Utils) ->
 
   class Routes extends Backbone.Model
 
@@ -15,15 +15,23 @@ define ['jquery', 'backbone', 'models/route', 'utils'], ($, Backbone, Route, Uti
 
     initialize: (from, to, data) ->
       @set 'routes', (new Route(from, to, routeData[0]) for routeData in data)
-      earliestDeparture = @getRoute(0).getDepartureTime()
-      for i in [1...@length()]
-        @getRoute(i).addPreDepartureLeg(earliestDeparture)
+      earliestDeparture = @getFirstRoute().getDepartureTime()
+      lastArrival = @getLastArrivalTime()
+      for i in [0...@length()]
+        @getRoute(i).addPreDepartureLeg(earliestDeparture) unless i is 0
+        @getRoute(i).addPostArrivalLeg(lastArrival) unless @getRoute(i).getArrivalTime().getTime() is lastArrival.getTime()
 
     length: () -> @get('routes').length
 
     getRoute: (idx) -> @get('routes')[idx]
+    getFirstRoute: () -> _.first(@get('routes'))
+    getLastRoute: () -> _.last(@get('routes'))
+
+    getLastArrivalTime: () -> 
+      arrivals = _.map @get('routes'), (route) -> route.getArrivalTime()
+      _.reduce arrivals, (last,cand) -> if last.getTime() > cand.getTime() then last else cand
 
     getLegDurationPercentage: (routeIdx, legIdx) ->
       route = @getRoute(routeIdx)
-      percentage = Math.floor route.getLeg(legIdx).duration() * 100 / route.durationFromPreDeparture()
+      percentage = Math.floor route.getLeg(legIdx).duration() * 100 / route.durationWithFill()
       if percentage > 0 then percentage else 1

@@ -67,7 +67,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       arrow = "&rarr;"
       dest = @_destinationLabel(leg, legIdx)
 
-      if leg.isPreDeparture()
+      if leg.isFiller()
         return {outerRight: [transport]}
 
 
@@ -109,7 +109,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportTypeLabel: (type) ->
       switch type
         when 'walk' then 'kävely'
-        when 'pre_departure' then ''
+        when 'pre_departure', 'post_arrival' then ''
         when '2' then "ratikka"
         when '6' then "metro"
         when '7' then "lautta"
