@@ -5,6 +5,7 @@
 
 @navbarHeight: 42px;
 @controlsWidth: 400px;
+@borderColor: #BBB;
 
 .border-radius (@radius) {
   border-radius: @radius;
@@ -59,15 +60,15 @@ body {
     }
 }
 
-#search, #routes {
-    margin: 20px;
+#search {
+    margin: 0 20px;
 }
 
 #time-settings {
     margin-bottom: 18px;
 }
 
-#time-settings > span > a, #time-settings select {
+#time-settings > span > input, #time-settings select {
     margin-right: 1em !important;
 }
 
@@ -79,12 +80,15 @@ body {
     width: 15ex;
 }
 
+#date {
+    width: 10ex;
+}
+
 #navbar-wrapper {
     height: 100%;
     margin-bottom: -42px;
     box-sizing: border-box;
 }
-
 
 #transport-types {
     margin: 1.5em 0;
@@ -117,15 +121,16 @@ input.input-full {
 
 #routes {
     padding: 0;
+    margin: 0;
 
     li.route {
-        margin: 1em 0;
+        margin: 0;
+        border-bottom: 1px solid @borderColor;
 
         > a {
             display: block;
             margin: 0;
-            border: 1px solid #E5E5E5;
-            .border-radius(4px);
+            padding: 3px 20px;
         }
 
         dl {
@@ -157,12 +162,14 @@ input.input-full {
                 font-size: 0.8em;
             }
         }
-        
+    }
+
+    li.route:first-child {
+        border-top: 1px solid @borderColor;
     }
 
     li.selected > a {
         background-color: #F1F1F1;
-        border: 1px solid #C5C5C5; 
     }
 }
 
