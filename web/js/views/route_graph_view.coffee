@@ -3,16 +3,14 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
   class RouteGraphView extends Backbone.View
 
     events:
-      'click .transport-link': 'selectLeg'
+      'click .leg-info': 'selectLeg'
+      'click .leg-bar': 'expandCollapse'
 
     initialize: (routes: routes, index: index) ->
       @routes = routes
       @index = index
       @route = routes.at(@index)
-      Reitti.Event.on 'route:change', @onRouteChanged
-
-    dispose: ->
-      Reitti.Event.off 'route:change', @onRouteChanged
+      @expanded = false
 
     render: ->
       @$el.html template(legs: @_legData())
@@ -23,43 +21,87 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       Reitti.Event.trigger 'leg:change', @route.getLeg(idx)
       false
 
-    onRouteChanged: (route) =>
-      return if @route.getLegCount() <= 1 
-      isThis = route is @route
-      _.defer =>
-        @$el.toggleClass 'expanded', isThis
-        @$el.css 'height', if isThis then "#{@route.getLegCount() * 24}px" else ''
-        @$el.find('li[data-leg]').each ->
-          if isThis
-            legNr = $(this).data 'leg'
-            top = legNr * 24
-            $(this).css 'top', "#{top}px"
-          else
-            $(this).css 'top', '0'
+    expandCollapse: () =>
+      @expanded = !@expanded
+      @$el.toggleClass 'expanded', @expanded
+      if @expanded then @_expand() else @_collapse()
 
+    _expand: () ->
+      widths = ($(leg).width() for leg in @$el.find '.leg[data-type!=pre_departure][data-type!=post_arrival]')
+      totalWidth = _.reduce widths, (t,w) -> t + w
+      totalHeight = 230
+      heightRatio = totalHeight / totalWidth
+      @$el.css 'height', totalHeight
+      @_hidePreAndPostLegs()
+      @_moveLegsToTheSide widths, heightRatio
+      @_showLegInfos widths, heightRatio
+
+    _collapse: () ->
+      @$el.css height: ''
+      @_showPreAndPostLegs()
+      @_moveLegsToTheTop()
+      @_hideLegInfos()
+
+    _hidePreAndPostLegs: () ->
+      @$el.find('.leg[data-type=pre_departure], .leg[data-type=post_arrival]').addClass 'hidden'
+
+    _showPreAndPostLegs: () ->
+      @$el.find('.leg[data-type=pre_departure], .leg[data-type=post_arrival]').removeClass 'hidden'
+
+    _moveLegsToTheSide: (legWidths, widthHeightRatio) ->
+      cumulativeHeight = 0
+      for leg, index in @$el.find('.leg[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+        height = Math.floor(legWidths[index] * widthHeightRatio)
+        $(leg).data
+          collapsedLeft: $(leg).css 'left'
+          collapsedWidth: $(leg).css 'width'
+        $(leg).css
+          top: cumulativeHeight
+          height: height - 1
+          left: 0
+          width: '25px'
+        $('.leg-bar', leg).css 'height', height - 5       
+        cumulativeHeight += height  
+
+    _moveLegsToTheTop: () ->
+      for leg in @$el.find('.leg[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+        $(leg).css
+          top: '0'
+          left: $(leg).data 'collapsedLeft'
+          width: $(leg).data 'collapsedWidth'
+          height: ''
+        $('.leg-bar', leg).css height: ''
+
+    _showLegInfos: (legWidths, widthHeightRatio) ->
+      cumulativeHeight = 0
+      for legInfo, index in @$el.find('.leg-info[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+        height = _.max [Math.floor(legWidths[index] * widthHeightRatio), 9]
+        $(legInfo).css top: Math.floor(cumulativeHeight + height / 2 - 5), opacity: 1
+        cumulativeHeight += height
+
+    _hideLegInfos: () ->
+      @$el.find('.leg-info').css top: '-20px', opacity: 0
 
     _legData: () ->
       cumulativePercentage = 0
       for leg,legIdx in @route.get('legs')
         percentage = @routes.getLegDurationPercentage(@index, legIdx)
+        percentageBefore = cumulativePercentage
         cumulativePercentage += percentage
 
-        percentBefore = cumulativePercentage - percentage
-        percentAfter = 95 - cumulativePercentage
-        infoMap = @_legInfoLayoutMap(leg, legIdx, percentBefore, percentAfter)
-
-        _.extend infoMap,
+        {
           type: leg.get('type')
           indicator: @_legIndicator(leg)
+          times: @_timeLabel(leg, legIdx)
+          transport: @_transportLabel(leg)
+          destination: @_destinationLabel(leg, legIdx)
           firstArrivalTime: Utils.formatTime(leg.firstArrivalTime())
-          transportType: @_transportLabel(leg)
           destinationName: @_destinationLabel(leg, legIdx)
           color: Utils.transportColors[leg.get('type')]
           percentage: percentage
-          percentageBefore: percentBefore
-          percentageBeforeAndDuring: percentBefore + percentage
-          percentageAfter: percentAfter
+          percentageBefore: percentageBefore
           iconVisible: percentage > 5
+        }
 
     _legIndicator: (leg) ->
       switch leg.get('type')
@@ -68,36 +110,9 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         when 'post_arrival' then (if @routes.isBasedOnArrivalTime() then leg.postArrivalTime() else '')
         else leg.lineName()
 
-    _legInfoLayoutMap: (leg, legIdx, percentBefore, percentAfter) ->
-      time = @_timeLabel(leg)
-      transport = @_transportLabel(leg)
-      arrow = "&rarr;"
-      dest = @_destinationLabel(leg, legIdx)
-
-      if leg.isPreDeparture()
-        return {outerRight: [transport]}
-      else if leg.isPostArrival()
-        return {outerLeft: [transport]}
-
-      result = {}
-      if percentBefore >= 40
-        result.outerLeft = [time, transport, arrow, dest]
-      else if percentAfter >= 40
-        result.outerRight = [time, transport, arrow, dest]
-      else if percentBefore >= 30
-        result.outerLeft = [time, transport, arrow, dest]
-      else if percentAfter >= 30          
-        result.outerRight = [time, transport, arrow, dest]
-      else if percentBefore >= 15 and percentAfter >= 15
-        result.outerLeft= [time, transport]
-        result.outerRight = [arrow, dest]
-      else
-        result.innerLeft = [time, transport]
-        result.innerRight = [arrow, dest]
-      result
 
     _timeLabel: (leg) ->
-      "#{Utils.formatTime(leg.firstArrivalTime())}-#{Utils.formatTime(leg.lastArrivalTime())}"
+      "#{Utils.formatTime(leg.firstArrivalTime())} - #{Utils.formatTime(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
       if leg is @route.getLastLegBeforeArrival()
@@ -111,12 +126,10 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       type = leg.get('type')
       content = switch type
         when 'walk' then "#{@_transportTypeLabel(type)}, #{Utils.formatDistance(leg.get('length'))}"
-        when '6','7' then @_transportTypeLabel(type)
-        when '12' then "#{leg.lineName()}-#{@_transportTypeLabel(type)}"
-        when 'pre_departure' then (if @routes.isBasedOnArrivalTime() then '' else leg.preDepartureTime())
-        when 'post_arrival' then (if @routes.isBasedOnArrivalTime() then leg.postArrivalTime() else '')
-        else "#{@_transportTypeLabel(type)} #{leg.lineName()}"
-      new Handlebars.SafeString "<a class='transport-link' href='#'>#{content}</a>"
+        when '6','7' then "<strong>#{@_transportTypeLabel(type)}</strong>"
+        when '12' then "<strong>#{leg.lineName()}-#{@_transportTypeLabel(type)}</strong>"
+        else  "<strong>#{leg.lineName()}</strong>"
+      new Handlebars.SafeString content
 
     # TODO: This should be somewhere in i18n
     _transportTypeLabel: (type) ->

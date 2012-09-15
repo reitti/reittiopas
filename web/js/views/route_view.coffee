@@ -14,7 +14,6 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     dispose: ->
       Reitti.Event.off 'route:change', @onRouteChanged
-      @graphView.dispose()
 
     render: ->
       @$el.html template

@@ -27,22 +27,31 @@
         .transition(all, @animationDuration, ease-out);
     }
 
+    .hidden {
+        opacity: 0;
+        top: -100px;
+    }
+    
     .leg-bar {
         height: @barHeight;
         padding: 2px;
         margin-right: 1px;
+        vertical-align: middle;
     }
 
     i {
+        position: absolute;
         display: block;
         background-image: url('../img/vehicles_tiny.png');
         width: 16px;
         height: 16px;
-        margin: 2px auto;
+        margin: -8px 0 0 -9px;
+        top: 50%;
+        left: 50%;
     }
 
     // Bus
-    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-23, .leg-24, .leg-26, .leg-36, .leg-39 {
+    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-26, .leg-36, .leg-39 {
         .leg-bar {
             background-color: #1b76bc;
         }
@@ -99,7 +108,6 @@
             background-image: url('../img/walk.png');
             background-repeat: no-repeat;
             background-position: center;
-            width: auto;
         }
     }
 
@@ -111,43 +119,36 @@
             display: none;
         }
     }
-    .leg-info {
-        display: table;
-        line-height: 105%;
-        opacity: 0;
 
-        .leg-info-content { 
-            display: table-cell;
-            vertical-align: middle;
-            padding: 0 4px;
+    .leg-info {
+        opacity: 0;
+        left: 30px;
+        width: 100%;
+        text-align: left;
+        line-height: 100%;
+
+        .times {
+            position: absolute;
+            left: 0;
+            width: 25%;
+        }
+        .transport {
+            position: absolute;
+            left: 25%;
+            width: 25%;
+        }
+        .arrow {
+            position: absolute;
+            left: 50%;
+            width: 5%;
+        }
+        .destination {
+            position: absolute;
+            left: 55%;
+            width: 45%;
         }
     }
-    .leg-info-left {
-        text-align: right;
-    }
-    .leg-info-right {
-        text-align: left;
-    }
-    .leg-info-inner {
-        height: @barHeight;
-        color: white;
-        text-shadow: none;
-        a {
-            color: #eee;
-        }
-    }
-    .leg-info-inner-left {
-        position: absolute;
-        left: 0;
-        width: 45%;
-        text-align: left;
-    }
-    .leg-info-inner-right {
-        position: absolute;
-        right: 0;
-        width: 45%;
-        text-align: right;
-    }
+
     .leg-indicator {
         .transition(all, @animationDuration, ease-out);
         opacity: 1;
@@ -161,5 +162,17 @@
     }
     .leg-indicator {
         opacity: 0;
+    }
+}
+
+
+.leg-bar {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+}
+.expanded {
+    .leg-bar {
+        cursor: -moz-zoom-out;
+        cursor: -webkit-zoom-out;        
     }
 }

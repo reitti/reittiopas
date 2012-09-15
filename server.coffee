@@ -20,7 +20,7 @@ routeMatcher.get '/routes', (req) ->
           req.response.end JSON.stringify(from: from, to: to, routes: data.body)
       else
         req.response.statusCode = 400
-        req.response.end JSON.stringify(from: !!pt1, to: !!pt2)
+        req.response.end JSON.stringify(from: !!from, to: !!to)
 
 routeMatcher.get '/address', (req) ->
   eb.send 'reitti.hsl.reverseGeocode', query: req.params().coords, (address) ->
