@@ -1,20 +1,31 @@
 define ['underscore', 'utils'], (_, Utils) ->
-
-  legStyles =
-    walk: 
-      strokeOpacity: 0
-      icons: [{
-        icon:
-          path: 'M 0,-0.2 0,0.2'
-          strokeOpacity: 1
-          strokeColor: Utils.transportColors['walk']
-        offset: '0',
-        repeat: '7px'
-      }]
       
   class MapRouteLegView
     
     constructor: (@leg, @map) ->
+      @legStyles = 
+        walk: 
+          strokeOpacity: 0
+          icons: [{
+            icon:
+              path: 'M 0,-0.2 0,0.2'
+              strokeOpacity: 1
+            repeat: '7px'
+          }, {
+            icon:
+              path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
+              scale: 2.5
+              strokeOpacity: 1
+            repeat: '100px'
+          }]
+        default:
+          icons: [{
+            icon:
+              path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
+              scale: 2.5
+              strokeOpacity: 1
+            repeat: '100px'
+          }]
 
     remove: -> 
       @line.setMap(null) if @line
@@ -26,7 +37,8 @@ define ['underscore', 'utils'], (_, Utils) ->
           path: (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
           strokeWeight: 4
           strokeColor: Utils.transportColors[@leg.get('type')]
-        }, legStyles[@leg.get('type')])
+          strokeOpacity: 1.0
+        }, @legStyles[@leg.get('type')] or @legStyles['default'])
       google.maps.event.addListener @line, 'click', @onLineClicked
       this
       
