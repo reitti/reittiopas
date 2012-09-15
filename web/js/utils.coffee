@@ -24,7 +24,7 @@ define ->
     # From yyyyMMddHHmmss to Date
     @parseDateTime: (str) ->
       [all, year, month, date, hour, min] = str.match /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})/
-      new Date year, month, date, hour, min
+      new Date year, month - 1, date, hour, min
 
     # From Date to HH:mm
     @formatTime: (d) ->
@@ -35,9 +35,9 @@ define ->
 
     @formatHSLTime: (d) ->
       return null unless d instanceof Date
-      minZero = if d.getUTCMinutes() < 10 then '0' else ''
-      hourZero = if d.getUTCHours() < 10 then '0' else ''
-      "#{hourZero}#{d.getUTCHours()}#{minZero}#{d.getUTCMinutes()}"
+      minZero = if d.getMinutes() < 10 then '0' else ''
+      hourZero = if d.getHours() < 10 then '0' else ''
+      "#{hourZero}#{d.getHours()}#{minZero}#{d.getMinutes()}"
 
     @formatDate: (d, separator = '') ->
       return null unless d instanceof Date

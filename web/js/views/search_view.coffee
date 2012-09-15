@@ -48,8 +48,10 @@ define [
     date: () ->
       time = @$el.find('#time').val()
       date = new Date()
-      timeZone = date.getTimezoneOffset() / 60
-      dateString = "#{Utils.formatDate(date, '-')}T#{time}"
+      timeZone = Math.round(date.getTimezoneOffset() / 60)
+      timeZoneZeroPad = if Math.abs(timeZone) < 10 then '0' else ''
+      timeZoneSign = if timeZone >= 0 then '-' else '+'
+      dateString = "#{Utils.formatDate(date, '-')}T#{time}#{timeZoneSign}#{timeZoneZeroPad}#{Math.abs(timeZone)}00"
       new Date(Date.parse(dateString))
 
     arrivalOrDeparture: () ->
