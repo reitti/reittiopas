@@ -8,7 +8,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     initialize: (routes: routes, index: index) ->
       @routes = routes
       @index = index
-      @route = routes.getRoute(@index)
+      @route = routes.at(@index)
       Reitti.Event.on 'route:change', @onRouteChanged
 
     dispose: ->

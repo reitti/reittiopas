@@ -8,7 +8,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       "click a": "select"
 
     initialize: (routes: routes, index: index) ->
-      @route = routes.getRoute(index)
+      @route = routes.at(index)
       @graphView = new RouteGraphView(routes: routes, index: index)
       Reitti.Event.on 'route:change', @onRouteChanged
 
