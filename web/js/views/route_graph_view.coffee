@@ -59,7 +59,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           percentageBefore: percentBefore
           percentageBeforeAndDuring: percentBefore + percentage
           percentageAfter: percentAfter
-          iconVisible: percentage > 4
+          iconVisible: percentage > 5
 
     _legInfoLayoutMap: (leg, legIdx, percentBefore, percentAfter) ->
       time = @_timeLabel(leg)
@@ -80,16 +80,19 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         result.outerLeft = [time, transport, arrow, dest]
       else if percentAfter >= 30          
         result.outerRight = [time, transport, arrow, dest]
-      else
+      else if percentBefore >= 15 and percentAfter >= 15
         result.outerLeft= [time, transport]
         result.outerRight = [arrow, dest]
+      else
+        result.innerLeft = [time, transport]
+        result.innerRight = [arrow, dest]
       result
 
     _timeLabel: (leg) ->
       "#{Utils.formatTime(leg.firstArrivalTime())}-#{Utils.formatTime(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
-      if legIdx is @route.getLegCount() - 1
+      if leg is @route.getLastLegBeforeArrival()
           to = @route.get('to')
           cityIdx = to.lastIndexOf(',')
           if cityIdx < 0 then to else to.substring(0, cityIdx)
@@ -115,3 +118,4 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         when '7' then "lautta"
         when '12' then "juna"
         else "bussi"
+

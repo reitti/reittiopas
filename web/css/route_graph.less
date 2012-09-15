@@ -128,7 +128,26 @@
     .leg-info-right {
         text-align: left;
     }
-
+    .leg-info-inner {
+        height: @barHeight;
+        color: white;
+        text-shadow: none;
+        a {
+            color: #eee;
+        }
+    }
+    .leg-info-inner-left {
+        position: absolute;
+        left: 0;
+        width: 45%;
+        text-align: left;
+    }
+    .leg-info-inner-right {
+        position: absolute;
+        right: 0;
+        width: 45%;
+        text-align: right;
+    }
     .leg-indicator {
         .transition(all, @animationDuration, ease-out);
         opacity: 1;

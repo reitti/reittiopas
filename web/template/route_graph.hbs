@@ -12,6 +12,20 @@
       class="leg-{{type}}"
       style="left: {{percentageBefore}}%; width: {{percentage}}%;">
     <div class="leg-bar">
+      <div class="leg-info leg-info-inner leg-info-inner-left">
+        <div class="leg-info-content">
+          {{#each innerLeft}}
+            {{this}}
+          {{/each}}
+        </div>
+      </div>
+      <div class="leg-info leg-info-inner leg-info-inner-right">
+        <div class="leg-info-content">
+          {{#each innerRight}}
+            {{this}}
+          {{/each}}
+        </div>
+      </div>
       {{#if iconVisible}}
         <i></i>
       {{/if}}
