@@ -31,7 +31,7 @@
         opacity: 0;
         top: -100px;
     }
-    
+
     .leg-bar {
         height: @barHeight;
         padding: 2px;
@@ -51,7 +51,7 @@
     }
 
     // Bus
-    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-26, .leg-36, .leg-39 {
+    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-25, .leg-26, .leg-36, .leg-39 {
         .leg-bar {
             background-color: #1b76bc;
         }
@@ -122,15 +122,19 @@
 
     .leg-info {
         opacity: 0;
-        left: 30px;
-        width: 100%;
+        left: 25px;
+        right: 0;
         text-align: left;
         line-height: 100%;
+      
+        &:hover {
+            background-color: #ddd;
+        }
 
         .times {
             position: absolute;
-            left: 0;
-            width: 25%;
+            left: 1%;
+            width: 24%;
         }
         .transport {
             position: absolute;

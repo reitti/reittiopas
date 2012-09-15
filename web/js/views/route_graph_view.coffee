@@ -76,11 +76,12 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       cumulativeHeight = 0
       for legInfo, index in @$el.find('.leg-info[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
         height = _.max [Math.floor(legWidths[index] * widthHeightRatio), 9]
-        $(legInfo).css top: Math.floor(cumulativeHeight + height / 2 - 5), opacity: 1
+        $(legInfo).css top: Math.floor(cumulativeHeight), height: "#{height-1}px", opacity: 1
+        $('*', legInfo).css 'lineHeight', "#{height-1}px"
         cumulativeHeight += height
 
     _hideLegInfos: () ->
-      @$el.find('.leg-info').css top: '-20px', opacity: 0
+      @$el.find('.leg-info').css height: 0, opacity: 0
 
     _legData: () ->
       cumulativePercentage = 0
