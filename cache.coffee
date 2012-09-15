@@ -13,8 +13,14 @@ cacheManager.addCache cache
 
 eb.registerHandler 'reitti.cache.get', (qry, replier) ->
   value = cache.get(new java.lang.String(qry.key))?.getValue()
-  logger.debug if value? then "Cache hit: #{qry.key}" else "Cache miss: #{qry.key}"
-  replier {result: value}
+  if value?
+    logger.debug "Cache hit: #{qry.key}"
+    replier {result: JSON.parse(value)}
+  else
+    logger.debug "Cache miss: #{qry.key}"
+    replier {result: undefined}
 
 eb.registerHandler 'reitti.cache.put', (data, value) ->
-  cache.put new Packages.net.sf.ehcache.Element(new java.lang.String(data.key), new java.lang.String(data.value))
+  key = new java.lang.String(data.key)
+  val = new java.lang.String(JSON.stringify(data.value))
+  cache.put new Packages.net.sf.ehcache.Element(key, val)
