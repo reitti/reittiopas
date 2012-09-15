@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Parempi Reittiopas</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="css/app.css">
     <script type="text/javascript">
-        // Try to get the user's current location ASAP.
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                window.initialPosition = position;
-            })
-        }
+      // Try to get the user's current location ASAP.
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          window.initialPosition = position;
+        })
+      }
     </script>
-</head>
-<body>
-<div id="controls" class="no-margin">
-    <div id="search">
+  </head>
+  <body>
+    <div id="controls" class="no-margin">
+      <div id="search">
         <form class="form clearfix">
-            <div class="control-group full-width-fix">
-                <label for="from" class="hide">Mistä…</label>
-                <input type="text" class="input-full" name="from" id="from" placeholder="Mistä…" autocomplete="off">
-            </div>
-            <div class="control-group full-width-fix">
-                <label for="to" class="hide">Minne…</label>
-                <input type="text" class="input-full" name="to" id="to" placeholder="Minne…" autocomplete="off">
-            </div>
-            <div class="controls controls-row" id="time-settings">
+          <div class="control-group full-width-fix">
+            <label for="from" class="hide">Mistä…</label>
+            <input type="text" class="input-full" name="from" id="from" placeholder="Mistä…" autocomplete="off">
+          </div>
+          <div class="control-group full-width-fix">
+            <label for="to" class="hide">Minne…</label>
+            <input type="text" class="input-full" name="to" id="to" placeholder="Minne…" autocomplete="off">
+          </div>
+          <div class="controls controls-row" id="time-settings">
           <span class="btn-group">
-            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                Tänään
-                <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Tänään</a></li>
-                <li><a href="#">Huomenna</a></li>
-                <li><a href="#">Valitse päivämäärä</a></li>
-            </ul>
+            <input type="time" name="time" id="time" class="no-margin"/>
+            <input type="date" name="date" id="date" class="no-margin"/>
+            <select class="input-small no-margin" id="time-type" name="time-type">
+              <option value="departure">Lähtöaika</option>
+              <option value="arrival">Tuloaika</option>
+            </select>
           </span>
-                <select class="input-small no-margin" id="time-type" name="time-type">
-                    <option value="departure">Lähtöaika</option>
-                    <option value="arrival">Tuloaika</option>
-                </select>
-                <input type="time" name="time" id="time" class="no-margin"/>
-            </div>
             <div id="transport-types" class="control-group">
                 <div class="btn-group" data-toggle="buttons-checkbox">
                     <button type="button" id="bus" class="btn btn-small active">
@@ -75,22 +66,22 @@
                 </button>
             </div>
         </form>
+      </div>
+      <ul id="routes" class="nav nav-list">
+      </ul>
     </div>
-    <ul id="routes" class="nav nav-list">
-    </ul>
-</div>
-<div id="map-wrap" class="hidden-phone">
-    <div id="map" class="no-margin full-height"></div>
-</div>
-<div class="navbar no-margin">
-    <div class="navbar-inner">
+    <div id="map-wrap" class="hidden-phone">
+      <div id="map" class="no-margin full-height"></div>
+    </div>
+    <div class="navbar no-margin">
+      <div class="navbar-inner">
         <a class="brand" href="#">Reittiop.as</a>
         <ul class="nav">
         </ul>
         <a class="pull-right" href="http://apps4finland.fi/category/kilpailutyot-2012/sovellus-2012/">Like it? Vote
-            it!</a>
+          it!</a>
+      </div>
     </div>
-</div>
-<script data-main="js/main" src="js/lib/require.js"></script>
-</body>
+    <script data-main="js/main" src="js/lib/require.js"></script>
+  </body>
 </html>

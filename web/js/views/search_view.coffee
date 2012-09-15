@@ -23,6 +23,7 @@ define [
         startTime: Utils.nextQuarterOfHour(now)
         step: 15
       ).val(Utils.formatTime(now))
+      $('#date').val(Utils.formatDate(now, '-'))
 
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
