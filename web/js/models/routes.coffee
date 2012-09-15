@@ -13,12 +13,19 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
       $.getJSON "/routes?#{params}", (data) ->
-        callback(Routes.make(from, to, data))
+        callback(Routes.make(data.from, data.to, data.routes))
 
     @make: (from, to, data) ->
-      routes = new Routes(new Route(from, to, routeData[0]) for routeData in data)
+      routes = new Routes(new Route(routeData[0]) for routeData in data)
+      routes.setFrom(from)
+      routes.setTo(to)
       routes.addPreAndPostLegs()
       routes
+
+    setFrom: (from) ->
+      @from = @_locationString(from)
+    setTo: (to) ->
+      @to = @_locationString(to)
 
     addPreAndPostLegs: () ->
       earliestDeparture = @first().getDepartureTime()
@@ -35,3 +42,12 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
       route = @at(routeIdx)
       percentage = Math.floor route.getLeg(legIdx).duration() * 100 / route.durationWithFill()
       if percentage > 0 then percentage else 1
+
+    _locationString: (loc) ->
+      str = loc.name
+      if loc.details?.houseNumber?
+        str += " " + loc.details.houseNumber
+      if loc.city?
+        str += ", "
+        str += loc.city
+      str

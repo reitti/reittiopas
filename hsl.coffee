@@ -23,10 +23,10 @@ hslRequestWithJSONRes = (request, params, callback) ->
 
 # ToDo: Fix https://github.com/vert-x/vert.x/issues/205 :)
 
-eb.registerHandler 'reitti.hsl.geocode', (query, replier) ->
-  hslRequestWithJSONRes 'geocode', {key: query}, (json) ->
+eb.registerHandler 'reitti.hsl.geocode', (params, replier) ->
+  hslRequestWithJSONRes 'geocode', {key: params.query}, (json) ->
     if json? and json.length
-      replier json[0].coords
+      replier json[0]
     else
       replier null
 
@@ -48,4 +48,4 @@ eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
     timetype: params.arrivalOrDeparture or 'departure'
     transport_types: params.transportTypes or 'all'
   hslRequest 'route', params, (res, body) ->
-    replier {body: body.getString(0, body.length())}
+    replier {body: JSON.parse(body.getString(0, body.length()))}

@@ -12,7 +12,7 @@ class Node
     
   putMatches: (to, n) ->
     if @end
-      to.push {name: @prefix, loc: @loc}
+      to.push {name: @prefix, coords: @loc}
       n -= 1
     for own ch,child of @children
       return 0 if n <= 0

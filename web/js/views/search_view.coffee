@@ -37,6 +37,8 @@ define [
 
       Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), (routes) =>
         @$el.find('.btn-primary').button('reset')
+        @from.val(routes.from)
+        @to.val(routes.to)
         Reitti.Event.trigger 'routes:change', routes
 
     transportTypes: () ->

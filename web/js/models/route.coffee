@@ -1,9 +1,7 @@
 define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _, Backbone, Utils, RouteLeg) ->
   class Route extends Backbone.Model
 
-    initialize: (from, to, routeData) ->
-      @set 'from', from
-      @set 'to', to
+    initialize: (routeData) ->
       @set 'legs', (new RouteLeg(legData) for legData in routeData.legs)
       @set 'duration', routeData.duration
 
