@@ -81,3 +81,11 @@ define ->
     @isWithinBounds: (location) ->
       {longitude: lng, latitude: lat} = location.coords
       24.152104 < lng < 25.535784 and 59.99907 < lat < 60.446654
+
+    # Parses hh:mm into a Date object. The date part can be given as a parameter.
+    @parseTime: (time, date = new Date()) ->
+      timeZone = Math.round(date.getTimezoneOffset() / 60)
+      timeZoneZeroPad = if Math.abs(timeZone) < 10 then '0' else ''
+      timeZoneSign = if timeZone >= 0 then '-' else '+'
+      dateString = "#{@formatDate(date, '-')}T#{time}#{timeZoneSign}#{timeZoneZeroPad}#{Math.abs(timeZone)}00"
+      new Date(Date.parse(dateString))
