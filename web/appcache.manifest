@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 16-09-2012:v3
+/js/lib/require.js
+/js/lib/async.js
+/js/main.js
+/css/app.css
+/img/vehicles_small.png
+/img/glyphicons-halflings-white.png
+
+NETWORK:
+*
