@@ -11,7 +11,7 @@ define ->
       6: '#fb6500' # Metro
       7: '#00aee7' # Ferry
       8: '#193695' # U-lines
-      12: '#3cac40' # Commuter trains
+      12: '#ce1141' # Commuter trains
       21: '#193695' # Helsinki service lines
       22: '#193695' # Helsinki night buses
       23: '#193695' # Espoo service lines
