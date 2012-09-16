@@ -6,16 +6,16 @@
 @navbarHeight: 42px;
 @controlsWidth: 400px;
 @borderColor: #BBB;
-
-.border-radius (@radius) {
-  border-radius: @radius;
-  -moz-border-radius: @radius;
-  -webkit-border-radius: @radius;
-}
+@transportIconWidth: 32px;
 
 body {
     position: relative;
     padding: 0;
+}
+
+#map {
+    margin: 0 !important;
+    height: 100%;
 }
 
 .no-margin {
@@ -40,11 +40,11 @@ body {
     left: @controlsWidth;
     right: 0;
     bottom: 0;
-    
+
     #map {
         z-index: 1;
         border-left: 1px solid #D4D4D4;
-    
+
         img {
             max-width: none;
         }
@@ -54,9 +54,10 @@ body {
 #controls {
     padding: @navbarHeight 0 20px 0;
 }
+
 @media (min-width: 767px) {
     #controls {
-        width: @controlsWidth;        
+        width: @controlsWidth;
     }
 }
 
@@ -73,14 +74,17 @@ body {
 }
 
 #time {
+    margin: 0 !important;
     width: 48px;
 }
 
 #time-type {
+    margin: 0 !important;
     width: 15ex;
 }
 
 #date {
+    margin: 0 !important;
     width: 10ex;
 }
 
@@ -92,12 +96,10 @@ body {
 
 #transport-types {
     margin: 1.5em 0;
+    text-align: center;
     button {
-        width: 20%;
-        i {
-            display: block;
-            margin: 2px auto;
-        }
+        margin: 0;
+        padding: 2px 8px;
     }
 }
 
@@ -117,7 +119,6 @@ html, body {
 input.input-full {
     width: 100%;
 }
-
 
 #routes {
     padding: 0;
@@ -162,6 +163,10 @@ input.input-full {
                 font-size: 0.8em;
             }
         }
+
+        dl.attribute:first-of-kind {
+            margin-top: 4px;
+        }
     }
 
     li.route:first-child {
@@ -173,14 +178,10 @@ input.input-full {
     }
 }
 
-
-
-
 .transport-icon {
-    background-image: url('../img/vehicles_tiny.png');
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
+    background-image: url('../img/vehicles_small.png');
+    width: @transportIconWidth;
+    height: @transportIconWidth;
 }
 
 i.icon-bus {
@@ -190,20 +191,20 @@ i.icon-bus {
 
 i.icon-tram {
     .transport-icon;
-    background-position: -20px -20px;
+    background-position: -@transportIconWidth -@transportIconWidth;
 }
 
 i.icon-metro {
     .transport-icon;
-    background-position: 0 -20px;
+    background-position: 0 -@transportIconWidth;
 }
 
 i.icon-train {
     .transport-icon;
-    background-position: -20px 0;
+    background-position: -@transportIconWidth 0;
 }
 
 i.icon-ferry {
     .transport-icon;
-    background-position: 0 -40px;
+    background-position: 0 -2 * @transportIconWidth;
 }

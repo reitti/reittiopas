@@ -16,12 +16,32 @@
     </script>
   </head>
   <body>
-    <div id="controls" class="no-margin">
+    <div id="controls">
       <div id="search">
         <form class="form clearfix">
+          <div id="transport-types" class="control-group">
+            <div class="btn-group" data-toggle="buttons-checkbox">
+              <button type="button" id="bus" class="btn btn-small active" title="Bussit">
+                <i class="icon-bus"></i>
+              </button>
+              <button type="button" id="tram" class="btn btn-small active" title="Ratikat">
+                <i class="icon-tram"></i>
+              </button>
+              <button type="button" id="metro" class="btn btn-small active" title="Metrot">
+                <i class="icon-metro"></i>
+              </button>
+              <button type="button" id="train" class="btn btn-small active" title="Junat">
+                <i class="icon-train"></i>
+              </button>
+              <button type="button" id="ferry" class="btn btn-small active" title="Lautat">
+                <i class="icon-ferry"></i>
+              </button>
+            </div>
+          </div>
           <div class="control-group full-width-fix">
             <label for="from" class="hide">Mistä…</label>
-            <input type="text" class="input-full" name="from" id="from" placeholder="Mistä…" autocomplete="off">
+            <input type="text" class="input-full" name="from" id="from" placeholder="Mistä…"
+                   autocomplete="off">
           </div>
           <div class="control-group full-width-fix">
             <label for="to" class="hide">Minne…</label>
@@ -29,57 +49,34 @@
           </div>
           <div class="controls controls-row" id="time-settings">
           <span class="btn-group">
-            <input type="time" name="time" id="time" class="no-margin"/>
-            <input type="date" name="date" id="date" class="no-margin"/>
-            <select class="input-small no-margin" id="time-type" name="time-type">
+            <input type="time" name="time" id="time"/>
+            <input type="date" name="date" id="date"/>
+            <select class="input-small" id="time-type" name="time-type">
               <option value="departure">Lähtöaika</option>
               <option value="arrival">Tuloaika</option>
             </select>
           </span>
-            <div id="transport-types" class="control-group">
-                <div class="btn-group" data-toggle="buttons-checkbox">
-                    <button type="button" id="bus" class="btn btn-small active">
-                        <i class="icon-bus"></i>
-                        Bussit
-                    </button>
-                    <button type="button" id="tram" class="btn btn-small active">
-                        <i class="icon-tram"></i>
-                        Ratikat
-                    </button>
-                    <button type="button" id="metro" class="btn btn-small active">
-                        <i class="icon-metro"></i>
-                        Metrot
-                    </button>
-                    <button type="button" id="train" class="btn btn-small active">
-                        <i class="icon-train"></i>
-                        Junat
-                    </button>
-                    <button type="button" id="ferry" class="btn btn-small active">
-                        <i class="icon-ferry"></i>
-                        Lautat
-                    </button>
-                </div>
-            </div>
-            <div class="control-group">
-                <button type="submit" class="btn btn-primary pull-right" data-loading-text="Ladataan…">
-                    <i class="icon-search icon-white"></i>&nbsp;Hae reitit
-                </button>
-            </div>
+          </div>
+          <div class="control-group">
+            <button type="submit" class="btn btn-primary pull-right" data-loading-text="Ladataan…">
+              <i class="icon-search icon-white"></i>&nbsp;Hae reitit
+            </button>
+          </div>
         </form>
       </div>
-      <ul id="routes" class="nav nav-list">
-      </ul>
+      <ul id="routes" class="nav nav-list"></ul>
     </div>
     <div id="map-wrap" class="hidden-phone">
-      <div id="map" class="no-margin full-height"></div>
+      <div id="map"></div>
     </div>
     <div class="navbar no-margin">
       <div class="navbar-inner">
-        <a class="brand" href="#">Reittiop.as</a>
-        <ul class="nav">
+        <a class="brand" href="#">Reittiopas</a>
+        <ul class="nav pull-right">
+          <li>
+            <a href="http://apps4finland.fi/category/kilpailutyot-2012/sovellus-2012/">Äänestä!</a>
+          </li>
         </ul>
-        <a class="pull-right" href="http://apps4finland.fi/category/kilpailutyot-2012/sovellus-2012/">Like it? Vote
-          it!</a>
       </div>
     </div>
     <script data-main="js/main" src="js/lib/require.js"></script>
