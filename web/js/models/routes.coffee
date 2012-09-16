@@ -21,7 +21,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
       routes.setTo(to)
       routes.date = date
       routes.arrivalOrDeparture = arrivalOrDeparture
-      routes.addPreAndPostLegs()
+      #routes.addPreAndPostLegs()
       routes
 
     setFrom: (from) ->
