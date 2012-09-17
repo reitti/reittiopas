@@ -1,6 +1,6 @@
 define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (_, Backbone, Utils, Handlebars, template) ->
 
-  EXPANDED_HEIGHT = 230
+  EXPANDED_HEIGHT = 150
   MINIMUM_LEG_HEIGHT = 12
 
   class RouteGraphView extends Backbone.View
