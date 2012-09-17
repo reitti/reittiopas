@@ -4,7 +4,6 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     events:
       'click .leg-info': 'selectLeg'
-      'click .leg-bar': 'expandCollapse'
 
     initialize: (routes: routes, index: index) ->
       @routes = routes
@@ -21,8 +20,8 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       Reitti.Event.trigger 'leg:change', @route.getLeg(idx)
       false
 
-    expandCollapse: () =>
-      @expanded = !@expanded
+    expandOrCollapse: (which) =>
+      @expanded = which
       @$el.toggleClass 'expanded', @expanded
       if @expanded then @_expand() else @_collapse()
 
