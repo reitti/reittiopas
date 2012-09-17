@@ -45,7 +45,7 @@ define ['underscore', 'utils', 'views/map_marker_image'], (_, Utils, MapMarkerIm
       @marker = new MapMarkerImage(@map, path[Math.floor(path.length / 2)], @leg.get('type'))
 
       google.maps.event.addListener @line, 'click', @onClicked
-      google.maps.event.addListener @marker, 'click', @onClicked
+      google.maps.event.addListener @marker.marker, 'click', @onClicked
       this
       
     onClicked: () =>

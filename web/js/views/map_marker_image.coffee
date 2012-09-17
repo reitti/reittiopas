@@ -1,11 +1,12 @@
 define [], ->
 
-  class MapMarkerImage extends google.maps.Marker
+  class MapMarkerImage
 
     constructor: (map, latLng, legType) ->
-      @setMap(map)
-      @setPosition(latLng)
-      @setIcon(@_markerImage(legType))
+      @marker = new google.maps.Marker(map: map, position: latLng, icon: @_markerImage(legType))
+
+    setMap: (map) ->
+      @marker.setMap map
 
     _markerImage: (legType) ->
       if legType is 'walk'
