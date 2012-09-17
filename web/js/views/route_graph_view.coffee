@@ -1,5 +1,8 @@
 define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (_, Backbone, Utils, Handlebars, template) ->
 
+  EXPANDED_HEIGHT = 230
+  MINIMUM_LEG_HEIGHT = 12
+
   class RouteGraphView extends Backbone.View
 
     events:
@@ -20,20 +23,23 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       Reitti.Event.trigger 'leg:change', @route.getLeg(idx)
       false
 
-    expandOrCollapse: (which) =>
-      @expanded = which
-      @$el.toggleClass 'expanded', @expanded
-      if @expanded then @_expand() else @_collapse()
+    expandOrCollapse: (expanded) =>
+      if @expanded isnt expanded
+        @expanded = expanded
+        @$el.toggleClass 'expanded', @expanded
+        if @expanded then @_expand() else @_collapse()
 
     _expand: () ->
       widths = ($(leg).width() for leg in @$el.find '.leg[data-type!=pre_departure][data-type!=post_arrival]')
       totalWidth = _.reduce widths, (t,w) -> t + w
-      totalHeight = 230
-      heightRatio = totalHeight / totalWidth
+      heightRatio = EXPANDED_HEIGHT / totalWidth
+      heights = (Math.floor(_.max [width * heightRatio, MINIMUM_LEG_HEIGHT]) for width in widths)
+      totalHeight = _.reduce heights, (t,h) -> t + h
+
       @$el.css 'height', totalHeight
       @_hidePreAndPostLegs()
-      @_moveLegsToTheSide widths, heightRatio
-      @_showLegInfos widths, heightRatio
+      @_moveLegsToTheSide heights
+      @_showLegInfos heights
 
     _collapse: () ->
       @$el.css height: ''
@@ -47,19 +53,19 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _showPreAndPostLegs: () ->
       @$el.find('.leg[data-type=pre_departure], .leg[data-type=post_arrival]').removeClass 'hidden'
 
-    _moveLegsToTheSide: (legWidths, widthHeightRatio) ->
+    _moveLegsToTheSide: (legHeights) ->
       cumulativeHeight = 0
       for leg, index in @$el.find('.leg[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
-        height = Math.floor(legWidths[index] * widthHeightRatio)
+        height = legHeights[index]
         $(leg).data
           collapsedLeft: $(leg).css 'left'
           collapsedWidth: $(leg).css 'width'
         $(leg).css
           top: cumulativeHeight
-          height: height - 1
+          height: height - 1 # Leave one pixel for the "gutter"
           left: 0
           width: '25px'
-        $('.leg-bar', leg).css 'height', height - 5       
+        $('.leg-bar', leg).css 'height', height - 5 # gutter + 2 x padding (ToDO: this isn't the place for this sort of thing)      
         cumulativeHeight += height  
 
     _moveLegsToTheTop: () ->
@@ -71,10 +77,10 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           height: ''
         $('.leg-bar', leg).css height: ''
 
-    _showLegInfos: (legWidths, widthHeightRatio) ->
+    _showLegInfos: (legHeights) ->
       cumulativeHeight = 0
       for legInfo, index in @$el.find('.leg-info[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
-        height = _.max [Math.floor(legWidths[index] * widthHeightRatio), 9]
+        height = legHeights[index]
         $(legInfo).show().css top: Math.floor(cumulativeHeight), height: "#{height-1}px"
         $('*', legInfo).css 'lineHeight', "#{height-1}px"
         cumulativeHeight += height
