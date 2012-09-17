@@ -5,6 +5,9 @@ CACHE MANIFEST
 /js/main.js
 /css/app.css
 /img/vehicles_small.png
+/img/vehicles_tiny.png
+/img/walker_texas_ranger_small.png
+/img/walker_texas_ranger_tiny.png
 /img/glyphicons-halflings-white.png
 
 NETWORK:
