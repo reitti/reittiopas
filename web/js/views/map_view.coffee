@@ -1,11 +1,4 @@
-define [
-  'jquery'
-  'underscore'
-  'backbone'
-  'utils'
-  'views/map_route_view'
-  'async!http://maps.googleapis.com/maps/api/js?sensor=true' + if window.location.host is 'localhost' then '' else '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk'
-], ($, _, Backbone, Utils, MapRouteView) ->
+define ['jquery', 'underscore', 'backbone', 'utils', 'leaflet', 'views/map_route_view'], ($, _, Backbone, Utils, L, MapRouteView) ->
       
   class MapView extends Backbone.View
 
@@ -16,19 +9,18 @@ define [
         @displayCurrentPosition position
 
       Reitti.Event.on 'route:change', @drawRoute
-      
       Reitti.Event.on 'leg:change', @panToLegBounds
 
     render: ->
-      @map = new google.maps.Map(@el,
-        zoom: 16
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-        mapTypeControlOptions:
-          position: google.maps.ControlPosition.TOP_CENTER
-        minZoom: 10,
-        maxZoom: 18,
-        scaleControl: true
-      )
+      @map = L.map @el, {
+        attributionControl: true
+        maxZoom: 19
+        minZoom: 10
+        maxBounds: new L.LatLngBounds new L.LatLng(59.99907, 24.152104), new L.LatLng(60.446654, 25.535784)
+      }
+      @map.attributionControl.addAttribution "<a href=\"http://www.openstreetmap.org/copyright\">&copy; OpenStreetMap contributors</a>"
+      @map.setView([60.171, 24.941], 17)
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo @map
 
       # If we already have the user's current position, use it. If not, center
       # the map to it as soon as everything is initialized and we have the
@@ -55,22 +47,8 @@ define [
       @map.fitBounds @routeView.getBoundsForLeg(leg)
       
     centerMap: (lat, lng) ->
-      latLng = new google.maps.LatLng lat, lng
-      @map.setCenter(latLng)
+      @map.panTo([lat, lng])
 
     displayCurrentPosition: (position) ->
-      latLng   = new google.maps.LatLng position.coords.latitude, position.coords.longitude
-      accuracy = position.coords.accuracy
-
-      @positionIndicator ?= new google.maps.Circle(
-        strokeColor: '#0000FF'
-        strokeOpacity: 0.50
-        strokeWeight: 2
-        fillColor: '#0000FF'
-        fillOpacity: 0.10
-        map: @map
-        center: latLng
-        radius: accuracy
-      )
-      @positionIndicator.setCenter latLng
-      @positionIndicator.setRadius accuracy
+      @positionIndicator = L.circle [position.coords.latitude, position.coords.longitude], position.coords.accuracy
+      @positionIndicator.addTo @map

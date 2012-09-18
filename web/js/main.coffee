@@ -9,6 +9,8 @@ require.config
       exports: 'Handlebars'
     bootstrap:
       deps: ['jquery']
+    leaflet:
+      exports: 'L'
   paths:
     bootstrap: 'lib/bootstrap'
     jquery: 'lib/jquery-1.7.2'
@@ -16,6 +18,7 @@ require.config
     handlebars: 'lib/handlebars-1.0.0.beta.6'
     backbone: 'lib/backbone'
     timepicker: 'lib/jquery.timePicker'
+    leaflet: 'lib/leaflet-src'
     async: 'lib/async'
     hbs: 'lib/hbs'
     template: '../template'

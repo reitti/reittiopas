@@ -1,30 +1,37 @@
-define [], ->
+define ['leaflet'], (L) ->
 
   class MapMarkerImage
 
     constructor: (map, latLng, legType) ->
-      @marker = new google.maps.Marker(map: map, position: latLng, icon: @_markerImage(legType))
+      @marker = new L.Marker latLng, {
+        icon: @_markerImage(legType)
+      }
 
-    setMap: (map) ->
-      @marker.setMap map
+    on: (evt, listener) ->
+      @marker.on evt, listener
 
     _markerImage: (legType) ->
       if legType is 'walk'
-        new google.maps.MarkerImage '/img/walker_texas_ranger_small.png', @_imageSize(), new google.maps.Point(0, 0), new google.maps.Point(0, 0)
+        new L.DivIcon
+          className: 'icon-walk'
+          iconSize: @_imageSize()
+          iconAnchor: [0, 0]
       else
-        new google.maps.MarkerImage '/img/vehicles_small.png', @_imageSize(), @_imageOrigin(legType), @_imageAnchor()
+        new L.DivIcon
+          className: @_iconClass(legType)
+          iconSize: @_imageSize()
+          iconAnchor: @_imageAnchor()
 
-
-    _imageOrigin: (legType) ->
+    _iconClass: (legType) ->
       switch legType
-        when '2' then new google.maps.Point(32, 32)
-        when '6' then new google.maps.Point(0, 32)
-        when '7' then new google.maps.Point(0, 64)
-        when '12' then new google.maps.Point(32, 0)
-        else new google.maps.Point(0, 0)
+        when '2' then 'icon-tram'
+        when '6' then 'icon-metro'
+        when '7' then 'icon-ferry'
+        when '12' then 'icon-train'
+        else 'icon-bus'
 
     _imageSize: ->
-      @imageSize ?= new google.maps.Size 32, 32, 'px', 'px'
+      @imageSize ?= [32, 32]
 
     _imageAnchor: ->
-      @imageAnchor ?= new google.maps.Point 16, 16
+      @imageAnchor ?= [16, 16]

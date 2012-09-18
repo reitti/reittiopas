@@ -1,4 +1,4 @@
-define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteLegView) ->
+define ['underscore', 'utils', 'leaflet', 'views/map_route_leg_view'], (_, Utils, L, MapRouteLegView) ->
 
   class MapRouteView
     
@@ -14,8 +14,8 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
       this
 
     getBounds: () ->
-      bounds = new google.maps.LatLngBounds()
-      bounds.union(legView.getBounds()) for legView in @legViews 
+      bounds = @legViews[0].getBounds()
+      bounds.extend(legView.getBounds()) for legView in @legViews[1..]
       bounds
       
     getBoundsForLeg: (leg) ->

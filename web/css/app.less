@@ -1,6 +1,7 @@
 @import url("lib/bootstrap.css");
 @import url("lib/bootstrap-responsive.css");
 @import url("lib/timePicker.css");
+@import url("lib/leaflet.css");
 @import url("route_graph.css");
 
 @navbarHeight: 42px;
@@ -184,27 +185,33 @@ input.input-full {
     height: @transportIconWidth;
 }
 
-i.icon-bus {
+.icon-bus {
     .transport-icon;
     background-position: 0 0;
 }
 
-i.icon-tram {
+.icon-tram {
     .transport-icon;
     background-position: -@transportIconWidth -@transportIconWidth;
 }
 
-i.icon-metro {
+.icon-metro {
     .transport-icon;
     background-position: 0 -@transportIconWidth;
 }
 
-i.icon-train {
+.icon-train {
     .transport-icon;
     background-position: -@transportIconWidth 0;
 }
 
-i.icon-ferry {
+.icon-ferry {
     .transport-icon;
     background-position: 0 -2 * @transportIconWidth;
+}
+
+.icon-walk {
+    .transport-icon;
+    background-image: url('../img/walker_texas_ranger_small.png');
+    background-position: 0 0;
 }
