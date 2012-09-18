@@ -34,13 +34,21 @@ define [
 
     searchRoutes: (event) ->
       event.preventDefault()
+      @from.clearError()
+      @to.clearError()
       @$el.find('.btn-primary').button('loading')
+      Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), @onRoutesReceived, @onSearchFailed
 
-      Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), (routes) =>
-        @$el.find('.btn-primary').button('reset')
-        @from.val(routes.from)
-        @to.val(routes.to)
-        Reitti.Event.trigger 'routes:change', routes
+    onRoutesReceived: (routes) =>
+      @$el.find('.btn-primary').button('reset')
+      @from.val(routes.from)
+      @to.val(routes.to)
+      Reitti.Event.trigger 'routes:change', routes
+
+    onSearchFailed: (reason) =>
+      @$el.find('.btn-primary').button('reset')
+      @from.indicateError() unless reason.from
+      @to.indicateError() unless reason.to
 
     transportTypes: () ->
       transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']

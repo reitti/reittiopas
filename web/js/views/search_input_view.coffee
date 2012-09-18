@@ -18,5 +18,11 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
       idx = @$el.val().lastIndexOf(',')
       @$el.selectRange(idx) if idx? and idx > 0
         
+    indicateError: () ->
+      @$el.closest('.control-group').addClass('error')
+
+    clearError: () ->
+      @$el.closest('.control-group').removeClass('error')
+
     focus: () => @$el.focus()
     val: (v) => @$el.val.apply(@$el, arguments)

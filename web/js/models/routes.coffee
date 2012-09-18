@@ -4,7 +4,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
 
     model: Route
 
-    @find: (from, to, date, arrivalOrDeparture = 'departure', transportTypes = 'all', callback) ->
+    @find: (from, to, date, arrivalOrDeparture = 'departure', transportTypes = 'all', callback, errback) ->
       params = $.param
         from: from
         to: to
@@ -12,8 +12,11 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         time: Utils.formatHSLTime(date)
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
-      $.getJSON "/routes?#{params}", (data) ->
-        callback(Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture))
+      $.ajax
+        url: "/routes?#{params}"
+        dataType: 'json'
+        success: (data) -> callback(Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture))
+        error: (xhr, status) -> errback($.parseJSON(xhr.responseText))
 
     @make: (from, to, data, date, arrivalOrDeparture) ->
       routes = new Routes(new Route(routeData[0]) for routeData in data)
