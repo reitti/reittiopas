@@ -48,9 +48,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         _.reduce arrivals, (last,cand) -> if last.getTime() > cand.getTime() then last else cand
 
     getLegDurationPercentage: (routeIdx, legIdx) ->
-      route = @at(routeIdx)
-      percentage = Math.floor route.getLeg(legIdx).duration() * 100 / route.durationWithFill()
-      if percentage > 0 then percentage else 1
+      route = @at(routeIdx).getLegDurationPercentage(legIdx)
 
     isBasedOnArrivalTime: () ->
       @arrivalOrDeparture is 'arrival'
