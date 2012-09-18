@@ -6,7 +6,7 @@ define ['underscore', 'utils', 'leaflet', 'views/map_marker_image'], (_, Utils, 
 
     remove: -> 
       @map.removeLayer @line if @line
-      @map.removeLayer @marker if @marker
+      @map.removeLayer @marker.marker if @marker
       this
       
     render: () ->
