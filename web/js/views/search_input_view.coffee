@@ -24,5 +24,12 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
     clearError: () ->
       @$el.closest('.control-group').removeClass('error')
 
+    validate: () ->
+      if $.trim(@val()) is ''
+        @indicateError()
+        false
+      else
+        true
+
     focus: () => @$el.focus()
     val: (v) => @$el.val.apply(@$el, arguments)

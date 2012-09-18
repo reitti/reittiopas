@@ -34,10 +34,11 @@ define [
 
     searchRoutes: (event) ->
       event.preventDefault()
-      @from.clearError()
-      @to.clearError()
-      @$el.find('.btn-primary').button('loading')
-      Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), @onRoutesReceived, @onSearchFailed
+      if @from.validate() and @to.validate()
+        @from.clearError()
+        @to.clearError()
+        @$el.find('.btn-primary').button('loading')
+        Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), @onRoutesReceived, @onSearchFailed
 
     onRoutesReceived: (routes) =>
       @$el.find('.btn-primary').button('reset')
