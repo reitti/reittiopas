@@ -40,9 +40,13 @@ define [
       if @from.validate() and @to.validate()
         @from.clearError()
         @to.clearError()
-        Reitti.Router.navigate "/#{encodeURIComponent(@from.val())}/#{encodeURIComponent(@to.val())}/"+
-                               "#{@arrivalOrDeparture()}/#{Utils.formatDateTime(@date())}/#{@transportTypes().join(',')}",
-                               trigger: true
+        Reitti.Router.navigateToRoutes
+          from: @from.val()
+          to: @to.val()
+          arrivalOrDeparture: @arrivalOrDeparture()
+          date: @date()
+          transportTypes: @transportTypes()
+          routeIndex: 0
 
     onFindingRoutes: (params) =>
       @from.val(params.from)
@@ -57,10 +61,10 @@ define [
       @from.val(routes.from)
       @to.val(routes.to)
 
-    onSearchFailed: (reason) =>
+    onSearchFailed: (statuses) =>
       @$el.find('.btn-primary').button('reset')
-      @from.indicateError() unless reason.from
-      @to.indicateError() unless reason.to
+      @from.indicateError() unless statuses.from
+      @to.indicateError() unless statuses.to
 
     transportTypes: () ->
       transportType for transportType in Utils.transportTypes when @$el.find('#' + transportType).hasClass('active')

@@ -2,8 +2,8 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
 
   class MapRouteView
     
-    constructor: (@route, @map) ->
-      @legViews = (new MapRouteLegView(leg, @map) for leg in @route.get('legs') when !leg.isFiller())
+    constructor: (@route, routeIndex, routes, @map) ->
+      @legViews = (new MapRouteLegView(leg, index, routeIndex, routes, @map) for leg, index in @route.get('legs') when !leg.isFiller())
  
     remove: ->
       legView.remove() for legView in @legViews

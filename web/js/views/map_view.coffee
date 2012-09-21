@@ -15,9 +15,7 @@ define [
       Reitti.Event.on 'position:change', (position) =>
         @displayCurrentPosition position
 
-      Reitti.Event.on 'route:change', @drawRoute
-      
-      Reitti.Event.on 'leg:change', @panToLegBounds
+      Reitti.Event.on 'routes:change', @drawRoute
 
     render: ->
       @map = new google.maps.Map(@el,
@@ -43,10 +41,16 @@ define [
             @centerMap position.coords.latitude, position.coords.longitude
       @
 
-    drawRoute: (route) =>
-      @routeView?.remove()
-      @routeView = new MapRouteView(route, @map).render()
-      @panToRouteBounds()
+    drawRoute: (routes, routeParams) =>
+      newRoute = routes.at(routeParams.routeIndex)
+      if newRoute isnt @routeView?.route
+        @routeView?.remove()
+        @routeView = new MapRouteView(newRoute, routeParams.routeIndex, routes, @map).render()
+        _.invoke @routeView.legViews, 'onRoutesChanged', routes, routeParams
+      if routeParams.legIndex?
+        @panToLegBounds(newRoute.getLeg(routeParams.legIndex))
+      else
+        @panToRouteBounds()
 
     panToRouteBounds: () =>
       @map.fitBounds @routeView.getBounds()

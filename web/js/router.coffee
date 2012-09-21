@@ -25,5 +25,16 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
         date: Utils.parseDateTime(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
-        routeIndex: routeIndex
-        legIndex: legIndex
+        routeIndex: parseInt(routeIndex, 10)
+        legIndex: if legIndex? then parseInt(legIndex, 10) else undefined
+
+
+
+    navigateToRoutes: (params) ->
+      path = "/#{encodeURIComponent(params.from)}/#{encodeURIComponent(params.to)}/"+
+             "#{params.arrivalOrDeparture}/#{Utils.formatDateTime(params.date)}/#{params.transportTypes.join(',')}"
+      if params.routeIndex?
+        path += "/#{params.routeIndex}"
+        if params.legIndex? then path += "/#{params.legIndex}"
+
+      @navigate path, trigger: true

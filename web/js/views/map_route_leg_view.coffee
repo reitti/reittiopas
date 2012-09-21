@@ -2,11 +2,11 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
   class MapRouteLegView
     
-    constructor: (@leg, @map) ->
-      Reitti.Event.on 'leg:change', @onLegChanged
+    constructor: (@leg, @legIndex, @routeIndex, @routes, @map) ->
+      Reitti.Event.on 'routes:change', @onRoutesChanged
 
     remove: ->
-      Reitti.Event.off 'leg:change', @onLegChanged
+      Reitti.Event.off 'routes:change', @onRoutesChanged
       @line?.setMap null
       @marker?.setMap null
       @originMarker?.setMap null
@@ -31,8 +31,8 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
     onClicked: () =>
       Reitti.Event.trigger 'leg:change', @leg
 
-    onLegChanged: (leg) =>
-      if leg is @leg
+    onRoutesChanged: (routes, routeParams) =>
+      if routes is @routes and routeParams.routeIndex is @routeIndex and routeParams.legIndex is @legIndex
         originLatLng = @line.getPath().getAt(0)
         destLatLng = @line.getPath().getAt(@line.getPath().getLength() - 1)
         @originMarker ?= new MapLocationMarker(originLatLng, @leg.originName(), @map, @_markerAnchor(originLatLng))

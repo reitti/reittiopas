@@ -8,14 +8,15 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       "click a": "select"
 
     initialize: (routes: routes, index: index, routeParams: routeParams) ->
+      @routes = routes
       @index = index
       @route = routes.at(index)
-      @graphView = new RouteGraphView(routes: routes, index: index)
+      @graphView = new RouteGraphView(routes: routes, index: index, routeParams: routeParams)
       @routeParams = routeParams
-      Reitti.Event.on 'route:change', @onRouteChanged
+      Reitti.Event.on 'routes:change', @onRoutesChanged
 
     dispose: ->
-      Reitti.Event.off 'route:change', @onRouteChanged
+      Reitti.Event.off 'routes:change', @onRoutesChanged
 
     render: ->
       @$el.html template
@@ -29,10 +30,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       this
 
     select: =>
-      Reitti.Router.navigate "/#{encodeURIComponent(@routeParams.from)}/#{encodeURIComponent(@routeParams.to)}/"+
-                              "#{@routeParams.arrivalOrDeparture}/#{Utils.formatDateTime(@routeParams.date)}/#{@routeParams.transportTypes.join(',')}/"+
-                              @index,
-                              trigger: true
+      Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: @index, legIndex: undefined)
       false
 
     _lineCode: () ->
@@ -47,9 +45,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
         when '12' then "Junaan"
         else "Bussiin"
 
-    onRouteChanged: (route) =>
-      @$el.toggleClass 'selected', route is @route
-      @graphView.expandOrCollapse route is @route
+    onRoutesChanged: (routes, routeParams) =>
+      isThis = routes is @routes and routeParams.routeIndex is @index
+      @$el.toggleClass 'selected', isThis
+      @graphView.expandOrCollapse isThis
 
 
 
