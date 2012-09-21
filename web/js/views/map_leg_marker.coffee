@@ -1,6 +1,6 @@
 define [], ->
 
-  class MapMarkerImage
+  class MapLegMarker
 
     constructor: (map, latLng, legType) ->
       @marker = new google.maps.Marker(map: map, position: latLng, icon: @_markerImage(legType))

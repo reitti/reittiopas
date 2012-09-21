@@ -18,8 +18,7 @@ define ->
       24: '#193695' # Vantaa service lines
       25: '#193695' # Region night buses
       36: '#193695' # Kirkkonummi internal bus lines
-      39: '#193695'
-    # Kerava internal bus lines
+      39: '#193695' # Kerava internal bus lines
 
     # From yyyyMMddHHmmss to Date
     @parseDateTime: (str) ->

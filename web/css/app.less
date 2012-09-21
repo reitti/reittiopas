@@ -178,6 +178,23 @@ input.input-full {
     }
 }
 
+#map {
+    .popover {
+        opacity: 0.8;
+        width: 100px;
+        height: 20px;
+        font-size: 0.8em;
+        cursor: pointer;
+        .popover-content {
+            padding: 0 5px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
 .transport-icon {
     background-image: url('../img/vehicles_small.png');
     width: @transportIconWidth;

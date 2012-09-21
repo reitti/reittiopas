@@ -1,10 +1,57 @@
-define ['underscore', 'utils', 'views/map_marker_image'], (_, Utils, MapMarkerImage) ->
+define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marker'], (_, Utils, MapLegMarker, MapLocationMarker) ->
 
   class MapRouteLegView
     
     constructor: (@leg, @map) ->
-      @legStyles = 
-        walk: 
+      Reitti.Event.on 'leg:change', @onLegChanged
+
+    remove: ->
+      Reitti.Event.off 'leg:change', @onLegChanged
+      @line?.setMap null
+      @marker?.setMap null
+      @originMarker?.setMap null
+      @destMarker?.setMap null
+      this
+      
+    render: () ->
+      path = (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
+      @line = new google.maps.Polyline _.extend({
+          map: @map
+          path: path
+          strokeWeight: 4
+          strokeColor: Utils.transportColors[@leg.get('type')]
+          strokeOpacity: 1.0
+        }, @_legStyle())
+      @marker = new MapLegMarker(@map, path[Math.floor(path.length / 2)], @leg.get('type'))
+
+      google.maps.event.addListener @line, 'click', @onClicked
+      google.maps.event.addListener @marker.marker, 'click', @onClicked
+      this
+      
+    onClicked: () =>
+      Reitti.Event.trigger 'leg:change', @leg
+
+    onLegChanged: (leg) =>
+      if leg is @leg
+        originLatLng = @line.getPath().getAt(0)
+        destLatLng = @line.getPath().getAt(@line.getPath().getLength() - 1)
+        @originMarker ?= new MapLocationMarker(originLatLng, @leg.originName(), @map, @_markerAnchor(originLatLng))
+        @destMarker ?= new MapLocationMarker(destLatLng, @leg.destinationName(), @map, @_markerAnchor(destLatLng))
+      else
+        @originMarker?.setMap null
+        @destMarker?.setMap null
+        @originMarker = null
+        @destMarker = null
+
+    getBounds: () ->
+      bounds = new google.maps.LatLngBounds()
+      if @line
+        bounds.extend(latLng) for latLng in @line.getPath().getArray()  
+      bounds
+
+    _legStyle: () ->
+      switch @leg.get('type')
+        when 'walk'
           strokeOpacity: 0
           icons: [{
             icon:
@@ -18,7 +65,7 @@ define ['underscore', 'utils', 'views/map_marker_image'], (_, Utils, MapMarkerIm
               strokeOpacity: 1
             repeat: '100px'
           }]
-        default:
+        else
           icons: [{
             icon:
               path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
@@ -27,32 +74,27 @@ define ['underscore', 'utils', 'views/map_marker_image'], (_, Utils, MapMarkerIm
             repeat: '100px'
           }]
 
-    remove: -> 
-      @line.setMap(null) if @line
-      @marker.setMap(null) if @marker
-      this
-      
-    render: () ->
-      path = (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
-      
-      @line = new google.maps.Polyline _.extend({
-          map: @map
-          path: path
-          strokeWeight: 4
-          strokeColor: Utils.transportColors[@leg.get('type')]
-          strokeOpacity: 1.0
-        }, @legStyles[@leg.get('type')] or @legStyles['default'])
-      @marker = new MapMarkerImage(@map, path[Math.floor(path.length / 2)], @leg.get('type'))
+    _markerAnchor: (latLng) ->
+      if @_isNorthMost(latLng)
+        'top'
+      else if @_isSouthMost(latLng)
+        'bottom'
+      else if @_isEastMost(latLng)
+        'left'
+      else
+        'right'
 
-      google.maps.event.addListener @line, 'click', @onClicked
-      google.maps.event.addListener @marker.marker, 'click', @onClicked
-      this
-      
-    onClicked: () =>
-      Reitti.Event.trigger 'leg:change', @leg
+    _isNorthMost: (latLng) ->
+      for i in [0...@line.getPath().getLength()]
+        return false if @line.getPath().getAt(i).lat() > latLng.lat()
+      true
 
-    getBounds: () ->
-      bounds = new google.maps.LatLngBounds()
-      if @line
-        bounds.extend(latLng) for latLng in @line.getPath().getArray()  
-      bounds
+    _isSouthMost: (latLng) ->
+      for i in [0...@line.getPath().getLength()]
+        return false if @line.getPath().getAt(i).lat() < latLng.lat()
+      true
+
+    _isEastMost: (latLng) ->
+      for i in [0...@line.getPath().getLength()]
+        return false if @line.getPath().getAt(i).lng() < latLng.lng()
+      true

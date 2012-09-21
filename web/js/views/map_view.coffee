@@ -4,7 +4,7 @@ define [
   'backbone'
   'utils'
   'views/map_route_view'
-  'async!http://maps.googleapis.com/maps/api/js?sensor=true' + if window.location.host is 'localhost' then '' else '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk'
+  "async!http://maps.googleapis.com/maps/api/js?sensor=true#{window.gmapsKey}"
 ], ($, _, Backbone, Utils, MapRouteView) ->
       
   class MapView extends Backbone.View

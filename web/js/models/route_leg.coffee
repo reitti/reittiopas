@@ -19,8 +19,11 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
           chr = @get('code').substring(4, 5)
           "#{n}#{chr}"
 
+    originName: () ->
+      @get('originName') or _(@get('locs')).first()?.name
+
     destinationName: () ->
-      _(@get('locs')).last()?.name
+      @get('destinationName') or _(@get('locs')).last()?.name
 
     duration: () ->
       Utils.getDuration @firstArrivalTime(), @lastArrivalTime()

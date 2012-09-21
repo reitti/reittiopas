@@ -4,7 +4,7 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
     
     constructor: (@route, @map) ->
       @legViews = (new MapRouteLegView(leg, @map) for leg in @route.get('legs') when !leg.isFiller())
-
+ 
     remove: ->
       legView.remove() for legView in @legViews
       this
@@ -14,8 +14,8 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
       this
 
     getBounds: () ->
-      bounds = new google.maps.LatLngBounds()
-      bounds.union(legView.getBounds()) for legView in @legViews 
+      bounds = @legViews[0].getBounds()
+      bounds.union(legView.getBounds()) for legView in @legViews[1..]
       bounds
       
     getBoundsForLeg: (leg) ->

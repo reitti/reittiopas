@@ -19,18 +19,15 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         error: (xhr, status) -> errback($.parseJSON(xhr.responseText))
 
     @make: (from, to, data, date, arrivalOrDeparture) ->
-      routes = new Routes(new Route(routeData[0]) for routeData in data)
-      routes.setFrom(from)
-      routes.setTo(to)
+      fromName = @_locationString(from)
+      toName = @_locationString(to)
+      routes = new Routes(new Route(fromName, toName, routeData[0]) for routeData in data)
+      routes.from = fromName
+      routes.to = toName
       routes.date = date
       routes.arrivalOrDeparture = arrivalOrDeparture
       #routes.addPreAndPostLegs()
       routes
-
-    setFrom: (from) ->
-      @from = @_locationString(from)
-    setTo: (to) ->
-      @to = @_locationString(to)
 
     addPreAndPostLegs: () ->
       earliestDeparture = @getEarliestDepartureTime()
@@ -56,7 +53,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
     isBasedOnArrivalTime: () ->
       @arrivalOrDeparture is 'arrival'
 
-    _locationString: (loc) ->
+    @_locationString: (loc) ->
       str = loc.name
       if loc.details?.houseNumber?
         str += " " + loc.details.houseNumber

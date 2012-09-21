@@ -1,9 +1,11 @@
 define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _, Backbone, Utils, RouteLeg) ->
   class Route extends Backbone.Model
 
-    initialize: (routeData) ->
+    initialize: (from, to, routeData) ->
       @set 'legs', (new RouteLeg(legData) for legData in routeData.legs)
       @set 'duration', routeData.duration
+      _.first(@get 'legs').set 'originName', from
+      _.last(@get 'legs').set 'destinationName', to
 
     addPreDepartureLeg: (fromTime) ->
       firstLeg = @getLeg(0)
