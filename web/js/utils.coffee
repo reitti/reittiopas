@@ -2,7 +2,7 @@ define ->
   class Utils
 
     @transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']
-    
+
     @transportColors =
       walk: '#1e74fc'
       1: '#193695' # Helsinki internal bus lines
@@ -94,3 +94,19 @@ define ->
       timeZoneSign = if timeZone >= 0 then '-' else '+'
       dateString = "#{@formatDate(date, '-')}T#{time}#{timeZoneSign}#{timeZoneZeroPad}#{Math.abs(timeZone)}00"
       new Date(Date.parse(dateString))
+
+    # Memoizes functions that do asynchronous work, and pass their results to a callback
+    # function given as the last argument.
+    @asyncMemoize: (f) ->
+      cache = {}
+      (args..., callback) ->
+        cacheKey = JSON.stringify(args)
+        if cached = cache[cacheKey]
+          callback.apply null, cached
+        else
+          args.push (results...) ->
+            cache[cacheKey] = results
+            callback.apply null, results
+          f.apply null, args
+
+

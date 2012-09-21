@@ -12,25 +12,18 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         time: Utils.formatHSLTime(date)
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
-      successCallback = (data) =>
-        @putCached(params, data)
-        Reitti.Event.trigger 'routes:change', Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture)
-      errorCallback = (xhr, status) =>
-        Reitti.Event.trigger 'routes:notfound', $.parseJSON(xhr.responseText)
+      @_doFind params, (error, data) ->
+        if error?
+          Reitti.Event.trigger 'routes:notfound', error
+        else
+          Reitti.Event.trigger 'routes:change', Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture)
 
-      if data = @getCached(params)
-        successCallback(data)
-      else
-        $.ajax
+    @_doFind: Utils.asyncMemoize (params, callback) ->
+      $.ajax
           url: "/routes?#{params}"
           dataType: 'json'
-          success: successCallback
-          error: errorCallback
-
-    @getCached: (params) ->
-      (@_cache ?= {})[params]
-    @putCached: (params,data) ->
-      (@_cache ?= {})[params] = data
+          success: (data) -> callback(null, data)
+          error: (xhr) -> callback($.parseJSON(xhr.responseText))
 
     @make: (from, to, data, date, arrivalOrDeparture) ->
       fromName = @_locationString(from)
