@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'models/routes', 'views/route_view'], ($, _, Backbone, Routes, RouteView) ->
+define ['jquery', 'backbone', 'models/routes', 'views/route_view'], ($, Backbone, Routes, RouteView) ->
   
   class RoutesView extends Backbone.View
     
@@ -16,9 +16,10 @@ define ['jquery', 'underscore', 'backbone', 'models/routes', 'views/route_view']
       if routes isnt @routes
         @routes = routes
         routeView.dispose() for routeView in @routeViews
-        @routeViews = (new RouteView(routes: @routes, index: idx, routeParams: routeParams) for idx in [0..@routes.size() - 1])
+        @routeViews = (new RouteView(routes: @routes, routeParams: routeParams, index: idx) for idx in [0...@routes.size()])
         @render()
-        _.invoke @routeViews, 'onRoutesChanged', routes, routeParams
+        # Invoke event handlers explicitly since the newly constructed views won't receive this event.
+        routeView.onRoutesChanged(routes, routeParams) for routeView in @routeViews
       
     render: ->
       @$el.empty()

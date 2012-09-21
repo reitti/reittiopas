@@ -8,11 +8,11 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     events:
       'click .leg-info': 'selectLeg'
 
-    initialize: (routes: routes, index: index, routeParams: routeParams) ->
+    initialize: (routes: routes, routeParams: routeParams, index: index) ->
       @routes = routes
+      @routeParams = routeParams
       @index = index
       @route = routes.at(@index)
-      @routeParams = routeParams
       @expanded = false
 
     render: ->
@@ -21,7 +21,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     selectLeg: (e) =>
       idx = $(e.target).closest('[data-leg]').data('leg')
-      Reitti.Router.navigateToRoutes _.extend(@routeParams, {routeIndex: @index, legIndex: idx})
+      Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: idx)
       false
 
     expandOrCollapse: (expanded) =>

@@ -7,12 +7,13 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
     events:
       "click a": "select"
 
-    initialize: (routes: routes, index: index, routeParams: routeParams) ->
+    initialize: (routes: routes, routeParams: routeParams, index: index) ->
       @routes = routes
-      @index = index
-      @route = routes.at(index)
-      @graphView = new RouteGraphView(routes: routes, index: index, routeParams: routeParams)
       @routeParams = routeParams
+      @index = index
+
+      @route = routes.at(index)
+      @graphView = new RouteGraphView(routes: routes, routeParams: routeParams, index: index)
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     dispose: ->

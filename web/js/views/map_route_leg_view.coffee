@@ -2,7 +2,12 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
   class MapRouteLegView
     
-    constructor: (@leg, @legIndex, @routeIndex, @routes, @map) ->
+    constructor: (routes: routes, routeIndex: routeIndex, index: index, map: map) ->
+      @routes = routes
+      @routeIndex = routeIndex
+      @index = index
+      @leg = @routes.at(@routeIndex).getLeg(@index)
+      @map = map
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     remove: ->
@@ -32,7 +37,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       Reitti.Event.trigger 'leg:change', @leg
 
     onRoutesChanged: (routes, routeParams) =>
-      if routes is @routes and routeParams.routeIndex is @routeIndex and routeParams.legIndex is @legIndex
+      if @isSelectedIn(routes, routeParams)
         originLatLng = @line.getPath().getAt(0)
         destLatLng = @line.getPath().getAt(@line.getPath().getLength() - 1)
         @originMarker ?= new MapLocationMarker(originLatLng, @leg.originName(), @map, @_markerAnchor(originLatLng))
@@ -42,6 +47,9 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
         @destMarker?.setMap null
         @originMarker = null
         @destMarker = null
+
+    isSelectedIn: (routes, routeParams) ->
+      routes is @routes and routeParams.routeIndex is @routeIndex and routeParams.legIndex is @index
 
     getBounds: () ->
       bounds = new google.maps.LatLngBounds()

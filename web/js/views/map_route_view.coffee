@@ -2,11 +2,13 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
 
   class MapRouteView
     
-    constructor: (@route, routeIndex, routes, @map) ->
-      @legViews = (new MapRouteLegView(leg, index, routeIndex, routes, @map) for leg, index in @route.get('legs') when !leg.isFiller())
+    constructor: (routes: routes, index: index, map: map) ->
+      @index = index
+      @legViews = for leg, legIndex in routes.at(index).get('legs') when !leg.isFiller()
+        new MapRouteLegView(routes: routes, routeIndex: index, index: legIndex, map: map)
  
-    remove: ->
-      legView.remove() for legView in @legViews
+    dispose: ->
+      legView.dispose() for legView in @legViews
       this
       
     render: ->
@@ -18,10 +20,5 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
       bounds.union(legView.getBounds()) for legView in @legViews[1..]
       bounds
       
-    getBoundsForLeg: (leg) ->
-      @findLegView(leg).getBounds()
-
-    findLegView: (leg) ->
-      for legView in @legViews
-        return legView if legView.leg is leg
-      null
+    getBoundsForLeg: (legIndex) ->
+      @legViews[legIndex].getBounds()

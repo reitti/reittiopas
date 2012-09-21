@@ -12,10 +12,8 @@ define [
     el: $('#map')
 
     initialize: ->
-      Reitti.Event.on 'position:change', (position) =>
-        @displayCurrentPosition position
-
-      Reitti.Event.on 'routes:change', @drawRoute
+      Reitti.Event.on 'position:change', @displayCurrentPosition
+      Reitti.Event.on 'routes:change', @onRoutesChanged
 
     render: ->
       @map = new google.maps.Map(@el,
@@ -41,28 +39,32 @@ define [
             @centerMap position.coords.latitude, position.coords.longitude
       @
 
-    drawRoute: (routes, routeParams) =>
-      newRoute = routes.at(routeParams.routeIndex)
-      if newRoute isnt @routeView?.route
-        @routeView?.remove()
-        @routeView = new MapRouteView(newRoute, routeParams.routeIndex, routes, @map).render()
-        _.invoke @routeView.legViews, 'onRoutesChanged', routes, routeParams
+    onRoutesChanged: (routes, routeParams) =>
+      if routeParams.routeIndex isnt @routeView?.index
+        @routeView?.dispose()
+        @routeView = new MapRouteView(routes: routes, index: routeParams.routeIndex, map: @map).render()
+        # Invoke event handlers explicitly since the newly contructed views won't receive this event.
+        legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
+      @adjustPan(routeParams)
+
+
+    adjustPan: (routeParams) =>
       if routeParams.legIndex?
-        @panToLegBounds(newRoute.getLeg(routeParams.legIndex))
+        @panToLegBounds(routeParams.legIndex)
       else
         @panToRouteBounds()
 
     panToRouteBounds: () =>
       @map.fitBounds @routeView.getBounds()
 
-    panToLegBounds: (leg) =>
-      @map.fitBounds @routeView.getBoundsForLeg(leg)
+    panToLegBounds: (legIndex) =>
+      @map.fitBounds @routeView.getBoundsForLeg(legIndex)
       
     centerMap: (lat, lng) ->
       latLng = new google.maps.LatLng lat, lng
       @map.setCenter(latLng)
 
-    displayCurrentPosition: (position) ->
+    displayCurrentPosition: (position) =>
       latLng   = new google.maps.LatLng position.coords.latitude, position.coords.longitude
       accuracy = position.coords.accuracy
 
