@@ -40,7 +40,9 @@ define [
       if @from.validate() and @to.validate()
         @from.clearError()
         @to.clearError()
-        Reitti.Router.navigate "/#{@from.val()}/#{@to.val()}/#{@arrivalOrDeparture()}/#{Utils.formatDateTime(@date())}/#{@transportTypes().join(',')}", trigger: true
+        Reitti.Router.navigate "/#{encodeURIComponent(@from.val())}/#{encodeURIComponent(@to.val())}/"+
+                               "#{@arrivalOrDeparture()}/#{Utils.formatDateTime(@date())}/#{@transportTypes().join(',')}",
+                               trigger: true
 
     onFindingRoutes: (params) =>
       @from.val(params.from)

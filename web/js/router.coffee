@@ -18,8 +18,8 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
 
     routesView: (from, to, departArrive, datetime, transportTypes) ->
       Reitti.Event.trigger 'routes:find',
-        from: from
-        to: to
+        from: decodeURIComponent(from)
+        to: decodeURIComponent(to)
         date: Utils.parseDateTime(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
