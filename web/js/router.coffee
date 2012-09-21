@@ -20,8 +20,8 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
 
     routesView: (from, to, departArrive, datetime, transportTypes, routeIndex = 0, legIndex) ->
       Reitti.Event.trigger 'routes:find',
-        from: decodeURIComponent(from)
-        to: decodeURIComponent(to)
+        from: Utils.decodeURIComponent(from)
+        to: Utils.decodeURIComponent(to)
         date: Utils.parseDateTime(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
@@ -31,7 +31,7 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
 
 
     navigateToRoutes: (params) ->
-      path = "/#{encodeURIComponent(params.from)}/#{encodeURIComponent(params.to)}/"+
+      path = "/#{Utils.encodeURIComponent(params.from)}/#{Utils.encodeURIComponent(params.to)}/"+
              "#{params.arrivalOrDeparture}/#{Utils.formatDateTime(params.date)}/#{params.transportTypes.join(',')}"
       if params.routeIndex?
         path += "/#{params.routeIndex}"

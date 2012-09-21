@@ -109,3 +109,12 @@ define ->
             callback.apply null, results
           f.apply null, args
 
+    @encodeURIComponent: (s) ->
+      s = s.replace(/\s/g, '--').replace(/,/, '_')
+      encodeURIComponent(s)
+
+    @decodeURIComponent: (s) ->
+      s = decodeURIComponent(s)
+      s.replace(/--/g, ' ').replace(/_/g, ',')
+
+
