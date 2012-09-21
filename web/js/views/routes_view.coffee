@@ -7,16 +7,18 @@ define ['jquery', 'underscore', 'backbone', 'models/routes', 'views/route_view']
     initialize: ->
       @routeViews = []
       Reitti.Event.on 'routes:find', @findRoutes
-      Reitti.Event.on 'routes:change', @showNewRoutes
+      Reitti.Event.on 'routes:change', @showRoutes
       
     findRoutes: (params) ->
-      Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes
+      Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes, params
 
-    showNewRoutes: (@routes) =>
-      routeView.dispose() for routeView in @routeViews
-      @routeViews = (new RouteView(routes: @routes, index: idx) for idx in [0..@routes.size() - 1])
-      @render()
-      _.delay (=> Reitti.Event.trigger 'route:change', @routeViews[0].route), 50
+    showRoutes: (routes, routeParams) =>
+      if routes isnt @routes
+        @routes = routes
+        routeView.dispose() for routeView in @routeViews
+        @routeViews = (new RouteView(routes: @routes, index: idx, routeParams: routeParams) for idx in [0..@routes.size() - 1])
+        @render()
+      _.delay (=> Reitti.Event.trigger 'route:change', @routeViews[routeParams.routeIndex].route), 50
       
     render: ->
       @$el.empty()

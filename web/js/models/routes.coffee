@@ -4,7 +4,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
 
     model: Route
 
-    @find: (from, to, date, arrivalOrDeparture = 'departure', transportTypes = 'all') ->
+    @find: (from, to, date, arrivalOrDeparture = 'departure', transportTypes, routeParams) ->
       params = $.param
         from: from
         to: to
@@ -12,17 +12,17 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         time: Utils.formatHSLTime(date)
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
-      @_doFind params, (error, data) ->
+      @_doFind params, date, arrivalOrDeparture, (error, routes) ->
         if error?
-          Reitti.Event.trigger 'routes:notfound', error
+          Reitti.Event.trigger 'routes:notfound', error, routeParams
         else
-          Reitti.Event.trigger 'routes:change', Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture)
+          Reitti.Event.trigger 'routes:change', routes, routeParams
 
-    @_doFind: Utils.asyncMemoize (params, callback) ->
+    @_doFind: Utils.asyncMemoize (params, date, arrivalOrDeparture, callback) ->
       $.ajax
           url: "/routes?#{params}"
           dataType: 'json'
-          success: (data) -> callback(null, data)
+          success: (data) -> callback(null, Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture))
           error: (xhr) -> callback($.parseJSON(xhr.responseText))
 
     @make: (from, to, data, date, arrivalOrDeparture) ->

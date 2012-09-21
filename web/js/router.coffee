@@ -4,6 +4,8 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
     routes:
       '': 'home'
       ':from/:to/:departArrive/:datetime/:transportTypes': 'routesView'
+      ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex': 'routesView'
+      ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex/:legIndex': 'routesView'
 
     initialize: ->
       @mapView   = new MapView()
@@ -16,10 +18,12 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
       @mapView.render()
       @searchBox.render()
 
-    routesView: (from, to, departArrive, datetime, transportTypes) ->
+    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex = 0, legIndex) ->
       Reitti.Event.trigger 'routes:find',
         from: decodeURIComponent(from)
         to: decodeURIComponent(to)
         date: Utils.parseDateTime(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
+        routeIndex: routeIndex
+        legIndex: legIndex

@@ -7,9 +7,11 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
     events:
       "click a": "select"
 
-    initialize: (routes: routes, index: index) ->
+    initialize: (routes: routes, index: index, routeParams: routeParams) ->
+      @index = index
       @route = routes.at(index)
       @graphView = new RouteGraphView(routes: routes, index: index)
+      @routeParams = routeParams
       Reitti.Event.on 'route:change', @onRouteChanged
 
     dispose: ->
@@ -27,7 +29,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       this
 
     select: =>
-      Reitti.Event.trigger 'route:change', @route
+      Reitti.Router.navigate "/#{encodeURIComponent(@routeParams.from)}/#{encodeURIComponent(@routeParams.to)}/"+
+                              "#{@routeParams.arrivalOrDeparture}/#{Utils.formatDateTime(@routeParams.date)}/#{@routeParams.transportTypes.join(',')}/"+
+                              @index,
+                              trigger: true
       false
 
     _lineCode: () ->

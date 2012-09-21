@@ -109,4 +109,3 @@ define ->
             callback.apply null, results
           f.apply null, args
 
-
