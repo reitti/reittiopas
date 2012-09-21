@@ -1,6 +1,8 @@
 define ->
   class Utils
 
+    @transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']
+    
     @transportColors =
       walk: '#1e74fc'
       1: '#193695' # Helsinki internal bus lines
@@ -20,17 +22,21 @@ define ->
       36: '#193695' # Kirkkonummi internal bus lines
       39: '#193695' # Kerava internal bus lines
 
+    # From Date to yyyyMMddHHmmss
+    @formatDateTime: (d) ->
+      "#{@formatDate(d)}#{@formatTime(d, '')}"
+
     # From yyyyMMddHHmmss to Date
     @parseDateTime: (str) ->
       [all, year, month, date, hour, min] = str.match /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})/
       new Date year, month - 1, date, hour, min
 
     # From Date to HH:mm
-    @formatTime: (d) ->
+    @formatTime: (d, separator = ':') ->
       return null unless d instanceof Date
       hourZero = if d.getHours() < 10 then '0' else ''
       minZero = if d.getMinutes() < 10 then '0' else ''
-      "#{hourZero}#{d.getHours()}:#{minZero}#{d.getMinutes()}"
+      "#{hourZero}#{d.getHours()}#{separator}#{minZero}#{d.getMinutes()}"
 
     @formatHSLTime: (d) ->
       return null unless d instanceof Date

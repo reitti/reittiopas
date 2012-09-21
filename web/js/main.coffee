@@ -32,7 +32,7 @@ require ['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], ($, _, Back
 
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
-  Backbone.history.start()
+  Backbone.history.start(pushState: true)
     
   $ ->
     if navigator.geolocation

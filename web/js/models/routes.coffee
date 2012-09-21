@@ -15,8 +15,8 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
       $.ajax
         url: "/routes?#{params}"
         dataType: 'json'
-        success: (data) -> callback(Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture))
-        error: (xhr, status) -> errback($.parseJSON(xhr.responseText))
+        success: (data) -> Reitti.Event.trigger 'routes:change', Routes.make(data.from, data.to, data.routes, date, arrivalOrDeparture)
+        error: (xhr, status) -> Reitti.Event.trigger 'routes:notfound', $.parseJSON(xhr.responseText)
 
     @make: (from, to, data, date, arrivalOrDeparture) ->
       fromName = @_locationString(from)

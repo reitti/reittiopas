@@ -4,6 +4,9 @@ eb = vertx.eventBus
 server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
 
+isResource = (path) ->
+  /^.*\.(css|png|js|html|hbs)$/.test(path)
+
 routeMatcher.get '/routes', (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   req.response.setChunked true
@@ -40,10 +43,11 @@ routeMatcher.get '/autocomplete', (req) ->
 # TODO: Might want to disable this in production since files are served by Nginx.
 routeMatcher.noMatch (req) ->
   file = '';
-  if req.path is '/'
-    file = 'index.html';
-  else if req.path.indexOf('..') is -1
-    file = req.path;
+  if req.path.indexOf('..') is -1 and isResource(req.path)
+    file = req.path
+  else
+    file = 'index.html'
+
   req.response.sendFile 'web/'+file
 
 server.requestHandler(routeMatcher).listen 8080

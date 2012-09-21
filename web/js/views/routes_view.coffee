@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'views/route_view'], ($, _, Backbone, RouteView) ->
+define ['jquery', 'underscore', 'backbone', 'models/routes', 'views/route_view'], ($, _, Backbone, Routes, RouteView) ->
   
   class RoutesView extends Backbone.View
     
@@ -6,8 +6,12 @@ define ['jquery', 'underscore', 'backbone', 'views/route_view'], ($, _, Backbone
     
     initialize: ->
       @routeViews = []
+      Reitti.Event.on 'routes:find', @findRoutes
       Reitti.Event.on 'routes:change', @showNewRoutes
       
+    findRoutes: (params) ->
+      Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes
+
     showNewRoutes: (@routes) =>
       routeView.dispose() for routeView in @routeViews
       @routeViews = (new RouteView(routes: @routes, index: idx) for idx in [0..@routes.size() - 1])

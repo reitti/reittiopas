@@ -28,6 +28,9 @@ define [
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
           @to.focus()
+      Reitti.Event.on 'routes:find', @onFindingRoutes
+      Reitti.Event.on 'routes:change', @onRoutesReceived
+      Reitti.Event.on 'routes:notfound', @onSearchFailed
 
     render: ->
       @from.focus()
@@ -37,14 +40,20 @@ define [
       if @from.validate() and @to.validate()
         @from.clearError()
         @to.clearError()
-        @$el.find('.btn-primary').button('loading')
-        Routes.find @from.val(), @to.val(), @date(), @arrivalOrDeparture(), @transportTypes(), @onRoutesReceived, @onSearchFailed
+        Reitti.Router.navigate "/#{@from.val()}/#{@to.val()}/#{@arrivalOrDeparture()}/#{Utils.formatDateTime(@date())}/#{@transportTypes().join(',')}", trigger: true
+
+    onFindingRoutes: (params) =>
+      @from.val(params.from)
+      @to.val(params.to)
+      @setDate(params.date)
+      @setArrivalOrDeparture(params.arrivalOrDeparture)
+      @setTransportTypes(params.transportTypes)
+      @$el.find('.btn-primary').button('loading')
 
     onRoutesReceived: (routes) =>
       @$el.find('.btn-primary').button('reset')
       @from.val(routes.from)
       @to.val(routes.to)
-      Reitti.Event.trigger 'routes:change', routes
 
     onSearchFailed: (reason) =>
       @$el.find('.btn-primary').button('reset')
@@ -52,16 +61,26 @@ define [
       @to.indicateError() unless reason.to
 
     transportTypes: () ->
-      transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']
-      transportType for transportType in transportTypes when @$el.find('#' + transportType).hasClass('active')
+      transportType for transportType in Utils.transportTypes when @$el.find('#' + transportType).hasClass('active')
+
+    setTransportTypes: (types) ->
+      for transportType in Utils.transportTypes
+        @$el.find("##{transportType}").toggleClass('active', _.include(types, transportType))
 
     date: () ->
       time = @$el.find('#time').val()
       date = new Date(Date.parse(@$el.find('#date').val()))
       Utils.parseTime(time, date = date)
 
+    setDate: (d) ->
+      @$el.find('#time').val(Utils.formatTime(d))
+      @$el.find('#date').val(Utils.formatDate(d, '-'))
+
     arrivalOrDeparture: () ->
       timeType = @$el.find('#time-type').val()
+
+    setArrivalOrDeparture: (v) ->
+      @$el.find('#time-type').val(v)
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
