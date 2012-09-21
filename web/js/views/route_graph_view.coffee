@@ -3,6 +3,8 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
   EXPANDED_HEIGHT = 150
   MINIMUM_LEG_HEIGHT = 12
 
+  # ToDo: Legs really deserve their own view class at this point.
+
   class RouteGraphView extends Backbone.View
 
     events:
@@ -23,6 +25,13 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       idx = $(e.target).closest('[data-leg]').data('leg')
       Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: idx)
       false
+
+    onRoutesChanged: (routes, routeParams) =>
+      isThis = routes is @routes and routeParams.routeIndex is @index
+      @expandOrCollapse isThis
+      @$el.find('[data-leg]').removeClass 'selected'
+      if isThis and routeParams.legIndex?
+        @$el.find("[data-leg=#{routeParams.legIndex}]").addClass 'selected'
 
     expandOrCollapse: (expanded) =>
       if @expanded isnt expanded

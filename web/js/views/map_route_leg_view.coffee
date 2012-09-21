@@ -10,7 +10,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       @map = map
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
-    remove: ->
+    dispose: ->
       Reitti.Event.off 'routes:change', @onRoutesChanged
       @line?.setMap null
       @marker?.setMap null
