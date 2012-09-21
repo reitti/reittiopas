@@ -17,13 +17,7 @@ define [
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
       @from = new SearchInputView(el: @$el.find('#from'))
-
-      now = new Date()
-      $('#time').timePicker(
-        startTime: Utils.nextQuarterOfHour(now)
-        step: 15
-      ).val(Utils.formatTime(now))
-      $('#date').val(Utils.formatDate(now, '-'))
+      @initDateTimePickers(new Date())
 
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
@@ -31,6 +25,14 @@ define [
       Reitti.Event.on 'routes:find', @onFindingRoutes
       Reitti.Event.on 'routes:change', @onRoutesReceived
       Reitti.Event.on 'routes:notfound', @onSearchFailed
+
+    initDateTimePickers: (date) ->
+      #console.log Utils.nextQuarterOfHour(date)
+      $('#time').each(-> delete this.timePicker ).unbind().timePicker(
+        startTime: Utils.nextQuarterOfHour(date)
+        step: 15
+      ).val(Utils.formatTime(date))
+      $('#date').val(Utils.formatDate(date, '-'))
 
     render: ->
       @from.focus()
@@ -51,7 +53,7 @@ define [
     onFindingRoutes: (params) =>
       @from.val(params.from)
       @to.val(params.to)
-      @setDate(params.date)
+      @initDateTimePickers(params.date)
       @setArrivalOrDeparture(params.arrivalOrDeparture)
       @setTransportTypes(params.transportTypes)
       @$el.find('.btn-primary').button('loading')
@@ -77,10 +79,6 @@ define [
       time = @$el.find('#time').val()
       date = new Date(Date.parse(@$el.find('#date').val()))
       Utils.parseTime(time, date = date)
-
-    setDate: (d) ->
-      @$el.find('#time').val(Utils.formatTime(d))
-      @$el.find('#date').val(Utils.formatDate(d, '-'))
 
     arrivalOrDeparture: () ->
       timeType = @$el.find('#time-type').val()

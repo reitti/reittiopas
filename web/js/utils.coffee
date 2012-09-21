@@ -63,7 +63,9 @@ define ->
         "#{km}km"
 
     @nextQuarterOfHour: (d) ->
-      new Date(new Date().setMinutes(Math.floor((d.getMinutes() + 14) / 15) * 15))
+      nextQuarter = Math.floor(d.getMinutes() / 15) + 1
+      minutesToNext = nextQuarter * 15 - d.getMinutes()
+      new Date(d.getTime() + minutesToNext * 60 * 1000)
 
     # (absolute) seconds between two dates
     @getDuration: (d1, d2) ->
