@@ -24,6 +24,13 @@ define [
         minZoom: 10,
         maxZoom: 18,
         scaleControl: true
+        styles: [
+          {
+            stylers: [
+              { saturation: -50 }
+            ]
+          }
+        ]
       )
 
       # If we already have the user's current position, use it. If not, center
