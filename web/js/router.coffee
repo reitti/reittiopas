@@ -1,4 +1,4 @@
-define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/routes_view'], (Backbone, Utils, MapView, SearchView, RoutesView) ->
+define ['backbone', 'utils'], (Backbone, Utils) ->
   Backbone.Router.extend
 
     routes:
@@ -6,12 +6,7 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex': 'routesView'
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex/:legIndex': 'routesView'
 
-    initialize: ->
-      @mapView   = new MapView()
-      @searchBox = new SearchView()
-      @routesView = new RoutesView()
-      @mapView.render()
-      @searchBox.render()
+
 
     routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) ->
       routeIndex = 0 if !routeIndex or routeIndex is ''

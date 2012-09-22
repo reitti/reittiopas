@@ -9,6 +9,8 @@ require.config
       exports: 'Handlebars'
     bootstrap:
       deps: ['jquery']
+    timepicker:
+      deps: ['jquery']
   paths:
     bootstrap: 'lib/bootstrap'
     jquery: 'lib/jquery-1.7.2'
@@ -28,13 +30,17 @@ require.config
 
 window.Reitti ?= {}
 
-require ['jquery', 'underscore', 'backbone', 'router', 'bootstrap'], ($, _, Backbone, Router) ->
-
+require ['jquery', 'underscore', 'backbone', 'router', 'views/map_view', 'views/search_view', 'views/routes_view', 'bootstrap'], ($, _, Backbone, Router, MapView, SearchView, RoutesView) ->
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
-  Backbone.history.start(pushState: true)
-    
+
   $ ->
+    new MapView().render()
+    new SearchView().render()
+    new RoutesView()
+      
+    Backbone.history.start(pushState: true)
+
     if navigator.geolocation
       navigator.geolocation.watchPosition(
         (position) -> Reitti.Event.trigger 'position:change', position,
