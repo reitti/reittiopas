@@ -17,7 +17,8 @@ define [
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
       @from = new SearchInputView(el: @$el.find('#from'))
-      @initDateTimePickers(new Date())
+      @initializationTime = new Date()
+      @initDateTimePickers(@initializationTime)
 
       Reitti.Event.on 'position:change', _.once (position) =>
         @populateFromBox position, =>
@@ -27,7 +28,7 @@ define [
       Reitti.Event.on 'routes:notfound', @onSearchFailed
 
     initDateTimePickers: (date) ->
-      #console.log Utils.nextQuarterOfHour(date)
+      date = @initializationTime if date is 'now'
       $('#time').each(-> delete this.timePicker ).unbind().timePicker(
         startTime: Utils.nextQuarterOfHour(date)
         step: 15
@@ -78,7 +79,11 @@ define [
     date: () ->
       time = @$el.find('#time').val()
       date = new Date(Date.parse(@$el.find('#date').val()))
-      Utils.parseTime(time, date = date)
+      result = Utils.parseTime(time, date = date)
+      if Utils.isSameMinute(@initializationTime, result)
+        'now'
+      else
+        result
 
     arrivalOrDeparture: () ->
       timeType = @$el.find('#time-type').val()

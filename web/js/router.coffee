@@ -2,7 +2,6 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
   Backbone.Router.extend
 
     routes:
-      '': 'home'
       ':from/:to/:departArrive/:datetime/:transportTypes': 'routesView'
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex': 'routesView'
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex/:legIndex': 'routesView'
@@ -14,27 +13,24 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
       @mapView.render()
       @searchBox.render()
 
-    home: ->
-      @mapView.render()
-      @searchBox.render()
-
     routesView: (from, to, departArrive, datetime, transportTypes, routeIndex = 0, legIndex) ->
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)
         to: Utils.decodeURIComponent(to)
-        date: Utils.parseDateTime(datetime)
+        date: if datetime is 'now' then 'now' else Utils.parseDateTime(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
         routeIndex: parseInt(routeIndex, 10)
         legIndex: if legIndex? then parseInt(legIndex, 10) else undefined
 
-
-
     navigateToRoutes: (params) ->
-      path = "/#{Utils.encodeURIComponent(params.from)}/#{Utils.encodeURIComponent(params.to)}/"+
-             "#{params.arrivalOrDeparture}/#{Utils.formatDateTime(params.date)}/#{params.transportTypes.join(',')}"
+      path = [Utils.encodeURIComponent(params.from),
+              Utils.encodeURIComponent(params.to),
+              params.arrivalOrDeparture,
+              if params.date is 'now' then 'now' else Utils.formatDateTime(params.date),
+              params.transportTypes.join(',')]
       if params.routeIndex?
-        path += "/#{params.routeIndex}"
-        if params.legIndex? then path += "/#{params.legIndex}"
+        path.push params.routeIndex
+        if params.legIndex? then path.push params.legIndex
 
-      @navigate path, trigger: true
+      @navigate '/' + path.join('/'), trigger: true

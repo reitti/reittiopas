@@ -64,9 +64,12 @@ define ->
 
     @nextQuarterOfHour: (d) ->
       nextQuarter = Math.floor(d.getMinutes() / 15) + 1
-      minutesToNext = nextQuarter * 15 - d.getMinutes()
-      new Date(d.getTime() + minutesToNext * 60 * 1000)
+      minutesToNextQuarter = nextQuarter * 15 - d.getMinutes()
+      new Date(d.getTime() + minutesToNextQuarter * 60 * 1000)
 
+    @isSameMinute: (d1, d2) ->
+      @formatDate(d1) is @formatDate(d2) and @formatTime(d1) is @formatTime(d2)
+      
     # (absolute) seconds between two dates
     @getDuration: (d1, d2) ->
       Math.abs(d1.getTime() - d2.getTime()) / 1000
