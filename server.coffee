@@ -5,7 +5,7 @@ server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
 
 isResource = (path) ->
-  /^.*\.(css|png|js|html|hbs)$/.test(path)
+  /^.*\.(css|png|js|html|hbs|manifest)$/.test(path)
 
 routeMatcher.get '/routes', (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
