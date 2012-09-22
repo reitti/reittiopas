@@ -13,7 +13,8 @@ define ['backbone', 'utils', 'views/map_view', 'views/search_view', 'views/route
       @mapView.render()
       @searchBox.render()
 
-    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex = 0, legIndex) ->
+    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) ->
+      routeIndex = 0 if !routeIndex or routeIndex is ''
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)
         to: Utils.decodeURIComponent(to)

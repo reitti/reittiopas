@@ -70,11 +70,13 @@ define [
       @to.indicateError() unless statuses.to
 
     transportTypes: () ->
-      transportType for transportType in Utils.transportTypes when @$el.find('#' + transportType).hasClass('active')
+      types = (transportType for transportType in Utils.transportTypes when @$el.find('#' + transportType).hasClass('active'))
+      if types.length is Utils.transportTypes.length then ['all'] else types
 
     setTransportTypes: (types) ->
+      all = _.include(types, 'all')
       for transportType in Utils.transportTypes
-        @$el.find("##{transportType}").toggleClass('active', _.include(types, transportType))
+        @$el.find("##{transportType}").toggleClass('active', all or _.include(types, transportType))
 
     date: () ->
       time = @$el.find('#time').val()
