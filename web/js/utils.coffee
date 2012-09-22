@@ -1,4 +1,4 @@
-define ->
+define ['moment'], (moment) -> 
   class Utils
 
     @transportTypes = ['bus', 'tram', 'metro', 'train', 'ferry']
@@ -22,34 +22,29 @@ define ->
       36: '#193695' # Kirkkonummi internal bus lines
       39: '#193695' # Kerava internal bus lines
 
-    # From Date to yyyyMMddHHmmss
-    @formatDateTime: (d) ->
-      "#{@formatDate(d)}#{@formatTime(d, '')}"
+    @formatDateTimeForMachines: (d) ->
+      moment(d).format('YYYYMMDDHHmmss')
 
-    # From yyyyMMddHHmmss to Date
-    @parseDateTime: (str) ->
-      [all, year, month, date, hour, min] = str.match /(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})/
-      new Date year, month - 1, date, hour, min
+    @parseDateTimeFromMachines: (str) ->
+      moment(str, "YYYYMMDDHHmmss").toDate()
 
-    # From Date to HH:mm
-    @formatTime: (d, separator = ':') ->
-      return null unless d instanceof Date
-      hourZero = if d.getHours() < 10 then '0' else ''
-      minZero = if d.getMinutes() < 10 then '0' else ''
-      "#{hourZero}#{d.getHours()}#{separator}#{minZero}#{d.getMinutes()}"
+    @formatDateForMachines: (d) ->
+      moment(d).format("YYYYMMDD")
 
-    @formatHSLTime: (d) ->
-      return null unless d instanceof Date
-      minZero = if d.getMinutes() < 10 then '0' else ''
-      hourZero = if d.getHours() < 10 then '0' else ''
-      "#{hourZero}#{d.getHours()}#{minZero}#{d.getMinutes()}"
+    @formatTimeForMachines: (d) ->
+      moment(d).format("HHmm")
 
-    @formatDate: (d, separator = '') ->
-      return null unless d instanceof Date
-      monthZero = if d.getMonth() + 1 < 10 then '0' else ''
-      dateZero = if d.getDate() < 10 then '0' else ''
-      "#{d.getFullYear()}#{separator}#{monthZero}#{d.getMonth() + 1}#{separator}#{dateZero}#{d.getDate()}"
+    @formatTimeForHumans: (d) ->
+      moment(d).format("HH:mm")
 
+    @formatDateForHumans: (d) ->
+      moment(d).format("DD.MM.YYYY")
+
+    @formatDateForHTML5Input: (d) ->
+      moment(d).format("YYYY-MM-DD")
+
+    @parseDateAndTimeFromHTML5Input: (date, time) ->
+      moment("#{date} #{time}", "YYYY-MM-DD HH:mm").toDate()
 
     # From a numeric distance in meters to a formatted value
     @formatDistance: (d) ->
@@ -68,11 +63,11 @@ define ->
       new Date(d.getTime() + minutesToNextQuarter * 60 * 1000)
 
     @isSameMinute: (d1, d2) ->
-      @formatDate(d1) is @formatDate(d2) and @formatTime(d1) is @formatTime(d2)
-      
+      moment(d1).endOf('minute').diff(moment(d2).endOf('minute')) is 0
+
     # (absolute) seconds between two dates
     @getDuration: (d1, d2) ->
-      Math.abs(d1.getTime() - d2.getTime()) / 1000
+      Math.abs moment(d1).diff(moment(d2), 'seconds')
 
     # From a number (of seconds) to a formatted value
     @formatDuration: (d) ->
@@ -92,13 +87,6 @@ define ->
       {longitude: lng, latitude: lat} = location.coords
       24.152104 < lng < 25.535784 and 59.99907 < lat < 60.446654
 
-    # Parses hh:mm into a Date object. The date part can be given as a parameter.
-    @parseTime: (time, date = new Date()) ->
-      timeZone = Math.round(date.getTimezoneOffset() / 60)
-      timeZoneZeroPad = if Math.abs(timeZone) < 10 then '0' else ''
-      timeZoneSign = if timeZone >= 0 then '-' else '+'
-      dateString = "#{@formatDate(date, '-')}T#{time}#{timeZoneSign}#{timeZoneZeroPad}#{Math.abs(timeZone)}00"
-      new Date(Date.parse(dateString))
 
     # Memoizes functions that do asynchronous work, and pass their results to a callback
     # function given as the last argument.
@@ -115,7 +103,7 @@ define ->
           f.apply null, args
 
     @encodeURIComponent: (s) ->
-      s = s.replace(/\s/g, '--').replace(/,/, '_')
+      s = s.replace(/\s/g, '--').replace(/,/g, '_')
       encodeURIComponent(s)
 
     @decodeURIComponent: (s) ->

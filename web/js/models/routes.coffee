@@ -8,8 +8,8 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
       params = $.param
         from: from
         to: to
-        date: Utils.formatDate(date)
-        time: Utils.formatHSLTime(date)
+        date: Utils.formatDateForMachines(date)
+        time: Utils.formatTimeForMachines(date)
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.join('|')
       @_doFind params, date, arrivalOrDeparture, (error, routes) ->

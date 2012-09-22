@@ -13,7 +13,7 @@ define ['backbone', 'utils'], (Backbone, Utils) ->
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)
         to: Utils.decodeURIComponent(to)
-        date: if datetime is 'now' then 'now' else Utils.parseDateTime(datetime)
+        date: if datetime is 'now' then 'now' else Utils.parseDateTimeFromMachines(datetime)
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
         routeIndex: parseInt(routeIndex, 10)
@@ -23,7 +23,7 @@ define ['backbone', 'utils'], (Backbone, Utils) ->
       path = [Utils.encodeURIComponent(params.from),
               Utils.encodeURIComponent(params.to),
               params.arrivalOrDeparture,
-              if params.date is 'now' then 'now' else Utils.formatDateTime(params.date),
+              if params.date is 'now' then 'now' else Utils.formatDateTimeForMachines(params.date),
               params.transportTypes.join(',')]
       if params.routeIndex?
         path.push params.routeIndex

@@ -111,7 +111,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           times: @_timeLabel(leg, legIdx)
           transport: @_transportLabel(leg)
           destination: @_destinationLabel(leg, legIdx)
-          firstArrivalTime: Utils.formatTime(leg.firstArrivalTime())
+          firstArrivalTime: Utils.formatTimeForHumans(leg.firstArrivalTime())
           destinationName: @_destinationLabel(leg, legIdx)
           color: Utils.transportColors[leg.get('type')]
           percentage: percentage
@@ -128,7 +128,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
 
     _timeLabel: (leg) ->
-      "#{Utils.formatTime(leg.firstArrivalTime())} - #{Utils.formatTime(leg.lastArrivalTime())}"
+      "#{Utils.formatTimeForHumans(leg.firstArrivalTime())} - #{Utils.formatTimeForHumans(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
       if leg is @route.getLastLegBeforeArrival()

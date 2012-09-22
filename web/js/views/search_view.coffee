@@ -32,8 +32,8 @@ define [
       $('#time').each(-> delete this.timePicker ).unbind().timePicker(
         startTime: Utils.nextQuarterOfHour(date)
         step: 15
-      ).val(Utils.formatTime(date))
-      $('#date').val(Utils.formatDate(date, '-'))
+      ).val(Utils.formatTimeForHumans(date))
+      $('#date').val(Utils.formatDateForHTML5Input(date))
 
     render: ->
       @from.focus()
@@ -79,9 +79,9 @@ define [
         @$el.find("##{transportType}").toggleClass('active', all or _.include(types, transportType))
 
     date: () ->
+      date = @$el.find('#date').val()
       time = @$el.find('#time').val()
-      date = new Date(Date.parse(@$el.find('#date').val()))
-      result = Utils.parseTime(time, date = date)
+      result = Utils.parseDateAndTimeFromHTML5Input(date, time)
       if Utils.isSameMinute(@initializationTime, result)
         'now'
       else

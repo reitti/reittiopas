@@ -3,10 +3,10 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
   class RouteLeg extends Backbone.Model
 
     firstArrivalTime: ->
-      @get('firstArrivalTime') or Utils.parseDateTime _.first(@get('locs')).arrTime
+      @get('firstArrivalTime') or Utils.parseDateTimeFromMachines _.first(@get('locs')).arrTime
 
     lastArrivalTime: ->
-      @get('lastArrivalTime') or Utils.parseDateTime _.last(@get('locs')).arrTime
+      @get('lastArrivalTime') or Utils.parseDateTimeFromMachines _.last(@get('locs')).arrTime
 
     lineName: () ->
       switch @get('type')

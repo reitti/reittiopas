@@ -37,7 +37,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       Reitti.Event.trigger 'leg:change', @leg
 
     onRoutesChanged: (routes, routeParams) =>
-      if @isSelectedIn(routes, routeParams)
+      if @isSelectedIn(routes, routeParams) and @line.getPath()?
         originLatLng = @line.getPath().getAt(0)
         destLatLng = @line.getPath().getAt(@line.getPath().getLength() - 1)
         @originMarker ?= new MapLocationMarker(originLatLng, @leg.originName(), @map, @_markerAnchor(originLatLng))
@@ -53,7 +53,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
     getBounds: () ->
       bounds = new google.maps.LatLngBounds()
-      if @line
+      if @line? and @line.getPath()?
         bounds.extend(latLng) for latLng in @line.getPath().getArray()  
       bounds
 

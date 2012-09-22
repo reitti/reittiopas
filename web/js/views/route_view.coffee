@@ -21,10 +21,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     render: ->
       @$el.html template
-        depTime: Utils.formatTime(@route.getDepartureTime())
-        arrTime: Utils.formatTime(@route.getArrivalTime())
+        depTime: Utils.formatTimeForHumans(@route.getDepartureTime())
+        arrTime: Utils.formatTimeForHumans(@route.getArrivalTime())
         boardingType: @_boardingLabel(@route.getFirstTransportType())
-        boardingTime: Utils.formatTime(@route.boardingTime())
+        boardingTime: Utils.formatTimeForHumans(@route.boardingTime())
         totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
         totalDuration: Utils.formatDuration(@route.get('duration'))
       @graphView.setElement(@$el.find('.route-graph')).render()
