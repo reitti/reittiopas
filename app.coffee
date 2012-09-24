@@ -5,6 +5,7 @@ load 'vertx.js'
 
 vertx.deployWorkerVerticle 'cache.coffee', null, 1, ->
   vertx.deployWorkerVerticle 'search_index/search_index.coffee', null, 1, ->
-    vertx.deployVerticle 'hsl.coffee', null, 1, ->
-      vertx.deployVerticle 'geocoding.coffee', null, 1, ->
-        vertx.deployVerticle 'server.coffee'
+    vertx.deployVerticle 'routing.coffee', null, 1, ->
+      vertx.deployVerticle 'hsl.coffee', null, 1, ->
+        vertx.deployVerticle 'geocoding.coffee', null, 1, ->
+          vertx.deployVerticle 'server.coffee'

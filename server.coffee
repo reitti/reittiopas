@@ -28,7 +28,7 @@ routeMatcher.get '/routes', filterAjaxOnly (req) ->
           time: req.params().time
           arrivalOrDeparture: req.params().arrivalOrDeparture
           transportTypes: req.params().transportTypes
-        eb.send 'reitti.hsl.findRoutes', params, (data) ->
+        eb.send 'reitti.findRoutes', params, (data) ->
           req.response.end JSON.stringify(from: from, to: to, routes: data.body)
       else
         req.response.statusCode = 400

@@ -23,4 +23,6 @@ eb.registerHandler 'reitti.cache.get', (qry, replier) ->
 eb.registerHandler 'reitti.cache.put', (data, value) ->
   key = new java.lang.String(data.key)
   val = new java.lang.String(JSON.stringify(data.value))
-  cache.put new Packages.net.sf.ehcache.Element(key, val)
+  element = new Packages.net.sf.ehcache.Element(key, val)
+  element.setTimeToLive(data.ttl) if data.ttl?
+  cache.put element
