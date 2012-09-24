@@ -7,7 +7,15 @@ routeMatcher = new vertx.RouteMatcher
 isResource = (path) ->
   /^.*\.(css|png|js|html|hbs|manifest)$/.test(path)
 
-routeMatcher.get '/routes', (req) ->
+filterAjaxOnly = (handler) ->
+  (req) ->
+    if req.headers()["x-requested-with"] is "XMLHttpRequest"
+      handler(req)
+    else
+      req.response.statusCode = 403
+      req.response.end()
+
+routeMatcher.get '/routes', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   req.response.setChunked true
   eb.send 'reitti.geocode', query: req.params().from, (from) ->
@@ -26,7 +34,7 @@ routeMatcher.get '/routes', (req) ->
         req.response.statusCode = 400
         req.response.end JSON.stringify(from: !!from, to: !!to)
 
-routeMatcher.get '/address', (req) ->
+routeMatcher.get '/address', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   eb.send 'reitti.hsl.reverseGeocode', query: req.params().coords, (address) ->
     if address
@@ -35,7 +43,7 @@ routeMatcher.get '/address', (req) ->
       req.response.statusCode = 400
       req.response.end()
       
-routeMatcher.get '/autocomplete', (req) ->
+routeMatcher.get '/autocomplete', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
