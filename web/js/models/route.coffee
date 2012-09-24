@@ -7,42 +7,20 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
       _.first(@get 'legs').set 'originName', from
       _.last(@get 'legs').set 'destinationName', to
 
-    addPreDepartureLeg: (fromTime) ->
-      firstLeg = @getLeg(0)
-      @get('legs').unshift new RouteLeg
-        type: 'pre_departure'
-        locs: []
-        firstArrivalTime: fromTime
-        lastArrivalTime: firstLeg.firstArrivalTime()
-
-    addPostArrivalLeg: (toTime) ->
-      lastLeg = _.last(@get('legs'))
-      @get('legs').push new RouteLeg
-        type: 'post_arrival'
-        locs: []
-        firstArrivalTime: lastLeg.lastArrivalTime()
-        lastArrivalTime: toTime
-
-    getFirstTime: ->
-      _.first(@get('legs')).firstArrivalTime()
-    
-    getLastTime: ->
-      _.last(@get('legs')).lastArrivalTime()
-
     getDepartureTime: ->
-      @getFirstLegAfterDeparture().firstArrivalTime()
+      @getLeg(0).firstArrivalTime()
 
     getArrivalTime: () ->
-      @getLastLegBeforeArrival().lastArrivalTime()
+      @lastLeg().lastArrivalTime()
 
     duration: () ->
       Utils.getDuration @getDepartureTime(), @getArrivalTime()
 
-    durationWithFill: () ->
-      Utils.getDuration @getFirstTime(), @getLastTime()
-
     boardingTime: ->
       @getFirstNonWalkingLeg()?.firstArrivalTime()
+
+    lastLeg: () ->
+      @getLeg(@getLegCount() - 1)
 
     getFirstTransportType: ->
       @getFirstNonWalkingLeg()?.get('type')
@@ -50,19 +28,13 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
     getFirstNonWalkingLeg: ->
       _.find @get('legs'), ((leg) -> !leg.isWalk())
 
-    getFirstLegAfterDeparture: ->
-      if @getLeg(0).isFiller() then @getLeg(1) else @getLeg(0)
-    getLastLegBeforeArrival: -> 
-      lastIdx = @getLegCount() - 1
-      if @getLeg(lastIdx).isFiller() then @getLeg(lastIdx - 1) else @getLeg(lastIdx)
-
     getLeg: (idx) -> @get('legs')[idx]
 
     getTotalWalkingDistance: () ->
       _.reduce @getWalkLegs(), ((sum, leg) -> sum + leg.get('length')), 0
 
     getWalkLegs: () ->
-      _.select @get('legs'), ((leg) -> leg.isWalk())
+      leg for leg in @get('legs') when leg.isWalk()
 
     getLegCount: () ->
       @get('legs').length
@@ -72,7 +44,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
       @_legDurationPercentages[idx]
 
     _getLegDurationPercentages: () ->
-      totalDuration = @durationWithFill()
+      totalDuration = @duration()
       percentages = for leg in @get('legs')
         _.max [Math.floor(leg.duration() * 100 / totalDuration), 1]
 

@@ -40,32 +40,24 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         if @expanded then @_expand() else @_collapse()
 
     _expand: () ->
-      widths = ($(leg).width() for leg in @$el.find '.leg[data-type!=pre_departure][data-type!=post_arrival]')
+      widths = ($(leg).width() for leg in @$el.find '.leg')
       totalWidth = _.reduce widths, (t,w) -> t + w
       heightRatio = EXPANDED_HEIGHT / totalWidth
       heights = (Math.floor(_.max [width * heightRatio, MINIMUM_LEG_HEIGHT]) for width in widths)
       totalHeight = _.reduce heights, (t,h) -> t + h
 
       @$el.css 'height', totalHeight
-      @_hidePreAndPostLegs()
       @_moveLegsToTheSide heights
       @_showLegInfos heights
 
     _collapse: () ->
       @$el.css height: ''
-      @_showPreAndPostLegs()
       @_moveLegsToTheTop()
       @_hideLegInfos()
 
-    _hidePreAndPostLegs: () ->
-      @$el.find('.leg[data-type=pre_departure], .leg[data-type=post_arrival]').addClass 'hidden'
-
-    _showPreAndPostLegs: () ->
-      @$el.find('.leg[data-type=pre_departure], .leg[data-type=post_arrival]').removeClass 'hidden'
-
     _moveLegsToTheSide: (legHeights) ->
       cumulativeHeight = 0
-      for leg, index in @$el.find('.leg[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+      for leg, index in @$el.find('.leg[data-leg]')
         height = legHeights[index]
         $(leg).data
           collapsedLeft: $(leg).css 'left'
@@ -79,7 +71,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         cumulativeHeight += height  
 
     _moveLegsToTheTop: () ->
-      for leg in @$el.find('.leg[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+      for leg in @$el.find('.leg[data-leg]')
         $(leg).css
           top: '0'
           left: $(leg).data 'collapsedLeft'
@@ -89,7 +81,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     _showLegInfos: (legHeights) ->
       cumulativeHeight = 0
-      for legInfo, index in @$el.find('.leg-info[data-leg][data-type!=pre_departure][data-type!=post_arrival]')
+      for legInfo, index in @$el.find('.leg-info[data-leg]')
         height = legHeights[index]
         $(legInfo).show().css top: Math.floor(cumulativeHeight), height: "#{height-1}px"
         $('*', legInfo).css 'lineHeight', "#{height-1}px"
@@ -122,8 +114,6 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _legIndicator: (leg) ->
       switch leg.get('type')
         when 'walk' then ''
-        when 'pre_departure' then (if @routes.isBasedOnArrivalTime() then '' else leg.preDepartureTime())
-        when 'post_arrival' then (if @routes.isBasedOnArrivalTime() then leg.postArrivalTime() else '')
         else leg.lineName()
 
 
@@ -131,7 +121,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       "#{Utils.formatTimeForHumans(leg.firstArrivalTime())} - #{Utils.formatTimeForHumans(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
-      if leg is @route.getLastLegBeforeArrival()
+      if leg is @route.lastLeg()
           to = @routes.to
           cityIdx = to.lastIndexOf(',')
           if cityIdx < 0 then to else to.substring(0, cityIdx)
@@ -151,7 +141,6 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportTypeLabel: (type) ->
       switch type
         when 'walk' then 'kävely'
-        when 'pre_departure', 'post_arrival' then ''
         when '2' then "ratikka"
         when '6' then "metro"
         when '7' then "lautta"

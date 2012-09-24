@@ -4,7 +4,7 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
     
     constructor: (routes: routes, index: index, map: map) ->
       @index = index
-      @legViews = for leg, legIndex in routes.at(index).get('legs') when !leg.isFiller()
+      @legViews = for leg, legIndex in routes.at(index).get('legs')
         new MapRouteLegView(routes: routes, routeIndex: index, index: legIndex, map: map)
  
     dispose: ->
