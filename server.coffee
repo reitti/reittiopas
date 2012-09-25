@@ -17,7 +17,6 @@ filterAjaxOnly = (handler) ->
 
 routeMatcher.get '/routes', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
-  req.response.setChunked true
   eb.send 'reitti.geocode', query: req.params().from, (from) ->
     eb.send 'reitti.geocode', query: req.params().to, (to) ->
       if from and to
