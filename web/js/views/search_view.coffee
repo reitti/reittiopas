@@ -58,11 +58,12 @@ define [
       @setArrivalOrDeparture(params.arrivalOrDeparture)
       @setTransportTypes(params.transportTypes)
       @$el.find('.btn-primary').button('loading')
+      Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes, params
 
     onRoutesReceived: (routes) =>
       @$el.find('.btn-primary').button('reset')
-      @from.val(routes.from)
-      @to.val(routes.to)
+      @from.val(routes.fromName)
+      @to.val(routes.toName)
 
     onSearchFailed: (statuses) =>
       @$el.find('.btn-primary').button('reset')

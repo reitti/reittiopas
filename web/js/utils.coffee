@@ -46,6 +46,9 @@ define ['moment'], (moment) ->
     @parseDateAndTimeFromHTML5Input: (date, time) ->
       moment("#{date} #{time}", "YYYY-MM-DD HH:mm").toDate()
 
+    @addMinutes: (date, n) ->
+      new Date(date.getTime() + n * 60 * 1000)
+      
     # From a numeric distance in meters to a formatted value
     @formatDistance: (d) ->
       if d < 900

@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'models/routes', 'views/route_view'], ($, Backbone, Routes, RouteView) ->
+define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_routes_button_view'], ($, Backbone, Routes, RouteView, MoreRoutesButtonView) ->
   
   class RoutesView extends Backbone.View
     
@@ -6,23 +6,54 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view'], ($, Backbone
     
     initialize: ->
       @routeViews = []
-      Reitti.Event.on 'routes:find', @findRoutes
       Reitti.Event.on 'routes:change', @onRoutesChanged
-      
-    findRoutes: (params) ->
-      Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes, params
 
-    onRoutesChanged: (routes, routeParams) =>
+    onRoutesChanged: (routes, @routeParams) =>
       if routes isnt @routes
+        @routes?.off 'add', @onRouteAdded
+        routes.on 'add', @onRouteAdded
         @routes = routes
+
         routeView.dispose() for routeView in @routeViews
-        @routeViews = (new RouteView(routes: @routes, routeParams: routeParams, index: idx) for idx in [0...@routes.size()])
-        @render()
-        # Invoke event handlers explicitly since the newly constructed views won't receive this event.
-        routeView.onRoutesChanged(routes, routeParams) for routeView in @routeViews
+        @routeViews = []
+        @$el.empty()
+
+        @_addMoreAboveButton()
+        for route in @routes.models
+          @onRouteAdded(route)
+        @_addMoreBelowButton()
       
-    render: ->
-      @$el.empty()
-      for routeView in @routeViews
-        @$el.append(routeView.render().el)
-      this
+    onRouteAdded: (route) =>
+      idx = @routes.indexOf(route)
+      routeView = new RouteView(routes: @routes, routeParams: @routeParams, index: idx)
+
+      idxOnScreen = @_getIndexForRouteView(routeView)
+      @_addRouteElement(routeView, idxOnScreen)
+      @routeViews.splice idxOnScreen, 0, routeView
+
+      routeView.onRoutesChanged(@routes, @routeParams)
+
+    _addRouteElement: (routeView, beforeIdx) ->
+      if routeViewAfter = @routeViews[beforeIdx]
+        routeViewAfter.$el.before(routeView.render().el)
+      else if routeViewBefore = _.last(@routeViews)
+        routeViewBefore.$el.after(routeView.render().el)
+      else
+        @moreAboveButton.$el.after(routeView.render().el)
+
+    _getIndexForRouteView: (routeView) ->
+      comparator = if @routes.isBasedOnArrivalTime() then ((a,b) -> a < b) else ((a,b) -> a > b)
+      for existingView, idx in @routeViews
+        if comparator(existingView.route.getArrivalTime(), routeView.route.getArrivalTime())
+          return idx
+      @routeViews.length
+
+    _addMoreAboveButton: ->
+      @moreAboveButton?.dispose()
+      @moreAboveButton = new MoreRoutesButtonView(routes: @routes, loc: 'above')
+      @$el.append(@moreAboveButton.render().el)
+
+    _addMoreBelowButton: ->
+      @moreBelowButton?.dispose()
+      @moreBelowButton = new MoreRoutesButtonView(routes: @routes, loc: 'below')
+      @$el.append(@moreBelowButton.render().el)

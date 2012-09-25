@@ -122,7 +122,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     _destinationLabel: (leg, legIdx) ->
       if leg is @route.lastLeg()
-          to = @routes.to
+          to = @routes.toName
           cityIdx = to.lastIndexOf(',')
           if cityIdx < 0 then to else to.substring(0, cityIdx)
        else

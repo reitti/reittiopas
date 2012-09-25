@@ -124,15 +124,17 @@ input.input-full {
     padding: 0;
     margin: 0;
 
-    li.route {
+    li.route, li.more {
         margin: 0;
         border-bottom: 1px solid @borderColor;
-
         > a {
             display: block;
             margin: 0;
             padding: 3px 20px;
         }
+    }
+
+    li.route {
 
         dl {
             margin: 0;
@@ -169,7 +171,12 @@ input.input-full {
         }
     }
 
-    li.route:first-child {
+    li.more {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    li.route:first-child, li.more:first-child {
         border-top: 1px solid @borderColor;
     }
 

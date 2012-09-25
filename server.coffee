@@ -5,7 +5,7 @@ server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
 
 isResource = (path) ->
-  /^.*\.(css|png|js|html|hbs|manifest)$/.test(path)
+  /^.*\.(css|png|js|html|hbs|manifest|ico)$/.test(path)
 
 filterAjaxOnly = (handler) ->
   (req) ->
@@ -48,7 +48,6 @@ routeMatcher.get '/autocomplete', filterAjaxOnly (req) ->
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
 
-# TODO: Might want to disable this in production since files are served by Nginx.
 routeMatcher.noMatch (req) ->
   file = '';
   if req.path.indexOf('..') is -1 and isResource(req.path)
