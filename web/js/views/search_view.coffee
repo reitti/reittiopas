@@ -72,12 +72,11 @@ define [
 
     transportTypes: () ->
       types = (transportType for transportType in Utils.transportTypes when @$el.find('#' + transportType).hasClass('active'))
-      if types.length is Utils.transportTypes.length then ['all'] else types
+      if types.length is Utils.transportTypes.length or types.length is 0 then ['all'] else types
 
     setTransportTypes: (types) ->
-      all = _.include(types, 'all')
       for transportType in Utils.transportTypes
-        @$el.find("##{transportType}").toggleClass('active', all or _.include(types, transportType))
+        @$el.find("##{transportType}").toggleClass('active', _.include(types, transportType))
 
     date: () ->
       date = @$el.find('#date').val()
