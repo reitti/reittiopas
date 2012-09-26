@@ -2,14 +2,13 @@
 @barHeight: 20px;
 @animationDuration: 0.2s;
 
-.transition (@prop: all, @time: 1s, @ease: linear) {
+.transition(@prop: all, @time: 1s, @ease: linear){
     -webkit-transition: @prop @time @ease;
     -moz-transition: @prop @time @ease;
     -o-transition: @prop @time @ease;
     -ms-transition: @prop @time @ease;
     transition: @prop @time @ease;
 }
- 
 
 .route-graph {
     position: relative;
@@ -49,7 +48,7 @@
         left: 50%;
     }
 
-    // Bus
+// Bus
     .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-25, .leg-26, .leg-36, .leg-39 {
         .leg-bar {
             background-color: #1b76bc;
@@ -59,7 +58,7 @@
         }
     }
 
-    // Tram
+// Tram
     .leg-2 {
         .leg-bar {
             background-color: #1a9b63;
@@ -69,7 +68,7 @@
         }
     }
 
-    // Metro
+// Metro
     .leg-6 {
         .leg-bar {
             background-color: #ed6227;
@@ -79,7 +78,7 @@
         }
     }
 
-    // Ferry
+// Ferry
     .leg-7 {
         .leg-bar {
             background-color: #17b9e8;
@@ -89,7 +88,7 @@
         }
     }
 
-    // Train
+// Train
     .leg-12 {
         .leg-bar {
             background-color: #ce1141;
@@ -117,7 +116,7 @@
         text-align: left;
         line-height: 100%;
 
-        &:hover{
+        &:hover {
             background-color: #ddd;
         }
 
