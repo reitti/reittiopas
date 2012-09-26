@@ -3,10 +3,18 @@
 @import url("lib/timePicker.css");
 @import url("route_graph.css");
 
-@navbarHeight: 42px;
+@animationDuration: 0.2s;
 @controlsWidth: 400px;
 @borderColor: #BBB;
 @transportIconWidth: 32px;
+
+.transition(@prop: all, @time: 1s, @ease: linear){
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
 
 body {
     position: relative;
@@ -127,6 +135,10 @@ input.input-full {
     }
 
     li.route {
+
+        a {
+            .transition(all, @animationDuration, ease-out);
+        }
 
         dl {
             margin: 0;
