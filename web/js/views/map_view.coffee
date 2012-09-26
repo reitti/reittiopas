@@ -76,15 +76,16 @@ define [
       latLng   = new google.maps.LatLng position.coords.latitude, position.coords.longitude
       accuracy = position.coords.accuracy
 
-      @positionIndicator ?= new google.maps.Circle(
-        strokeColor: '#0000FF'
-        strokeOpacity: 0.50
-        strokeWeight: 2
-        fillColor: '#0000FF'
-        fillOpacity: 0.10
-        map: @map
-        center: latLng
-        radius: accuracy
-      )
-      @positionIndicator.setCenter latLng
-      @positionIndicator.setRadius accuracy
+      if accuracy < 100
+        @positionIndicator ?= new google.maps.Circle(
+          strokeColor: '#0000FF'
+          strokeOpacity: 0.50
+          strokeWeight: 2
+          fillColor: '#0000FF'
+          fillOpacity: 0.10
+          map: @map
+          center: latLng
+          radius: accuracy
+        )
+        @positionIndicator.setCenter latLng
+        @positionIndicator.setRadius accuracy
