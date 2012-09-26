@@ -8,6 +8,37 @@
 @borderColor: #BBB;
 @transportIconWidth: 32px;
 
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0){
+    -webkit-border-top-right-radius: @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius: @bottomleft;
+    -webkit-border-top-left-radius: @topleft;
+    -moz-border-radius-topright: @topright;
+    -moz-border-radius-bottomright: @bottomright;
+    -moz-border-radius-bottomleft: @bottomleft;
+    -moz-border-radius-topleft: @topleft;
+    border-top-right-radius: @topright;
+    border-bottom-right-radius: @bottomright;
+    border-bottom-left-radius: @bottomleft;
+    border-top-left-radius: @topleft;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+// Bootstrap overrides
+
+ul.dropdown-menu {
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 360px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], ul.typeahead {
+    .border-radius(0, 0, 0, 0);
+}
+
 .transition(@prop: all, @time: 1s, @ease: linear){
     -webkit-transition: @prop @time @ease;
     -moz-transition: @prop @time @ease;
