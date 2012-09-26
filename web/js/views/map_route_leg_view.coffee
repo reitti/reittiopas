@@ -23,7 +23,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       @line = new google.maps.Polyline _.extend({
           map: @map
           path: path
-          strokeWeight: 4
+          strokeWeight: 3
           strokeColor: Utils.transportColors[@leg.get('type')]
           strokeOpacity: 1.0
         }, @_legStyle())
@@ -71,7 +71,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
               path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
               scale: 2.5
               strokeOpacity: 1
-            repeat: '100px'
+            repeat: '150px'
           }]
         else
           icons: [{
@@ -79,7 +79,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
               path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
               scale: 2.5
               strokeOpacity: 1
-            repeat: '100px'
+            repeat: '150px'
           }]
 
     _markerAnchor: (latLng) ->
