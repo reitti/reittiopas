@@ -140,10 +140,10 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     # TODO: This should be somewhere in i18n
     _transportTypeLabel: (type) ->
       switch type
-        when 'walk' then 'kävely'
-        when '2' then "ratikka"
-        when '6' then "metro"
-        when '7' then "lautta"
-        when '12' then "juna"
+        when 'walk' then 'Kävely'
+        when '2' then "Ratikka"
+        when '6' then "Metro"
+        when '7' then "Lautta"
+        when '12' then "Juna"
         else "bussi"
 
