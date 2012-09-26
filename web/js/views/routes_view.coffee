@@ -22,7 +22,8 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
         for route in @routes.models
           @onRouteAdded(route)
         @_addMoreBelowButton()
-      
+      @_scrollToRoutes()
+
     onRouteAdded: (route) =>
       idx = @routes.indexOf(route)
       routeView = new RouteView(routes: @routes, routeParams: @routeParams, index: idx)
@@ -57,3 +58,6 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
       @moreBelowButton?.dispose()
       @moreBelowButton = new MoreRoutesButtonView(routes: @routes, loc: 'below')
       @$el.append(@moreBelowButton.render().el)
+
+    _scrollToRoutes: ->
+      setTimeout((=> $('html, body').animate({scrollTop: @$el.offset().top }, 200)), 50)
