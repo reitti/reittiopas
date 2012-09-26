@@ -4,6 +4,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
   MINIMUM_LEG_HEIGHT = 12
 
   # ToDo: Legs really deserve their own view class at this point.
+  EXPANDED_HEIGHT = 25
 
   class RouteGraphView extends Backbone.View
 
@@ -40,15 +41,11 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         if @expanded then @_expand() else @_collapse()
 
     _expand: () ->
-      widths = ($(leg).width() for leg in @$el.find '.leg')
-      totalWidth = _.reduce widths, (t,w) -> t + w
-      heightRatio = EXPANDED_HEIGHT / totalWidth
-      heights = (Math.floor(_.max [width * heightRatio, MINIMUM_LEG_HEIGHT]) for width in widths)
-      totalHeight = _.reduce heights, (t,h) -> t + h
-
-      @$el.css 'height', totalHeight
-      @_moveLegsToTheSide heights
-      @_showLegInfos heights
+      numberOfLegs = @route.get('legs').length
+      totalHeight = EXPANDED_HEIGHT * numberOfLegs
+      @$el.css 'height', totalHeight + 6
+      @_moveLegsToTheSide()
+      @_showLegInfos()
 
     _collapse: () ->
       @$el.css height: ''
@@ -58,17 +55,16 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _moveLegsToTheSide: (legHeights) ->
       cumulativeHeight = 0
       for leg, index in @$el.find('.leg[data-leg]')
-        height = legHeights[index]
         $(leg).data
           collapsedLeft: $(leg).css 'left'
           collapsedWidth: $(leg).css 'width'
         $(leg).css
           top: cumulativeHeight
-          height: height - 1 # Leave one pixel for the "gutter"
+          height: EXPANDED_HEIGHT - 1 # Leave one pixel for the "gutter"
           left: 0
-          width: '25px'
-        $('.leg-bar', leg).css 'height', height - 5 # gutter + 2 x padding (ToDO: this isn't the place for this sort of thing)      
-        cumulativeHeight += height  
+          width: "#{EXPANDED_HEIGHT}px"
+        $('.leg-bar', leg).css 'height', EXPANDED_HEIGHT - 5 # gutter + 2 x padding (ToDO: this isn't the place for this sort of thing)
+        cumulativeHeight += EXPANDED_HEIGHT
 
     _moveLegsToTheTop: () ->
       for leg in @$el.find('.leg[data-leg]')
@@ -79,13 +75,12 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           height: ''
         $('.leg-bar', leg).css height: ''
 
-    _showLegInfos: (legHeights) ->
+    _showLegInfos: () ->
       cumulativeHeight = 0
       for legInfo, index in @$el.find('.leg-info[data-leg]')
-        height = legHeights[index]
-        $(legInfo).show().css top: Math.floor(cumulativeHeight), height: "#{height-1}px"
-        $('*', legInfo).css 'lineHeight', "#{height-1}px"
-        cumulativeHeight += height
+        $(legInfo).show().css top: Math.floor(cumulativeHeight), height: "#{EXPANDED_HEIGHT-1}px"
+        $('*', legInfo).css 'lineHeight', "#{EXPANDED_HEIGHT-1}px"
+        cumulativeHeight += EXPANDED_HEIGHT
 
     _hideLegInfos: () ->
       @$el.find('.leg-info').hide()
