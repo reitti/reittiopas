@@ -113,4 +113,13 @@ define ['moment'], (moment) ->
       s = decodeURIComponent(s)
       s.replace(/--/g, ' ').replace(/_/g, ',')
 
+    @getScrollBarWidth: () ->
+      div = $('<div style="width:50px;height:50px;overflow:hidden;position:absolute;top:-200px;left:-200px;"><div style="height:100px;"></div></div>')
+      $('body').append(div)
+      w1 = $('div', div).innerWidth()
+      div.css('overflow-y', 'auto')
+      w2 = $('div', div).innerWidth()
+      $(div).remove()
+      w1 - w2
+
 

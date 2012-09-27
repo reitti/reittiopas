@@ -22,6 +22,9 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
     lastLeg: () ->
       @getLeg(@getLegCount() - 1)
 
+    longestLeg: () ->
+      _.max @get('legs'), (leg) -> leg.duration()
+
     getFirstTransportType: ->
       @getFirstNonWalkingLeg()?.get('type')
 

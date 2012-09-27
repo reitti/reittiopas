@@ -5,6 +5,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
   # ToDo: Legs really deserve their own view class at this point.
   EXPANDED_HEIGHT = 25
+  MINIMUM_WIDTH = 25
 
   class RouteGraphView extends Backbone.View
 
@@ -86,11 +87,20 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       @$el.find('.leg-info').hide()
 
     _legData: () ->
-      cumulativePercentage = 0
-      for leg,legIdx in @route.get('legs')
-        percentage = @routes.getLegDurationPercentage(@index, legIdx)
-        percentageBefore = cumulativePercentage
-        cumulativePercentage += percentage
+      longestLeg = @route.longestLeg()
+      availableWidth = 360 - Utils.getScrollBarWidth() # Pixels
+      cumulativeWidth = 0
+      excessWidth = 0
+      for leg, legIdx in @route.get('legs')
+        isLongestLeg = leg is longestLeg
+        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100.0 * availableWidth
+        if preferredWidth < MINIMUM_WIDTH
+          width = MINIMUM_WIDTH
+        else
+          width = unless isLongestLeg then preferredWidth else preferredWidth - @_excessWidth()
+
+        widthBefore = cumulativeWidth
+        cumulativeWidth += width
 
         {
           type: leg.get('type')
@@ -101,10 +111,17 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           firstArrivalTime: Utils.formatTimeForHumans(leg.firstArrivalTime())
           destinationName: @_destinationLabel(leg, legIdx)
           color: Utils.transportColors[leg.get('type')]
-          percentage: percentage
-          percentageBefore: percentageBefore
-          iconVisible: percentage > 5
+          width: "#{width}px"
+          widthBefore: "#{widthBefore}px"
         }
+
+    _excessWidth: ->
+      excessWidth = 0
+      for leg, legIdx in @route.get('legs')
+        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100.0 * 360
+        if preferredWidth < MINIMUM_WIDTH
+          excessWidth += MINIMUM_WIDTH - preferredWidth
+      excessWidth
 
     _legIndicator: (leg) ->
       switch leg.get('type')

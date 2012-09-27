@@ -3,11 +3,9 @@
   <li data-leg="{{index}}"
       data-type="{{type}}"
       class="leg leg-{{type}}"
-      style="left: {{percentageBefore}}%; width: {{percentage}}%;">
+      style="left: {{widthBefore}}; width: {{width}};">
     <div class="leg-bar">
-      {{#if iconVisible}}
-        <i></i>
-      {{/if}}
+      <i></i>
     </div>
     <span class="leg-indicator">{{indicator}}</span>
   </li>
