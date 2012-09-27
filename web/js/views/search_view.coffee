@@ -95,7 +95,7 @@ define [
 
     populateFromBox: (position, callback) ->
       # TODO: Move this logic somewhere else
-      if Utils.isWithinBounds(position)
+      if Utils.isWithinBounds(position) and position.accuracy < 200
         $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
           @from.val location.name
           callback()
