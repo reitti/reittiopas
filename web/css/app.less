@@ -88,12 +88,7 @@ body {
     padding-bottom: 20px;
     height: 100%;
     overflow: auto;
-}
-
-@media (min-width: 767px) {
-    #controls {
-        width: @controlsWidth;
-    }
+    width: @controlsWidth;
 }
 
 #search {
@@ -109,8 +104,8 @@ body {
 }
 
 #time {
-    margin: 0 !important;
-    width: 48px;
+    margin: 0;
+    width: 5ex;
 }
 
 #time-type {
@@ -270,4 +265,28 @@ i.icon-train {
 i.icon-ferry {
     .transport-icon;
     background-position: 0 -2 * @transportIconWidth;
+}
+
+
+@media (max-width: 767px) {
+    #search {
+        margin: 0 5%;
+    }
+    #controls {
+        width: 100%;
+    }
+    #routes {
+        li.route, li.more {
+            > a {
+                padding: 3px 10px;
+            }
+        }
+    }
+    ul.dropdown-menu {
+        width: 90%;
+    }
+
+    button.btn-primary {
+        width: 100%;
+    }
 }

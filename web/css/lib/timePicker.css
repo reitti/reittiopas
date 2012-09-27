@@ -1,7 +1,7 @@
 div.time-picker {
     position: absolute;
     height: 168px; /* (20px + 8px) * 6 */
-    width: 60px;
+    width: 48px;
     overflow: auto;
     background: #fff;
     border: 1px solid #aaa;
