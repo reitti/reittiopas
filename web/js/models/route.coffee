@@ -48,13 +48,4 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
 
     _getLegDurationPercentages: () ->
       totalDuration = @duration()
-      percentages = for leg in @get('legs')
-        _.max [Math.floor(leg.duration() * 100 / totalDuration), 1]
-
-      # If floored total is less than 100, stick the remainder in the last leg
-      remainder = 100 - _.reduce percentages, (t,p) -> t + p
-      if remainder > 0 
-        percentages[percentages.length - 1] += remainder
-
-      percentages
-
+      percentages = (leg.duration() * 100 / totalDuration for leg in @get('legs'))
