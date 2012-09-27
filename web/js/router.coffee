@@ -6,8 +6,6 @@ define ['backbone', 'utils'], (Backbone, Utils) ->
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex': 'routesView'
       ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex/:legIndex': 'routesView'
 
-
-
     routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) ->
       routeIndex = 0 if !routeIndex or routeIndex is ''
       Reitti.Event.trigger 'routes:find',

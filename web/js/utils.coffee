@@ -122,4 +122,6 @@ define ['moment'], (moment) ->
       $(div).remove()
       w1 - w2
 
+    @toPercentage: (num) ->
+      "#{num * 100}%"
 

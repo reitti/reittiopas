@@ -53,7 +53,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
       @_moveLegsToTheTop()
       @_hideLegInfos()
 
-    _moveLegsToTheSide: (legHeights) ->
+    _moveLegsToTheSide: () ->
       cumulativeHeight = 0
       for leg, index in @$el.find('.leg[data-leg]')
         $(leg).data
@@ -88,17 +88,14 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     _legData: () ->
       longestLeg = @route.longestLeg()
-      availableWidth = 360 - Utils.getScrollBarWidth() # Pixels
+      availableWidth = @_availableWidth()
       cumulativeWidth = 0
-      excessWidth = 0
       for leg, legIdx in @route.get('legs')
-        isLongestLeg = leg is longestLeg
-        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100.0 * availableWidth
-        if preferredWidth < MINIMUM_WIDTH
-          width = MINIMUM_WIDTH
+        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100 * availableWidth
+        width = if preferredWidth < MINIMUM_WIDTH
+          MINIMUM_WIDTH
         else
-          width = unless isLongestLeg then preferredWidth else preferredWidth - @_excessWidth()
-
+          unless leg is longestLeg then preferredWidth else preferredWidth - @_excessWidth()
         widthBefore = cumulativeWidth
         cumulativeWidth += width
 
@@ -111,17 +108,23 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           firstArrivalTime: Utils.formatTimeForHumans(leg.firstArrivalTime())
           destinationName: @_destinationLabel(leg, legIdx)
           color: Utils.transportColors[leg.get('type')]
-          width: "#{width}px"
-          widthBefore: "#{widthBefore}px"
+          width: Utils.toPercentage(width / availableWidth)
+          widthBefore: Utils.toPercentage(widthBefore / availableWidth)
         }
 
     _excessWidth: ->
-      excessWidth = 0
+      availableWidth = @_availableWidth()
+      width = 0
       for leg, legIdx in @route.get('legs')
-        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100.0 * 360
+        preferredWidth = @routes.getLegDurationPercentage(@index, legIdx) / 100 * availableWidth
         if preferredWidth < MINIMUM_WIDTH
-          excessWidth += MINIMUM_WIDTH - preferredWidth
-      excessWidth
+          width += MINIMUM_WIDTH
+        else
+          width += preferredWidth
+      width - availableWidth
+
+    _availableWidth: ->
+      @$el.parent().width() - Utils.getScrollBarWidth()
 
     _legIndicator: (leg) ->
       switch leg.get('type')

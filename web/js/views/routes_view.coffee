@@ -35,12 +35,19 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
       routeView.onRoutesChanged(@routes, @routeParams)
 
     _addRouteElement: (routeView, beforeIdx) ->
+      # RouteGraphView needs to calculate the width of the bar based on the
+      # width of it's parent element, RouteView, so we need to add
+      # RouteViewElement to the DOM to the DOM before calling render().
+      el = $(document.createElement('li')).addClass('route')
       if routeViewAfter = @routeViews[beforeIdx]
-        routeViewAfter.$el.before(routeView.render().el)
+        routeViewAfter.$el.before(el)
+        routeView.setElement(el).render()
       else if routeViewBefore = _.last(@routeViews)
-        routeViewBefore.$el.after(routeView.render().el)
+        routeViewBefore.$el.after(el)
+        routeView.setElement(el).render()
       else
-        @moreAboveButton.$el.after(routeView.render().el)
+        @moreAboveButton.$el.after(el)
+        routeView.setElement(el).render()
 
     _getIndexForRouteView: (routeView) ->
       comparator = if @routes.isBasedOnArrivalTime() then ((a,b) -> a < b) else ((a,b) -> a > b)
