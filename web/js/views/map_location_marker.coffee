@@ -1,6 +1,6 @@
 define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googleapis.com/maps/api/js?sensor=true#{window.gmapsKey}"], ($, template) ->
 
-  WIDTH = 100
+  WIDTH = 150
   HEIGHT = 20
 
   class MapLocationMarker extends google.maps.OverlayView
