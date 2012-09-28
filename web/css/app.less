@@ -47,6 +47,11 @@ input[type="text"], input[type="date"], input[type="time"], ul.typeahead {
     transition: @prop @time @ease;
 }
 
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
     position: relative;
     padding: 0;
@@ -93,49 +98,35 @@ body {
 
 #search {
     margin: 0 20px;
-}
 
-#time-settings {
-    margin-bottom: 18px;
-}
-
-#time-settings > span > input, #time-settings select {
-    margin-right: 1em !important;
-}
-
-#time {
-    margin: 0;
-    width: 5ex;
-}
-
-#time-type {
-    margin: 0 !important;
-    width: 15ex;
-}
-
-#date {
-    margin: 0 !important;
-    width: 10ex;
-}
-
-#navbar-wrapper {
-    height: 100%;
-    margin-bottom: -42px;
-    box-sizing: border-box;
-}
-
-#transport-types {
-    margin: 1.5em 0;
-    text-align: center;
-    button {
-        margin: 0;
-        padding: 2px 8px;
+    #transport-types {
+        margin: 1.5em 0;
+        text-align: center;
+        button {
+            margin: 0;
+            padding: 2px 8px;
+        }
     }
-}
 
-html, body {
-    height: 100%;
-    min-height: 100%;
+    #time-settings {
+        margin-bottom: 18px;
+    }
+
+    label {
+        margin-bottom: 3px;
+    }
+
+    #date, #time {
+        margin: 0.5em 1.33em 0 0;
+    }
+
+    #date {
+        width: 10ex;
+    }
+
+    #time {
+        width: 5ex;
+    }
 }
 
 .centered {
@@ -172,7 +163,6 @@ input.input-full {
 
         dl {
             margin: 0;
-
             dt {
                 font-size: 0.8em;
                 font-weight: normal;
@@ -180,28 +170,15 @@ input.input-full {
             }
         }
 
-        dl.time {
+        dl.time, dl.duration {
             dd {
                 margin: 0;
-                font-size: 2.0em;
+                font-size: 1.8em;
             }
             .secondary {
                 font-size: 0.8em;
                 display: inline;
             }
-        }
-
-        dl.attribute {
-            text-align: center;
-
-            dd, dt {
-                display: inline;
-                font-size: 0.8em;
-            }
-        }
-
-        dl.attribute:first-of-kind {
-            margin-top: 4px;
         }
     }
 
@@ -267,14 +244,15 @@ i.icon-ferry {
     background-position: 0 -2 * @transportIconWidth;
 }
 
-
 @media (max-width: 767px) {
     #search {
         margin: 0 5%;
     }
+
     #controls {
         width: 100%;
     }
+
     #routes {
         li.route, li.more {
             > a {
@@ -282,11 +260,12 @@ i.icon-ferry {
             }
         }
     }
+
     ul.dropdown-menu {
         width: 90%;
     }
 
-    button.btn-primary {
+    button.btn-success {
         width: 100%;
     }
 }
