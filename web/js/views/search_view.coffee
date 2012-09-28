@@ -88,7 +88,7 @@ define [
         result
 
     arrivalOrDeparture: () ->
-      timeType = @$el.find('#time-type').val()
+      @$el.find('input:radio[name="time-type"]:checked').val()
 
     setArrivalOrDeparture: (v) ->
       @$el.find('#time-type').val(v)
