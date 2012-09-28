@@ -53,6 +53,8 @@ define [
         @routeView = new MapRouteView(routes: routes, routeParams: routeParams, index: routeParams.routeIndex, map: @map).render()
         # Invoke event handlers explicitly since the newly contructed views won't receive this event.
         legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
+        @routeView.onRoutesChanged(routes, routeParams)
+
       @adjustPan(routeParams)
 
 

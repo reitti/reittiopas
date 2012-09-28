@@ -36,3 +36,29 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
     onRemove: ->
       @div.parentNode.removeChild(@div)
       @div = null
+
+    @markerAnchor: (latLng, latLngs) ->
+      if @_isNorthMost(latLng, latLngs)
+        'top'
+      else if @_isSouthMost(latLng, latLngs)
+        'bottom'
+      else if @_isEastMost(latLng, latLngs)
+        'left'
+      else
+        'right'
+
+    @_isNorthMost: (latLng, latLngs) ->
+      for i in [0...latLngs.getLength()]
+        return false if latLngs.getAt(i).lat() > latLng.lat()
+      true
+
+    @_isSouthMost: (latLng, latLngs) ->
+      for i in [0...latLngs.getLength()]
+        return false if latLngs.getAt(i).lat() < latLng.lat()
+      true
+
+    @_isEastMost: (latLng, latLngs) ->
+      for i in [0...latLngs.getLength()]
+        return false if latLngs.getAt(i).lng() < latLng.lng()
+      true
+

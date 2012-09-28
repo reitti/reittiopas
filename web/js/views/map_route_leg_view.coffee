@@ -33,15 +33,30 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
     onRoutesChanged: (routes, routeParams) =>
       if @isSelectedIn(routes, routeParams) and @line.getPath()?
-        originLatLng = @line.getPath().getAt(0)
-        destLatLng = @line.getPath().getAt(@line.getPath().getLength() - 1)
-        @originMarker ?= new MapLocationMarker(originLatLng, @leg.originName(), @map, @_markerAnchor(originLatLng))
-        @destMarker ?= new MapLocationMarker(destLatLng, @leg.destinationName(), @map, @_markerAnchor(destLatLng))
+        @showOriginMarker()
+        @showDestinationMarker()
       else
-        @originMarker?.setMap null
-        @destMarker?.setMap null
-        @originMarker = null
-        @destMarker = null
+        @hideMarkers()
+
+    showOriginMarker: =>
+      anchor = MapLocationMarker.markerAnchor(@originLatLng(), @line.getPath())
+      @originMarker ?= new MapLocationMarker(@originLatLng(), @leg.originName(), @map, anchor)
+
+    showDestinationMarker: =>
+      anchor = MapLocationMarker.markerAnchor(@destinationLatLng(), @line.getPath())
+      @destMarker ?= new MapLocationMarker(@destinationLatLng(), @leg.destinationName(), @map, anchor)
+
+    originLatLng: ->
+      @line.getPath().getAt(0)
+
+    destinationLatLng: ->
+      @line.getPath().getAt(@line.getPath().getLength() - 1)
+
+    hideMarkers: =>
+      @originMarker?.setMap null
+      @destMarker?.setMap null
+      @originMarker = null
+      @destMarker = null
 
     isSelectedIn: (routes, routeParams) ->
       routes is @routes and routeParams.routeIndex is @routeIndex and routeParams.legIndex is @index
@@ -76,28 +91,3 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
               strokeOpacity: 1
             repeat: '150px'
           }]
-
-    _markerAnchor: (latLng) ->
-      if @_isNorthMost(latLng)
-        'top'
-      else if @_isSouthMost(latLng)
-        'bottom'
-      else if @_isEastMost(latLng)
-        'left'
-      else
-        'right'
-
-    _isNorthMost: (latLng) ->
-      for i in [0...@line.getPath().getLength()]
-        return false if @line.getPath().getAt(i).lat() > latLng.lat()
-      true
-
-    _isSouthMost: (latLng) ->
-      for i in [0...@line.getPath().getLength()]
-        return false if @line.getPath().getAt(i).lat() < latLng.lat()
-      true
-
-    _isEastMost: (latLng) ->
-      for i in [0...@line.getPath().getLength()]
-        return false if @line.getPath().getAt(i).lng() < latLng.lng()
-      true
