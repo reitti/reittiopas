@@ -50,14 +50,23 @@
             <input type="text" class="input-full" name="to" id="to" placeholder="Minne…" autocomplete="off">
           </div>
           <div class="controls controls-row" id="time-settings">
-          <span class="btn-group">
-            <input type="time" name="time" id="time"/>
-            <input type="date" name="date" id="date"/>
-            <select class="input-small" id="time-type" name="time-type">
-              <option value="departure">Lähtöaika</option>
-              <option value="arrival">Tuloaika</option>
-            </select>
-          </span>
+            <div class="controls-row">
+              <input type="time" name="time" id="time" class="pull-left"/>
+              <input type="date" name="date" id="date" class="pull-left"/>
+
+              <div class="pull-left">
+                <label class="radio">
+                  <input type="radio" name="time-type" value="departure" class="input-small" id="time-type-departure"
+                         name="time-type" checked>
+                  Lähtöaika
+                </label>
+                <label class="radio">
+                  <input type="radio" name="time-type" value="arrival" class="input-small" id="time-type-arrival"
+                         name="time-type">
+                  Tuloaika
+                </label>
+              </div>
+            </div>
           </div>
           <div class="control-group">
             <button type="submit" class="btn btn-success pull-right" data-loading-text="Haetaan reittejä…">
