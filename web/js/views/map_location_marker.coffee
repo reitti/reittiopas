@@ -82,9 +82,9 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
     _computeAngle: (availableLatLng) ->
       DEGREE_PER_RADIAN = 57.2957795
       RADIAN_PER_DEGREE = 0.017453
-      dlat = availableLatLng.lat() - @location.lat()
-      dlng = availableLatLng.lng() - @location.lng()
-      yaw = Math.atan2(dlng * Math.cos(availableLatLng.lat() * RADIAN_PER_DEGREE), dlat) * DEGREE_PER_RADIAN
+      dlat = @location.lat() - availableLatLng.lat()
+      dlng = @location.lng() - availableLatLng.lng()
+      yaw = Math.atan2(dlng * Math.cos(@location.lat() * RADIAN_PER_DEGREE), dlat) * DEGREE_PER_RADIAN
       @_wrapAngle(yaw)
    
     _wrapAngle: (angle) ->
