@@ -513,7 +513,7 @@ Töyrynummentie|
 Puolukkatie|
 Tilkankuja|
 Frutti di mare|24.9448683,60.191201
-Kamppi, tulolaituri|24.931291,60.1687759
+Kamppi, tulolaituri|24.9309116,60.1688117
 Linnanrouvanpolku|
 Tapanilankaari|
 Joulutähdentie|
@@ -749,7 +749,7 @@ Itäkeskuksen uimahalli|25.0769234,60.2126763
 Kivelän sairaala|24.9158067,60.1800502
 Aakenraitti|
 Alia|24.9945296,60.1812073
-Shell Helsinki Herttoniemi|25.0371232,60.1934693
+Shell Helsinki Herttoniemi|25.0370747,60.1934957
 Nummikuja|
 Palvelutalo|24.8925855,60.1594444
 Pohjanpellonkuja|
@@ -1956,7 +1956,7 @@ Tolarintie|
 Viikin kirjasto|25.0130252,60.2275287
 Hesperian esplanadi/lasten kahluuallas|24.9190695,60.176371
 Keinulaudantie|
-Sopulitien eläinlääkäriasema|25.0418954,60.2164502
+Sopulitien eläinlääkäriasema|25.0419251,60.2164349
 Hietaniemen kappeli|24.9092668,60.1725941
 Siltavuorenpenger|
 Eskolantie|
@@ -2161,6 +2161,7 @@ Telkkäkuja|
 Pohjoiskaari|
 Radanvarsiraitti|
 Prinsessantie|
+Puotilan leikkiniitty|25.094415,60.2096392
 Lokikirja|
 Rautatientori, laituri 10|24.9432776,60.1708828
 Niittaajankuja|
@@ -3648,7 +3649,7 @@ Koko-teatteri|24.9513299,60.1756665
 Uotinmäentie|
 Viljakuja|25.008929,60.2538603
 Karpalokuja|
-Helsinki 80|25.0354083,60.193616
+Helsinki 80|25.0354286,60.1935756
 Gasum|24.9057697,60.2073443
 Helluntaipolku|
 Merenkulkijankatu|
@@ -4388,7 +4389,7 @@ Kallion Seurahuone|24.9527763,60.1849923
 Arttolantie|25.0287726,60.2805504
 Mustikkamaanpolku|
 Hopeatäpläntie|
-Kamppi, laituri 50|24.9322145,60.1690253
+Kamppi, laituri 50|24.9316787,60.1689425
 Heka-Myllypuro Oy|25.0787032,60.2210845
 Karamzinranta|
 Asessorintie|
@@ -4426,6 +4427,7 @@ Ruoholahti|24.9155619,60.1632194
 Rödje-Fantsin tie|
 Tupavuori|
 Halsuanpolku|
+Tammiontie|
 Ala-Tikkurila|25.0150554,60.2868889
 Hiihtomäentie|
 Kuopuksentie|
@@ -4498,7 +4500,7 @@ Apollonkatu|
 Lastentarhamuseo|24.9582217,60.1877081
 Amsterdam|24.9143167,60.1625836
 Elielinaukio, laituri 32|24.9393953,60.1717022
-Pihlajamäentie ramppi|25.0101111,60.2293455
+Pihlajamäentie ramppi|25.0101176,60.2293403
 Ravintola Rubiini|24.9894378,60.2750562
 Itäkeskus (M), laituri 12|25.0772906,60.2101298
 Oinaantie|
@@ -4551,7 +4553,7 @@ Rattitie|
 Kalliohovi|24.956975,60.1885197
 Larin Parasken polku|
 Ruskeasuo|24.900457,60.2035677
-Kehon rakennus ja purku Oy|25.04252,60.2095117
+Kehon rakennus ja purku Oy|25.042558,60.2095374
 Vuorilahdenpolku|
 Kontulan Apteekki|25.0834903,60.2375033
 Kreikan konsulaatti|24.9605562,60.1733238
@@ -4597,7 +4599,7 @@ Säynäskuja|
 Herttoniemen yhteiskoulu|25.0360562,60.2064403
 Laivakatu|
 Kiilletie|
-Kamppi, laituri 51|24.932124,60.1689954
+Kamppi, laituri 51|24.9316062,60.1689181
 Pieksupolku|
 Cafe Lasipalatsi|24.9368063,60.1704709
 Lauttasaaren Eläinlääkäriasema|24.8802472,60.1592132
@@ -4792,12 +4794,12 @@ Porvarintie|
 Taavetinkuja|
 Teljäntie|
 Pub Merikarhu|25.0844911,60.236979
-Kamppi, laituri 41|24.9330293,60.169294
+Kamppi, laituri 41|24.9323312,60.1691615
 Tuohikoivuntie|
 Brahenkatu|24.9483403,60.1897035
 Pikku-Pässin kuja|
 Koudanpolku|
-Kamppi, laituri 52|24.9320334,60.1689656
+Kamppi, laituri 52|24.9315337,60.1688938
 Ilmarinkatu|
 Johan Bockin kuja|
 Hiekkarannantie|
@@ -4976,12 +4978,12 @@ Töölöntulli|
 Roskapankki|24.9517109,60.1867648
 Metsänhoitajanraitti|
 Lahdensivunpolku|
-Kamppi, laituri 42|24.9329387,60.1692641
+Kamppi, laituri 42|24.9322587,60.1691372
 Siltamäki|24.9909655,60.2773619
 Tilhitie|
 Kotisaarenkatu|
 Käpylinnuntie|
-Kamppi, laituri 53|24.9319429,60.1689357
+Kamppi, laituri 53|24.9314612,60.1688695
 Pasaasi|
 Sivukirjasto|24.9533451,60.1843994
 Risto Rytin kuja|
@@ -5168,12 +5170,12 @@ Pasilan asema|24.9342246,60.199285
 Pukinmäen apteekki|24.9940777,60.2433111
 Notkotie|
 Neste Oil Truck Helsinki Tattarisuo|25.0525746,60.2631403
-Kamppi, laituri 43|24.9328482,60.1692343
+Kamppi, laituri 43|24.9321862,60.1691128
 Nissaksentie|
 Sapilastie|
 Elimäenkatu|
 Koivikkotie|
-Kamppi, laituri 54|24.9318524,60.1689059
+Kamppi, laituri 54|24.9313887,60.1688451
 Pitäjänmäen Apteekki|24.8528434,60.2269442
 Kaitalahti 1|25.0242691,60.1750696
 Langinkoskenkuja|
@@ -5360,13 +5362,13 @@ Kannelpolku|
 Alakiventie 5|25.0787842,60.2212478
 Villa Solvik|25.152902,60.2021674
 Kottaraistie|
-Kamppi, laituri 44|24.9327577,60.1692044
+Kamppi, laituri 44|24.9321137,60.1690885
 Vuosaari|25.1424866,60.2071929
 Frendi|24.8862726,60.2102899
 Helminkatu|
 Kallion lukio|24.9561611,60.1833286
 HYKS Psykiatriakeskus|24.9194808,60.1801141
-Kamppi, laituri 55|24.9317619,60.168876
+Kamppi, laituri 55|24.9313162,60.1688208
 Lauttasaaren kirjasto|24.883123,60.1587666
 Siion-seurakunta|24.9178237,60.1866489
 Liuskaluodon talvikahvila|24.9464965,60.1529814
@@ -5572,7 +5574,7 @@ Kulosaarentie|
 Vegemesta|24.9476141,60.1641561
 Varjakankuja|
 Harjukatu|
-Kamppi, laituri 45|24.9326671,60.1691746
+Kamppi, laituri 45|24.9320412,60.1690642
 Kuoppapolku|
 Fanninpenger|
 Kanukalliontie|
@@ -5580,7 +5582,7 @@ Rahakamarinportti|
 Perhekuja|
 Näyttelijäntie|
 Shaker Helsinki|24.9301091,60.1694916
-Kamppi, laituri 56|24.9316713,60.1688462
+Kamppi, laituri 56|24.9312436,60.1687964
 Natura Viva|25.1122003,60.1951594
 Sir Oliver|24.9616867,60.1795302
 Asesepäntie|
@@ -5604,6 +5606,7 @@ Rymy-eetu|24.9443288,60.1660985
 Kaasutehtaankatu|
 Kahvila Kampela|25.1621981,60.202267
 Haagan pappilantie|
+Teboil Express Konala|24.8346805,60.2504215
 Pickwick|24.9408059,60.1701304
 Ciao Caffe|24.9376538,60.1694344
 Itämerensola|
@@ -5778,10 +5781,10 @@ Kuutsalontie|
 Kiertotähdenpolku|
 Myrskykuja|
 Helenankatu|
-Kamppi, laituri 46|24.9325766,60.1691447
+Kamppi, laituri 46|24.9319687,60.1690398
 Mäkelänkatu|
 Maununnevankaari|
-Kamppi, laituri 57|24.9315808,60.1688163
+Kamppi, laituri 57|24.9311711,60.1687721
 Juustilanpolku|
 Haavikkotie|
 Pihlajapolku|
@@ -5957,7 +5960,7 @@ Lastenkodinkatu|
 Takomotie|
 Matruusinkatu|
 Rukkilantie|
-Kyläsaarenkatu 8|24.9710557,60.1984209
+Kyläsaarenkatu 8|24.9710181,60.1983996
 Saariselänpolku|
 Dtm|24.9420197,60.1670288
 Tuulensuunkuja|
@@ -5968,7 +5971,7 @@ Katajapolku|
 Jahtivoudintie|
 Henrik II|24.8528327,60.2262357
 NYC Burger|24.9102449,60.1634449
-Kamppi, laituri 47|24.9324861,60.1691149
+Kamppi, laituri 47|24.9318962,60.1690155
 Korppaanpuisto/lasten kahluuallas|24.8879931,60.2044373
 Ruutikellarit|24.8957914,60.1874171
 Sirenan kielet (2004)|25.0762475,60.224036
@@ -6050,7 +6053,7 @@ Latva Bar|24.9465096,60.1634527
 Ruohotie|
 Amiraalinkuja|
 Bud's|24.9567998,60.187515
-Herttoniemen kirjasto|25.0380106,60.2070271
+Herttoniemen kirjasto|25.0377672,60.2070232
 Ropokuja|
 Tammikuja|
 Horsmakuja|
@@ -6181,7 +6184,7 @@ Vapiano|24.9455797,60.1709105
 Rannikkolaivurinpolku|
 Kolkkapolku|
 Lauttasaaren lähiliikuntapaikka|24.8748554,60.1577182
-Lounaskahvila SorviS|25.043669,60.1970985
+Lounaskahvila SorviS|25.043685,60.1970763
 Arcturuksenkatu|
 Peltotie|
 Eteläranta|
@@ -6198,7 +6201,7 @@ Fallkullantie|
 Ilmala (seisake)|24.9174139,60.2100883
 Niittyluhdankuja|
 Vanille Cafe|24.9851339,60.1479701
-Kamppi, laituri 48|24.9323956,60.169085
+Kamppi, laituri 48|24.9318237,60.1689911
 Bar4you|24.9306501,60.1670199
 Vaskiniementie|
 Robert's coffee|24.9476937,60.1695997
@@ -6417,7 +6420,7 @@ Grand Shanghai|24.9442525,60.1695461
 Näätäkuja|
 Roihuvuoren kirjasto|25.0527831,60.1945445
 Hesburger Helsinki Rautatientori|24.94025,60.17058
-Kamppi, laituri 49|24.932305,60.1690552
+Kamppi, laituri 49|24.9317512,60.1689668
 Vetelintie|
 Kuovipolku|
 Porrastie|

@@ -72,6 +72,7 @@ Harakantie|
 Terästie|
 Villa Rulludd|24.7103751,60.1419774
 Tahkokuja|
+Henttaanaukio|
 Tiistilänkaari|
 Vantinpuisto|
 Lasimäki|
@@ -173,6 +174,7 @@ Nihtisilta|
 Kartanonrouvantie|
 Karhunkuoppa|
 Piikivi|
+Itärajantie|
 Vehkamäentie|
 Tervamäki|
 Kalmarinrinne|
@@ -373,6 +375,7 @@ Siltaniitynlaita|
 Ruusupolku|
 Kalaonnentie|
 Länsituulentie|
+Viistastenpolku|
 Mesimäki|
 Koskelonkuja|
 Boholmankuja|
@@ -561,6 +564,7 @@ Ruusutorpanpuisto|
 Hakamäki|
 Merisaappaan koulu|24.6448765,60.1475421
 Luhtatie|
+Poppelikuja|
 Helikopteripuisto|24.6667988,60.1654578
 Liittokuja|
 Iivisniementie|
@@ -610,6 +614,7 @@ Karhuniitynkuja|
 Hannuksenpelto|
 Tallimestarintie|
 Rajamännynpolku|
+Kopraalintie|
 Mahlarinne|
 Lohenevä|
 Skataholmantie|
@@ -623,8 +628,9 @@ Nupurintie|
 Keilaterassi|
 Itälinnake|
 Raiviokorpi|
-Tennispuisto|24.8019845,60.1720446
+Tennispuisto|24.8019141,60.1722295
 Lippajärventie|
+Anna Bildstenin Polku|
 Ruukinsilta|
 Keijuniitty|24.8037723,60.187233
 Vahtipolku|
@@ -647,6 +653,7 @@ St1 Espoo Automat Soukka|24.6713219,60.141997
 Antaksentie|
 Ahtaanoja|
 Kattilalaaksontie|
+Lukusolmu|
 Hahlakuja|
 Leppävaaran VPK|24.8071358,60.2208817
 Jääskentie|
@@ -676,6 +683,7 @@ Eestinrinteentie|
 Lahnuksentie|
 Leica Geosystems Oy|24.7639388,60.2053631
 Kartanonkuja|
+Laaksolahden ala-aste|24.7692857,60.2490456
 Kuparipolku|
 Majamäentie|
 Koivunrunko|
@@ -732,6 +740,7 @@ Oittaan ulkoilukeskus ja kartano|24.6576508,60.2415227
 Joupinkuja|
 Finnonlahti|24.7097412,60.1532723
 Kuukunkorventie|
+Hans Floorin Polku|
 Ysi5|24.7524525,60.2089451
 Kaisankoti|24.666619,60.2748107
 Haltilanmäki|
@@ -770,6 +779,7 @@ Ryytimaa|
 Käräjäkuja|
 Vesikuja|
 Perkkaanpolku|
+Rykmentinmetsä|
 Kaivomestarinniitty|
 Ilmattarenpolku|
 Merenkäynti|
@@ -1028,6 +1038,7 @@ Friisinniityntie|
 Punavarpusenkuja|
 Kilonkallio|
 Mikkelänkallio|
+Rykmentintie|
 Tikasmäenkuja|
 Joupinrinne|
 Oxfotintie|
@@ -1125,6 +1136,7 @@ Solvallan uimapaikka|24.5554431,60.2925996
 Lansantie|
 Vuoritie|
 Kallvikintie|
+Viisastenpolku|
 Seilimäki|
 Vermonrinteenkuja|
 Hirvensarvi|
@@ -1135,7 +1147,6 @@ Paasitie|
 Kulopolku|
 Tuhkurilammentie|
 Kaksoiskiventie|
-Unknown|
 Anfallinpolku|
 Sininärhentie|
 Kätköpaikantie|
@@ -1294,6 +1305,7 @@ Saunalahdenkatu|
 Åminnenkuja|
 Kotiharju|
 Kuukausikuja|
+Lilhemtinreitti|
 Sinipiianpolku|
 Heikunantie|
 Kellonummentie|
@@ -1439,6 +1451,7 @@ Kukkumäenkuja|
 Pikimäki|
 Niittymäenkuja|
 Nostoväentie|
+Piilipuunpolku|
 Hesburger Espoo Iso Omena|24.73813,60.16196
 Metsälammenkuja|
 Alaportti|
@@ -1790,6 +1803,7 @@ Nissintie|
 Hiirisuontie|
 Taalaritie|
 Engelin puistotie|
+Lukusilta|
 Kruununtie|
 Kalasääksenkatu|
 Hakakuja|
@@ -1878,6 +1892,7 @@ Sysimaa|
 Karhunkynsi|
 Soittilanrinne|
 Ruskaniitty|
+Gertrudinpolku|
 Suopurontie|
 Torpanniitty|
 Kuutamokatu|
@@ -1932,7 +1947,7 @@ Matinkulma|
 Norppakuja|
 Kaitalampi|24.661122,60.3255023
 Päivänkakkarantie|
-Teboil Express|24.7173544,60.1617591
+Teboil Express|24.7172321,60.1617081
 Soukantie|
 Tiaisentie|
 Moikkari|24.656739,60.3514171
@@ -2592,7 +2607,6 @@ Haltijatontuntie|
 Laajalahden koulu|24.809438,60.2033357
 Birger Carlstedtin kuja|
 Saunarannankuja|
-Laaksolahtitalo. Koulun ala-aste|24.7693715,60.2489977
 Suur-Helsingin Golf / Lakisto|24.6531292,60.3574831
 Taljakuja|
 Aallonkohina|
@@ -2713,6 +2727,7 @@ Ilmakuja|
 Puolarintie|
 Geronimo|24.802106,60.1781159
 Tuurinmäki|
+Lilhemtintie|
 Tapio Wirkkalan polku|
 Espital|24.7258219,60.173456
 Otakallio|
@@ -2886,6 +2901,7 @@ Terveyskeskus|24.8137062,60.2216514
 Mustanpurontie|
 Kulloonportti|
 Mankintie|
+Alokaskuja|
 Kaukolantie|
 Seilirinne|
 Hirviportti|
@@ -3428,6 +3444,7 @@ Kilonkartanontie|
 Seiliniitty|
 Salmenpolku|
 Kasavuorenrinne|
+Lumihiirenpolku|
 Odilammen uimapaikka|24.7687912,60.3039475
 Alakivenlahden Apteekki|24.6375155,60.1541908
 Klockarsintie|
