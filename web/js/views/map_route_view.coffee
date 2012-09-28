@@ -2,9 +2,9 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
 
   class MapRouteView
     
-    constructor: ({routes, routeParams, index, map}) ->
-      @legViews = for leg, legIndex in routes.at(index).get('legs')
-        new MapRouteLegView(routes: routes, routeParams: routeParams, routeIndex: index, index: legIndex, map: map)
+    constructor: ({routes, routeParams, @index, map}) ->
+      @legViews = for leg, legIndex in routes.at(@index).get('legs')
+        new MapRouteLegView(routes: routes, routeParams: routeParams, routeIndex: @index, index: legIndex, map: map)
  
     dispose: ->
       legView.dispose() for legView in @legViews
