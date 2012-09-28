@@ -1,7 +1,6 @@
 define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marker'], (_, Utils, MapLegMarker, MapLocationMarker) ->
-
   class MapRouteLegView
-    
+
     constructor: ({@routes, @routeParams, @routeIndex, @index, @map}) ->
       @leg = @routes.at(@routeIndex).getLeg(@index)
       Reitti.Event.on 'routes:change', @onRoutesChanged
@@ -13,7 +12,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       @originMarker?.setMap null
       @destMarker?.setMap null
       this
-      
+
     render: () ->
       path = (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
       @line = new google.maps.Polyline _.extend({
@@ -28,9 +27,8 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       google.maps.event.addListener @line, 'click', @onClicked
       google.maps.event.addListener @marker.marker, 'click', @onClicked
       this
-      
+
     onClicked: () =>
-      Reitti.Event.trigger 'leg:change', @leg
       Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: @index)
 
     onRoutesChanged: (routes, routeParams) =>
@@ -51,7 +49,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
     getBounds: () ->
       bounds = new google.maps.LatLngBounds()
       if @line? and @line.getPath()?
-        bounds.extend(latLng) for latLng in @line.getPath().getArray()  
+        bounds.extend(latLng) for latLng in @line.getPath().getArray()
       bounds
 
     _legStyle: () ->
