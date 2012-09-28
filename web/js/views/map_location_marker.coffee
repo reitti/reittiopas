@@ -38,7 +38,7 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
 
     onStreetViewClicked: =>
       @map.getStreetView().setPosition(@location)
-      @map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 1)
+      @map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 0)
       @map.getStreetView().setVisible(true)
 
     onRemove: ->
