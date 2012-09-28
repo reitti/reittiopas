@@ -16,12 +16,19 @@ define [
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     render: ->
+      @initStreetView()
+      @initMap()
+      @initPosition()
+      this
+
+    initMap: ->
       @map = new google.maps.Map(@el,
         zoom: 16
         mapTypeId: google.maps.MapTypeId.ROADMAP
         minZoom: 10
         maxZoom: 18
         scaleControl: true
+        streetView: @streetView
         styles: [
           {
             stylers: [
@@ -31,6 +38,13 @@ define [
         ]
       )
 
+    initStreetView: ->
+      @streetView = new google.maps.StreetViewPanorama $('#streetview')[0],
+        visible: false
+        enableCloseButton: true
+      google.maps.event.addListener @streetView, 'visible_changed', @onStreetViewVisibilityChanged
+
+    initPosition: ->
       # If we already have the user's current position, use it. If not, center
       # the map to it as soon as everything is initialized and we have the
       # location.
@@ -42,7 +56,7 @@ define [
         Reitti.Event.on 'position:change', _.once (position) =>
           if Utils.isWithinBounds(position)
             @centerMap position.coords.latitude, position.coords.longitude
-      @
+
 
     onRoutesChanged: (routes, routeParams) =>
       if routes isnt @routes or routeParams.routeIndex isnt @routeView?.index
@@ -52,9 +66,17 @@ define [
         # Invoke event handlers explicitly since the newly contructed views won't receive this event.
         legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
         @routeView.onRoutesChanged(routes, routeParams)
-
+      @map.getStreetView().setVisible(false)
       @adjustPan(routeParams)
 
+    onStreetViewVisibilityChanged: (a) =>
+      if @map.getStreetView().getVisible()
+        $('#map-wrap').css bottom: '50%'
+        $('#streetview-wrap').show()
+      else
+        $('#map-wrap').css bottom: '0'
+        $('#streetview-wrap').hide()
+      google.maps.event.trigger @map, 'resize'
 
     adjustPan: (routeParams) =>
       if routeParams.legIndex?

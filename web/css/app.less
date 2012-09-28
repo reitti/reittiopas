@@ -7,6 +7,8 @@
 @controlsWidth: 400px;
 @borderColor: #BBB;
 @transportIconWidth: 32px;
+@locationMarkerWidth: 150px;
+@locationMarkerHeight: 20px;
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0){
     -webkit-border-top-right-radius: @topright;
@@ -58,11 +60,6 @@ body {
     overflow: hidden;
 }
 
-#map {
-    margin: 0 !important;
-    height: 100%;
-}
-
 .no-margin {
     margin: 0 !important;
 }
@@ -79,9 +76,25 @@ body {
     bottom: 0;
 
     #map {
+        margin: 0 !important;
+        height: 100%;
         z-index: 1;
         border-left: 1px solid #D4D4D4;
 
+        img {
+            max-width: none;
+        }
+    }
+}
+
+#streetview-wrap {
+    position: fixed;
+    top: 50%;
+    bottom: 0;
+    left: @controlsWidth;
+    right: 0;
+    #streetview {
+        height: 100%;
         img {
             max-width: none;
         }
@@ -199,16 +212,40 @@ input.input-full {
 #map {
     .popover {
         opacity: 0.9;
-        width: 150px;
-        height: 20px;
+        width: @locationMarkerWidth;
+        height: @locationMarkerHeight;
         font-size: 0.9em;
         cursor: pointer;
+
+
         .popover-content {
-            padding: 0 5px;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            padding: 0;
+            height: @locationMarkerHeight;
+
+            * {
+                height: @locationMarkerHeight;
+                line-height: @locationMarkerHeight;                
+            }
+
+            .popover-label {
+                float: left;                
+                width: @locationMarkerWidth;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: center;
+            }
+
+            .streetview-icon {
+                position: absolute;
+                top: 0;
+                right: 4px;
+                width: 23px;
+                background-image: url('../img/eye.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: white;
+            }
         }
     }
 }

@@ -2,9 +2,9 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
 
   class MapRouteView
     
-    constructor: ({routes, routeParams, @index, map}) ->
-      @legViews = for leg, legIndex in routes.at(@index).get('legs')
-        new MapRouteLegView(routes: routes, routeParams: routeParams, routeIndex: @index, index: legIndex, map: map)
+    constructor: ({@routes, routeParams, @index, map}) ->
+      @legViews = for leg, legIndex in @routes.at(@index).get('legs')
+        new MapRouteLegView(routes: @routes, routeParams: routeParams, routeIndex: @index, index: legIndex, map: map)
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     dispose: ->
@@ -25,6 +25,6 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
       @legViews[legIndex].getBounds()
 
     onRoutesChanged: (routes, routeParams) =>
-      if routeParams.routeIndex is @index and !routeParams.legIndex?
+      if routes is @routes and routeParams.routeIndex is @index and !routeParams.legIndex?
         _.first(@legViews)?.showOriginMarker()
         _.last(@legViews)?.showDestinationMarker()

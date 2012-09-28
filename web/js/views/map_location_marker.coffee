@@ -6,12 +6,14 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
   class MapLocationMarker extends google.maps.OverlayView
 
     constructor: (@location, @name, @map, @anchor = 'left') ->
-      @setMap(map)
+      @setMap(@map)
 
     onAdd: ->
       @div = $(template(anchor: @anchor, content: @name))[0]
       @getPanes().floatPane.appendChild(@div)
       $(@div).on 'click', @onClicked
+      $('.streetview-icon', @div).on 'click', @onStreetViewClicked
+      @_checkStreetViewAvailability()
 
     draw: ->
       {x: x, y: y} = @getProjection().fromLatLngToDivPixel(@location)
@@ -32,6 +34,12 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
     onClicked: =>
       @map.panTo @location
       @map.setZoom 18
+      false
+
+    onStreetViewClicked: =>
+      @map.getStreetView().setPosition(@location)
+      @map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 1)
+      @map.getStreetView().setVisible(true)
 
     onRemove: ->
       @div.parentNode.removeChild(@div)
@@ -62,3 +70,28 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
         return false if latLngs.getAt(i).lng() < latLng.lng()
       true
 
+    _checkStreetViewAvailability: () ->
+      new google.maps.StreetViewService().getPanoramaByLocation @location, 30, (panoramaData, streetviewStatus) =>
+        if streetviewStatus is 'OK'
+          @heading = @_computeAngle(panoramaData.location.latLng)
+          $('.streetview-icon', @div).show()
+          
+    # Approximate angle calculation courtesy of Jordan Clist
+    # http://www.jaycodesign.co.nz/js/using-google-maps-to-show-a-streetview-of-a-house-based-on-an-address/
+
+    _computeAngle: (availableLatLng) ->
+      DEGREE_PER_RADIAN = 57.2957795
+      RADIAN_PER_DEGREE = 0.017453
+      dlat = availableLatLng.lat() - @location.lat()
+      dlng = availableLatLng.lng() - @location.lng()
+      yaw = Math.atan2(dlng * Math.cos(availableLatLng.lat() * RADIAN_PER_DEGREE), dlat) * DEGREE_PER_RADIAN
+      @_wrapAngle(yaw)
+   
+    _wrapAngle: (angle) ->
+      if angle >= 360
+        angle -= 360
+      else if angle < 0
+        angle += 360
+      angle
+ 
+ 
