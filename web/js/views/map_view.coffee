@@ -19,10 +19,8 @@ define [
       @map = new google.maps.Map(@el,
         zoom: 16
         mapTypeId: google.maps.MapTypeId.ROADMAP
-        mapTypeControlOptions:
-          position: google.maps.ControlPosition.TOP_CENTER
-        minZoom: 10,
-        maxZoom: 18,
+        minZoom: 10
+        maxZoom: 18
         scaleControl: true
         styles: [
           {
