@@ -2,12 +2,8 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
   class MapRouteLegView
     
-    constructor: (routes: routes, routeIndex: routeIndex, index: index, map: map) ->
-      @routes = routes
-      @routeIndex = routeIndex
-      @index = index
+    constructor: ({@routes, @routeParams, @routeIndex, @index, @map}) ->
       @leg = @routes.at(@routeIndex).getLeg(@index)
-      @map = map
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     dispose: ->
@@ -35,6 +31,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       
     onClicked: () =>
       Reitti.Event.trigger 'leg:change', @leg
+      Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: @index)
 
     onRoutesChanged: (routes, routeParams) =>
       if @isSelectedIn(routes, routeParams) and @line.getPath()?
