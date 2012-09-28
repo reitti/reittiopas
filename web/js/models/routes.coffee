@@ -30,8 +30,10 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
 
     @make: (from, to, data, date, arrivalOrDeparture, transportTypes) ->
       fromName = @_locationString(from)
+      fromCoords = @_locationCoords(from)
       toName = @_locationString(to)
-      routes = new Routes(new Route(fromName, toName, routeData[0]) for routeData in data)
+      toCoords = @_locationCoords(to)
+      routes = new Routes(new Route(fromName, fromCoords, toName, toCoords, routeData[0]) for routeData in data)
       routes.fromName = fromName
       routes.toName = toName
       routes.date = date
@@ -90,3 +92,8 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
         str += ", "
         str += loc.city
       str
+
+    @_locationCoords: (loc) ->
+      [x, y] = loc.coords.split /,/
+      x: x, y: y
+
