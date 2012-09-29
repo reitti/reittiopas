@@ -1,4 +1,5 @@
 load 'vertx.js'
+load 'lib/async.js'
 
 eb = vertx.eventBus
 server = vertx.createHttpServer()
@@ -17,21 +18,22 @@ filterAjaxOnly = (handler) ->
 
 routeMatcher.get '/routes', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
-  eb.send 'reitti.geocode', query: req.params().from, (from) ->
-    eb.send 'reitti.geocode', query: req.params().to, (to) ->
-      if from and to
-        params =
-          from: from.coords
-          to: to.coords
-          date: req.params().date
-          time: req.params().time
-          arrivalOrDeparture: req.params().arrivalOrDeparture
-          transportTypes: req.params().transportTypes
-        eb.send 'reitti.findRoutes', params, (data) ->
-          req.response.end JSON.stringify(from: from, to: to, routes: data.body)
-      else
-        req.response.statusCode = 400
-        req.response.end JSON.stringify(from: !!from, to: !!to)
+  geocodeFrom = (cb) -> eb.send 'reitti.geocode', query: req.params().from, (r) -> cb(null, r)
+  geocodeTo =  (cb) -> eb.send 'reitti.geocode', query: req.params().to, (r) -> cb(null, r)
+  async.parallel {from: geocodeFrom, to: geocodeTo}, (error, {from,to}) ->
+    if from? and to?
+      params =
+        from: from.coords
+        to: to.coords
+        date: req.params().date
+        time: req.params().time
+        arrivalOrDeparture: req.params().arrivalOrDeparture
+        transportTypes: req.params().transportTypes
+      eb.send 'reitti.findRoutes', params, (data) ->
+        req.response.end JSON.stringify(from: from, to: to, routes: data.body)
+    else
+      req.response.statusCode = 400
+      req.response.end JSON.stringify(from: !!from, to: !!to)
 
 routeMatcher.get '/address', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
