@@ -25,11 +25,11 @@ class Trie
     @root = new Node('')
   
   add: (place, city, loc) ->
-    name = "#{place}, #{city}"
+    name = "#{place.trim()}, #{city.trim()}"
     placeParts = place.split /\s/
     for idx in [placeParts.length - 1..0]
       str = placeParts[idx..placeParts.length - 1].join(' ')
-      @build "#{str}, #{city}", "#{place}, #{city}", loc
+      @build "#{str.trim()}, #{city.trim()}", name, loc
 
   build: (str, name, loc) ->
     node = @root
