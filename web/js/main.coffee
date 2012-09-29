@@ -43,21 +43,25 @@ require ['jquery', 'underscore', 'backbone', 'router', 'views/map_view', 'views/
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
 
-  $ ->
 
-    setHostPageStrings()
-    new MapView().render()
-    new SearchView().render()
-    new RoutesView()
-      
-    Backbone.history.start(pushState: true)
+  $.get '/timezoneoffset', (r) ->
+    Reitti.utcOffset = parseInt(r, 10)
 
-    if navigator.geolocation
-      navigator.geolocation.watchPosition(
-        (position) -> Reitti.Event.trigger 'position:change', position,
-        () ->,
-        { enableHighAccuracy: true})
+    $ ->
 
-    # Inject the Like button after the page has loaded, so it can't delay startup.
-    fbLocale = window.appLang.replace('-','_')
-    $('.fb-wrap:visible').html '<iframe src="//www.facebook.com/plugins/like.php?locale='+fbLocale+'&href=http%3A%2F%2Fwww.ihanhyv%C3%A4reittiopas.fi&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>'
+      setHostPageStrings()
+      new MapView().render()
+      new SearchView().render()
+      new RoutesView()
+        
+      Backbone.history.start(pushState: true)
+
+      if navigator.geolocation
+        navigator.geolocation.watchPosition(
+          (position) -> Reitti.Event.trigger 'position:change', position,
+          () ->,
+          { enableHighAccuracy: true})
+
+      # Inject the Like button after the page has loaded, so it can't delay startup.
+      fbLocale = window.appLang.replace('-','_')
+      $('.fb-wrap:visible').html '<iframe src="//www.facebook.com/plugins/like.php?locale='+fbLocale+'&href=http%3A%2F%2Fwww.ihanhyv%C3%A4reittiopas.fi&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>'

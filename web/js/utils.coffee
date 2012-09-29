@@ -22,6 +22,10 @@ define ['moment'], (moment) ->
       36: '#193695' # Kirkkonummi internal bus lines
       39: '#193695' # Kerava internal bus lines
 
+    @now: () ->
+      now = moment()
+      now.add('minutes', now.zone()).add('milliseconds', Reitti.utcOffset).toDate()
+
     @formatDateTimeForMachines: (d) ->
       moment(d).format('YYYYMMDDHHmmss')
 

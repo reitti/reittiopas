@@ -18,7 +18,7 @@ define [
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
       @from = new SearchInputView(el: @$el.find('#from'))
-      @initializationTime = new Date()
+      @initializationTime = Utils.now()
       @initDateTimePickers(@initializationTime)
 
       Reitti.Event.on 'position:change', @populateFromBox

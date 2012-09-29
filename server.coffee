@@ -4,6 +4,7 @@ load 'lib/async.js'
 eb = vertx.eventBus
 server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
+helsinkiTimezone = java.util.TimeZone.getTimeZone("Europe/Helsinki")
 
 isResource = (path) ->
   /^.*\.(css|png|js|html|hbs|manifest|ico)$/.test(path)
@@ -48,6 +49,10 @@ routeMatcher.get '/autocomplete', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
+
+routeMatcher.get '/timezoneoffset', filterAjaxOnly (req) ->
+  req.response.putHeader 'Content-Type', 'text/plain; charset=utf8'
+  req.response.end helsinkiTimezone.getOffset(new java.util.Date().getTime())
 
 routeMatcher.noMatch (req) ->
   file = '';
