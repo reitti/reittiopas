@@ -20,9 +20,7 @@ define [
       @initializationTime = new Date()
       @initDateTimePickers(@initializationTime)
 
-      Reitti.Event.on 'position:change', _.once (position) =>
-        @populateFromBox position, =>
-          @to.focus()
+      Reitti.Event.on 'position:change', @populateFromBox
       Reitti.Event.on 'routes:find', @onFindingRoutes
       Reitti.Event.on 'routes:change', @onRoutesReceived
       Reitti.Event.on 'routes:notfound', @onSearchFailed
@@ -52,6 +50,7 @@ define [
           routeIndex: 0
 
     onFindingRoutes: (params) =>
+      Reitti.Event.off 'position:change', @populateFromBox # We're no longer interested in the user's initial geolocation
       @from.val(params.from)
       @to.val(params.to)
       @initDateTimePickers(params.date)
@@ -93,11 +92,11 @@ define [
     setArrivalOrDeparture: (v) ->
       @$el.find('#time-type').val(v)
 
-    populateFromBox: (position, callback) ->
-      # TODO: Move this logic somewhere else
+    populateFromBox: (position) =>
       if Utils.isWithinBounds(position) and position.coords.accuracy < 200
         $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
           @from.val location.name
-          callback()
+          @to.focus()
+      Reitti.Event.off 'position:change', @populateFromBox
 
 
