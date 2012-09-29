@@ -18,6 +18,16 @@
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="controls">
       <div id="search">
         <form class="form clearfix">
@@ -88,12 +98,13 @@
         <li><a href="?locale=en-us">In English</a></li>
       </ul>
       <ul class="links">
-        <li><a href="http://apps4finland.fi/" data-string="competitionEntry"></a></li>
+        <li><a href="javascript:UserVoice.showPopupWidget();" data-string="feedback"></a></li>
         <li>-</li>
-        <li><span data-string="routeData"></span> <a href="http://www.reittiopas.fi/">HSL Reittiopas</a></li>
+        <li><a href="http://apps4finland.fi/" data-string="competitionEntry"></a></li>
         <li>-</li>
         <li><a href="https://github.com/reitti/reittiopas"><span data-string="sourceCode"></span></a></li>
       </ul>
+      <div class="fb-wrap"><div class="fb-like" data-href="http://www.ihanhyv&#xe4;reittiopas.fi" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div></div>
     </div>
     <div id="streetview-wrap" class="hidden-phone" style="display: none;">
         <div id="streetview"></div>
@@ -111,5 +122,13 @@
       var appLang = (localeParam || navigator.language || navigator.userLanguage).toLowerCase();
       require({locale: appLang}, ['/js/main.js']);
     </script>
+<script type="text/javascript">
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/id7kaaKwg7QK5TOwrPg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
   </body>
 </html>

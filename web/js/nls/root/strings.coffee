@@ -59,4 +59,5 @@ define ->
     39: 'Bussiin'
   competitionEntry: 'Apps4Finland-kilpailutyö'
   routeData: 'Reittitiedot'
-  sourceCode: 'Lähdekoodi'
+  sourceCode: 'Lähdekoodi ja tietoa'
+  feedback: 'Palaute'
