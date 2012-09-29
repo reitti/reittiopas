@@ -59,4 +59,5 @@ require ['jquery', 'underscore', 'backbone', 'router', 'views/map_view', 'views/
         { enableHighAccuracy: true})
 
     # Inject the Like button after the page has loaded, so it can't delay startup.
-    $('.fb-wrap:visible').html '<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ihanhyv%C3%A4reittiopas.fi&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>'
+    fbLocale = window.appLang.replace('-','_')
+    $('.fb-wrap:visible').html '<iframe src="//www.facebook.com/plugins/like.php?locale='+fbLocale+'&href=http%3A%2F%2Fwww.ihanhyv%C3%A4reittiopas.fi&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>'

@@ -94,9 +94,9 @@
       </div>
       <ul id="routes" class="nav nav-list"></ul>
       <ul class="links">
-        <li><a href="?locale=fi-fi">Suomeksi</a></li>
+        <li><a href="?locale=fi-FI">Suomeksi</a></li>
         <li>-</li>
-        <li><a href="?locale=en-us">In English</a></li>
+        <li><a href="?locale=en-US">In English</a></li>
       </ul>
       <ul class="links">
         <li><a href="javascript:UserVoice.showPopupWidget();" data-string="feedback"></a></li>
@@ -120,8 +120,8 @@
       if (localeParam) {
           localeParam = decodeURIComponent(localeParam[1].replace(/\+/g, " "));
       }
-      var appLang = (localeParam || navigator.language || navigator.userLanguage).toLowerCase();
-      require({locale: appLang}, ['/js/main.js']);
+      var appLang = localeParam || navigator.language || navigator.userLanguage;
+      require({locale: appLang.toLowerCase()}, ['/js/main.js']);
     </script>
 <script type="text/javascript">
   var uvOptions = {};
