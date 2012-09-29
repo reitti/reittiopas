@@ -11,6 +11,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
     events:
       'click .leg-info': 'selectLeg'
+      'click .leg-bar':  'selectLegWhenExpanded'
 
     initialize: (routes: routes, routeParams: routeParams, index: index) ->
       @routes = routes
@@ -22,6 +23,9 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     render: ->
       @$el.html template(legs: @_legData())
       this
+
+    selectLegWhenExpanded: (e) =>
+      if @expanded then @selectLeg(e)
 
     selectLeg: (e) =>
       idx = $(e.target).closest('[data-leg]').data('leg')
