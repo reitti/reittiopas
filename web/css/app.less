@@ -42,6 +42,10 @@ input[type="text"], input[type="date"], input[type="time"], ul.typeahead {
     .border-radius(0, 0, 0, 0);
 }
 
+ul.typeahead {
+    overflow: hidden;
+}
+
 .transition(@prop: all, @time: 1s, @ease: linear){
     -webkit-transition: @prop @time @ease;
     -moz-transition: @prop @time @ease;
