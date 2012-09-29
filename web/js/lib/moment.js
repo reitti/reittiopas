@@ -936,8 +936,7 @@
         },
 
         isDST : function () {
-            return (this.zone() < moment([this.year()]).zone() || 
-                this.zone() < moment([this.year(), 5]).zone());
+            return (this.zone() < moment([this.year()]).zone());
         },
 
         day : function (input) {
