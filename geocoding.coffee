@@ -7,7 +7,7 @@ isCoordinate = (str) ->
 
 geocode = (query, callback) ->
   eb.send 'reitti.searchIndex.find', query: query, (data) ->
-    if data.results.length > 0 and data.results[0].coords?
+    if data.results.length > 0 and data.results[0].name.toLowerCase() is query.toLowerCase() and data.results[0].coords?
       callback data.results[0]
     else
       eb.send 'reitti.hsl.geocode', query: query, (result) ->
