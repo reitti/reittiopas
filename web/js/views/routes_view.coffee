@@ -67,4 +67,4 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
       @$el.append(@moreBelowButton.render().el)
 
     _scrollToRoutes: ->
-      setTimeout((=> $('#controls').animate({scrollTop: @$el.offset().top }, 200)), 100)
+      setTimeout((=> @$el.offsetParent().animate({scrollTop: @$el.offset().top }, 200)), 100)
