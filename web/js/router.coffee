@@ -1,12 +1,10 @@
 define ['backbone', 'utils'], (Backbone, Utils) ->
   Backbone.Router.extend
 
-    routes:
-      ':from/:to/:departArrive/:datetime/:transportTypes': 'routesView'
-      ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex': 'routesView'
-      ':from/:to/:departArrive/:datetime/:transportTypes/:routeIndex/:legIndex': 'routesView'
+    initialize: () ->
+      @route /([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)(?:\/([^\/]+))?(?:\/([^\/]+))?\/?/, 'routesView'
 
-    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) ->
+    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) =>
       routeIndex = 0 if !routeIndex or routeIndex is ''
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)

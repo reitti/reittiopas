@@ -1,4 +1,4 @@
-define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', 'hbs!template/route_view'], ($, _, Backbone, Utils, RouteGraphView, template) ->
+define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', 'hbs!template/route_view', 'i18n!nls/strings'], ($, _, Backbone, Utils, RouteGraphView, template, strings) ->
   class RouteView extends Backbone.View
 
     tagName: 'li'
@@ -21,9 +21,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     render: ->
       @$el.html template
+        strings: strings
         depTime: Utils.formatTimeForHumans(@route.getDepartureTime())
         arrTime: Utils.formatTimeForHumans(@route.getArrivalTime())
-        boardingType: @_boardingLabel(@route.getFirstTransportType())
+        boardingType: strings.boardingLabel[@route.getFirstTransportType()]
         boardingTime: if @route.boardingTime() then Utils.formatTimeForHumans(@route.boardingTime())
         totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
         totalDuration: Utils.formatDuration(@route.get('duration'))
@@ -36,15 +37,6 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
     _lineCode: () ->
       Utils.parseLineCode _.first()
-
-    # TODO: This should be somewhere in i18n
-    _boardingLabel: (type) ->
-      switch type
-        when '2' then "Ratikkaan"
-        when '6' then "Metroon"
-        when '7' then "Lauttaan"
-        when '12' then "Junaan"
-        else "Bussiin"
 
     onRoutesChanged: (routes, routeParams) =>
       isThis = routes is @routes and routeParams.routeIndex is @index

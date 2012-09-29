@@ -1,4 +1,4 @@
-define ['backbone', 'hbs!template/more_routes_button'], (Backbone, template) ->
+define ['backbone', 'hbs!template/more_routes_button', 'i18n!nls/strings'], (Backbone, template, strings) ->
 
   class MoreRoutesButtonView extends Backbone.View
 
@@ -21,10 +21,10 @@ define ['backbone', 'hbs!template/more_routes_button'], (Backbone, template) ->
     render: ->
       icon = if @loc is 'above' then 'chevron-up' else 'chevron-down'
       label = if @loc is 'above'
-        if @routes.isBasedOnArrivalTime() then 'Myöhemmin perillä' else 'Aikaisemmat lähdöt'
+        if @routes.isBasedOnArrivalTime() then strings.laterArrivals else strings.earlierDepartures
       else
-        if @routes.isBasedOnArrivalTime() then 'Aikaisemmin perillä' else 'Myöhemmät lähdöt'
-      @$el.html(template(icon: icon, label: label))
+        if @routes.isBasedOnArrivalTime() then strings.earlierArrivals else strings.laterDepartures
+      @$el.html(template(icon: icon, label: label, strings: strings))
       this
 
     onClicked: =>

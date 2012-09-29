@@ -1,4 +1,4 @@
-define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_graph'], (_, Backbone, Utils, Handlebars, template) ->
+define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_graph', 'i18n!nls/strings'], (_, Backbone, Utils, Handlebars, template, strings) ->
 
   EXPANDED_HEIGHT = 150
   MINIMUM_LEG_HEIGHT = 12
@@ -146,19 +146,8 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
     _transportLabel: (leg) ->
       type = leg.get('type')
       content = switch type
-        when 'walk' then "#{@_transportTypeLabel(type)}, #{Utils.formatDistance(leg.get('length'))}"
-        when '6','7' then "<strong>#{@_transportTypeLabel(type)}</strong>"
-        when '12' then "<strong>#{leg.lineName()}-#{@_transportTypeLabel(type)}</strong>"
+        when 'walk' then "#{strings.transportType[type]}, #{Utils.formatDistance(leg.get('length'))}"
+        when '6','7' then "<strong>#{strings.transportType[type]}</strong>"
+        when '12' then "<strong>#{leg.lineName()}-#{strings.transportType[type]}</strong>"
         else  "<strong>#{leg.lineName()}</strong>"
       new Handlebars.SafeString content
-
-    # TODO: This should be somewhere in i18n
-    _transportTypeLabel: (type) ->
-      switch type
-        when 'walk' then 'Kävely'
-        when '2' then "Ratikka"
-        when '6' then "Metro"
-        when '7' then "Lautta"
-        when '12' then "Juna"
-        else "bussi"
-

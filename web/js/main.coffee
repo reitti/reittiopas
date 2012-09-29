@@ -1,4 +1,5 @@
 require.config
+  baseUrl: '/js'
   shim:
     backbone:
       deps: ['underscore', 'jquery']
@@ -21,6 +22,7 @@ require.config
     timepicker: 'lib/jquery.timePicker'
     async: 'lib/async'
     hbs: 'lib/hbs'
+    i18n: 'lib/i18n'
     template: '../template'
   hbs:
     disableI18n: true
@@ -31,11 +33,12 @@ require.config
 
 window.Reitti ?= {}
 
-require ['jquery', 'underscore', 'backbone', 'router', 'views/map_view', 'views/search_view', 'views/routes_view', 'bootstrap'], ($, _, Backbone, Router, MapView, SearchView, RoutesView) ->
+require ['jquery', 'underscore', 'backbone', 'router', 'views/map_view', 'views/search_view', 'views/routes_view', 'nls/set_host_page_strings', 'bootstrap'], ($, _, Backbone, Router, MapView, SearchView, RoutesView, setHostPageStrings) ->
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
 
   $ ->
+    setHostPageStrings()
     new MapView().render()
     new SearchView().render()
     new RoutesView()

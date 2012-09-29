@@ -57,16 +57,16 @@ define [
       @initDateTimePickers(params.date)
       @setArrivalOrDeparture(params.arrivalOrDeparture)
       @setTransportTypes(params.transportTypes)
-      @$el.find('.btn-primary').button('loading')
+      @$el.find('button[type=submit]').button('loading')
       Routes.find params.from, params.to, params.date, params.arrivalOrDeparture, params.transportTypes, params
 
     onRoutesReceived: (routes) =>
-      @$el.find('.btn-primary').button('reset')
+      @$el.find('button[type=submit]').button('reset')
       @from.val(routes.fromName)
       @to.val(routes.toName)
 
     onSearchFailed: (statuses) =>
-      @$el.find('.btn-primary').button('reset')
+      @$el.find('button[type=submit]').button('reset')
       @from.indicateError() unless statuses.from
       @to.indicateError() unless statuses.to
 
@@ -99,4 +99,5 @@ define [
         $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
           @from.val location.name
           callback()
-      
+
+
