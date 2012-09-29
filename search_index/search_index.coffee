@@ -11,8 +11,8 @@ class Node
     @children[ch]
     
   putMatches: (to, n) ->
-    if @end
-      to.push {name: @prefix, coords: @loc}
+    if @loc?
+      to.push {name: @name, coords: @loc}
       n -= 1
     for own ch,child of @children
       return 0 if n <= 0
@@ -24,12 +24,19 @@ class Trie
   constructor: () ->
     @root = new Node('')
   
-  build: (str, loc) ->
+  add: (place, city, loc) ->
+    name = "#{place}, #{city}"
+    placeParts = place.split /\s/
+    for idx in [placeParts.length - 1..0]
+      str = placeParts[idx..placeParts.length - 1].join(' ')
+      @build "#{str}, #{city}", "#{place}, #{city}", loc
+
+  build: (str, name, loc) ->
     node = @root
     for i in [0...str.length]
       node = node.ensure(str.charAt(i))
-    node.end = true
     node.loc = loc
+    node.name = name
     
   find: (str, max) ->
     node = @root
@@ -70,7 +77,8 @@ for own city, f of files
         lines = res.getString(0, res.length(), 'UTF-8').split '\n'
         for line in lines
           [place, loc] = line.split '|'
-          trie.build("#{place}, #{city}", if loc? and loc?.length > 0 then loc else undefined)
+          loc = if loc? and loc?.length > 0 then loc else undefined
+          trie.add(place, city, loc)
 
 for own place, loc of verySpecialPlaces
   trie.build place, loc
