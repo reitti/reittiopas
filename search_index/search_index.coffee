@@ -59,6 +59,7 @@ files =
 
 verySpecialPlaces =
   'Eficode, Helsinki': '24.947197,60.196284'
+  'Piritori, Helsinki': '24.960712,60.18797'
 
 for own city, f of files
   do (city, f) ->
