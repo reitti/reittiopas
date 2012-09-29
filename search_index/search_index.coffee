@@ -11,7 +11,7 @@ class Node
     @children[ch]
     
   putMatches: (to, n) ->
-    if @loc?
+    if @name?
       to.push {name: @name, coords: @loc}
       n -= 1
     for own ch,child of @children
