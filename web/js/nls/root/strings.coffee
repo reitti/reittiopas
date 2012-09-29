@@ -57,3 +57,6 @@ define ->
     26: 'Bussiin'
     36: 'Bussiin'
     39: 'Bussiin'
+  competitionEntry: 'Apps4Finland-kilpailutyö'
+  routeData: 'Reittitiedot'
+  sourceCode: 'Lähdekoodi'

@@ -56,3 +56,7 @@ define ->
     26: 'To bus'
     36: 'To bus'
     39: 'To bus'
+  competitionEntry: 'An Apps4Finland competition entry'
+  routeData: 'Route data'
+  sourceCode: 'Source code'
+
