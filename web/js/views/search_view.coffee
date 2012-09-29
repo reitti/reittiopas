@@ -6,6 +6,7 @@ define [
   'views/search_input_view'
   'utils'
   'timepicker'
+  'datepicker'
 ], ($, _, Backbone, Routes, SearchInputView, Utils) ->
   class SearchView extends Backbone.View
 
@@ -31,7 +32,12 @@ define [
         startTime: Utils.nextQuarterOfHour(date)
         step: 15
       ).val(Utils.formatTimeForHumans(date))
-      $('#date').val(Utils.formatDateForHTML5Input(date))
+
+      formattedDate = Utils.formatDateForHTML5Input(date)
+      $('#date').val(formattedDate)
+      unless Utils.isNativeDateInputSupported()
+        $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1).datepicker('setValue', formattedDate)
+
 
     render: ->
       @from.focus()

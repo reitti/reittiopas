@@ -125,3 +125,9 @@ define ['moment'], (moment) ->
     @toPercentage: (num) ->
       "#{num * 100}%"
 
+    @isNativeDateInputSupported: () ->
+      input = document.createElement('input')
+      input.setAttribute 'type', 'date'
+      input.type isnt 'text'
+
+
