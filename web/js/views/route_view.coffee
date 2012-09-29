@@ -26,6 +26,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
         arrTime: Utils.formatTimeForHumans(@route.getArrivalTime())
         boardingType: strings.boardingLabel[@route.getFirstTransportType()]
         boardingTime: if @route.boardingTime() then Utils.formatTimeForHumans(@route.boardingTime())
+        boardingColor: Utils.transportColors[@route.getFirstTransportType()]
         totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
         totalDuration: Utils.formatDuration(@route.get('duration'))
       @graphView.setElement(@$el.find('.route-graph')).render()
