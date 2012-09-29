@@ -28,10 +28,10 @@ define [
 
     initDateTimePickers: (date) ->
       date = @initializationTime if date is 'now'
-      $('#time').each(-> delete this.timePicker ).unbind().timePicker(
-        startTime: Utils.nextQuarterOfHour(date)
-        step: 15
-      ).val(Utils.formatTimeForHumans(date))
+
+      $('#time').val(Utils.formatTimeForHumans(date))
+      unless Utils.isNativeTimeInputSupported()
+        $('#time').timepicker(defaultTime: 'value', showMeridian: false)
 
       formattedDate = Utils.formatDateForHTML5Input(date)
       $('#date').val(formattedDate)

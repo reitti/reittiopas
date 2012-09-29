@@ -13,7 +13,7 @@ require.config
     bootstrap:
       deps: ['jquery']
     timepicker:
-      deps: ['jquery']
+      deps: ['bootstrap']
     datepicker:
       deps: ['bootstrap']
   paths:
@@ -24,7 +24,7 @@ require.config
     backbone: 'lib/backbone'
     backboneAnalytics: 'lib/backbone.analytics'
     moment: 'lib/moment'
-    timepicker: 'lib/jquery.timePicker'
+    timepicker: 'lib/bootstrap-timepicker'
     datepicker: 'lib/bootstrap-datepicker'
     async: 'lib/async'
     hbs: 'lib/hbs'

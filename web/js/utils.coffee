@@ -130,8 +130,14 @@ define ['moment'], (moment) ->
       "#{num * 100}%"
 
     @isNativeDateInputSupported: () ->
+      @isNativeInputSupported 'date'
+
+    @isNativeTimeInputSupported: () ->
+      @isNativeInputSupported 'time'
+      
+    @isNativeInputSupported: (type) ->
       input = document.createElement('input')
-      input.setAttribute 'type', 'date'
-      input.type isnt 'text'
+      input.setAttribute 'type', type
+      input.type isnt 'text'     
 
 
