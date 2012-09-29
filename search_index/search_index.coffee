@@ -81,6 +81,7 @@ for own city, f of files
           trie.add(place, city, loc)
 
 for own place, loc of verySpecialPlaces
-  trie.build place, loc
+  [thePlace, theCity] = place.split ','
+  trie.add thePlace, theCity, loc
 
 
