@@ -4,6 +4,8 @@ require.config
     backbone:
       deps: ['underscore', 'jquery']
       exports: 'Backbone'
+    backboneAnalytics:
+      deps: ['backbone']
     underscore:
       exports: '_'
     handlebars:
@@ -20,6 +22,7 @@ require.config
     underscore: 'lib/underscore'
     handlebars: 'lib/handlebars-1.0.0.beta.6'
     backbone: 'lib/backbone'
+    backboneAnalytics: 'lib/backbone.analytics'
     moment: 'lib/moment'
     timepicker: 'lib/jquery.timePicker'
     datepicker: 'lib/bootstrap-datepicker'

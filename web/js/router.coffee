@@ -1,4 +1,4 @@
-define ['backbone', 'utils'], (Backbone, Utils) ->
+define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
   Backbone.Router.extend
 
     initialize: () ->
