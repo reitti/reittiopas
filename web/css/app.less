@@ -104,9 +104,8 @@ body {
 #controls {
     -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
-    height: 100%;
-    overflow: auto;
-    width: @controlsWidth;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #search {
@@ -219,8 +218,9 @@ input.input-full {
     }
 }
 .fb-wrap {
-    width: 80px; margin: 0 auto;
-    margin: 5px auto;
+    width: 80px;
+    text-align: center;
+    margin: 5px auto; 
 }
 
 .links:last-child {
@@ -299,6 +299,18 @@ i.icon-ferry {
     background-position: 0 -2 * @transportIconWidth;
 }
 
+@media (min-width: 768px) {
+    #controls {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    #controls {
+        width: @controlsWidth;
+    }
+}
+
 @media (max-width: 767px) {
     #search {
         margin: 0 5%;
@@ -322,5 +334,9 @@ i.icon-ferry {
 
     button.btn-success {
         width: 100%;
+    }
+
+    .fb-wrap {
+        display: none;
     }
 }

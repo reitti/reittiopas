@@ -66,7 +66,7 @@ define [
         # Invoke event handlers explicitly since the newly contructed views won't receive this event.
         legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
         @routeView.onRoutesChanged(routes, routeParams)
-      @map.getStreetView().setVisible(false)
+      @map.getStreetView()?.setVisible(false)
       @adjustPan(routeParams)
 
     onStreetViewVisibilityChanged: (a) =>

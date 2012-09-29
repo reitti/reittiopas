@@ -38,18 +38,20 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
         @hideMarkers()
 
     showOriginMarker: =>
+      return unless @originLatLng()?
       anchor = MapLocationMarker.markerAnchor(@originLatLng(), @line.getPath())
       @originMarker ?= new MapLocationMarker(@originLatLng(), @leg.originName(), @map, anchor)
 
     showDestinationMarker: =>
+      return unless @originLatLng()?
       anchor = MapLocationMarker.markerAnchor(@destinationLatLng(), @line.getPath())
       @destMarker ?= new MapLocationMarker(@destinationLatLng(), @leg.destinationName(), @map, anchor)
 
     originLatLng: ->
-      @line.getPath().getAt(0)
+      @line?.getPath()?.getAt(0)
 
     destinationLatLng: ->
-      @line.getPath().getAt(@line.getPath().getLength() - 1)
+      @line?.getPath()?.getAt(@line.getPath().getLength() - 1)
 
     hideMarkers: =>
       @originMarker?.setMap null
