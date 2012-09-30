@@ -48,6 +48,7 @@ ul.typeahead {
 
 .hero-unit {
     padding: 20px;
+    margin-bottom: 15px;
     border-top: 1px solid #BBB;
     border-bottom: 1px solid #BBB;
     border-radius: 0;
@@ -337,6 +338,7 @@ i.icon-ferry {
         margin: 0 5%;
     }
 
+    // Controls take up full width since the map is not visible
     #controls {
         width: 100%;
     }
@@ -357,7 +359,24 @@ i.icon-ferry {
         width: 100%;
     }
 
+    // Like button causes loading problems on Android. ToDo: Investigate?
     .fb-wrap {
         display: none;
     }
+
+
+}
+
+// Show a condensed blank slate when vertical screen size is limited.
+@media (max-height: 700px) {
+
+    #blank-slate {
+        padding: 10px;
+
+        h1 { display: none; }
+        p { margin: 0 0 5px 0; line-height: 25px; }
+        .close { margin: -5px -5px 0 0; }
+        .example { display: none; }
+    }
+
 }
