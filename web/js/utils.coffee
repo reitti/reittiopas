@@ -23,7 +23,7 @@ define ['moment'], (moment) ->
       39: '#193695' # Kerava internal bus lines
 
     @utcOffset: () ->
-      @_utcOffset ?= parseInt($('[meta[name=x-timezone-offset]').attr('content'), 10)
+      @_utcOffset ?= parseInt($('meta[name=x-timezone-offset]').attr('content'), 10)
 
     @now: () ->
       now = moment()
