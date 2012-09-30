@@ -9,6 +9,8 @@ eb = vertx.eventBus
 server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
 helsinkiTimezone = java.util.TimeZone.getTimeZone("Europe/Helsinki")
+indexTemplateSource = vertx.fileSystem.readFileSync("web/template/index.hbs")
+indexTemplate = new com.github.jknack.handlebars.Handlebars().compile(indexTemplateSource.getString(0, indexTemplateSource.length()))
 
 isResource = (path) ->
   /^.*\.(css|png|js|html|hbs|manifest|ico)$/.test(path)
@@ -54,18 +56,13 @@ routeMatcher.get '/autocomplete', filterAjaxOnly validation.validateAutocomplete
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
 
-routeMatcher.get '/timezoneoffset', filterAjaxOnly (req) ->
-  req.response.putHeader 'Content-Type', 'text/plain; charset=utf8'
-  req.response.end helsinkiTimezone.getOffset(new java.util.Date().getTime())
-
 routeMatcher.noMatch (req) ->
-  file = '';
   if req.path.indexOf('..') is -1 and isResource(req.path)
-    file = req.path
+    req.response.sendFile 'web/'+req.path
   else
-    file = 'index.html'
-
-  req.response.sendFile 'web/'+file
+    req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
+    tzOffset = helsinkiTimezone.getOffset(new java.util.Date().getTime())
+    req.response.end indexTemplate.apply({timezoneOffset: tzOffset})
 
 server.requestHandler(routeMatcher).listen 8080
 

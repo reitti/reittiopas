@@ -22,9 +22,12 @@ define ['moment'], (moment) ->
       36: '#193695' # Kirkkonummi internal bus lines
       39: '#193695' # Kerava internal bus lines
 
+    @utcOffset: () ->
+      @_utcOffset ?= parseInt($('[meta[name=x-timezone-offset]').attr('content'), 10)
+
     @now: () ->
       now = moment()
-      now.add('minutes', now.zone()).add('milliseconds', Reitti.utcOffset).toDate()
+      now.add('minutes', now.zone()).add('milliseconds', @utcOffset()).toDate()
 
     @formatDateTimeForMachines: (d) ->
       moment(d).format('YYYYMMDDHHmm')
