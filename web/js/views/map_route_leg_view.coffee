@@ -14,13 +14,11 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
 
     render: () ->
       path = (new google.maps.LatLng point.y, point.x for point in @leg.get('shape'))
-      @line = new google.maps.Polyline _.extend({
+      @line = new google.maps.Polyline
           map: @map
           path: path
-          strokeWeight: 3
+          strokeWeight: 5
           strokeColor: Utils.transportColors[@leg.get('type')]
-          strokeOpacity: 1.0
-        }, @_legStyle())
       @marker = new MapLegMarker(@map, path[Math.floor(path.length / 2)], @leg.get('type'))
 
       google.maps.event.addListener @line, 'click', @onClicked
@@ -67,28 +65,3 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       if @line? and @line.getPath()?
         bounds.extend(latLng) for latLng in @line.getPath().getArray()
       bounds
-
-    _legStyle: () ->
-      switch @leg.get('type')
-        when 'walk'
-          strokeOpacity: 0
-          icons: [{
-            icon:
-              path: 'M 0,-0.2 0,0.2'
-              strokeOpacity: 1
-            repeat: '7px'
-          }, {
-            icon:
-              path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
-              scale: 2.5
-              strokeOpacity: 1
-            repeat: '150px'
-          }]
-        else
-          icons: [{
-            icon:
-              path: google.maps.SymbolPath.FORWARD_OPEN_ARROW
-              scale: 2.5
-              strokeOpacity: 1
-            repeat: '150px'
-          }]
