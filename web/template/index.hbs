@@ -130,13 +130,8 @@
     </div>
     <script src="/js/lib/require.js"></script>
     <script> 
-      var localeParamRegex = new RegExp("[\\?&]locale=([^&#]*)");
-      var localeParam = localeParamRegex.exec(window.location.search);
-      if (localeParam) {
-          localeParam = decodeURIComponent(localeParam[1].replace(/\+/g, " "));
-      }
-      var appLang = localeParam || 'fi-FI';
-      require({locale: appLang.toLowerCase()}, ['/js/main.js']);
+      window.appLang = '{{locale}}';
+      require({locale: window.appLang.toLowerCase()}, ['/js/main.js']);
     </script>
     <script type="text/javascript">
       var uvOptions = {};

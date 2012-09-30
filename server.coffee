@@ -1,4 +1,5 @@
 vertx      = require 'vertx'
+_          = require 'web/js/lib/underscore'
 async      = require 'lib/async'
 geocode    = require 'geocode'
 findRoutes = require 'find_routes'
@@ -7,7 +8,8 @@ validation = require 'validation'
 
 strings =
   'en-US': require 'nls/en-us/strings'
-  'root':  require 'nls/root/strings'
+  'fi-FI':  require 'nls/root/strings'
+supportedLocales = _.keys(strings)
 
 eb = vertx.eventBus
 server = vertx.createHttpServer()
@@ -65,13 +67,21 @@ routeMatcher.noMatch (req) ->
   if req.path.indexOf('..') is -1 and isResource(req.path)
     req.response.sendFile 'web/'+req.path
   else
+    locale = req.params().locale
+    unless _.contains(supportedLocales, locale)
+      locale = 'fi-FI'
+
     tzOffset = helsinkiTimezone.getOffset(new java.util.Date().getTime())
-    locale = req.params().locale or 'root'
     blankSlateActive = !/blankSlateDismissed/.test(req.headers()['cookie'])
     blankSlateHidden = !blankSlateActive or (req.path isnt '' and req.path isnt '/')
 
     req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
-    req.response.end indexTemplate.apply({timezoneOffset: tzOffset, strings: strings[locale], blankSlateActive: blankSlateActive, blankSlateHidden: blankSlateHidden})
+    req.response.end indexTemplate.apply
+      timezoneOffset: tzOffset
+      locale: locale
+      strings: strings[locale]
+      blankSlateActive: blankSlateActive
+      blankSlateHidden: blankSlateHidden
 
 server.requestHandler(routeMatcher).listen 8080
 
