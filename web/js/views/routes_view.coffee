@@ -6,9 +6,14 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
     
     initialize: ->
       @routeViews = []
+      Reitti.Event.on 'home', @onGoneHome
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
+    onGoneHome: =>
+      @$el.hide()
+
     onRoutesChanged: (routes, @routeParams) =>
+      @$el.show()
       if routes isnt @routes
         @routes?.off 'add', @onRouteAdded
         routes.on 'add', @onRouteAdded

@@ -2,7 +2,11 @@ define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
   Backbone.Router.extend
 
     initialize: () ->
+      @route '', 'homeView'
       @route /([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)(?:\/([^\/]+))?(?:\/([^\/]+))?\/?/, 'routesView'
+
+    homeView: () =>
+      Reitti.Event.trigger 'home'
 
     routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) =>
       routeIndex = 0 if !routeIndex or routeIndex is ''

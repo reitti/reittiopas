@@ -11,12 +11,12 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
     onAdd: ->
       @div = $(template(anchor: @anchor, content: @name))[0]
       @getPanes().floatPane.appendChild(@div)
-      $(@div).on 'click', @onClicked
       $('.streetview-icon', @div).on 'click', @onStreetViewClicked
+      $(@div).on 'click', @onClicked
       @_checkStreetViewAvailability()
 
     draw: ->
-      {x: x, y: y} = @getProjection().fromLatLngToDivPixel(@location)
+      {x, y} = @getProjection().fromLatLngToDivPixel(@location)
       switch @anchor
         when 'top' 
           x -= WIDTH / 2
@@ -31,15 +31,15 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
       @div.style.left = "#{x}px"
       @div.style.top = "#{y}px"
 
-    onClicked: =>
-      @map.panTo @location
-      @map.setZoom 18
-      false
-
     onStreetViewClicked: =>
       @map.getStreetView().setPosition(@location)
       @map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 0)
       @map.getStreetView().setVisible(true)
+
+    onClicked: =>
+      @map.panTo @location
+      @map.setZoom 18
+      false
 
     onRemove: ->
       @div.parentNode.removeChild(@div)
