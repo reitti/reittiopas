@@ -67,9 +67,11 @@ routeMatcher.noMatch (req) ->
   else
     tzOffset = helsinkiTimezone.getOffset(new java.util.Date().getTime())
     locale = req.params().locale or 'root'
+    blankSlateActive = !/blankSlateDismissed/.test(req.headers()['cookie'])
+    blankSlateHidden = !blankSlateActive or (req.path isnt '' and req.path isnt '/')
 
     req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
-    req.response.end indexTemplate.apply({timezoneOffset: tzOffset, strings: strings[locale]})
+    req.response.end indexTemplate.apply({timezoneOffset: tzOffset, strings: strings[locale], blankSlateActive: blankSlateActive, blankSlateHidden: blankSlateHidden})
 
 server.requestHandler(routeMatcher).listen 8080
 

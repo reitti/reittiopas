@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'hbs!template/blank_slate', 'i18n!nls/strings'], ($, Backbone, template, strings) ->
+define ['jquery', 'backbone'], ($, Backbone) ->
 
   class BlankSlateView extends Backbone.View
 
@@ -25,11 +25,9 @@ define ['jquery', 'backbone', 'hbs!template/blank_slate', 'i18n!nls/strings'], (
     onGoneHome: =>
       return if @isDismissed()
       @$el.show()
-      @$el.html(template(strings: strings.blankSlate))
 
     onRoutesChanged: =>
       @$el.hide()
-      @$el.empty()
 
     dismiss: =>
       @$el.remove()

@@ -95,7 +95,17 @@
           </div>
         </form>
       </div>
-      <div id="blank-slate" class="hero-unit" style="display: none;">
+      <div id="blank-slate" class="hero-unit" {{#if blankSlateHidden}} style="display: none;" {{/if}}>
+        {{#if blankSlateActive}}
+          <button class="close">&times;</button>
+          <h1>{{strings.blankSlate.theTitle}}</h1>
+          <p>{{strings.blankSlate.thePitch}}</p>
+          <p class="example">
+            {{strings.blankSlate.example}}:
+            <a class="example-route" href="#">{{strings.blankSlate.theRoute}}</a>.
+          </p>
+          <p>{{strings.blankSlate.theCoverage}}</p>
+        {{/if}}
       </div>
       <ul id="routes" class="nav nav-list"></ul>
       <ul class="links">

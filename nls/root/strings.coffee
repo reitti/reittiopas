@@ -15,3 +15,9 @@ module.exports =
   routeData: 'Reittitiedot'
   sourceCode: 'Lähdekoodi ja tietoa'
   feedback: 'Palaute'
+  blankSlate:
+    theTitle: "Tämä on ihan hyvä reittiopas."
+    thePitch: "Syötä lähtöpisteesi ja määränpääsi ylläoleviin kenttiin,ja neuvomme miten pääset parhaiten perille."
+    example: "Esimerkki"
+    theRoute: "Mannerheimintie 15:sta Roihuvuoren Kirjastoon"
+    theCoverage: "Palvelu kattaa Helsingin, Espoon, Vantaan, Kauniaisten, Keravan ja Kirkkonummen joukkoliikenteen."
