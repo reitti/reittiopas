@@ -96,7 +96,7 @@
       </div>
       <ul id="routes" class="nav nav-list"></ul>
       <ul class="links">
-        <li><a href="?locale=fi-FI">Suomeksi</a></li>
+        <li><a href="?">Suomeksi</a></li>
         <li>-</li>
         <li><a href="?locale=en-US">In English</a></li>
       </ul>
@@ -122,16 +122,16 @@
       if (localeParam) {
           localeParam = decodeURIComponent(localeParam[1].replace(/\+/g, " "));
       }
-      var appLang = localeParam || navigator.language || navigator.userLanguage;
+      var appLang = localeParam || 'fi-FI';
       require({locale: appLang.toLowerCase()}, ['/js/main.js']);
     </script>
-<script type="text/javascript">
-  var uvOptions = {};
-  (function() {
-    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/id7kaaKwg7QK5TOwrPg.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-  })();
-</script>
+    <script type="text/javascript">
+      var uvOptions = {};
+      (function() {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/id7kaaKwg7QK5TOwrPg.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+      })();
+    </script>
   </body>
 </html>
