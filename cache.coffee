@@ -17,7 +17,7 @@ eb.registerHandler 'reitti.cache.get', (qry, replier) ->
     logger.debug "Cache hit: #{qry.key}"
     replier {result: JSON.parse(value)}
   else
-    logger.debug "Cache miss: #{qry.key}"
+    logger.info "Cache miss: #{qry.key}"
     replier {result: undefined}
 
 eb.registerHandler 'reitti.cache.put', (data, value) ->

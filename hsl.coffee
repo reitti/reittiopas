@@ -1,5 +1,6 @@
 vertx = require 'vertx'
 
+logger = vertx.logger;
 client = vertx.createHttpClient().setHost('api.reittiopas.fi').setMaxPoolSize(3)
 hslApiUsername = vertx.env['HSL_API_USERNAME']
 hslApiPassword = vertx.env['HSL_API_PASSWORD']
@@ -9,7 +10,9 @@ getHslQueryString = (request, params) ->
   qry += "&#{k}=#{encodeURIComponent(v)}" for own k,v of params
   
 hslRequest = (request, params, callback) ->
-  client.getNow getHslQueryString(request, params), (res) ->
+  qryString = getHslQueryString(request, params)
+  logger.info "HSL outgoing: #{qryString}"
+  client.getNow qryString, (res) ->
     res.bodyHandler (body) -> callback(res, body)
     
 hslRequestWithJSONRes = (request, params, callback) ->
