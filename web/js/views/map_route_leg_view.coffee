@@ -9,6 +9,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       Reitti.Event.off 'routes:change', @onRoutesChanged
       @line?.setMap null
       @marker?.setMap null
+      @destinationMarker?.setMap null
       @hideMarkers()
       this
 
@@ -19,10 +20,19 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
           path: path
           strokeWeight: 5
           strokeColor: Utils.transportColors[@leg.get('type')]
-      @marker = new MapLegMarker(@map, path[Math.floor(path.length / 2)], @leg.get('type'))
+          strokeOpacity: 0.8
+      @marker = new google.maps.Marker
+        map: @map
+        icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
+        position: path[0]
+      if @index is @routes.at(@routeIndex).getLegCount() - 1
+        @destinationMarker = new google.maps.Marker
+          map: @map
+          icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
+          position: _.last(path)
 
       google.maps.event.addListener @line, 'click', @onClicked
-      google.maps.event.addListener @marker.marker, 'click', @onClicked
+      google.maps.event.addListener @marker, 'click', @onClicked
       this
 
     onClicked: () =>
