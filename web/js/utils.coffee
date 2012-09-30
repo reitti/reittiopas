@@ -27,10 +27,10 @@ define ['moment'], (moment) ->
       now.add('minutes', now.zone()).add('milliseconds', Reitti.utcOffset).toDate()
 
     @formatDateTimeForMachines: (d) ->
-      moment(d).format('YYYYMMDDHHmmss')
+      moment(d).format('YYYYMMDDHHmm')
 
     @parseDateTimeFromMachines: (str) ->
-      moment(str, "YYYYMMDDHHmmss").toDate()
+      moment(str, ["YYYYMMDDHHmm", "YYYYMMDDHHmmss"]).toDate()
 
     @formatDateForMachines: (d) ->
       moment(d).format("YYYYMMDD")
@@ -134,7 +134,7 @@ define ['moment'], (moment) ->
 
     @isNativeTimeInputSupported: () ->
       @isNativeInputSupported 'time'
-      
+
     @isNativeInputSupported: (type) ->
       input = document.createElement('input')
       input.setAttribute 'type', type
