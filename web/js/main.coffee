@@ -16,6 +16,10 @@ require.config
       deps: ['bootstrap']
     datepicker:
       deps: ['bootstrap']
+    datepickerfi:
+      deps: ['datepicker']
+    datepickersv:
+      deps: ['datepicker']
   paths:
     bootstrap: 'lib/bootstrap'
     jquery: 'lib/jquery-1.7.2'
@@ -26,6 +30,8 @@ require.config
     moment: 'lib/moment'
     timepicker: 'lib/bootstrap-timepicker'
     datepicker: 'lib/bootstrap-datepicker'
+    datepickerfi: 'lib/bootstrap-datepicker.fi'
+    datepickersv: 'lib/bootstrap-datepicker.sv'
     async: 'lib/async'
     hbs: 'lib/hbs'
     i18n: 'lib/i18n'

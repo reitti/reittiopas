@@ -7,6 +7,7 @@ define [
   'utils'
   'timepicker'
   'datepicker'
+  'datepickerfi'
 ], ($, _, Backbone, Routes, SearchInputView, Utils) ->
   class SearchView extends Backbone.View
 
@@ -36,7 +37,7 @@ define [
       formattedDate = Utils.formatDateForHTML5Input(date)
       $('#date').val(formattedDate)
       unless Utils.isNativeDateInputSupported()
-        $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1).datepicker('setValue', formattedDate)
+        $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1, language: Utils.language()).datepicker('setValue', formattedDate)
 
 
     render: ->

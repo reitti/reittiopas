@@ -22,6 +22,9 @@ define ['moment'], (moment) ->
       36: '#193695' # Kirkkonummi internal bus lines
       39: '#193695' # Kerava internal bus lines
 
+    @language: () ->
+      window.appLang.substring(0, 2)
+      
     @utcOffset: () ->
       @_utcOffset ?= parseInt($('meta[name=x-timezone-offset]').attr('content'), 10)
 
