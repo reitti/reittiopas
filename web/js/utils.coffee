@@ -24,7 +24,7 @@ define ['moment'], (moment) ->
 
     @language: () ->
       window.appLang.substring(0, 2)
-      
+
     @utcOffset: () ->
       @_utcOffset ?= parseInt($('meta[name=x-timezone-offset]').attr('content'), 10)
 
@@ -54,7 +54,7 @@ define ['moment'], (moment) ->
       moment(d).format("YYYY-MM-DD")
 
     @parseDateAndTimeFromHTML5Input: (date, time) ->
-      moment("#{date} #{time}", "YYYY-MM-DD HH:mm").toDate()
+      moment("#{date} #{time}", ["YYYY-MM-DD HH:mm", "DD.MM.YYYY HH:mm"]).toDate()
 
     @addMinutes: (date, n) ->
       new Date(date.getTime() + n * 60 * 1000)
