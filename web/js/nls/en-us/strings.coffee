@@ -1,4 +1,5 @@
 define ->
+  findingRoutes: 'Finding routes...'
   earlierDepartures: "Earlier departures"
   laterDepartures: "Later departures"
   earlierArrivals: "Earlier arrivals"

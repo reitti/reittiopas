@@ -1,4 +1,5 @@
 define ->
+  findingRoutes: 'Haetaan reittejä...'
   earlierDepartures: "Aikaisemmat lähdöt"
   laterDepartures: "Myöhemmät lähdöt"
   earlierArrivals: "Aikaisemmin perillä"
