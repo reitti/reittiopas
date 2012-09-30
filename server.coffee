@@ -3,6 +3,7 @@ async      = require 'lib/async'
 geocode    = require 'geocode'
 findRoutes = require 'find_routes'
 hsl        = require 'hsl'
+validation = require 'validation'
 
 eb = vertx.eventBus
 server = vertx.createHttpServer()
@@ -20,7 +21,7 @@ filterAjaxOnly = (handler) ->
       req.response.statusCode = 403
       req.response.end()
 
-routeMatcher.get '/routes', filterAjaxOnly (req) ->
+routeMatcher.get '/routes', filterAjaxOnly validation.validateGetRoutes (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   geocodeFrom = (cb) -> geocode req.params().from, (r) -> cb(null, r)
   geocodeTo =  (cb) -> geocode req.params().to, (r) -> cb(null, r)
@@ -39,7 +40,7 @@ routeMatcher.get '/routes', filterAjaxOnly (req) ->
       req.response.statusCode = 400
       req.response.end JSON.stringify(from: !!from, to: !!to)
 
-routeMatcher.get '/address', filterAjaxOnly (req) ->
+routeMatcher.get '/address', filterAjaxOnly validation.validateGetAddress (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   hsl.reverseGeocode req.params().coords, (address) ->
     if address
@@ -48,7 +49,7 @@ routeMatcher.get '/address', filterAjaxOnly (req) ->
       req.response.statusCode = 400
       req.response.end()
       
-routeMatcher.get '/autocomplete', filterAjaxOnly (req) ->
+routeMatcher.get '/autocomplete', filterAjaxOnly validation.validateAutocomplete (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
