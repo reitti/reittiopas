@@ -7,8 +7,10 @@ hslApiPassword = vertx.env['HSL_API_PASSWORD']
 
 getHslQueryString = (request, params) ->
   qry = "/hsl/prod/?request=#{request}&user=#{hslApiUsername}&pass=#{hslApiPassword}&epsg_in=4326&epsg_out=4326"
-  qry += "&#{k}=#{encodeURIComponent(v)}" for own k,v of params
-  
+  for own k,v of params
+    qry += "&#{k}=#{encodeURIComponent(v)}"
+  qry
+
 hslRequest = (request, params, callback) ->
   qryString = getHslQueryString(request, params)
   logger.info "HSL outgoing: #{qryString}"
