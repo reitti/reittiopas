@@ -36,7 +36,7 @@ module.exports =
         respond req, 400
 
   validateGetRoutes: (handler) ->
-     (req) ->
+    (req) ->
       params = req.params()
       if !params.from? || params.from.length is 0 || !params.to? || params.to.length is 0
         respond req, 400
