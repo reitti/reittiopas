@@ -103,7 +103,7 @@ define [
       accuracy = position.coords.accuracy
 
       if accuracy < 100
-        @positionIndicator ?= new google.maps.Circle(
+        @accuracyIndicator ?= new google.maps.Circle
           strokeColor: '#0000FF'
           strokeOpacity: 0.50
           strokeWeight: 2
@@ -112,6 +112,11 @@ define [
           map: @map
           center: latLng
           radius: accuracy
-        )
-        @positionIndicator.setCenter latLng
-        @positionIndicator.setRadius accuracy
+        @positionIndicator ?= new google.maps.Marker
+          map: @map
+          position: latLng
+          icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(18, 18),
+            new google.maps.Point(16, 3), new google.maps.Point(9, 9))
+        @accuracyIndicator.setCenter latLng
+        @accuracyIndicator.setRadius accuracy
+        @positionIndicator.setPosition latLng
