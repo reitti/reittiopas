@@ -13,6 +13,7 @@ define [
 
     initialize: ->
       Reitti.Event.on 'position:change', @displayCurrentPosition
+      Reitti.Event.on 'home', @onGoneHome
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
     render: ->
@@ -57,6 +58,9 @@ define [
           if Utils.isWithinBounds(position)
             @centerMap position.coords.latitude, position.coords.longitude
 
+    onGoneHome: () =>
+      @routeView?.dispose()
+      @routes = null
 
     onRoutesChanged: (routes, routeParams) =>
       if routes isnt @routes or routeParams.routeIndex isnt @routeView?.index
