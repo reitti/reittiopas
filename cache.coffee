@@ -1,4 +1,4 @@
-load 'vertx.js'
+vertx = require 'vertx'
 
 eb = vertx.eventBus
 logger = vertx.logger

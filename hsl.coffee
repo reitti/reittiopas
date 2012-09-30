@@ -1,6 +1,5 @@
-load 'vertx.js'
+vertx = require 'vertx'
 
-eb = vertx.eventBus
 client = vertx.createHttpClient().setHost('api.reittiopas.fi').setMaxPoolSize(3)
 hslApiUsername = vertx.env['HSL_API_USERNAME']
 hslApiPassword = vertx.env['HSL_API_PASSWORD']
@@ -21,31 +20,31 @@ hslRequestWithJSONRes = (request, params, callback) ->
     else
       callback null
 
-# ToDo: Fix https://github.com/vert-x/vert.x/issues/205 :)
+module.exports =
 
-eb.registerHandler 'reitti.hsl.geocode', (params, replier) ->
-  hslRequestWithJSONRes 'geocode', {key: params.query}, (json) ->
-    if json? and json.length
-      replier json[0]
-    else
-      replier null
+  geocode: (query, callback) ->
+    hslRequestWithJSONRes 'geocode', {key: query}, (json) ->
+      if json? and json.length
+        callback json[0]
+      else
+        callback null
 
-eb.registerHandler 'reitti.hsl.reverseGeocode', (params, replier) ->
-  hslRequestWithJSONRes 'reverse_geocode', {coordinate: params.query}, (json) ->
-    if json? and json.length
-      replier {name: json[0].name, coords: json[0].coords}
-    else
-      replier null
+  reverseGeocode: (query, callback) ->
+    hslRequestWithJSONRes 'reverse_geocode', {coordinate: query}, (json) ->
+      if json? and json.length
+        callback {name: json[0].name, coords: json[0].coords}
+      else
+        callback null
 
-eb.registerHandler 'reitti.hsl.findRoutes', (params, replier) ->
-  params =
-    from: params.from
-    to: params.to
-    date: params.date
-    time: params.time
-    detail: 'full'
-    show: 5
-    timetype: params.arrivalOrDeparture or 'departure'
-    transport_types: params.transportTypes or 'all'
-  hslRequest 'route', params, (res, body) ->
-    replier {body: JSON.parse(body.getString(0, body.length()))}
+  findRoutes: (params, callback) ->
+    params =
+      from: params.from
+      to: params.to
+      date: params.date
+      time: params.time
+      detail: 'full'
+      show: 5
+      timetype: params.arrivalOrDeparture or 'departure'
+      transport_types: params.transportTypes or 'all'
+    hslRequest 'route', params, (res, body) ->
+      callback {body: JSON.parse(body.getString(0, body.length()))}

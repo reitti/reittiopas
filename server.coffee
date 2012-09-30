@@ -1,5 +1,8 @@
-load 'vertx.js'
-load 'lib/async.js'
+vertx      = require 'vertx'
+async      = require 'lib/async'
+geocode    = require 'geocode'
+findRoutes = require 'find_routes'
+hsl        = require 'hsl'
 
 eb = vertx.eventBus
 server = vertx.createHttpServer()
@@ -19,8 +22,8 @@ filterAjaxOnly = (handler) ->
 
 routeMatcher.get '/routes', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
-  geocodeFrom = (cb) -> eb.send 'reitti.geocode', query: req.params().from, (r) -> cb(null, r)
-  geocodeTo =  (cb) -> eb.send 'reitti.geocode', query: req.params().to, (r) -> cb(null, r)
+  geocodeFrom = (cb) -> geocode req.params().from, (r) -> cb(null, r)
+  geocodeTo =  (cb) -> geocode req.params().to, (r) -> cb(null, r)
   async.parallel {from: geocodeFrom, to: geocodeTo}, (error, {from,to}) ->
     if from? and to?
       params =
@@ -30,7 +33,7 @@ routeMatcher.get '/routes', filterAjaxOnly (req) ->
         time: req.params().time
         arrivalOrDeparture: req.params().arrivalOrDeparture
         transportTypes: req.params().transportTypes
-      eb.send 'reitti.findRoutes', params, (data) ->
+      findRoutes params, (data) ->
         req.response.end JSON.stringify(from: from, to: to, routes: data.body)
     else
       req.response.statusCode = 400
@@ -38,7 +41,7 @@ routeMatcher.get '/routes', filterAjaxOnly (req) ->
 
 routeMatcher.get '/address', filterAjaxOnly (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
-  eb.send 'reitti.hsl.reverseGeocode', query: req.params().coords, (address) ->
+  hsl.reverseGeocode req.params().coords, (address) ->
     if address
       req.response.end JSON.stringify(address)
     else
