@@ -32,6 +32,12 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
     destinationName: () ->
       _(@get('locs')).last()?.name
 
+    destinationCoords: () ->
+      _(@get('shape')).last()
+
+    originCoords: () ->
+      _(@get('shape')).first()
+
     duration: () ->
       Utils.getDuration @firstArrivalTime(), @lastArrivalTime()
 

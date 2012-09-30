@@ -6,6 +6,11 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'models/route_leg'], ($, _,
       @set 'duration', routeData.duration
       _.first(@get 'legs').setOrigin fromName, fromCoords
       _.last(@get 'legs').setDestination toName, toCoords
+      for leg, idx in @get('legs') when leg.isWalk()
+        if previousLeg = @getLeg(idx - 1)
+          leg.setOrigin(previousLeg.destinationName(), previousLeg.destinationCoords())
+        if nextLeg = @getLeg(idx + 1)
+          leg.setDestination(nextLeg.originName(), nextLeg.originCoords())
 
     getDepartureTime: ->
       @getLeg(0).firstArrivalTime()
