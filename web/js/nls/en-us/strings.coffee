@@ -1,16 +1,4 @@
 define ->
-  transportTypeSelector:
-    bus: 'Buses'
-    tram: 'Trams'
-    metro: 'Metros'
-    train: 'Trains'
-    ferry: 'Ferries'
-  from: 'Origin'
-  to: 'Destination'
-  departureTime: 'Departure time'
-  arrivalTime: 'Arrival time'
-  findRoutes: 'Find routes'
-  findingRoutes: 'Finding routes...'
   earlierDepartures: "Earlier departures"
   laterDepartures: "Later departures"
   earlierArrivals: "Earlier arrivals"
@@ -56,10 +44,6 @@ define ->
     26: 'To bus'
     36: 'To bus'
     39: 'To bus'
-  competitionEntry: 'An Apps4Finland competition entry'
-  routeData: 'Route data'
-  sourceCode: 'Source code & info'
-  feedback: 'Feedback'
   blankSlate:
     theTitle: "This is quite a nice trip planner."
     thePitch: "Enter your origin and destination above, and we will let you know how to get there."

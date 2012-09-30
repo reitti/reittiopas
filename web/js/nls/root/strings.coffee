@@ -1,17 +1,4 @@
-
 define ->
-  transportTypeSelector:
-    bus: 'Bussit'
-    tram: 'Ratikat'
-    metro: 'Metrot'
-    train: 'Junat'
-    ferry: 'Lautat'
-  from: 'Mistä'
-  to: 'Mihin'
-  departureTime: 'Lähtöaika'
-  arrivalTime: 'Perillä'
-  findRoutes: 'Hae reitit'
-  findingRoutes: 'Haetaan reittejä...'
   earlierDepartures: "Aikaisemmat lähdöt"
   laterDepartures: "Myöhemmät lähdöt"
   earlierArrivals: "Aikaisemmin perillä"
@@ -57,10 +44,6 @@ define ->
     26: 'Bussiin'
     36: 'Bussiin'
     39: 'Bussiin'
-  competitionEntry: 'Apps4Finland-kilpailutyö'
-  routeData: 'Reittitiedot'
-  sourceCode: 'Lähdekoodi ja tietoa'
-  feedback: 'Palaute'
   blankSlate:
     theTitle: "Tämä on ihan hyvä reittiopas."
     thePitch: "Syötä lähtöpisteesi ja määränpääsi ylläoleviin kenttiin,ja neuvomme miten pääset parhaiten perille."

@@ -48,16 +48,14 @@ require [
   'views/search_view'
   'views/blank_slate_view'
   'views/routes_view'
-  'nls/set_host_page_strings'
   'bootstrap'
-], ($, _, Backbone, Router, MapView, SearchView, BlankSlateView, RoutesView, setHostPageStrings) ->
+], ($, _, Backbone, Router, MapView, SearchView, BlankSlateView, RoutesView) ->
 
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
 
   $ ->
 
-    setHostPageStrings()
     new MapView().render()
     new SearchView().render()
     new BlankSlateView()

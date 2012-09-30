@@ -1,0 +1,17 @@
+module.exports =
+  transportTypeSelector:
+    bus: 'Bussit'
+    tram: 'Ratikat'
+    metro: 'Metrot'
+    train: 'Junat'
+    ferry: 'Lautat'
+  from: 'Mistä'
+  to: 'Mihin'
+  departureTime: 'Lähtöaika'
+  arrivalTime: 'Perillä'
+  findRoutes: 'Hae reitit'
+  findingRoutes: 'Haetaan reittejä...'
+  competitionEntry: 'Apps4Finland-kilpailutyö'
+  routeData: 'Reittitiedot'
+  sourceCode: 'Lähdekoodi ja tietoa'
+  feedback: 'Palaute'

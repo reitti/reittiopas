@@ -1,0 +1,17 @@
+module.exports =
+  transportTypeSelector:
+    bus: 'Buses'
+    tram: 'Trams'
+    metro: 'Metros'
+    train: 'Trains'
+    ferry: 'Ferries'
+  from: 'Origin'
+  to: 'Destination'
+  departureTime: 'Departure time'
+  arrivalTime: 'Arrival time'
+  findRoutes: 'Find routes'
+  findingRoutes: 'Finding routes...'
+  competitionEntry: 'An Apps4Finland competition entry'
+  routeData: 'Route data'
+  sourceCode: 'Source code & info'
+  feedback: 'Feedback'

@@ -5,10 +5,15 @@ findRoutes = require 'find_routes'
 hsl        = require 'hsl'
 validation = require 'validation'
 
+strings =
+  'en-US': require 'nls/en-us/strings'
+  'root':  require 'nls/root/strings'
+
 eb = vertx.eventBus
 server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
 helsinkiTimezone = java.util.TimeZone.getTimeZone("Europe/Helsinki")
+
 indexTemplateSource = vertx.fileSystem.readFileSync("web/template/index.hbs")
 indexTemplate = new com.github.jknack.handlebars.Handlebars().compile(indexTemplateSource.getString(0, indexTemplateSource.length()))
 
@@ -60,9 +65,11 @@ routeMatcher.noMatch (req) ->
   if req.path.indexOf('..') is -1 and isResource(req.path)
     req.response.sendFile 'web/'+req.path
   else
-    req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
     tzOffset = helsinkiTimezone.getOffset(new java.util.Date().getTime())
-    req.response.end indexTemplate.apply({timezoneOffset: tzOffset})
+    locale = req.params().locale or 'root'
+
+    req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
+    req.response.end indexTemplate.apply({timezoneOffset: tzOffset, strings: strings[locale]})
 
 server.requestHandler(routeMatcher).listen 8080
 

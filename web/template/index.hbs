@@ -36,36 +36,36 @@
           <div id="transport-types" class="control-group">
             <div class="btn-group" data-toggle="buttons-checkbox">
               <button type="button" id="bus" class="btn btn-small"
-                      data-string="transportTypeSelector.bus" data-string-attr="title">
+                      title="{{strings.transportTypeSelector.bus}}">
                 <i class="icon-bus"></i>
               </button>
               <button type="button" id="tram" class="btn btn-small"
-                      data-string="transportTypeSelector.tram" data-string-attr="title">
+                      title="{{strings.transportTypeSelector.tram}}">
                 <i class="icon-tram"></i>
               </button>
               <button type="button" id="metro" class="btn btn-small"
-                      data-string="transportTypeSelector.metro" data-string-attr="title">
+                      title="{{strings.transportTypeSelector.metro}}">
                 <i class="icon-metro"></i>
               </button>
               <button type="button" id="train" class="btn btn-small"
-                      data-string="transportTypeSelector.train" data-string-attr="title">
+                      title="{{strings.transportTypeSelector.train}}">
                 <i class="icon-train"></i>
               </button>
               <button type="button" id="ferry" class="btn btn-small"
-                      data-string="transportTypeSelector.ferry" data-string-attr="title">
+                      title="{{strings.transportTypeSelector.ferry}}">
                 <i class="icon-ferry"></i>
               </button>
             </div>
           </div>
           <div class="control-group full-width-fix">
-            <label for="from" class="hide" data-string="from"></label>
+            <label for="from" class="hide">{{strings.from}}</label>
             <input type="text" class="input-full" name="from" id="from" autocomplete="off"
-                   data-string="from" data-string-attr="placeholder">
+                   placeholder="{{strings.from}}">
           </div>
           <div class="control-group full-width-fix">
-            <label for="to" class="hide" data-string="to"></label>
+            <label for="to" class="hide">{{strings.to}}</label>
             <input type="text" class="input-full" name="to" id="to" autocomplete="off"
-                   data-string="to" data-string-attr="placeholder">
+                   placeholder="{{strings.to}}">
           </div>
           <div class="controls controls-row" id="time-settings">
             <div class="controls-row">
@@ -73,22 +73,24 @@
               <input type="date" name="date" id="date" class="pull-left"/>
 
               <div class="pull-left">
-                <label class="radio" data-string="departureTime">
+                <label class="radio">
                   <input type="radio" name="time-type" value="departure" class="input-small" id="time-type-departure"
                          name="time-type" checked>
+                  {{strings.departureTime}}
                 </label>
-                <label class="radio" data-string="arrivalTime">
+                <label class="radio">
                   <input type="radio" name="time-type" value="arrival" class="input-small" id="time-type-arrival"
                          name="time-type">
+                  {{strings.arrivalTime}}
                 </label>
               </div>
             </div>
           </div>
           <div class="control-group">
             <button type="submit" class="btn btn-success pull-right"
-                    data-string="findingRoutes" data-string-attr="data-loading-text">
+                    data-loading-text="{{strings.findingRoutes}}">
               <i class="icon-search icon-white"></i>&nbsp;
-              <span data-string="findRoutes"></span>
+              {{strings.findRoutes}}
             </button>
           </div>
         </form>
@@ -102,11 +104,11 @@
         <li><a href="?locale=en-US">In English</a></li>
       </ul>
       <ul class="links">
-        <li><a href="javascript:UserVoice.showPopupWidget();" data-string="feedback"></a></li>
+        <li><a href="javascript:UserVoice.showPopupWidget();">{{strings.feedback}}</a></li>
         <li>-</li>
-        <li><a href="http://apps4finland.fi/" data-string="competitionEntry"></a></li>
+        <li><a href="http://apps4finland.fi/">{{strings.competitionEntry}}</a></li>
         <li>-</li>
-        <li><a href="https://github.com/reitti/reittiopas"><span data-string="sourceCode"></span></a></li>
+        <li><a href="https://github.com/reitti/reittiopas">{{strings.sourceCode}}</a></li>
       </ul>
       <div class="fb-wrap"></div>
     </div>
