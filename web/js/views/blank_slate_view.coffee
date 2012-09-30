@@ -23,6 +23,7 @@ define ['jquery', 'backbone', 'hbs!template/blank_slate', 'i18n!nls/strings'], (
       false
 
     onGoneHome: =>
+      return if @isDismissed()
       @$el.show()
       @$el.html(template(strings: strings.blankSlate))
 
@@ -32,3 +33,8 @@ define ['jquery', 'backbone', 'hbs!template/blank_slate', 'i18n!nls/strings'], (
 
     dismiss: =>
       @$el.remove()
+      expiresAt = new Date(new Date().getTime() + 20 * 365 * 24 * 60 * 60 * 1000)
+      document.cookie = "blankSlateDismissed=true; expires=#{expiresAt.toUTCString()}; path: /"
+
+    isDismissed: =>
+      /blankSlateDismissed/.test(document.cookie)
