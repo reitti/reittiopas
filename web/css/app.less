@@ -296,6 +296,13 @@ input.input-full {
     height: @transportIconWidth;
 }
 
+.transport-icon-2x {
+    background-image: url('../img/vehicles_small@2x.png');
+    width: @transportIconWidth;
+    height: @transportIconWidth;
+    background-size: 64px 96px;
+}
+
 i.icon-bus {
     .transport-icon;
     background-position: 0 0;
@@ -319,6 +326,28 @@ i.icon-train {
 i.icon-ferry {
     .transport-icon;
     background-position: 0 -2 * @transportIconWidth;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    i.icon-bus {
+        .transport-icon-2x;
+    }
+
+    i.icon-tram {
+        .transport-icon-2x;
+    }
+
+    i.icon-metro {
+        .transport-icon-2x;
+    }
+
+    i.icon-train {
+        .transport-icon-2x;
+    }
+
+    i.icon-ferry {
+        .transport-icon-2x;
+    }
 }
 
 @media (min-width: 768px) {
