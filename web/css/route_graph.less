@@ -13,7 +13,6 @@
 .route-graph {
     position: relative;
     height: @graphHeight;
-    .transition(all, @animationDuration, ease-out);
 
     li {
         position: absolute;
@@ -21,7 +20,6 @@
         height: @barHeight + 4px;
         font-size: 0.8em;
         color: black;
-        .transition(all, @animationDuration, ease-out);
     }
 
     .hidden {
@@ -146,12 +144,12 @@
     }
 
     .leg-indicator {
-        .transition(all, @animationDuration, ease-out);
         opacity: 1;
     }
 
 }
 
+// "Retina" images
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     .route-graph {
         i {
@@ -161,6 +159,21 @@
             background-size: 40px 60px;
         }
     }
+}
+
+
+// Add CSS transitions on non-mobile devices
+@media only screen and (min-width: 768px) {
+    .route-graph {
+        .transition(all, @animationDuration, ease-out);
+        li {
+            .transition(all, @animationDuration, ease-out);
+        }
+        .leg-indicator {
+            .transition(all, @animationDuration, ease-out);
+        }
+    }
+
 }
 
 .expanded {

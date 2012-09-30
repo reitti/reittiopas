@@ -190,11 +190,6 @@ input.input-full {
     }
 
     li.route {
-
-        a {
-            .transition(all, @animationDuration, ease-out);
-        }
-
         dl {
             margin: 0;
             dt {
@@ -394,6 +389,18 @@ i.icon-ferry {
     }
 
 
+}
+
+// Add hover transitions on non-mobile devices
+@media only screen and (min-width: 768px) {
+    #routes {
+        li.route {
+
+            a {
+                .transition(all, @animationDuration, ease-out);
+            }
+        }
+    }
 }
 
 // Show a condensed blank slate when vertical screen size is limited.
