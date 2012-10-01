@@ -111,14 +111,6 @@
         text-align: left;
         line-height: 100%;
 
-        &:hover {
-            background-color: #ddd;
-        }
-
-        &.selected {
-            background-color: #ccc;
-        }
-
         .times {
             position: absolute;
             left: 1%;
@@ -162,6 +154,14 @@
 
 // Add CSS transitions on non-mobile devices
 @media only screen and (min-width: 768px) {
+    .leg-info {
+        &:hover {
+            background-color: #ddd;
+        }
+        &.selected {
+            background-color: #ccc;
+        }
+    }
     .route-graph {
         .transition(all, @animationDuration, ease-out);
         li {
