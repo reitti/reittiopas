@@ -14,6 +14,10 @@ Data Sources
 Technologies
 ============
 
+* Vertx
+* Coffeescript
+* Backbone.js
+
 Other Materials
 ===============
 
