@@ -17,7 +17,7 @@ define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
         arrivalOrDeparture: departArrive
         transportTypes: transportTypes.split(',')
         routeIndex: parseInt(routeIndex, 10)
-        legIndex: if legIndex? then parseInt(legIndex, 10) else undefined
+        legIndex: if legIndex? and legIndex.length then parseInt(legIndex, 10) else undefined
 
     navigateToRoutes: (params) ->
       path = [Utils.encodeURIComponent(params.from),
