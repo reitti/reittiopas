@@ -43,6 +43,3 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       isThis = routes is @routes and routeParams.routeIndex is @index
       @$el.toggleClass 'selected', isThis
       @graphView.onRoutesChanged routes, routeParams
-
-
-
