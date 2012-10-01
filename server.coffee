@@ -31,7 +31,7 @@ filterAjaxOnly = (handler) ->
       req.response.end()
 
 routeMatcher.get '/routes', filterAjaxOnly validation.validateGetRoutes (req) ->
-  req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
+  req.response.putHeader 'Content-Type', 'application/json; charset=utf-8'
   geocodeFrom = (cb) -> geocode req.params().from, (r) -> cb(null, r)
   geocodeTo =  (cb) -> geocode req.params().to, (r) -> cb(null, r)
   async.parallel {from: geocodeFrom, to: geocodeTo}, (error, {from,to}) ->
@@ -50,16 +50,16 @@ routeMatcher.get '/routes', filterAjaxOnly validation.validateGetRoutes (req) ->
       req.response.end JSON.stringify(from: !!from, to: !!to)
 
 routeMatcher.get '/address', filterAjaxOnly validation.validateGetAddress (req) ->
-  req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
+  req.response.putHeader 'Content-Type', 'application/json; charset=utf-8'
   hsl.reverseGeocode req.params().coords, (address) ->
     if address
       req.response.end JSON.stringify(address)
     else
       req.response.statusCode = 400
       req.response.end()
-      
+
 routeMatcher.get '/autocomplete', filterAjaxOnly validation.validateAutocomplete (req) ->
-  req.response.putHeader 'Content-Type', 'application/json; charset=utf8'
+  req.response.putHeader 'Content-Type', 'application/json; charset=utf-8'
   eb.send 'reitti.searchIndex.find', query: req.params().query, (data) ->
     req.response.end JSON.stringify(itm.name for itm in data.results)
 
@@ -75,7 +75,7 @@ routeMatcher.noMatch (req) ->
     blankSlateActive = !/blankSlateDismissed/.test(req.headers()['cookie'])
     blankSlateHidden = !blankSlateActive or (req.path isnt '' and req.path isnt '/')
 
-    req.response.putHeader 'Content-Type', 'text/html; charset=utf8'
+    req.response.putHeader 'Content-Type', 'text/html; charset=utf-8'
     req.response.end indexTemplate.apply
       timezoneOffset: tzOffset
       locale: locale
