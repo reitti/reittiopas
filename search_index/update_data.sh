@@ -17,7 +17,7 @@ function process {
    > $2
 }
 
-curl http://download.geofabrik.de/osm/europe/finland.osm.pbf -o $OSM
+curl http://download.geofabrik.de/openstreetmap/europe/finland.osm.pbf -o $OSM
 process polys/helsinki.poly data/helsinki.txt
 process polys/espoo.poly data/espoo.txt
 process polys/kauniainen.poly data/kauniainen.txt
