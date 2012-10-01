@@ -127,10 +127,15 @@ body {
 }
 
 #controls {
-    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: @controlsWidth;
     padding-bottom: 20px;
     overflow-y: auto;
     overflow-x: hidden;
+
 }
 
 #search {
@@ -349,15 +354,7 @@ i.icon-ferry {
 }
 
 @media (min-width: 768px) {
-    #controls {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
-    #controls {
-        width: @controlsWidth;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -368,6 +365,7 @@ i.icon-ferry {
     // Controls take up full width since the map is not visible
     #controls {
         width: 100%;
+        -webkit-overflow-scrolling: touch;
     }
 
     #routes {
