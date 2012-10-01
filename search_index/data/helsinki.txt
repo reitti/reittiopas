@@ -1319,7 +1319,6 @@ Laivastokatu|
 Kahvikuja|
 Artjärventie|
 Kurkiaiskuja|
-Kumpulan kampus|24.9665447,60.2032071
 Lampipolku|
 Sienitie|
 Renginpolku|
