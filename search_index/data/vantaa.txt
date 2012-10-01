@@ -97,6 +97,7 @@ Orakaskuja|
 Kortekuja|
 Korennonpuisto|25.1387334,60.3401365
 Ruusuvuorenkuja|
+Raappavuoret|24.8297842,60.2761122
 Säilätie|
 Pyytie|
 Havukosken palvelutalo|25.0704567,60.3217582
@@ -545,6 +546,7 @@ Korson asema, laituri 8|25.080876,60.3512405
 Tietotie|
 Shell Vantaa Kaivoksela|24.8736751,60.2639087
 Vaaksiaisenrinne|
+Honkanummi|25.0830667,60.2906505
 Leppätie|
 Koivumäenkuja|
 Keilakuja|
@@ -653,6 +655,7 @@ Kielotie|
 Osumakuja|
 Räyskäkuja|
 Kielomäentie|
+Kivimäki|24.8596362,60.2827366
 Simonpirtti|25.0274933,60.3032905
 Karhunkierros|
 Rouskukuja|
@@ -866,6 +869,7 @@ Myllyniityntie|
 Virmajuurenranta|
 Metsäniityntie|
 Sahamäenkuja|
+Långbacka|24.7904669,60.2599035
 Leenanpolku|
 Vuorimestarintori|
 Hirsikuja|
@@ -920,6 +924,7 @@ Junkkarinkaari|
 Kallaskuja|25.0141437,60.3336846
 Jokiniemen koulu|25.0536935,60.2987076
 Vanha Tuusulantie|
+Pitkämäki|24.7904669,60.2599035
 Ajomiehenpolku|
 Korutie|
 Siimeskuja|
@@ -1001,6 +1006,7 @@ Nurmimäentie|
 Pietaryrtintie|
 Immonkuja|
 Vuoritie|
+Marja-Vantaa|24.850175,60.3161945
 Rajamyllyntie|
 Paimenentie|
 Maarukankuja|
@@ -1347,6 +1353,7 @@ Tullimies 10|24.9934363,60.3118473
 Turbiinikuja|
 Comfort Hotel Pilotti|24.9658681,60.2846127
 Marjastajankuja|
+Sillböle gård|24.887804,60.2793049
 Valliraitti|
 Akanapolku|
 Kotikoivuntie|
@@ -1661,6 +1668,7 @@ Linnustajankuja|
 Rumpukuja|
 Lintukalliontie|
 Lehtikummunpolku|
+Vaskipuisto|24.8651382,60.2583032
 Tavitie|
 Pursukuja|
 Aaponkuja|
@@ -2144,6 +2152,7 @@ Rakuniitynkuja|
 Hammaslääkäri Kirsi Paloheimo|25.1037883,60.2785108
 Hämeenkylän Kartano|24.7840492,60.2702645
 Lauri Korpisen polku|
+Hämeenkylän kartano|24.7861013,60.2709609
 Vantaan ulkoilukeskus Kuusijärvi uinti|25.1133803,60.3135233
 Esantie|
 Leinelän puistotie|
@@ -2353,6 +2362,7 @@ Nybyggetinkuja|
 Kankikuja|
 Nikinmäenranta|
 Nieriäisenkuja|
+Tyttökumpu|24.8436888,60.289066
 Koiruohonpolku|
 Neste Oil Express Kaivoksela|24.8727435,60.2632273
 Simonmetsä|25.0250088,60.3068504
@@ -2386,6 +2396,7 @@ Angervopolku|
 Juustenintie|
 Haapatie|
 Valuuttapolku|24.9676409,60.2902113
+Slåttmossen|25.0865819,60.2560838
 Jaakonkatu|
 Länsimäen kirjasto|25.1150379,60.2463462
 Neste Oil Martinlaakso|24.855423,60.2759452
@@ -2878,8 +2889,10 @@ Lumikero|
 Pähkinänsärkijänpolku|
 Mummola|25.0357638,60.2907341
 Ruusutie|
+Vantaan ajoharjoittelurata|24.9255903,60.3353045
 Värttinäpolku|
 Viertokuja|
+Åby|24.8666314,60.3057698
 Maitorpankuja|
 Maitorpanpolku|
 Mehiläispolku|
@@ -3091,7 +3104,7 @@ Virpipolku|
 Kotirintama|25.0425717,60.2901666
 Sääskikuja|
 Ilmailulaitos|24.9739995,60.3083683
-Vehkalanmäki|24.8276659,60.2841412
+Vehkalanmäki|24.8301882,60.2885999
 Leppäkorven koulun hammashoitola|25.0835619,60.3570849
 Vallikuja|
 Taikurintie|

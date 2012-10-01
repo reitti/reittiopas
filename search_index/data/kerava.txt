@@ -90,6 +90,7 @@ Tonttukuja|
 Sementtitehtaankatu|
 Varpukatu|
 Kalevanraitti|
+Keravan kartano|25.1196877,60.4100084
 Marjatantie|
 Varjakontie|
 Kerava-sali|25.1006241,60.4048918
@@ -368,7 +369,7 @@ Hirvenkuja|
 Mönkäreenmäki|
 Lepolantie|
 Power Center|25.1108251,60.39803
-Pihkaniitty|25.0991201,60.4218908
+Pihkaniitty|25.1040065,60.4224318
 Kolistimenkuja|
 Hannes Myöhäsenkuja|
 Moukaritie|

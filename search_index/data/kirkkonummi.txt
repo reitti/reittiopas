@@ -1,6 +1,7 @@
 Kirsikkapolku|
 Hevoshaansilta|
 Kauppalanpolku|
+Upinniemen varuskunta|24.361158,60.0346247
 Tarutie|
 Koivuniementie|
 Juusjärventie|
@@ -520,6 +521,7 @@ Hilantie|
 McDonald's|24.4415625,60.1214634
 Sundsbergintie|
 Lampuodinkuja|
+Killinmäki|24.4819956,60.1322413
 Puusepäntie|
 Syvälaaksonpolku|
 Veikkola 02880|24.4446586,60.2685583

@@ -1366,6 +1366,7 @@ Lohitie|
 Heinämäenrinne|
 Tynnyripolku|
 Morris|24.740228,60.1574953
+Koskelo|24.7150753,60.2559022
 Amica: Kvarkki|24.8299239,60.1881615
 Suvizza|24.6700876,60.2007097
 Kanneljärventie|
@@ -1623,6 +1624,7 @@ Veininmäki|
 Tiistiläntie|
 Friisilän koulu|24.7072239,60.1696701
 Ylänteenkatu|
+Espoon keskuspuisto|24.6937923,60.1875257
 Urheilukentäntie|
 Saarniraivion päiväkoti|24.6645763,60.197634
 Ullanmäentie|
@@ -1658,6 +1660,7 @@ Turveradantie|
 Hannuksenkuja|
 Aallontaite|
 Kaunokkipolku|
+Långkärrsbärget|24.7616591,60.2931897
 Ojankulma|
 Korpiniityntie|
 Kaskipuunmäki|
@@ -2181,6 +2184,7 @@ Jupperintie|
 Järvikyläntie|
 Rajamännynkuja|
 Muuralantie|
+Pitkäkorpi|24.7585499,60.2906609
 Piennartie|
 Vieraskuja|
 Rastasniityntie|
@@ -3120,6 +3124,7 @@ Pihlajamarjantie|
 Tiklinkuja|
 Kirvunkuja|
 Chico's|24.7258214,60.1723572
+Rykmentinmäki|24.8313497,60.2452985
 Olkipolku|
 Numersinkatu|
 Martinkuja|
