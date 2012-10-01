@@ -17,17 +17,20 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
 
     draw: ->
       {x, y} = @getProjection().fromLatLngToDivPixel(@location)
+      # TODO: There's something fishy with these magic offsets here.
       switch @anchor
         when 'top' 
-          x -= WIDTH / 2
-          y -= (HEIGHT + 10)
+          x -= WIDTH / 2 + 2
+          y -= (HEIGHT + 10) + 3
         when 'bottom'
-          x -= WIDTH / 2
+          x -= WIDTH / 2 + 3
+          y -= 1
         when 'left'
-          x -= (WIDTH + 10)
-          y -= HEIGHT / 2
+          x -= (WIDTH + 10) + 3
+          y -= HEIGHT / 2 + 2
         when 'right'
-          y -= HEIGHT / 2
+          y -= HEIGHT / 2 + 2
+          x -= 2
       @div.style.left = "#{x}px"
       @div.style.top = "#{y}px"
 
