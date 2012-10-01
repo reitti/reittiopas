@@ -11,7 +11,7 @@ module.exports =
   arrivalTime: 'Arrival time'
   findRoutes: 'Find routes'
   findingRoutes: 'Finding routes...'
-  competitionEntry: 'An Apps4Finland competition entry'
+  competitionEntry: 'Vote for us on Apps4Finland!'
   routeData: 'Route data'
   sourceCode: 'Source code & info'
   feedback: 'Feedback'

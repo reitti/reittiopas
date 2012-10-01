@@ -11,7 +11,7 @@ module.exports =
   arrivalTime: 'Perillä'
   findRoutes: 'Hae reitit'
   findingRoutes: 'Haetaan reittejä...'
-  competitionEntry: 'Apps4Finland-kilpailutyö'
+  competitionEntry: 'Apps4Finland-kilpailutyö. Äänestä!'
   routeData: 'Reittitiedot'
   sourceCode: 'Lähdekoodi ja tietoa'
   feedback: 'Palaute'
