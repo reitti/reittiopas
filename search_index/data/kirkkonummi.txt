@@ -386,6 +386,7 @@ Kurkistonpolku|
 Östermalmintie|
 Leinikkitie|
 Ervastintie|
+Stenbackantie|
 Lähdekuja|
 Hevosmäki|
 Jänistie|
@@ -512,6 +513,7 @@ Maatilapuodin kotikahvila|24.4557295,60.0832375
 Haapatie|
 Vasatie|
 Muhuntie|
+Kirkkotallin apteekki|24.4433889,60.1211619
 Masala|24.5390426,60.1584382
 Moringinkuja|
 Hilantie|
@@ -527,7 +529,7 @@ Vaeltajantie|
 Avokalliontie|
 Järvö|24.4849998,59.9594767
 Lamminpääntie|
-Luoman uimaranta|24.5134164,60.1773359
+Luoman uimaranta|24.5134327,60.1770813
 Kirsikkakuja|
 Muurahaispolku|
 Sällbackavägen|

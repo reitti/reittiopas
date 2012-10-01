@@ -541,7 +541,6 @@ Keravan ensimmäinen apteekki|25.1003201,60.4035556
 Keskustan hammashoitola|25.0997086,60.4021932
 Turskatie|
 Luotolantie|
-Keravan kuvataidekoulu|25.1028566,60.4043382
 McDonald's|25.1015745,60.4015033
 Kirvesmiehentie|
 Kotoisa|25.1002858,60.4038445
@@ -589,7 +588,6 @@ Karhipolku|
 Keravan Torin Pizza-Kebab|25.0979858,60.4022387
 Savion koulu|25.0956249,60.3830586
 Sikakorvenpolku|
-Aurinkomäen leikkipaikka|25.1023302,60.4033881
 Varsatie|
 City-voimailusali|25.1004339,60.4038775
 Pumpputehtaankatu|
