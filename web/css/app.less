@@ -94,7 +94,7 @@ body {
 }
 
 #map-wrap {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: @controlsWidth;
     right: 0;
@@ -113,7 +113,7 @@ body {
 }
 
 #streetview-wrap {
-    position: absolute;
+    position: fixed;
     top: 50%;
     bottom: 0;
     left: @controlsWidth;
@@ -127,7 +127,7 @@ body {
 }
 
 #controls {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -396,6 +396,7 @@ i.icon-ferry {
 @media only screen and (min-width: 768px) {
     #routes {
         li.route {
+
             a {
                 .transition(all, @animationDuration, ease-out);
             }
