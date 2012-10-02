@@ -1,6 +1,9 @@
 vertx = require 'vertx'
 hsl   = require 'hsl'
 
+CACHE_TTL = 31 * 24 * 60 * 60 # 31 days
+
+
 eb = vertx.eventBus
 
 isCoordinate = (str) ->
@@ -23,5 +26,5 @@ module.exports = (query, callback) ->
         callback res.result
       else
         geocode query, (result) -> 
-          eb.send 'reitti.cache.put', key: query, value: result
+          eb.send 'reitti.cache.put', key: query, value: result, ttl: CACHE_TTL
           callback result
