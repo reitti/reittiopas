@@ -89,10 +89,6 @@ body {
     margin: 0 !important;
 }
 
-.full-height {
-    height: 100%;
-}
-
 #map-wrap {
     position: fixed;
     top: 0;
@@ -362,8 +358,13 @@ i.icon-ferry {
         margin: 0 5%;
     }
 
+    body {
+        overflow: scroll;
+    }
+    
     // Controls take up full width since the map is not visible
     #controls {
+        position: static;
         width: 100%;
         -webkit-overflow-scrolling: touch;
     }
@@ -396,7 +397,6 @@ i.icon-ferry {
 @media only screen and (min-width: 768px) {
     #routes {
         li.route {
-
             a {
                 .transition(all, @animationDuration, ease-out);
             }
