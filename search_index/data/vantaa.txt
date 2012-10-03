@@ -6,11 +6,13 @@ Knnapinkuja|
 Uomarinne|
 Näpinkuja|
 Kuriirikuja|
+Kyrkoby skola (vanha)|24.98610838,60.285296
 Mamsellintie|
 Havukoskenaukio|
 Myyräkuja|
 Irmelintie|
 Tapas BarCelona|24.9690683,60.2909311
+Martinlaakson voimalaitos|24.837421411111112,60.28285294444444
 Kolisevantie|
 Murmelikuja|
 Naapuri Ravintola Jyvänen|24.8532855,60.2779875
@@ -25,7 +27,7 @@ Korpivaarantie|
 Kuntoporkkana|24.8452386,60.276023
 Myllärinkuja|
 Kanervatie|
-Motonet|24.9296171,60.2962989
+Motonet|24.929165124999997,60.29652539999999
 Keltakuja|
 Martinlaakson Uimahalli|24.844975499999997,60.276136199999996
 Pirttitie|
@@ -48,6 +50,7 @@ Lastukuja|
 Kuninkaan lohet|24.8664702,60.2934986
 Prisma|24.8519674,60.2603327
 Sarvijaakonpolku|
+Kontino|25.079127125000003,60.29758981249999
 Askistontie|
 Särkikuja|
 Keskipolku|
@@ -81,6 +84,7 @@ Kuutinpiha|
 Kuntokuja|
 Ruotsintie|
 Tuulan salonki|25.0752315,60.3501584
+Koivuhaan liikekeskus|24.998936678571432,60.28839540714285
 Pirkankuja|
 Rosendalinrinki|
 Kääpäkuja|
@@ -94,8 +98,11 @@ Timonpolku|
 Pohjanrinne|
 Veitsitie|
 Rajakentäntie|
+Hotelli Vantaa|25.041109423076918,60.2903840076923
 Brode|25.0811678,60.3509158
 Superhuolto|24.8272456,60.2550848
+LVRU:n toimintakeskus|24.81870991111111,60.27404112222223
+Tamro-talo|24.818856066666665,60.25533326666668
 Palokunnanmäki|
 Pirjontie|
 Suksikuja|
@@ -110,6 +117,7 @@ Pyytie|
 Havukosken palvelutalo|25.0704567,60.3217582
 Keskustie|
 Koivunkannonkuja|
+Ostoskeskus Tammi|24.96921125714286,60.27309101428572
 Poimulehdentie|
 Minkkipolku|
 Laurankuja|
@@ -121,6 +129,7 @@ Talvikkipolku|
 Iltatie|
 Kaksi Hanaa|25.1033708,60.2730503
 Tullimiehentie|
+Kyrkoby skola (uusi)|24.986700300000003,60.285708420000006
 Siwa|24.841864422222226,60.32246883333333
 Rataspolku|
 Merikotkanpolku|
@@ -179,6 +188,8 @@ Miilupolku|
 Leineläntie|
 Savikkakuja|
 Myllynkivenkuja|
+Sokeva|25.077447033333332,60.358123033333335
+Silvolan Kartano Sillböle gård|24.887697192307694,60.27890855384616
 Lentäjäntie|
 Hakatie|
 Tikkurilan kirjasto|25.04228042727273,60.294901290909095
@@ -196,6 +207,7 @@ Vantaan Minttukirkko|25.028471590909092,60.30111898181818
 ABC Deli Petikko|24.8267531,60.2843627
 Itä-Uudenmaan poliisilaitos|25.0416281,60.2984574
 Tonttipolku|
+Liesitorin palvelutalo|24.85272112,60.263275924000006
 Leenantie|
 Kiulukuja|
 K-supermarket Martinlaakso|24.844964542857145,60.28120564285714
@@ -217,8 +229,10 @@ Vaahtorinne|
 Rutarsinpolku|
 Jokiuoman ratagolf|24.862391922222223,60.273358
 Ampiaisentie|
+Anttilan Keskusvarasto|24.798162068750003,60.2720552
 Rahkatie|
 Jäkkitie|
+Vaisala Oyj|24.877759927027025,60.281660999999986
 Ilpolanpuisto|24.820125,60.25780732083334
 Porttipolku|
 Jokiniementie|
@@ -241,6 +255,8 @@ Kestinkuja|
 Valintatalo Askisto|24.7853808,60.2867605
 Uomatie|
 Vilhontie|
+Tiedekeskus Heureka|25.0408458,60.2878475
+Pekkaniska|24.80839088571429,60.27739268571429
 Tarhapuiston päiväkoti|25.077284600000002,60.321274914285716
 Jousimiehentie|
 Pyymosantie|
@@ -263,12 +279,14 @@ Josvanpolku|
 Kaakkurikuja|
 Sotkatie|
 Suometsäntie|
+Taidetalo Toteemi|24.852017966666665,60.26819012222222
 Piispankyläntie|
 Ruotsinpiha|
 Ruiskukankuja|
 Kafnetti|25.06434148,60.32303718000001
 Sorvapolun meluvalli|25.1085238,60.34882182857143
 Haikarapolku|
+Rekolan partiomaja|25.0680243,60.3295002
 Kauppakeskus Myyrmanni|24.853025019354842,60.26046185483872
 Vanamontie|
 Nikinmäen Tähti|25.1271855,60.3413301
@@ -284,13 +302,16 @@ Kolmikoivuntie|
 Aatelitie|
 Kaivokselan koulu|24.868923650000003,60.26770123333334
 Maakotkanpolku|
+12 A|25.107936920000004,60.29346843999999
 Vaaralankulma|
 Majalantie|
 Suvantoplku|
+STC|24.911331771428568,60.3027877
 Terminaalitie|
 Kuusikkotie|
 Kangasmäenkuja|
 Tikkurilan Apteekki|25.0384373,60.293136
+Ilolan seurakuntatalo|25.025794191666666,60.32854648333333
 Ravintola Villiankka|25.076415,60.3514792
 Seivästie|
 K-lähikauppa Palmén & Co.|25.1437257,60.3366549
@@ -313,6 +334,7 @@ Perkiönreuna|
 Saraksentie|
 Ravintola Kenttälounas|24.9720947,60.3109588
 Lautamiehenpolku|
+Teboil Vantaa Tammisto|24.97168137647059,60.28113881176472
 Laulurastaanpolku|
 Metsäkeijunkuja|
 Kinkerikuja|
@@ -340,7 +362,7 @@ Varistonkuja|
 Muksettipolku|
 Lemmikkipuisto|25.031464506249996,60.30633920625
 Peräjäntie|
-Nikinmäen seurakuntakoti|25.131613,60.3432405
+Nikinmäen seurakuntakoti|25.12738016,60.3405038
 Sauniotie|
 Vapaalanaukee|24.821781666666666,60.26440766666668
 Metsätähdenkuja|
@@ -352,10 +374,12 @@ ABC Ilola|25.0247884,60.3239308
 Ismonkuja|
 Klaukkalantie|
 Långmosseninkuja|
+Lumon|24.910957185714288,60.297083228571424
 Santamäentie|
 Murtopakankuja|
 Vuolupuisto|24.82866016,60.26474098
 Kulotie|
+Kaukokiito|24.90834643333333,60.299845511111116
 Sinirikonkuja|
 Tilkuntie|
 Mäkituvantie|
@@ -384,6 +408,7 @@ Kuikkakuja|
 Alko Tammisto|24.9727102,60.2729263
 Holiday Inn Helsinki-Vantaa Airport|24.971180125,60.2952308875
 Martinkyläntie|
+12 B|25.10857806,60.29300443999999
 Mazda Kaivoksela|24.8762831,60.2704638
 Yhteismaa|24.795216187931025,60.2666043862069
 Tuovintie|
@@ -399,6 +424,7 @@ Kallionreuna|
 Laajakorvenpolku|
 Kairakuja|
 Himalajantie|
+Colosseum Business Center|24.85250906170213,60.25840891702127
 Karppitie|
 Resedakuja|
 Kulomäentie|
@@ -421,7 +447,9 @@ Ullankuja|
 Välirinne|
 Jänkätie|
 Teeririnne|
+Tarkastuspiste 2|24.964805840000004,60.31311034
 Västäräkkikuja|
+Finnair Cargo|24.97442026153847,60.311511376923086
 Stockmann Outlet|24.9715759,60.2749305
 Hakunilan uimahalli|25.119938754545455,60.28005134545455
 Ilolantie|
@@ -433,9 +461,11 @@ Suotie|
 Aittarivi|
 Vapaalanpolku|
 Ruunikkokuja|
+Pääkaupunkiseudun kierrätyskeskus, Koivukylä|25.061227099999996,60.317107328571424
 Kino Myyri|24.8539985,60.2613341
 Bäckbyntie|
 Vesimiehentie|
+Myyrinkoti|24.848782377777777,60.262211344444445
 Malmirajanpolku|
 Albela|24.804705,60.2623802
 Orvokkitie|
@@ -458,8 +488,11 @@ Clas Ohlson|24.8540938,60.2606427
 Suopursuntie|
 Hanatie|
 Risukarhi|24.79508151666667,60.264729200000005
+Sarlin Oy Ab|24.8733822,60.265955054838706
+Etukartano|24.78727613076923,60.27075323076924
 Pavi|25.098831371428567,60.295857142857145
 Raatekuja|
+Bisan laavu|25.153008520000004,60.304462220000005
 Tapparakuja|
 Tie 4|
 Teboil Huolto|24.872589,60.2621269
@@ -479,12 +512,13 @@ Minttukuja|
 Kuninkaantie|
 Tanssivat Sakset|24.8506362,60.2593846
 Loukkukuja|
-Jokivarren ajotunneli|
+Jokivarren ajotunneli|25.1101757,60.3420973
 Maarukan päiväkoti|25.108048,60.3383679
 Louhela|24.853408,60.2708678
 Pohjois-Viinikkalan tie|
 Talkootie|
 Kaivotie|
+14 A|25.1087472,60.29316908888888
 Saarantie|
 Parturi-kampaamo Carusell|24.9984668,60.2884147
 Jesper Junior|24.8539916,60.2605151
@@ -522,6 +556,7 @@ Pirttirannantie|
 Kotkansiipi|
 Pikkujärvenkuja|
 Vetokannaksen ulkoilualue|24.88177164545455,60.270376157575754
+Tarkastuspiste 3|24.95687522,60.310649
 Kerkkätie|
 Lounasravintola Sapuska|24.8555489,60.2608264
 Särkkäkuja|
@@ -530,12 +565,14 @@ Soittajankuja|
 S-Market Myyrmäki|24.8539467,60.2628048
 Ailakkitie|
 Peltokulma|
+Veolia|24.886003463636367,60.29728450909091
 Hairstop|24.8537132,60.2632756
 Seliminkuja|
 Siipitie|
 Liekotie|
 Tuomirinne|
 Haapanatie|
+YIT|24.82791689375,60.25427534375001
 Rautapolku|
 Nissen|24.8534691,60.278229
 Petkelpolku|
@@ -548,6 +585,7 @@ Viitakuja|
 Teräkuja|
 Tervakkokuja|
 Pallastunturintie|
+Tiileri|24.9010321625,60.28758545
 Äyritie|
 Länsimäentie|
 Salon Gabo’s|25.0790616,60.3507567
@@ -571,6 +609,7 @@ Uudenrajanpuisto|25.03946094,60.3139681
 Muurikuja|
 Degermosantie|
 Perhokuja|
+Hoitokoti Kotikumpu|24.784600599999997,60.2832544
 Raikukuja|
 Rajakoskentie|
 Hämeenkyläntie|
@@ -583,6 +622,7 @@ Saturnuksenpuisto|25.1011559,60.3407117
 Kyyhkytie|
 Siikarinne|
 Kastanjapuisto|24.801862941176477,60.25625631764706
+14 B|25.108165755555557,60.293589600000004
 Taula-Matin tie|
 Riipiläntie|
 Neilikkapolku|
@@ -593,6 +633,8 @@ Naalitie|
 Musta Pörssi|24.9729835,60.2861262
 Tietotie|
 Shell Vantaa Kaivoksela|24.8736751,60.2639087
+P5|24.96660576923077,60.31544708461539
+Veikkaus Oy|24.811044456,60.260369704000006
 Vaaksiaisenrinne|
 Honkanummi|25.0830667,60.2906505
 Leppätie|
@@ -631,6 +673,7 @@ Koivukuja|
 Pohjolantie|
 Mistelin päiväkoti|25.004383318749998,60.31589629374999
 Saarniharjunkuja|
+Martinpuisto|24.843601299999996,60.27567680769231
 Jokivarren koulun leikkipaikka|25.1126902,60.346218
 Laivurinkuja|
 Vahakuja|
@@ -701,6 +744,8 @@ Jukolantie|
 Sepänrinne|
 Karviaiskaari|
 Orionintie|
+Servisair Cargo|24.975456500000004,60.30967993076925
+Turkistuottajat|24.823454010000003,60.27713523499998
 Varuskuja|
 Metsikönpolku|
 Tunturikuja|
@@ -798,6 +843,7 @@ Kurkikuja|
 Leankuja|
 Kilterinraitti|
 Kaunokkitie|
+Isomyyri Parkkihalli|24.855603783333333,60.26318893333333
 Tavastkullanpolku|
 Satakielentie|
 Shell Vantaa Ruskeasanta HelmiSimpukka|24.9984032,60.3080086
@@ -820,10 +866,12 @@ Paatsamakuja|
 Kiertomäenkuja|
 Oravamäentie|
 Yrjöntie|
+DSV|24.921433176923077,60.29352758461539
 Asolanväylä|
 Neste Oil Express Martinlaakso|24.8663201,60.2780088
 Steissin Pub|25.0766484,60.3498529
 Ruokopolku|
+Kehä 3 Kirppis|24.9528974,60.2969807
 Kotkakuja|
 Vantaan seudun Steinerkoulu|25.085978100000002,60.36640070000001
 Kolmas tie|
@@ -884,6 +932,7 @@ Kotkarinne|
 Siwa Mikkola|25.0965555,60.3414429
 Vesuritie|
 Linjatie|
+Halti|24.9720207,60.271279199999995
 Vantaan kuvataidekoulu, Tikkurilan opetuspiste|25.039257,60.298974
 Evin Pizzeria|24.871172,60.2638881
 Pitkäsentie|
@@ -995,6 +1044,7 @@ Skinnarintie|
 Hämeenlinnantie|
 Prinsessakuja|
 Heinikkokuja|
+HVKone|24.914027766666667,60.32197428333333
 Junkkarinkaari|
 Jokiniemen koulu|25.05193862,60.29935094
 Vanha Tuusulantie|
@@ -1055,6 +1105,7 @@ Lukunurkka|24.8475575,60.2766201
 Hakunilan apteekki|25.1039159,60.2785578
 Ruutintie|
 Pistiäisenkuja|
+Kaakelipiste|24.851035338095244,60.30542360476191
 Kylväjänkuja|
 Luhtimäki|
 Lammastie|
@@ -1095,8 +1146,10 @@ Immonkuja|
 Vuoritie|
 Marja-Vantaa|24.850175,60.3161945
 Kivistön Pizza & Kebab Oy|24.84104314,60.32276629999999
+Leipurien Tukku|24.90799067777778,60.30214267777777
 Rajamyllyntie|
 Paimenentie|
+ST1 Huoltamo|24.905173622222225,60.29929193333333
 Maarukankuja|
 Myyrmäen sosiaali- ja terveysasema|24.855934576923083,60.26069814615384
 Rantaniityntie|
@@ -1119,7 +1172,7 @@ Markuntie|
 Ravurinkuja|
 Varpukalliontie|
 Metsänhoitajankuja|
-Seppälä|24.8540645,60.259848
+Seppälä|24.927941186666665,60.30034473333333
 Raikurinne|
 Myyr-Body|24.8468805,60.2700588
 Saagapolku|
@@ -1143,12 +1196,14 @@ Männynkävyntie|
 Pelttarinpolku|
 Tulppaanitie|
 Pohjoiskaari|
+A-Klinikka|24.856088040909086,60.258490372727266
 Prinsessantie|
 Tuluskuja|
 Koivukylän puistotie|
 Suunnistajanpolku|
 Oravakuja|
 Uivelotie|
+Keimolan ulkoilumaja|24.81503327142857,60.328599485714285
 Studio Ruusu|25.0743465,60.3507842
 Loikkokuja|
 Ruispolku|
@@ -1169,6 +1224,7 @@ Stockmann|24.962043,60.316475
 Sorvikuja|
 Apajakuja|
 Expert|24.9720254,60.2775596
+Keskon iso varasto|25.07594766,60.285696310000006
 Kiertomäentie|
 Vankkurikuja|
 Linnoittajanpolku|
@@ -1177,6 +1233,7 @@ Arjantie|
 Koivurinne|
 Teilimäki|
 Torpantie|
+Kuhne&Nagel|24.938533612499995,60.303388175
 Koivukylä|25.0603776,60.3236073
 Vesimiehenpolku|
 TR-Kaluste Porttipuisto|25.0859279,60.2786772
@@ -1189,6 +1246,7 @@ Orvokkipolku|
 Jalokivigalleria|24.8541682,60.2603561
 Takojantie|
 Rajatorpan koirapuisto|24.827623985714286,60.25968075714285
+Jättijako|24.972702570833334,60.27330418333332
 Salon Birgi|24.8515755,60.2593545
 Kurupolku|
 Hilton Helsinki Airport|24.9640148,60.3159991
@@ -1203,6 +1261,7 @@ Rautpihan päiväkoti|25.0653001,60.3227621
 Tikkurilan Teatteri|25.0441905,60.2896594
 Niinikuja|
 Vantaan maistraatti|25.0395851,60.2950855
+Tapiola Tikkurila|25.0361882,60.2902023
 Viiripolku|
 Pakkalankuja|
 Mistelitie|
@@ -1217,6 +1276,7 @@ VM-Center|24.9270404,60.3361069
 Ukonkivenpolku|
 Iskostie|
 Sali|24.8049432,60.262062
+Hoivakoti Hopea|24.855801000000003,60.25886851923079
 Pyhtäänkorvenkuja|
 Hiirivuorenkuja|
 Martinlaakson kirjasto|24.8518098,60.2770723
@@ -1238,8 +1298,10 @@ Pääskyläntie|
 Köyhämäenkuja|
 Lumo|25.076415,60.3514792
 Slåttmossenin luonnonsuojelualue|25.0848591,60.2541587
+Laavu|25.134360300000004,60.2716136
 Kivimäen koulu|24.860241638095236,60.28056892857143
 Rentukkatie|
+Satotukku|24.91363338,60.29548308
 Kaunisharju|
 Virtapolku|
 Leinelän päiväkoti|25.0417441,60.3247656
@@ -1252,6 +1314,7 @@ Neste Oil Varisto|24.8110139,60.2645502
 Kielomäenkuja|
 Lammaslammentie|
 Kela Myyrmäki|24.85584738333333,60.26401543333333
+Martinkeskus|24.847480757142858,60.27664452142858
 Väritehtaanpolku|
 Neitsytpolku|
 Ruuvitie|
@@ -1266,6 +1329,7 @@ Iltatähdentie|
 Vantaan Ammattiopisto Varia|24.859741611764708,60.26574382352942
 Myyrmäentie|
 Andersinkatu|
+Vantaan ammattiopisto Varia|25.054037572413794,60.30207838620691
 Vesijohdontie|
 Keskikaari|
 Raiviosuonrinne|
@@ -1301,6 +1365,7 @@ St1 Vantaa Korso|25.078551920000002,60.3537913
 Vihnepolku|
 Nuolitie|
 Hiilitie|
+Korson asema|25.0780535,60.3514177
 Latvakuja|
 Caravellentie|
 Jasmiinipolku|
@@ -1321,6 +1386,7 @@ Viherkummuntie|
 Rautkalliontie|
 Kalakuja|
 Kaukonkuja|
+Kaivokselan Ostoskeskus|24.87002326,60.264029879999995
 Timjamikuja|
 Vaihdepolku|
 Kotkankaula|
@@ -1349,6 +1415,7 @@ Martinlaakson apteekki|24.8536718,60.2786099
 Perintötie|
 Kärppäpolku|
 Metsikkötie|
+Markkula|25.0481966,60.2870292
 Rimakuja|
 Tiksin Sea Cafe|25.030382,60.2989261
 Viittakuja|
@@ -1358,6 +1425,7 @@ Metsätähdenrinne|
 Sinirikonpuisto|25.029611606666666,60.29425015333333
 Seppäläntie|
 Thai Palace|25.0403259,60.2927003
+Laboratorio|24.851236468421053,60.257291547368425
 Kartanontie|
 Pohjois-Kaarlelantie|
 Korson Fiilis|25.0741765,60.3488989
@@ -1369,7 +1437,7 @@ Kärppäkuja|
 Dickursby skola|25.058394671428573,60.29592794285714
 Solbackantie|
 Mattokymppi Vantaa|25.0895212,60.2799486
-Simonkylän koulu|25.0353063,60.3164746
+Simonkylän koulu|25.03521890416667,60.31652810833335
 Lehtitie|
 Karvalaukunkuja|
 Kallioimarteenpolku|
@@ -1416,6 +1484,7 @@ Purorinne|
 Simonkylän Pizzeria|25.0307942,60.3103907
 Sotungin VPK|25.1361278,60.2837275
 Perhotie|
+Keskusvalvomo|24.850732990909094,60.256636009090904
 Kuussillankuja|
 Simosentie|
 Karhuniityntie|
@@ -1436,9 +1505,11 @@ Viulukuja|
 Teerikuja|
 Kuikkarinne|
 Sorsatie|
+Huolintatalo|24.971860616666664,60.31113871666667
 Myyrmäen Mattolaituri|24.8526456,60.2596634
 Idän Ratsu|24.9767165,60.2843653
 Monsaksenkuja|
+Fintractor|24.9039159,60.30013697777778
 Kaskelanrinne|
 Niittykuja|
 Yleisurheilukenttä|25.123553028125,60.27794802187499
@@ -1448,6 +1519,7 @@ Junkersintie|
 Clitter|24.8537453,60.2599398
 Pyhän Laurin kirkko|24.985978970588235,60.28313477058822
 Laukkarinne|
+Beweship|24.913065841176472,60.29947212352942
 Auratie|
 Jokitie|
 Metsolanrinne|
@@ -1462,13 +1534,14 @@ Tervakuja|
 Tertunkuja|
 Tervakkotie|
 Itä-Hakkilan tie|
+Helsinki Caravan Oy|24.848112488888887,60.30537268888889
 Kehävuorenrinne|
 Terätie|
 Virtakuja|
 Rantakuja|
 Ahoniityntie|
 Aunentie|
-Neste|25.0831861,60.3466594
+Neste|25.05900046,60.31866622
 Sinikellonpolku|
 Comfort Hotel Pilotti|24.9658681,60.2846127
 Tarjoustalo Vantaa, Porttipuisto|25.0896954,60.279893
@@ -1479,6 +1552,7 @@ Valliraitti|
 Akanapolku|
 Kotikoivuntie|
 Hernekuja|
+Kuninkaanmäen pystykuilu|25.1049902,60.3079582
 Rosenlundintie|
 Kuhatie|
 Myrttitie|
@@ -1496,6 +1570,7 @@ Arvo Tammisen polku|
 Ellinpolku|
 Poppelipuisto|25.042285120000003,60.31955214
 Tuomelan koulu|24.785870742857146,60.265629271428566
+Lidl Tammisto|24.969467577777777,60.27379198888889
 ISS Stadion|24.83804154,60.26204773999999
 Kisakuja|
 Kaivosrinteenpolku|
@@ -1514,6 +1589,7 @@ Yökkösentie|
 Tasettipolku|
 Tiilenlyöjänkuja|
 Erkintie|
+Inchcape Oy|24.876813300000006,60.270385288888896
 Neste Oil Express Ansakuja|24.9222569,60.2950894
 Ilmakehä|
 Santorini|24.9690578,60.2906421
@@ -1559,6 +1635,7 @@ Oljenkorsi|
 Villa Lyhty|25.070662,60.3308536
 Cubus|24.8529754,60.2603277
 Kalmarinkuja|
+Machinery|24.92254907575758,60.296037981818195
 99 Lounasravintola|24.8254485,60.2565539
 Koivuvaarankuja|
 Sotka|24.8211282,60.2784473
@@ -1605,6 +1682,7 @@ Lillukkapolku|
 Santamäenkuja|
 Vanha Myllypolku|
 Mustikkasuontie|
+Fuji|24.995856874999998,60.29643583333333
 Tapolankuja|
 Päiväkummun / Nikinmäen uimaranta|25.0870415,60.3228375
 Hiiriharjunpolku|
@@ -1612,6 +1690,7 @@ Sauniokuja|
 Nevatie|
 Koskikuja|
 Sahrapolku|
+Ankkalammen päiväkoti|25.0714957875,60.351101918750004
 Salon Elena|24.8536837,60.263189
 Närepolku|
 Skopukten|24.8528657,60.2606508
@@ -1625,6 +1704,7 @@ Paalumäki|
 Heinätie|
 Vasamakuja|
 Juhannustie|
+HK-26|24.96372092,60.31345732
 Myllykuja|
 Raiviotie|
 Viholaisentie|
@@ -1665,6 +1745,7 @@ Syyrakinkuja|
 Pakkalan puistotie|
 Kiirunatie|
 Armintie|
+Vanha paloasema|24.86410496,60.29343451999999
 Terhopolku|
 Kuusimäentie|
 Kuismapolku|
@@ -1707,6 +1788,7 @@ Parturi-Kampaamo|24.8543255,60.2616483
 Vanamonkuja|
 Kuusistontie|
 Porakuja|
+Hämeenkylän Pääkartano|24.784111161904764,60.27041508095237
 Ensi tie|
 Sotkakuja|
 Päiväkoti Valtikka|25.0582413,60.3344089
@@ -1735,6 +1817,7 @@ Lidl Koivukylä|25.0616833,60.3226087
 KappAhl|24.8541035,60.2597472
 Kylväjänpolku|
 Pistiäisenpolku|
+HK-27|24.965108210526317,60.31249244736841
 Liinarinne|
 Metsolantie|
 Pelastusasema 1|24.95222238,60.31241386000001
@@ -1767,6 +1850,7 @@ Huddingentori|
 Martinlaakson Ostari|24.853887006666664,60.27844947333333
 Hiirisuontie|
 Vantaanreitti|
+Vantaa Catering Services|24.979940300000003,60.30440082
 Hakunilanrinteen koulu|25.10012698,60.27392148
 Lapintie|
 Lentäjänkuja|
@@ -1777,6 +1861,7 @@ Hallinpiha|
 Koivupuistontie|
 Veturipolku|
 Moukaritie|
+Gigantti, huolto|24.9747033,60.2764264
 Buli|24.9541747,60.2970556
 Neulastie|
 Saviontie|
@@ -1788,6 +1873,7 @@ Mesikukantie|
 Runkokuja|
 Maarinsarka|
 Putousrinne|
+Länsimäen sosiaali- ja terveysasema|25.112293,60.241722604761904
 Hämeenkylän kirkko|24.800383126666667,60.26960577333332
 Peijaksen sairaala|25.059304,60.3310749
 Linnaistenkuja|
@@ -1953,14 +2039,16 @@ Viljakuja|
 Karpalokuja|
 Hiirimäentie|
 Uivelopolku|
-Nöjet|
+Nöjet|25.12235766,60.32124642
 Rauhamäentie|
+HK-18|24.959481177777782,60.31020067777777
 Kukinpolku|
 Sahapuisto|24.826915854166668,60.25956399583333
 Valtion virastotalo|25.039796071428576,60.29503432142857
 Särkitie|
 Pelastusasema 3|24.920743957142857,60.32323858571429
 Harjalinnunpolku|
+Polar Logistics|24.97966048888889,60.30396961111111
 Pyykuja|
 Neste Oil Rajatorppa|24.8261329,60.2558492
 Havukallionkatu|
@@ -1987,6 +2075,7 @@ Leinikkitie|
 Urpiaisentie|
 Myyrmäen jäähalli 1|24.840345211111114,60.263720366666675
 Karpaattientie|
+Edupoli|25.032387738461537,60.28679626923078
 Tuulanpolku|
 Martinlaakson koulu|24.843713379999997,60.276423220000005
 Metsolansuon leikkialue|25.099402489999996,60.358167200000004
@@ -2005,6 +2094,8 @@ Matarinpuiston uimaranta|25.091724,60.3328456
 Lampikuja|
 Oratie|
 Mistelipolku|
+Rautakirja Oy|24.814986733333335,60.25643735333333
+Myyrmäen vesitorni|24.83346261111111,60.27128636666667
 LVI-Trio|25.075103,60.3298189
 Liisankalliontie|
 Linnunrata|
@@ -2012,6 +2103,7 @@ Vanha Rekolantie|
 Elvis Grilli|25.024767320000002,60.3011475
 Soopelipolku|
 Lähdekuja|
+Toyota Material Handling Finland|25.0840312,60.3535489
 Kolamiilunkuja|
 Alppitie|
 Fazerinkuja|
@@ -2034,6 +2126,7 @@ Vesankuja|
 Lidl Metsola|25.1056216,60.3451892
 Vetokannas|24.8810846,60.2696573
 Sinikuja|
+DHL Business Park|24.904907994117647,60.318559482352946
 Linderinpolku|
 Myyri Steak House|24.8535899,60.2604672
 Rosso|25.0361805,60.2913731
@@ -2067,6 +2160,7 @@ Mansikkakuja|
 Heinäsirkantie|
 Sääskitie|
 Tunturipolku|
+Pähkinärinteen senioritalo|24.804291435294118,60.25796014117647
 Surviaisenkuja|
 Jänismäentie|
 Krakantie|
@@ -2104,6 +2198,7 @@ Pähkinänsärkijä|
 Hirvipolku|
 Kesäkyläntie|
 Honkamäentie|
+Åvik|25.039729259999998,60.289490920000006
 Maalinauhantie|
 Jokivarren koulun kenttä|25.112115600000003,60.3479135875
 Neilikkakuja|
@@ -2114,6 +2209,7 @@ Uunirinne|
 Viinimarjapolku|
 Louhijanpolku|
 Ruutanakuja|
+Hiekkaharjun Ala-aste|25.035671360000002,60.308338860000006
 Urponkuja|
 Pitkäsiima|
 Helsinge skola|24.980984847826093,60.28228553043479
@@ -2215,8 +2311,10 @@ Xona Pizzeria|25.0419803,60.3048393
 Taksvärkkipulkka|
 Hippu|24.8524372,60.2697201
 Rajatorpan Kalliosuoja|24.8328835,60.2585139
+Varasto|24.879102120000002,60.273114199999995
 Simonkalliontie|
 Meiramitie|
+Kespro|24.972500155555558,60.276642366666664
 Vantaanportinpolku|
 Kiertolinnuntie|
 Kiiltomadonkuja|
@@ -2227,6 +2325,7 @@ Korppikotkanpolku|
 Kivivuorentie|
 Liplap laituri|24.86212277777778,60.304195888888884
 Kongontie|
+Point - Pakkalan oppimis- ja informaatiotalo|24.958233176000004,60.284930216
 Kannikkotie|
 Raappavuorenrinne|
 Katajarinne|
@@ -2239,6 +2338,7 @@ Marsinrinne|
 Lummetie|
 Lehdespolku|
 Kannistonkuja|
+Pitkäkosken vedenpuhdistuslaitos|24.89163826,60.26812577999999
 Bar Nr.1|24.8476809,60.2765802
 Kiitoradantie|
 Tanssiteatteri Raatikko|25.0185201,60.2907893
@@ -2290,6 +2390,7 @@ Hakunilan koulu|25.097646555555556,60.27436990000001
 Hesburger Vantaa Jumbo|24.96276,60.29172
 Kolohongankuja|
 BR-lelut|24.8538929,60.2600022
+Kaivokselan vesitorni|24.869023842105264,60.27062808947368
 Hiekkaharjun punaisten muistomerkki 1918|25.0525103,60.3004925
 S-Market Korson asema|25.0795025,60.3510078
 Kampaamo Eira ja Maria Oy|25.092299,60.3502099
@@ -2409,6 +2510,8 @@ Pöllökallionpolku|
 Kukkarokuja|
 Isotammentie|
 Matarin matonpesupaikka|25.09074716,60.3325455
+Finnair Flight Academy|24.980476616,60.301306911999994
+Veho|24.919134080000003,60.29558788
 Myyrin krouvi|24.8485303,60.270011
 Paulankuja|
 Kirvisenkuja|
@@ -2417,9 +2520,11 @@ Hovitie|
 Väistötie|
 Tukkanurkka|24.856234,60.267898
 Muurainpolku|
+Suunto|24.972813178571425,60.271955792857156
 Joukontie|
 Rauhalantie|
 Lahdentie|
+Transphere Ltd/Primuslogistics Oy|24.905004914285716,60.30293008571429
 Marjakuja|
 Horze|24.8067455,60.2714856
 Kiulukkapolku|
@@ -2432,16 +2537,19 @@ Kilterinrinne|
 Karjopolku|
 Rosendalinkuja|
 Simonkallion koulu|25.024023773684213,60.30716127894736
+SLO|24.907400566666666,60.293581666666654
 Marhaba|25.0792805,60.3507657
 Ilosjoenkuja|
 Pappilanpolku|
 Asko|24.8218007,60.278422
 Linkokuja|
 Saarnitie|
+Konserttitalo Martinus|24.845518796969696,60.2750577030303
 Martinlaakso|24.8527855,60.278081
 Kuusipolku|
 Tikkurilan uimahallin parturi-kampaamo Riitta ja Noora Pyykkö|25.0305976,60.2989069
 Turilaantie|
+Shell Autopesu|25.099792,60.3441229
 Mustikkapolku|
 Juhanilantie|
 Uudentuvankuja|
@@ -2452,6 +2560,7 @@ Metsämiehenkuja|
 Palmusalontie|
 St1 Vantaa Lentoasema|24.9712041,60.3130068
 Hyasinttipolku|
+St1 Autopesu|24.97179731111111,60.31349523333333
 Vantaan kaupunginmuseo|25.043133100000002,60.2909134
 Repolaisentie|
 Pähkinänkuori|
@@ -2491,12 +2600,14 @@ S-Market|25.1094596,60.2800314
 Jönsaksenpolku|
 Vartiokujan päiväkoti|25.116700957142854,60.25026408571428
 Raappavuorentie|
+Hilti Finland|24.94778876666667,60.29662932222223
 Reunakuja|
 Kangasmäki|
 Ilkankuja|
 Katajatie|
 Katajamäentie|
 Leppäkorven koulu|25.0839422,60.3568833
+Are Oy|24.873710515789472,60.26846261052632
 Birdwatch|24.774950999999998,60.27110106
 Metsolanpolku|
 Osmanranta|
@@ -2505,10 +2616,12 @@ Myyrmäen kirkko|24.8540066,60.2713511
 Hiirakkorinne|
 Kesantopolku|
 Laulurastaankuja|
+hihnakuljetin|24.833570270588236,60.28325402941177
 Säätökuja|
 3-tie|
 Talvikkirinne|
 Rauskurinne|
+Schenker|24.9310781,60.30361722857143
 Notkorinne|
 Elsantie|
 Parturi-Kampaamo Salon Fianna|25.1124766,60.2794665
@@ -2530,6 +2643,7 @@ Keltavuokontie|
 Kellokkaantie|
 Neulaspolku|
 Korson Rauta|25.10398222857143,60.34388615714285
+Stocmann |24.943043780000004,60.297986300000005
 Kaislaranta|
 Kultajousi|24.8536291,60.2605716
 Ullan Grilli |24.8557709,60.271166
@@ -2581,6 +2695,7 @@ Lemmikkitie|
 Metsolanportti|
 4-tie|
 Kahvitupa Laurentius|24.983784,60.2836546
+Martintorni|24.85391937777778,60.277881111111114
 Pähkinänsärkijän päiväkoti|24.804941966666668,60.2645066111111
 Angervopolku|
 Juustenintie|
@@ -2588,6 +2703,7 @@ Haapatie|
 Kaivoselan Päiväkoti|24.867801433333334,60.26637192222222
 Slåttmossen|25.0865819,60.2560838
 Jaakonkatu|
+P1, P2|24.968409881818182,60.317019663636366
 Länsimäen kirjasto|25.1150379,60.2463462
 Neste Oil Martinlaakso|24.855423,60.2759452
 Lähettiläänkuja|
@@ -2628,11 +2744,13 @@ Leppäkorven koulun kenttä|25.086550983333336,60.357256416666665
 Majavarinne|
 Tähtimöntie|
 Lauranpolku|
+SMR|24.970802022222223,60.33196373333333
 Purppurakuja|
 Salkolankuja|
 Miekkatie|
 Onervankuja|
 Kärkikuja|
+Liikelentoterminaali|24.981897330000002,60.30788896499998
 Hiirakkotie|
 Ruusuvuorenpolku|
 Kortepolku|
@@ -2641,6 +2759,7 @@ Viputie|
 Konttipolku|
 K-Citymarket Jumbo|24.9649956,60.2906564
 Kavaljeerintie|
+Finnair Catering|24.938782567999997,60.30169718
 Turvalaaksonkuja|
 Käkikuja|
 Club Femma|24.8541528,60.2611718
@@ -2649,6 +2768,7 @@ Sireenikuja|
 Suutarinkuja|
 Kerokuja|
 Lipputie|
+Finnairin pääkonttori|24.96510061578947,60.31011918947369
 KirsiCut|24.8288764,60.2585233
 Tilhitie|
 Heidehofinkuja|
@@ -2674,6 +2794,7 @@ Kallioruohonkuja|
 Sqashhalli|24.8407367,60.2638998
 Solmu|
 Koukkuniitynpolku|
+Sanomala|24.85156666,60.287567919999994
 Sienestäjänkuja|
 Nygårds|25.1416733,60.2839702
 Lehtokurpanpolku|
@@ -2690,6 +2811,7 @@ Viikinkitie|
 Martinlaaksontie|
 Rinta-Jouppi Caravan|24.8040782,60.3520358
 Paarmarinne|
+Agility Logistics|24.945649777777778,60.29681681111111
 Sipulitie|
 Lady Lane Myyrmäki|24.8560395,60.2616288
 Jokivarrenkuja|
@@ -2704,6 +2826,7 @@ Sireenitie|
 Vantaankallio|
 Oksanmäki|
 Specsavers|24.8535046,60.2597755
+Loke/Itella|24.922080255263154,60.30023113947367
 Hiirakkokuja|
 Turvalaaksontie|
 Vagabonda|24.8048129,60.2563569
@@ -2734,6 +2857,7 @@ Putouspolku|
 Lipunkantajanpolku|
 Vuosaaren satamatie|
 Molly Malones Toppari|24.8552127,60.2616408
+Kaskelan ajotunneli|25.1050903,60.2867854
 Huddingenpolku|
 Hakunilan kotikirkko|25.1095745,60.2783106
 Minkkitie|
@@ -2777,9 +2901,11 @@ Kaskikalliontie|
 Reinontie|
 Tikkuritie|
 Hakkilankaari|
+Nordea Korso|25.075278,60.3502411
 Ojapuistonpolku|
 Mirkun kirja|25.0762736,60.3510362
 Vaskivuoren lukio|24.851343405263158,60.266425347368425
+Budget Sport|24.975531933333336,60.27905221111111
 Tiililammenpuisto|24.812909557142856,60.28067255
 Kallioruohontie|
 Tarinatie|
@@ -2801,6 +2927,7 @@ Korpikontiontie|
 Krakanpolku|
 Noropolku|
 Marmoritie|
+Koivukylän terveysasema|25.059431,60.3195535
 Kaislarinne|
 Sarvijaakontie|
 Leinikkipolku|
@@ -2813,6 +2940,7 @@ Heidehofintie|
 Lentoasemantie|
 Kunnon kauppa|25.0319526,60.2932406
 Korson Aada|25.0762332,60.3501686
+Alclata|24.876410777777778,60.267481355555546
 Holmakuja|
 Salon Piita|24.85352,60.2633341
 Ratsumestarintie|
@@ -2835,6 +2963,7 @@ Pyhän Laurin Kappeli|24.9871736,60.284177292307696
 Nousutie|
 Villisiankuja|
 Ravintola Portti|25.0891664,60.2800787
+MediHeli Vantaa|24.991385242857145,60.312659171428564
 Piianpolku|
 Elinankuja|
 Vanhankyläntie|
@@ -2845,6 +2974,7 @@ Myyrmäki|24.8547697,60.2612369
 Nuottakuja|
 Punamultakuja|
 Lehväpolku|
+Itella Logistics|24.9229678,60.3010248
 Red Onion|24.8543519,60.2607887
 Terveystalo|25.0798266,60.350564
 Vantaanportinkatu|
@@ -2874,6 +3004,7 @@ Lähettilääntie|
 Lustikullantie|
 Vantaan käräjäoikeus|25.0410967,60.298293
 Matkatie|
+Lidl Suomi Pääkonttori|24.874765879999998,60.261553819999996
 Hakopolku|
 Leppäkorven maauimalan leikkipaikka|25.0909591,60.3571354
 Hiekkaharjun paloasema|25.0324689,60.3095796
@@ -2895,6 +3026,7 @@ Pehtoorintie|
 Majavatie|
 Hansinkatu|
 Kuusijärven leikkipaikka|25.112303216666664,60.313563416666675
+Metsotorni|25.08130543125,60.35093036250001
 Piikkikuja|
 Bike Planet Vantaa|24.8261881,60.2811238
 Vannaspolku|
@@ -2920,6 +3052,7 @@ Fasaanirinne|
 Luhdinsola|
 Suosaarentie|
 Etukuva|25.1049551,60.2789283
+Sportia, TOYS"R"US|24.97326403636363,60.27926458181818
 Vierumäentie|
 Teknikontie|
 Saarnikuja|
@@ -3009,9 +3142,11 @@ Ilkantie|
 Virkatie|
 Bike Planet Tammisto|24.9735322,60.2832501
 Rekipuisto|24.77778535625,60.257505175000006
+Martinmiilu|24.85147723,60.27719320999999
 Kampaamo|24.8705717,60.2638211
 Yhtiönpolku|
 Koppakuoriaisentie|
+KWH Freeze|24.9122059,60.322462511764705
 Kitarakuja|
 Kirstinkuja|
 biitsi.fi areena|24.8536965,60.3067232
@@ -3076,6 +3211,7 @@ Ski track|24.7676916,60.2725351
 Neilikkapuisto|25.0389113,60.2899377
 Korikuja|
 Uittokuja|
+Lumon pysäköinti|25.0776418,60.352455
 Luhtitie|
 Luolapolku|
 Kaskipolku|
@@ -3123,6 +3259,7 @@ Länsi-Vantaan Eläinklinikka|24.8569351,60.2626546
 Maisemapolku|
 Malmitie|
 Masku Vantaa, Porttipuisto|25.0896499,60.2802393
+Myyrmäen Toimintakeskus|24.8601561875,60.258260449999995
 Hanskalliontie|
 Luotikuja|
 Harmopolku|
@@ -3151,10 +3288,12 @@ Koskikarankuja|
 Kimalaisenpolku|
 Pudasrinne|
 Metsolanmäen päiväkoti|25.08182942,60.34789242000001
+Posten Logostic|24.92988398,60.29943920000001
 Kotilokuja|
 Naakkatie|
 Kiiltomadontie|
 Pikkukuja|
+Neste (A)|25.0233532,60.305018960000005
 Jukka-Sport|25.0815989,60.3509016
 Hertaksentie|
 Ruukuntekijäntie|
@@ -3199,6 +3338,7 @@ Finnkino Flamingo|24.9696676,60.2904521
 Raappavuorenpolku|
 Tuulensuunkuja|
 Heinäkorventie|
+Tikkurilan Autotalo|25.035162200000002,60.290243219999994
 Kahdeksas tie|
 Hesburger drive-in|
 Marsinpolku|
@@ -3211,6 +3351,7 @@ Eskonkuja|
 Pyökkikuja|
 Kalkkitie|
 Kalliomäenkuja|
+Oskar Engbergin talo|25.12602449,60.34558182999999
 St1 Vantaa Simonkylä|25.0280051,60.3091897
 Tattikuja|
 Sepänmäki|25.1386132,60.2911968
@@ -3218,6 +3359,7 @@ K-Supermarket Herkkupähkinä|24.81016773333333,60.26520168888889
 Seitsemäs tie|
 Lummekuja|
 Uranuksenkuja|
+Leppäkorven pystykuilu|25.10743622,60.357326
 Pyöräkorjaamo|24.8519068,60.268709
 SOL Pesulapalvelut|24.8536805,60.2600999
 Fasaanitie|
@@ -3246,6 +3388,7 @@ Pikkumäenkuja|
 Kuurlakuja|
 Maanmittarintie|
 Rajalantie|
+Vanha saunarakennus|25.05837108,60.29219792
 Karviaiskuja|
 Kannistontie|
 Länsimäen koulu Pallas|25.114920988235298,60.24759625294117
@@ -3282,7 +3425,8 @@ Vuolupolku|
 Neilikkatie|
 Siriuksenpolku|
 Simonkyläntie|
-Korson koulu|25.069149,60.3582411
+Korson koulu|25.06909298461538,60.35810214615385
+Toyota|25.083178753488376,60.3548759627907
 Rajakylän kioski|25.090438459999998,60.250680360000004
 Pyhtäänpolku|
 Kilterinkulma|
@@ -3290,6 +3434,7 @@ Onkikuja|
 Rasinmäki|25.0664425,60.3235751
 Virnatie|
 Silkkisali|25.0371174,60.2891854
+Hakunilan pystykuilu|25.1162157,60.2729441
 Ruskeasannantie|
 Kolkkapolku|
 Raijankuja|
@@ -3317,17 +3462,19 @@ Löydöspuiston Kenttä|24.861514800000002,60.26101668000001
 Hakasuonrinne|
 Sauvatie|
 Torstinkuja|
+P3A|24.969720403846154,60.315100976923084
 Sarakuja|
 Murattitie|
 Peltovuorenkuja|
 Villisianpolku|
 Tarjantie|
 Norpanpiha|
-Byända|
+Byända|25.12776014,60.31964254
 Valkoisenlähteentie|
 Midgårdinkuja|
 Lehväkuja|
 Neste Oil Truck Ansakuja|24.9222587,60.2949709
+Polar|24.956637344444445,60.28809545555556
 Anttilankuja|
 Åbyntie|
 Pirjonrinne|
@@ -3356,6 +3503,7 @@ Luhta Outlet Porttipuisto|25.0894618,60.2800285
 Kehä III|
 Vuohitie|
 Tuulitie|
+Stockmann Outlet, Hobby Hall, Metro-pikatukku|24.973591642857144,60.27501051428571
 Teuvontie|
 Lähdemäentie|
 Karpaattienkuja|
@@ -3366,6 +3514,7 @@ Askistonraitti|
 Optikko Linssi|25.0750442,60.349821
 Fazerintie|
 Salakkakuja|
+K-supermarket Nikinmäki|25.133104620000005,60.34608103999999
 Peltoniemenkuja|
 InfoCare|24.9537342,60.2927278
 Krakankuja|
@@ -3380,6 +3529,7 @@ Tiimari|25.1041719,60.2787023
 Vehkalanmäki|24.8301882,60.2885999
 Leppäkorven koulun hammashoitola|25.0835619,60.3570849
 Vallikuja|
+Myyrmäen entinen terveysasema|24.85172996,60.260338839999996
 GSM-Piste|24.8531981,60.2609767
 Vantaan Mattopesu Ky|24.9453295,60.2933333
 Taikurintie|
@@ -3393,6 +3543,7 @@ Suovapolku|
 Puumerkki|
 Forsbackankuja|
 Koivukylänväylä|
+Metsäntutkimuslaitos|25.054877328260872,60.29053768695653
 Kersantintie|
 Tiilitie|
 Silmukuja|
@@ -3412,6 +3563,7 @@ Voikukankuja|
 Pizza Hott|24.8520164,60.2686427
 Siwa Malminiitty|25.0350651,60.313288
 Kulorastaantie|
+P3B|24.970816303333326,60.313975483333344
 Petanquepuisto|24.83625658181818,60.26016587272728
 Metsälinnun päiväkoti|25.0738748,60.3494586
 Halssinpolku|
@@ -3419,6 +3571,7 @@ Banaanimäki|
 Kuuttikuja|
 Mansikkatie|
 Putouskuja|
+Tiikeri Areena|25.01704247777778,60.29056177777779
 Lipunkantajankuja|
 La Famiglia|24.9692953,60.2905294
 Kodin Ykkönen|24.820906018181816,60.27638130909091

@@ -18,6 +18,7 @@ Martankuja|
 Kauniaistentie|
 Karvasmäentie|
 Heikelintien päiväkoti|24.722315714285717,60.218814571428574
+Levanto Oy|24.711819342857147,60.22334898571428
 Lippajärventie|
 Siirinkuja|
 Jondalintie|
@@ -71,6 +72,7 @@ Marcus Collinin kuja|
 Tunnelitie|
 Suokrouvintie|
 Oppilaskodintie|
+Villa Vallmogård|24.732414286666668,60.21397243333334
 Kauniaisten kirkko|24.728070879166665,60.213241416666676
 Ingankuja|
 Tohtorinkuja|
@@ -121,6 +123,7 @@ Valkonauhantie|
 Rantamajantie|
 Bembölentie|
 Kauppalantie|
+Kauniaisten vesitorni|24.712838172222224,60.218251405555556
 Yrjö Liipolan tie|
 Bio Grani|24.725284,60.2144237
 Kaikupolku|

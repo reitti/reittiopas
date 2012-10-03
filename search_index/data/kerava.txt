@@ -53,11 +53,13 @@ Moukarikuja|
 Vaihdekatu|
 Museopolku|
 Annantie|
+B|25.1099105,60.3968239
 Kukka Koti|25.1095373,60.4006411
 ABC|25.1020294,60.3981922
 Vallinpääntie|
 Muurainkuja|
 Keravan teatteritalo|25.1075361,60.4008589
+HUB Logistics Oy|25.116193105882353,60.41186593529412
 Kankurinpolku|
 Lammaskallionkatu|
 Päivärinteentie|
@@ -72,17 +74,21 @@ Keravan uimahalli|25.092325,60.40837425714285
 Varsapolku|
 Vastapolku|
 Kuusikkotie|
+Elzu|25.0971327,60.38159406923077
 Angervontie|
 Vekaravintti|25.1015998,60.4028772
 Oliver's Antique|25.1362668,60.4015465
 Vesitorninkuja|
+Palvelukeskus Hopeahovi|25.08829,60.41041042941177
 Päivölänkuja|
 Ilmarisentie|
 Terhikintie|
 Sudenkatu|
 Ilveskuja|
 Mustikkakuja|
+Keravan avovankila|25.139922282352945,60.42740480588236
 Jännekatu|
+Keravanjoen koulu|25.12017254,60.403755860000004
 Mäkipolku|
 Keskipellonkatu|
 Kärpänkuja|
@@ -101,6 +107,7 @@ Postlarinkuja|
 Senioripuisto|25.094034111111107,60.40875797777778
 Vanha Kino|25.0989522,60.4028985
 St1 Kerava Santaniitynkatu|25.1116016,60.399104
+Juho-Kusti|25.10434860769231,60.405653015384615
 Sammontie|
 Haavikkopolku|
 Väinämöisentie|
@@ -108,25 +115,31 @@ Sali Pool & Lounge|25.1061159,60.41109673999999
 Tonttukuja|
 Ragdoll|25.0983562,60.4029486
 Sementtitehtaankatu|
-Anttila Kerava|25.1031777,60.4025595
+Savuhovi Oy|25.122908244444446,60.42655546666666
+Anttila Kerava|25.10410408888889,60.40269251111111
 Varpukatu|
+Keravan Taide- ja museokeskus Sinkka|25.108619779999998,60.400895219999995
 Kalevanraitti|
 Dressman|25.1013465,60.4005803
 Keravan kartano|25.1196877,60.4100084
+D|25.1021325,60.4030769
 Marjatantie|
 Varjakontie|
 Kerava-sali|25.1006241,60.4048918
 Saukonkuja|
 Killan raitti|
 Loukkukuja|
+Koff|25.112498455555563,60.38122646666667
 Pölkkypolku|
 Vasamakatu|
 Kantelentie|
 Pub O'Robins|25.0991471,60.4027371
 Punainen Pallo|25.109743,60.3993706
+Ylikeravan kaukolämpökeskus|25.110520881818182,60.40977269090909
 K-Market Kalevantori|25.09003592222222,60.42028596666666
 Kelloliike Soikkeli|25.1001023,60.4033222
 Höyläkuja|
+Alikeravan voimalaitos|25.109926519999995,60.38962686
 Keravan maauimala|25.093125949999997,60.40782473333334
 Kaakkurinkatu|
 Nissen|25.1021432,60.4026309
@@ -135,6 +148,7 @@ Kellobaari|25.105187,60.4048565
 Lepistöntie|
 Teerimäentie|
 Lapilantie|
+SR-rauta|25.14304398095238,60.405975985714285
 Männistöntie|
 Killan koulu|25.082586733333326,60.404424011111104
 Jäspilänkuja|
@@ -143,6 +157,7 @@ Ritakuja|
 Marttilankatu|
 Saviontaival|
 Jokimiehentie|
+Keuda-talo|25.10076388181819,60.40527566666667
 Kielonkuja|
 Kotipizza Kerava|25.0990184,60.4028153
 Porvoontie|
@@ -150,6 +165,7 @@ Karhuntassuntie|
 Wanha Veijari|25.0930568,60.3805847
 Hirvenkatu|
 Luhtaniituntie|
+Kokkikartano|25.104623780000004,60.38912298
 Jäkälätie|
 Kirjaston kahvila|25.1026697,60.4053679
 Onnellinen Kana|25.102247,60.403039
@@ -194,6 +210,7 @@ Oksatie|
 Sirkunpuiston leikkipaikka|25.101399666666666,60.41283658888889
 Palokorvenkuja|
 Karhunkuja|
+Puuverstas|25.13197838,60.42462596
 Vehkalantie|
 Kirjosiivenkuja|
 Keinukallion frisbeegolfrata|25.1402066,60.3834993
@@ -217,6 +234,7 @@ Sompion koirapuisto|25.09710825,60.39644336
 Panama Jack|25.0993589,60.4039043
 Miiluaukio|
 Turjankuja|
+H|25.1125632,60.4104448
 Törmäkuja|
 Nissinojantie|
 Raitakuja|
@@ -233,6 +251,7 @@ Mattopiiat|25.1074167,60.4002097
 Nikkelikuja|
 Ritvatie|
 Mäntyniementie|
+Intelco Oy|25.09413722,60.40469237999999
 Junailijanpolku|
 Niitty-Nummen hoitokoti|25.1279744,60.3716943
 Hormikuja|
@@ -252,6 +271,7 @@ Metsämyllynpolku|
 Cafe Village|25.0992061,60.4038724
 Neste Asemansilta|25.10945424,60.403292439999994
 Riistapolku|
+Vanha pappila|25.110405350000004,60.40266735
 Kauppakaaren kampaamo|25.1015239,60.4029168
 Metsämaanpolku|
 Killan koirapuisto|25.081411042857145,60.405535914285714
@@ -263,7 +283,7 @@ Santaniitynkuja|
 Lapilanpuiston leikkipaikka|25.11638935,60.403592512500005
 Alepa Kerava|25.1097949,60.4000807
 Mode Ulla|25.0988084,60.4037366
-Keravan ammattiopisto|25.0993967,60.3972825
+Keravan ammattiopisto|25.09876466086956,60.3974973173913
 Peltomäenkatu|
 Parkkikuja|
 Provencale|25.103479,60.4050849
@@ -319,10 +339,12 @@ Sementtitehtaanpolku|
 Alepa|25.0896991,60.4085879
 Royal Nepal|25.0992047,60.4030391
 Ainontie|
+Seunala|25.090493371428572,60.401826785714285
 K-citymarket Kerava|25.101073,60.4001797
 Ketjutie|
 Vuorelanmäki|
 Koukkusuontie|
+Pihkaniityn lämpökeskus|25.105625742857143,60.42343654285714
 K-Kenkä|25.1007652,60.4006287
 FIDA lähetystori|25.1091168,60.399387
 Metsäriihenpolku|
@@ -331,6 +353,7 @@ Kalevankatu|
 Kisapolku|
 Vuohenkalmantie|
 Siikiläntie|
+Puumerkki Oy|25.144534540000002,60.406137120000004
 Keravan opisto|25.1009684,60.4024707
 Koukkutie|
 Ahjonrinne|
@@ -403,11 +426,13 @@ Mahlapolku|
 Keskuspuiston leikkipaikka|25.103368433333333,60.406682644444444
 Pörkiöntie|
 Kalevan koulu|25.08813134,60.42001788
+Nikkarin Pysäköinti|25.09820135714286,60.4057897
 Pahkakuja|
 Alasintie|
 Kurkelankatu|
 Mäkituvankuja|
 Rauninkuja|
+Puutarhamyymälä|25.13130348823529,60.423485311764715
 Palomäen leikkipaikka|25.105700566666666,60.39688908333333
 Kipinäkuja|
 Ahdintie|
@@ -416,12 +441,14 @@ Kovasinpolku|
 Kaskelantie|
 Savio|25.0978267,60.3806693
 Heisitie|
+Itä- ja Keski-Uudenmaan hätäkeskus, Helsingin hätäkeskus|25.109705971428575,60.406928057142856
 Ahjontie|
 Käpytie|
 Urputie|
 Viikalankuja|
 Klondyke-talo|25.1022898,60.3817045
 Napoli|25.1089364,60.3988579
+Teollisuushallit|25.134295864705877,60.42658240588236
 Magella|25.0994835,60.403875
 Neste Oil Express|25.1129986,60.3992479
 Loimukuja|
@@ -430,6 +457,7 @@ Iso-Hollonkuja|
 Tukkipolku|
 Angervonkuja|
 Subway|25.0991122,60.4038035
+Savion seurakuntatalo|25.0924765,60.38115260000001
 Puolukkakuja|
 Vanamonkuja|
 Matkahuoltoasiamies|25.1046489,60.4050148
@@ -439,11 +467,14 @@ Vesuripolku|
 Silaspolku|
 Aurorankuja|
 Puusepänkatu|
+Kerhotalo|25.091826077777778,60.40778408888889
 Metsäladontie|
 Annankuja|
 Tursontie|
 Alko|25.1034988,60.4014921
+H&M|25.132235553846158,60.40446283846154
 Lidl Kerava|25.1112906,60.3998214
+Seurakuntakeskus|25.11312594736842,60.40115728947369
 Panimokuja|
 Sirkunpolku|
 Metsolantie|
@@ -463,6 +494,7 @@ Moukaritie|
 Jaakkolan päiväkoti|25.11468784,60.396260139999995
 Myyränkuja|
 Saviontie|
+Suomen ilmastointitukku Oy|25.12300758,60.426220220000005
 Apilakuja|
 Kurkelanniityn leikkipaikka|25.10690392,60.415445840000004
 Jurvalanpolku|
@@ -474,6 +506,7 @@ Kerava Areena|25.107638785714286,60.413988519047635
 Keravan Cityseurakunta|25.104632,60.404964
 Pyöräliike Lundberg|25.1094459,60.3974635
 HopLop Kerava|25.1138308,60.3890151
+Finsoffat Oy|25.12539322,60.426074740000004
 Liikuntapäiväkoti Pomppu|25.091814488888886,60.408618377777785
 Kuikankatu|
 Kauppakaaren leikkipaikka|25.0977266,60.4038022
@@ -487,6 +520,7 @@ Suomalainen kirjakauppa|25.0998717,60.4033659
 Kyläpolku|
 Ahjonraitti|
 Kirveskuja|
+Viertolan päiväkeskus|25.09927111964285,60.40032187857145
 Heikkilän kotiseutumuseo|25.1126997,60.4064293
 Ollilantie|
 Kytökuja|
@@ -512,6 +546,7 @@ Uimalankuja|
 Liesitie|
 Norkkotie|
 Viertolantie|
+Metalliverstas|25.13379195454546,60.42573389090909
 K-market Ahjontori|25.146915554545455,60.40193574545454
 K-Supermarket Oregano|25.0916183,60.3806325
 Virontie|
@@ -561,6 +596,7 @@ Alikeravantie|
 Ketunkuja|
 Pelikauppa|25.1037307,60.4023481
 Nikkarin koulu ja lukio|25.0988607,60.4054128
+Europress Oy|25.12734799230769,60.430707299999995
 Keinukalliontie|
 Keravan terveyskeskus|25.0874811,60.4094808
 Kerava|25.1061367,60.4043745
@@ -605,7 +641,9 @@ Muurarintie|
 Neste Oil K-market Kerava|25.1104369,60.394387
 Caliente|25.1042965,60.4044291
 Parkour-puisto|25.0959057,60.4002026
+Dae-Tek Oy|25.12652213333333,60.427861044444434
 Toukolantie|
+Lapilan kartano|25.11446547777778,60.40375657777778
 Uunitie|
 Myrtinojantie|
 Kurkelan koirapuisto|25.103771324999997,60.4144956
@@ -639,6 +677,8 @@ Kulmakonditoria|25.1025259,60.4024548
 Filmtown|25.1012984,60.403874
 Jokelantie|
 Länsikaari|
+Airam|25.102578299999998,60.38671038
+Tapimer Oy|25.12532664,60.42531414
 S-market|25.097753387500003,60.4040528
 Katajatie|
 Nahkimokuja|
@@ -656,6 +696,7 @@ Hong Kong Kerava|25.1115394,60.3875711
 Jehovantodistajien valtakunnansali|25.097781711111114,60.391827811111106
 Pentik Kerava|25.1026785,60.4023364
 Heikkiläntie|
+Metos Oy Ab|25.132177612903224,60.40112683548388
 Vilholantie|
 Opéra|25.099931,60.3978783
 Pihkaniitynkatu|
@@ -670,17 +711,20 @@ Salavapuisto|25.09408428,60.381542409999994
 Luotolantie|
 Keravan kuvataidekoulu|25.10289520769231,60.40433503846153
 McDonald's|25.1015745,60.4015033
+Nuorisotalo Häkki|25.089498595454543,60.42058093181818
 Kirvesmiehentie|
 Kotoisa|25.1002858,60.4038445
 Kyläkirppis|25.0985461,60.4035512
 Jalavakuja|
 Tiaisenpolku|
+Kinnarps Oy|25.12967956,60.40494894
 Näsiätie|
 Riimupuiston leikkipaikka|25.148625459999998,60.39238626
 Kervo svenska daghem|25.0857073,60.3799932
 Tervahaudankatu|
 Isonkiventie|
 Virpitie|
+Tuko logistics|25.11342451875,60.41255823125
 Pizza Express|25.0951739,60.4215133
 Tölttipolku|
 Postlarinkatu|
@@ -693,6 +737,7 @@ Olavintie|
 Laurintie|
 Käenkatu|
 Sarvimäentie|
+Chipsters|25.10500220740741,60.387945955555566
 Käkimäentie|
 Savion sivuapteekki|25.0920648,60.3804759
 Katajakallionkuja|
@@ -744,6 +789,7 @@ Keisarinkuja|
 Lehmuspolku|
 R-kioski|25.1046538,60.4048729
 Mäkitie|
+Kalevan seurakuntatalo|25.091879175,60.4167771375
 Keijukuja|
 Rintalantie|
 Jäspilänkatu|
@@ -755,6 +801,7 @@ Koulukuja|
 Sorsakorventie|
 Kotimäen palvelukeskus|25.11097204,60.4050467
 Peikkokuja|
+Anttila Logistiikkakeskus|25.11254747142857,60.374042957142855
 Mäkitorpankuja|
 Suomelantie|
 Ahjonkaarre|
@@ -773,6 +820,7 @@ Ansakuja|
 Salon Ri-Ni Oy|25.104172,60.4049806
 Veräjäpolku|
 Intersport Kerava|25.097624,60.4036679
+Paasikiven nuorisokylä|25.13715797,60.40589336000001
 Jussilankuja|
 Pihkakatu|
 Savion päiväkoti|25.089280459999998,60.38232794
@@ -790,6 +838,7 @@ Savenvalajankatu|
 Kaarnapolku|
 Jokelanpolku|
 Savelankuja|
+Tapaamispaikka|25.133167731818183,60.424758077272735
 Ravintola Revanssi|25.1045247,60.404474
 Juhonkuja|
 Jousikatu|
@@ -811,6 +860,7 @@ Sahankatu|
 Simeonintie|
 Style & Beauty Julia|25.0998802,60.4037795
 Nurmikatu|
+Kanniston lämpökeskus|25.09355278,60.391425520000006
 Seljankuja|
 Keravan taidemuseo|25.1086555,60.4009082
 Honkakuja|
@@ -818,6 +868,7 @@ Taikatie|
 Sinisiivenkuja|
 Peltotie|
 Niinikankaantie|
+Volmari|25.10396358571429,60.40505082857142
 Korpinkatu|
 Pihkaniitynpuiston leikkipaikka|25.1009692,60.4209702
 Muhevainen|25.0817851,60.4094812

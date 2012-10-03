@@ -59,12 +59,14 @@ Winellintie|
 Kaarenpiha|
 Kalvholmintie|
 lenkkipolku|
+Geodeettinen laitos|24.545707872727277,60.16101688181818
 Lammaskallio|24.4366378,60.2808926
 Kunnan Kesäsiirtola|24.4473264,60.0051037
 Solvikintie|
 Vivastenintie|
 Sale Kantvik|24.3959834,60.0924769
 Kaksosvuorentie|
+peltinen kaarihalli|24.512200540000002,60.24410636
 Karlbergintie|
 Koivurinteentie|
 Läntinen Bölentie|
@@ -292,6 +294,7 @@ Morbackantie|
 Metsärinteentie|
 Lidl Kirkkonummi|24.4354298,60.1192126
 Lindalintie|
+Masalanportti|24.535660613333334,60.15284037333334
 Mutkankuja|
 Lövkullantie|
 Nybackanranta|
@@ -313,6 +316,7 @@ Nykullantie|
 Nummitie|
 Hirsala Golf|24.528568646969703,60.11937159393939
 Vanha Lillträskintie|
+Varuboden Prisma|24.446021464999998,60.11791233
 Purotie|
 Laitamaantie|
 Kappelintie|
@@ -368,6 +372,7 @@ Kirkkonummen kirkko|24.4392985,60.1248441
 Lillvedsintie|
 Sofian maailma|24.5437316,60.0996712
 Kuusalantie|
+K-Market Tuulensuu|24.4429925,60.26888052
 Alitalontie|
 Yhdyskuja|
 Puoshaankuja|
@@ -415,6 +420,7 @@ Mintun kulma|24.4389432,60.1221736
 Kurkistonpolku|
 Östermalmintie|
 Leinikkitie|
+Hvittorp|24.489133090909093,60.17401492727274
 Ervastintie|
 Stenbackantie|
 Lähdekuja|
@@ -431,6 +437,7 @@ Vedenemonpolku|
 Ojangontie|
 Toukotie|
 Stenbackavägen|
+Oy LM Ericsson Ab|24.514443466666666,60.13048417333333
 Pitkäkalliontie|
 Vanha Sairaalantie|
 Brunnebergintie|
@@ -466,6 +473,7 @@ Mäntytie|
 Kiseleffin puistotie|
 Jättiläisenrinne|
 Jorvaksenniitty|
+toinen mökki järvessä|24.42769286,60.2421532
 Pokrova|24.5058486,60.137152
 Tammitie|
 Ratatie|
@@ -485,6 +493,7 @@ Harvsintie|
 Vetehisentie|
 Kettutie|
 Kruunuhaankuja|
+Harju 1|24.38621888,60.09081569999999
 Pippurintie|
 Kopsunmäki|
 Navalantie|
@@ -506,6 +515,7 @@ Haukankäyrä|
 Omenatie|
 Salmitie|
 Rauhalantie|
+Harju 2|24.38733118,60.09128618
 Pappilanmäki|
 Frasibäckintie|
 Tinanpellontie|
@@ -530,6 +540,7 @@ Veturitallintie|
 Ankarlaxintie|
 Sirkkutie|
 Gesterbynkaari|
+grillikatos|24.4048301,60.242088
 Susisuontie|
 Sarvirinne|
 Wiikintie|
@@ -626,6 +637,7 @@ Pikkupolku|
 Kolmenkylänkuja|
 Sommarbronpolku|
 Esikkotie|
+Anttilan marjatila|24.496608342857144,60.22632871428572
 Korkkullantie|
 Morsfjärdintie|
 Klinthallantie|
@@ -649,6 +661,7 @@ Nissnikunraitti|
 Pääskyrinne|
 Riihitie|
 Allastie|
+mökki järvessä|24.42975286,60.23384324
 Järsöntie|
 Omenapolku|
 Buraksentie|
