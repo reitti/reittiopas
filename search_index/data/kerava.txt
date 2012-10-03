@@ -14,6 +14,7 @@ Unto Suomisenkuja|
 El Bul|25.1043394,60.4045478
 Peurankuja|
 Ollilankuja|
+Siwa|25.0934272,60.391215
 Sienikatu|
 Aapontie|
 Pursutie|
@@ -68,6 +69,7 @@ Mäkipolku|
 Keskipellonkatu|
 Kärpänkuja|
 Porvoonkatu|
+Valintatalo|25.0961138,60.4129619
 Otsontie|
 Ravikuja|
 Kiurunpolku|
@@ -205,6 +207,7 @@ Metsämaanpolku|
 Keihäskuja|
 Cafe Intro|25.101443,60.4039779
 Santaniitynkuja|
+Alepa Kerava|25.1097949,60.4000807
 Keravan ammattiopisto|25.0993967,60.3972825
 Peltomäenkatu|
 Parkkikuja|
@@ -243,6 +246,7 @@ Varpupolku|
 Puualhonpolku|
 Mäyräkorventie|
 Sementtitehtaanpolku|
+Alepa|25.0896991,60.4085879
 Royal Nepal|25.0992047,60.4030391
 Ainontie|
 Ketjutie|
@@ -349,6 +353,7 @@ Puusepänkatu|
 Metsäladontie|
 Annankuja|
 Tursontie|
+Lidl Kerava|25.1112906,60.3998214
 Panimokuja|
 Sirkunpolku|
 Metsolantie|
@@ -399,6 +404,7 @@ Uimalankuja|
 Liesitie|
 Norkkotie|
 Viertolantie|
+K-Supermarket Oregano|25.0916183,60.3806325
 Virontie|
 Rosso|25.1029318,60.4016906
 Leivonpolku|
@@ -516,6 +522,7 @@ Sammaltie|
 Sieponpolku|
 Hakkuutie|
 Työvoimatoimisto|25.1027066,60.4027506
+Hong Kong Kerava|25.1115394,60.3875711
 Heikkiläntie|
 Vilholantie|
 Opéra|25.099931,60.3978783

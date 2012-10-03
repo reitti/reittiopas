@@ -27,6 +27,7 @@ Kanervatie|
 Keltakuja|
 Pirttitie|
 Mäkimatintie|
+S-Market Korso|25.0752592,60.3488912
 Tavastkullantie|
 Shell Rajatorppa|24.8277658,60.2552701
 Sotkarinne|
@@ -65,6 +66,7 @@ Korson päiväkoti|25.0761317,60.3525036
 Kaakelikaari|
 Hakunilan Huolto Oy|25.109708,60.2800638
 Hakasuontie|
+S-Market Koivukylä|25.0559617,60.3231514
 Kuutinpiha|
 Kuntokuja|
 Ruotsintie|
@@ -107,6 +109,7 @@ Talvikkipolku|
 Iltatie|
 Kaksi Hanaa|25.1033708,60.2730503
 Tullimiehentie|
+Siwa|25.0236922,60.3057594
 Rataspolku|
 Merikotkanpolku|
 Ottelukuja|
@@ -205,6 +208,7 @@ Matarinpolku|
 Kuntopuiston päiväkoti|25.1136006,60.245328
 Rakuunatie|
 Kestinkuja|
+Valintatalo Askisto|24.7853808,60.2867605
 Uomatie|
 Vilhontie|
 Jousimiehentie|
@@ -278,6 +282,7 @@ Pickwick Pub Korso|25.0760527,60.3507073
 Suokeijunkuja|
 Ilkanpolku|
 Mittalinja|
+Valintatalo|25.0964495,60.3276377
 Rantakukankuja|
 Malmipolku|
 Tiilenpolttajankuja|
@@ -445,6 +450,7 @@ Kerkkätie|
 Lounasravintola Sapuska|24.8555489,60.2608264
 Särkkäkuja|
 Soittajankuja|
+S-Market Myyrmäki|24.8539467,60.2628048
 Ailakkitie|
 Peltokulma|
 Seliminkuja|
@@ -526,6 +532,7 @@ Lehtikuja|
 Sinivuokontie|
 Insinöörinkuja|
 Pihapolku|
+Lidl|24.8542831,60.2787288
 Kallioimarteentie|
 Kesätie|
 Naapurinkuja|
@@ -787,6 +794,7 @@ Marian Konditoria|24.8559586,60.2711752
 Suoniityntie|
 Lammaskuja|
 Kulkuskuja|
+K-supermarket Koivuhaka|24.9989496,60.2882924
 Meripihkatori|
 Jalaskuja|
 Toivonkuja|
@@ -884,6 +892,7 @@ Korpitie|
 Venuksentie|
 Jyrinkuja|
 Rautaportti|
+K-Citymarket Tammisto|24.972885,60.2733627
 Liesigrilli|24.8549949,60.2610826
 Kokkokalliontie|
 Sinikantie|
@@ -1449,6 +1458,7 @@ Kukankuja|
 Rahtikuja|
 Kaurakuja|
 Tanhukuja|
+Prisma Jumbo|24.9661104,60.2906453
 Vaunukalliontie|
 Ilvestie|
 Mikonkuja|
@@ -1481,6 +1491,7 @@ Kyyhkyspolku|
 Jönsaksentie|
 Pähkinäpolku|
 Palttinatie|
+Lidl Koivukylä|25.0616833,60.3226087
 Kylväjänpolku|
 Pistiäisenpolku|
 Liinarinne|
@@ -1621,6 +1632,7 @@ Kivimäen Kebab-pizzeria|24.8589645,60.277323
 Marjakuusenpolku|
 Säynetie|
 Ruokokuja|
+K-supermarket Pähkinärinne|24.804373,60.2622057
 Teijantie|
 Kontiokuja|
 Kiiltomäki|
@@ -1665,6 +1677,7 @@ Kaavinkuja|
 Jokivarren koulu|25.1128153,60.3465412
 Latokuja|
 Nikinmäen päiväkoti|25.1355829,60.3457913
+K-Citymarket Myyrmäki|24.8543025,60.2598916
 Viljakuja|
 Karpalokuja|
 Hiirimäentie|
@@ -1732,6 +1745,7 @@ Kellarimäentie|
 Sotilaskorventie|
 Voikukantie|
 Vesankuja|
+Lidl Metsola|25.1056216,60.3451892
 Vetokannas|24.8797301,60.2697677
 Sinikuja|
 Linderinpolku|
@@ -1958,6 +1972,7 @@ Jänöpolku|
 Hesburger Vantaa Jumbo|24.96276,60.29172
 Kolohongankuja|
 Hiekkaharjun punaisten muistomerkki 1918|25.0525103,60.3004925
+S-Market Korson asema|25.0795025,60.3510078
 Pitokuja|
 Rajakylänpolku|
 Varistonpolku|
@@ -1994,6 +2009,7 @@ Harpaksentie|
 Viertotie|
 Palokuja|
 Myötätuulentie|
+K-Supermarket Yliveto|25.0316718,60.293709
 Tennistie|
 Peippotie|
 Saniaispolku|
@@ -2119,6 +2135,7 @@ Peippikuja|
 Kuuratie|
 Kuutamotie|
 Madekuja|
+S-market|24.8536584,60.2787761
 Kulttuurikeskus Orvokki|25.038979,60.2990272
 Pizza Taxi|24.8521067,60.260921
 Maarinkunnaantie|
@@ -2258,6 +2275,7 @@ Ruusuvuorenpolku|
 Kortepolku|
 Viputie|
 Konttipolku|
+K-Citymarket Jumbo|24.9649956,60.2906564
 Kavaljeerintie|
 Turvalaaksonkuja|
 Käkikuja|
@@ -2332,6 +2350,7 @@ Kalliolaaksontie|
 Esterinkuja|
 Kierrepolku|
 Peltolantori|
+K-Supermarket Louhela|24.8562405,60.2710994
 Pitkäkoski|24.890916,60.2681086
 Aseman Krouvi|24.8529501,60.2703234
 Putouspolku|
@@ -2917,6 +2936,7 @@ Mansikkatie|
 Putouskuja|
 Lipunkantajankuja|
 La Famiglia|24.9692953,60.2905294
+K-Supermarket Korso|25.0792257,60.3503301
 Lassenkuja|
 Kierrekuja|
 Miekkapolku|

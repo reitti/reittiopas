@@ -129,6 +129,7 @@ Grin & Gos|24.7602386,60.1692408
 Scandic|24.7557623,60.2072186
 Heisipuunkuja|
 Matinkylän apteekki|24.7390931,60.161848
+K-Market Soukkari|24.6701834,60.1420248
 Pitäjänportti|
 Kaivosmiehentie|
 Vääräjärventie|
@@ -637,7 +638,9 @@ Ukkohauentie|
 Hösmärinpuiston päiväkoti|24.675796,60.1994452
 Reserviläisentie|
 Finnoontie|
+Lidl|24.808071,60.2183711
 Raikorventie|
+S-Market Lähderanta|24.7408961,60.2409413
 Sotilaspojantie|
 Peltokukka|
 Tillinmaanpuisto|
@@ -678,6 +681,7 @@ Meripoiju|
 Bellinrinne|
 Lippajärven uimapaikka|24.733905,60.2310579
 Veräjäpellonkatu|
+K-Citymarket Sello|24.8100837,60.2181338
 Kattilarinne|
 Tuhkurinranta|
 Taavinsuo|
@@ -692,6 +696,7 @@ Laajalahden kirjasto|24.8057197,60.2040755
 Kioski-kahvila Sokeritoppa|24.8125762,60.2160728
 Läkkipolku|
 Koukkuniemenportti|
+Lidl Mikkelä|24.636604,60.207764
 Karhusuontie|
 Åminnentie|
 Hiidenkuja|
@@ -802,6 +807,7 @@ Jahtikuja|
 Simpukkaranta|
 Kytöpolku|
 Rastaalantie|
+Citymarket|24.7380444,60.1615071
 Oravamäentie|
 Neste Mankkaa|24.7679178,60.2052957
 Ajurinmäen päiväkoti|24.8163628,60.2253094
@@ -1216,6 +1222,7 @@ Fonseenintie|
 Tapiontie|
 Marjastajanpolku|
 Sorvaranta|
+Alepa|24.7681897,60.2118528
 Sävelpolku|
 Puolarmetsänkatu|
 Vallikallionkatu|
@@ -1394,6 +1401,7 @@ Ullantorppa|
 Nahkakuja|
 Kiveliönrinne|
 Tykkitie|
+K-supermarket Kilo|24.7815074,60.2169266
 Skataholmanpolku|
 Lansankallionkuja|
 Niittykuja|
@@ -1644,6 +1652,7 @@ Magnus Enckellin kuja|
 Keisarinnantie|
 Mustikkatie|
 Sotaveteraanien muistomerkki|24.6534318,60.2081679
+K-Supermarket Mankkaa|24.7673044,60.2046872
 Nuottalahti|
 Punavarpusenpolku|
 Klovinpellontie|
@@ -1847,6 +1856,7 @@ Laitmanintie|
 Puolarmaari|
 Puronvarsi|
 Tiistilänraitti|
+S-Market Kivenlahti|24.6591676,60.152743
 Scandic Colonial bar & Kitchen|24.755419,60.2070054
 Juppinlaita|
 Mankkaan Pizza Boss|24.7655384,60.196389
@@ -1896,6 +1906,7 @@ Penkkikuja|
 Iirismäki|
 Keskuskuja|
 Ylisrinne|
+Seilori|24.6570364,60.1486373
 Espoonaukio|
 Kalajärven kirjasto|24.7398113,60.3059722
 Kuoppamäki|
@@ -2385,7 +2396,7 @@ Pizza taxi|24.8131738,60.2206233
 Madekuja|
 Vääräjärven telttailualue|24.6225707,60.308836
 Mankkaanpuro|
-S-market|24.7581476,60.2698805
+S-market|24.7578364,60.2698353
 Palje|
 Karakaarenkuja|
 Pizza Taxi|24.7408088,60.3049691
@@ -2396,6 +2407,7 @@ Kaskenpäänkuja|
 Pizza Kebab Adanüs|24.7933461,60.1757174
 Matinlahdenkatu|
 Isonkorventie|
+S-Market|24.6606077,60.2037298
 Etelä-Tapiolan koulu ja lukio|24.7936528,60.1782774
 Tiistinkallio|
 Reunakuja|
@@ -2671,6 +2683,7 @@ Vehkasaarentie|
 Vilkkupoiju|
 Ahvenkuja|
 Kaskenpää|
+S-Market Malminmäki|24.6787309,60.1810073
 Vallityöläisenpolku|
 Solisevankuja|
 Ristihaantie|
@@ -2946,6 +2959,7 @@ Palomäentie|
 Louhoskulma|
 Törmänsivu|
 Joel Rundtin tie|
+M-Market|24.7677975,60.2479875
 Pihlajapolku|
 Rajaportti|
 Ravintola Ukkohauki|24.7740257,60.1641145
@@ -3011,8 +3025,10 @@ Uudentorpantie|
 Kimalaisenpolku|
 Oravanhäntä|24.7933471,60.1759627
 Tanssikoulu Kokko|24.7664427,60.1951878
+K-Market Pohjantähti|24.7936869,60.1832342
 Sinimäenrinne|
 Tuurinpohja|
+Prisma Sello|24.8101374,60.2186294
 Kappalaisentie|
 Espoon VPK|24.6491891,60.2057808
 Kuitinpolku|
@@ -3030,6 +3046,7 @@ Paimenenportti|
 Otakuja|
 Nuottakuninkaantie|
 Illansuu|
+Hong Kong|24.6529866,60.2167851
 Itäinen rantatie|
 Lansanportti|
 Pajukuja|
@@ -3144,6 +3161,7 @@ Hietaniemenkuja|
 Söderskog|
 Kuningattarenkuja|
 Yökuja|
+KKK-market|24.6565883,60.2039617
 Puolarniitty|
 Virastopiha|
 Honkakuja|
@@ -3200,6 +3218,7 @@ Ylämyllyntie|
 Haaparousku|
 Ratsukatu|
 Odilammentie|
+K-market|24.7006033,60.2405659
 Vehaksenpolku|
 Westendintie|
 Vinoristintie|
@@ -3305,6 +3324,7 @@ Kummelipolku|
 Vehkarinne|
 Kalmarinranta|
 Katiskakuja|
+Prisma Iso Omena|24.7375304,60.1620733
 Punatulkuntie|
 Luuvankulma|
 Taavin koti ja kahvila|24.812652,60.179205

@@ -150,6 +150,7 @@ Kurkistonkuja|
 Edistie|
 Käärmekuusenpolku|
 Sundsberginraitti|
+Prisma Kirkkonummi|24.4462866,60.1180072
 Pelastustie|24.5638437,60.0519708
 Pilvimetsä|
 Oravatie|
@@ -189,6 +190,7 @@ Vileninkuja|
 Asematie|
 Rovastinpolku|
 Vanha Porkkalantie|
+K-Citymarket|24.4441947,60.1201309
 Hiekkaharjuntie|
 Myllykallio|
 Vanha Myllylammentie|
@@ -271,6 +273,7 @@ Isonniityntie|
 Mosabackantie|
 Morbackantie|
 Metsärinteentie|
+Lidl Kirkkonummi|24.4354298,60.1192126
 Lindalintie|
 Mutkankuja|
 Lövkullantie|
