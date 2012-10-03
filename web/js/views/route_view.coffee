@@ -33,7 +33,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       this
 
     select: =>
-      Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: @index, legIndex: undefined)
+      Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: @index, legIndex: undefined, originOrDestination: undefined)
       false
 
     _lineCode: () ->

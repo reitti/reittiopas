@@ -70,7 +70,7 @@ define [
         # Invoke event handlers explicitly since the newly contructed views won't receive this event.
         legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
         @routeView.onRoutesChanged(routes, routeParams)
-      @map.getStreetView()?.setVisible(false)
+      @map.getStreetView()?.setVisible(false) unless routeParams.originOrDestination?
       @adjustPan(routeParams)
 
     onStreetViewVisibilityChanged: (a) =>
@@ -84,7 +84,10 @@ define [
 
     adjustPan: (routeParams) =>
       if routeParams.legIndex?
-        @panToLegBounds(routeParams.legIndex)
+        if routeParams.originOrDestination?
+          @panToLegEnd(routeParams.legIndex, routeParams.originOrDestination)
+        else
+          @panToLegBounds(routeParams.legIndex)
       else
         @panToRouteBounds()
 
@@ -94,6 +97,10 @@ define [
     panToLegBounds: (legIndex) =>
       @map.fitBounds @routeView.getBoundsForLeg(legIndex)
       
+    panToLegEnd: (legIndex, originOrDestination) =>
+      @map.panTo @routeView.getLegEndCoordinates(legIndex, originOrDestination)
+      @map.setZoom 18
+
     centerMap: (lat, lng) ->
       latLng = new google.maps.LatLng lat, lng
       @map.setCenter(latLng)

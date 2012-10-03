@@ -24,6 +24,9 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
     getBoundsForLeg: (legIndex) ->
       @legViews[legIndex].getBounds()
 
+    getLegEndCoordinates: (legIndex, originOrDestination) ->
+      @legViews[legIndex]?.getEndCoordinates(originOrDestination)
+      
     onRoutesChanged: (routes, routeParams) =>
       if routes is @routes and routeParams.routeIndex is @index and !routeParams.legIndex?
         _.first(@legViews)?.showOriginMarker()

@@ -3,21 +3,22 @@ define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
 
     initialize: () ->
       @route '', 'homeView'
-      @route /([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)(?:\/([^\/]+))?(?:\/([^\/]+))?\/?/, 'routesView'
+      @route /([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)(?:\/([^\/]+))?(?:\/([^\/]+))?(?:\/([^\/]+))?\/?/, 'routesView'
 
     homeView: () =>
       Reitti.Event.trigger 'home'
 
-    routesView: (from, to, departArrive, datetime, transportTypes, routeIndex, legIndex) =>
+    routesView: (from, to, arrivalOrDeparture, datetime, transportTypes, routeIndex, legIndex, originOrDestination) =>
       routeIndex = 0 if !routeIndex or routeIndex is ''
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)
         to: Utils.decodeURIComponent(to)
         date: if datetime is 'now' then 'now' else Utils.parseDateTimeFromMachines(datetime)
-        arrivalOrDeparture: departArrive
+        arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.split(',')
         routeIndex: parseInt(routeIndex, 10)
         legIndex: if legIndex?.length > 0 then parseInt(legIndex, 10) else undefined
+        originOrDestination: originOrDestination
 
     navigateToRoutes: (params) ->
       path = [Utils.encodeURIComponent(params.from),
@@ -27,6 +28,9 @@ define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
               params.transportTypes.join(',')]
       if params.routeIndex?
         path.push params.routeIndex
-        if params.legIndex? then path.push params.legIndex
+        if params.legIndex?
+          path.push params.legIndex
+          if params.originOrDestination?
+            path.push params.originOrDestination
 
       @navigate '/' + path.join('/'), trigger: true

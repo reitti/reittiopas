@@ -5,8 +5,8 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
 
   class MapLocationMarker extends google.maps.OverlayView
 
-    constructor: (@location, @name, @map, @anchor = 'left') ->
-      @setMap(@map)
+    constructor: ({@leg, @location, @name, @anchor, @originOrDestination}) ->
+      @setMap(@leg.map)
 
     onAdd: ->
       @div = $(template(anchor: @anchor, content: @name))[0]
@@ -14,6 +14,10 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
       $('.streetview-icon', @div).on 'click', @onStreetViewClicked
       $(@div).on 'click', @onClicked
       @_checkStreetViewAvailability()
+
+    onRemove: ->
+      @div.parentNode.removeChild(@div)
+      @div = null
 
     draw: ->
       {x, y} = @getProjection().fromLatLngToDivPixel(@location)
@@ -35,19 +39,20 @@ define ['jquery', 'hbs!template/map_location_marker', "async!http://maps.googlea
       @div.style.top = "#{y}px"
 
     onStreetViewClicked: =>
-      @map.getStreetView().setPosition(@location)
-      @map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 0)
-      @map.getStreetView().setVisible(true)
+      @leg.map.getStreetView().setVisible(true)
+      @leg.map.getStreetView().setPosition(@location)
+      @leg.map.getStreetView().setPov(heading: @heading, pitch: 0, zoom: 0)
 
     onClicked: =>
-      @map.panTo @location
-      @map.setZoom 18
+      Reitti.Router.navigateToRoutes _.extend(@leg.routeParams, legIndex: @leg.index, originOrDestination: @originOrDestination)
       false
 
-    onRemove: ->
-      @div.parentNode.removeChild(@div)
-      @div = null
+    onRoutesChanged: (routes, routeParams) =>
+      if @leg.isSelectedIn(routes, routeParams) and routeParams.originOrDestination is @originOrDestination
+        if @leg.map.getStreetView().getVisible()
+          @onStreetViewClicked()
 
+ 
     @markerAnchor: (latLng, latLngs) ->
       if @_isNorthMost(latLng, latLngs)
         'top'

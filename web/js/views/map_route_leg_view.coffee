@@ -36,7 +36,7 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
       this
 
     onClicked: () =>
-      Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: @index)
+      Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: @index, originOrDestination: undefined)
 
     onRoutesChanged: (routes, routeParams) =>
       if @isSelectedIn(routes, routeParams) and @line.getPath()?
@@ -44,22 +44,40 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
         @showDestinationMarker()
       else
         @hideMarkers()
+      @originMarker?.onRoutesChanged(routes, routeParams)
+      @destMarker?.onRoutesChanged(routes, routeParams)
 
     showOriginMarker: =>
       return unless @originLatLng()?
       anchor = MapLocationMarker.markerAnchor(@originLatLng(), @line.getPath())
-      @originMarker ?= new MapLocationMarker(@originLatLng(), @leg.originName(), @map, anchor)
+      @originMarker ?= new MapLocationMarker
+        leg: this
+        originOrDestination: 'origin'
+        location: @originLatLng()
+        name: @leg.originName()
+        anchor: anchor
 
     showDestinationMarker: =>
       return unless @originLatLng()?
       anchor = MapLocationMarker.markerAnchor(@destinationLatLng(), @line.getPath())
-      @destMarker ?= new MapLocationMarker(@destinationLatLng(), @leg.destinationName(), @map, anchor)
+      @destMarker ?= new MapLocationMarker
+        leg: this
+        originOrDestination: 'destination'
+        location: @destinationLatLng()
+        name: @leg.destinationName()
+        anchor: anchor
 
     originLatLng: ->
       @line?.getPath()?.getAt(0)
 
     destinationLatLng: ->
       @line?.getPath()?.getAt(@line.getPath().getLength() - 1)
+
+    getEndCoordinates: (originOrDestination) ->
+      if originOrDestination is 'origin'
+        @originLatLng()
+      else
+        @destinationLatLng()
 
     hideMarkers: =>
       @originMarker?.setMap null
