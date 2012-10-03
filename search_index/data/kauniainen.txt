@@ -51,6 +51,7 @@ Kavallintie|
 Kylätie|
 Torpantie|
 Leantie|
+St1 Time Out Kauniainen Bensowinkuja|24.7391158,60.208975
 Palokunnankuja|
 Heikelinkuja|
 Mätäskuja|
@@ -72,6 +73,7 @@ Sailonkuja|
 Smedsintie|
 St1 Kauniainen Bensowinkuja|24.7390557,60.2090917
 Alppitie|
+Sportti Thurman|24.7304751,60.2109222
 Bredanportti|
 Kandidaatinkuja|
 Tornikuja|

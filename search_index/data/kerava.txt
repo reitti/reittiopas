@@ -1,12 +1,16 @@
+Cazze optikko|25.1014499,60.4029526
 Kanervatie|
 Liinakkotie|
 Tapiolantie|
 Loitsutie|
+Autosalpa|25.1133673,60.3901771
 Niinikatu|
 Apollonkuja|
 Kauppakaari|
 Savirunninkatu|
+Pikku Hurmuri|25.1135903,60.3894477
 Terästie|
+Kaunis Koti|25.0996224,60.4037518
 Suorannankatu|
 Sibeliuksentie|
 Louhenkuja|
@@ -20,6 +24,7 @@ Aapontie|
 Pursutie|
 Teboil|25.0990769,60.3911449
 Tierantie|
+Peltolan paja|25.1246099,60.3607462
 Sariolantie|
 Ahjonsilta|
 Askelkuja|
@@ -33,6 +38,7 @@ Koppelonkatu|
 Tuohitie|
 Menninkäiskuja|
 Tuijantie|
+Liivikauppa|25.0985708,60.4037686
 Porttipolku|
 Neulaskuja|
 Näädänkuja|
@@ -41,6 +47,7 @@ Moukarikuja|
 Vaihdekatu|
 Museopolku|
 Annantie|
+Kukka Koti|25.1095373,60.4006411
 ABC|25.1020294,60.3981922
 Vallinpääntie|
 Muurainkuja|
@@ -57,6 +64,8 @@ Varsapolku|
 Vastapolku|
 Kuusikkotie|
 Angervontie|
+Vekaravintti|25.1015998,60.4028772
+Oliver's Antique|25.1362668,60.4015465
 Vesitorninkuja|
 Päivölänkuja|
 Ilmarisentie|
@@ -69,12 +78,13 @@ Mäkipolku|
 Keskipellonkatu|
 Kärpänkuja|
 Porvoonkatu|
-Valintatalo|25.0961138,60.4129619
+Valintatalo|25.104173,60.4054481
 Otsontie|
 Ravikuja|
 Kiurunpolku|
 Koirapolku|
 Raiviokuja|
+Hiuskaari|25.1001721,60.4036865
 Sampotunneli|
 Palopolku|
 Martinkyläntie|
@@ -85,9 +95,12 @@ Sammontie|
 Haavikkopolku|
 Väinämöisentie|
 Tonttukuja|
+Ragdoll|25.0983562,60.4029486
 Sementtitehtaankatu|
+Anttila Kerava|25.1031777,60.4025595
 Varpukatu|
 Kalevanraitti|
+Dressman|25.1013465,60.4005803
 Keravan kartano|25.1196877,60.4100084
 Marjatantie|
 Varjakontie|
@@ -99,8 +112,12 @@ Pölkkypolku|
 Vasamakatu|
 Kantelentie|
 Pub O'Robins|25.0991471,60.4027371
+Punainen Pallo|25.109743,60.3993706
+Kelloliike Soikkeli|25.1001023,60.4033222
 Höyläkuja|
 Kaakkurinkatu|
+Nissen|25.1021432,60.4026309
+Musti ja Mirri|25.109066,60.4000141
 Kellobaari|25.105187,60.4048565
 Lepistöntie|
 Teerimäentie|
@@ -128,7 +145,9 @@ Pohjolantie|
 Moreenitie|
 Velhokuja|
 Keski-Uudenmaan eläinlääkäriasema|25.1089123,60.3990858
+CM Hiustalo|25.101655,60.4005668
 Pälvitie|
+Lindex|25.0984528,60.4037858
 Laitekuja|
 Nuolikuja|
 Mielikintie|
@@ -144,6 +163,7 @@ Junailijankatu|
 Ala-Koivikon raitti|
 Vesikonkuja|
 Kivitaskunkatu|
+Huonekalukirppis|25.0991719,60.4034904
 Lumikonkuja|
 Montessoripäiväkoti Mio|25.0937666,60.3911146
 Lemminkäisentie|
@@ -179,6 +199,7 @@ Törmäkuja|
 Nissinojantie|
 Raitakuja|
 Myyränpolku|
+Vomma|25.0988904,60.4035154
 Taulamatintie|
 Tehtaanmäenkatu|
 Tuusulantaival|
@@ -186,6 +207,7 @@ Mesimarjakuja|
 Paatsamantie|
 Rahkapolku|
 Terhotie|
+Mattopiiat|25.1074167,60.4002097
 Nikkelikuja|
 Ritvatie|
 Mäntyniementie|
@@ -194,31 +216,38 @@ Niitty-Nummen hoitokoti|25.1279744,60.3716943
 Hormikuja|
 Jurvalantie|
 Päivärinteenpolku|
+Fenno Optikko|25.1011314,60.4005964
 Hesburger Kerava|25.1005526,60.4004796
 Nissilänkuja|
 Peltolantie|
 Ritvakuja|
+Ompelimo Silkki-Nahka Ylänkö|25.0998518,60.4026967
 Huhtakuja|
 Asemantie|
+Parturikeskus|25.0984981,60.4028272
 Metsämyllynpolku|
 Cafe Village|25.0992061,60.4038724
 Riistapolku|
+Kauppakaaren kampaamo|25.1015239,60.4029168
 Metsämaanpolku|
 Keihäskuja|
 Cafe Intro|25.101443,60.4039779
 Santaniitynkuja|
 Alepa Kerava|25.1097949,60.4000807
+Mode Ulla|25.0988084,60.4037366
 Keravan ammattiopisto|25.0993967,60.3972825
 Peltomäenkatu|
 Parkkikuja|
 Provencale|25.103479,60.4050849
 Keravan kirjasto|25.1030945,60.4055214
 Sarviniitynkatu|
+Instrumentarium|25.1001377,60.4036047
 Kuusiaidankuja|
 Hemmolantie|
 Torikatu|
 Nurmikkokuja|
 Vesurikuja|
+Ruusukuva|25.1017096,60.4035296
 Itäkaari|
 Sinebrychoffinaukio|
 Untamontie|
@@ -229,8 +258,10 @@ Impivaarantie|
 Nopsasiivenkuja|
 Rajamäentie|
 Tuluskuja|
+Seppälä Kerava|25.1018398,60.4005498
 Keinukallion laskettelukeskus|25.1350759,60.3843609
 Sampolanraitti|
+Expert|25.1065324,60.4009604
 Keravan yhteiskoulu|25.0968999,60.4004473
 Kuusisaarenkuja|
 Killan Mestari|25.0842197,60.4090065
@@ -242,6 +273,8 @@ Kantokatu|
 Kokontie|
 Keskuskoulu|25.1010438,60.4063701
 Kotopellonkatu|
+Keravan Lukko Oy|25.0935229,60.4021405
+Keravan Löytö|25.1103069,60.3994913
 Varpupolku|
 Puualhonpolku|
 Mäyräkorventie|
@@ -249,10 +282,14 @@ Sementtitehtaanpolku|
 Alepa|25.0896991,60.4085879
 Royal Nepal|25.0992047,60.4030391
 Ainontie|
+K-citymarket Kerava|25.101073,60.4001797
 Ketjutie|
 Vuorelanmäki|
 Koukkusuontie|
+K-Kenkä|25.1007652,60.4006287
+FIDA lähetystori|25.1091168,60.399387
 Metsäriihenpolku|
+DNA Kauppa|25.1010977,60.40292
 Kalevankatu|
 Kisapolku|
 Vuohenkalmantie|
@@ -263,6 +300,7 @@ Ahjonrinne|
 Papintie|
 Kulloontie|
 Tuurankuja|
+Parturi-kampaamo Ilvonen Terhi|25.1003373,60.4038961
 Kankurinkatu|
 Salavapuiston leikkipaikka|25.093845,60.3820432
 Nyyrikinkuja|
@@ -283,6 +321,7 @@ Jokimiehenkuja|
 Lapilanpolku|
 Kumitehtaanpolku|
 Ukonkatu|
+Hydromarket|25.108188,60.3970202
 Lapilankuja|
 Lepistönkuja|
 Välikuja|
@@ -301,6 +340,7 @@ Kuovinkatu|
 Oksapolku|
 Jormolanpolku|
 Habita|25.1011889,60.4029842
+Saletti parturi-kampaamo|25.1100768,60.397733
 Kajavankatu|
 Kannistonkaarre|
 Päivölänrinne|
@@ -308,11 +348,13 @@ Kuparisepänkatu|
 Tuusulantie|
 Panunkatu|
 Jussilanpiha|
+Tyykipuoti|25.1022938,60.4028983
 Suitsitie|
 Lääkärikeskus Aava Keravan Terveyspuisto|25.0901257,60.4083826
 Juurakkokatu|
 Trappukorventie|
 Keskikatu|
+Rautia Kerava|25.1140883,60.388854
 Vihtatie|
 Mahlapolku|
 Pörkiöntie|
@@ -334,6 +376,7 @@ Urputie|
 Viikalankuja|
 Klondyke-talo|25.1022898,60.3817045
 Napoli|25.1089364,60.3988579
+Magella|25.0994835,60.403875
 Neste Oil Express|25.1129986,60.3992479
 Loimukuja|
 Visatie|
@@ -353,6 +396,7 @@ Puusepänkatu|
 Metsäladontie|
 Annankuja|
 Tursontie|
+Alko|25.1034988,60.4014921
 Lidl Kerava|25.1112906,60.3998214
 Panimokuja|
 Sirkunpolku|
@@ -374,6 +418,7 @@ Jurvalanpolku|
 Naavakatu|
 Kultasepänkatu|
 Keravan Cityseurakunta|25.104632,60.404964
+Pyöräliike Lundberg|25.1094459,60.3974635
 HopLop Kerava|25.1138308,60.3890151
 Kuikankatu|
 Kauppakaaren leikkipaikka|25.0977266,60.4038022
@@ -381,6 +426,7 @@ Hirsipolku|
 Pihkaniityntie|
 Eläinlääkäriasema Kauris|25.1141398,60.3895961
 Jalaspolku|
+Suomalainen kirjakauppa|25.0998717,60.4033659
 Kyläpolku|
 Ahjonraitti|
 Kirveskuja|
@@ -394,9 +440,11 @@ Imppalanmäki|
 Keravan Pizza ja Kebab Palvelu|25.0959793,60.4130791
 Tahkotie|
 Teboil Express|25.1113312,60.3984281
+Hyvä Olo|25.1000625,60.4039293
 Ratapellonkuja|
 Karpalokuja|
 Nybackantie|
+Intro Music|25.1012815,60.4039601
 Pihlajakatu|
 Urpiaisentie|
 Keinukallio|25.1337489,60.3838555
@@ -420,6 +468,7 @@ Hongyun|25.10033,60.4032892
 Apostolinen seurakunta|25.1066028,60.4011623
 Kalervonkuja|
 Jäspilänpolku|
+Autotalo Laakkonen|25.1017435,60.3972839
 Sepontie|
 Virnakuja|
 Harjupolku|
@@ -442,11 +491,13 @@ Seljantie|
 Lintukuja|
 Koivunoksa|
 Savelantie|
+Prisma Kerava|25.1036669,60.4018051
 Keravan tanssiopisto|25.0936941,60.4020923
 Ahjonkulma|
 Aurapolku|
 Alikeravantie|
 Ketunkuja|
+Pelikauppa|25.1037307,60.4023481
 Nikkarin koulu ja lukio|25.0988607,60.4054128
 Keinukalliontie|
 Keravan terveyskeskus|25.0874811,60.4094808
@@ -456,8 +507,10 @@ Kalliotie|
 Ratatie|
 Hiidenkiventie|
 Keravan lounas|25.1087123,60.3915752
+Sonera Kauppa Kerava|25.1022348,60.402583
 Ritarinkuja|
 Killan Kievari|25.0846994,60.4088741
+RTV|25.1107488,60.3974149
 Metsätorpankuja|
 Huhtimontie|
 Hiirenkuja|
@@ -477,6 +530,7 @@ Vihtapolku|
 Purilaspolku|
 Jaakkolankuja|
 Karrintie|
+Keravan Auto|25.1109342,60.3982391
 Juolukkakuja|
 Talmantie|
 Tapulikierto|
@@ -484,6 +538,7 @@ Käenpolku|
 Palokuja|
 Saniaispolku|
 Muurarintie|
+Neste Oil K-market Kerava|25.1104369,60.394387
 Caliente|25.1042965,60.4044291
 Parkour-puisto|25.0959057,60.4002026
 Toukolantie|
@@ -494,6 +549,7 @@ Jussilantie|
 Kaskitie|
 Laaksotie|
 Nelikuja|
+Väripirtti|25.1098792,60.3970347
 Käpypolku|
 Riimutie|
 Asemanaukio|
@@ -501,6 +557,7 @@ Topiaantie|
 Venlantie|
 Kääpäkatu|
 Rauhalantie|
+Hongheng|25.1040415,60.4062953
 Lahdentie|
 Caravan|25.1004432,60.4030372
 Keravantie|
@@ -512,17 +569,23 @@ Jäspilänpiha|
 Tuulikinkatu|
 Vellamontie|
 Kulmakonditoria|25.1025259,60.4024548
+Filmtown|25.1012984,60.403874
 Jokelantie|
 Länsikaari|
 Katajatie|
 Nahkimokuja|
 Tiilitehtaankatu|
+Keravan Horse & Rider|25.1094897,60.3994156
+PääAsema|25.1056221,60.4044493
 Kaupinkuja|
 Sammaltie|
+DataSky|25.104455,60.4046063
 Sieponpolku|
 Hakkuutie|
+Kultajousi|25.1023444,60.4021524
 Työvoimatoimisto|25.1027066,60.4027506
 Hong Kong Kerava|25.1115394,60.3875711
+Pentik Kerava|25.1026785,60.4023364
 Heikkiläntie|
 Vilholantie|
 Opéra|25.099931,60.3978783
@@ -530,12 +593,15 @@ Pihkaniitynkatu|
 Haapatie|
 Silokalliontie|
 Keravan ensimmäinen apteekki|25.1003201,60.4035556
+Uudenmaan Herkku Oy|25.0998132,60.4036934
 Keskustan hammashoitola|25.0997086,60.4021932
 Turskatie|
+Kenkäkauppa Mekka|25.112715,60.3892738
 Luotolantie|
 McDonald's|25.1015745,60.4015033
 Kirvesmiehentie|
 Kotoisa|25.1002858,60.4038445
+Kyläkirppis|25.0985461,60.4035512
 Jalavakuja|
 Tiaisenpolku|
 Näsiätie|
@@ -546,6 +612,7 @@ Virpitie|
 Pizza Express|25.0951739,60.4215133
 Tölttipolku|
 Postlarinkatu|
+SpecSavers|25.1025742,60.4022834
 Kävelykadun hammashoitola|25.0986702,60.4037605
 Kullervonpolku|
 Timontie|
@@ -557,14 +624,18 @@ Käkimäentie|
 Savion sivuapteekki|25.0920648,60.3804759
 Katajakallionkuja|
 Hakalanraitti|
+Varjon kukka|25.0994483,60.4031702
+Parturi-kampaamo Vision|25.1000192,60.4038905
 Keskuspuisto|25.1029103,60.4064981
 Paulakuja|
+Keravan Autohuolto|25.1087491,60.3986789
 Palopesä|
 Ravintola Portti|25.1137707,60.3891552
 Haltiakuja|
 Kiitäjänkuja|
 Nissilänpiha|
 Star Pizza|25.1040174,60.4049409
+Oliverin kirppis|25.1086813,60.3969779
 Sarapolku|
 Haapakuja|
 Keravan keskusapteekki|25.1019905,60.4027316
@@ -573,10 +644,14 @@ Vilkastuksentie|
 Virrenkulma|
 Metsurinkuja|
 Harkkotie|
+Aleksintorin auto|25.1086339,60.3975178
 Karhipolku|
+Timanttiset - Keravan kello|25.1021652,60.4029751
 Keravan Torin Pizza-Kebab|25.0979858,60.4022387
 Savion koulu|25.0956249,60.3830586
 Sikakorvenpolku|
+HOK-Elannon hautaustoimisto|25.1004834,60.4030703
+JataPet|25.1097496,60.3968199
 Varsatie|
 City-voimailusali|25.1004339,60.4038775
 Pumpputehtaankatu|
@@ -589,6 +664,7 @@ Kyllikintie|
 Koivulantie|
 Keisarinkuja|
 Lehmuspolku|
+R-kioski|25.0957331,60.3804211
 Mäkitie|
 Keijukuja|
 Rintalantie|
@@ -608,16 +684,21 @@ Palokorvenkatu|
 Jaakkolantie|
 Karhunkatu|
 Veräjäkuja|
+Kukka Riina|25.0902307,60.40807
 Haavikkotie|
 Ansakuja|
+Salon Ri-Ni Oy|25.104172,60.4049806
 Veräjäpolku|
+Intersport Kerava|25.097624,60.4036679
 Jussilankuja|
 Pihkakatu|
 Myrtinojankuja|
 Vetehisenpolku|
 Kivisillantie|
 Kultasiivenkuja|
+Piilo-ommel|25.0988499,60.4037373
 Asemansilta|
+Hiussalonki|25.1074499,60.4008136
 Laineentie|
 Savenvalajankatu|
 Kaarnapolku|
@@ -642,6 +723,7 @@ RockMe|25.1026089,60.4024231
 Seponkuja|
 Sahankatu|
 Simeonintie|
+Style & Beauty Julia|25.0998802,60.4037795
 Nurmikatu|
 Seljankuja|
 Keravan taidemuseo|25.1086555,60.4009082
@@ -651,11 +733,13 @@ Sinisiivenkuja|
 Peltotie|
 Niinikankaantie|
 Korpinkatu|
+Muhevainen|25.0817851,60.4094812
 Joukahaisentie|
 Koivikontie|
 Konstankulma|
 Vaahteratie|
 Ruukinkuja|
+Keravan muovi ja lelu|25.1095525,60.3990429
 Rolls Burger|25.0992544,60.3911408
 Santaniitynkatu|
 Violet|25.1102513,60.3992874
@@ -678,5 +762,7 @@ Palosenkatu|
 Ilmattarentie|
 Tukkilantie|
 Töyrykuja|
+Petele|25.10715,60.4009352
+Automaalaamo Custom Paint|25.12469,60.3605162
 Club Feeniks|25.1136763,60.3893162
 Nahkurinpolku|

@@ -15,6 +15,7 @@ Harakantie|
 Hevosenkavio|
 Raaseporin käräjäoikeus/Kirkkonummen istuntosali|24.4392285,60.1223246
 Hanhilahdentie|
+Siwa|24.4221873,60.2746107
 Kanervamäentie|
 Kirnukallionpolku|
 Teboil|24.4444,60.1189
@@ -59,6 +60,7 @@ Lammaskallio|24.4366378,60.2808926
 Kunnan Kesäsiirtola|24.4473264,60.0051037
 Solvikintie|
 Vivastenintie|
+Sale Kantvik|24.3959834,60.0924769
 Kaksosvuorentie|
 Karlbergintie|
 Koivurinteentie|
@@ -139,6 +141,7 @@ Meriniityntie|
 Värströmintie|
 Rajakummuntie|
 Laajakalliontausta|
+Sale|24.5362572,60.1582654
 Pilvikuja|
 Kirkkonummi|24.4388778,60.1197039
 Rajakuja|
@@ -205,6 +208,7 @@ Siltaranta|
 Puronsuuntie|
 Majvikintie|
 Luomanmäki|
+Alko Kirkkonummi Munkinmäki|24.4463061,60.117697
 Vanha Hommaksentie|
 Paasitie|
 Nahkurinpiha|
@@ -305,6 +309,7 @@ Tampajankannas|
 Tampaja, Haapajärvi|24.4293459,60.2333451
 Metsäkuja|
 Pro Games|24.4638676,60.2438564
+K-Extra|24.4473976,60.2230116
 Neste Oil Express|24.443552,60.1152669
 Dåvitsvägen|
 Pohjatuulentie|
@@ -319,6 +324,7 @@ Pappilantie|
 Kotipizza|24.4435434,60.1203998
 Kuusitie|
 Kauhalantie|
+R-kioski Veikkola|24.4430278,60.2697569
 Abramsbyntie|
 Neidonkalliontie|
 Kantvikintie|
@@ -338,6 +344,7 @@ Stora Brändö|24.601253,60.044457
 Sisar Ellenintie|
 Lamminjärventie|
 Autioniityntie|
+Expert Pamelux|24.4400129,60.1185635
 Kirkkonummen katukeittiö|24.4434135,60.124138
 Korkkullankallio|
 Kirkkonummen kirkko|24.4392985,60.1248441
@@ -546,6 +553,7 @@ Jeppaksentie|
 Hummelrödslanintie|
 Lammenpolku|
 Masalantie|
+K-Market Masala|24.5351708,60.1574497
 Kirsikkatie|
 Broåkerintie|
 Vesper|24.422586,60.2743633
@@ -581,6 +589,7 @@ Omenakuja|
 Haapapuronrinne|
 Norrbackantie|
 Mäkitie|
+R-Kioski|24.5358818,60.158447
 Lehtikuusentie|
 Hvittotpintie|
 Virkatie|
