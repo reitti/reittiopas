@@ -17,12 +17,14 @@ Käsityönkatu|
 Martankuja|
 Kauniaistentie|
 Karvasmäentie|
+Heikelintien päiväkoti|24.722315714285717,60.218814571428574
 Lippajärventie|
 Siirinkuja|
 Jondalintie|
 Palokunnantie|
 Ersintie|
 Turuntie|
+Betleheminkirkko|24.722410999999997,60.20837914285713
 Kerankuja|
 Helenankuja|
 Eteläinen suotie|
@@ -33,11 +35,13 @@ Venevalkamantie|
 Kavallinrinne|
 Junghansinkuja|
 Dosentintie|
+Granhultsskolan|24.71313185294118,60.21661389411765
 Stenberginkuja|
 Maisterintie|
 Moms|24.7287505,60.2106078
 Sveanpolku|
 Asematie|
+Kasavuoren koulu|24.703360059259257,60.21545446296296
 Stenbergintie|
 Jalmarinpolku|
 Borgintie|
@@ -51,11 +55,15 @@ Kavallintie|
 Kylätie|
 Torpantie|
 Leantie|
+Svenska skolcentrum|24.72409814594595,60.21430978378378
+Kaunialan sotavammasairaala|24.698277986956523,60.219887837681156
 St1 Time Out Kauniainen Bensowinkuja|24.7391158,60.208975
 Palokunnankuja|
 Heikelinkuja|
+Suomen Raamattuopisto|24.736923054545453,60.21378098181819
 Mätäskuja|
 Koivuhaanpolku|
+Betlehemskyrka|24.722410999999997,60.20837914285713
 Anna-Muorin tie|
 Helsingintie|
 Päärynäkuja|
@@ -63,12 +71,14 @@ Marcus Collinin kuja|
 Tunnelitie|
 Suokrouvintie|
 Oppilaskodintie|
+Kauniaisten kirkko|24.728070879166665,60.213241416666676
 Ingankuja|
 Tohtorinkuja|
 Magnus Hagelstamin tie|
 Stockmanninkuja|
 Kauniaisten kaupunginkirjasto|24.7257877,60.2108404
 Läntinen koulupolku|
+Smedsin kenttä|24.730086566666667,60.20706899999999
 Sailonkuja|
 Smedsintie|
 St1 Kauniainen Bensowinkuja|24.7390557,60.2090917
@@ -93,6 +103,8 @@ Kirkkotie|
 Laaksotie|
 Vanha tienhaara|
 Bensowinkuja|
+Sahara|24.7166448,60.21528568
+Mäntymäen koulu|24.715331447058812,60.21303829019606
 Vesitorninpolku|
 S-market|24.7274019,60.2126129
 S-Market|24.7288971,60.2101462
@@ -101,6 +113,7 @@ Karapellontie|
 K-Market Kauniainen|24.7298617,60.2111163
 Matkakuja|
 Urheilutie|
+Kasavuoren luonnonsuojelualue|24.68381840277777,60.21245256944446
 Mariantie|
 Rantamajankuja|
 Kauniaisten Apteekki|24.7267342,60.2099053
@@ -111,6 +124,7 @@ Kauppalantie|
 Yrjö Liipolan tie|
 Bio Grani|24.725284,60.2144237
 Kaikupolku|
+Terveyskeskus|24.716010352941172,60.214526011764704
 Ratapolku|
 Mäkitie|
 Hesburger Kauniainen Grani|24.73439,60.20999

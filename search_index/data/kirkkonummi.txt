@@ -11,6 +11,7 @@ Forsdahlintie|
 Lukkarinkuja|
 Länsilenkki|
 Peuramaantie|
+Gästerbyn lehtometsikkö (luonnonsuojelualue)|24.48598043666667,60.08376538333333
 Harakantie|
 Hevosenkavio|
 Raaseporin käräjäoikeus/Kirkkonummen istuntosali|24.4392285,60.1223246
@@ -30,6 +31,7 @@ Puoshaantie|
 Kivilammentie|
 Tolsantie|
 Asentajantie|
+Framnäsin nurmikenttä|24.52686534,60.15572414
 Sepänkylänkuja|
 Ingelsintie|
 Satamatie|
@@ -52,6 +54,7 @@ Joutsensalmi|
 Linturannantie|
 Lövuddintie|
 Ramsaynkuja|
+Navala FBK|24.444750746153847,60.24580798461539
 Winellintie|
 Kaarenpiha|
 Kalvholmintie|
@@ -72,6 +75,7 @@ Siikaranta|24.5003304,60.2791437
 Solbergintie|
 Kirkkotallintie|
 Axbodantie|
+Framnäsin hiekkakenttä|24.52809162,60.154608100000004
 Muonamiehenkuja|
 Paadistenkaari|
 Orvokkitie|
@@ -81,6 +85,7 @@ Upinniementie|
 Vanha Peuramaantie|
 Jeggarsintie|
 Masalan kirkko|24.5329314,60.1585324
+Tallholmenin luonnonsuojelualue|24.53250525205225,60.01902019160442
 Rajakalliontie|
 Kuninkaantie|
 Brudholmintie|
@@ -94,7 +99,7 @@ Sinipiiantie|
 Masantie|
 Suolampi|
 Lohansuonpolku|
-Peuramaa Golf|24.4648984,60.1027404
+Peuramaa Golf|24.472868897777783,60.098972415555565
 Kirkkonummentie|
 Klobbsundintie|
 Hommaksentie|
@@ -120,6 +125,7 @@ Neidonpolku|
 Punahilkankuja|
 Hvitträskintie|
 Jeppaksenhaka|
+Veikkolan urheilupuisto|24.434768565,60.26911582000001
 Cafe Porkkala|24.4558098,60.0079558
 Långvik|24.5695316,60.1035986
 Karhusuontie|
@@ -136,6 +142,7 @@ Karlsborgintie|
 Porkkala Marin|24.4231941,59.9829756
 Munkinmäentie|
 Överbyntie|
+Gillobackan luonnonsuojelualue|24.490924203539823,60.1249169619469
 Roholmintie|
 Meriniityntie|
 Värströmintie|
@@ -181,8 +188,10 @@ Lapinkyläntie|
 Uudenniityntie|
 Kantomäki|
 Tinanrinne|
+Björkön luonnonsuojelualue|24.6404858,60.1290815
 Peurapolku|
 Vanha Rantatie|
+Koskentorin esikoulu|24.4456001,60.27169282727272
 Abrasintie|
 Itäinen Bölentie|
 Ankis|24.4587842,60.2224763
@@ -206,6 +215,7 @@ Siirappitie|
 Metsähovintie|
 Siltaranta|
 Puronsuuntie|
+Laajakallion Koulu|24.471580442105253,60.12222516315789
 Majvikintie|
 Luomanmäki|
 Alko Kirkkonummi Munkinmäki|24.4463061,60.117697
@@ -225,6 +235,7 @@ Hällnäsintie|
 Särkijärventie|
 Torpantie|
 Metsäpolku|
+Masalan ampumarata|24.548240959999998,60.14296084
 Pilvitie|
 Pohjoispiha|
 Puukirkontie|
@@ -274,6 +285,8 @@ Pilvipelto|
 Nybronpiha|
 Lumikinkuja|
 Isonniityntie|
+Sarfvik Golf|24.59275123814432,60.144274387285215
+Kappeli|24.45749302,60.23809298
 Mosabackantie|
 Morbackantie|
 Metsärinteentie|
@@ -298,6 +311,7 @@ Bisarintie|
 Nikunpolku|
 Nykullantie|
 Nummitie|
+Hirsala Golf|24.528568646969703,60.11937159393939
 Vanha Lillträskintie|
 Purotie|
 Laitamaantie|
@@ -307,6 +321,7 @@ Ruhnuntie|
 Länsituulenkuja|
 Tampajankannas|
 Tampaja, Haapajärvi|24.4293459,60.2333451
+Vuorenmäen koulu ja päiväkoti|24.43834518,60.26933357
 Metsäkuja|
 Pro Games|24.4638676,60.2438564
 K-Extra|24.4473976,60.2230116
@@ -326,12 +341,14 @@ Kuusitie|
 Kauhalantie|
 R-kioski Veikkola|24.4430278,60.2697569
 Abramsbyntie|
+Kantvikin kenttä|24.394581255555554,60.091637688888895
 Neidonkalliontie|
 Kantvikintie|
 Myllypellontie|
 Torsvikintie|
 Tinapolku|
 Mattantie|
+Jolkbyn päiväkoti|24.466998114285712,60.12891677142857
 Bergstadintie|
 Saltfjärdintie|
 Kylmäläntie|
@@ -349,6 +366,7 @@ Kirkkonummen katukeittiö|24.4434135,60.124138
 Korkkullankallio|
 Kirkkonummen kirkko|24.4392985,60.1248441
 Lillvedsintie|
+Sofian maailma|24.5437316,60.0996712
 Kuusalantie|
 Alitalontie|
 Yhdyskuja|
@@ -376,6 +394,7 @@ Storträskintie|
 Rajapolku|
 Knuutinlaakso|
 Luostarinrinne|
+K-Rauta|24.426485446153848,60.11683661538461
 Rusthollinkuja|
 Neidonkaari|
 Bredvassintie|
@@ -416,11 +435,13 @@ Pitkäkalliontie|
 Vanha Sairaalantie|
 Brunnebergintie|
 Adantpolku|
+Mössön-saaren luonnonsuojelualue|24.5356862,60.01978822222223
 Rajanotkontie|
 Humalistonmäki|
 Laajakallionkaari|
 Jorvaksenpuisto|
 Pakrintie|
+Heikkilän koulu|24.466479633333336,60.12844966
 Kotieläintila|24.4446437,60.0746256
 Sillankulma|
 Långstrandintie|
@@ -438,6 +459,7 @@ Hiekkamäentie|
 Karhunkorva|
 Hopeahaka|
 Eskonmäentie|
+Sepän koulu ja Masalan lukio|24.530790592307696,60.156417423076924
 Hötersandintie|
 Sommarbrontie|
 Mäntytie|
@@ -578,6 +600,7 @@ Samkullantie|
 Knuutintie|
 Kotikuja|
 Sjöhemintie|
+Järsön  luonnonsuojelualue|24.452081181355933,60.03757675423728
 Kotiniitynrinne|
 Hampaksentie|
 Mäntypolku|
@@ -586,10 +609,12 @@ Jussinniitty|
 Vanha Heikkiläntie|
 Ratapolku|
 Omenakuja|
+Haapajärven kirkko|24.45483712307692,60.25264093846154
 Haapapuronrinne|
 Norrbackantie|
+Vestergårdin metsä (luonnonsuojelualue)|24.54403178297873,60.13270194042554
 Mäkitie|
-R-Kioski|24.5358818,60.158447
+R-Kioski|24.4401222,60.119822
 Lehtikuusentie|
 Hvittotpintie|
 Virkatie|
@@ -609,6 +634,7 @@ Finnbyntie|
 Sarfvikinkuja|
 Kotiniityntie|
 Langnäsintie|
+Kirkkonummen kunnantalo|24.451150520000002,60.12121585999999
 Vetehisenpolku|
 Kivisillantie|
 Syvävirrantie|
@@ -633,7 +659,8 @@ Pizza Service|24.4385213,60.1233199
 Kuuselankuja|
 Kalliokuja|
 Neste Veikkola|24.4448008,60.2692046
-Vaunu paikkoja|24.5635379,60.0585881
+Saltfjärdenin luonnonsuojelualue|24.492200999999994,60.09395353125001
+Vaunu paikkoja|24.5648789,60.0594127
 Westerkullantie|
 Österbyntie|
 Koulupolku|
@@ -651,10 +678,12 @@ Toritie|
 Malmen|
 Työmiehenpolku|
 Muhunpolku|
+Veikkolan koulu|24.445306004444447,60.271107848888875
 Oikkalantie|
 Sammalnotko|
 Kelokuja|
 Piennarkuja|
+Puutarhaliike Reiman Oy|24.511143933333333,60.13450607777777
 Kirkkonummen pääkirjasto|24.4381101,60.1253759
 Törnäsintie|
 Bronrinne|
@@ -666,10 +695,12 @@ Pääskytie|
 Rilaxintie|
 Räätäli Bäckströmin kuja|
 Mattankalliontie|
+Omnia  Kirkkonummi|24.43525741111111,60.11777544444445
 Röda Stugan|24.4450556,60.254407
 Evitskogintie|
 Vilhonkummuntie|
 Drusibackantie|
 Bjönsinpolku|
 Västergårdintie|
+Veikkolan kirjasto|24.43604867272727,60.271922654545456
 Vuohimäentie|

@@ -9,12 +9,11 @@ function process {
   osmosis\
     --read-pbf $OSM\
     --bounding-polygon file=$1\
-    --tag-filter accept-ways highway=* \
-    --tag-filter reject-ways highway=motorway,motorway_link\
+    --tag-filter accept-ways \
     --tag-filter accept-nodes \
     --tag-filter reject-relations\
     --write-xml -\
-   | java -jar ../../osm-extraction/target/osm-extraction-0.1.0-SNAPSHOT-standalone.jar\
+   | java -Xmx1024M -jar ../../osm-extraction/target/osm-extraction-0.1.0-SNAPSHOT-standalone.jar\
    > $2
 }
 
