@@ -34,12 +34,10 @@ Kavallinrinne|
 Junghansinkuja|
 Dosentintie|
 Stenberginkuja|
-Uimahalli|24.7119552,60.215709
 Maisterintie|
 Moms|24.7287505,60.2106078
 Sveanpolku|
 Asematie|
-Samis|24.7208283,60.2138719
 Stenbergintie|
 Jalmarinpolku|
 Borgintie|
@@ -70,12 +68,10 @@ Magnus Hagelstamin tie|
 Stockmanninkuja|
 Kauniaisten kaupunginkirjasto|24.7257877,60.2108404
 Läntinen koulupolku|
-Petas|24.7083415,60.2238868
 Sailonkuja|
 Smedsintie|
 St1 Kauniainen Bensowinkuja|24.7390557,60.2090917
 Alppitie|
-Kaupungintalo|24.7278112,60.2093836
 Bredanportti|
 Kandidaatinkuja|
 Tornikuja|
@@ -90,7 +86,6 @@ Lehmustie|
 Yhtiöntie|
 Kauniainen|24.7287655,60.2110655
 Smedsinportti|
-Työväen akatemia|24.7153597,60.2214782
 Kulovalkeantie|
 Kirkkotie|
 Laaksotie|
@@ -98,7 +93,6 @@ Vanha tienhaara|
 Bensowinkuja|
 Vesitorninpolku|
 Bjorndals Cafe|24.7272249,60.2103182
-Liikekeskus|24.7273232,60.2095687
 Karapellontie|
 Matkakuja|
 Urheilutie|
@@ -107,13 +101,11 @@ Rantamajankuja|
 Kauniaisten Apteekki|24.7267342,60.2099053
 Valkonauhantie|
 Rantamajantie|
-Kasavuoren koulukeskus|24.7036208,60.2139668
 Bembölentie|
 Kauppalantie|
 Yrjö Liipolan tie|
 Bio Grani|24.725284,60.2144237
 Kaikupolku|
-Terveyskeskus|24.7159068,60.2142884
 Ratapolku|
 Mäkitie|
 Hesburger Kauniainen Grani|24.73439,60.20999
