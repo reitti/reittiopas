@@ -20,6 +20,7 @@ define ['moment'], (moment) ->
       24: '#193695' # Vantaa service lines
       25: '#193695' # Region night buses
       36: '#193695' # Kirkkonummi internal bus lines
+      38: '#193695' # Undocumented, assumed bus
       39: '#193695' # Kerava internal bus lines
 
     @language: () ->
