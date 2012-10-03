@@ -36,7 +36,7 @@ class Trie
       str = placeParts[idx..placeParts.length - 1].join(' ')
       @build "#{str.trim()}, #{city.trim()}", name, loc
 
-  build: (str, name, loc, priority) ->
+  build: (str, name, loc) ->
     node = @root
     for i in [0...str.length]
       node = node.ensure(str.charAt(i))
