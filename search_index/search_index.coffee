@@ -3,16 +3,21 @@ load 'vertx.js'
 class Node
   constructor: (@prefix) ->
     @children = {}
-    
+    @contents = []
+
   ensure: (ch) ->
     @children[ch.toLowerCase()] ?= new Node(@prefix + ch)
     
   get: (ch) ->
     @children[ch]
     
+  add: (item) ->
+    @contents.push item
+
   putMatches: (to, n) ->
-    if @name?
-      to.push {name: @name, coords: @loc}
+    for itm in @contents
+      return 0 if n <= 0
+      to.push itm
       n -= 1
     for own ch,child of @children
       return 0 if n <= 0
@@ -31,12 +36,11 @@ class Trie
       str = placeParts[idx..placeParts.length - 1].join(' ')
       @build "#{str.trim()}, #{city.trim()}", name, loc
 
-  build: (str, name, loc) ->
+  build: (str, name, loc, priority) ->
     node = @root
     for i in [0...str.length]
       node = node.ensure(str.charAt(i))
-    node.loc = loc
-    node.name = name
+    node.add name: name, coords: loc
     
   find: (str, max) ->
     node = @root
