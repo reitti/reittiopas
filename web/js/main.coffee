@@ -50,30 +50,29 @@ require [
   'underscore'
   'backbone'
   'router'
+  'position'
   'views/map_view'
   'views/search_view'
   'views/blank_slate_view'
   'views/routes_view'
   'bootstrap'
-], ($, _, Backbone, Router, MapView, SearchView, BlankSlateView, RoutesView) ->
+], ($, _, Backbone, Router, Position, MapView, SearchView, BlankSlateView, RoutesView) ->
 
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
+  Reitti.Position = new Position()
 
   $ ->
 
     new MapView().render()
     new SearchView().render()
-    new BlankSlateView()
-    new RoutesView()
-      
-    Backbone.history.start(pushState: true)
+    new BlankSlateView().render()
+    new RoutesView().render()
 
     if navigator.geolocation
-      navigator.geolocation.watchPosition(
-        (position) -> Reitti.Event.trigger 'position:change', position,
-        () ->,
-        { enableHighAccuracy: true})
+      Reitti.Position.startWatching()
+      
+    Backbone.history.start(pushState: true)
 
     # Inject the Like button after the page has loaded, so it can't delay startup.
     fbLocale = window.appLang.replace('-','_')
