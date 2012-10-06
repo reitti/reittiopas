@@ -17,6 +17,7 @@ define ->
   editFavorites: 'Muokkaa suosikkeja'
   noFavorites: 'Ei suosikkeja'
   geolocationError: 'Paikannus epäonnistui.'
+  geolocating: 'Haetaan sijantia…'
   transportType:
     walk: 'Kävely'
     1: 'Bussi'

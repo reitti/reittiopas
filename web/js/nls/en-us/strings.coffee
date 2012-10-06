@@ -12,6 +12,7 @@ define ->
   routeFrom: 'Directions from here'
   warning: 'Oh snap'
   geolocationError: 'We were unable to locate you.'
+  geolocating: 'Determining your location…'
   favorites: 'Favorites'
   add: 'Add'
   newFavorite: 'New favourite'
