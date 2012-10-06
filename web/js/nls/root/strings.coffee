@@ -11,7 +11,12 @@ define ->
   warning: 'Voihan nenä'
   routeTo: 'Reittiohjeet tänne'
   routeFrom: 'Reittiohjeet täältä'
-  geolocationError: 'Paikannus epäonnistui. Onhan laitteesi WLAN- tai GPS-tuki varmasti päällä?'
+  favorites: 'Suosikit'
+  add: 'Lisää'
+  newFavorite: 'Uusi suosikki'
+  editFavorites: 'Muokkaa suosikkeja'
+  noFavorites: 'Ei suosikkeja'
+  geolocationError: 'Paikannus epäonnistui.'
   transportType:
     walk: 'Kävely'
     1: 'Bussi'

@@ -10,6 +10,14 @@ define ->
   walkingDistance: 'Walk'
   routeTo: 'Directions to here'
   routeFrom: 'Directions from here'
+  warning: 'Oh snap'
+  geolocationError: 'We were unable to locate you.'
+  favorites: 'Favorites'
+  add: 'Add'
+  newFavorite: 'New favourite'
+  editFavorites: 'Edit favourites'
+  noFavorites: 'No favourites'
+
   transportType:
     walk: 'Walk'
     1: 'Bus'

@@ -1,0 +1,79 @@
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0){
+    -webkit-border-top-right-radius: @topright;
+    -webkit-border-bottom-right-radius: @bottomright;
+    -webkit-border-bottom-left-radius: @bottomleft;
+    -webkit-border-top-left-radius: @topleft;
+    -moz-border-radius-topright: @topright;
+    -moz-border-radius-bottomright: @bottomright;
+    -moz-border-radius-bottomleft: @bottomleft;
+    -moz-border-radius-topleft: @topleft;
+    border-top-right-radius: @topright;
+    border-bottom-right-radius: @bottomright;
+    border-bottom-left-radius: @bottomleft;
+    border-top-left-radius: @topleft;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.input-append-full {
+    display: table;
+    width: 100%;
+
+    .wrapper {
+        display: table-cell;
+        width: 64px;
+    }
+
+    .full-width {
+        padding-right: 12px;
+        width: auto;
+    }
+}
+
+#bookmarks {
+    display: block;
+
+    z-index: 999;
+
+    h3 {
+        line-height: 27px;
+    }
+
+
+    #add-bookmark {
+        margin-left: 14px;
+    }
+
+    .popover-content {
+        padding: 0;
+
+        .hero-unit {
+            background-color: white;
+            margin-bottom: 0;
+            padding: 2px 20px;
+            border: none;
+            h4 {
+                color: #999;
+            }
+        }
+
+        .nav {
+            li {
+               a.bookmark {
+                   border-left: none;
+                   border-right: none;
+                   .border-radius(0, 0, 0, 0);
+                   line-height: 25px;
+               }
+            }
+        }
+
+        #new-favorite {
+            padding: 10px;
+            .control-group, .input-append, form {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
