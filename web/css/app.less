@@ -303,6 +303,17 @@ input.input-full {
     background-size: 64px 96px;
 }
 
+i.icon-compass {
+    background-image: url('../img/sprites.png');
+    background-position: -34px 0;
+    width: 14px;
+    height: 14px;
+}
+
+button.on i.icon-compass {
+    background-position: -48px 0;
+}
+
 i.icon-bus {
     .transport-icon;
     background-position: 0 0;
@@ -329,6 +340,19 @@ i.icon-ferry {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    i.icon-compass {
+        background-image: url('../img/sprites@2x.png');
+        height: 14px;
+        height: 14px;
+        background-position: 0 0;
+        background-size: 28px 14px;
+    }
+
+    button.on i.icon-compass {
+      background-position: -14px 0;
+    }
+
     i.icon-bus {
         .transport-icon-2x;
     }
