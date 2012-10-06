@@ -8,12 +8,6 @@
     <title>Ihan hyvä reittiopas</title>
     <link rel="stylesheet" href="/css/app.css">
     <script type="text/javascript">
-      // Try to get the user's current location ASAP.
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-          window.initialPosition = position;
-        })
-      }
       // Define the Google Maps API key
       window.gmapsKey = (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk');
     </script>

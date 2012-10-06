@@ -22,7 +22,7 @@ define [
       @initializationTime = Utils.now()
       @initDateTimePickers(@initializationTime)
 
-      Reitti.Event.on 'position:change', @populateFromBox
+      Reitti.Event.on 'position:change', @onPositionChange
       Reitti.Event.on 'routes:find', @onFindingRoutes
       Reitti.Event.on 'routes:change', @onRoutesReceived
       Reitti.Event.on 'routes:notfound', @onSearchFailed
@@ -113,9 +113,8 @@ define [
       @$el.find('#time-type').val(v)
 
     onPositionChange: (position) =>
-      @$positionLookupSpinner.hide()
       if Utils.isWithinBounds(position) and position.coords.accuracy < 200
         Reitti.Position.geocode position.coords.longitude, position.coords.latitude, (location) =>
-          @from.val location.name
+          @from.val location.name or Utils.formatCoordinate(location.coords)
           @to.focus()
       Reitti.Event.off 'position:change', @onPositionChange
