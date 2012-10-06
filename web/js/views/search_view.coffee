@@ -136,6 +136,7 @@ define [
 
     onGeolocationError: () =>
       @$positionLookupSpinner.hide()
+      @from.resetPlaceholder()
       message = new ErrorMessageView(message: strings.geolocationError).render()
 
     onToggleGeolocation: =>
