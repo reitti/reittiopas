@@ -11,6 +11,8 @@ strings =
   'fi-FI':  require 'nls/root/strings'
 supportedLocales = _.keys(strings)
 
+port = parseInt(vertx.env['REITTIOPAS_PORT'] or 8080, 10)
+ 
 eb = vertx.eventBus
 server = vertx.createHttpServer()
 routeMatcher = new vertx.RouteMatcher
@@ -83,6 +85,6 @@ routeMatcher.noMatch (req) ->
       blankSlateActive: blankSlateActive
       blankSlateHidden: blankSlateHidden
 
-server.requestHandler(routeMatcher).listen 8080
+server.requestHandler(routeMatcher).listen port
 
 stdout.println "Server started"
