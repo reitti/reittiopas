@@ -3,6 +3,7 @@
 @import url("lib/timepicker.css");
 @import url("lib/datepicker.css");
 @import url("route_graph.css");
+@import url("bookmarks.css");
 
 @animationDuration: 0.2s;
 @controlsWidth: 400px;
@@ -24,9 +25,6 @@
     border-bottom-right-radius: @bottomright;
     border-bottom-left-radius: @bottomleft;
     border-top-left-radius: @topleft;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
 }
 
 // Bootstrap overrides
@@ -35,14 +33,18 @@ ul.typeahead {
     margin-top: 0;
     padding-bottom: 0;
     padding-top: 0;
-    width: 360px;
+
     a {
         padding: 4px 6px;
     }
-}
 
-input[type="text"], input[type="date"], input[type="time"], ul.typeahead {
-    .border-radius(0, 0, 0, 0);
+    li:first-child a {
+        .border-radius(3px, 0, 0, 3px);
+    }
+
+    li:last-child > a {
+        .border-radius(0, 3px, 3px, 0);
+    }
 }
 
 ul.typeahead {
@@ -137,6 +139,17 @@ body {
 #search {
     margin: 0 20px;
 
+    #loading-indicator {
+        display: none;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-image: url('../img/ajax-loader.gif');
+        height: 16px;
+        width: 16px;
+        z-index: 2;
+    }
+
     #transport-types {
         margin: 1.5em 0;
         text-align: center;
@@ -173,7 +186,8 @@ body {
 }
 
 .full-width-fix {
-    padding-right: 12px;
+    padding-right: 56px;
+    position: relative;
 }
 
 input.input-full {
@@ -239,10 +253,11 @@ input.input-full {
         display: inline;
     }
 }
+
 .fb-wrap {
     width: 80px;
     text-align: center;
-    margin: 5px auto; 
+    margin: 5px auto;
 }
 
 .links:last-child {
@@ -257,18 +272,17 @@ input.input-full {
         font-size: 0.9em;
         cursor: pointer;
 
-
         .popover-content {
             padding: 0;
             height: @locationMarkerHeight;
 
             * {
                 height: @locationMarkerHeight;
-                line-height: @locationMarkerHeight;                
+                line-height: @locationMarkerHeight;
             }
 
             .popover-label {
-                float: left;                
+                float: left;
                 width: @locationMarkerWidth;
                 white-space: nowrap;
                 overflow: hidden;
@@ -379,6 +393,7 @@ i.icon-ferry {
 }
 
 @media (max-width: 767px) {
+
     #search {
         margin: 0 5%;
     }
@@ -387,7 +402,7 @@ i.icon-ferry {
         overflow: scroll;
     }
 
-    // Controls take up full width since the map is not visible
+// Controls take up full width since the map is not visible
     #controls {
         position: static;
         width: 100%;
@@ -402,19 +417,14 @@ i.icon-ferry {
         }
     }
 
-    ul.dropdown-menu {
-        width: 90%;
-    }
-
     button.btn-success {
         width: 100%;
     }
 
-    // Like button causes loading problems on Android. ToDo: Investigate?
+// Like button causes loading problems on Android. ToDo: Investigate?
     .fb-wrap {
         display: none;
     }
-
 
 }
 
@@ -435,10 +445,19 @@ i.icon-ferry {
     #blank-slate {
         padding: 10px;
 
-        h1 { display: none; }
-        p { margin: 0 0 5px 0; line-height: 25px; }
-        .close { margin: -5px -5px 0 0; }
-        .example { display: none; }
+        h1 {
+            display: none;
+        }
+        p {
+            margin: 0 0 5px 0;
+            line-height: 25px;
+        }
+        .close {
+            margin: -5px -5px 0 0;
+        }
+        .example {
+            display: none;
+        }
     }
 
 }
