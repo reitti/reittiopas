@@ -16,7 +16,7 @@ define [
 
     onAdd: ->
       @$el.html(template({strings})).hide()
-      @$menu = @$el.find('.dropdown-menu').show()
+      @$menu = @$el.find('.dropdown-menu').css('display', 'block') # It's hidden by bootstrap's base CSS
 
       google.maps.event.addListener @map, 'click', (event) =>
         @hide()
@@ -34,25 +34,13 @@ define [
 
     draw: ->
       return unless @position?
-
+      {x, y} = @getProjection().fromLatLngToDivPixel(@position)
       mapWidth = @mapDiv.offsetWidth
       mapHeight = @mapDiv.offsetHeight
-
       menuWidth = @$menu.innerWidth()
       menuHeight = @$menu.outerHeight()
-
-      {x, y} = @getProjection().fromLatLngToDivPixel(@position)
-
-      left = if x + menuWidth < mapWidth
-        x
-      else
-        x - menuWidth
-
-      top = if y + menuHeight < mapHeight
-        y
-      else
-        y - menuHeight
-
+      left = if x + menuWidth < mapWidth then x else x - menuWidth
+      top = if y + menuHeight < mapHeight then y else y - menuHeight
       @$el.css
         top: top
         left: left
