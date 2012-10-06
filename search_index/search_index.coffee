@@ -1,9 +1,9 @@
-load 'vertx.js'
+vertx = require 'vertx'
 
 class Node
   constructor: (@prefix) ->
     @children = {}
-    @contents = []
+    @contents = {}
 
   ensure: (ch) ->
     @children[ch.toLowerCase()] ?= new Node(@prefix + ch)
@@ -12,10 +12,12 @@ class Node
     @children[ch]
     
   add: (item) ->
-    @contents.push item
+    existing = @contents[item.name]
+    unless !item.coords? and existing?.coords?
+      @contents[item.name] = item
 
   putMatches: (to, n) ->
-    for itm in @contents
+    for own name,itm of @contents
       return 0 if n <= 0
       to.push itm
       n -= 1
@@ -71,7 +73,6 @@ files =
 verySpecialPlaces =
   'Eficode, Helsinki': '24.947197,60.196284'
   'Piritori, Helsinki': '24.960712,60.18797'
-  'Kumpulan kampus, Helsinki': '24.961946,60.204026'
 
 for own city, f of files
   do (city, f) ->

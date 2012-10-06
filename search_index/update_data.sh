@@ -14,8 +14,24 @@ function process {
     --tag-filter reject-relations\
     --write-xml -\
    | java -Xmx1024M -jar ../../osm-extraction/target/osm-extraction-0.1.0-SNAPSHOT-standalone.jar\
-   > $2
+   >> $2
 }
+
+rm data/helsinki.txt
+rm data/espoo.txt
+rm data/kauniainen.txt
+rm data/kerava.txt
+rm data/kirkkonummi.txt
+rm data/vantaa.txt
+
+echo "Processing kalkati.net data"
+java -Xmx1024M -jar ../../kalkati-extraction/target/kalkati-extraction-0.1.0-SNAPSHOT-standalone.jar\
+  Helsinki=data/helsinki.txt\
+  Espoo=data/espoo.txt\
+  Kauniainen=data/kauniainen.txt\
+  Kerava=data/kerava.txt\
+  Kirkkonummi=data/kirkkonummi.txt\
+  Vantaa=data/vantaa.txt
 
 curl http://download.geofabrik.de/openstreetmap/europe/finland.osm.pbf -o $OSM
 process polys/helsinki.poly data/helsinki.txt
@@ -25,6 +41,4 @@ process polys/kerava.poly data/kerava.txt
 process polys/kirkkonummi.poly data/kirkkonummi.txt
 process polys/vantaa.poly data/vantaa.txt
 rm $OSM
-
-
 
