@@ -72,7 +72,7 @@ require [
     new BlankSlateView().render()
     new RoutesView().render()
 
-    if navigator.geolocation and Reitti.Settings.get('canWatchPosition')
+    if Reitti.Settings.get('canWatchPosition')
       Reitti.Position.startWatching()
       
     Backbone.history.start(pushState: true)
