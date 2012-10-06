@@ -61,12 +61,12 @@ define [
 
     onRoutingRequestFrom: (longitude, latitude) =>
       Reitti.Position.geocode longitude, latitude, (location) =>
-        @from.val(location.name)
+        @from.val(location.name or Utils.formatCoordinate(location.coords))
         @searchRoutes()
 
     onRoutingRequestTo: (longitude, latitude) =>
       Reitti.Position.geocode longitude, latitude, (location) =>
-        @to.val(location.name)
+        @to.val(location.name or Utils.formatCoordinate(location.coords))
         @searchRoutes()
 
     onFindingRoutes: (params) =>
