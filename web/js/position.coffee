@@ -7,7 +7,7 @@ define ['jquery'], ($) ->
         @watchId = navigator.geolocation.watchPosition(
           (position) -> Reitti.Event.trigger 'position:change', position
           () -> Reitti.Event.trigger 'position:error',
-          {enableHighAccuracy: true, maximumAge: 30000})
+          {enableHighAccuracy: true, maximumAge: 30000, timeout: 5000})
       else
         Reitti.Event.trigger 'position:error'
 
