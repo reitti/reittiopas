@@ -4,8 +4,9 @@ define [
   'backbone'
   'utils'
   'views/map_route_view'
+  'views/map_menu'
   "async!http://maps.googleapis.com/maps/api/js?sensor=true#{window.gmapsKey}"
-], ($, _, Backbone, Utils, MapRouteView) ->
+], ($, _, Backbone, Utils, MapRouteView, MapMenu) ->
       
   class MapView extends Backbone.View
 
@@ -20,6 +21,7 @@ define [
       @initStreetView()
       @initMap()
       @initPosition()
+      @initMapMenu()
       this
 
     initMap: ->
@@ -45,18 +47,14 @@ define [
         enableCloseButton: true
       google.maps.event.addListener @streetView, 'visible_changed', @onStreetViewVisibilityChanged
 
+    initMapMenu: ->
+      @mapMenu = new MapMenu({@map})
+
     initPosition: ->
-      # If we already have the user's current position, use it. If not, center
-      # the map to it as soon as everything is initialized and we have the
-      # location.
-      initPos = window.initialPosition
-      if initPos? and Utils.isWithinBounds(initPos)
-        @centerMap(initPos.coords.latitude, initPos.coords.longitude)
-      else
-        @centerMap(60.171, 24.941) # Rautatieasema
-        Reitti.Event.on 'position:change', _.once (position) =>
-          if Utils.isWithinBounds(position)
-            @centerMap position.coords.latitude, position.coords.longitude
+      @centerMap(60.171, 24.941) # Rautatieasema
+      Reitti.Event.on 'position:change', _.once (position) =>
+        if Utils.isWithinBounds(position)
+          @centerMap position.coords.latitude, position.coords.longitude
 
     onGoneHome: () =>
       @routeView?.dispose()
@@ -109,7 +107,7 @@ define [
       latLng   = new google.maps.LatLng position.coords.latitude, position.coords.longitude
       accuracy = position.coords.accuracy
 
-      if accuracy < 100
+      if accuracy < 200
         @accuracyIndicator ?= new google.maps.Circle
           strokeColor: '#0000FF'
           strokeOpacity: 0.50

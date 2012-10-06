@@ -8,6 +8,8 @@ define ->
   arrival: 'Arrival'
   duration: 'Duration'
   walkingDistance: 'Walk'
+  routeTo: 'Directions to here'
+  routeFrom: 'Directions from here'
   transportType:
     walk: 'Walk'
     1: 'Bus'

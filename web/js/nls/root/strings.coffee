@@ -8,6 +8,10 @@ define ->
   arrival: 'Perillä'
   duration: 'Kesto'
   walkingDistance: 'Kävelyä'
+  warning: 'Voihan nenä'
+  routeTo: 'Reittiohjeet tänne'
+  routeFrom: 'Reittiohjeet täältä'
+  geolocationError: 'Paikannus epäonnistui. Onhan laitteesi WLAN- tai GPS-tuki varmasti päällä?'
   transportType:
     walk: 'Kävely'
     1: 'Bussi'

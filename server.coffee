@@ -53,9 +53,9 @@ routeMatcher.get '/routes', filterAjaxOnly validation.validateGetRoutes (req) ->
 
 routeMatcher.get '/address', filterAjaxOnly validation.validateGetAddress (req) ->
   req.response.putHeader 'Content-Type', 'application/json; charset=utf-8'
-  hsl.reverseGeocode req.params().coords, (address) ->
-    if address
-      req.response.end JSON.stringify(address)
+  hsl.reverseGeocode req.params().coords, (addressOrCoordinates) ->
+    if addressOrCoordinates
+      req.response.end JSON.stringify(addressOrCoordinates)
     else
       req.response.statusCode = 400
       req.response.end()

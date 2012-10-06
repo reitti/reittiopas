@@ -22,10 +22,12 @@ define [
       @initializationTime = Utils.now()
       @initDateTimePickers(@initializationTime)
 
-      Reitti.Event.on 'position:change', @populateFromBox
+      Reitti.Event.on 'position:change', @onPositionChange
       Reitti.Event.on 'routes:find', @onFindingRoutes
       Reitti.Event.on 'routes:change', @onRoutesReceived
       Reitti.Event.on 'routes:notfound', @onSearchFailed
+      Reitti.Event.on 'routes:from', @onRoutingRequestFrom
+      Reitti.Event.on 'routes:to', @onRoutingRequestTo
 
     initDateTimePickers: (date) ->
       date = @initializationTime if date is 'now'
@@ -44,9 +46,10 @@ define [
       @from.focus()
 
     searchRoutes: (event) ->
-      event.preventDefault()
+      event.preventDefault() if event
       if @from.validate() and @to.validate()
         @from.clearError()
+        @to.clearError()
         @to.clearError()
         Reitti.Router.navigateToRoutes
           from: @from.val()
@@ -55,6 +58,16 @@ define [
           date: @date()
           transportTypes: @transportTypes()
           routeIndex: 0
+
+    onRoutingRequestFrom: (longitude, latitude) =>
+      Reitti.Position.geocode longitude, latitude, (location) =>
+        @from.val(location.name or Utils.formatCoordinate(location.coords))
+        @searchRoutes()
+
+    onRoutingRequestTo: (longitude, latitude) =>
+      Reitti.Position.geocode longitude, latitude, (location) =>
+        @to.val(location.name or Utils.formatCoordinate(location.coords))
+        @searchRoutes()
 
     onFindingRoutes: (params) =>
       Reitti.Event.off 'position:change', @populateFromBox # We're no longer interested in the user's initial geolocation
@@ -99,11 +112,9 @@ define [
     setArrivalOrDeparture: (v) ->
       @$el.find('#time-type').val(v)
 
-    populateFromBox: (position) =>
+    onPositionChange: (position) =>
       if Utils.isWithinBounds(position) and position.coords.accuracy < 200
-        $.getJSON "/address?coords=#{position.coords.longitude},#{position.coords.latitude}", (location) =>
-          @from.val location.name
+        Reitti.Position.geocode position.coords.longitude, position.coords.latitude, (location) =>
+          @from.val location.name or Utils.formatCoordinate(location.coords)
           @to.focus()
-      Reitti.Event.off 'position:change', @populateFromBox
-
-
+      Reitti.Event.off 'position:change', @onPositionChange

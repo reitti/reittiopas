@@ -34,12 +34,12 @@ module.exports =
       else
         callback null
 
-  reverseGeocode: (query, callback) ->
-    hslRequestWithJSONRes 'reverse_geocode', {coordinate: query}, (json) ->
+  reverseGeocode: (coords, callback) ->
+    hslRequestWithJSONRes 'reverse_geocode', {coordinate: coords, radius: 200}, (json) ->
       if json? and json.length
         callback {name: json[0].name, coords: json[0].coords}
       else
-        callback null
+        callback {name: null, coords: coords}
 
   findRoutes: (params, callback) ->
     params =

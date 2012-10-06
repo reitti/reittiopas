@@ -7,7 +7,7 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
         updater: (item) =>
           _.defer @afterTypeahead
           item
-        minLength: 3
+        minLength: 0
           
     getTypeaheadAddresses: (query, callback) =>
       params = $.param { query: query }

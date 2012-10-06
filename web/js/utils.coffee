@@ -95,6 +95,10 @@ define ['moment'], (moment) ->
       else
         "#{mins}min"
 
+    @formatCoordinate: (coord, decimals = 5) ->
+      lngLat = coord.split(',')
+      _.map(lngLat, (coord) -> parseFloat(coord).toFixed(decimals)).join(',')
+
     # Checks if the given geoposition is within the bounds supported
     # by this application (Greater Helsinki Area)
     @isWithinBounds: (location) ->
