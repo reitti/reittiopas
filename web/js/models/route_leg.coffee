@@ -1,4 +1,4 @@
-define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
+define ['jquery', 'underscore', 'backbone', 'utils'], ($, _, Backbone, Utils) ->
 
   class RouteLeg extends Backbone.Model
 
@@ -16,7 +16,7 @@ define ['underscore', 'backbone', 'utils'], (_, Backbone, Utils) ->
         else                                             # Anything else -> number + possible character
           n = parseInt(@get('code').substring(1, 4), 10)
           chr = @get('code').substring(4, 5)
-          "#{n}#{chr}"
+          $.trim("#{n}#{chr}")
 
     setOrigin: (name, coords) ->
       @get('locs').unshift(name: name, loc: coords, arrTime: _.first(@get('locs')).arrTime)

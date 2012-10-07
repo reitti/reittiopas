@@ -7,7 +7,7 @@
     <div class="leg-bar">
       <i></i>
     </div>
-    <span class="leg-indicator">{{indicator}}</span>
+    <span class="leg-indicator">{{indicator}}{{#if highFloored}}<sub class="floor-indicator" title="{{strings.highFlooredLong}}">{{strings.highFlooredShort}}{{/if}}</sub>
   </li>
 
   <li data-leg="{{index}}"
@@ -15,7 +15,7 @@
       class="leg-info"
       style="display: none;">
     <div class="leg-info-content times">{{times}}</div>
-    <div class="leg-info-content transport">{{transport}}</div>
+    <div class="leg-info-content transport">{{transport}}{{#if highFloored}}<sub class="floor-indicator" title="{{strings.highFlooredLong}}">{{strings.highFlooredShort}}{{/if}}</div>
     <div class="leg-info-content arrow">&rarr;</div>
     <div class="leg-info-content destination">{{destination}}</div>
   </li>
