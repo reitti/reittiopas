@@ -1,3 +1,73 @@
+Kandidaatintie|24.74047,60.21594
+Puutarhatie|24.74241,60.21788
+Raamattuopisto|24.73743,60.21292
+Raamattuopisto|24.73811,60.21289
+Postitori|24.72851,60.21266
+Postitori|24.72996,60.21262
+Postitori|24.72818,60.21235
+Samis|24.72083,60.21381
+Samis|24.72097,60.21369
+Terveyskeskus|24.7169,60.2139
+Terveyskeskus|24.71582,60.2143
+Uimahalli|24.71126,60.21638
+Uimahalli|24.71209,60.21566
+Kauniala|24.70155,60.21882
+Hautausmaa|24.70142,60.21655
+Kasavuoren koulukesk|24.70354,60.21409
+Kasavuori|24.69975,60.21116
+Lybeckintie|24.70252,60.20817
+Koivuhovi|24.70853,60.20878
+Urheilutie|24.71194,60.21059
+Villa Breda|24.71897,60.21178
+Bredantie|24.72321,60.21277
+Valkonauhantie|24.71116,60.22007
+Valkonauhantie|24.71118,60.22025
+Työväen Akatemia|24.71463,60.22209
+Työväen Akatemia|24.71551,60.2214
+Petas|24.70727,60.22372
+Fasaaninpolku|24.73798,60.20948
+Fasaaninpolku|24.73919,60.20949
+Kauniaistentie|24.73151,60.20981
+Kauniaistentie|24.73197,60.2096
+Kaup.talo|24.72803,60.20912
+Kaup.talo|24.72789,60.20939
+Kauppalantie|24.72166,60.20684
+Kauppalantie|24.72199,60.20684
+Jondalintie|24.71752,60.20398
+Jondalintie|24.71828,60.20508
+Tunnelitie|24.72951,60.21096
+Tunnelitie|24.72933,60.21083
+Petas|24.70847,60.2239
+Dosentintie|24.73511,60.2152
+Yrjö Liipolantie|24.69547,60.20922
+Kandidaatintie|24.73698,60.21818
+Villa Breda|24.71873,60.21181
+Lindstedtintie|24.7329,60.22135
+Mäntymäentie|24.70704,60.2101
+Rantamajantie|24.72631,60.22008
+Mäntymäentie|24.70717,60.21014
+Pohj. Heikelintie|24.7227,60.22182
+Lybeckintie|24.70152,60.20804
+Työväen akatemia|24.71722,60.2221
+Yrjö Liipolantie|24.69555,60.20914
+Uimahalli|24.70889,60.21723
+Kasavuori|24.69963,60.21111
+Postitori|24.72825,60.21267
+Kasavuoren koulukesk|24.70389,60.21471
+Kirkkotie|24.72252,60.20877
+Hautausmaa|24.70137,60.21662
+Kirkkotie|24.72309,60.20886
+Kauniala|24.70167,60.21874
+Työväen akatemia|24.71713,60.22209
+Pohj. Heikelintie|24.72276,60.22179
+Tornivuori|24.72317,60.20469
+Rantamajantie|24.72626,60.22008
+Lindstedtintie|24.733,60.22135
+Kandidaatintie|24.73695,60.21818
+Dosentintie|24.73571,60.21535
+Uimahalli|24.70936,60.21715
+Kauniainen/VR|24.7325,60.212
+Kauniainen/VR|24.7325,60.212
 Koivuhovintie|
 Teboil|24.7344649,60.2098394
 Stockmannintie|

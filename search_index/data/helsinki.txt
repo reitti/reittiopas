@@ -1,3 +1,2870 @@
+Niemitie|24.98058,60.26636
+Sammalpolku|25.03194,60.26381
+Sammalpolku|25.03205,60.26385
+Fallkulla|25.03094,60.26293
+Fallkulla|25.03092,60.26286
+Falkullantie|25.02905,60.26136
+Fallkullantie|25.0289,60.2613
+Saniaiskuja|25.02855,60.25883
+Saniaiskuja|25.02855,60.25884
+Malminkaari|25.026,60.25735
+Vallilan kirjasto|24.96179,60.19181
+Hattulantie|24.95494,60.19531
+Hattulantie|24.95499,60.19565
+Elimäenkatu|24.95531,60.19381
+Töölön tulli|24.91203,60.19169
+Elielinaukio|24.93936,60.17197
+Elielinaukio|24.93936,60.17196
+Elielinaukio|24.9394,60.17185
+Elielinaukio|24.93938,60.17184
+Elielinaukio|24.93939,60.17174
+Kuusitie|24.90115,60.19551
+Elielinaukio|24.93941,60.17168
+Kuusitie|24.90259,60.19522
+Elielinaukio|24.9397,60.17218
+Elielinaukio|24.93974,60.17211
+Elielinaukio|24.93972,60.17205
+Kokkokallio|24.84861,60.22888
+Kokkokallio|24.84913,60.2288
+Elielinaukio|24.93977,60.172
+Senaatintori|24.95153,60.16904
+Elielinaukio|24.93974,60.17113
+Satamaradankatu|24.95233,60.19153
+Satamaradankatu|24.95235,60.19157
+Telekatu|24.95005,60.19321
+Fleminginkatu|24.9528,60.18979
+Jämsänkatu|24.94209,60.19661
+Kaskisaari|24.8589,60.17378
+Sturenkatu|24.95004,60.19114
+Rautatientori|24.94327,60.17165
+Rautatientori|24.94329,60.17134
+Linnanherrantie|25.11381,60.22338
+Rautatientori|24.94333,60.17085
+Linnanherrantie|25.11436,60.22345
+Rautatientori|24.94376,60.17192
+Riskutie|25.10757,60.22017
+Riskutie|25.10815,60.22011
+Snellmaninkatu|24.95236,60.17401
+Snellmaninkatu|24.95208,60.17407
+Ritarihuone|24.95549,60.16914
+Kangasalantie|24.95895,60.19547
+Ritarihuone|24.95645,60.16917
+Kangasalantie|24.95916,60.19563
+Paavalin kirkko|24.96153,60.19817
+Vironkatu|24.95332,60.17189
+Vironkatu|24.95332,60.17188
+Sipoonkatu|24.93886,60.19512
+Hallituskatu|24.95351,60.17036
+Kotkankatu|24.94278,60.19351
+Fleminginkatu|24.95343,60.18956
+Kustaankatu|24.95811,60.18933
+Kustaankatu|24.95652,60.18947
+Junatie|24.96231,60.18953
+Karhulantie|25.10282,60.21806
+Karhulantie|25.10429,60.21833
+Karhulantie|25.10377,60.21772
+Riskutie|25.10161,60.22472
+Riskutie|25.10201,60.22473
+Helytie|25.09719,60.22464
+Helytie|25.09775,60.22455
+Soraharjuntie|25.09326,60.22278
+Hallituskatu|24.95351,60.17036
+Junatie|24.96309,60.18964
+Junatie|24.96051,60.1895
+Pasilan konepaja|24.94443,60.19528
+Telekatu|24.94925,60.19326
+Pasilan konepaja|24.94557,60.19508
+Päijänteentie|24.95434,60.19119
+Päijänteentie|24.95609,60.19091
+Vallilan kirjasto|24.96102,60.19201
+Vallilan kirjasto|24.96136,60.19226
+Soraharjuntie|25.09368,60.22361
+Valkealantie|25.10042,60.21973
+Valkealantie|25.09893,60.22002
+Karhulantie|25.10147,60.2194
+Kuutsalontie|25.10471,60.215
+Sturenkatu|24.94831,60.19107
+Mäkelänrinne|24.94955,60.19747
+Fleminginkatu|24.95195,60.18985
+Mäkelänrinne|24.94984,60.19773
+Paavalin kirkko|24.96205,60.19842
+Vallilan varikko|24.96272,60.19551
+Hattulantie|24.95583,60.19531
+Ristikkokatu|24.96451,60.19168
+Elimäenkatu|24.95382,60.19302
+Konalan puisto|24.86311,60.23293
+Konalan puisto|24.862,60.23393
+Jännetie|24.85406,60.22633
+Jännetie|24.85318,60.22716
+Pitäjänmäen asema|24.85844,60.22425
+Pitäjänmäen asema|24.85743,60.22448
+Laajasuontie|24.9066,60.21642
+Kivihaka|24.90321,60.21281
+Kivihaka|24.90026,60.21111
+Kotikallio|24.84236,60.22241
+Taavinkuja|24.84176,60.22436
+Kyläkirkko|24.84334,60.226
+Kyläkirkko|24.84353,60.22598
+Knuutintie|24.84729,60.22575
+Knuutintie|24.84836,60.22546
+Kuutsalontie|25.10371,60.21484
+Kivihaka|24.90581,60.208
+Kivihaka|24.90238,60.20811
+Itäväylä|25.11062,60.22091
+Itäväylä|25.11071,60.22094
+Inkeroistentie|25.09411,60.22138
+Inkeroistentie|25.09444,60.22132
+Muinaislinnanpolku|25.11469,60.21967
+Muinaislinnanpolku|25.11469,60.21972
+Uiskotie|25.11409,60.21834
+Lappeentie|25.10458,60.22004
+Lappeentie|25.09727,60.22324
+Lehtisaarentie|24.84963,60.18153
+Papinpöydänkuja|24.85072,60.18071
+Papinpöydänkuja|24.85068,60.18086
+Tykistökapteenintie|24.8481,60.18039
+Pyhän Laurin tie|24.85468,60.1808
+Vartiokyläntie|25.10781,60.2217
+Sormuspolku|25.10517,60.22352
+Kiviportintie|25.09258,60.22338
+Uiskotie|25.11394,60.21833
+Kivihaantie|24.90332,60.21153
+Pyötsaarenkuja|25.11096,60.21634
+Kivihaantie|24.90328,60.21155
+Pyötsaarenkuja|25.11116,60.21641
+Kylänevantie|24.90391,60.21089
+Karhulantie|25.10204,60.21841
+Kivihaankuja|24.90357,60.20939
+Kivihaankuja|24.9038,60.20951
+Nyytorpinpolku|25.09354,60.21845
+Kylänevantie|24.9039,60.21091
+Varjakanvalkama|25.11964,60.21835
+Pyhän Laurin tie|24.85437,60.1806
+Hiidenkiukaantie|24.85136,60.17921
+Hiidenkiukaantie|24.85224,60.17978
+Hiidenkiukaantie|24.85459,60.17922
+Hiidenkiukaantie|24.85401,60.17898
+Kalkkipaadenpuisto|24.85332,60.17742
+Kalkkipaadenpuisto|24.8533,60.17747
+Lehtisaarentie|24.84977,60.18039
+Lehtisaarentie|24.85001,60.18041
+Linnavuorentie|25.11817,60.22028
+Varjakanvalkama|25.11707,60.21854
+Ruotsinsalmentie|25.10828,60.21483
+Huntutie|25.10319,60.22734
+Huntutie|25.10316,60.22724
+Ruotsinsalmentie|25.10828,60.2148
+Puotilantie|25.10615,60.21429
+Puotilantie|25.10601,60.21434
+Johanneksen kirkko|24.94539,60.16332
+Kirurgi|24.94821,60.16213
+Tarkk ampujankatu|24.94753,60.16102
+Eiran sairaala|24.9419,60.15801
+Aurinkolahti|25.1565,60.2083
+Eiran sairaala|24.94172,60.15806
+Kapteeninkatu|24.94543,60.15825
+Leikosaarentie|25.14594,60.20423
+Kapteeninkatu|24.94513,60.15823
+Neitsytpolku|24.94984,60.15849
+Neitsytpolku|24.94957,60.15849
+Kaivopuisto|24.95377,60.15929
+Kaivopuisto|24.95471,60.15949
+Johanneksen kirkko|24.94603,60.1628
+Katajaharju|24.86092,60.16235
+Ruoholahti|24.91742,60.15988
+Melkonkuja|24.88157,60.15004
+Viikki|25.01003,60.22931
+Lahnalahdentie|24.87051,60.1614
+Lemissaarentie|24.87632,60.16096
+Herttoniemenranta|25.02573,60.18993
+Kuusmiehentie|24.93762,60.25581
+Suolakivenkuja|25.02986,60.18808
+Rakovalkeantie|24.93853,60.25418
+Suolakivenkuja|25.02984,60.18818
+Tervastie|24.94095,60.2527
+Reginankuja|25.0312,60.18671
+Tervastie|24.94151,60.25147
+Reginankuja|25.03074,60.18699
+Rakovalkeantie|24.94031,60.25289
+Killingholmankuja|25.03595,60.18704
+Tallbergin puistotie|24.87451,60.15921
+Koillisväylä|24.88379,60.16054
+Koillisväylä|24.8835,60.16061
+Ilmala/VR|24.91783,60.20922
+Killingholmankuja|25.03566,60.18688
+Kerttulikuja|25.03714,60.18923
+Kivimäki|24.91874,60.25285
+Kerttulikuja|25.0372,60.18883
+Kivimäki|24.9188,60.25305
+Kaivolahdenkatu|25.04042,60.18833
+Repovuori|24.91996,60.24994
+Repovuori|24.9198,60.25068
+Tuorinniemi|25.04258,60.18706
+Paloheinäntie|24.92264,60.2477
+Tuorinniemi|25.04262,60.18668
+Saramäentie|24.94679,60.24888
+Kaivolahdenkatu|25.04106,60.18881
+Raiviontie|24.94202,60.24918
+Kaivolahdenkatu|25.04133,60.18775
+Messitytönkatu|24.91585,60.16106
+Messitytönkatu|24.91584,60.16118
+Messitytönkuja|24.91318,60.16002
+Messitytönkuja|24.91316,60.16002
+Länsisatamankatu|24.91197,60.15877
+Laivapojankatu|24.91204,60.15872
+Rautatientori|24.9427,60.17098
+Raiviontie|24.94213,60.24927
+Kannelmäki/VR|24.87683,60.2396
+Linnanrakentajantie|25.03976,60.19133
+Raiviontie|24.94116,60.24969
+Sisselenpolku|25.03457,60.19153
+Raiviontie|24.94126,60.24962
+Sisselenpolku|25.03411,60.19142
+Kaskenpolttajantie|24.93426,60.24933
+Kaskenpolttajantie|24.93492,60.24935
+Johan Sederholmin t.|25.04524,60.1913
+Pitkämäentie|24.92689,60.24872
+Pitkämäentie|24.92861,60.24882
+Paloheinäntie|24.9239,60.24687
+Paloheinäntie|24.92389,60.24797
+Rautatientori|24.9448,60.17113
+Lasipalatsi|24.93807,60.17033
+Postitalo|24.93844,60.17096
+Santahamina|25.03965,60.14598
+Kasarmit|25.04175,60.15038
+Kasarmit|25.04102,60.14938
+Linnanrakentajantie|25.03804,60.19273
+Kadettikoulu|25.04598,60.15213
+Linnanrakentajantie|25.04061,60.19236
+Kadettikoulu|25.04565,60.15202
+Hevossalmen silta|25.04905,60.15495
+Hevossalmen silta|25.04894,60.1551
+Reijolankatu|24.91936,60.1898
+Reijolankatu|24.91769,60.18981
+Kaisaniemi|24.94971,60.17347
+Auroran sairaala|24.92366,60.19123
+Töölön tulli|24.91102,60.19182
+Töölön tulli|24.91246,60.19157
+Kuusitie|24.90243,60.19479
+Kuusitie|24.90303,60.1949
+Ilmala/VR|24.91783,60.20922
+Kaivokatu|24.93943,60.17033
+Lokitie|25.13598,60.20924
+Rautatientori|24.94261,60.17132
+Elielinaukio|24.93972,60.17186
+Rautatientori|24.94382,60.17034
+Elielinaukio|24.93974,60.17179
+Kannelmäki/VR|24.87683,60.2396
+Elielinaukio|24.93984,60.17182
+Herttoniemenranta|25.0256,60.19042
+Laivalahdenportti|25.03494,60.19326
+Elielinaukio|24.93972,60.17165
+Elielinaukio|24.93958,60.1712
+Rautatientori|24.94268,60.17076
+Kaivokatu|24.93921,60.17035
+Rautatientori|24.94329,60.17134
+Rautatientori|24.94333,60.17085
+Rautatientori|24.94299,60.17164
+Rautatientori|24.94302,60.17132
+Kipparlahti|25.02393,60.19212
+Itäkeskus(M)|25.07738,60.20982
+Rautatientori|24.94308,60.17095
+Rautatientori|24.94276,60.17164
+Rautatientori|24.94277,60.17133
+Rautatientori|24.94283,60.17108
+Rautatientori|24.94266,60.17141
+Rautatientori|24.94324,60.17072
+Rautatientori|24.94268,60.17076
+Kaisaniemi|24.94914,60.17348
+Kaisaniemi|24.95049,60.17502
+Rautatientori|24.94382,60.17034
+Lasipalatsi|24.93892,60.16958
+Kantelettarentie|24.89256,60.23468
+Klaneettipolku|24.879,60.23476
+Klaneettipolku|24.87685,60.23449
+Kaitalahti 2|25.02175,60.17338
+Kaitalahti 1|25.02428,60.17503
+Kaitalahti 1|25.02428,60.17507
+Hakuninmaantie|24.88776,60.26165
+Hakuninmaantie|24.88811,60.26137
+Vakkatie|24.88522,60.25288
+Maljatie|24.88891,60.25102
+Maljatie|24.88875,60.25136
+Serkustentie|24.89763,60.25638
+Kuopuksentie|24.89715,60.25349
+Kuopuksentie|24.89732,60.25404
+Itäkeskus(M), tulo|25.07785,60.21033
+Perhekunnantie|24.8927,60.24904
+Itäkeskus(M)|25.0766,60.21008
+Itäkeskus(M)|25.07617,60.20992
+Perhekunnantie|24.89359,60.24811
+Kappatie|24.87773,60.259
+Kapteenintie|25.21546,60.26002
+Edita|24.88619,60.26121
+Kuninkaantammentie|24.88494,60.2636
+Kuninkaantammentie|24.88498,60.26346
+Kappatie|24.87731,60.26039
+Kalannintie|24.88402,60.25202
+Kalannintie|24.88321,60.25346
+Perhekunnantie|24.89235,60.24843
+Korsnäsintie|25.218,60.26022
+Korsnäsintie|25.21992,60.26017
+Knutersintie|25.2084,60.25977
+Knutersintie|25.21029,60.2596
+Karhusaarentie|25.19043,60.25475
+Keriharju|24.89005,60.24781
+Karhusaarentie|25.1921,60.25515
+Keriharju|24.88898,60.24783
+Östersundom 2|25.18352,60.25313
+Östersundom 2|25.18589,60.25347
+Östersundom|25.174,60.25141
+Östersundom|25.17509,60.25129
+Talosaarentie|25.16341,60.24942
+Talosaarentie|25.16443,60.24954
+Vikkulla 2|25.15646,60.24737
+Vikkulla 2|25.15555,60.24674
+Vikkulla|25.15243,60.24581
+Vikkulla|25.15141,60.24534
+Westerkulla|25.14297,60.24422
+Westerkulla|25.14191,60.2431
+Isokaari|24.86163,60.15912
+Katajaharju|24.86046,60.16256
+Isokaari|24.86139,60.15903
+Viklakuja|24.86002,60.15812
+Viklakuja|24.85998,60.15809
+Luoteisväylä|24.85951,60.15655
+Lounaisväylä|24.85962,60.15651
+Särkiniemi|24.87856,60.14832
+Takaniementie|24.8639,60.15511
+Ensi linja|24.94011,60.18361
+Kuntatalo|24.94114,60.18445
+Takaniementie|24.86408,60.15508
+Kajavatie|24.86777,60.15498
+Kajavatie|24.86781,60.15498
+Tiirasaarentie|24.87062,60.15573
+Tiirasaarentie|24.87065,60.1557
+Isokaari|24.86939,60.15682
+Isokaari|24.86937,60.15682
+Kirkko|24.86997,60.15921
+Castréninkatu|24.94536,60.18276
+Haahkakuja|24.87556,60.15745
+Castréninkatu|24.94524,60.18287
+Haahkakuja|24.87556,60.15746
+Kaarlenkatu|24.95146,60.18554
+Karhupuisto|24.95256,60.18357
+Karhupuisto|24.95249,60.18359
+Kallion virastotalo|24.94999,60.18127
+Haahkakuja|24.87607,60.15676
+Haakakuja|24.87615,60.15675
+Haahkatie|24.88067,60.15641
+Haahkatie|24.88063,60.1564
+Otavantie|24.87967,60.1577
+Otavantie|24.87931,60.15774
+Terveyskeskus|24.88393,60.1614
+Terveyskeskus|24.8835,60.16141
+Kotkavuori|24.88024,60.16263
+Kotkavuori|24.88019,60.16271
+Gyldenintie|24.88008,60.16358
+Gyldenintie|24.88017,60.16363
+Maamonlahdentie|24.88199,60.16416
+Maamonlahdentie|24.88248,60.16424
+Koillisväylä|24.88785,60.1636
+Koillisväylä|24.88794,60.16356
+Pohjoisniementie|24.89068,60.16259
+Pohjoisniementie|24.89056,60.16265
+Huopalahti/VR|24.8934,60.21837
+Palvelutalo|24.89248,60.1591
+Vatakuja|24.88962,60.15918
+Vatakuja|24.88994,60.15924
+Pajalahdentie|24.88706,60.15911
+Vattuniemenkatu|24.88449,60.15656
+Melkonkuja|24.88344,60.14904
+Kallion virastotalo|24.94839,60.18156
+Melkonkatu|24.87889,60.15384
+Melkonkatu|24.88017,60.15414
+Wavulinintie|24.87657,60.15332
+Nahkahousuntie|24.88587,60.15126
+Vattuniemenkuja|24.88507,60.15336
+Vattuniemenkuja|24.88473,60.15393
+Heikkiläntie|24.8856,60.15661
+Heikkiläntie|24.88541,60.15653
+Pajalahdentie|24.88787,60.15971
+Pajalahdentie|24.88662,60.15886
+Lauttasaaren silta|24.89126,60.16131
+Särkiniemenpolku|24.87718,60.152
+Melkonkuja|24.88167,60.1497
+Särkiniemenpolku|24.87704,60.15229
+Vattuniemi|24.8854,60.14952
+Melkonkatu|24.88245,60.15206
+Melkonkatu|24.88264,60.15089
+Kiviaidankatu|24.88136,60.15433
+Kiviaidankatu|24.88144,60.15394
+Särkiniementie|24.8764,60.1539
+Malmin asema|25.01265,60.25018
+Pilssikuja|25.13052,60.21319
+Teerisuonkuja|25.02557,60.25091
+Pilssikuja|25.1298,60.21303
+Teerisuonkuja|25.02561,60.25097
+Rastilantie 11|25.12637,60.21206
+Malmin asema|25.01192,60.24996
+Rastila(M)|25.1199,60.2054
+Rastila(M)|25.11985,60.20494
+Rastilantie 11|25.12646,60.21209
+Rastila(M)|25.12049,60.20562
+Rastila(M)|25.11971,60.2058
+Aurinkolahti|25.15776,60.20783
+Särkiniementie|24.87722,60.15365
+Hevosenkenkäpuisto|24.87399,60.15729
+Hevosenkenkäpuisto|24.87384,60.15759
+Lahnalahden puisto|24.87498,60.16071
+Nahkahousuntie|24.878,60.15013
+Lahnalahdentie|24.8697,60.16161
+Lahnalahden puisto|24.87626,60.16085
+Nahkahousuntie|24.88576,60.15124
+Katajaharju|24.85737,60.16819
+Koivusaarentie|24.85843,60.16492
+Nallenmäentie|25.03338,60.24752
+Malmin asematie|25.00818,60.24924
+Rastilantie 17|25.12453,60.211
+Malmin asematie|25.0077,60.24926
+Malmin asema|25.01236,60.25049
+Pyrytie|25.02981,60.24988
+Rastilantie 17|25.12459,60.21104
+Pohj. ostoskeskus|25.14033,60.22177
+Malmin asema|25.01237,60.25022
+Tullivuorenkuja|25.03503,60.24484
+Mustalahdentie|25.13601,60.22219
+Mustalahdentie|25.13582,60.22227
+Sumukuja|25.15792,60.2056
+Paavolantie|25.01101,60.24865
+Koivusaarentie|24.85843,60.16521
+Vaskiniementie|24.85971,60.16182
+Vaskiniementie|24.85976,60.16207
+Viklakuja|24.86154,60.1583
+Viklakuja|24.86085,60.15934
+Takaniementie|24.86538,60.15665
+Takaniementie|24.86445,60.15688
+Kuikkarinne|24.86863,60.15688
+Kuikkarinne|24.86791,60.1568
+Lauttasaaren kirkko|24.87184,60.15792
+Paavolantie|25.01278,60.24882
+Pekanraitti|25.01796,60.25127
+Pekanraitti|25.01751,60.25168
+Soidintie|25.01394,60.2526
+Vuotie|25.1517,60.2077
+Vuotie|25.15195,60.20762
+Soidintie|25.01507,60.25315
+Malmin asema|25.01215,60.25152
+Aurinkolahti|25.15843,60.20854
+Iiluodonkuja|25.15482,60.20501
+Iiluodonkuja|25.15537,60.20505
+Leikosaarentie|25.14879,60.2042
+Leikosaarentie|25.14892,60.20422
+Huopalahti/VR|24.8934,60.21837
+Lauttasaaren kirkko|24.87228,60.15817
+Lauttasaarentie 32|24.87963,60.16046
+Lauttasaarentie 33|24.87946,60.16055
+Koillisväylä|24.88663,60.16085
+Koillisväylä|24.88418,60.16068
+Lauttasaaren silta|24.89116,60.16113
+Lauttasaaren silta|24.89056,60.16126
+Nahkahousuntie|24.87813,60.1498
+Saniaistie|25.02386,60.25643
+Iiluodontie|25.14414,60.20368
+Saniaistie|25.02477,60.25644
+Iiluodontie|25.14482,60.20375
+Vedenottamontie|25.13906,60.20293
+Vedenottamontie|25.14019,60.20297
+Lokipolku|25.13062,60.20964
+Mosaiikkitori|25.14269,60.20917
+Mosaiikkitori|25.14272,60.2094
+Vuosaari(M)|25.14414,60.20747
+Vuosaari(M)|25.14455,60.20717
+Lokipolku|25.13053,60.20965
+Usvatie|25.0344,60.24396
+Usvatie|25.03355,60.24359
+Kaivonkatsojanpuisto|25.13657,60.20344
+Raetie|25.02771,60.2426
+Kaivonkatsojanpuisto|25.13639,60.20388
+Raetie|25.02813,60.24243
+Latokartanontie|25.01998,60.24263
+Päiväkoti|25.14475,60.2141
+Latokartanontie|25.02026,60.24253
+Päiväkoti|25.14488,60.21409
+Teerisuontie|25.02227,60.25247
+Kallvikintie|25.13522,60.20962
+Teerisuontie|25.02167,60.25316
+Lallintie|25.01998,60.25008
+Kallvikintie|25.13504,60.20962
+Lallintie|25.02018,60.25005
+Ala-Malmin raitti|25.01654,60.24952
+Porslahdentie|25.14915,60.22224
+Kallahdenraitti|25.1339,60.20222
+Kallahdenraitti|25.1341,60.2022
+Harbonkuja|25.12267,60.20061
+Harbonkuja|25.12295,60.20063
+Fokkatori|25.11725,60.20237
+Fokkatori|25.11712,60.20228
+Halkaisijantie|25.12732,60.20136
+Leppätie|24.99342,60.25147
+Halkaisijantie|25.12767,60.20138
+Malmin asema tulo|25.00911,60.24981
+Ramsinniementie|25.11925,60.20029
+Malmin asema tulo|25.00912,60.2505
+Ramsinniementie|25.11964,60.2001
+Meri-Rastilan tori|25.11772,60.20424
+Ala-Malmi|25.01131,60.24725
+Meri-Rastilan tori|25.11821,60.20482
+Ala-Malmi|25.01138,60.24755
+Porslahdentie|25.14876,60.2221
+Ruotutorpankuja|25.00326,60.24685
+Isonvillasaarentie|25.14579,60.21981
+Eskolantie|24.99679,60.24328
+Isonvillasaarentie|25.14643,60.22069
+Eskolantie|24.99639,60.24318
+Lokkisaarentie|25.1474,60.21576
+Riihenkulma|25.0153,60.24336
+Lokkisaarentie|25.14786,60.21637
+Vanha viertotie|24.87955,60.21302
+Riihenkulma|25.01545,60.24349
+Punakiventie|25.1474,60.21359
+Vuosaarentie|25.14905,60.21023
+Seppämestarintie|25.02111,60.24025
+Vuosaarentie|25.14971,60.21104
+Hela-aukio|25.01859,60.25397
+Etel. ostoskeskus|25.14315,60.20961
+Malminkaari|25.02608,60.25757
+Punakiventie|25.14396,60.21048
+Lokitie|25.13682,60.20957
+Mustalahdentie|25.13545,60.22313
+Mustalahdentie|25.13634,60.22372
+Soidintie|25.01418,60.2526
+Latokartanontie|25.02326,60.24164
+Venemestarintie|25.12802,60.20448
+Heikinlaakso|25.07322,60.27065
+Latokartanontie|25.021,60.24215
+Venemestarintie|25.1276,60.2047
+Tattariharjuntie|25.03099,60.241
+Korvasienentie|25.07699,60.27433
+Tattariharjuntie|25.03104,60.24123
+Lokitie|25.13588,60.21026
+Ala-Malmin raitti|25.01551,60.24928
+Lokitie|25.13594,60.20909
+Haagan palvelutalo|24.88522,60.22855
+Satamasaarentie|25.13492,60.21247
+Satamasaarentie|25.13517,60.21147
+Koukkusaarenpolku|25.13316,60.21597
+Koukkusaarenpolku|25.13342,60.21508
+Merikorttitie|25.13328,60.21844
+Merikorttitie|25.13261,60.21717
+Purjetie|25.13417,60.22095
+Purjetie|25.13389,60.21977
+Mustalahdentie|25.13528,60.22234
+Punakiventie|25.14396,60.21053
+Niemenmäki|24.88451,60.20308
+Kantelettarentie|24.89275,60.23438
+Valimo|24.87679,60.22054
+Valimotie 15|24.87837,60.21922
+Valimotie 15|24.87877,60.21857
+Valimotie|24.87617,60.21562
+Höyläämötie|24.8791,60.21437
+Itäkeskus(M)|25.07621,60.20987
+Leppätie|24.99443,60.25133
+Ratavallintie|24.99455,60.24013
+Eteläniitynpolku|24.99106,60.23944
+Savela|24.98644,60.23819
+Itäkeskus(M)|25.07681,60.20964
+Pukinmäen asema|24.99408,60.24372
+Varikkotie|25.06637,60.20982
+Itäkeskus(M)|25.07627,60.20952
+Madetojankuja|24.99081,60.24296
+Ruotutorpankuja|25.00154,60.24617
+Itäkeskus(M)|25.0768,60.21003
+Puotinharju|25.08187,60.21211
+Ukkostie|24.99734,60.24855
+Haukilahdenkatu|24.96847,60.19909
+Haukilahdenkatu|24.96938,60.19824
+Atomitie|24.8672,60.22436
+Meijeritie|24.8696,60.2258
+Meijeritie|24.86806,60.22509
+Marttila|24.87217,60.22716
+Tilkka|24.90097,60.19905
+Ukkostie|24.99755,60.24868
+Tilkka|24.90094,60.19909
+Kenttätie|24.99219,60.2479
+Madetojankuja|24.99088,60.24297
+Kilpisenpolku|24.98652,60.24493
+Kilpisenpolku|24.98661,60.24488
+Pukinmäenkaari|24.98685,60.25075
+Pukinmäenkaari|24.98678,60.25129
+Kenttätie|24.99163,60.24732
+Kenttätie|24.99175,60.24716
+Eskolantie|24.99451,60.24324
+Eskolantie|24.99386,60.24398
+Kytösuontie|24.8957,60.20406
+Pukinmäen asema|24.9931,60.24167
+Kytösuontie|24.8957,60.20406
+Pukinmäen asema|24.99304,60.24236
+Ruskeasuo|24.8984,60.2032
+Säveltie|24.98608,60.2471
+Ruskeasuo|24.8984,60.2032
+Savela|24.99469,60.24113
+Isonpellontie|24.97954,60.2399
+Isonpellontie|24.97993,60.23991
+Säveltie|24.98608,60.2471
+Takkatie|24.86274,60.22251
+Takkatie|24.86157,60.22108
+Munkkivuori|24.88078,60.20663
+Metrovarikko|25.06767,60.21265
+Vaakatie|24.87708,60.22838
+Metrovarikko|25.06794,60.21346
+Vaakatie|24.87667,60.22844
+Lassila|24.88174,60.23063
+Kauppamyllyntie|25.06346,60.21602
+Pohjois-Haagan asema|24.88338,60.23009
+Kauppamyllyntie|25.06341,60.21594
+Talin siirt.puutarha|24.86304,60.21991
+Takomotie|24.87051,60.21694
+Takomotie|24.86884,60.21776
+Valimotie|24.87677,60.2149
+Valimotie|24.87448,60.21574
+Henrikintie|24.85057,60.22488
+Lassila|24.8821,60.23079
+Näyttelijäntie|24.88799,60.23296
+Marttila|24.87405,60.22769
+Itäkeskus(M)|25.07822,60.21024
+Marttila|24.87358,60.227
+Puotila(M)|25.09232,60.21477
+Vihdintien silta|24.87771,60.22447
+Vihdintien silta|24.87712,60.22527
+Vanha talvitie|24.97314,60.18918
+Itäkeskus(M)|25.07745,60.20975
+Sörnäistenkatu|24.97368,60.19603
+Sörnäistenkatu|24.97448,60.19523
+Uimahalli|25.07667,60.21293
+Itäkeskus(M)|25.07691,60.20956
+Varikkotie|25.06617,60.20922
+Itäkeskus(M)|25.07634,60.20942
+Nyytorpinpolku|25.09324,60.21864
+Arhotie|25.08592,60.21844
+Korsholmantie|25.08321,60.21348
+Vanhanlinnantie|25.08581,60.21472
+Vanhanlinnantie|25.0882,60.21479
+Ristikkokatu|24.9648,60.19261
+Porvoonkatu|24.94693,60.18917
+Suursuontie|24.93797,60.23407
+Vanhanlinnantie|25.08826,60.21466
+Niitynperäntie|24.87496,60.23181
+Puotinharju|25.07999,60.21138
+Niitynperäntie|24.87295,60.23202
+Puotinharju|25.08114,60.21156
+Niittykulmantie|24.87821,60.23255
+Niittykulmantie|24.87776,60.23252
+Itäkeskus(M)|25.07629,60.21035
+Itäkeskus(M)|25.07602,60.21005
+Laurinmäenkuja|24.88343,60.23257
+Itäkeskus(M), tulo|25.07785,60.21033
+Laurinmäenkuja|24.88346,60.23254
+Orvokkitie|25.08941,60.21731
+Killinkipolku|24.88487,60.22925
+Itäkeskus(M), tulo|25.07796,60.21
+Killinkipolku|24.88494,60.22923
+Rantakartanontie|25.09587,60.21633
+Arhotie|25.08351,60.21752
+Suursuon sairaala|24.93412,60.23443
+Maunula|24.93529,60.23168
+Maunulanmäki|24.93191,60.23064
+Maunulanmäki|24.93342,60.23062
+Kuusikkotie|24.92902,60.22987
+Kuusikkotie|24.92866,60.22967
+Nimenemäentie|24.88347,60.20382
+Vesakkotie|24.92567,60.2281
+Vesakkotie|24.92673,60.22827
+Niemenmäenkuja|24.88467,60.20423
+Luuvaniementie|24.88359,60.2055
+Metsäpuronkuja|24.92337,60.22898
+Luuvaniementie|24.88362,60.20546
+Metsäpuronkuja|24.92372,60.22883
+Östersundom|25.17398,60.2514
+Arhotie|25.08378,60.21775
+Puotila(M)|25.09017,60.21533
+Puotila(M)|25.09193,60.21557
+Ratasmyllyntie|25.06699,60.20887
+Ratasmyllyntie|25.06718,60.20879
+Itäkeskus(M)|25.0766,60.21008
+Orvokkitie|25.08989,60.21683
+Itäkeskus(M), tulo|25.07608,60.20993
+Olavinlinnanpolku|25.0742,60.21411
+Ruusuniementie|25.17303,60.21047
+Vesakkotie|24.92667,60.22772
+Vuosaarenlahti|25.17498,60.20827
+Östersundom|25.17507,60.25129
+Koivikkotie|24.9307,60.22526
+Koivikkotie|24.93073,60.22544
+Hansaterminaali|25.17535,60.2215
+Majakanvartijankatu|25.17034,60.21282
+Hansaterminaali|25.17535,60.2215
+Voimalaitokset|25.17245,60.21917
+Voimalaitokset|25.1732,60.21917
+Rajametsäntie|24.93351,60.2268
+Pirjontie|24.93171,60.23351
+Männikkötie|24.9264,60.2265
+Maunula|24.93386,60.23179
+Paanutie|24.9378,60.23011
+Paanutie|24.93839,60.2301
+Männikkötie|24.92982,60.22526
+Porvoonkatu|24.94694,60.18944
+Porvoonkatu|24.94719,60.19007
+Kulttuuritalo|24.94428,60.18774
+Kulttuuritalo|24.94385,60.18724
+Savonkatu|24.93699,60.19545
+Savonkatu|24.93578,60.19505
+Sipoonkatu|24.94076,60.1942
+Karjalankatu|24.93641,60.19225
+Karjalankatu|24.93607,60.19244
+Alppila|24.94101,60.19117
+Alppila|24.9406,60.19124
+Kotkankatu|24.94461,60.19255
+Sturenkatu|24.94875,60.19087
+Linnanmäki|24.94185,60.18643
+Linnanmäki|24.94121,60.18642
+Käpylä/VR|24.94735,60.22033
+Vanhakaupunki|24.979,60.21705
+Vanhakaupunki|24.98016,60.21611
+Vanhakaupunki|24.98108,60.21715
+Annalantie|24.97917,60.21316
+Annalantie|24.97844,60.21252
+Tuomarinkartanontie|24.95801,60.25601
+Tuomarinkartanontie|24.95927,60.25699
+Yhdyskunnantie|24.95304,60.2549
+Yhdyskunnantie|24.95468,60.25465
+Pasila/VR|24.93274,60.19902
+Pasila/VR|24.93379,60.19913
+Käpylä/VR|24.94735,60.22033
+Lukupolku|24.96204,60.25122
+Puotila|25.09377,60.21449
+Puotila|25.09377,60.21449
+Malminkartano/VR|24.8612,60.24928
+Korppaanmäki|24.89267,60.20814
+Korppaanmäki|24.89229,60.20783
+Haapalahdenkatu|24.89238,60.20543
+Haapalahdenkatu|24.89238,60.20543
+Jakokunnantie 33|24.94492,60.24199
+Jakokunnantie 33|24.94512,60.24206
+Ripusuontie|24.94298,60.24711
+Ripusuontie|24.94325,60.2466
+Halkosuontie|24.94407,60.24408
+Halkosuontie|24.94424,60.24415
+Jakokunnantie|24.94309,60.2397
+Jakokunnantie|24.94366,60.23973
+Päivänsalontie|24.93725,60.23903
+Päivänsalontie|24.93702,60.23896
+Elontie|24.92518,60.24433
+Elontie|24.9254,60.24426
+Halkosuontie|24.92653,60.24172
+Halkosuontie|24.92687,60.24185
+Muurimestarintie|24.9279,60.23958
+Muurimestarintie|24.92814,60.23948
+Alkutie|24.92902,60.23664
+Alkutie|24.92894,60.23743
+Pasila/VR|24.93292,60.19904
+Pasila/VR|24.93365,60.19911
+Pakilantie|24.92844,60.24109
+Pakilantie|24.92653,60.24126
+Sysimiehentie|24.94503,60.24339
+Sysimiehentie|24.94666,60.24432
+Malminkartano/VR|24.8612,60.24928
+Korvasienentie|25.0771,60.27451
+Sörnäinen|24.9599,60.18741
+Sörnäinen|24.9599,60.18741
+Liisankatu|24.9562,60.17397
+Pohjoisranta|24.95895,60.17103
+Liisanpuistikko|24.96117,60.17398
+Snellmaninkatu|24.95208,60.17407
+Snellmaninkatu|24.95236,60.17401
+Liisanpuistikko|24.96023,60.17433
+Liisanpuistikko|24.96071,60.17428
+Heikinlaakso|25.07203,60.27016
+Meritullinkatu|24.95653,60.17421
+Kalliotie|25.07134,60.26665
+Meritullinkatu|24.95688,60.17418
+Kalliotie|25.0718,60.26757
+Vironkatu|24.95627,60.17258
+Suurmetsäntie|25.06959,60.26363
+Kirkkokatu|24.95657,60.17127
+Nummitie|25.06454,60.26962
+Heikinlaakso|25.07277,60.26959
+Heikinlaakso|25.0701,60.26995
+Kirsikuja|25.06931,60.26828
+Kirsikuja|25.06925,60.26828
+Kirsitie|25.06439,60.26765
+Kiiliänkuja|25.09567,60.23892
+Kiiliänkuja|25.09608,60.23892
+Koskenhaantie|25.09099,60.23881
+Koskenhaantie|25.09051,60.23891
+Kontulantie|25.10673,60.2382
+Kontulantie|25.10701,60.23837
+Rajapysäkki|25.19623,60.28262
+Rajapysäkki|25.19648,60.28253
+Porvoonväylä|25.20976,60.26483
+Landbo|25.20183,60.27089
+Sakarinmäen koulu|25.20992,60.26102
+Sakarinmäen koulu|25.20992,60.26087
+Paneliantie|25.0882,60.24357
+Aarteenetsijäntie|25.10283,60.23944
+Johanneksen kirkko|24.94603,60.1628
+Tarkk´ampujankatu|24.94636,60.16075
+Tarkk´ampujankatu|24.94652,60.16121
+Vuorimiehen puist.|24.94652,60.15907
+Aarteenetsijäntie|25.10338,60.23988
+Vuorimiehen puist.|24.94666,60.15925
+Untamalantie|25.10082,60.23521
+Kapteeninpuistikko|24.94528,60.15686
+Untamalantie|25.1004,60.23512
+Kapteeninpuistikko|24.9455,60.15742
+Ohralantie|25.0993,60.23268
+Meritori|24.94633,60.15559
+Ohralantie|25.09953,60.23329
+Neitsytpolku|24.94903,60.15751
+Merikatu|24.94897,60.15591
+Tuukkalantie|25.10109,60.239
+Koskenhaantie|25.09258,60.24285
+Koskenhaantie|25.09267,60.24283
+Kekomäentie|25.09167,60.24047
+Kekomäentie|25.09222,60.24118
+Rekipellontie|25.08939,60.23866
+Rekipellontie|25.08935,60.2386
+Rapolantie|25.08414,60.24622
+Köyliöntie|25.08707,60.24502
+Köyliöntie|25.08636,60.24531
+Lupajantie|25.10492,60.23332
+Tanhuantie|25.09955,60.23702
+Tanhuantie|25.09838,60.23732
+Länsimäentie|25.1058,60.23742
+Paneliantie|25.1004,60.24085
+Paneliantie|25.10039,60.24083
+Vesalantie|25.10038,60.24234
+Vesalantie|25.10038,60.24232
+Koskenhaantie|25.0925,60.24417
+Koskenhaantie|25.09248,60.24417
+Ohralankuja|25.10218,60.23253
+Tuukkalankuja|25.10188,60.24137
+Mellunmäki(M), tulo|25.10848,60.2383
+Mellunmäki(M)|25.10902,60.23845
+Mellunmäki(M)|25.10849,60.2383
+Aarteenetsijäntie|25.10283,60.23998
+Pohjolanaukio|24.9539,60.21677
+Metsolantie|24.94775,60.21483
+Valtimontie|24.96438,60.21515
+Metsolantie|24.94815,60.21495
+Käpylänaukio|24.94344,60.21296
+Käpylänaukio|24.94344,60.21296
+Kimmontie|24.9445,60.21051
+Kimmontie|24.9445,60.21052
+Ruusuniementie|25.17315,60.21064
+Harkkoraudantie|25.05617,60.24761
+Kankiraudantie|25.05051,60.24642
+Verkkosaarenkatu|24.97684,60.19074
+Malmin lentoasema|25.04537,60.24534
+Valuraudantie|25.04056,60.24429
+Merihaka|24.9605,60.17905
+Majakanvartijankatu|25.17106,60.21246
+Vuosaari(M), tulo|25.14414,60.20746
+Vuosaari(M), tulo|25.14455,60.20717
+Aurinkol. puistotie|25.14719,60.20401
+Pasilan asema|24.93453,60.19907
+Aurinkol. puistotie|25.14703,60.20403
+Ivan Falinin kuja|25.14966,60.20239
+Ivan Falinin kuja|25.14968,60.20242
+G. Pauligin katu|25.15324,60.20211
+G. Pauligin katu|25.15305,60.20211
+Aurinkotuulenkatu|25.15917,60.20314
+Aurinkotuulenkatu|25.15899,60.20318
+Sumukuja|25.15814,60.20476
+Mustankivenkatu|25.1428,60.2071
+Mustankivenkatu|25.14335,60.20712
+Uutela|25.17679,60.20011
+Marjaniementie|25.07662,60.20466
+Koukkusaarenpolku|25.13448,60.216
+Koukkusaarentie|25.13427,60.21679
+Marjaniementie|25.07614,60.20392
+Marjaniementie|25.07685,60.20428
+Vuosaari(M)|25.14425,60.2075
+Leikosaarentie|25.15267,60.20471
+Laukkipäänpolku|24.99075,60.26154
+Leikosaarentie|25.1518,60.2046
+Haapasaarenpolku|25.14082,60.21868
+Niittyranta|25.09335,60.20618
+Sumukuja|25.15638,60.20513
+Niittyranta|25.09324,60.206
+Aamuruskontie|25.03009,60.28437
+Vuosaari(M)|25.14456,60.20706
+Kissankellontie|25.0889,60.20593
+Vuosaari(M)|25.14419,60.20765
+Kissankellontie|25.08853,60.2056
+Vuosaari(M), tulo|25.14456,60.20706
+Marjaniemi|25.08538,60.20378
+Marjaniemi|25.0858,60.2043
+Puolaharju|25.07957,60.20354
+Kallahti|25.14315,60.19965
+Puolaharju|25.08139,60.20324
+Kirkko|25.139,60.21299
+Merikorttikuja|25.12886,60.21635
+Tulisuonkuja|25.07354,60.20303
+Merikorttitie|25.12939,60.21856
+Tulisuonkuja|25.07329,60.20285
+Merikorttitie|25.12939,60.21858
+Isonvillasaarentie|25.14184,60.22127
+Punakiventie|25.14319,60.21163
+Punakiventie|25.14319,60.21163
+Vuosaari(M)|25.14455,60.20715
+Vuosaari(M), tulo|25.14418,60.20764
+Paciuksenkaari|24.8913,60.19466
+Paciuksenkaari|24.89052,60.19509
+Meilahdentie|24.89474,60.19323
+Meilahdentie|24.89474,60.19323
+Kylänvanhimmantie|24.96222,60.22882
+Meilahden sairaala|24.90528,60.19128
+Kylänvanhimmantie|24.96248,60.2288
+Meilahden sairaala|24.90528,60.19128
+Töölön tulli|24.91141,60.19115
+Käskynhaltijantie|24.94377,60.22978
+Töölön tulli|24.91127,60.19115
+Kylävoudintie|24.95174,60.22445
+Ruskeasuo|24.89933,60.20521
+Tilkka|24.90152,60.19813
+Oulunkylän rantap.|24.97454,60.23699
+Oulunkylän rantap.|24.97644,60.2381
+Mikkolantie|24.97254,60.23609
+Mikkolantie|24.97034,60.23539
+Patola|24.96753,60.23425
+Mestarintie|24.95309,60.23073
+Kivalterintie|24.95148,60.22954
+Kauppakartanonkatu|25.08664,60.20912
+Kauppakartanonkatu|25.08738,60.20916
+Asiakkaankatu|25.08187,60.20779
+Kivalterintie|24.95254,60.22982
+Kustaankartano|24.95035,60.2276
+Kustaankartano|24.95045,60.22751
+Asiakkaankatu|25.0823,60.2078
+Siltavoudinkuja|24.96367,60.23735
+Siltavoudinkuja|24.96372,60.23752
+Patola|24.9657,60.23479
+Paturintie|24.95606,60.22702
+Paturintie|24.95715,60.22748
+Kylävoudintie|24.95228,60.22487
+Panuntie|24.94678,60.22125
+Oltermannintie|24.94785,60.22269
+Oltermannintie|24.94889,60.22312
+Käpylän asema|24.9477,60.22105
+Niittyranta|25.09511,60.20325
+Niittyranta|25.09559,60.20321
+Kunnallisneuvoksent|25.09484,60.2061
+Kauppakartanonkuja|25.07833,60.2067
+Käpylän asema|24.94837,60.2207
+Kauppakartanonkuja|25.07659,60.20635
+Koivuniementie|25.09446,60.20491
+Itäpolku|25.07562,60.20757
+Itäpolku|25.0753,60.2075
+Marjaniemenranta|25.07984,60.20336
+Kisällintie|24.95846,60.23273
+Kisällintie|24.95845,60.23275
+Hirsipadonkuja|24.95685,60.23442
+Hirsipadonkuja|24.95685,60.23442
+Hirsipadontie|24.9512,60.23375
+Hirsipadontie|24.9512,60.23375
+Maapadontie|24.95134,60.23106
+Maapadontie|24.95127,60.23116
+Herttoniemi(M)|25.03188,60.19516
+Herttoniemi(M)|25.03171,60.19499
+Herttoniemi|25.02975,60.19392
+Kipparlahti|25.01852,60.19132
+Herttoniemi(M)|25.03145,60.19483
+Herttoniemi(M)|25.03124,60.19472
+Muuntajankatu|25.04504,60.2058
+Konemestarinkatu|25.03757,60.1991
+Konemestarinkatu|25.03652,60.19873
+Kustaankartano|24.94731,60.22999
+Mestarintie|24.95398,60.23133
+Kustaankartano|24.94776,60.23022
+Mestarintie|24.9522,60.23108
+Norrtäljentie|24.95962,60.23268
+Norrtäljentie|24.95772,60.23238
+Patola|24.96677,60.2336
+Patola|24.96508,60.23385
+Ruutanatie|24.96671,60.23074
+Ruutanatie|24.96787,60.23192
+Oulunkylän tori|24.96569,60.22939
+Oulunkylän tori|24.9646,60.22968
+Oulunkylän tori|24.96525,60.22996
+Käpylän asema|24.945,60.22102
+Käpylän asema|24.94574,60.22117
+Käskynhaltijantie|24.95892,60.23228
+Urakkatie|24.96122,60.23981
+Oulunkylän terveyske|24.96249,60.22776
+Käskynhaltijantie|24.95907,60.23203
+Mäkitorpantie|24.95539,60.22622
+Tuusulanväylä|24.94452,60.22968
+Tuusulanväylä|24.94197,60.22972
+Mäkitorpantie|24.96421,60.22873
+Mäkitorpantie|24.96305,60.22961
+Mäkitorpantie|24.9554,60.22621
+Susiraja|25.1544,60.2557
+Susiraja|25.15409,60.25576
+Mäenlaskijantie|25.02821,60.19767
+Terveysasema|25.03724,60.20729
+Terveysasema|25.03726,60.20729
+Kettukuja|25.03961,60.20768
+Miilumäentie|25.19481,60.27177
+Karhunevantie|25.19261,60.26958
+Antti Korpin tie|24.96627,60.21839
+Kettukuja|25.03905,60.20733
+Kettutie|25.03599,60.20553
+Kettutie|25.03667,60.20579
+Eränkävijäntori|25.03388,60.20423
+Eränkävijäntori|25.03467,60.20462
+Majavatie|25.03135,60.20156
+Majavatie|25.03197,60.20234
+Herttoniemen kirkko|25.03136,60.19926
+Herttoniemen kirkko|25.03163,60.19795
+Hiihtäjäntie|25.03189,60.19654
+Landbonpolku|25.19769,60.26869
+Landbo|25.19481,60.27177
+Puroniityntie|25.24088,60.29232
+Herttoniemi(M)|25.03125,60.19542
+Siilitie 13|25.04395,60.21504
+Siilitie 13|25.04418,60.21487
+Siilitie 11|25.03822,60.2123
+Siilitie 11|25.03878,60.21268
+Siilitie 9|25.03725,60.20971
+Siilitie 9|25.03723,60.20983
+Kettukuja|25.04045,60.20738
+Kettukuja|25.04039,60.20757
+Siilitie(M)|25.04478,60.20627
+Siilitie(M)|25.04452,60.2065
+Wallininkatu|24.94331,60.18563
+Herttoniemi(M), tulo|25.03124,60.19542
+Wallininkatu|24.94337,60.18556
+Kuntatalo|24.94172,60.18415
+Kuntatalo|24.94114,60.18445
+Siilitie|25.03772,60.20886
+Herttoniemi(M), tulo|25.03188,60.19515
+Herttoniemi(M)|25.03118,60.19537
+Puistola/VR|25.03589,60.27482
+Herttoniemi(M)|25.03036,60.19473
+Herttoniemi(M)|25.03099,60.19456
+Herttoniemi|25.0322,60.19461
+Herttoniemi(M)|25.03007,60.19447
+Herttoniemi(M)|25.02981,60.19436
+Kipparlahti|25.02131,60.19172
+Kallion virastotalo|24.94897,60.18141
+Aleksant. teatteri|24.9332,60.163
+Hietalahdentori|24.93094,60.16223
+Haapaniemi|24.95482,60.18182
+Kallion virastotalo|24.94999,60.18127
+Agroksenkuja|24.97782,60.19358
+Agroksenkuja|24.97807,60.19265
+Tynnyrintekijänkatu|24.96962,60.1886
+Telakkakatu|24.93377,60.15836
+Perämiehenkatu|24.93599,60.1578
+Perämiehenkatu|24.93573,60.15783
+Iso Roobertinkatu|24.93896,60.16283
+Iso Roobertinkatu|24.93909,60.16288
+Viiskulma|24.94146,60.16106
+Kotoniityntie|24.96596,60.22356
+Kotoniityntie|24.96627,60.22362
+Tynnyrintekijänkatu|24.96923,60.18875
+Jaalantie|24.96391,60.22171
+Jaalantie|24.96484,60.22232
+Taivaskallio|24.96186,60.2199
+Taivaskallio|24.96208,60.2199
+Merihaka|24.96067,60.17892
+Castréninkatu|24.94536,60.18276
+Castréninkatu|24.94524,60.18287
+Reposalmentie|25.05258,60.17825
+Kallion virastotalo|24.94839,60.18156
+Viiskulma|24.94134,60.16127
+Koskelan sairaala|24.95984,60.21713
+Koskela|24.96428,60.2197
+Juhana Herttuan tie|24.96767,60.21953
+Herttuanpolku|24.9699,60.21897
+Antti Korpin tie|24.96682,60.21815
+Kunnalliskodintie|24.96702,60.21645
+Kunnalliskodintie|24.96663,60.21668
+Merihaka|24.96059,60.17887
+Valtimontie|24.96438,60.21515
+Reposalmentie|25.05333,60.17819
+Myllypuro|25.07646,60.22458
+Myllypuro|25.07646,60.22458
+Borgströminkuja|25.03801,60.17514
+Kalasatama (M)|24.97574,60.18855
+Kalasatama(M)|24.97661,60.18831
+Kalasatama(M)|24.97647,60.18831
+Puistola/VR|25.03589,60.27482
+Borgströminkuja|25.03817,60.1752
+Kannelkoti|24.8789,60.24678
+Talontie|24.88865,60.21031
+Haapaniemi|24.95813,60.18301
+Käenkuja|24.96655,60.18505
+Kamppi|24.93151,60.1689
+Suvilahti|24.96681,60.18512
+Tynnyrintekijänkatu|24.97123,60.18906
+Kamppi|24.93149,60.1689
+Gunillanpolku|25.04281,60.16783
+Gunillankuja|25.03753,60.1673
+Gunillanpolku|25.04265,60.16787
+Urheilutalo|24.94853,60.18686
+Urheilutalo|24.94852,60.18704
+Talontie|24.88874,60.20973
+Tynnyrintekijänkatu|24.97118,60.18905
+Vanha talvitie|24.97315,60.18912
+Verkkosaarenkatu|24.97684,60.19074
+Kalasatama(M)|24.97775,60.18716
+Isosarvastontie|25.05391,60.16636
+Kuusisaarenkuja|24.85935,60.18488
+Kuusisaarenkuja|24.8573,60.18455
+Sarpapolku|25.04855,60.16864
+Kuusiniementie|24.86985,60.18716
+Kuusiniementie|24.8681,60.18696
+Willebrandintie|25.04957,60.17222
+Willebrandintie|25.04925,60.17203
+Sarvastonkaari|25.05177,60.176
+Sarvastonkaari|25.05111,60.17559
+Kalasatama(M)|24.97573,60.1871
+Suvilahti|24.96954,60.18769
+Suvilahti|24.96758,60.18577
+Hanasaari|24.96182,60.18239
+Hanasaari|24.96208,60.18206
+Merihaka|24.9605,60.17905
+Koulutanhua|25.05738,60.17805
+Koulutanhua|25.05687,60.17809
+Kiiltomadonpolku|25.0596,60.18081
+Kiiltomadonpolku|25.05966,60.18038
+Marunakuja|25.05705,60.18384
+Marunakuja|25.05709,60.18367
+Yliskylänkaari|25.05198,60.18389
+Pajupillintie|24.88774,60.24392
+Yliskylänkaari|25.05227,60.18382
+Pajupillintie|24.8884,60.24412
+Viulutie|24.87955,60.23711
+Gunillankuja|25.03772,60.16737
+Viulutie|24.87849,60.23698
+Gunillanpolku|25.04305,60.1679
+Trumpettitie|24.8736,60.24008
+Trumpettitie|24.87327,60.24005
+Gunillanpolku|25.04265,60.16787
+Svanströmintie|25.04583,60.16886
+Svanströmintie|25.04599,60.16854
+Kasperinkuja|25.04185,60.17101
+Kasperinkuja|25.04299,60.17027
+Rudolfintie|25.03931,60.17246
+Rudolfintie|25.04015,60.17171
+Lauri Mikonpojan tie|25.04184,60.17484
+Lauri Mikonpojan tie|25.04034,60.17476
+Posti 2|24.91783,60.21642
+Isosaarentie|25.04661,60.1756
+Kannelmäen asema|24.87316,60.2408
+Posti 2|24.91878,60.21683
+Kustaankatu|24.95564,60.18721
+Posti 1|24.91677,60.21287
+Helsinginkatu|24.95566,60.18721
+Posti 1|24.91755,60.21345
+Ilmalan bussivarikko|24.91752,60.21009
+Isosaarentie|25.0462,60.17566
+Jussaarenkuja|25.04901,60.17786
+Urheilutalo|24.94776,60.1865
+Jussaarenkuja|25.04844,60.17722
+Urheilutalo|24.94774,60.1865
+Yliskyläntie|25.05134,60.17983
+Yliskyläntie|25.05149,60.17915
+Linnanmäki|24.94133,60.18603
+Humalniementie|25.05049,60.18299
+Humalniementie|25.05064,60.18248
+Itäniitynpolku|25.04812,60.18442
+Soittajankuja|24.87604,60.2417
+Itäniitynpolku|25.04893,60.18391
+Soittajankuja|24.87657,60.2421
+Kanneltie 8|24.87891,60.24217
+Kantelettarentie|24.88948,60.23549
+Kanneltalo|24.87474,60.23908
+Kanneltalo|24.87507,60.23876
+Brahenkatu|24.94823,60.18967
+Brahenkatu|24.94826,60.18978
+Sörnäinen(M)|24.96262,60.18778
+Sörnäinen(M)|24.9636,60.18833
+Jakomäen terveysasem|25.07432,60.26031
+Jakomäen terveysasem|25.0743,60.26032
+Vanhaistentie 11|24.88276,60.24486
+Ilmalan bussivarikko|24.91711,60.21037
+Vanhaistentie 11|24.88233,60.24517
+Kannelmäen ostosk.|24.88549,60.24254
+Kannelmäen ostosk.|24.88495,60.24193
+Kanneltie 8|24.87913,60.2418
+Runonlaulajantie|24.88549,60.24689
+Runonlaulajantie|24.8842,60.24651
+Prisma Kannelmäki|24.89003,60.23645
+Urkupillintie|24.87242,60.24362
+Klaneettikuja|24.87729,60.23738
+Klaneettikuja|24.87724,60.23743
+Helsinginkatu|24.95237,60.18695
+Helsinginkatu|24.95317,60.18753
+Fleminginkatu|24.95288,60.18907
+Pelimannintie 23|24.87,60.23538
+Klaneettitie|24.8767,60.2363
+Klaneettitie|24.87644,60.23635
+Kaustisentie|24.8833,60.23819
+Kaustisentie|24.88278,60.23819
+Pelimannintie|24.88785,60.23768
+Pelimannintie|24.8882,60.23774
+Kantelettarentie|24.88958,60.23568
+Terveysasema|24.87868,60.23929
+Kuussillantie|25.086,60.2608
+Sidetie|25.00979,60.26709
+Kuussillantie|25.08622,60.26099
+Kalteentie|25.08409,60.26442
+Huokotie|25.07929,60.26209
+Leivosentie|25.00456,60.2638
+Huokotie|25.08012,60.2619
+Leivosentie|25.00455,60.26397
+Laukkipäänpolku|24.99015,60.26109
+Laukkipäänpolku|24.99091,60.26154
+Nauvontie|24.8998,60.20466
+Kalteentie|25.08393,60.26448
+Somerikkopolku|25.0842,60.25976
+Somerikkopolku|25.08457,60.25979
+Tilanhoitajankaari|25.02254,60.22597
+Huhtapuisto|25.01166,60.26077
+Louhikkotie|25.08183,60.25619
+Louhikkotie|25.08238,60.25679
+Mustialankatu|25.02266,60.22942
+Maratontie|25.07816,60.25401
+Maratontie|25.07806,60.2539
+Kaadekuja|25.07331,60.2538
+Kaadekuja|25.07349,60.25368
+Jakomäentie 10|25.06984,60.25535
+Hakaniemi|24.95053,60.17934
+Hakaniemi|24.95053,60.17934
+Ruskeasuon varikko|24.90061,60.20785
+Ruskeasuo|24.90058,60.20293
+Invalidisäätiö|24.9079,60.20294
+Kiskontie|24.90444,60.20265
+Rintamasotilaantie|25.01722,60.26882
+Kiskontie|24.90502,60.2026
+Päivöläntie|25.02538,60.26934
+Päivöläntie|25.0235,60.26966
+Jakomäentie 10|25.06971,60.25497
+Jakomäentie 6|25.07194,60.25918
+Jakomäentie 6|25.07136,60.25883
+Jakomäen ostosk.|25.0736,60.26144
+Jakomäen ostosk.|25.07347,60.26154
+Ruskeasuon varikko|24.89893,60.20699
+Ruskeasuo|24.89911,60.20246
+Moisiontie|25.02993,60.26814
+Ruskeasuo|24.89932,60.20414
+Tilkka|24.90119,60.19771
+Tilkka|24.90154,60.19789
+Tapanilankaari|25.03245,60.26816
+Porvarintie|25.03385,60.27136
+Porvarintie|25.03447,60.2721
+Maatullinaukio|25.03549,60.27502
+Maatullinaukio|25.03572,60.27495
+Arttolantie|25.02876,60.28064
+Hatuntekijänkuja|25.03463,60.27697
+Hatuntekijänkuja|25.03463,60.27697
+Hatuntekijänkuja|25.03432,60.27665
+Kotikaivontie|25.00392,60.26131
+Kotikaivontie|25.00335,60.26103
+Laulurastaantie|25.00074,60.25832
+Laulurastaantie|25.00169,60.25929
+Hatuntekijänkuja|25.03432,60.27665
+Kämnerintie|25.02428,60.27802
+Kämnerintie|25.02659,60.27802
+Syystie|24.99923,60.25731
+Karhusuontie|24.98219,60.25966
+Uimarannantie|24.98409,60.25856
+Kivikonlaita|25.04835,60.2335
+Tapuliaukio tulo|25.03531,60.27535
+Tapuliaukio tulo|25.03507,60.27536
+Kivikonlaita|25.05366,60.23066
+Myllytuvantie|25.06349,60.22889
+Myllytuvantie|25.06009,60.22957
+Karhusuontie|24.98193,60.25998
+Uimarannantie|24.98418,60.25849
+Kivijatatie|25.0589,60.23191
+Immolantie|24.98378,60.2612
+Immolantie|24.98419,60.26134
+Pohjanpellontie|24.98039,60.25907
+Pohjanpellontie|24.98156,60.25975
+Henrik Forsiuksen t.|25.02228,60.27815
+Henrik Forsiuksen t.|25.02038,60.2787
+Tapuliaukio|25.03544,60.27529
+Tapuliaukio|25.0353,60.27528
+Tapulikaupungintie|25.03171,60.27838
+Tapulikaupungintie|25.03001,60.27863
+Tikkuritie|25.02772,60.28326
+Uimarannantie|24.98152,60.257
+Uimarannantie|24.98163,60.25723
+Tapaninvainiontie|24.98369,60.25443
+Tapaninvainiontie|24.9837,60.25464
+Tapaninvainiontie|24.98372,60.25513
+Tapaninvainiontie|24.98384,60.25516
+Santerlantie|24.98368,60.26397
+Santerlantie|24.98384,60.26381
+Valakkatie|24.9871,60.26071
+Valakkatie|24.98636,60.26129
+Arttolantie|25.02847,60.28053
+Vanha Tapanilantie|24.99375,60.2585
+Vanha Tapanilantie|24.9934,60.25877
+Haapatori|24.98817,60.25554
+Syystie|24.99789,60.25733
+Syystie|24.9975,60.25639
+Suvitie|24.99371,60.25324
+Haapatori|24.98897,60.25568
+Haapatie|24.9924,60.25605
+Suvitie|24.9941,60.25397
+Haapatie|24.9922,60.25612
+Ruutikuja|25.0744,60.24507
+Ruutikuja|25.07443,60.24493
+Tattarisilta|25.05463,60.24201
+Savikiekontie|25.0484,60.23501
+Savikiekontie|25.04913,60.23455
+Kivikonlaita|25.05478,60.23137
+Patteripolku|25.07861,60.24833
+Kivijatatie|25.05878,60.23164
+Kangaspellontie|24.88644,60.21045
+Kivijatatie|25.0573,60.23191
+Panosaukio|25.06251,60.23256
+Kangaspellontie|24.88514,60.21044
+Panosaukio|25.06258,60.23267
+Kivikonlaita 43|25.06228,60.24605
+Eira|24.94244,60.1554
+Kivijatatie|25.05726,60.23355
+Linnoituksentie|25.07018,60.24054
+Linnoituksentie|25.07194,60.24025
+Varustuksentie|25.0672,60.2387
+Varustuksentie|25.06735,60.23879
+Järkälekuja|25.06738,60.23695
+Järkälekuja|25.06766,60.23707
+Kurkimäentie|25.06215,60.23314
+Kurkimäentie|25.0628,60.23361
+Tattarisilta|25.05473,60.24201
+Valimokuja|24.8815,60.21865
+Valimokuja|24.88124,60.21988
+Karvaamokuja|24.88336,60.21573
+Karvaamokuja|24.88415,60.21517
+Metsäläntie|24.90473,60.22041
+Laajasuon puisto|24.89198,60.22061
+Eliel Saarisen tie|24.89477,60.21967
+Eliel Saarisen tie|24.89477,60.21967
+Mäkipellontie|24.89881,60.21956
+Mäkipellontie|24.89883,60.21955
+Eiran sairaala|24.94127,60.15788
+Eiran sairaala|24.9415,60.15769
+Eira|24.9425,60.15562
+Oskelantie|24.903,60.21754
+Tunnelitie|24.90052,60.21872
+Ruskeasuon varikko|24.89757,60.20835
+Tunnelitie|24.90057,60.2187
+Oskelantie|24.90296,60.21756
+Ryytimaankuja|24.90472,60.21661
+Suomenlinna|24.99244,60.14642
+Ryytimaankuja|24.90495,60.21649
+Suomenlinna|24.98389,60.14926
+Matkamiehentie|24.9034,60.21446
+Matkamiehentie|24.90333,60.21448
+Sankaritie|24.90068,60.21538
+Sankaritie|24.90061,60.21541
+Kylänevantie|24.89372,60.21274
+Kylänevantie|24.8937,60.21269
+Yhdistystie|24.89253,60.21071
+Yhdistystie|24.89333,60.21152
+Ahjokuja|24.89156,60.21026
+Laajasuontie|24.90568,60.21565
+Kivihaka|24.90247,60.21282
+Ahjokuja|24.89165,60.21028
+Vanha Turun maantie|24.89041,60.20984
+Ruskeasuon varikko|24.89888,60.20867
+Haagan paloasema|24.89309,60.20934
+Talin siirt.puutarha|24.86324,60.21957
+Vanha viertotie|24.8805,60.21066
+Vanha viertotie|24.8809,60.21059
+Korppaantie|24.88877,60.20857
+Riistavuorenkuja|24.88715,60.21939
+Isonnevankuja|24.88904,60.21609
+Isonnevankuja|24.88908,60.21631
+Huopalahden asema|24.89234,60.21847
+Huopalahden asema|24.89292,60.21896
+Korppaantie|24.88968,60.2087
+Mäkipellon aukio|24.90171,60.21965
+Tunnelitie|24.89938,60.21848
+Tunnelitie|24.89964,60.21762
+Ansaritie|24.88578,60.20837
+Ansaritie|24.88484,60.20828
+Talontie|24.88902,60.20988
+Käpylänaukio|24.94351,60.21282
+Koskelantie|24.94534,60.20953
+Talontie|24.8885,60.21001
+Vihdintie|24.88711,60.21475
+Vihdintie|24.88657,60.21463
+Riistavuori|24.88834,60.21749
+Riistavuori|24.88825,60.21736
+Riistavuorenkuja|24.887,60.21856
+Angervotie|24.8909,60.21736
+Angervotie|24.89051,60.21766
+Haagan urheilukenttä|24.89347,60.21624
+Haagan urheilukenttä|24.89437,60.21632
+Kyläsaarenkatu|24.96584,60.20302
+Kyläsaarenkatu|24.96584,60.20302
+Haagan tori|24.89898,60.21248
+Palokaivon aukio|24.89718,60.216
+Palokaivon aukio|24.89834,60.21512
+Palokaivon aukio|24.89828,60.21582
+Haagan tori|24.89817,60.21229
+Haagan tori|24.89835,60.2123
+Haagan paloasema|24.89576,60.20979
+Haagan paloasema|24.89578,60.20967
+Haagan tori|24.89898,60.21249
+Riistavuorenkuja|24.88727,60.21779
+Kauppatori|24.95578,60.16724
+Rukkilanpolku|24.86642,60.25135
+Rukkilanpolku|24.86674,60.25135
+Salpausseläntie|25.00073,60.23146
+Salpauseläntie|25.00057,60.23156
+Kalkkihiekankuja|25.14223,60.20116
+Hiekkalaiturinraitti|25.14498,60.20103
+Leikosaarenraitti|25.14292,60.20284
+Mustankivenkatu|25.14503,60.20657
+Sofia|25.13555,60.19107
+Leikosaarentie|25.14582,60.20448
+Mellunmäki|25.11018,60.23889
+Mellunmäki|25.11018,60.23889
+Kontula|25.08348,60.23616
+Kontula|25.08348,60.23616
+Von Daehnin katu|25.0436,60.23057
+Agronominraitti|25.04761,60.23253
+Agronominraitti|25.04725,60.23241
+Metsänhoitajankatu|25.04458,60.23443
+Metsänhoitajankatu|25.04546,60.234
+Biologinkatu|25.04045,60.23531
+Biologinkatu|25.04165,60.23508
+Agronominkatu|25.03253,60.23451
+Agronominkatu|25.03309,60.23446
+Viikki|25.0124,60.22916
+Viikki|25.01358,60.22872
+Viikin tiedepuisto|25.01184,60.22724
+Viikin tiedepuisto|25.01242,60.22709
+Viikin biokeskus|25.01645,60.22556
+Viikin biokeskus|25.01653,60.22536
+Latokartanonkaari|25.0309,60.23366
+Ylioppilaskylä|25.02125,60.2306
+Hämeenlinnanväylä|24.9073,60.22775
+Ylioppilaskylä|25.02139,60.23078
+Erik Spåren tie|25.02988,60.23052
+Autokuljetuskeskus 2|24.92812,60.22089
+Erik Spåren tie|25.03053,60.23112
+Autokuljetuskeskus 2|24.92997,60.2208
+Maakaari|25.02787,60.22822
+Maakaari|25.02792,60.22806
+Pihlajamäentie|25.01391,60.22858
+Viikki|25.01423,60.2285
+Latokartanonkaari|25.03099,60.233
+Latokartano|25.02165,60.22445
+Tilanhoitajankaari|25.02357,60.22564
+Tilanhoitajankaari|25.02402,60.22567
+Latokartano|25.02229,60.22367
+Latokartano|25.0203,60.22423
+Autokuljetuskeskus 1|24.92311,60.21881
+Autokuljetuskeskus 1|24.92282,60.2187
+Kaupunginpuutarha|24.93199,60.18448
+Kaupunginpuutarha|24.93201,60.18449
+Ooppera|24.92812,60.18207
+Ooppera|24.92821,60.1821
+Viikin tiedepuisto|25.01111,60.22768
+Viikin tiedepuisto|25.01156,60.22769
+Viikki|25.01202,60.22862
+Limnologinraitti|25.03603,60.23246
+Töölöntori|24.92365,60.17967
+Töölöntori|24.92362,60.17962
+Kansaneläkelaitos|24.91792,60.18862
+Töölön halli|24.92398,60.18352
+Kansaneläkelaitos|24.91892,60.18767
+Kansaneläkelaitos|24.91874,60.18831
+Haartmaninkatu|24.90756,60.19067
+Töölön halli|24.92245,60.18493
+Töölön halli|24.9213,60.18572
+Ooppera|24.92664,60.18223
+Ooppera|24.92657,60.18228
+Voikukantie|25.08681,60.20822
+Haartmaninkatu|24.90781,60.19067
+Niittyläntie|24.9333,60.2216
+Niittyläntie|24.93379,60.22218
+Muuntajankatu|25.04745,60.20588
+Porolahti|25.04642,60.1931
+Johan Sederholmin t.|25.04492,60.19182
+Porolahti|25.04621,60.19313
+Mekaanikonkatu|25.04774,60.20521
+Mekaanikonkatu|25.04822,60.2052
+Pikkupurontie|25.05309,60.20659
+Pikkupurontie|25.05334,60.20661
+Sahaajankatu 33|25.05045,60.20481
+Sahaajankatu 33|25.05101,60.20505
+Laivalahdenportti|25.03487,60.19352
+Työnjohtajankatu|25.03673,60.19382
+Työnjohtajankatu|25.03878,60.196
+Asentajanpuisto|25.04094,60.19883
+Asentajanpuisto|25.04092,60.19886
+Mekaanikonkatu 10|25.04501,60.20248
+Mekaanikonkatu 7|25.04454,60.20205
+Insinöörinkatu|25.03481,60.19433
+Marian sairaala|24.92116,60.16731
+Marian sairaala|24.92116,60.16731
+Koskelan sairaala|24.9594,60.21691
+Puotilantie|25.0988,60.20807
+Puotilantie|25.10128,60.20781
+Hietalahti|24.92436,60.16188
+Erottaja|24.94259,60.16626
+Tullisaari 2|25.02688,60.17674
+Köydenpunojankatu|24.92785,60.16158
+Tullisaari 2|25.02645,60.17661
+Kalevankatu|24.92525,60.16285
+Tullisaari 1|25.03586,60.17706
+Hietalahdenkatu|24.92784,60.16333
+Tullisaari 1|25.03567,60.17725
+Hietalahdentori|24.92955,60.16211
+Aleksant. teatteri|24.93498,60.16361
+Fredrikinkatu|24.93766,60.16454
+Erottaja|24.9424,60.1662
+Munkkivuori|24.87998,60.20595
+Mäkelänkatu|24.94408,60.20863
+Jälsitie|24.85463,60.24869
+Jälsitie|24.85475,60.24866
+Neulastie|24.8489,60.25104
+Panuntie|24.94982,60.21883
+Pihkatie|24.85356,60.25016
+Pihkatie|24.85415,60.25018
+Ruoholahti|24.91385,60.16271
+Ruoholahti|24.91385,60.16271
+Panuntie|24.94948,60.21922
+Käpylän paloasema|24.95642,60.21619
+Kartanonkaari|24.86576,60.24954
+Kamppi(M)|24.93064,60.16887
+Käpylän paloasema|24.95597,60.21644
+Kartanonkaari|24.86572,60.24943
+Kamppi (M)|24.93077,60.16866
+Joukolan puisto|24.95536,60.21238
+Puustellintie|24.85723,60.24767
+Simonkatu|24.9353,60.16875
+Joukolan puisto|24.95648,60.21249
+Puustellintie|24.8595,60.24805
+Simonkatu|24.93572,60.1688
+Olympiakylä|24.95203,60.21108
+Olympiakylä|24.95256,60.21096
+Kalervonkatu|24.94761,60.20938
+Kalervonkatu|24.94716,60.20885
+Kampintori|24.93126,60.16778
+Kampintori|24.93122,60.1677
+Ruoholahden villat|24.9261,60.16543
+Ruoholahden villat|24.92642,60.16525
+Länsilinkki|24.923,60.16274
+Länsilinkki|24.92307,60.16268
+Väinölänkuja|24.95852,60.21436
+Väinölänkuja|24.95885,60.21474
+Joukolan puisto|24.95897,60.21303
+Fredrikinkatu|24.93802,60.16468
+Joukolan puisto|24.95926,60.2129
+Käpylänaukio|24.94331,60.21268
+Käpylänaukio|24.9439,60.21246
+Koskelantie|24.94534,60.20953
+Meripellontie|25.09688,60.20814
+Veturitie|24.92919,60.20694
+Pasilan asema|24.93365,60.1981
+Luutnantinpolku|24.86564,60.24437
+Luutnantinpolku|24.86533,60.24486
+Malminkartanon as.|24.86365,60.24735
+Malminkartanon as.|24.86433,60.24798
+Puustellinpolku|24.86277,60.24296
+Puustellinpolku|24.86397,60.24376
+Vuokraajankuja|24.85092,60.24522
+Vuokraajankuja|24.85189,60.2445
+Pasilan asema|24.93425,60.19803
+Renginpolku|24.85913,60.24158
+Renginpolku|24.86011,60.2417
+Viljelijänkuja|24.85421,60.24337
+Viljelijänkuja|24.85485,60.24283
+Veturitie|24.92968,60.20661
+Ilmalan seisake|24.92078,60.20796
+Ilmalan seisake|24.92147,60.2079
+Kuusmiehenkaari|24.94895,60.25504
+Kallion virastotalo|24.9497,60.18056
+Hakaniemi|24.95013,60.17971
+Hakaniemi|24.95021,60.17949
+Hakaniemi|24.95016,60.17967
+Hakaniemi|24.95021,60.1795
+Kulosaari|25.00715,60.18876
+Kulosaari|25.00715,60.18876
+Meilahden klinikat|24.90555,60.18983
+Töölön tulli|24.9118,60.19101
+Töölön tulli|24.91225,60.19118
+Mäntytie|24.90229,60.1913
+Mäntytie|24.90129,60.19145
+Seurasaari|24.88575,60.18854
+Heikinniementie|24.88958,60.18835
+Heikinniementie|24.88912,60.18844
+Ruutikellarit|24.89597,60.18734
+Ruutikellarit|24.89573,60.18742
+Mäntyniemi|24.89907,60.18644
+Mäntyniemi|24.89917,60.18645
+Humallahti|24.90168,60.1869
+Humallahti|24.90153,60.1869
+Meilahden sairaala|24.90495,60.18711
+Meilahden sairaala|24.90587,60.18666
+Tukholmankatu|24.90804,60.19113
+Tukholmankatu|24.90792,60.1913
+Paciuksenkaari|24.89206,60.1942
+Paciuksenkaari|24.8907,60.19522
+Meilahdentie|24.89547,60.19281
+Meilahdentie|24.89467,60.19352
+Haartmaninkatu|24.90756,60.19067
+Haartmaninkatu|24.90781,60.19067
+Naistenklinikka|24.91105,60.18926
+Naistenklinikka|24.91113,60.18934
+Töölön tulli|24.91095,60.19039
+Töölön tulli|24.91098,60.19064
+Eläintarha|24.92955,60.19268
+Eläintarha|24.92955,60.19268
+Malmin raitti 15|25.01028,60.25554
+Malmin raitti 15|25.01035,60.2556
+Viljakuja|25.00898,60.25391
+Viljakuja|25.00895,60.25366
+Eläintarha|24.93012,60.1925
+Eläintarha|24.93014,60.1925
+Auroran sairaala|24.92519,60.1915
+Malmin sairaala|25.00049,60.25433
+Malmin sairaala|25.00075,60.25443
+Malmin sairaala|25.00297,60.2534
+Malmin sairaala|25.0027,60.25436
+Malmin tori|25.00724,60.25192
+Malmin tori|25.00839,60.25147
+Esterinportti|24.9282,60.19785
+Leppätie|24.99378,60.25161
+Esterinportti|24.92819,60.1979
+Kyllikinportti|24.92592,60.2002
+Kyllikinportti|24.92616,60.20023
+Maistraatintori|24.92526,60.19891
+Maistraatintori|24.92527,60.19889
+Palkkatilanportti|24.92751,60.19633
+Malmin asema(term.)|25.00932,60.25005
+Palkkatilanportti|24.92751,60.19633
+Syystie|24.99936,60.25636
+Malmin asema(term.)|25.0093,60.25027
+Malmin asema(term.)|25.00933,60.25051
+Malmin asema(term.)|25.00914,60.24999
+Malmin asema(term.)|25.00951,60.25015
+Malmin asema(term.)|25.00917,60.2502
+Malmin asema(term.)|25.00946,60.25004
+Näyttelijäntie|24.88964,60.2326
+Atomitie|24.86523,60.22389
+Metsäläntie|24.90502,60.22044
+Aino Acktén tie|24.89848,60.22498
+Aino Acktén tie|24.89841,60.22513
+Puotilantie|25.0988,60.20806
+Marttila|24.87272,60.22792
+Munkkivuoren ostosk.|24.87725,60.20542
+Munkkivuori|24.879,60.20553
+Santavuorentie|24.90594,60.22425
+Puotilantie|25.10128,60.20781
+Santavuorentie|24.90612,60.22399
+Meripellontie|25.09569,60.20809
+Metsäläntie|24.90711,60.22017
+Metsäläntie|24.9071,60.22082
+Metsäläntie|24.90872,60.21887
+Pirkkolantie|24.90623,60.22807
+Pirkkolantie|24.9063,60.22861
+Metsäläntie|24.90824,60.21912
+Metsäläntie|24.90961,60.22025
+Oulunkylä/VR|24.96797,60.22882
+Ulvilantie 11|24.87389,60.20389
+Ulvilantie 17|24.86373,60.20558
+Pirkkolan urheilup.|24.91569,60.23046
+Pirkkolan urheilup.|24.91569,60.23046
+Munkkivuori|24.87991,60.20696
+Ilkantie|24.897,60.22393
+Kolmikulma|24.94348,60.16477
+Porintie|24.86971,60.20378
+Ulvilantie 19|24.86408,60.20785
+Ulvilantie 21|24.86737,60.20934
+Ulvilantie 27|24.87561,60.20891
+Naantalintie|24.87868,60.20693
+Ilkantie|24.89731,60.22415
+Näyttelijäntie|24.88788,60.23275
+Näyttelijäntie|24.88944,60.23253
+Näyttelijäntie 22|24.89271,60.23103
+Näyttelijäntie 22|24.89199,60.23137
+Ohjaajantie|24.89482,60.22891
+Puotilan ostoskeskus|25.09649,60.21241
+Ohjaajantie|24.89518,60.22969
+Puotilan ostoskeskus|25.09675,60.21244
+Tehtaanpuisto|24.94078,60.15802
+Klaavuntie|25.09813,60.2101
+Thalian aukio|24.89532,60.22554
+Albertinkatu|24.93603,60.16277
+Klaavuntie|25.09815,60.21007
+Thalian aukio|24.89553,60.22566
+Perämiehenkatu|24.93599,60.1578
+Puotilantie|25.09966,60.20894
+Hietalahdentori|24.9294,60.16133
+Perämiehenkatu|24.93573,60.15783
+Tehtaanpuisto|24.94035,60.15805
+Annankatu|24.94094,60.16449
+Merimiehenkatu|24.93812,60.16091
+Muusantori|24.85745,60.20749
+Munkkivuori|24.87998,60.20595
+Munkkivuori|24.88058,60.20573
+Naantalintie|24.87799,60.20743
+Ulvilantie 27|24.8748,60.2091
+Ulvilantie 21|24.86682,60.2091
+Ulvilantie 19|24.86424,60.20745
+Ulvilantie 17|24.8638,60.20569
+Porintie|24.86842,60.20412
+Ilkantie 11|24.90116,60.22309
+Puotilantie|25.09979,60.20893
+Ilkantie 11|24.90068,60.22337
+Haagan ammattikoulu|24.90274,60.22122
+Leikkimäki|25.09962,60.21358
+Haagan ammattikoulu|24.90292,60.22157
+Leikkimäki|25.09955,60.21347
+Eliel Saarisen tie|24.89863,60.22408
+Viiskulma|24.94144,60.16061
+Rusthollarinkuja|25.09226,60.21086
+Eliel Saarisen tie|24.89852,60.22424
+Viiskulma|24.94134,60.16127
+Rusthollarinkuja|25.09252,60.21087
+Krankantie|24.90277,60.22385
+Iso Roobertinkatu|24.93597,60.16251
+Teuvo Pakkalan tie|24.90149,60.22904
+Iso Roobertinkatu|24.93909,60.16288
+Ida Aalbergin tie|24.8991,60.23011
+Ulvilantie 11|24.87377,60.20394
+Raumantie|24.87912,60.20484
+Niemenmäki|24.88189,60.20289
+Hämeenlinnanväylä|24.90634,60.22775
+Näyttelijäntie|24.89623,60.22929
+Adolf Lindforsin tie|24.88891,60.23019
+Adolf Lindforsin tie|24.89031,60.22951
+Adolf Lindforsin tie|24.89367,60.22933
+Adolf Lindforsin tie|24.89361,60.22933
+Näyttelijäntie|24.89437,60.22807
+Näyttelijäntie|24.89462,60.22806
+Pastori Jussilainen|24.89201,60.22818
+Pastori Jussilainen|24.89186,60.22814
+Tolarintie|24.88867,60.22798
+Pirkkolan urheilup.|24.90237,60.23225
+Pirkkolan urheilup.|24.90275,60.2325
+Tolarintie|24.88867,60.22798
+Puotila (M)|25.09323,60.21498
+Ohjaajantie|24.88776,60.22652
+Ohjaajantie|24.88764,60.2266
+Ohjaajantie|24.89193,60.22529
+Ohjaajantie|24.89179,60.22542
+Thalian aukio|24.89489,60.22538
+Puotilan leikkiniitt|25.10306,60.2131
+Thalian aukio|24.89531,60.22553
+Puotilan leikkiniitt|25.10308,60.2131
+Nuijamiestentie|24.90503,60.22325
+Nuijamiestentie|24.90517,60.22322
+Rantakartanontie|25.09736,60.2166
+Puotinkylän kartano|25.10526,60.2117
+Haagan terveysasema|24.90473,60.22234
+Puotinkylän kartano|25.10515,60.21164
+Oulunkylä/VR|24.96797,60.22882
+Raumantie|24.87893,60.20452
+Professorintie|24.87265,60.2038
+Professorintie|24.87294,60.20382
+Juorumäki|25.10245,60.211
+Juorumäki|25.10274,60.21106
+Rusthollarintie|25.09151,60.20959
+Rusthollarintie|25.09006,60.21085
+Meripellontie|25.09688,60.20814
+Meripellontie|25.095,60.20879
+Vuosaaren silta|25.10672,60.20813
+Vuosaaren silta|25.10599,60.2084
+Meripellontie|25.10319,60.20863
+Pyöräilystadion|24.94564,60.20325
+Valtimontie|24.96463,60.2149
+Pirkkolan urheilup.|24.91764,60.23012
+Pirkkolan urheilup.|24.91637,60.22997
+Pirkkola|24.92003,60.23083
+Pirkkola|24.91943,60.23075
+Maunulantie|24.92711,60.23409
+Maunulantie|24.92612,60.23416
+Pirjontie|24.9307,60.23472
+Pirjontie|24.92988,60.23423
+Toukoniitty|24.96998,60.20453
+Toukoniitty|24.96998,60.20453
+Arabianranta|24.97911,60.20856
+Arabianranta|24.97876,60.20833
+Arabiankatu|24.9744,60.20713
+Arabiankatu|24.97459,60.20695
+Mäntypaadentie|25.06513,60.19371
+Pellonperäntie|25.0624,60.19187
+Pellonperäntie|25.06243,60.19178
+Leppisaarenkuja|25.05834,60.19055
+Leppisaarenkuja|25.05932,60.19054
+Kummeltie|25.05429,60.19033
+Kummeltie|25.05435,60.19022
+Brahenkatu|24.94826,60.18978
+Väylänsuu|25.04885,60.19008
+Väylänsuu|25.04989,60.18986
+Sörnäinen(M)|24.96385,60.1886
+Sörnäinen(M)|24.96368,60.18815
+Sörnäinen(M)|24.96336,60.18788
+Helsinginkatu|24.95221,60.18699
+Urheilutalo|24.94854,60.18745
+Urheilutalo|24.94856,60.18703
+Brahenkatu|24.948,60.18938
+Helsinginkatu|24.95317,60.18753
+Harjutori|24.9592,60.18747
+Harjutori|24.95965,60.18768
+Kiviteltankatu|24.99713,60.22998
+Kiviteltankatu|24.99762,60.2301
+Bysantinkuja|24.98967,60.22778
+Bysantinkuja|24.98985,60.22799
+Hernepellontie|24.9884,60.22405
+Hernepellontie|24.98846,60.22414
+Saunalahdentie|24.8724,60.19454
+Tiilimäki|24.87343,60.19539
+Laamanninpuisto|24.95544,60.26501
+Tiilimäki|24.87223,60.19537
+Laamanninpuisto|24.95587,60.26482
+Laajalahden aukio|24.87658,60.19793
+Fallintori|24.95123,60.26232
+Laajalahden aukio|24.87686,60.19821
+Fallintori|24.95158,60.26233
+Munkkin. puistotie|24.88177,60.19688
+Torpparinmäentie|24.94409,60.25706
+Munkkin. puistotie|24.88199,60.19715
+Torpparinmäentie|24.94599,60.25638
+Asessorintie|24.95328,60.25901
+Asessorintie|24.95366,60.25954
+Viskaalintie 32|24.95306,60.26032
+Käräjätuvantie|24.95153,60.25725
+Käräjätuvantie|24.95164,60.25723
+Sihteerintie|24.94961,60.25611
+Sihteerintie|24.95008,60.25605
+Kuusmiehentie|24.9382,60.25648
+Pihlajasaarenkatu|24.92789,60.15015
+Pihlajasaarenkatu|24.92841,60.15045
+Henry Fordin katu|24.93014,60.15252
+Henry Fordin katu|24.93034,60.15253
+Munkkisaarenkatu|24.93267,60.15755
+Munkkisaarenkatu|24.93235,60.15751
+Hernesaarenkatu|24.93072,60.15599
+Kuusmiehenkaari|24.94895,60.25503
+Hernesaarenkatu|24.93037,60.15611
+Hernesaaren laituri|24.92424,60.14868
+Matalasalmenkuja|24.93159,60.15405
+Matalasalmenkuja|24.93129,60.15483
+Hernesaaren laituri|24.92338,60.14828
+Katajanokka|24.97992,60.16716
+Caloniuksenkatu|24.91933,60.17345
+Caloniuksenkatu|24.91933,60.17343
+Perhonkatu|24.9206,60.17056
+Perhonkatu|24.92064,60.17048
+Apollonkatu|24.92221,60.17635
+Apollonkatu|24.92223,60.17645
+Sammonkatu|24.92317,60.17263
+Sammonkatu|24.92249,60.17358
+Töölön kisahalli|24.92313,60.18465
+Töölön kisahalli|24.92463,60.18336
+Kauppakorkeakoulut|24.92563,60.17115
+Kauppakorkeakoulut|24.92529,60.17129
+Hesperian puisto|24.92922,60.17827
+Hesperian puisto|24.92922,60.17826
+Kansallismuseo|24.93255,60.17492
+Kansallismuseo|24.93256,60.1749
+Ooppera|24.92675,60.18215
+Kamppi, kaukoliik.|24.93307,60.1698
+Kamppi, kaukoliik.|24.93254,60.16962
+Kamppi, tulolaituri|24.93012,60.1688
+Kamppi, laituri 55|24.93086,60.16878
+Tapanilankaari|25.03293,60.2688
+Kamppi, laituri 54|24.93093,60.1688
+Kamppi, laituri 53|24.931,60.16882
+Kamppi, laituri 52|24.93109,60.16885
+Kamppi, laituri 51|24.93119,60.16887
+Kamppi, laituri 50|24.93128,60.1689
+Kamppi, laituri 49|24.93137,60.16892
+Kamppi, laituri 48|24.93146,60.16895
+Kamppi, laituri 47|24.93155,60.16898
+Kamppi, laituri 46|24.93164,60.169
+Kamppi, laituri 45|24.93171,60.16902
+Kamppi, laituri 44|24.9318,60.16904
+Kamppi, laituri 43|24.93189,60.16906
+Kamppi, laituri 42|24.93196,60.16909
+Kamppi, laituri 41|24.93205,60.16911
+Tapanila/VR|25.03002,60.26401
+Vähänkyröntie|24.94781,60.20649
+Suomensuontie|25.04695,60.16414
+Vähänkyröntie|24.94786,60.20663
+Hevossalmi|25.04944,60.15924
+Hevossalmi|25.04939,60.15902
+Hevossalmentie|25.04776,60.16201
+Hevossalmentie|25.048,60.16151
+Kutteritie|25.04883,60.16595
+Kutteritie|25.04848,60.16595
+Kirsitie|25.0643,60.26774
+Ruoholahti(M)|24.91418,60.16345
+Ruoholahti(M)|24.91484,60.16335
+Itämerenkatu|24.91994,60.16355
+Terrintie|25.04124,60.27618
+Terrintie|25.03995,60.27665
+Itämerenkatu|24.92065,60.16353
+Sarpapolku|25.0489,60.16803
+Puistolan tori|25.0443,60.27443
+Puistolan kirkko|25.05336,60.27072
+Puistolan kirkko|25.05116,60.27112
+Lapinrinne|24.92699,60.16627
+Puistolan VPK|25.05879,60.2701
+Lapinrinne|24.92663,60.16589
+Puistolan VPK|25.0564,60.26998
+Lapinrinne|24.92673,60.16622
+Nummitie|25.06314,60.26989
+Puistolan asema|25.03739,60.27431
+Puistolan asema|25.03752,60.27431
+Puistolan raitti|25.06153,60.26956
+Puistolan raitti|25.06115,60.26945
+Karrintie|25.04662,60.27135
+Tapanila/VR|25.03002,60.26401
+Karrintie|25.0461,60.27147
+Koudantie|25.05805,60.26653
+Länsisatamankatu|24.90817,60.16271
+Koudantie|25.05906,60.26764
+Länsisatamankatu|24.90817,60.16272
+Karhekuja|25.05666,60.26365
+Karhekuja|25.05769,60.26443
+Suurmetsäntie|25.04326,60.26548
+Suurmetsäntie|25.04092,60.26595
+Puistolan tori|25.04459,60.2738
+A.I. Virtasen aukio|24.96293,60.20583
+A.I. Virtasen aukio|24.96385,60.20488
+Intiankatu|24.96621,60.20808
+Intiankatu|24.96606,60.20816
+Karpalopolku|25.07464,60.23266
+Keinupolku|25.07171,60.23347
+Veteraanikuja|25.0667,60.23309
+Sirrikuja|25.0777,60.23008
+Sirrikuja|25.07872,60.23081
+Kolmikulma|24.94391,60.16517
+Kolmikulma|24.94389,60.16526
+Eteläranta|24.95256,60.16543
+Eteläranta|24.95256,60.16541
+Kauppatori|24.95248,60.1676
+Kauppatori|24.95173,60.16729
+Kauppatori|24.95175,60.16729
+Kaarlenkatu|24.95148,60.18608
+Valtimontie|24.9702,60.21279
+Valtimontie|24.97028,60.21218
+Sumatrantie|24.9684,60.20811
+Karpalopolku|25.0752,60.23262
+Porttikuja|25.08121,60.2317
+Keinupolku|25.07164,60.23352
+Kuovipolku|25.06506,60.2309
+Veteraanikuja|25.06639,60.23299
+Kontula(M)|25.08167,60.23674
+Kuovipolku|25.06444,60.23153
+Kumpulan kampus|24.96554,60.20397
+Kätilöopisto|24.95046,60.20371
+Kätilöopisto|24.95037,60.20398
+Sofianlehto|24.94639,60.2027
+Sofianlehto|24.94642,60.20265
+Pyöräilystadion|24.94537,60.20148
+Kontula(M)|25.0822,60.23602
+Harmaahaikarankuja|25.06766,60.22896
+Harmaahaikarankuja|25.06757,60.22886
+Kurkiaispolku|25.07353,60.22852
+Kurkiaispolku|25.074,60.22913
+Keinulaudantie|25.07789,60.23335
+Keinulaudantie|25.07833,60.23353
+Kurkiauranpolku|25.0756,60.231
+Kurkiauranpolku|25.07625,60.23145
+Pyöräilystadion|24.94529,60.20115
+Kumpula|24.96382,60.2097
+Kumpula|24.96435,60.20952
+Sumatrantie|24.96743,60.20699
+Intiankatu|24.96734,60.20878
+Intiankatu|24.96735,60.20869
+Kumpulan kampus|24.96595,60.20367
+Kyläsaarenkatu|24.96444,60.20259
+Valtimontie|24.96463,60.2149
+Kontula(M), tulo|25.08245,60.23606
+Reelinki|25.21446,60.25027
+Kontula(M), tulo|25.08211,60.23601
+Naapurintie|25.08712,60.23444
+Kontula(M)|25.08208,60.23591
+Reelinki|25.21374,60.25031
+Pituuspiiri|25.22618,60.25154
+Pituuspiiri|25.22622,60.25141
+Kontula(M)|25.08247,60.23613
+Karhusaari|25.23046,60.25265
+Naapurintie|25.08527,60.23084
+Karhusaarentie|25.19118,60.25468
+Naapurintie|25.0857,60.23065
+Merikapteenintie|25.21957,60.24997
+Porttikuja|25.08045,60.23179
+Merikapteenintie|25.22043,60.24987
+Kiikku|25.0716,60.23607
+Skutholminkaari|25.20749,60.25092
+Keinutie|25.07192,60.23844
+Skutholminkaari|25.20671,60.25087
+Kontulan terveysas.|25.0846,60.2378
+Leikkikuja|25.08631,60.24167
+Leikkikuja|25.08644,60.24156
+Ostostie|25.0869,60.23846
+Hakaniemi|24.95275,60.17965
+Kaisaniemi|24.94728,60.17167
+Kaisaniemi|24.94728,60.17167
+Rautatientori|24.94114,60.17036
+Ostostie|25.0862,60.23947
+Rautatientori|24.94114,60.17036
+Rapolantie|25.0829,60.24645
+Kontulankaari 11|25.07797,60.24535
+Kontulankaari 11|25.07744,60.2449
+Sakara|25.07514,60.24251
+Sakara|25.07526,60.24255
+Kivikonkaari|25.07499,60.23916
+Kivikonkaari|25.07459,60.24007
+Kaarikuja|25.07819,60.23795
+Käenkuja|24.96103,60.18545
+Käenkuja|24.96101,60.18544
+Haapaniemi|24.95771,60.18291
+Haapaniemi|24.95757,60.18284
+Kaarikuja|25.07866,60.23797
+Kontula(M)|25.08069,60.23594
+Kontula(M)|25.08106,60.23596
+Kivikonkaari|25.07401,60.23977
+Rapolantie|25.08023,60.24573
+Keinutie|25.07195,60.23795
+Linnanherrantie|25.0996,60.22933
+Linnanherrantie|25.09946,60.22999
+Karjatanhuanpolku|25.08285,60.22401
+Humikkalankuja|25.0882,60.2287
+Humikkalankuja|25.08912,60.22981
+Häyhäntie|25.08374,60.22677
+Häyhäntie|25.08458,60.22723
+Paneliantie|25.08775,60.24352
+Karjatanhuanpolku|25.08304,60.22552
+Porttitie|25.08125,60.23377
+Ooppera|24.93003,60.18283
+Ooppera|24.92672,60.18161
+Ooppera|24.92894,60.18216
+Porttitie|25.08019,60.23294
+Kontula(M)|25.08713,60.23638
+Kontula(M)|25.08512,60.23608
+Muurimestarintie|24.94731,60.24415
+Kontulankuja|25.09319,60.23749
+Kontulankuja|25.09072,60.23753
+Paneliantie|25.08742,60.24356
+Naapurinpolku|25.08853,60.23278
+Naapurinpolku|25.08853,60.2328
+Kontula(M), tulo|25.08208,60.23591
+Kontula(M)|25.08146,60.23621
+Kontukuja|25.08489,60.24329
+Kaarenjalka|25.0754,60.23639
+Ostoskuja|25.08492,60.23879
+Ostoskuja|25.08472,60.23874
+Karjatanhuanpolku|25.08432,60.22518
+Karjatanhuanpolku|25.08427,60.22519
+Pihlajisto|24.99707,60.23336
+Graniittitie|25.00924,60.23331
+Rapakivenkaari|24.99877,60.24095
+Rajasaarentie|24.91532,60.18318
+Rapakivenkaari|24.99779,60.2408
+Rajasaarentie|24.91578,60.18363
+Olympialaituri|24.95639,60.16155
+Olympialaituri|24.95639,60.16155
+Pihlajistontie|25.00861,60.23017
+Kivelän sairaala|24.91578,60.18027
+Kivelän sairaala|24.91622,60.18029
+Kirjailijan puisto|24.91596,60.18581
+Töölön kirjasto|24.91852,60.18341
+Töölön sairaala|24.92043,60.18142
+Töölön sairaala|24.92058,60.18153
+Töölöntori|24.92221,60.17975
+Jäähalli|24.92004,60.18928
+Jäähalli|24.9197,60.18934
+Töölöntori|24.92255,60.17944
+Taivallahti|24.91687,60.17669
+Töölöntori|24.92275,60.17857
+Pasilan asema|24.9347,60.19889
+Pihlajiston ostosk.|25.00068,60.23116
+Messukeskus|24.93685,60.2014
+Kellosilta|24.93916,60.20077
+Pihlajiston ostosk.|25.0003,60.23112
+Kellosilta|24.93912,60.20082
+Salpausselänpolku|25.00417,60.23112
+Radanrakentajantie|24.94147,60.20027
+Salpausselänpolku|25.00347,60.23172
+Töölöntori|24.92414,60.17995
+Kansaneläkelaitos|24.91711,60.18925
+Pihlajistontie|25.00856,60.23021
+Kansaneläkelaitos|24.91707,60.18948
+Kiilletie|25.00781,60.2333
+Töölön kisahalli|24.92357,60.18433
+Rapakivenkuja|25.0027,60.24007
+Rapakivenkuja|25.00259,60.23986
+Töölön kisahalli|24.92454,60.18346
+Lastenlinna|24.91001,60.18493
+Lastenlinna|24.91015,60.18508
+Kajanuksenkatu|24.91445,60.18507
+Kajanuksenkatu|24.9148,60.18523
+Raitioliikennemuseo|24.91981,60.18376
+Radanrakentajantie|24.94147,60.20027
+Vuolukiventie|25.00686,60.23702
+Koskelantie|24.94542,60.20842
+Vuolukiventie|25.00643,60.23739
+Koskelantie|24.94542,60.20842
+Pihlajamäki|25.01042,60.23419
+Käärmeniementie|25.16496,60.21651
+Pihlajamäki|25.01024,60.23438
+Käärmeniementie|25.1638,60.2176
+Meripihkatie|25.01148,60.23297
+Raitioliikennemuseo|24.92175,60.18376
+Meripihkatie|25.01162,60.23317
+Töölön kisahalli|24.92473,60.18408
+Kiilletie|25.00785,60.23341
+Töölön kisahalli|24.92477,60.18409
+Meripihkatie|25.00915,60.23457
+Meripihkatie|25.00918,60.23458
+Kirjailijan puisto|24.91579,60.18579
+Linnankoskenkatu|24.91689,60.18479
+Vuolukiventie|25.0029,60.23457
+Linnankoskenkatu|24.917,60.18484
+Haapasaarentie|25.14657,60.21815
+Töölöntori|24.92227,60.17966
+Töölöntori|24.92211,60.17992
+Messukeskus|24.93636,60.20135
+Pyöräilystadion|24.94533,60.20297
+Pyöräilystadion|24.94533,60.20297
+Haapasaarentie|25.14635,60.21902
+Vuolukiventie|25.00274,60.23691
+Vuolukiventie|25.00279,60.23692
+Hiekkakiventie|25.01895,60.23916
+Hiekkakiventie|25.0191,60.23934
+Punakiventie|25.14796,60.21342
+Seppämestarintie|25.02095,60.23859
+Liuskekuja|25.01862,60.2372
+Malmin hautausmaa|25.02177,60.23595
+Malmin hautausmaa|25.02225,60.23676
+Meripihkatie|25.01233,60.23296
+Meripihkatie|25.01284,60.23295
+Pihlajistontie|25.00975,60.23069
+Jämsänkatu|24.94176,60.19669
+Pihlajistontie|25.01018,60.23092
+Asemapäällikönkatu|24.94032,60.19803
+Liuskekuja|25.01858,60.23707
+Asemapäällikönkatu|24.94049,60.19824
+Kivijalka|25.01455,60.23462
+Kivijalka|25.01442,60.2346
+Maasälväntie|25.00903,60.23773
+Viikinmäki|24.99802,60.22994
+Viikinmäki|24.99814,60.22985
+Liusketie|25.01089,60.23552
+Vuosaarenlahti|25.1739,60.20799
+Itäreimarintie|25.16411,60.21005
+Satamakaari|25.16823,60.21407
+Itäreimarintie|25.1624,60.2101
+Myllypadontie|25.06407,60.22046
+Siilitie 13|25.04414,60.21495
+Kampintori|24.93225,60.1685
+Kolsintie|25.05738,60.22014
+Kolsintie|25.05752,60.21997
+Neulapadontie|25.05795,60.22192
+Käskynhaltijantie|24.94255,60.23053
+Ruoholahdenkatu|24.92717,60.16545
+Neulapadontie|25.05776,60.22198
+Orpaanporras|25.05881,60.22447
+Orpaanporras|25.05775,60.22353
+Myllymatkantie|25.06406,60.22731
+Myllymatkantie|25.06296,60.227
+Karistimentie|25.07177,60.22739
+Karistimentie|25.0709,60.22775
+Myllypuro(M)|25.07608,60.2236
+Myllypuro(M)|25.07567,60.22444
+Hietalahti|24.92465,60.16115
+Hietalahti|24.92366,60.16192
+Hietalahdentori|24.92906,60.16196
+Suurmetsäntie|25.06843,60.26266
+Tattarisuontie|25.06421,60.25822
+Jarrutie|25.06235,60.2523
+Kampintori|24.9309,60.16699
+Kamppi|24.92988,60.16937
+Kamppi|24.92982,60.16927
+Kamppi(M), lait. 71|24.9302,60.16861
+Alakiventie|25.07435,60.2197
+Alakiventie 5|25.07884,60.22127
+Alakiventie 5|25.07862,60.22169
+Myllärintie|25.0477,60.21847
+Myllärintie|25.04887,60.21841
+Kamppi(M), lait. 72|24.93007,60.16871
+Ruoholahdenkatu|24.92498,60.16499
+Fredrikinkatu|24.92995,60.17016
+Kukkaniityntie|25.08156,60.22102
+Kukkaniityntie|25.08186,60.22127
+Myllyrengintie|25.07177,60.2279
+Myllyrengintie|25.0721,60.22808
+Myllypuron voimal.|25.0789,60.22483
+Myllypuron voimal.|25.07936,60.225
+Jauhokuja|25.07696,60.22562
+Arkadian puisto|24.93338,60.17112
+Kampintori|24.93178,60.1684
+Lapinlahden puist.|24.93155,60.16572
+Kampintori|24.93274,60.16725
+Bulevardi|24.93423,60.16371
+Bulevardi|24.93622,60.16494
+Yläkiventie|25.07001,60.22286
+Tuulimyllyntie|25.06732,60.22561
+Myllymatkantie|25.06207,60.2245
+Myllärintie|25.05482,60.22457
+Myllärintie|25.05473,60.22461
+Vaskisepäntie|24.93806,60.22099
+Simonkatu|24.9353,60.16875
+Vaskisepäntie|24.93707,60.22103
+Simonkatu|24.93572,60.1688
+Tinasepäntie|24.9431,60.22105
+Kamppi(M)|24.9286,60.16861
+Tinasepäntie|24.94149,60.22153
+Kamppi(M)|24.93123,60.1683
+Suutarilantie|25.0146,60.28564
+Suutarilantie|25.01564,60.28472
+Tikkuritie|25.02989,60.28274
+Helsinki/VR|24.93955,60.17273
+Helsinki/VR|24.9414,60.1713
+Kamppi(M) p.|24.92981,60.16868
+Vanha kirkkopuisto|24.94125,60.16587
+Kappeli|25.18721,60.24938
+Fredrikinkatu|24.93651,60.1642
+Talosaari|25.18693,60.23834
+Vuosaari|25.1428,60.20724
+Vuosaari|25.1428,60.20724
+Rastila|25.12016,60.20557
+Rastila|25.12016,60.20557
+Hakaniemi|24.95263,60.17844
+Fleminginkatu|24.95195,60.18985
+Pasilan asema|24.9347,60.19889
+Sturenkatu|24.94831,60.19107
+Kotkankatu|24.94362,60.19295
+Kotkankatu|24.9436,60.19296
+Mellunmäki(M)|25.109,60.23831
+Helsinki/VR|24.93991,60.17272
+Mellunmäki(M)|25.10922,60.23837
+Helsinki/VR|24.94167,60.17129
+Pasilan konepaja|24.94514,60.19425
+Pasilan konepaja|24.94506,60.1942
+Uintikeskus|24.94521,60.20007
+Uintikeskus|24.94518,60.2001
+Vallilan kirjasto|24.96109,60.19221
+Vallilan kirjasto|24.9611,60.1922
+Lautatarhankatu|24.96323,60.19019
+Lautatarhankatu|24.96323,60.19019
+Mäkelänrinne|24.94906,60.19782
+Mäkelänrinne|24.94906,60.19782
+Hakaniemi|24.95216,60.17906
+Hakaniemi|24.95152,60.17816
+Rautalammintie|24.95311,60.19617
+Rautalammintie|24.95314,60.19616
+Hattulantie|24.95601,60.19498
+Hattulantie|24.95631,60.19483
+Roineentie|24.95365,60.19301
+Roineentie|24.9545,60.19331
+Munkkiniemen aukio|24.8847,60.19581
+Vallilan varikko|24.96239,60.19664
+Vallilan varikko|24.96239,60.19663
+Merihaka|24.9576,60.17987
+Hakaniemi|24.95305,60.17828
+Hakaniemi|24.95076,60.17897
+Hauhon puisto|24.96454,60.19325
+Hauhon puisto|24.96454,60.19325
+Lautatarhankatu|24.96453,60.19035
+Lautatarhankatu|24.96453,60.19036
+Paavalin kirkko|24.96176,60.19862
+Paavalin kirkko|24.96176,60.19862
+Jämsänkatu|24.94259,60.19666
+Kallion virastotalo|24.9497,60.18056
+Muurimestarintie|24.94904,60.24586
+Muurimestarintie|24.94731,60.24415
+Hakaniemi|24.95219,60.17872
+Hakaniemi|24.95225,60.1794
+Hakaniemi|24.94992,60.17856
+Hakaniemi|24.94985,60.17882
+Hakaniemi|24.95073,60.17932
+Harkkoraudantie|25.05581,60.24767
+Kuusmiehentie|24.91767,60.25481
+Kankiraudantie|25.0486,60.24615
+Malmin lentoasema|25.04467,60.24538
+Itäkeskus|25.07798,60.20998
+Itäkeskus|25.07798,60.20998
+Ilmalantori|24.9188,60.20603
+Saunalahti|24.88026,60.19243
+Saunalahti|24.87814,60.19223
+Munkkiniemen aukio|24.88551,60.19588
+Munkkiniemen aukio|24.8846,60.19575
+Kyllikinportti|24.92664,60.20111
+Maistraatinportti|24.92797,60.19826
+Maistraatinportti|24.928,60.19858
+Kyllikinportti|24.92665,60.20136
+Palkkatilanportti|24.9288,60.19641
+Palkkatilanportti|24.92898,60.19662
+Ilmalan seisake|24.92075,60.20785
+Ilmalan seisake|24.91885,60.2085
+Piikintie|24.95813,60.24864
+Piikintie|24.95825,60.24861
+Koulutuvantie|24.95834,60.2455
+Koulutuvantie|24.95838,60.24581
+Etupellonpuisto|24.95947,60.24213
+Etupellonpuisto|24.95924,60.24291
+Urakkatie|24.96031,60.24024
+Klaukkalan puisto|24.96024,60.24438
+Klaukkalan puisto|24.96128,60.24466
+Eläintarha|24.92817,60.19232
+Eläintarha|24.9299,60.19303
+Iso Paja|24.92511,60.20267
+Iso Paja|24.92483,60.20285
+Tv-keskus|24.91942,60.20309
+Tv-keskus|24.91863,60.20386
+Radiokatu|24.92151,60.20226
+Radiokatu|24.92193,60.20261
+Auroran sairaala|24.92554,60.19145
+Ilmalantori|24.9189,60.20569
+Eläintarha|24.93084,60.19249
+Hesperian puisto|24.92938,60.17842
+Ilmalanrinne|24.91536,60.20793
+Ilmalanrinne|24.91521,60.20791
+Suurmetsäntie|25.07017,60.26291
+Hannukselanpolku|25.00944,60.27948
+Suurmetsäntie|25.06834,60.26264
+Suurmetsäntie|25.06838,60.26241
+Tattarisuontie|25.06413,60.25822
+Länsiterminaali|24.92005,60.15446
+Tattarisuontie|25.06483,60.25933
+Jarrutie|25.06229,60.25228
+Jarrutie|25.06321,60.25305
+Malmi/VR|25.01111,60.25135
+Valokaari|25.0188,60.28208
+Böstaksentie|25.0119,60.28196
+Jousimiehentie 10|24.98621,60.27388
+Bunkkeri|24.92136,60.15565
+Penttiläntie 1|25.00871,60.28185
+Bunkkeri|24.92136,60.15564
+Huutokonttori|24.92142,60.15985
+Huutokonttori|24.92142,60.15987
+Saukonpaasi|24.91145,60.15753
+Saukonpaasi|24.9115,60.15747
+Auroran sairaala|24.92385,60.19112
+Länsiväylä|24.91327,60.16465
+Kuusitie|24.90209,60.19511
+Crusellinsilta|24.90895,60.15952
+Länsiväylä|24.91405,60.16431
+Kuusitie|24.90206,60.19513
+Crusellinsilta|24.90893,60.15951
+Jalavatie|24.90643,60.19353
+Hehkulanka|25.01751,60.28278
+Hannukselanpolku|25.01144,60.27972
+Lampputie|25.01717,60.28125
+Siltamäen uimahalli|24.99039,60.27451
+Sateenkaarentie|25.011,60.28055
+Jalavatie|24.90641,60.19354
+Töölön tulli|24.9113,60.19183
+Töölön tulli|24.91132,60.19182
+Rukatunturintie|25.12215,60.23316
+Kynttiläkuja|25.0134,60.2822
+Revontulentie|25.00405,60.27982
+Pohjantähdentie|24.99857,60.27953
+Pohjantähdentie|24.99788,60.27931
+Kiertotähdenkuja|24.99422,60.27835
+Siltamäki|24.99004,60.27681
+Kiertotähdenkuja|24.99518,60.27863
+Siltamäki|24.98963,60.27739
+Ylioppilastalo|24.94146,60.1679
+Kallvikintie|25.1339,60.23213
+Ylioppilastalo|24.94111,60.16814
+Mellunmäki(M), tulo|25.10968,60.23855
+Varsapuistikko|24.94942,60.17349
+Ala-Tikkurila|25.01495,60.28693
+Suutarilantie|25.01348,60.28426
+Suutarilantie|25.0151,60.28597
+Revontulentie|25.00451,60.27925
+Tikkuritie|25.02771,60.28254
+Varsapuistikko|24.94963,60.17367
+Kaisaniemi|24.94761,60.17176
+Kaisaniemi|24.94761,60.17178
+Senaatintori|24.95027,60.16901
+Rautatieasema|24.94137,60.17041
+Rautatieasema|24.9418,60.17041
+Senaatintori|24.95012,60.16901
+Vaskipellontie|25.0053,60.27763
+Riimusauvantie|24.9919,60.27473
+Revontulentie|25.00107,60.28221
+Niemitie|24.98012,60.26722
+Hannukselanpolku|25.01124,60.28044
+Vaskipellontie|25.00574,60.27823
+Vaskipellontie|25.00693,60.27818
+Suutarilantie|24.99852,60.27481
+Pukinmäki/VR|24.99374,60.24247
+Aleksanterinkatu|24.94693,60.16893
+Kallvikintie|25.13321,60.2323
+Aleksanterinkatu|24.94637,60.16892
+Ylioppilastalo|24.94132,60.16867
+Ylioppilastalo|24.94203,60.16881
+Mellunmäentie|25.12693,60.2304
+Mellunmäentie|25.12675,60.23008
+Lasipalatsi|24.93747,60.17055
+Uussillantie|25.12171,60.22763
+Lasipalatsi|24.93778,60.17035
+Uussillantie|25.12199,60.22755
+Malmi/VR|25.01111,60.25135
+Suutarilantie|24.99796,60.27481
+Siltamäen ostosk.|24.99117,60.27497
+Siltamäki|24.9909,60.2774
+Siltamäen ostosk.|24.99112,60.27532
+Kytöpolku|24.9922,60.27209
+Kytöpolku|24.99206,60.27145
+Peltokyläntie|24.98362,60.26954
+Peltokyläntie|24.98338,60.2693
+Pitäjänmäki/VR|24.86049,60.22314
+Valimo/VR|24.87421,60.22184
+Arabiankatu|24.97459,60.20695
+Kokkosaarenkatu|24.97255,60.20593
+Kokkosaarenkatu|24.97209,60.20548
+Kumpulan kampus|24.96657,60.20316
+Luostonkuja|25.1139,60.2385
+Kumpulan kampus|24.9673,60.20312
+Luostokuja|25.11387,60.23851
+Rekikuja|25.111,60.22949
+Uussillanrinne|25.11496,60.22966
+Mikonkatu|24.94529,60.17016
+Ojapuisto|25.1183,60.22934
+Mikonkatu|24.94529,60.17011
+Mellunmäentie|25.12868,60.23124
+Arabia|24.97504,60.20827
+Arabia|24.97474,60.20808
+Kaironkatu|24.97757,60.21121
+Kaironkatu|24.97674,60.21012
+Pohjois-Haaga/VR|24.88344,60.23029
+Pukinmäki/VR|24.99374,60.24247
+Mellunmäentie|25.12893,60.23115
+Mellunmäki(M)|25.10922,60.23811
+Mellunmäki(M), tulo|25.10921,60.23811
+Palvelutalo|25.12255,60.23863
+Saariselän palvelut.|25.11966,60.23944
+Fallpakankuja|25.13384,60.22892
+Fallpakankuja|25.13386,60.22977
+Pallaksentie|25.11256,60.23737
+Sörnäinen(M)|24.9612,60.1867
+Mellunmäki(M)|25.10901,60.23783
+Siltapolku|25.11628,60.23681
+Siltapolku|25.11624,60.23693
+Pyhätunturintie|25.12131,60.23692
+Pyhätunturintie|25.11995,60.23705
+Saanatunturintie|25.12729,60.23551
+Saanatunturintie|25.12657,60.23597
+Kaunispääntie|25.12857,60.23253
+Kaunispääntie|25.12882,60.23339
+Pitäjänmäki/VR|24.86049,60.22314
+Valimo/VR|24.87421,60.22184
+Tasankotie|25.0414,60.26301
+Munkkin. puistotie|24.8835,60.19653
+Nallenmäentie|25.03346,60.24759
+Pyrytie|25.02996,60.24993
+Tullivuorenkuja|25.03494,60.24514
+Tasankotie|25.04015,60.26207
+Niemenmäki|24.88185,60.20188
+Harkkoraudantie|25.05573,60.24766
+Pilvitie|25.03172,60.25598
+Pilvitie|25.03316,60.25571
+Pajamäki|24.85662,60.21884
+Pohjois-Haaga/VR|24.88344,60.23029
+Marian sairaala|24.92283,60.16755
+Arkadiankatu|24.9157,60.17143
+Arkadiankatu|24.91622,60.17115
+Väinämöisenkatu|24.92008,60.17009
+Väinämöisenkatu|24.91991,60.17004
+Pajamäki|24.85532,60.21904
+Krematorio|24.91111,60.17281
+Pajamäentie|24.86058,60.21946
+Krematorio|24.91101,60.17273
+Pajamäentie|24.86042,60.21949
+Munkkiniemen aukio|24.88538,60.19575
+Kankiraudantie|25.04853,60.24613
+Munkkin. puistotie|24.88273,60.19708
+Laajalahden aukio|24.87671,60.19828
+Poutamäentie|24.85667,60.21762
+Professorintie|24.8759,60.2011
+Malmin lentoasema|25.04458,60.24536
+Professorintie|24.87511,60.2014
+Dosentintie|24.87436,60.2019
+Laajalahdentie|24.87058,60.19511
+Tuulaspolku|24.86499,60.19851
+Apajapolku|24.86343,60.20039
+Valuraudantie|25.04001,60.2444
+Rantapuisto|25.11141,60.19625
+Ritokalliontie|24.86183,60.20112
+Ritokalliontie|24.86222,60.20108
+Munkkirinne|24.87024,60.19807
+Tiilipolku|24.87144,60.19718
+Dosentintie|24.87372,60.20211
+Perustie|24.87715,60.19947
+Perustie|24.87669,60.19903
+Lokkalantie|24.8835,60.19909
+Lokkalantie|24.88334,60.20002
+Munkkiniemen aukio|24.88529,60.19618
+Munkkiniemen aukio|24.88474,60.19735
+Munkkiniemen aukio|24.88631,60.19613
+Solnantie|24.87964,60.19763
+Solnantie|24.87945,60.19736
+Merisotilaantori|24.97428,60.16735
+Mastokatu|24.96831,60.16563
+Mastokatu|24.96853,60.16553
+Katajanokan termin.|24.96947,60.16426
+Merisotilaantori|24.97551,60.1676
+Puolipäivänkatu|24.97179,60.16669
+Rakuunantie|24.88474,60.2003
+Rakuunantie|24.88349,60.20062
+Puolipäivänkatu|24.97227,60.16683
+Tarvo|24.84818,60.20453
+Vyökatu|24.96858,60.16617
+Munkkin. uimaranta|24.85857,60.20185
+Vyökatu|24.96947,60.1661
+Kauppiaankatu|24.96485,60.16681
+Kauppiaankatu|24.96486,60.16676
+Katajanokan puisto|24.96186,60.16743
+Katajanokan puisto|24.96286,60.16746
+Sänkitie|24.83867,60.23629
+Sänkitie|24.83878,60.23614
+Malminkartanontie|24.84502,60.24435
+Vanha Hämeenkyläntie|24.83561,60.24945
+Malminkartanontie|24.84648,60.24309
+Vanha Hämeenkyläntie|24.83552,60.24917
+Riukutie|24.84252,60.24539
+Munkkin. uimaranta|24.85998,60.20149
+Ritolehto|24.86424,60.19952
+Ritolehto|24.86445,60.19985
+Nuottapolku|24.86844,60.19871
+Apajapolku|24.86368,60.20022
+Laajalahden aukio|24.87659,60.19788
+Nuottapolku|24.86677,60.19783
+Riukutie|24.84265,60.24566
+Sotilaspellontie|24.84121,60.23468
+Sotilaspellontie|24.8416,60.23465
+Kauppakorkeakoulut|24.92563,60.17115
+Suurmetsäntie|25.04177,60.26529
+Sointutie|25.03939,60.26271
+Helluntairaitti|25.03709,60.26374
+Helluntairaitti|25.03709,60.26374
+Taivallahti|24.9181,60.17616
+Verkkotie|25.11273,60.19686
+Verkkotie|25.11274,60.19687
+Täkykuja|25.11741,60.19781
+Täkykuja|25.11745,60.19784
+Ratamestarinkatu|24.93947,60.19875
+Laippatie|25.04788,60.2107
+Levytie|25.04932,60.2124
+Tulppatie|25.05357,60.21155
+Putkitie|25.05373,60.20997
+Viilarintie|25.05794,60.21066
+Leppäsuonkatu|24.92356,60.16848
+Pohj. Rautatiekatu|24.9309,60.17085
+Leppäsuonkatu|24.9233,60.16818
+Kansallismuseo|24.93349,60.17419
+Kauppakorkeakoulut|24.92367,60.17209
+Katajaharjuntie|24.85805,60.16835
+Katajaharjuntie|24.85841,60.16827
+Laukkaniementie|24.85903,60.16794
+Kauppakorkeakoulut|24.92517,60.17083
+Laukkaniementie|24.85905,60.1679
+Koivusaarentie|24.85993,60.16587
+Hesperian puisto|24.92988,60.17714
+Koivusaarentie|24.85995,60.16584
+Hesperian puisto|24.92917,60.17884
+Telkkäkuja|24.85586,60.16436
+Kansallismuseo|24.93328,60.17391
+Telkkäkuja|24.85877,60.16407
+Apollonkatu|24.92194,60.17568
+Telkkäkuja|24.8588,60.164
+Apollonkatu|24.92213,60.17583
+Hietakannaksentie|24.91273,60.17518
+Hietakannaksentie|24.9129,60.17518
+Puistokaari|24.86159,60.1615
+Puistokaari|24.86157,60.1615
+Puistokaari|24.86363,60.1606
+Puistokaari|24.86362,60.16064
+Mustankivenkatu|25.14494,60.20667
+Kallvikintie|25.13335,60.21356
+Kallvikintie|25.1329,60.21351
+Kallvikintie|25.13216,60.21776
+Merikorttitie|25.13103,60.2199
+Merikorttitie|25.13018,60.21994
+Kallvikintie|25.13287,60.22047
+Kallvikintie|25.13278,60.22047
+Vuosaarentie|25.13779,60.21003
+Isonvillasaarentie|25.14526,60.22044
+Isonvillasaarentie|25.14507,60.22049
+Vihdintie|24.85886,60.23389
+Konalantie|24.8465,60.23054
+Roihupelto|25.05689,60.20932
+Konalantie|24.84689,60.23036
+Satamasaarentie|25.13715,60.21166
+Tyynylaavankuja|25.13742,60.20713
+Kestikuja|24.97747,60.23169
+Kestikuja|24.97778,60.23209
+Aittatie|24.84555,60.23309
+Aittatie|24.84472,60.23306
+Myllypellontie|24.97852,60.23337
+Aidasmäki|24.9736,60.22927
+Aidasmäki|24.97434,60.22964
+Veräjänkorva|24.97256,60.22675
+Veräjänkorva|24.9729,60.22654
+Kirkkoherrantie|24.97096,60.22493
+Kirkkoherrantie|24.97197,60.22494
+Käpytie|24.96789,60.22592
+Maaherrantie|25.00263,60.22744
+Käpytie|24.96805,60.22632
+Maaherrantie|25.00447,60.22709
+Hernepellonkuja|24.99505,60.22381
+Hernepellonkuja|24.99648,60.22475
+Viikinranta|24.98539,60.21836
+Viikinranta|24.98699,60.21896
+Roihupelto|25.05852,60.2102
+Salmisaari|24.90788,60.16333
+Salmisaari|24.90771,60.16346
+Ruoholahti(M)|24.91484,60.16335
+Ruoholahti(M)|24.91418,60.16345
+Itämerenkatu|24.92065,60.16353
+Itämerenkatu|24.91994,60.16355
+Salmisaari|24.90505,60.16338
+Salmisaari|24.9044,60.16338
+Länsiväylä|24.91405,60.16431
+Roihupelto|25.05867,60.20955
+Länsiväylä|24.91112,60.16436
+Kreijarinkuja|25.0646,60.20187
+Kreijarinkuja|25.0658,60.20174
+Ruoholahti (T)|24.91513,60.16333
+Energiakatu|24.90065,60.16509
+Salmisaarenaukio|24.89927,60.16591
+Roihuvuoren kirkko|25.0616,60.20199
+Roihuvuoren kirkko|25.06185,60.20195
+Salmisaarenranta|24.90171,60.16422
+Selkämerenkatu|24.91652,60.16277
+Selkämerenkatu|24.91614,60.16267
+Santakatu|24.91933,60.16291
+Santakatu|24.91931,60.16295
+Prinssintie|25.05946,60.203
+Vuorenpeikontie|25.05952,60.2007
+Vuorenpeikontie|25.05972,60.20088
+Hattulantie|24.95466,60.19577
+Keijukaistenpolku|25.05482,60.1975
+Oulunkylän asema|24.96787,60.22852
+Oulunkylän asema|24.96789,60.22854
+Veräjämäki|24.97688,60.23098
+Veräjämäki|24.97709,60.23099
+Keijukaistenpolku|25.05587,60.19806
+Porolahden koulu|25.05336,60.19525
+Porolahden koulu|25.0535,60.19536
+Satumaanpolku|25.05759,60.19456
+Tuhkimontie|25.0522,60.19749
+Satumaanpolku|25.05887,60.19461
+Roihuvuorentie|25.05217,60.19416
+Erottaja|24.94248,60.16749
+Erottaja|24.94348,60.16701
+Kaarlenkatu|24.95148,60.18608
+Kolmikulma|24.9439,60.16522
+Johanneksen kirkko|24.94539,60.16332
+Erottaja|24.94234,60.16714
+Roihuvuoren vanhaink|25.06257,60.20364
+Prinssintie|25.05932,60.20352
+Ammattikoulu|25.06107,60.20631
+Prinsessantie|25.05722,60.20645
+Prinsessantie|25.0571,60.20641
+Jättiläisen polku|25.05113,60.19617
+Lehtisaarentie|24.8493,60.1816
+Keijukaisten polku|25.05481,60.19783
+Tammisalo|25.06273,60.1959
+Tammisalo|25.06393,60.19561
+Haapaniemi|24.95715,60.18247
+Prinssintie|25.06059,60.20377
+Punahilkantie|25.06094,60.20506
+Punahilkantie|25.06237,60.20489
+Kinaporinpuisto|24.95967,60.18953
+Sörnäinen(M)|24.9612,60.18685
+Sörnäinen(M)|24.9612,60.18685
+Haapaniemi|24.95673,60.18261
+Franzeninkatu|24.95308,60.1852
+Franzeninkatu|24.95311,60.1852
+Karhupuisto|24.95305,60.18397
+Karhupuisto|24.95316,60.1837
+Tupasaarentie|25.01458,60.18842
+Vihdintie|24.86434,60.23445
+Mäkelänrinne|24.9494,60.19791
+Paavalin kirkko|24.96206,60.19922
+Tupavuori|25.00916,60.18607
+Mustikkamaanpolku|24.99033,60.18032
+Mustikkamaanpolku|24.99005,60.18036
+Kulosaari (M)|25.00844,60.18802
+Kulosaari (M)|25.00815,60.18795
+Mustikkamaa|24.99321,60.18212
+Mustikkamaa|24.99317,60.18217
+Korkeasaari|24.98351,60.18011
+Henrikintie|24.84853,60.22455
+Tupasaarentie|25.01582,60.18839
+Tupasaari|25.01072,60.18896
+Tupasaari|25.01154,60.18864
+Kulosaari|25.00164,60.18756
+Kulosaari|24.99894,60.18642
+Kulosaarentie|25.00113,60.18526
+Kulosaarentie|25.00073,60.18512
+Tupasaarentie|25.01494,60.1883
+Risto Rytin tie|25.01493,60.18561
+Kyläkirkko|24.84258,60.22606
+Risto Rytin tie|25.01566,60.1866
+Lars Sonckin tie|25.01168,60.18362
+Lars Sonckin tie|25.01273,60.1835
+Kalliokaivonmäki|25.00509,60.18426
+Kalliokaivonmäki|25.00604,60.18404
+Marsalkantie|25.00085,60.18584
+Marsalkantie|25.0021,60.18505
+Hopeasalmenranta|24.99588,60.18566
+Hopeasalmenranta|24.99588,60.18556
+Kellaripellonpolku|25.07956,60.1661
+Kellaripellonpolku|25.08049,60.16611
+Puuskarinne|25.07991,60.17061
+Puuskakuja|25.0805,60.16778
+Puuskakuja|25.08038,60.16808
+Hämeenapajantie|25.0758,60.16546
+Hämeenapajantie|25.07604,60.16544
+Rannikkolaivurintie|25.06984,60.164
+Rannikkolaivurintie|25.07081,60.16404
+Takilatie|25.06189,60.16455
+Takilatie|25.06189,60.16448
+Isosarvastontie|25.05495,60.16596
+Esikoisentie|24.89639,60.25083
+Esikoisentie|24.89707,60.25131
+Kaarelantie|24.89214,60.24513
+Perhekunnantie|24.8942,60.24874
+Kaarelantie|24.89424,60.24515
+Maununnevantie|24.89929,60.24347
+Maununnevantie|24.89929,60.24445
+Kaarelankuja|24.90182,60.23833
+Pasilansilta|24.93506,60.1977
+Kaarelankuja|24.90236,60.23883
+Riukuja|24.8382,60.24544
+Linnanmäki|24.94133,60.18603
+Porvoonkatu|24.94513,60.19076
+Porvoonkatu|24.94546,60.19098
+Ilmattarentie|24.93986,60.20753
+Ilmattarentie|24.9413,60.20781
+Pirkkolan urheilup.|24.90268,60.2361
+Teollisuuskatu|24.93584,60.19699
+Kaarelantie|24.89263,60.24566
+Jämsänkatu|24.94176,60.19669
+Asemapäällikönkatu|24.94032,60.19803
+Pyöräilystadion|24.94455,60.20099
+Karjalankatu|24.93641,60.19225
+Karjalankatu|24.93607,60.19244
+Vaihdemiehenkatu|24.9329,60.2026
+Alppila|24.94101,60.19117
+Vaihdemiehenkatu|24.93323,60.20298
+Alppila|24.9406,60.19124
+Pasilan asema|24.93402,60.19989
+Pasilan asema|24.93461,60.19942
+Junailijankuja|24.93781,60.19843
+Junailijankuja|24.93712,60.19855
+Kaarelantie|24.89145,60.24402
+Koskelantie|24.94523,60.20786
+Kaarelantie|24.89056,60.24563
+Asemapäällikönkatu|24.94049,60.19824
+Raitamaantie|24.89403,60.24126
+Siilitie|25.04436,60.20592
+Raitamaantie|24.89447,60.24143
+Siilitie|25.04439,60.20591
+Venäläinen koulu|24.89714,60.23788
+Herttoniemi|25.03101,60.19491
+Herttoniemi|25.03101,60.19491
+Venäläinen koulu|24.89749,60.23816
+Niittyluhdantie|24.91547,60.23891
+Niittyluhdantie|24.91321,60.23894
+Venäläinen koulu|24.90215,60.23566
+Sturenkatu|24.94875,60.19087
+Sidetie|25.00747,60.26694
+Kottaraistie|25.00295,60.26568
+S-Market|24.84646,60.2451
+Kottaraistie|25.00316,60.26568
+Vitsastie|24.83927,60.24407
+Vitsastie|24.83914,60.24412
+Käärtipolku|24.84242,60.2366
+Huhtapuisto|25.01236,60.25978
+Kotinummentie|25.01464,60.26738
+Rintamasotilaantie|25.01931,60.26934
+Moisiontie|25.02945,60.26817
+Riihipellontie|24.8427,60.23728
+Konalantie|24.84601,60.23801
+Tähkätie|24.85056,60.23547
+Tähkätie|24.85058,60.23547
+Konalan puisto|24.85363,60.23467
+Konalan puisto|24.85363,60.23465
+Hankasuontie|24.8468,60.24408
+Malminkartanonkuja|24.8496,60.24119
+Malminkartanonkuja|24.84837,60.24231
+Ruosilanpolku|24.855,60.23781
+Ruosilanpolku|24.85418,60.2387
+Vuorikummuntie|24.84914,60.23288
+Vuorikummuntie|24.84925,60.23288
+Hankasuontie 12|24.8385,60.24876
+Sidetie|25.00825,60.26745
+Hankasuontie 5|24.84333,60.24711
+Hankasuontie 5|24.84315,60.24735
+Sidekuja|25.00582,60.26859
+Hankasuontie|24.8467,60.24432
+Sidekuja|25.00607,60.26855
+Hankasuontie|24.84613,60.24541
+Yläkaskentie|25.00182,60.27426
+Kotinummentie|25.01539,60.26788
+Ristipellontie|24.84268,60.24161
+Yläkaskentie|25.0013,60.27504
+Ristipellontie|24.84299,60.2415
+Yläkaskenkuja|25.00451,60.27189
+Riihipellontie|24.84645,60.239
+Yläkaskenkuja|25.00543,60.27149
+Yrttimaantie 65|25.00959,60.26941
+Riihipellontie|24.84672,60.23761
+Tähkätie|24.84651,60.23512
+Kotinummentie|25.01355,60.26767
+Tähkätie|24.84705,60.23558
+Vähäntuvantie|24.84636,60.23233
+Vähäntuvantie|24.84661,60.23253
+Huhtakuja|25.01293,60.25751
+Huhtakuja|25.0132,60.25743
+Tapanilan tori|25.02564,60.26503
+Tapanilan Urheiluk.|25.01614,60.26573
+Jukolantie|25.02684,60.26301
+Jukolantie|25.027,60.26313
+Viertolantie|25.02024,60.26063
+Viertolantie|25.02155,60.26028
+Halmetie|25.01662,60.2612
+Halmetie|25.01763,60.2608
+Kotinummentie|25.01209,60.26226
+Kotinummentie|25.01222,60.26215
+Kalasatama|24.97723,60.18765
+Tapanilan tori|25.02579,60.26512
+Kalasatama|24.97721,60.18761
+Päivöläntie|25.02404,60.26918
+Tapaninkyläntie|24.98307,60.26514
+Tapaninkyläntie|24.98221,60.26459
+Yrttimaantie 65|25.00956,60.26892
+Korsitie|25.00048,60.26821
+Korsitie|25.00157,60.26832
+Vallesmannintie|24.99649,60.26765
+Vallesmannintie|24.99661,60.26765
+Soinintie|24.99296,60.26665
+Soinintie|24.99344,60.2669
 |24.9118213,60.175379
 Scandic continental|24.9279602,60.1789448
 Haruspolku|
@@ -12,7 +2879,6 @@ Hansasilta|25.081368631249997,60.2099268875
 Iespolku|
 Golf-Center|25.0256454,60.1921616
 Yrjönkatu|
-Töölön halli|24.9213291,60.1857696
 Hitsaajanpolku|
 Ravintola Pukki|24.983937,60.1747005
 Nelmanni|24.9328386,60.1982276
@@ -743,7 +3609,7 @@ Pajukontie|
 Fast Motors|24.9962042,60.22600894
 Herttoniemen autokatsastus|25.052417186666666,60.20655985333334
 Arkadian kebab|24.9277977,60.1700286
-Töölöntori|24.9235216,60.1795676
+Töölöntori|24.9244441375,60.179007075
 Puistolantanhua|
 Sormuspolku|
 Kimnaasipolku|
@@ -984,7 +3850,6 @@ Hotelli Torni|24.938582359999998,60.167804520000004
 Hernematalankatu|
 Kiillepuisto/lasten kahluuallas|25.0050545,60.2340706
 Riistavuoren vanhustenkeskus|24.88710854,60.21709858799999
-Saukonpaasi|24.9110261,60.1575334
 Minttu|25.029510432000002,60.27765550799999
 Itäkeskuksen uimahalli|25.0769234,60.2126763
 Auto Oulet Helsinki|24.8561735,60.2459322
@@ -1049,7 +3914,6 @@ K-Market Aurinkolahti|25.1558151,60.2053086
 Meilahti/kalliokiipeilyseinä|24.8942683,60.1877366
 Pitajanmaki|24.877754480952376,60.22297924761905
 Parturi-kampaamo Fredika|24.9363117,60.2004759
-Johanneksen kirkko|24.9459432,60.1627489
 Toivo Kuulan puisto|24.912533547058832,60.17869175686274
 Käenkuja|
 Farang|24.9315115,60.1719646
@@ -1085,7 +3949,6 @@ Saarankatu|
 Varikkotie|
 Torpparinmäentie|
 Metsätie|
-Länsilinkki|24.9232067,60.1627554
 Torkkelinkuja|
 Robert Hermansonin tie|
 Kettuveistos|25.0369487,60.205596
@@ -1137,7 +4000,7 @@ Saaristo|24.96562743548386,60.15935747096774
 Pensastie|
 Kisatie|
 ME-auto|25.040069900000002,60.1980252
-Roineentie|24.9534063,60.1929533
+Roineentie|
 Dylan|24.9780585,60.211478
 Megaeläint|24.8734786,60.2396373
 Bakfickan|24.9592887,60.1741343
@@ -1472,7 +4335,7 @@ Pelimannintie|
 Katsastustie|
 Tiirasaarentie|
 Panimokatu|
-Paavalin kirkko|24.961703,60.1983394
+Paavalin kirkko|24.9600242,60.1972628
 Pääskylahdentie|
 Southern fried chicken|24.9391098,60.1690819
 Pikku Café|24.9922026,60.2461838
@@ -1499,7 +4362,7 @@ Peltokylänraitti|
 useita veistoksia|25.0451053,60.1985385
 Amatsoonit|24.9592349,60.1864688
 Leveyspiiri|
-Kansallismuseo|24.9324212,60.175122
+Kansallismuseo|24.931699519047623,60.17490716190476
 Antinkoti|25.00076674210526,60.25914614736841
 Leppätie|
 Palokunnantie|
@@ -1715,7 +4578,7 @@ Jauhokuja|
 Päiväkoti Inkivääri|25.15681917333333,60.20731707333335
 Jukolantie|
 A Li Shan|24.9404329,60.2200334
-Perämiehenkatu|24.935697,60.157832
+Perämiehenkatu|
 Hakalantie|
 Lähdepolku|
 Karhusuontie|
@@ -2244,7 +5107,7 @@ Ruutikuja|
 Rahtarinkatu|
 Pähkinätie|
 Paasivuorenkatu|
-Vallilan kirjasto|24.9611659,60.1922505
+Vallilan kirjasto|24.962428359999997,60.19220689
 Arentipolku|
 Mosaiikkiraitti|
 K3|24.9699445,60.2028927
@@ -2283,7 +5146,6 @@ Cafe Ice|24.9641903,60.1888356
 Ahomäentie|
 Ryytikuja|
 Ryan Thai|24.9491792,60.1657033
-Urheilutalo|24.9479061,60.1864694
 Tapanilan Urheilukeskus|25.017045035714286,60.26531941428573
 Messipojankuja|
 Olutpankki|25.081511,60.2135978
@@ -2372,7 +5234,7 @@ Ilotulitustie|
 Margareetankuja|
 Aurinkomäenkuja|
 Mäntyniementie|
-Vallilan varikko|24.9623823,60.1965057
+Vallilan varikko|24.96219669,60.195054056666656
 Night Express|24.9612843,60.1925339
 Kunnallisneuvoksenkuja|
 Sihtikuja|
@@ -2499,7 +5361,7 @@ Aleksanteri II|24.9522678,60.1695092
 Sinikaislankuja|
 Mellunmäen ala-aste|25.12144891,60.23239560999999
 Tukkikuja|
-Radanrakentajantie|24.9419445,60.2004308
+Radanrakentajantie|
 Posti Kannelmäki|24.8941617,60.2370638
 Eläintarhan skeittipuisto|24.9284437,60.19175252
 Kuismakuja|
@@ -2581,7 +5443,6 @@ Vuosaaren VPK|25.1377026,60.2041839
 Helsingin yhteislyseo|25.091287108333333,60.23221420833334
 Saunapellonpolku|
 Artek|24.9461193,60.1669946
-Käpylänaukio|24.9434593,60.2131025
 Lanakuja|
 Mäkelänrinne|
 Gunnel Nymanin piha|
@@ -2635,7 +5496,6 @@ Malmin sairaalakatu|
 Ullanpuistikko|24.95278785714286,60.16077214285715
 Otermankuja|
 Prisma Itäkeskus|25.0878448,60.21378438823529
-Toukoniitty|24.9687882,60.2039776
 Lähiöteatteri|25.077039,60.2241709
 Pikku Kallahden venesatama|25.1413884875,60.198609774999994
 Amiraali Cronstedtin ranta|
@@ -2839,7 +5699,7 @@ Radisson Blu Plaza|24.9454936,60.1724288
 Isot sukset|25.030268,60.1967493
 Linnansillanpolku|
 Asukastalo Kiila|25.02717534545454,60.22727191818182
-Haapalahdenkatu|24.8924644,60.2054682
+Haapalahdenkatu|
 K-Rauta Lanterna|25.0619451,60.2103778
 Purjetuulenkuja|
 Merisatamanrannan koirapuisto|24.935492738461537,60.15573677692308
@@ -2870,7 +5730,6 @@ Vankkurikuja|
 Wanha Mylly|25.0417398,60.1903626
 Kolupolku|
 Laulukuja|
-Rautatieasema|24.9412521,60.170356
 Närekuja|
 Ramsinniementie|
 Malmin apteekki|25.0090255,60.2515801
@@ -2910,14 +5769,13 @@ Rantavarastontie|
 Sakarinkatu|
 Kalastustarvikeliike Wobbleri|24.8462924,60.2418789
 Pikku satamakatu|
-Tilkka|24.9012226,60.1983506
 Klaveeripolku|
 Lemissaarentie|
 Pastori Jussilaisen tie|
 Suomen Sukututkimusseuran kirjasto|24.9540966,60.1740082
 Postikuja|
 Isonsarvastontie|
-Vyökatu|24.9690012,60.1661821
+Vyökatu|
 Pilvitie|
 Apteekkarinraitti|
 Kallioharjuntie|
@@ -3052,7 +5910,7 @@ Mareksound|24.8759594,60.2158707
 Päiväkoti Myllytonttu|25.0810815,60.2170372
 Svante Olssonin puistokuja|
 Kaivokukka|25.0094797,60.2273763
-Kyllikinportti|24.9261307,60.2000224
+Kyllikinportti|
 Autokeskus Tikkurila|25.02580865,60.28389728333334
 R-talo|24.93241062222222,60.17170936666665
 Hiekkajaalanpolku|
@@ -3529,7 +6387,7 @@ Pikku-Roba|
 Crowne Plaza Helsinki|24.9273634,60.1799584
 Pizzeria Dennis|24.934164,60.1681539
 Kielopolku|
-Katajanokan puisto|24.963177,60.1672861
+Katajanokan puisto|24.96034577916667,60.168028266666674
 Sakarinmäen koulu|25.21148065862069,60.261685796551724
 Sea ball cafe|24.9630749,60.1796427
 Sea Life|24.9380788,60.1886316
@@ -3660,7 +6518,6 @@ Bolero Business Park|24.864686299999992,60.22331166666667
 Tapaninvainiontie|
 Pensaskuja|
 Punakanelinkuja|
-Haapaniemi|24.95739,60.1828025
 Karavaanikuja|
 Zacharias Topelius|24.944684,60.1675026
 Max's Cafe|24.8818295,60.197288
@@ -3691,7 +6548,6 @@ Pirkkolantie|
 Prammipolku|
 Luxus|25.0337689,60.2045245
 Pohjavedenraitti|
-Messukeskus|24.9371224,60.2012879
 Ruoholahden ala-aste|24.9194393,60.1625588
 Lintulahdenkuja|
 Koulutanhua|
@@ -3728,7 +6584,6 @@ Kantakyläntie|
 Linnunradankuja|
 Reposalmenpolku|
 Ajatar|24.9378989,60.1695274
-Pyöräilystadion|24.9452649,60.2029862
 Ciao!|24.9512035,60.168824
 Alko Kallio|24.9549474,60.1873451
 Virvatulenpolku|
@@ -3854,7 +6709,7 @@ Soinisen koulu|24.998480047058823,60.24974916764706
 Päärynäkuja|
 Lemunkuja|
 Ravintola Savoy|24.9472796,60.1669578
-Kallion virastotalo|24.9497798,60.1806943
+Kallion virastotalo|24.946626983333335,60.18136518888889
 Uruguan lähetystö|24.9381184,60.1663742
 Suursuo|24.9339642,60.2342115
 Kotinummenpolku|
@@ -4059,7 +6914,6 @@ Kallahden peruskoulu|25.13048535,60.20138419
 Kristianinkatu|
 Kimpipolku|
 Leikkipuisto Linnunrata|25.00678924,60.28077444
-Maistraatintori|24.9252766,60.1991509
 Soininen|24.930214357142855,60.1647441
 Tukkipolku|
 Luontokoulu Arkki|24.98624272,60.17610817999999
@@ -4088,7 +6942,7 @@ Lettileena|24.9280352,60.1713136
 Pitkänsillanranta|
 Rastilanraitti|
 Sturen Pizza|24.958495,60.1950172
-Senaatintori|24.951728,60.1691009
+Senaatintori|
 Kotipizza|25.0125615,60.2506415
 Humikkalantie|
 Pizza Hut|24.9305592,60.1691888
@@ -4475,7 +7329,6 @@ Päiväkoti Ruusu|24.8721645,60.2005059
 Myllynkiventie|
 Tallbergin puistotie|
 Antinniitynpolku|
-Kaupunginpuutarha|24.9320105,60.1843807
 Kutomopolku|
 Ukkotuomarinkuja|
 Lassilan lämpökeskus|24.889602900000003,60.233889139999995
@@ -4528,7 +7381,6 @@ Rullalaakerinkuja|
 Laajasalon ala-aste liikuntasali|25.05332058,60.17757048
 Lapinmäentie|
 Angervotie|
-Salmisaari|24.9057588,60.1631814
 Ruusuniementie|
 Dagmarinkatu|
 Metrovarikonkuja|
@@ -4732,6 +7584,7 @@ Gasum|24.9057697,60.2073443
 Helluntaipolku|
 R-Kioski Konala|24.844717,60.2395393
 Merenkulkijankatu|
+Helsinki (Västra Terminalen)|24.9207937,60.1544255
 Carelia apteekki|24.9230866,60.1794724
 Kalastin|24.9254701,60.176913
 Tähkä|25.0193053,60.2229983
@@ -4765,7 +7618,6 @@ Annalan puisto|24.973274076811602,60.212611805797096
 Topeliuksen puisto|24.918182762500003,60.1825383125
 Mellunmäenraitio|
 Harakan lintupiilo|24.959986,60.1496555
-Pasilan konepaja|24.945111,60.1944313
 Rudolfin leikkipuisto/lasten kahluuallas|25.039577656923075,60.17175882461538
 Unikkotie|
 Ulappasaarentie|
@@ -4840,7 +7692,6 @@ Presidentinpolku|
 Neste-Oil|24.9936631,60.2588616
 Naurupolku|
 Putki Kitti Oy|25.0336489,60.2038864
-Kolmikulma|24.9439501,60.1652751
 Ruskeasuon koulu|24.907455875000004,60.203468380000004
 Apteekkarinkatu|
 Pub Weeruska|24.9463367,60.1907977
@@ -4955,7 +7806,7 @@ Päiväkoti Nalli|25.0608868,60.2350309
 Tulvaniitynkuja|
 Malminkartanontie|
 Ecobike|24.920302,60.187376
-Urheilulehto|24.919186924999998,60.189562925000004
+Urheilulehto|24.919187599999997,60.189560725
 Lähde/UKK-muistomerkki|24.9316051,60.1765658
 Sörkka|24.9550415,60.1807179
 Tammisalon VPK|25.0595007,60.191378
@@ -5042,7 +7893,6 @@ Stoa|25.0791846,60.211953
 Urakkatie|
 Asukaspuisto Kipinäpuisto|25.063417413636365,60.23649676818183
 Puotilan leikkimäki/lasten kahluuallas|25.1003875,60.2124776
-Alppila|24.9406043,60.1912363
 Salon Maarit|24.8750873,60.239781
 Vannastie|
 Maavallintie|
@@ -5065,7 +7915,7 @@ Heinäsarankaari|
 Malmin sairaalakuja|
 Anianpellontie|
 Orapihlajatie|
-Paciuksenkaari|24.8917069,60.1945997
+Paciuksenkaari|
 Birger Käcklundin raitti|
 Sysimiehenpolku|
 Laajalahdentie|
@@ -5101,7 +7951,6 @@ Lippupiste|24.8763927,60.2388945
 Damaskuksentie|
 Provianttikatu|
 Umeshu|24.9244662,60.1774465
-Kirurgi|24.9483345,60.1621216
 Lupajantie|
 Döbelninkatu|
 Kansalliskirjasto|24.950095458823526,60.17034471764706
@@ -5110,7 +7959,6 @@ Itä-Helsingin pyörähuolto|25.1060959,60.2078673
 Suuntimokuja|
 Pähkinänsärkijä|24.9246832,60.1783496
 Laajasuonpolku|
-Kansaneläkelaitos|24.9178588,60.1887436
 Bandidos Helsinki|24.970461320000005,60.19852204
 Adalmiinankatu|
 Ukrainan suurlähetystö|25.017417900000005,60.18547472
@@ -5140,10 +7988,10 @@ Viikinginkuja|
 Longitudi|24.9280485,60.1749279
 Stadin chili kebab|25.0839718,60.2128217
 Kyläkunnantie|
-Hattulantie|24.9562609,60.1948061
+Hattulantie|
 Sanomatalo|24.937875057894736,60.17245275263158
 Carelia|24.9270102,60.1814092
-Karhupuisto|24.9527101,60.1835062
+Karhupuisto|24.95233308333334,60.18391988333334
 Alhokuja|
 Venesataman kahvila|24.9919404,60.1865123
 Bar High Level|24.9067522,60.1931501
@@ -5362,7 +8210,7 @@ S-Market Arabia|24.9678789,60.2029702
 Meri-Rastilan tori|
 Aamitie|
 Kyynäräkuja|
-Kauppatori|24.9517611,60.1674116
+Kauppatori|
 Rapuojantie|
 Mäntytie|
 Helsingin käräjäoikeus|24.9014853,60.1635242
@@ -5375,7 +8223,7 @@ Kuorekarinsalmen venesatama|24.991778,60.1865817
 Purjetuulenaukio|
 Malminkartanon Skeittipaikka|24.856788164285717,60.240654199999994
 K-Market Kannelmäki|24.8751201,60.2391929
-Ooppera|24.9268727,60.1820157
+Ooppera|24.9256799,60.1825402
 Ressun lukio|24.93817859565217,60.16705659999998
 Haagan uimahalli|24.890369862500002,60.21207
 Rukoushuone|25.05959736,60.264553060000004
@@ -5443,7 +8291,7 @@ Tullivuorenkuja|
 Sunilantie|
 Mäkelänrinteen lukio|24.94914491176471,60.19876829411765
 Motor Center Konala II|24.846428857142854,60.24209351428571
-Palkkatilanportti|24.9274542,60.1961889
+Palkkatilanportti|
 Sahaajankatu|
 RTV|25.0500369,60.2047114
 Kart'in|24.967699,60.2153131
@@ -5545,7 +8393,7 @@ Fiikuspolku|
 Muusankuja|
 Lönkan|24.92151561764706,60.179180817647065
 Helsingin yliopisto museo|24.9537675,60.1703007
-Castréninkatu|24.9452728,60.1827395
+Castréninkatu|
 Tuubakuja|
 E. J. Nyströmin polku|
 Honkaluodonrinne|
@@ -5571,7 +8419,6 @@ Wallininkuja|
 Jägerhorninpolku|
 Villa Ullas|25.134831266666666,60.200481477777785
 Teatterikorkeakoulu|24.959434790000003,60.181511835
-Koskelantien risteys|24.9455476,60.2083317
 Antareksenkatu|
 Kumiluoti|24.9530172,60.1860188
 K-Market Pasaati|24.9419494,60.1992136
@@ -5653,8 +8500,6 @@ Eläinlääkärinkuja|
 R-kioski Jakomäki|25.0765187,60.2609839
 il Faro|25.0303723,60.1879777
 Ruusuniemen huvila|25.18513627777778,60.21025703888888
-Kauppakorkeakoulut|24.9255292,60.1711848
-Korppaanmäki|24.8928122,60.2081585
 Tuomarinkartano|24.9698417,60.2553848
 Linnunlauluntie|
 Kangasvuokontie|
@@ -5662,7 +8507,7 @@ Vaakamestarintie|
 Mehiläistie|
 Tavaststjernankatu|
 Palkkatilankatu|
-Vironkatu|24.9531787,60.1719475
+Vironkatu|
 Yrjönkäytävä|
 Rintinpolku|
 Palokuja|
@@ -5715,7 +8560,6 @@ Klaneettitie|
 Laukauskuja|
 Kullervonkatu|
 Ant-Auto|24.9586532,60.1783465
-Olympialaituri|24.9564849,60.1615481
 Porthaninrinne|
 Jakomäentie|
 Herttoniemen kirkko|25.032004399999998,60.199061038888885
@@ -5913,7 +8757,6 @@ Traktoritie|
 Rattitie|
 Kalliohovi|24.956975,60.1885197
 Larin Parasken polku|
-Ruskeasuo|24.8986629,60.2031725
 Asukastalo Lava|25.040213480000002,60.23430165999999
 Kehon rakennus ja purku Oy|25.042558,60.2095374
 Vuorilahdenpolku|
@@ -6030,7 +8873,6 @@ Johanneksenrinne|
 Kuutamotie|
 Entinen Elanto|24.984365742857143,60.148364057142864
 YH Wrak|24.97131895555556,60.1979676
-Erottaja|24.9422184,60.1660939
 Sananjalankuja|
 Nu Venue|24.9279791,60.1700659
 Lokipolku|
@@ -6096,7 +8938,6 @@ Punapaadenkuja|
 S-Market Bulevardi|24.9302493,60.1613526
 Kuusiaita|
 Nukarintie|
-Kamppi (M)|24.9307798,60.168704
 Harakkamyllyntie|
 Samoilijanpolku|
 Koskustie|
@@ -6104,7 +8945,7 @@ Ravintola Piha|24.9374661,60.1678563
 Tursas ja merenneito (1940)|24.9393227,60.1674617
 Nuijamiestentie|
 Roineenpuisto|24.955270384615385,60.1921977076923
-Varsapuistikko|24.9496285,60.1735873
+Varsapuistikko|24.950016921428574,60.173466357142864
 Pikkulintu|25.0966251,60.2127987
 Kesantopolku|
 Laulurastaankuja|
@@ -6130,7 +8971,6 @@ Tuuripelit|24.9674086,60.2027809
 Food corner|24.8763266,60.2394841
 Bebek Electronic|24.9541881,60.179539
 New Waves Salon|24.9558893,60.1818126
-Sörnäinen (M)|24.9630749,60.1879072
 Memphis|24.9470476,60.1697005
 Juhani Ahon tie|
 K-Supermarket Hertta|25.029188,60.19415124615385
@@ -6181,7 +9021,6 @@ Papukuja|
 Delivo|24.878234,60.1980234
 Videobank|24.9574285,60.2132809
 Willebrandintie|
-Hietalahti|24.9248668,60.1613744
 Ekokauppa Ekolo|24.9504411,60.1809524
 Raekuja|
 Soitin Laine|24.9323989,60.1714902
@@ -6229,7 +9068,6 @@ Teljäntie|
 F-talo|25.021910686666672,60.23029540666666
 Pub Merikarhu|25.0844911,60.236979
 Tuohikoivuntie|
-Brahenkatu|24.9481606,60.1895721
 Laivurin valinta|24.9414424,60.1581535
 Pikku-Pässin kuja|
 Kopioniini|24.877705854545454,60.21511731818182
@@ -6340,7 +9178,7 @@ Kahvila-lähikauppa Airo|24.914023,60.1771889
 Messitytönkuja|
 Suomenlinnan uimaranta|24.98506105,60.14112952000001
 Variskarin luonnonsuojelualue|24.87538308571429,60.181462668571434
-K-Citymarket Helsinki Ruoholahti|24.9105133,60.1636048
+K-Citymarket Helsinki Ruoholahti|24.9109308,60.1636089
 Vainiokuja|
 Edita|24.88513919090909,60.26184793636364
 Mauno Koiviston aukio|
@@ -6460,7 +9298,6 @@ Fokka|
 Vähänkyröntie|
 Rälssinpolku|
 Papas Public House|24.9239242,60.1795877
-Vallillan varikko|24.9623823,60.1965057
 Pohjoinen Rautatiekatu|
 Folkhälsan|24.913467872727278,60.18692741818183
 Untuvaisentie|
@@ -6471,7 +9308,6 @@ Marsalkantie|
 Iso Roobertinkatu|
 Pitäjänmäen kirjasto|24.8602489,60.2259857
 Sipuli|24.9592559,60.1687532
-Töölön tulli|24.9124198,60.1913824
 Riihikallionpolku|
 Pukinmäen kirjasto|24.9912196,60.2498002
 Blue Ocean|24.881738,60.229773
@@ -6727,7 +9563,7 @@ Roihupelto|25.0538754,60.2109964
 Päiväkoti Rantakivi|25.1305431,60.2154357
 Jäkärläntie|
 Suovakuja|
-Pasilan asema|24.9344796,60.1988073
+Pasilan asema|24.93362332068966,60.198628534482765
 Pukinmäen apteekki|24.9940777,60.2433111
 Notkotie|
 High end studio|24.9396248,60.162747
@@ -6767,7 +9603,6 @@ Kirsikkatie|
 Stadin 10 cafe kioski|24.937724,60.1709752
 Srinakhon|24.9453891,60.1592081
 Alepa Paloheinä|24.9232439,60.247993
-Ruoholahden villat|24.9268621,60.1654763
 Tikkuritie|
 Kårböle lågstadieskola|24.869706854545452,60.252717645454545
 Akseli|
@@ -6844,7 +9679,6 @@ Roihu|25.0543546,60.2095869
 Arabianaukio|
 Käpylinnunkuja|
 Kaikukadun hammaslääkärit|24.9589482,60.1830927
-Ruoholahti (M)|24.9142289,60.163401
 Kasuunikuja|
 Etelä-Haagan apteekki|24.8981213,60.2128191
 Metsolan ala-aste|24.961447263888893,60.25166715277776
@@ -7069,7 +9903,6 @@ Svanströminpolku|
 Korttelitalo Nalli|25.061151834615387,60.235010223076934
 Killingholmankuja|
 Wayne's coffee|24.9422899,60.166026
-Laajalahden aukio|24.8773379,60.1979039
 Puroniitynpolku|
 Astrakaaninkuja|
 Karhekuja|
@@ -7126,7 +9959,7 @@ Kruo Thai|24.9202023,60.1725629
 Hot girl's|24.9556156,60.1885261
 Luostaripuisto|24.9327111,60.1564739
 Kronqvistinkatu|
-Kauppiaankatu|24.9648797,60.1668288
+Kauppiaankatu|
 Kaitalahdenkuja|
 Kangaspellontie|
 Roihuvuoren kukka|25.0589836,60.2027264
@@ -7166,6 +9999,7 @@ Minervankatu|
 Käskynhaltijantie|
 Blue corner|25.0078013,60.186367
 Sihteerintie|
+Runokylänkatu|
 Oopperankuja|
 Provinssi|25.1167116,60.2378872
 Espan puisto|24.948128277777776,60.16737215555557
@@ -7213,7 +10047,6 @@ Vuorenjuurenpolku|
 Oinaankuja|
 Nuorten hoito- ja kasvatuskodit|25.115216371428573,60.23300210000001
 Sunilanpolku|
-Länsisatama|24.9204583,60.1544693
 Taverna Pohjan Akka|24.9440381,60.2142881
 Harjannetie|
 Villa Nuottaniemi|25.036768755555553,60.16409701111112
@@ -7275,7 +10108,7 @@ Rantakiventie|
 Hellesilta|
 Music Hunter|24.9506125,60.1754234
 Saariselänkuja|
-Tarkk'ampujankatu|24.947603,60.1609875
+Tarkk'ampujankatu|
 Tuiskutie|
 Pitkäkosken ulkoilumaja|24.8982349,60.2660206
 Pykäläkuja|
@@ -7355,7 +10188,6 @@ Veräjä|
 Päiväkoti Särki|24.876200294444445,60.1529580537037
 Päiväkoti Koivikko|24.96657572222222,60.2092004
 Palosuontie|
-Hesperian puisto|24.9292673,60.1783159
 Vaskihuhdanpolku|
 Fransmanni|24.9472143,60.169478
 Lavaklubi|24.9435694,60.1721268
@@ -7507,7 +10339,6 @@ Cygnaeuksenkatu|
 Pengerpolku|
 Puutarhakeskus Sofianlehto|24.947229461538463,60.20687346153846
 Kattohaikara|24.977302,60.1882724
-Eläintarha|24.9302513,60.1925639
 Palomäentie|
 Kasarmitori|
 Laaksokuja|
@@ -7779,7 +10610,6 @@ Soidinkuja|
 Haagan VPK|24.8930202,60.2146678
 Töysänkatu|
 Kaisaniemen puisto|24.9466044,60.1737256
-Hietalahdentori|24.9295204,60.1622918
 Hesburger Drive-In|24.8732505,60.2279212
 Riihitie|
 Vanhanlinnankuja|
@@ -7874,6 +10704,7 @@ Venttiilikuja|
 Taivallahden koirapuisto|24.9141634375,60.1757412375
 Ruotutorpantie|
 Reino Helismaa|25.04525,60.2747973
+Intersport Ruoholahti|24.9113399,60.1635963
 Nallenmäenkuja|
 Kaivolahdenkatu|
 Maanmittarintie|
@@ -7985,7 +10816,6 @@ Automaa|25.046194045454545,60.204586799999994
 Sokos Hotel Aleksanteri|24.9331884,60.16422
 Mamma Rosa|24.9238507,60.1794287
 Saranne-koti|24.848153757142857,60.25206140714285
-Ylioppilastalo|24.9424363,60.1687913
 Timanttiset Kulta-Aika|24.8920248,60.2366968
 Kanervarinne|
 Onkikuja|
@@ -8098,7 +10928,7 @@ Vesakkotie|
 K-Supermarket Lauttasaari|24.8833911,60.1540491
 Haltiapolku|
 City-Market|25.084889431249998,60.2098332375
-Ritarihuone|24.9556699,60.1691132
+Ritarihuone|24.956266835714278,60.16986670714285
 Lapuankatu|
 Luokomiehentie|
 Kumpulanmäen raitti|
@@ -8183,7 +11013,7 @@ Svartvikinkuja|
 Tammisalon aukio|
 Tuulilasintie|
 Janoinen Lohi|24.9169713,60.1850728
-Fenno Optiikka|24.9108174,60.1635209
+Fenno Optiikka|24.9104146,60.1635388
 Herttoniemen Pizza Express|25.0346279,60.1911161
 Kaikukuja|
 Klamintie|
@@ -8205,7 +11035,6 @@ Lounasravintola Tyros|24.9647601,60.1987883
 Thalassa|25.033171,60.1856821
 Valssiparinkuja|
 Topelias|24.9494333,60.1719008
-Uintikeskus|24.9451454,60.2002578
 Märssykuja|
 Harmaapaadentie|
 Vaskisalmenkuja|
@@ -8276,7 +11105,7 @@ Hartwall Areena|24.929171014285714,60.2056651408163
 Sääskikuja|
 Takaniitynkuja|
 Octopus|24.9158414,60.1625361
-Tiimari|24.9111785,60.1636663
+Tiimari|24.9102016,60.16353
 Perhekunnantie|
 Helsingin luonnontiedelukio|24.9433881,60.2102682
 Oppipojankuja|
@@ -8287,7 +11116,6 @@ Mustankivenpuisto/kahluuallas|25.14127485757576,60.20439647878789
 Iso Merikarhu|25.0828704,60.236692
 Bar Fellows|24.9255271,60.1826215
 Patakuja|
-Huutokonttori|24.9212999,60.1598953
 Peilitie|
 Black and White|24.9232939,60.1796134
 Kalkkivuorenkuja|
@@ -8310,7 +11138,7 @@ Kivipyykintie|
 Vesilinna|24.94215238,60.18893763999999
 Verkatehtaanpolku|
 Itäinen Pukkisaari|24.88414894482759,60.187661193103445
-Linnanmäki|24.9413259,60.1860542
+Linnanmäki|24.9401489,60.1883711
 Grand Shanghai|24.9442525,60.1695461
 Näätäkuja|
 Roihuvuoren kirjasto|25.0527831,60.1945445
@@ -8334,11 +11162,10 @@ Majakanvartijankatu|
 Tuorinniemenpuisto|25.040956252941175,60.186405735294116
 Paavo Nurmen kuja|
 China Club|24.9466217,60.1832816
-Kytösuontie|24.8958035,60.2041191
+Kytösuontie|
 Virtaintie|
 Malminkartanonkuja|
 Sorsavuorenrinne|
-Hauhon puisto|24.9646318,60.193293
 Kivitie|
 Pikku mustasaaren silta|
 Abin baari|24.9535006,60.186197
@@ -8357,6 +11184,7 @@ Etu-Töölön lukio|24.922287738461534,60.17119559230768
 Salotie|
 Chemicum|24.96384982020201,60.205539140404035
 Rusakkokuja|
+Boknäs|24.9496682,60.1684481
 Hollantilaisentie|
 Pälkäneentie|
 Gran delicato|24.9322832,60.1652197
@@ -8364,7 +11192,7 @@ Ritvalantie|
 Kartanonvoudintie|
 Ravintola Kaksi Kanaa|24.964641,60.1662419
 Pietarinkuja|
-Kotkankatu|24.9436638,60.19306
+Kotkankatu|
 Marinea|24.96801,60.1865672
 Hollolantie|
 Humalistonkuja|

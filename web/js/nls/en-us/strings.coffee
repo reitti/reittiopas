@@ -8,6 +8,8 @@ define ->
   arrival: 'Arrival'
   duration: 'Duration'
   walkingDistance: 'Walk'
+  highFlooredShort: 'e'
+  highFlooredLong: "Non-low-floor vehicle"
   routeTo: 'Directions to here'
   routeFrom: 'Directions from here'
   transportType:

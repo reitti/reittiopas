@@ -8,6 +8,8 @@ define ->
   arrival: 'Perillä'
   duration: 'Kesto'
   walkingDistance: 'Kävelyä'
+  highFlooredShort: 'e'
+  highFlooredLong: 'Ei matalalattia-ajoneuvo'
   warning: 'Voihan nenä'
   routeTo: 'Reittiohjeet tänne'
   routeFrom: 'Reittiohjeet täältä'

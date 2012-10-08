@@ -106,6 +106,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
         {
           type: leg.get('type')
           indicator: @_legIndicator(leg)
+          highFloored: leg.get('highFloored')
           times: @_timeLabel(leg, legIdx)
           transport: @_transportLabel(leg)
           destination: @_destinationLabel(leg, legIdx)
@@ -114,6 +115,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
           color: Utils.transportColors[leg.get('type')]
           width: Utils.toPercentage(width / availableWidth)
           widthBefore: Utils.toPercentage(widthBefore / availableWidth)
+          strings: strings
         }
 
     _excessWidth: ->
