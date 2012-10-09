@@ -57,7 +57,6 @@ define [
           arrivalOrDeparture: @arrivalOrDeparture()
           date: @date()
           transportTypes: @transportTypes()
-          routeIndex: 0
 
     onRoutingRequestFrom: (longitude, latitude) =>
       Reitti.Position.geocode longitude, latitude, (location) =>

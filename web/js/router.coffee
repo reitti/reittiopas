@@ -9,14 +9,13 @@ define ['backbone', 'utils', 'backboneAnalytics'], (Backbone, Utils) ->
       Reitti.Event.trigger 'home'
 
     routesView: (from, to, arrivalOrDeparture, datetime, transportTypes, routeIndex, legIndex, originOrDestination) =>
-      routeIndex = 0 if !routeIndex or routeIndex is ''
       Reitti.Event.trigger 'routes:find',
         from: Utils.decodeURIComponent(from)
         to: Utils.decodeURIComponent(to)
         date: if datetime is 'now' then 'now' else Utils.parseDateTimeFromMachines(datetime)
         arrivalOrDeparture: arrivalOrDeparture
         transportTypes: transportTypes.split(',')
-        routeIndex: parseInt(routeIndex, 10)
+        routeIndex: if routeIndex? then parseInt(routeIndex, 10)
         legIndex: if legIndex?.length > 0 then parseInt(legIndex, 10) else undefined
         originOrDestination: originOrDestination
 

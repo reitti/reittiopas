@@ -61,13 +61,17 @@ define [
       @routes = null
 
     onRoutesChanged: (routes, routeParams) =>
-      if routes isnt @routes or routeParams.routeIndex isnt @routeView?.index
-        @routes = routes
+      if routeParams.routeIndex? 
+        if routes isnt @routes or routeParams.routeIndex isnt @routeView?.index
+          @routes = routes
+          @routeView?.dispose()
+          @routeView = new MapRouteView(routes: routes, routeParams: routeParams, index: routeParams.routeIndex, map: @map).render()
+          # Invoke event handlers explicitly since the newly contructed views won't receive this event.
+          legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
+          @routeView.onRoutesChanged(routes, routeParams)
+      else
         @routeView?.dispose()
-        @routeView = new MapRouteView(routes: routes, routeParams: routeParams, index: routeParams.routeIndex, map: @map).render()
-        # Invoke event handlers explicitly since the newly contructed views won't receive this event.
-        legView.onRoutesChanged(routes, routeParams) for legView in @routeView.legViews
-        @routeView.onRoutesChanged(routes, routeParams)
+        @routeView = null
       @map.getStreetView()?.setVisible(false) unless routeParams.originOrDestination?
       @adjustPan(routeParams)
 
@@ -86,7 +90,7 @@ define [
           @panToLegEnd(routeParams.legIndex, routeParams.originOrDestination)
         else
           @panToLegBounds(routeParams.legIndex)
-      else
+      else if routeParams.routeIndex?
         @panToRouteBounds()
 
     panToRouteBounds: () =>

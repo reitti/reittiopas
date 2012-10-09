@@ -28,6 +28,6 @@ define ['underscore', 'utils', 'views/map_route_leg_view'], (_, Utils, MapRouteL
       @legViews[legIndex]?.getEndCoordinates(originOrDestination)
       
     onRoutesChanged: (routes, routeParams) =>
-      if routes is @routes and routeParams.routeIndex is @index and !routeParams.legIndex?
+      if routes is @routes and routeParams.routeIndex? and routeParams.routeIndex is @index and !routeParams.legIndex?
         _.first(@legViews)?.showOriginMarker()
         _.last(@legViews)?.showDestinationMarker()
