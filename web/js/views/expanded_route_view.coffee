@@ -14,9 +14,10 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
     initialize: () ->
       Reitti.Event.on 'routes:change', @onRoutesChanged
 
-    onRoutesChanged: (@routes, @routeParams) =>
-      if routeParams.routeIndex?
+    onRoutesChanged: (routes, @routeParams) =>
+      if routeParams.routeIndex? and (routeParams.routeIndex isnt @index or @routes isnt routes)
         @$el.empty()
+        @routes = routes
         @index = routeParams.routeIndex
         @render()
         @_scrollToRoutes()
