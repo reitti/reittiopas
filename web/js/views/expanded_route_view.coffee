@@ -83,5 +83,5 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
       false
 
     _scrollToRoute: ->
-      setTimeout((=> @$el.offsetParent().animate({scrollTop: 0}, 200)), 100)
+      setTimeout (=> @el.scrollIntoView()), 100
 

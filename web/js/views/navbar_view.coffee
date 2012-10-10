@@ -5,7 +5,7 @@ define ['jquery', 'backbone'], ($, Backbone) ->
     el: $('.navbar')
 
     events: 
-      'click a': 'onBackClicked'
+      'click .nav a': 'onBackClicked'
 
     initialize: ->
       Reitti.Event.on 'routes:change', @onRoutesChanged
