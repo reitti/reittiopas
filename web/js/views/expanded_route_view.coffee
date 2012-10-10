@@ -22,7 +22,17 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
         @_scrollToRoutes()
 
     render: ->
-      @$el.html template(legs: @_legData())
+      route = @routes.at(@index)
+      @$el.html template
+        legs: @_legData()
+        strings: strings
+        depTime: Utils.formatTimeForHumans(route.getDepartureTime())
+        arrTime: Utils.formatTimeForHumans(route.getArrivalTime())
+        boardingType: strings.boardingLabel[route.getFirstTransportType()]
+        boardingTime: if route.boardingTime() then Utils.formatTimeForHumans(route.boardingTime())
+        boardingColor: Utils.transportColors[route.getFirstTransportType()]
+        totalWalkingDistance: Utils.formatDistance(route.getTotalWalkingDistance())
+        totalDuration: Utils.formatDuration(route.get('duration'))
       this
 
     _legData: () ->
