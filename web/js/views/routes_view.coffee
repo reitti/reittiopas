@@ -20,7 +20,6 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
         routes.on 'add', @onRouteAdded
         @routes = routes
 
-        routeView.dispose() for routeView in @routeViews
         @routeViews = []
         @$el.empty()
 
