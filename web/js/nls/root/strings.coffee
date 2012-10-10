@@ -1,12 +1,12 @@
 define ->
   findingRoutes: 'Haetaan reittejä...'
-  earlierDepartures: "Aikaisemmat lähdöt"
-  laterDepartures: "Myöhemmät lähdöt"
-  earlierArrivals: "Aikaisemmin perillä"
+  earlierDepartures: "Edelliset lähdöt"
+  laterDepartures: "Seuraavat lähdöt"
+  earlierArrivals: "Aiemmin perillä"
   laterArrivals: "Myöhemmin perillä"
-  earlierDeparture: "Aikaisempi lähtö"
-  laterDeparture: "Myöhempi lähtö"
-  earlierArrival: "Aikaisemmin perillä"
+  earlierDeparture: "Edellinen lähtö"
+  laterDeparture: "Seuraava lähtö"
+  earlierArrival: "Aiemmin perillä"
   laterArrival: "Myöhemmin perillä"
   departure: 'Lähtö'
   arrival: 'Perillä'

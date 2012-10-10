@@ -3,10 +3,10 @@ define ['backbone', 'hbs!template/more_routes_button', 'i18n!nls/strings'], (Bac
   class NextPreviousRouteButtonView extends Backbone.View
 
     tagName: 'li'
-    className: 'more'
+    className: 'navbar more'
 
     events:
-      'click a': 'onClicked'
+      'click': 'onClicked'
 
     initialize: ({@routes, @routeParams, @index, @loc}) ->
 

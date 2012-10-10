@@ -49,10 +49,6 @@ ul.typeahead {
     overflow: hidden;
 }
 
-.brand {
-    width: @controlsWidth;
-    text-align: center;
-}
 .hero-unit {
     padding: 20px;
     margin-bottom: 15px;
@@ -67,6 +63,18 @@ ul.typeahead {
     }
     .close {
         margin: -15px -10px 0 0;
+    }
+}
+
+.navbar-inner {
+    .border-radius(0, 0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    a.back, a.more {
+        line-height: 40px;
+    }
+    a.back {
+        float: left;
     }
 }
 
@@ -139,7 +147,7 @@ body {
 }
 
 #search {
-    margin: 40px 20px 0 20px;
+    margin: 0 20px;
 
     #transport-types {
         margin: 1.5em 0;
@@ -207,7 +215,7 @@ input.input-full {
     padding: 0;
     margin: 0 0 20px 0;
 
-    .item, .more {
+    .item {
         margin: 0;
         border-bottom: 1px solid @borderColor;
         > a {
@@ -237,22 +245,13 @@ input.input-full {
         }
     }
 
-    li.more {
-        text-align: center;
-        font-size: 0.8em;
-    }
-
-    .item:first-child, .more:first-child {
-        border-top: 1px solid @borderColor;
-    }
-
     .selected > a {
         background-color: #F1F1F1;
     }
 }
 
 #expanded-route {
-    padding-top: 40px;
+
     .legs {
         position: relative;
         height: 420px;
@@ -304,9 +303,6 @@ input.input-full {
     }
     li.item {
         border-width: 0;
-    }
-    li.more:last-child {
-        border-top: 1px solid @borderColor;
     }
 }
 

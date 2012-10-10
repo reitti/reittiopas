@@ -1,5 +1,4 @@
 module.exports =
-  backToRoutes: 'Muut reitit'
   transportTypeSelector:
     bus: 'Bussit'
     tram: 'Ratikat'

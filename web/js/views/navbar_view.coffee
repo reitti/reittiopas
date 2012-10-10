@@ -5,7 +5,7 @@ define ['jquery', 'backbone'], ($, Backbone) ->
     el: $('.navbar')
 
     events: 
-      'click .nav a': 'onBackClicked'
+      'click': 'onClicked'
 
     initialize: ->
       Reitti.Event.on 'routes:change', @onRoutesChanged
@@ -13,13 +13,14 @@ define ['jquery', 'backbone'], ($, Backbone) ->
     onRoutesChanged: (routes, @routeParams) =>
       if routeParams.routeIndex?
         $('#route-displays').addClass 'expanded'
-        @$el.find('.nav').show()
-        @$el.find('.brand').hide()
+        @$el.find('.back').show()
       else
         $('#route-displays').removeClass 'expanded'
-        @$el.find('.nav').hide()
-        @$el.find('.brand').show()
+        @$el.find('.back').hide()
 
-    onBackClicked: =>
-      Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: undefined, legIndex: undefined, departureOrArrival: undefined)
+    onClicked: =>
+      if @routeParams?.routeIndex?
+        Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: undefined, legIndex: undefined, departureOrArrival: undefined)
+      else
+        Reitti.Router.navigate '/', trigger: true
       false
