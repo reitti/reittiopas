@@ -191,25 +191,6 @@ input.input-full {
     width: 100%;
 }
 
-#route-displays {
-    width: @controlsWidth * 2;
-    margin: 0;
-    .transition(all, @animationDuration, ease-out);
-    #search-and-routes {
-        float: left;
-    }
-    #expanded-route {
-        float: right;
-    }
-}
-
-#route-displays.expanded {
-    margin-left: -@controlsWidth;
-}
-#search-and-routes, #expanded-route {
-    width: @controlsWidth;
-}
-
 #routes, #expanded-route {
     padding: 0;
     margin: 0 0 20px 0;
@@ -436,9 +417,29 @@ i.icon-walk {
 
 @media (min-width: 768px) {
 
+    // Side-by-side panels with panning animation
+    #route-displays {
+        width: @controlsWidth * 2;
+        margin: 0;
+        .transition(all, @animationDuration, ease-out);
+        #search-and-routes {
+            float: left;
+        }
+        #expanded-route {
+            float: right;
+        }
+    }
+    #route-displays.expanded {
+        margin-left: -@controlsWidth;
+    }  
+    #search-and-routes, #expanded-route {
+        width: @controlsWidth;
+    }
+
 }
 
 @media (max-width: 767px) {
+
     #search {
         margin: 0 5%;
     }
@@ -452,6 +453,24 @@ i.icon-walk {
         position: static;
         width: 100%;
         -webkit-overflow-scrolling: touch;
+    }
+
+    // Each panel takes full width when it's visible. No animation
+    #route-displays {
+        width: 100%
+        margin: 0;
+        #search-and-routes {
+            width: 100%;
+        }
+        #expanded-route {
+            width: 100%;
+        }
+    }
+    #route-displays.expanded #search-and-routes {
+        display: none;
+    }
+    #route-displays.not-expanded #expanded-route {
+        display: none;
     }
 
     #routes, #expanded-route {

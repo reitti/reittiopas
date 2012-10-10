@@ -12,10 +12,10 @@ define ['jquery', 'backbone'], ($, Backbone) ->
 
     onRoutesChanged: (routes, @routeParams) =>
       if routeParams.routeIndex?
-        $('#route-displays').addClass 'expanded'
+        $('#route-displays').addClass('expanded').removeClass('not-expanded')
         @$el.find('.back').show()
       else
-        $('#route-displays').removeClass 'expanded'
+        $('#route-displays').removeClass('expanded').addClass('not-expanded')
         @$el.find('.back').hide()
 
     onClicked: =>
