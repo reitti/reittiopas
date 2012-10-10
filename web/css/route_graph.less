@@ -28,10 +28,22 @@
     }
 
     .leg-bar {
-        height: @barHeight;
         padding: 2px;
-        margin-right: 1px;
         vertical-align: middle;
+    }
+    .leg-bar.horizontal {
+        height: @barHeight;
+        margin-right: 1px;
+    }
+    .leg-bar.vertical {
+        position: absolute;
+        left: 80px;
+        width: @barHeight;
+        top: 1px;
+        bottom: 0;
+    }
+    li:first-child .leg-bar.vertical {
+        top: 0;
     }
 
     i {
@@ -104,35 +116,6 @@
         }
     }
 
-    .leg-info {
-        opacity: 0;
-        left: 25px;
-        right: 0;
-        text-align: left;
-        line-height: 100%;
-
-        .times {
-            position: absolute;
-            left: 1%;
-            width: 24%;
-        }
-        .transport {
-            position: absolute;
-            left: 25%;
-            width: 25%;
-        }
-        .arrow {
-            position: absolute;
-            left: 50%;
-            width: 5%;
-        }
-        .destination {
-            position: absolute;
-            left: 55%;
-            width: 45%;
-        }
-    }
-
     .leg-indicator {
         opacity: 1;
     }
@@ -159,14 +142,6 @@
 
 // Add CSS transitions on non-mobile devices
 @media only screen and (min-width: 768px) {
-    .leg-info {
-        &:hover {
-            background-color: #ddd;
-        }
-        &.selected {
-            background-color: #ccc;
-        }
-    }
     .route-graph {
         .transition(all, @animationDuration, ease-out);
         li {
@@ -179,14 +154,6 @@
 
 }
 
-.expanded {
-    .leg-info {
-        opacity: 1;
-    }
-    .leg-indicator {
-        opacity: 0;
-    }
-}
 
 @media (max-width: 767px) {
     .route-graph {

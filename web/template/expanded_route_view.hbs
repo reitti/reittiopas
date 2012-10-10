@@ -1,0 +1,15 @@
+<div class="legs">
+  {{#each_with_index legs}}
+    <li class="leg leg-{{type}}" style="top: {{heightBefore}}; height: {{height}};" data-leg="{{index}}">
+        <div class="leg-bar vertical"><i></i></div>
+        <div class="transport"><a href="#" style="color: {{transportColor}};">{{typeName}} {{transport}}</a></div>
+        <div class="duration">{{duration}}</div>
+      <div class="from-time">{{depTime}}</div>
+      <a href="#" class="from-loc">{{from}}</a>
+      {{#if last}}
+        <div class="to-time">{{arrTime}}</div>
+        <a href="#" class="to-loc">{{to}}</a>
+      {{/if}}
+    </li>
+  {{/each_with_index}}
+</div>

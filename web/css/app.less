@@ -180,11 +180,30 @@ input.input-full {
     width: 100%;
 }
 
-#routes {
+#route-displays {
+    width: @controlsWidth * 2;
+    margin: 0;
+    .transition(all, @animationDuration, ease-out);
+    #routes {
+        float: left;
+    }
+    #expanded-route {
+        float: right;
+    }
+}
+
+#route-displays.expanded {
+    margin-left: -@controlsWidth;
+}
+#routes, #expanded-route {
     padding: 0;
     margin: 0 0 20px 0;
+    width: @controlsWidth;
+}
 
-    li.route, li.more {
+#routes, #expanded-route {
+
+    .item, .more {
         margin: 0;
         border-bottom: 1px solid @borderColor;
         > a {
@@ -194,25 +213,23 @@ input.input-full {
         }
     }
 
-    li.route {
-        dl {
-            margin: 0;
-            dt {
-                font-size: 0.8em;
-                font-weight: normal;
-                color: black;
-            }
+    dl {
+        margin: 0;
+        dt {
+            font-size: 0.8em;
+            font-weight: normal;
+            color: black;
         }
+    }
 
-        dl.time, dl.duration {
-            dd {
-                margin: 0;
-                font-size: 1.8em;
-            }
-            .secondary {
-                font-size: 0.8em;
-                display: inline;
-            }
+    dl.time, dl.duration {
+        dd {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .secondary {
+            font-size: 0.8em;
+            display: inline;
         }
     }
 
@@ -221,12 +238,67 @@ input.input-full {
         font-size: 0.8em;
     }
 
-    li.route:first-child, li.more:first-child {
+    .item:first-child, .more:first-child {
         border-top: 1px solid @borderColor;
     }
 
-    li.selected > a {
+    .selected > a {
         background-color: #F1F1F1;
+    }
+}
+
+#expanded-route {
+    height: 420px;
+    .legs {
+        height: 420px;
+        list-style-type: none;
+    }
+    .leg {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+
+        .transport {
+            position: absolute;
+            left: 120px;
+            top: 50%;
+            font-size: 1.2em;
+            margin-top: -8px;
+            .transport-code {
+                font-size: 1.5em;
+            }
+        }
+        .duration {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .from-time, .from-loc, .to-time, .to-loc {
+            position: absolute;
+            font-size: 1.2em;
+        }
+        .from-time, .from-loc {
+            top: -10px;
+        }
+        .to-time, .to-loc {
+            bottom: -10px;
+        }
+        .from-time, .to-time {
+            left: 20px;
+        }
+        .from-loc, .to-loc {
+            left: 120px;
+            color: black;
+        }
+    }
+    .leg:hover {
+        background-color: #eee;
+    }
+    .leg-walk {
+        background-color: #f8f8f8;
     }
 }
 
@@ -328,6 +400,11 @@ i.icon-ferry {
     background-position: 0 -2 * @transportIconWidth;
 }
 
+i.icon-walk {
+    .transport-icon;
+    background-position: -@transportIconWidth -2 * @transportIconWidth;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
     i.icon-bus {
         .transport-icon-2x;
@@ -346,6 +423,10 @@ i.icon-ferry {
     }
 
     i.icon-ferry {
+        .transport-icon-2x;
+    }
+
+    i.icon-walk {
         .transport-icon-2x;
     }
 }
@@ -370,8 +451,8 @@ i.icon-ferry {
         -webkit-overflow-scrolling: touch;
     }
 
-    #routes {
-        li.route, li.more {
+    #routes, #expanded-route {
+        .item, .more {
             > a {
                 padding: 3px 10px;
             }
@@ -396,11 +477,9 @@ i.icon-ferry {
 
 // Add hover transitions on non-mobile devices
 @media only screen and (min-width: 768px) {
-    #routes {
-        li.route {
-            a {
-                .transition(all, @animationDuration, ease-out);
-            }
+    #routes, #expanded-route {
+        a {
+            .transition(all, @animationDuration, ease-out);
         }
     }
 }

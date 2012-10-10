@@ -2,7 +2,7 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
   class RouteView extends Backbone.View
 
     tagName: 'li'
-    className: 'route'
+    className: 'item'
 
     events:
       "click a": "select"
@@ -14,21 +14,10 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
 
       @route = routes.at(index)
       @graphView = new RouteGraphView(routes: routes, routeParams: routeParams, index: index)
-      Reitti.Event.on 'routes:change', @onRoutesChanged
-
-    dispose: ->
-      Reitti.Event.off 'routes:change', @onRoutesChanged
 
     render: ->
-      @$el.html template
-        strings: strings
-        depTime: Utils.formatTimeForHumans(@route.getDepartureTime())
-        arrTime: Utils.formatTimeForHumans(@route.getArrivalTime())
-        boardingType: strings.boardingLabel[@route.getFirstTransportType()]
-        boardingTime: if @route.boardingTime() then Utils.formatTimeForHumans(@route.boardingTime())
-        boardingColor: Utils.transportColors[@route.getFirstTransportType()]
-        totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
-        totalDuration: Utils.formatDuration(@route.get('duration'))
+      attrs = @_attributes()
+      @$el.html template(attrs)
       @graphView.setElement(@$el.find('.route-graph')).render()
       this
 
@@ -36,10 +25,16 @@ define ['jquery', 'underscore', 'backbone', 'utils', 'views/route_graph_view', '
       Reitti.Router.navigateToRoutes _.extend(@routeParams, routeIndex: @index, legIndex: undefined, originOrDestination: undefined)
       false
 
+    _attributes: =>
+      strings: strings
+      depTime: Utils.formatTimeForHumans(@route.getDepartureTime())
+      arrTime: Utils.formatTimeForHumans(@route.getArrivalTime())
+      boardingType: strings.boardingLabel[@route.getFirstTransportType()]
+      boardingTime: if @route.boardingTime() then Utils.formatTimeForHumans(@route.boardingTime())
+      boardingColor: Utils.transportColors[@route.getFirstTransportType()]
+      totalWalkingDistance: Utils.formatDistance(@route.getTotalWalkingDistance())
+      totalDuration: Utils.formatDuration(@route.get('duration'))
+
+
     _lineCode: () ->
       Utils.parseLineCode _.first()
-
-    onRoutesChanged: (routes, routeParams) =>
-      isThis = routes is @routes and routeParams.routeIndex is @index
-      @$el.toggleClass 'selected', isThis
-      @graphView.onRoutesChanged routes, routeParams

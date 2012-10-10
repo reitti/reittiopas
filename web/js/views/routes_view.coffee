@@ -14,12 +14,12 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
 
     onRoutesChanged: (routes, @routeParams) =>
       @$el.show()
+
       if routes isnt @routes
         @routes?.off 'add', @onRouteAdded
         routes.on 'add', @onRouteAdded
         @routes = routes
 
-        routeView.dispose() for routeView in @routeViews
         @routeViews = []
         @$el.empty()
 
@@ -27,7 +27,7 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
         for route in @routes.models
           @onRouteAdded(route)
         @_addMoreBelowButton()
-        @_scrollToRoutes()
+      @_scrollToRoutes()
 
     onRouteAdded: (route) =>
       idx = @routes.indexOf(route)
@@ -37,13 +37,12 @@ define ['jquery', 'backbone', 'models/routes', 'views/route_view', 'views/more_r
       @_addRouteElement(routeView, idxOnScreen)
       @routeViews.splice idxOnScreen, 0, routeView
 
-      routeView.onRoutesChanged(@routes, @routeParams)
 
     _addRouteElement: (routeView, beforeIdx) ->
       # RouteGraphView needs to calculate the width of the bar based on the
       # width of it's parent element, RouteView, so we need to add
       # RouteViewElement to the DOM to the DOM before calling render().
-      el = $(document.createElement('li')).addClass('route')
+      el = $(document.createElement(RouteView.prototype.tagName)).addClass(RouteView.prototype.className)
       if routeViewAfter = @routeViews[beforeIdx]
         routeViewAfter.$el.before(el)
         routeView.setElement(el).render()

@@ -55,8 +55,9 @@ require [
   'views/search_view'
   'views/blank_slate_view'
   'views/routes_view'
+  'views/expanded_route_view'
   'bootstrap'
-], ($, _, Backbone, Router, Position, MapView, SearchView, BlankSlateView, RoutesView) ->
+], ($, _, Backbone, Router, Position, MapView, SearchView, BlankSlateView, RoutesView, ExpandedRouteView) ->
 
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
@@ -68,11 +69,18 @@ require [
     new SearchView().render()
     new BlankSlateView().render()
     new RoutesView().render()
+    new ExpandedRouteView()
 
     if navigator.geolocation
       Reitti.Position.startWatching()
       
     Backbone.history.start(pushState: true)
+
+    Reitti.Event.on 'routes:change', (routes, routeParams) ->
+      if routeParams.routeIndex?
+        $('#route-displays').addClass 'expanded'
+      else
+        $('#route-displays').removeClass 'expanded'
 
     # Inject the Like button after the page has loaded, so it can't delay startup.
     fbLocale = window.appLang.replace('-','_')
