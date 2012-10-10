@@ -20,7 +20,7 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
         @routes = routes
         @index = routeParams.routeIndex
         @render()
-        @_scrollToRoutes()
+        @_scrollToRoute()
 
     render: ->
       route = @routes.at(@index)
@@ -82,6 +82,6 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
       Reitti.Router.navigateToRoutes _.extend(@routeParams, legIndex: legIndex, originOrDestination: originOrDestination)
       false
 
-    _scrollToRoutes: ->
-      setTimeout((=> @$el.offsetParent().animate({scrollTop: @$el.offset().top }, 200)), 100)
+    _scrollToRoute: ->
+      setTimeout((=> @$el.offsetParent().animate({scrollTop: 0}, 200)), 100)
 

@@ -49,6 +49,10 @@ ul.typeahead {
     overflow: hidden;
 }
 
+.brand {
+    width: @controlsWidth;
+    text-align: center;
+}
 .hero-unit {
     padding: 20px;
     margin-bottom: 15px;
@@ -135,7 +139,7 @@ body {
 }
 
 #search {
-    margin: 0 20px;
+    margin: 40px 20px 0 20px;
 
     #transport-types {
         margin: 1.5em 0;
@@ -184,7 +188,7 @@ input.input-full {
     width: @controlsWidth * 2;
     margin: 0;
     .transition(all, @animationDuration, ease-out);
-    #routes {
+    #search-and-routes {
         float: left;
     }
     #expanded-route {
@@ -195,13 +199,13 @@ input.input-full {
 #route-displays.expanded {
     margin-left: -@controlsWidth;
 }
-#routes, #expanded-route {
-    padding: 0;
-    margin: 0 0 20px 0;
+#search-and-routes, #expanded-route {
     width: @controlsWidth;
 }
 
 #routes, #expanded-route {
+    padding: 0;
+    margin: 0 0 20px 0;
 
     .item, .more {
         margin: 0;
@@ -248,6 +252,7 @@ input.input-full {
 }
 
 #expanded-route {
+    padding-top: 40px;
     .legs {
         position: relative;
         height: 420px;

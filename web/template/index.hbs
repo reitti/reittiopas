@@ -25,84 +25,100 @@
   </head>
   <body>
     <div id="controls">
-      <div id="search">
-        <form class="form clearfix">
-          <div id="transport-types" class="control-group">
-            <div class="btn-group" data-toggle="buttons-checkbox">
-              <button type="button" id="bus" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.bus}}">
-                <i class="icon-bus"></i>
-              </button>
-              <button type="button" id="tram" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.tram}}">
-                <i class="icon-tram"></i>
-              </button>
-              <button type="button" id="metro" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.metro}}">
-                <i class="icon-metro"></i>
-              </button>
-              <button type="button" id="train" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.train}}">
-                <i class="icon-train"></i>
-              </button>
-              <button type="button" id="ferry" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.ferry}}">
-                <i class="icon-ferry"></i>
-              </button>
-            </div>
-          </div>
-          <div class="control-group full-width-fix">
-            <label for="from" class="hide">{{strings.from}}</label>
-            <input type="text" class="input-full" name="from" id="from" autocomplete="off"
-                   placeholder="{{strings.from}}">
-          </div>
-          <div class="control-group full-width-fix">
-            <label for="to" class="hide">{{strings.to}}</label>
-            <input type="text" class="input-full" name="to" id="to" autocomplete="off"
-                   placeholder="{{strings.to}}">
-          </div>
-          <div class="controls controls-row" id="time-settings">
-            <div class="controls-row">
-              <input type="time" name="time" id="time" class="pull-left"/>
-              <input type="date" name="date" id="date" class="pull-left"/>
-
-              <div class="pull-left">
-                <label class="radio">
-                  <input type="radio" name="time-type" value="departure" class="input-small" id="time-type-departure"
-                         name="time-type" checked>
-                  {{strings.departureTime}}
-                </label>
-                <label class="radio">
-                  <input type="radio" name="time-type" value="arrival" class="input-small" id="time-type-arrival"
-                         name="time-type">
-                  {{strings.arrivalTime}}
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="control-group">
-            <button type="submit" class="btn btn-success pull-right"
-                    data-loading-text="{{strings.findingRoutes}}">
-              <i class="icon-search icon-white"></i>&nbsp;
-              {{strings.findRoutes}}
-            </button>
-          </div>
-        </form>
-      </div>
-      <div id="blank-slate" class="hero-unit" {{#if blankSlateHidden}} style="display: none;" {{/if}}>
-        {{#if blankSlateActive}}
-          <button class="close">&times;</button>
-          <h1>{{strings.blankSlate.theTitle}}</h1>
-          <p>{{strings.blankSlate.thePitch}}</p>
-          <p class="example">
-            {{strings.blankSlate.example}}:
-            <a class="example-route" href="#">{{strings.blankSlate.theRoute}}</a>.
-          </p>
-          <p>{{strings.blankSlate.theCoverage}}</p>
-        {{/if}}
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <ul class="nav" style="display: none;">
+            <li>
+              <a href="#">
+                <i class="icon-chevron-left"></i>
+                {{strings.backToRoutes}}         
+              </a>
+            </li>
+          </ul>
+          <a class="brand" href="#">Ihan Hyvä Reittiopas</a>
+        </div>
       </div>
       <div id="route-displays" class="clearfix">
-        <ul id="routes" class="nav nav-list"></ul>
+        <div id="search-and-routes">
+           <div id="search">
+              <form class="form clearfix">
+                <div id="transport-types" class="control-group">
+                  <div class="btn-group" data-toggle="buttons-checkbox">
+                    <button type="button" id="bus" class="btn btn-small"
+                            title="{{strings.transportTypeSelector.bus}}">
+                      <i class="icon-bus"></i>
+                    </button>
+                    <button type="button" id="tram" class="btn btn-small"
+                            title="{{strings.transportTypeSelector.tram}}">
+                      <i class="icon-tram"></i>
+                    </button>
+                    <button type="button" id="metro" class="btn btn-small"
+                            title="{{strings.transportTypeSelector.metro}}">
+                      <i class="icon-metro"></i>
+                    </button>
+                    <button type="button" id="train" class="btn btn-small"
+                            title="{{strings.transportTypeSelector.train}}">
+                      <i class="icon-train"></i>
+                    </button>
+                    <button type="button" id="ferry" class="btn btn-small"
+                            title="{{strings.transportTypeSelector.ferry}}">
+                      <i class="icon-ferry"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="control-group full-width-fix">
+                  <label for="from" class="hide">{{strings.from}}</label>
+                  <input type="text" class="input-full" name="from" id="from" autocomplete="off"
+                         placeholder="{{strings.from}}">
+                </div>
+                <div class="control-group full-width-fix">
+                  <label for="to" class="hide">{{strings.to}}</label>
+                  <input type="text" class="input-full" name="to" id="to" autocomplete="off"
+                         placeholder="{{strings.to}}">
+                </div>
+                <div class="controls controls-row" id="time-settings">
+                  <div class="controls-row">
+                    <input type="time" name="time" id="time" class="pull-left"/>
+                    <input type="date" name="date" id="date" class="pull-left"/>
+
+                    <div class="pull-left">
+                      <label class="radio">
+                        <input type="radio" name="time-type" value="departure" class="input-small" id="time-type-departure"
+                               name="time-type" checked>
+                        {{strings.departureTime}}
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="time-type" value="arrival" class="input-small" id="time-type-arrival"
+                               name="time-type">
+                        {{strings.arrivalTime}}
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <button type="submit" class="btn btn-success pull-right"
+                          data-loading-text="{{strings.findingRoutes}}">
+                    <i class="icon-search icon-white"></i>&nbsp;
+                    {{strings.findRoutes}}
+                  </button>
+                </div>
+              </form>
+            </div>
+            <ul id="routes" class="nav nav-list">
+            </ul>
+            <div id="blank-slate" class="hero-unit" {{#if blankSlateHidden}} style="display: none;" {{/if}}>
+              {{#if blankSlateActive}}
+                <button class="close">&times;</button>
+                <h1>{{strings.blankSlate.theTitle}}</h1>
+                <p>{{strings.blankSlate.thePitch}}</p>
+                <p class="example">
+                  {{strings.blankSlate.example}}:
+                  <a class="example-route" href="#">{{strings.blankSlate.theRoute}}</a>.
+                </p>
+                <p>{{strings.blankSlate.theCoverage}}</p>
+              {{/if}}
+            </div>
+        </div>
         <ul id="expanded-route" class="nav nav-list"></ul>
       </div>
       <ul class="links">
