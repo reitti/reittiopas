@@ -4,6 +4,10 @@ define ->
   laterDepartures: "Later departures"
   earlierArrivals: "Earlier arrivals"
   laterArrivals: "Later arrivals"
+  earlierDeparture: "Earlier departure"
+  laterDeparture: "Later departure"
+  earlierArrival: "Earlier arrival"
+  laterArrival: "Later arrival"
   departure: 'Departure'
   arrival: 'Arrival'
   duration: 'Duration'

@@ -8,10 +8,8 @@ define ['backbone', 'hbs!template/more_routes_button', 'i18n!nls/strings'], (Bac
     events:
       'click a': 'onClicked'
 
-    initialize: (routes: routes, loc: loc) ->
-      @routes = routes
-      @loc = loc
-      routes.on 'add', @backToNormal
+    initialize: ({@routes, @loc}) ->
+      @routes.on 'add', @backToNormal
       Reitti.Event.on 'routes:more:error', @backToNormal
 
     dispose: ->

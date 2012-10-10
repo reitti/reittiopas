@@ -251,6 +251,7 @@ input.input-full {
     .legs {
         position: relative;
         height: 420px;
+        margin: 20px 0;
     }
     .leg {
         display: block;
@@ -263,7 +264,6 @@ input.input-full {
             position: absolute;
             left: 120px;
             top: 50%;
-            font-size: 1.2em;
             margin-top: -8px;
             .transport-code {
                 font-size: 1.5em;
@@ -277,7 +277,6 @@ input.input-full {
         }
         .from-time, .from-loc, .to-time, .to-loc {
             position: absolute;
-            font-size: 1.2em;
         }
         .from-time, .from-loc {
             top: -10px;
@@ -290,7 +289,6 @@ input.input-full {
         }
         .from-loc, .to-loc {
             left: 120px;
-            color: black;
         }
     }
     .leg:hover {
@@ -298,6 +296,12 @@ input.input-full {
     }
     .leg-walk {
         background-color: #f8f8f8;
+    }
+    li.item {
+        border-width: 0;
+    }
+    li.more:last-child {
+        border-top: 1px solid @borderColor;
     }
 }
 

@@ -1,38 +1,40 @@
-<a href="#" style="display: block; padding: 20px;">
-  <div class="row stats">
-    <dl class="time pull-left">
-      <dt>{{strings.departure}}</dt>
-      <dd>{{depTime}}—</dd>
-      {{#if boardingTime}}
-      <dt class="secondary">{{boardingType}}</dt>
-      <dd class="secondary" style="color: {{boardingColor}};">{{boardingTime}}</dd>
-      {{/if}}
-    </dl>
-    <dl class="time pull-left">
-      <dt>{{strings.arrival}}</dt>
-      <dd>{{arrTime}}</dd>
-    </dl>
-    <dl class="duration pull-right">
-      <dt>{{strings.duration}}</dt>
-      <dd>{{totalDuration}}</dd>
-      <dt class="secondary">{{strings.walkingDistance}}</dt>
-      <dd class="secondary">{{totalWalkingDistance}}</dd>
-    </dl>
-  </div>
-</a>
+<li class="item">
+  <a href="#">
+    <div class="row stats">
+      <dl class="time pull-left">
+        <dt>{{strings.departure}}</dt>
+        <dd>{{depTime}}—</dd>
+        {{#if boardingTime}}
+        <dt class="secondary">{{boardingType}}</dt>
+        <dd class="secondary" style="color: {{boardingColor}};">{{boardingTime}}</dd>
+        {{/if}}
+      </dl>
+      <dl class="time pull-left">
+        <dt>{{strings.arrival}}</dt>
+        <dd>{{arrTime}}</dd>
+      </dl>
+      <dl class="duration pull-right">
+        <dt>{{strings.duration}}</dt>
+        <dd>{{totalDuration}}</dd>
+        <dt class="secondary">{{strings.walkingDistance}}</dt>
+        <dd class="secondary">{{totalWalkingDistance}}</dd>
+      </dl>
+    </div>
+  </a>
+</li>
 
-<div class="legs">
+<li class="legs route-graph">
   {{#each_with_index legs}}
-    <li class="leg leg-{{type}}" style="top: {{heightBefore}}; height: {{height}};" data-leg="{{index}}">
+    <div class="leg leg-{{type}}" style="top: {{heightBefore}}; height: {{height}};" data-leg="{{index}}">
         <div class="leg-bar vertical"><i></i></div>
         <div class="transport"><a href="#" style="color: {{transportColor}};">{{typeName}} {{transport}}</a>{{#if highFloored}}<sub class="floor-indicator" title="{{strings.highFlooredLong}}">{{strings.highFlooredShort}}{{/if}}</div>
-        <div class="duration">{{duration}}</div>
+        <a class="duration">{{duration}}</a>
       <div class="from-time">{{depTime}}</div>
       <a href="#" class="from-loc">{{from}}</a>
       {{#if last}}
         <div class="to-time">{{arrTime}}</div>
         <a href="#" class="to-loc">{{to}}</a>
       {{/if}}
-    </li>
+    </div>
   {{/each_with_index}}
-</div>
+</li>

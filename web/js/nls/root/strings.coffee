@@ -4,6 +4,10 @@ define ->
   laterDepartures: "Myöhemmät lähdöt"
   earlierArrivals: "Aikaisemmin perillä"
   laterArrivals: "Myöhemmin perillä"
+  earlierDeparture: "Aikaisempi lähtö"
+  laterDeparture: "Myöhempi lähtö"
+  earlierArrival: "Aikaisemmin perillä"
+  laterArrival: "Myöhemmin perillä"
   departure: 'Lähtö'
   arrival: 'Perillä'
   duration: 'Kesto'

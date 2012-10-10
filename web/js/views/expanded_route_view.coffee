@@ -1,4 +1,4 @@
-define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 'hbs!template/expanded_route_view',  'i18n!nls/strings'], ($, Backbone, Handlebars, Utils, routeGraphSizer, template, strings) ->
+define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 'views/next_previous_route_button_view', 'hbs!template/expanded_route_view',  'i18n!nls/strings'], ($, Backbone, Handlebars, Utils, routeGraphSizer, NextPreviousRouteButtonView, template, strings) ->
 
   MINIMUM_HEIGHT = 45
 
@@ -23,7 +23,9 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
 
     render: ->
       route = @routes.at(@index)
-      @$el.html template
+      @$el.empty()
+      @$el.append(new NextPreviousRouteButtonView(routes: @routes, routeParams: @routeParams, index: @index, loc: 'above').render().el)
+      @$el.append template
         legs: @_legData()
         strings: strings
         depTime: Utils.formatTimeForHumans(route.getDepartureTime())
@@ -33,6 +35,7 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
         boardingColor: Utils.transportColors[route.getFirstTransportType()]
         totalWalkingDistance: Utils.formatDistance(route.getTotalWalkingDistance())
         totalDuration: Utils.formatDuration(route.get('duration'))
+      @$el.append(new NextPreviousRouteButtonView(routes: @routes, routeParams: @routeParams, index: @index, loc: 'below').render().el)
       this
 
     _legData: () ->
@@ -59,7 +62,7 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
       label = strings.transportType[leg.get('type')]
       html = switch leg.get('type')
         when 'walk' then "#{label}, #{Utils.formatDistance(leg.get('length'))}"
-        when '6', '7' then "<strong>label</strong>"
+        when '6', '7' then "<strong>#{label}</strong>"
         when '12' then "<strong>#{leg.lineName()}-#{label}</strong>"
         else "#{label} <strong>#{leg.lineName()}</strong>"
       new Handlebars.SafeString html

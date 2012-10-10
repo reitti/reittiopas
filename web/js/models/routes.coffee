@@ -10,7 +10,7 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
           Reitti.Event.trigger 'routes:notfound', error, routeParams
         else
           if routeParams.routeIndex > routes.length - 1
-            routeParams.routeIndex = 0
+            delete routeParams.routeIndex
             delete routeParams.legIndex
           Reitti.Event.trigger 'routes:change', routes, routeParams
 
@@ -41,30 +41,40 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
       routes.transportTypes = transportTypes
       routes
 
-    loadMoreEarlier: () ->
-      date = if @arrivalOrDeparture is 'departure'
+    loadMoreEarlier: (callback) ->
+      @loadMore(@_earlierTime(), callback)
+
+    _earlierTime: () ->
+      if @arrivalOrDeparture is 'departure'
+        # Heuristic reverse-engineered from original Reittiopas:
+        # Duration between the earliest 5 routes + 2 minutes.
         depTimes = @getDepartureTimes()
         span = Utils.getDuration(depTimes[0], depTimes[4]) / 60
         Utils.addMinutes(depTimes[0], -(span + 2))
       else
         Utils.addMinutes(_.last(@getArrivalTimes()), -1)
-      @loadMore(date)
 
-    loadMoreLater: () ->
-      date = if @arrivalOrDeparture is 'departure'
+    loadMoreLater: (callback) ->
+      @loadMore(@_laterTime(), callback)
+
+    _laterTime: () ->
+      if @arrivalOrDeparture is 'departure'
         Utils.addMinutes(_.last(@getDepartureTimes()), 1)
       else
+        # Heuristic reverse-engineered from original Reittiopas:
+        # Duration between the earliest 5 routes + 2 minutes.
         arrTimes = @getArrivalTimes()
         span = Utils.getDuration(arrTimes[0], arrTimes[4]) / 60
-        Utils.addMinutes(arrTimes[0], span + 2)
-      @loadMore(date)
+        Utils.addMinutes(arrTimes[0], span + 2)      
 
-    loadMore: (fromDate) ->
+    loadMore: (fromDate, callback) ->
       Routes._doFind @fromName, @toName, fromDate, @arrivalOrDeparture, @transportTypes, (error, newRoutes) =>
         if error?
           Reitti.Event.trigger 'routes:more:error', error
+          callback?(false)
         else
           @add(@filterNewRoutes(newRoutes.models))
+          callback?(true)
 
     filterNewRoutes: (routes) ->
       existingDepTimes = (d.getTime() for d in @getDepartureTimes())
@@ -75,6 +85,18 @@ define ['jquery', 'underscore', 'backbone', 'models/route', 'utils'], ($, _, Bac
 
     isBasedOnArrivalTime: () ->
       @arrivalOrDeparture is 'arrival'
+
+    getLaterRouteIndex: (fromIdx) ->
+      @_nextIndexBasedOnTime(fromIdx, 1)
+
+    getEarlierRouteIndex: (fromIdx) ->
+      @_nextIndexBasedOnTime(fromIdx, -1)
+
+    _nextIndexBasedOnTime: (idx, next) ->
+      current = @at(idx)
+      sorted = @sortBy(if @isBasedOnArrivalTime() then ((r) -> r.getArrivalTime().getTime()) else ((r) -> r.getDepartureTime().getTime()))
+      nextIndexInSorted = _.indexOf(sorted, current) + next
+      @indexOf(sorted[nextIndexInSorted])
 
     getDepartureTimes: ->
       times = (r.getDepartureTime() for r in @models)
