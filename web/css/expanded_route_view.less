@@ -1,0 +1,61 @@
+@legsHeight: 420px;
+
+@transportTextFromLeft: 120px;
+@locationTextFromLeft: 120px;
+@durationFromRight: 20px;
+
+#expanded-route {
+
+    .legs {
+        position: relative;
+        height: @legsHeight;
+        margin: 20px 0;
+    }
+    .leg {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+
+        .transport {
+            position: absolute;
+            left: @transportTextFromLeft;
+            top: 50%;
+            margin-top: -8px;
+            .transport-code {
+                font-size: 1.5em;
+            }
+        }
+        .duration {
+            position: absolute;
+            right: @durationFromRight;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .from-time, .from-loc, .to-time, .to-loc {
+            position: absolute;
+        }
+        .from-time, .from-loc {
+            top: -10px;
+        }
+        .to-time, .to-loc {
+            bottom: -10px;
+        }
+        .from-time, .to-time {
+            left: 20px;
+        }
+        .from-loc, .to-loc {
+            left: @locationTextFromLeft;
+        }
+    }
+    .leg:hover {
+        background-color: #eee;
+    }
+    .leg-walk {
+        background-color: #f8f8f8;
+    }
+    li.item {
+        border-width: 0;
+    }
+}

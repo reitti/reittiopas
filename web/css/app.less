@@ -3,6 +3,7 @@
 @import url("lib/timepicker.css");
 @import url("lib/datepicker.css");
 @import url("route_graph.css");
+@import url("expanded_route_view.css");
 
 @animationDuration: 0.2s;
 @controlsWidth: 400px;
@@ -227,62 +228,6 @@ input.input-full {
 
     .selected > a {
         background-color: #F1F1F1;
-    }
-}
-
-#expanded-route {
-
-    .legs {
-        position: relative;
-        height: 420px;
-        margin: 20px 0;
-    }
-    .leg {
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        cursor: pointer;
-
-        .transport {
-            position: absolute;
-            left: 120px;
-            top: 50%;
-            margin-top: -8px;
-            .transport-code {
-                font-size: 1.5em;
-            }
-        }
-        .duration {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            margin-top: -8px;
-        }
-        .from-time, .from-loc, .to-time, .to-loc {
-            position: absolute;
-        }
-        .from-time, .from-loc {
-            top: -10px;
-        }
-        .to-time, .to-loc {
-            bottom: -10px;
-        }
-        .from-time, .to-time {
-            left: 20px;
-        }
-        .from-loc, .to-loc {
-            left: 120px;
-        }
-    }
-    .leg:hover {
-        background-color: #eee;
-    }
-    .leg-walk {
-        background-color: #f8f8f8;
-    }
-    li.item {
-        border-width: 0;
     }
 }
 
