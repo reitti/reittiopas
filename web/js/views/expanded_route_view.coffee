@@ -48,9 +48,11 @@ define ['jquery', 'backbone', 'handlebars', 'utils', 'views/route_graph_sizer', 
           from: leg.originName()
           to: leg.destinationName()
           duration: Utils.formatDuration(leg.get('duration'))
+          highFloored: leg.get('highFloored')
           height: size
           heightBefore: sizeBefore
           last: legIdx is @routes.at(@index).getLegCount() - 1
+          strings: strings
         }
 
     _transport: (leg) ->
