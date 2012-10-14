@@ -23,12 +23,12 @@ define ['underscore', 'utils', 'views/map_leg_marker', 'views/map_location_marke
           strokeOpacity: 0.8
       @marker = new google.maps.Marker
         map: @map
-        icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
+        icon: new google.maps.MarkerImage('/img/sprites.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
         position: path[0]
       if @index is @routes.at(@routeIndex).getLegCount() - 1
         @destinationMarker = new google.maps.Marker
           map: @map
-          icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
+          icon: new google.maps.MarkerImage('/img/sprites.png', new google.maps.Size(11, 11), new google.maps.Point(0, 0), new google.maps.Point(5, 5))
           position: _.last(path)
 
       google.maps.event.addListener @line, 'click', @onClicked

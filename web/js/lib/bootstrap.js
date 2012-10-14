@@ -1686,6 +1686,7 @@
       this.$menu.css({
         top: pos.top + pos.height
       , left: pos.left
+      , width: this.$element.innerWidth() + 'px'
       })
 
       this.$menu.show()
