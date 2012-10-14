@@ -137,7 +137,7 @@ define ['underscore', 'backbone', 'utils', 'handlebars', 'hbs!template/route_gra
 
 
     _timeLabel: (leg) ->
-      "#{Utils.formatTimeForHumans(leg.firstArrivalTime())} - #{Utils.formatTimeForHumans(leg.lastArrivalTime())}"
+      "#{Utils.formatTimeForHumans(leg.firstArrivalTime())}—#{Utils.formatTimeForHumans(leg.lastArrivalTime())}"
 
     _destinationLabel: (leg, legIdx) ->
       if leg is @route.lastLeg()
