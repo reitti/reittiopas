@@ -58,6 +58,7 @@ define [
     searchRoutes: (event) ->
       event.preventDefault() if event
       if @from.validate() and @to.validate()
+        @to.blur()
         @from.clearError()
         @to.clearError()
         @to.clearError()
