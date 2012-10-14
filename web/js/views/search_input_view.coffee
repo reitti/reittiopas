@@ -17,12 +17,14 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
     afterTypeahead: () =>
       idx = @$el.val().lastIndexOf(',')
       @$el.selectRange(idx) if idx? and idx > 0
-        
+
     indicateError: () ->
       @$el.closest('.control-group').addClass('error')
+      this
 
     clearError: () ->
       @$el.closest('.control-group').removeClass('error')
+      this
 
     validate: () ->
       if $.trim(@val()) is ''
@@ -33,6 +35,9 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
 
     focus: () =>
       @$el.focus()
+
+    blur: ->
+      @$el.blur()
 
     val: (v) =>
       if arguments.length > 0
