@@ -22,7 +22,7 @@ indexTemplateSource = vertx.fileSystem.readFileSync("web/template/index.hbs")
 indexTemplate = new com.github.jknack.handlebars.Handlebars().compile(indexTemplateSource.getString(0, indexTemplateSource.length()))
 
 isResource = (path) ->
-  /^.*\.(css|png|js|html|hbs|manifest|ico|gif)$/.test(path)
+  /^.*\.(css|png|js|html|hbs|manifest|ico|gif|eot|svg|ttf|woff)$/.test(path)
 
 filterAjaxOnly = (handler) ->
   (req) ->

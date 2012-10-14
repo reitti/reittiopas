@@ -19,7 +19,7 @@ define ['backbone', 'hbs!template/more_routes_button', 'i18n!nls/strings'], (Bac
       Reitti.Event.off 'routes:more:error', @backToNormal
 
     render: ->
-      icon = if @loc is 'above' then 'chevron-up' else 'chevron-down'
+      icon = if @loc is 'above' then 'arrow-up' else 'arrow-down'
       label = if @loc is 'above'
         if @routes.isBasedOnArrivalTime() then strings.laterArrivals else strings.earlierDepartures
       else

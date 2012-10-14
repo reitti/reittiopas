@@ -21,5 +21,5 @@ Technologies
 Other Materials
 ===============
 
-* Walker and eye icons by [Glyphish](http://www.glyphish.com/). Licensed under a Creative Commons Attribution license.
+* Icons by [Icomoon](http://icomoon.io/). Licensed under a Creative Commons Attribution-ShareAlike license.
 
