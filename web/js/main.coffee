@@ -73,10 +73,10 @@ require [
 
   $ ->
 
-    new MapView().render()
     new SearchView().render()
     new BlankSlateView().render()
     new RoutesView().render()
+    new MapView().render()
 
     if Reitti.Settings.get('canWatchPosition')
       Reitti.Position.startWatching()
