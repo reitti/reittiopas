@@ -130,6 +130,8 @@ define [
         Reitti.Position.geocode position.coords.longitude, position.coords.latitude, (location) =>
           @from.val location.name or Utils.formatCoordinate(location.coords)
           @to.focus()
+      else
+        @onGeolocationError()
       Reitti.Event.off 'position:change', @onPositionChange
 
     onGeolocationStart: () =>
