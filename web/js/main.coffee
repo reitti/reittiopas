@@ -6,6 +6,8 @@ require.config
       exports: 'Backbone'
     backboneAnalytics:
       deps: ['backbone']
+    backboneLocalStorage:
+      deps: ['backbone']
     underscore:
       exports: '_'
     handlebars:
