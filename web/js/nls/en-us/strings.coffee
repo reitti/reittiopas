@@ -16,9 +16,11 @@ define ->
   favorites: 'Favorites'
   add: 'Add'
   newFavorite: 'New favourite'
+  removeFavorite: 'Remove favourite'
   editFavorites: 'Edit favourites'
   noFavorites: 'No favourites'
-
+  areYouSure: 'Are you sure?'
+  ready: 'Ready'
   transportType:
     walk: 'Walk'
     1: 'Bus'

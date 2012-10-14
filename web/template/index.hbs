@@ -28,6 +28,7 @@
 </head>
 <body>
 <div id="controls">
+  <div id="bookmarks" class="popover fade left in" style="display: none;"></div>
   <div id="search">
     <form class="form clearfix">
       <div id="transport-types" class="control-group">
@@ -59,25 +60,25 @@
         <div id="loading-indicator"></div>
         <label for="from" class="hide">{{strings.from}}</label>
 
-        <div class="input-prepend">
+        <div class="input-append">
+          <input type="text" class="input-full" name="from" id="from" autocomplete="off"
+                 placeholder="{{strings.from}}">
           <button id="toggle-geolocation" title="{{strings.automaticGeolocation}}" type="button" class="btn"
                   tabindex="-1" rel="tooltip" data-placement="right">
             <i class="icomoon-location"></i>
           </button>
-          <input type="text" class="input-full" name="from" id="from" autocomplete="off"
-                 placeholder="{{strings.from}}">
         </div>
       </div>
       <div class="control-group full-width-fix">
         <label for="to" class="hide">{{strings.to}}</label>
 
-        <div class="input-prepend">
+        <div class="input-append">
+          <input type="text" class="input-full" name="to" id="to" autocomplete="off"
+                 placeholder="{{strings.to}}">
           <button id="toggle-bookmarks" title="{{strings.favorites}}" type="button" class="btn" tabindex="-1"
                   rel="tooltip" data-placement="right">
             <i class="icomoon-star"></i>
           </button>
-          <input type="text" class="input-full" name="to" id="to" autocomplete="off"
-                 placeholder="{{strings.to}}">
         </div>
       </div>
       <div class="controls controls-row" id="time-settings">
@@ -131,7 +132,7 @@
     <li>-</li>
     <li><a href="?locale=en-US">In English</a></li>
   </ul>
-  <ul class="links">
+  <ul class="links hidden-phone">
     <li><a href="http://apps4finland.fi/2012/10/01/sovellus-ihan-hyva-reittiopas/">{{strings.competitionEntry}}</a>
     </li>
     <li>-</li>
@@ -147,7 +148,6 @@
 <div id="map-wrap" class="hidden-phone">
   <div id="map"></div>
 </div>
-<div id="bookmarks" class="popover fade right in" style="display: none;"></div>
 <script src="/js/lib/require.js"></script>
 <script>
   window.appLang = '{{locale}}';

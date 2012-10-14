@@ -1,44 +1,40 @@
-<div class="popover-content">
-  <div class="arrow"></div>
-  <div class="popover-inner">
-    <h3 class="popover-title">{{strings.favorites}}
-      <a id="add-bookmark" class="btn btn-small pull-right" rel="tooltip" data-placement="bottom"
-         title="{{strings.newFavorite}}">
-        <i class=" icon-plus"></i>
-      </a>
-      <a id="edit-bookmarks" class="btn btn-small pull-right {{#unless bookmarks}}hidden{{/unless}}" rel="tooltip"
-         data-placement="bottom" title="{{strings.editFavorites}}">
-        <i class="icon-pencil"></i>
-      </a>
-    </h3>
-    <div class="popover-content">
-      <div id="new-favorite" class="hidden">
-        <form>
-          <div class="control-group">
-            <div class="input-append input-append-full" class="">
-              <div class="wrapper full-width">
-                <input id="bookmark-name" type="text" class="input-full" placeholder="Minne">
-              </div>
-              <div class="wrapper">
-                <button type="submit" class="btn">{{strings.add}}</button>
-              </div>
+<div class="popover-inner">
+  <button id="add-bookmark-button" class="btn btn-small pull-right toolbar-button" rel="tooltip" data-placement="bottom"
+          title="{{strings.newFavorite}}">
+    <i class=" icomoon-plus"></i>
+  </button>
+  <button id="edit-bookmarks-button" class="btn btn-small pull-right toolbar-button {{#unless bookmarks}}hidden{{/unless}}"
+          rel="tooltip"
+          data-placement="bottom" title="{{strings.editFavorites}}">
+    <i class="icomoon-pencil"></i>
+  </button>
+    <h3 class="popover-title">
+    {{strings.favorites}}
+  </h3>
+  <div class="popover-content">
+    <div id="new-bookmark" class="hidden">
+      <form>
+        <div class="control-group">
+          <div class="input-append input-append-full">
+            <div class="wrapper full-width">
+              <input id="new-bookmark-name" type="text" class="input-full" placeholder="Minne">
+            </div>
+            <div class="wrapper">
+              <button type="submit" class="btn">{{strings.add}}</button>
             </div>
           </div>
-        </form>
-      </div>
-      {{#if bookmarks}}
-      <ul class="nav nav-tabs nav-stacked">
-        {{#each bookmarks}}
-        <li><a class="bookmark" href="#" data-id="{{id}}">{{name}}</a></li>
-        {{/each}}
-      </ul>
-      {{else}}
-      <div class="hero-unit centered placeholder">
-        <h4>{{strings.noFavorites}}</h4>
-      </div>
-      {{/if}}
+        </div>
+      </form>
+    </div>
+    <ul id="bookmarks-list" class="nav nav-tabs nav-stacked" style="overflow: auto; max-height: {{maxContentHeight}}"></ul>
+    <div class="hero-unit centered placeholder">
+      <h4>{{strings.noFavorites}}</h4>
+    </div>
+    <div class="bookmarks-row visible-phone">
+      <button id="close-bookmarks-button" class="btn btn-large btn-block visible-phone">Sulje</button>
     </div>
   </div>
 </div>
+<div class="arrow hidden-phone"></div>
 
 

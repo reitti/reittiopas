@@ -1,0 +1,20 @@
+<button class="btn btn-small btn-danger pull-left hidden remove-button" title="{{strings.removeFavorite}}"
+        rel="tooltip">
+  <i class="icomoon-remove"></i>
+</button>
+<a class="bookmark" href="#">
+  {{name}}
+  <i class="icomoon-arrow-right pull-right icon-gray"></i>
+</a>
+<form class="edit-bookmark hidden">
+  <div class="control-group">
+    <div class="input-append input-append-full">
+      <div class="wrapper full-width">
+        <input type="text" class="input-full" value="{{name}}">
+      </div>
+      <div class="wrapper">
+        <button type="submit" class="btn">{{strings.ready}}</button>
+      </div>
+    </div>
+  </div>
+</form>

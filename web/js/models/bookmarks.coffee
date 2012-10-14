@@ -5,5 +5,5 @@ define ['jquery', 'underscore', 'backbone', 'models/bookmark', 'backboneLocalSto
 
     localStorage: new Backbone.LocalStorage('bookmarks'),
 
-    comparator: (bookmark) ->
-      bookmark.get('id') * -1
+    nextId: ->
+      if @isEmpty() then 1 else @last().get('id') + 1

@@ -2,462 +2,459 @@
 @import url("lib/bootstrap-responsive.css");
 @import url("lib/timepicker.css");
 @import url("lib/datepicker.css");
+@import url("lib/icomoon.css");
 @import url("route_graph.css");
 @import url("bookmarks.css");
 
 @animationDuration: 0.2s;
-@controlsWidth: 400px;
+@controlsWidth: 460px;
 @borderColor: #BBB;
 @transportIconWidth: 32px;
 @locationMarkerWidth: 150px;
 @locationMarkerHeight: 20px;
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0){
-    -webkit-border-top-right-radius: @topright;
-    -webkit-border-bottom-right-radius: @bottomright;
-    -webkit-border-bottom-left-radius: @bottomleft;
-    -webkit-border-top-left-radius: @topleft;
-    -moz-border-radius-topright: @topright;
-    -moz-border-radius-bottomright: @bottomright;
-    -moz-border-radius-bottomleft: @bottomleft;
-    -moz-border-radius-topleft: @topleft;
-    border-top-right-radius: @topright;
-    border-bottom-right-radius: @bottomright;
-    border-bottom-left-radius: @bottomleft;
-    border-top-left-radius: @topleft;
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
 }
 
 // Bootstrap overrides
 
 ul.typeahead {
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 
-    a {
-        padding: 4px 6px;
-    }
+  a {
+    padding: 4px 6px;
+  }
 
-    li:first-child a {
-        .border-radius(3px, 0, 0, 3px);
-    }
+  li:first-child a {
+    .border-radius(3px, 0, 0, 3px);
+  }
 
-    li:last-child > a {
-        .border-radius(0, 3px, 3px, 0);
-    }
+  li:last-child > a {
+    .border-radius(0, 3px, 3px, 0);
+  }
 }
 
 ul.typeahead {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .hero-unit {
-    padding: 20px;
-    margin-bottom: 15px;
-    border-top: 1px solid #BBB;
-    border-bottom: 1px solid #BBB;
-    border-radius: 0;
-    h1 {
-        font-size: 40px;
-    }
-    p {
-        font-size: 16px;
-    }
-    .close {
-        margin: -15px -10px 0 0;
-    }
+  padding: 20px;
+  margin-bottom: 15px;
+  border-top: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  border-radius: 0;
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .close {
+    margin: -15px -10px 0 0;
+  }
 }
 
 .transition(@prop: all, @time: 1s, @ease: linear){
-    -webkit-transition: @prop @time @ease;
-    -moz-transition: @prop @time @ease;
-    -o-transition: @prop @time @ease;
-    -ms-transition: @prop @time @ease;
-    transition: @prop @time @ease;
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
 }
 
 html, body {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-    position: relative;
-    padding: 0;
-    overflow: hidden;
+  -webkit-user-select: none;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
 }
 
 .no-margin {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 #map-wrap {
-    position: fixed;
-    top: 0;
-    left: @controlsWidth;
-    right: 0;
-    bottom: 0;
+  position: fixed;
+  top: 0;
+  left: @controlsWidth;
+  right: 0;
+  bottom: 0;
 
-    #map {
-        margin: 0 !important;
-        height: 100%;
-        z-index: 1;
-        border-left: 1px solid #D4D4D4;
+  #map {
+    margin: 0 !important;
+    height: 100%;
+    z-index: 1;
+    border-left: 1px solid #D4D4D4;
 
-        img {
-            max-width: none;
-        }
+    img {
+      max-width: none;
     }
+  }
 }
 
 #streetview-wrap {
-    position: fixed;
-    top: 50%;
-    bottom: 0;
-    left: @controlsWidth;
-    right: 0;
-    #streetview {
-        height: 100%;
-        img {
-            max-width: none;
-        }
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: @controlsWidth;
+  right: 0;
+  #streetview {
+    height: 100%;
+    img {
+      max-width: none;
     }
+  }
 }
 
 #controls {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: @controlsWidth;
-    padding-bottom: 20px;
-    overflow-y: auto;
-    overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: @controlsWidth;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
 
 }
 
 #search {
-    margin: 0 20px;
+  margin: 0 20px;
 
-    #loading-indicator {
-        display: none;
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        background-image: url('../img/ajax-loader.gif');
-        height: 16px;
-        width: 16px;
-        z-index: 2;
-    }
+  #loading-indicator {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 52px;
+    background-image: url('../img/ajax-loader.gif');
+    height: 16px;
+    width: 16px;
+    z-index: 2;
+  }
 
-    #transport-types {
-        margin: 1.5em 0;
-        text-align: center;
-        button {
-            margin: 0;
-            padding: 2px 8px;
-        }
+  #transport-types {
+    margin: 20px 0;
+    text-align: center;
+    button {
+      margin: 0;
+      padding: 2px 8px;
     }
+  }
 
-    #time-settings {
-        margin-bottom: 18px;
-    }
+  #time-settings {
+    margin-bottom: 18px;
+  }
 
-    label {
-        margin-bottom: 3px;
-    }
+  label {
+    margin-bottom: 3px;
+  }
 
-    #date, #time {
-        margin: 0.5em 1em 0 0;
-    }
+  #date, #time {
+    margin: 0.5em 1em 0 0;
+  }
 
-    #time {
-        width: 48px;
-    }
+  #time {
+    width: 48px;
+  }
 
-    #date {
-        width: 86px;
-    }
+  #date {
+    width: 86px;
+  }
 
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .full-width-fix {
-    padding-right: 56px;
-    position: relative;
+  padding-right: 56px;
+  position: relative;
 }
 
 input.input-full {
-    width: 100%;
+  width: 100%;
 }
 
 #routes {
-    padding: 0;
-    margin: 0 0 20px 0;
+  padding: 0;
+  margin: 0 0 20px 0;
 
-    li.route, li.more {
-        margin: 0;
-        border-bottom: 1px solid @borderColor;
-        > a {
-            display: block;
-            margin: 0;
-            padding: 3px 20px;
-        }
+  li.route, li.more {
+
+    margin: 0;
+    border-bottom: 1px solid @borderColor;
+    > a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      display: block;
+      margin: 0;
+      padding: 3px 20px;
+      i.normal {
+        color: #777;
+      }
     }
+  }
 
-    li.route {
-        dl {
-            margin: 0;
-            dt {
-                font-size: 0.8em;
-                font-weight: normal;
-                color: black;
-            }
-        }
-
-        dl.time, dl.duration {
-            dd {
-                margin: 0;
-                font-size: 1.8em;
-            }
-            .secondary {
-                font-size: 0.8em;
-                display: inline;
-            }
-        }
-    }
-
-    li.more {
-        text-align: center;
+  li.route {
+    dl {
+      margin: 0;
+      dt {
         font-size: 0.8em;
+        font-weight: normal;
+        color: black;
+      }
     }
 
-    li.route:first-child, li.more:first-child {
-        border-top: 1px solid @borderColor;
+    dl.time, dl.duration {
+      dd {
+        margin: 0;
+        font-size: 1.8em;
+      }
+      .secondary {
+        font-size: 0.8em;
+        display: inline;
+      }
     }
+  }
 
-    li.selected > a {
-        background-color: #F1F1F1;
-    }
+  li.more {
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  li.route:first-child, li.more:first-child {
+    border-top: 1px solid @borderColor;
+  }
+
+  li.selected > a {
+    background-color: #F1F1F1;
+  }
 }
 
 .links {
-    list-style-type: none;
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0;
-    li {
-        display: inline;
-    }
+  list-style-type: none;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0;
+  li {
+    display: inline;
+  }
 }
 
 .fb-wrap {
-    width: 80px;
-    text-align: center;
-    margin: 5px auto;
+  width: 80px;
+  text-align: center;
+  margin: 5px auto;
 }
 
 .links:last-child {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #map {
-    .popover {
-        opacity: 0.9;
-        width: @locationMarkerWidth;
+  .popover {
+    opacity: 0.9;
+    width: @locationMarkerWidth;
+    height: @locationMarkerHeight;
+    font-size: 0.9em;
+    cursor: pointer;
+
+    .popover-content {
+      padding: 0;
+      height: @locationMarkerHeight;
+
+      * {
         height: @locationMarkerHeight;
-        font-size: 0.9em;
-        cursor: pointer;
+        line-height: @locationMarkerHeight;
+      }
 
-        .popover-content {
-            padding: 0;
-            height: @locationMarkerHeight;
+      .popover-label {
+        float: left;
+        width: @locationMarkerWidth;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
 
-            * {
-                height: @locationMarkerHeight;
-                line-height: @locationMarkerHeight;
-            }
-
-            .popover-label {
-                float: left;
-                width: @locationMarkerWidth;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                text-align: center;
-            }
-
-            .streetview-icon {
-                position: absolute;
-                top: 0;
-                right: 4px;
-                width: 23px;
-                background-image: url('../img/eye.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-color: white;
-            }
-        }
+      .streetview-icon {
+        position: absolute;
+        top: 0;
+        right: 4px;
+        padding-left: 2px;
+        color: #777;
+        background-color: white;
+        font-size: 18px;
+        line-height: 15px;
+      }
     }
+  }
+}
+
+.icon-gray {
+  color: #777;
 }
 
 .transport-icon {
-    background-image: url('../img/vehicles_small.png');
-    width: @transportIconWidth;
-    height: @transportIconWidth;
+  background-image: url('../img/vehicles_small.png');
+  width: @transportIconWidth;
+  height: @transportIconWidth;
 }
 
 .transport-icon-2x {
-    background-image: url('../img/vehicles_small@2x.png');
-    width: @transportIconWidth;
-    height: @transportIconWidth;
-    background-size: 64px 96px;
+  background-image: url('../img/vehicles_small@2x.png');
+  width: @transportIconWidth;
+  height: @transportIconWidth;
+  background-size: 64px 96px;
 }
 
-i.icon-compass {
-    background-image: url('../img/sprites.png');
-    background-position: -34px 0;
-    width: 14px;
-    height: 14px;
+i {
+  font-size: 14px;
 }
 
-button.on i.icon-compass {
-    background-position: -48px 0;
+[class^="icomoon-"]:before, [class*=" icomoon-"]:before {
+  line-height: 14px;
+  vertical-align: text-bottom;
+}
+
+button.on i {
+  color: purple;
 }
 
 i.icon-bus {
-    .transport-icon;
-    background-position: 0 0;
+  .transport-icon;
+  background-position: 0 0;
 }
 
 i.icon-tram {
-    .transport-icon;
-    background-position: -@transportIconWidth -@transportIconWidth;
+  .transport-icon;
+  background-position: -@transportIconWidth -@transportIconWidth;
 }
 
 i.icon-metro {
-    .transport-icon;
-    background-position: 0 -@transportIconWidth;
+  .transport-icon;
+  background-position: 0 -@transportIconWidth;
 }
 
 i.icon-train {
-    .transport-icon;
-    background-position: -@transportIconWidth 0;
+  .transport-icon;
+  background-position: -@transportIconWidth 0;
 }
 
 i.icon-ferry {
-    .transport-icon;
-    background-position: 0 -2 * @transportIconWidth;
+  .transport-icon;
+  background-position: 0 -2 * @transportIconWidth;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  i.icon-bus {
+    .transport-icon-2x;
+  }
 
-    i.icon-compass {
-        background-image: url('../img/sprites@2x.png');
-        height: 14px;
-        height: 14px;
-        background-position: 0 0;
-        background-size: 28px 14px;
-    }
+  i.icon-tram {
+    .transport-icon-2x;
+  }
 
-    button.on i.icon-compass {
-      background-position: -14px 0;
-    }
+  i.icon-metro {
+    .transport-icon-2x;
+  }
 
-    i.icon-bus {
-        .transport-icon-2x;
-    }
+  i.icon-train {
+    .transport-icon-2x;
+  }
 
-    i.icon-tram {
-        .transport-icon-2x;
-    }
-
-    i.icon-metro {
-        .transport-icon-2x;
-    }
-
-    i.icon-train {
-        .transport-icon-2x;
-    }
-
-    i.icon-ferry {
-        .transport-icon-2x;
-    }
-}
-
-@media (min-width: 768px) {
-
+  i.icon-ferry {
+    .transport-icon-2x;
+  }
 }
 
 @media (max-width: 767px) {
 
-    #search {
-        margin: 0 5%;
-    }
+  #search {
+    margin: 0 10px;
+  }
 
-    body {
-        overflow: scroll;
-    }
+  body {
+    overflow: scroll;
+  }
 
 // Controls take up full width since the map is not visible
-    #controls {
-        position: static;
-        width: 100%;
-        -webkit-overflow-scrolling: touch;
-    }
+  #controls {
+    position: static;
+    width: 100%;
+    min-height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    #routes {
-        li.route, li.more {
-            > a {
-                padding: 3px 10px;
-            }
-        }
+  #routes {
+    li.route, li.more {
+      > a {
+        padding: 3px 10px;
+      }
     }
+  }
 
-    button.btn-success {
-        width: 100%;
-    }
+  button.btn-success {
+    width: 100%;
+  }
 
 // Like button causes loading problems on Android. ToDo: Investigate?
-    .fb-wrap {
-        display: none;
-    }
+  .fb-wrap {
+    display: none;
+  }
 
 }
 
 // Add hover transitions on non-mobile devices
 @media only screen and (min-width: 768px) {
-    #routes {
-        li.route {
-            a {
-                .transition(all, @animationDuration, ease-out);
-            }
-        }
+  #routes {
+    li.route {
+      a {
+        .transition(all, @animationDuration, ease-out);
+      }
     }
+  }
 }
 
 // Show a condensed blank slate when vertical screen size is limited.
 @media (max-height: 700px) {
 
-    #blank-slate {
-        padding: 10px;
+  #blank-slate {
+    padding: 10px;
 
-        h1 {
-            display: none;
-        }
-        p {
-            margin: 0 0 5px 0;
-            line-height: 25px;
-        }
-        .close {
-            margin: -5px -5px 0 0;
-        }
-        .example {
-            display: none;
-        }
+    h1 {
+      display: none;
     }
+    p {
+      margin: 0 0 5px 0;
+      line-height: 25px;
+    }
+    .close {
+      margin: -5px -5px 0 0;
+    }
+    .example {
+      display: none;
+    }
+  }
 
 }

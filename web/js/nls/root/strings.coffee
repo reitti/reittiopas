@@ -14,10 +14,13 @@ define ->
   favorites: 'Suosikit'
   add: 'Lisää'
   newFavorite: 'Uusi suosikki'
+  removeFavorite: 'Poista suosikki'
   editFavorites: 'Muokkaa suosikkeja'
   noFavorites: 'Ei suosikkeja'
   geolocationError: 'Paikannus epäonnistui.'
   geolocating: 'Haetaan sijantia…'
+  areYouSure: 'Oletko varma?'
+  ready: 'Valmis'
   transportType:
     walk: 'Kävely'
     1: 'Bussi'
