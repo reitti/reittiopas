@@ -160,7 +160,7 @@ define [
       if @bookmarks? and @bookmarksView
         @bookmarksView.toggle()
       else
-        size = if $(window).width <= 480 then BookmarksView.FULL else BookmarksView.FIT_TO_ANCHOR
+        size = if $(window).width() <= 480 then BookmarksView.FULL else BookmarksView.FIT_TO_ANCHOR
         @bookmarks = new Bookmarks()
         @bookmarksView = new BookmarksView(collection: @bookmarks, anchor: @to.$el, size: size)
           .show() # Need to make the element visible first, as it needs to calculate some widths
