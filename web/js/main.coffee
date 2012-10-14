@@ -12,6 +12,8 @@ require.config
       exports: 'Handlebars'
     bootstrap:
       deps: ['jquery']
+    modernizr:
+      exports: 'Modernizr'
     timepicker:
       deps: ['bootstrap']
     datepicker:
@@ -28,6 +30,7 @@ require.config
     backbone: 'lib/backbone'
     backboneLocalStorage: 'lib/backbone.localStorage'
     backboneAnalytics: 'lib/backbone.analytics'
+    modernizr: 'lib/modernizr'
     moment: 'lib/moment'
     timepicker: 'lib/bootstrap-timepicker'
     datepicker: 'lib/bootstrap-datepicker'
@@ -57,8 +60,9 @@ require [
   'views/search_view'
   'views/blank_slate_view'
   'views/routes_view'
+  'modernizr'
   'bootstrap'
-], ($, _, Backbone, Router, Settings, Position, MapView, SearchView, BlankSlateView, RoutesView) ->
+], ($, _, Backbone, Router, Settings, Position, MapView, SearchView, BlankSlateView, RoutesView, Modernizr) ->
 
   class Reitti.Event extends Backbone.Events
   Reitti.Router = new Router()
@@ -82,4 +86,5 @@ require [
     $('.fb-wrap:visible').html '<iframe src="//www.facebook.com/plugins/like.php?locale='+fbLocale+'&href=http%3A%2F%2Fwww.ihanhyv%C3%A4reittiopas.fi&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>'
 
     # Initialize tooltips
-    $('a[rel="tooltip"], button[rel="tooltip"]').tooltip()
+    unless Modernizr.touch
+      $('a[rel="tooltip"], button[rel="tooltip"]').tooltip()

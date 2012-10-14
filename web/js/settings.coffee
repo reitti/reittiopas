@@ -1,17 +1,11 @@
-define ->
+define ['modernizr'], (Modernizr) ->
   class Settings
 
     get: (key) ->
-      if @_isLocalStorageSupported()
+      if Modernizr.localstorage
         JSON.parse(window.localStorage.getItem(key))
 
     set: (key, value) ->
-      if @_isLocalStorageSupported()
+      if Modernizr.localstorage
         window.localStorage.setItem(key, JSON.stringify(value))
       value
-
-    _isLocalStorageSupported: () ->
-      try
-        window.localStorage isnt null
-      catch e
-        false

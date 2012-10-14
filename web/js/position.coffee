@@ -1,18 +1,18 @@
-define ['jquery'], ($) ->
+define ['jquery', 'modernizr'], ($, Modernizr) ->
   class Position
 
     startWatching: ->
-      if navigator.geolocation
+      if Modernizr.geolocation
         Reitti.Event.trigger 'position:lookup'
         @watchId = navigator.geolocation.watchPosition(
           (position) -> Reitti.Event.trigger 'position:change', position
-          () -> Reitti.Event.trigger 'position:error',
-          {enableHighAccuracy: true, maximumAge: 30000, timeout: 5000})
+          (error) -> Reitti.Event.trigger 'position:error', error
+          {timeout: 5000, enableHighAccuracy: true, maximumAge: 15000})
       else
         Reitti.Event.trigger 'position:error'
 
     stopWatching: ->
-      if navigator.geolocation and @watchId
+      if Modernizr.geolocation and @watchId
         navigator.geolocation.clearWatch(@watchId)
 
     geocode: (longitude, latitude, callback) ->

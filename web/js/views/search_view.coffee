@@ -7,12 +7,13 @@ define [
   'views/search_input_view'
   'views/error_message_view'
   'views/bookmarks_view'
+  'modernizr'
   'utils'
   'i18n!nls/strings'
   'timepicker'
   'datepicker'
   'datepickerfi'
-], ($, _, Backbone, Routes, Bookmarks, SearchInputView, ErrorMessageView, BookmarksView, Utils, strings) ->
+], ($, _, Backbone, Routes, Bookmarks, SearchInputView, ErrorMessageView, BookmarksView, Modernizr, Utils, strings) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
@@ -47,11 +48,11 @@ define [
     initDateTimePickers: (date) ->
       date = @initializationTime if date is 'now'
       $('#time').val(Utils.formatTimeForHumans(date))
-      unless Utils.isNativeTimeInputSupported()
+      unless Modernizr.inputtypes.time
         $('#time').timepicker(defaultTime: 'value', showMeridian: false)
       formattedDate = Utils.formatDateForHTML5Input(date)
       $('#date').val(formattedDate)
-      unless Utils.isNativeDateInputSupported()
+      unless Modernizr.inputtypes.date
         $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1, language: Utils.language()).datepicker('setValue', formattedDate)
 
     searchRoutes: (event) ->
