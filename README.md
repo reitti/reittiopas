@@ -19,8 +19,7 @@ Technologies
 * Vertx
 * Coffeescript
 * Backbone.js
-
-+ various other JavaScript libraries. See `lib` and `web/lib`.
+* various other JavaScript libraries. See `lib` and `web/lib`.
 
 Other Materials
 ===============
