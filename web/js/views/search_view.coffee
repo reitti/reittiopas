@@ -3,18 +3,25 @@ define [
   'underscore'
   'backbone'
   'models/routes'
+  'models/bookmarks'
   'views/search_input_view'
+  'views/error_message_view'
+  'views/bookmarks_view'
+  'modernizr'
   'utils'
+  'i18n!nls/strings'
   'timepicker'
   'datepicker'
   'datepickerfi'
-], ($, _, Backbone, Routes, SearchInputView, Utils) ->
+], ($, _, Backbone, Routes, Bookmarks, SearchInputView, ErrorMessageView, BookmarksView, Modernizr, Utils, strings) ->
   class SearchView extends Backbone.View
 
     el: $('#search')
 
     events:
       'submit form': 'searchRoutes'
+      'click #toggle-geolocation': 'onToggleGeolocation'
+      'click #toggle-bookmarks': 'onToggleBookmarks'
 
     initialize: ->
       @to = new SearchInputView(el: @$el.find('#to'))
@@ -22,7 +29,16 @@ define [
       @initializationTime = Utils.now()
       @initDateTimePickers(@initializationTime)
 
+      @$toggleGeolocationButton = @$el.find('#toggle-geolocation')
+      @$toggleBookmarksButton = @$el.find('#toggle-bookmarks')
+      @$positionLookupSpinner = @$el.find('#loading-indicator')
+      @canWatchPosition = Reitti.Settings.get('canWatchPosition')
+      if @canWatchPosition
+        @$toggleGeolocationButton.addClass('on')
+
+      Reitti.Event.on 'position:lookup', @onGeolocationStart
       Reitti.Event.on 'position:change', @onPositionChange
+      Reitti.Event.on 'position:error', @onGeolocationError
       Reitti.Event.on 'routes:find', @onFindingRoutes
       Reitti.Event.on 'routes:change', @onRoutesReceived
       Reitti.Event.on 'routes:notfound', @onSearchFailed
@@ -31,23 +47,18 @@ define [
 
     initDateTimePickers: (date) ->
       date = @initializationTime if date is 'now'
-
       $('#time').val(Utils.formatTimeForHumans(date))
-      unless Utils.isNativeTimeInputSupported()
+      unless Modernizr.inputtypes.time
         $('#time').timepicker(defaultTime: 'value', showMeridian: false)
-
       formattedDate = Utils.formatDateForHTML5Input(date)
       $('#date').val(formattedDate)
-      unless Utils.isNativeDateInputSupported()
+      unless Modernizr.inputtypes.date
         $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1, language: Utils.language()).datepicker('setValue', formattedDate)
-
-
-    render: ->
-      @from.focus()
 
     searchRoutes: (event) ->
       event.preventDefault() if event
       if @from.validate() and @to.validate()
+        @to.blur()
         @from.clearError()
         @to.clearError()
         @to.clearError()
@@ -71,6 +82,7 @@ define [
 
     onFindingRoutes: (params) =>
       Reitti.Event.off 'position:change', @populateFromBox # We're no longer interested in the user's initial geolocation
+      @$positionLookupSpinner.hide()
       @from.val(params.from)
       @to.val(params.to)
       @initDateTimePickers(params.date)
@@ -113,8 +125,45 @@ define [
       @$el.find('#time-type').val(v)
 
     onPositionChange: (position) =>
+      @$positionLookupSpinner.hide()
       if Utils.isWithinBounds(position) and position.coords.accuracy < 200
         Reitti.Position.geocode position.coords.longitude, position.coords.latitude, (location) =>
           @from.val location.name or Utils.formatCoordinate(location.coords)
           @to.focus()
+      else
+        @onGeolocationError()
       Reitti.Event.off 'position:change', @onPositionChange
+
+    onGeolocationStart: () =>
+      @$positionLookupSpinner.show()
+      @from.placeholder(strings.geolocating)
+
+    onGeolocationError: () =>
+      @$positionLookupSpinner.hide()
+      @from.resetPlaceholder()
+      message = new ErrorMessageView(message: strings.geolocationError).render()
+
+    onToggleGeolocation: =>
+      if !@canWatchPosition
+        @canWatchPosition = Reitti.Settings.set('canWatchPosition', true)
+        @$positionLookupSpinner.show()
+        @$toggleGeolocationButton.addClass('on')
+        Reitti.Event.on 'position:change', @onPositionChange
+        Reitti.Position.startWatching()
+      else
+        @canWatchPosition = Reitti.Settings.set('canWatchPosition', false)
+        @$toggleGeolocationButton.removeClass('on')
+        @$positionLookupSpinner.hide()
+        Reitti.Position.stopWatching()
+        @from.resetPlaceholder()
+
+    onToggleBookmarks: (event) ->
+      event.stopPropagation()
+      if @bookmarks? and @bookmarksView
+        @bookmarksView.toggle()
+      else
+        size = if $(window).width() <= 480 then BookmarksView.FULL else BookmarksView.FIT_TO_ANCHOR
+        @bookmarks = new Bookmarks()
+        @bookmarksView = new BookmarksView(collection: @bookmarks, anchor: @to.$el, size: size)
+          .show() # Need to make the element visible first, as it needs to calculate some widths
+          .render()

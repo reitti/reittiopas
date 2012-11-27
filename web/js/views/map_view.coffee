@@ -120,7 +120,7 @@ define [
         @positionIndicator ?= new google.maps.Marker
           map: @map
           position: latLng
-          icon: new google.maps.MarkerImage('/img/stop.png', new google.maps.Size(18, 18),
+          icon: new google.maps.MarkerImage('/img/sprites.png', new google.maps.Size(18, 18),
             new google.maps.Point(16, 3), new google.maps.Point(9, 9))
         @accuracyIndicator.setCenter latLng
         @accuracyIndicator.setRadius accuracy

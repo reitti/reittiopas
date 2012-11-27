@@ -15,6 +15,8 @@ module.exports =
   routeData: 'Reittitiedot'
   sourceCode: 'Lähdekoodi ja tietoa'
   feedback: 'Palaute'
+  automaticGeolocation: 'Hae sijainti automaattisesti'
+  favorites: 'Suosikit'
   blankSlate:
     theTitle: "Tämä on ihan hyvä reittiopas."
     thePitch: "Syötä lähtöpisteesi ja määränpääsi ylläoleviin kenttiin, ja neuvomme miten pääset parhaiten perille."

@@ -1,0 +1,114 @@
+@row-height: 45px;
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0){
+  -webkit-border-top-right-radius: @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius: @bottomleft;
+  -webkit-border-top-left-radius: @topleft;
+  -moz-border-radius-topright: @topright;
+  -moz-border-radius-bottomright: @bottomright;
+  -moz-border-radius-bottomleft: @bottomleft;
+  -moz-border-radius-topleft: @topleft;
+  border-top-right-radius: @topright;
+  border-bottom-right-radius: @bottomright;
+  border-bottom-left-radius: @bottomleft;
+  border-top-left-radius: @topleft;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.input-append-full {
+  display: table;
+  width: 100%;
+
+  .wrapper {
+    display: table-cell;
+    width: 1px;
+  }
+
+  .full-width {
+    padding-right: 12px;
+    width: auto;
+  }
+}
+
+#bookmarks {
+  display: block;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+  z-index: 999;
+
+  .toolbar-button {
+    font-size: 14px;
+    margin: ((@row-height - 26) / 2) 14px;
+  }
+
+  .toolbar-button:last-of-type {
+    margin-right: 0;
+  }
+
+  .bookmarks-row {
+    border-top: 1px solid #DDD;
+    padding: 7px 10px;
+  }
+
+  h3 {
+    line-height: @row-height - 2 * 8 - 1;
+  }
+  .popover-content {
+    padding: 0;
+    min-height: 2 * (@row-height - 1);
+
+    .hero-unit {
+      background-color: #FFF;
+      margin-bottom: 0;
+      padding: @row-height - 20 20px;
+      border: none;
+      h4 {
+        color: #999;
+      }
+    }
+
+    .control-group, .input-append, form {
+      margin-bottom: 0;
+    }
+
+    form {
+      padding: ((@row-height - 30) / 2) 10px;
+    }
+
+    #bookmarks-list {
+      li {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        .remove-button {
+          margin: ((@row-height - 26) / 2 - 1) 10px;
+        }
+        .control-group, .input-append {
+          margin-bottom: 0;
+        }
+        .bookmark {
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          border-left: none;
+          border-right: none;
+          .border-radius(0, 0, 0, 0);
+          line-height: @row-height - 18;
+          i.pull-right {
+            margin: 6.5px 0;
+          }
+        }
+        a.hidden { // Need to override a rule in app.less
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #bookmarks {
+    #bookmarks-list {
+      overflow-y: scroll;
+    }
+  }
+}

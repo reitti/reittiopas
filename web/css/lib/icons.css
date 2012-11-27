@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../../img/icomoon.eot');
+    src:url('../../img/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../../img/icomoon.svg#icon') format('svg'),
+    url('../../img/icomoon.woff') format('woff'),
+    url('../../img/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    vertical-align: text-bottom;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: 'icomoon';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.icon-location:before {
+    content: "\21";
+}
+.icon-star:before {
+    content: "\22";
+}
+.icon-remove:before {
+    content: "\23";
+}
+.icon-pencil:before {
+    content: "\24";
+}
+.icon-plus:before {
+    content: "\25";
+}
+.icon-arrow-left:before {
+    content: "\26";
+}
+.icon-arrow-right:before {
+    content: "\27";
+}
+.icon-arrow-down:before {
+    content: "\28";
+}
+.icon-arrow-up:before {
+    content: "\29";
+}
+.icon-eye:before {
+    content: "\2a";
+}
+.icon-search:before {
+    content: "\2b";
+}

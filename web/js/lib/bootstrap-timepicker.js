@@ -697,16 +697,16 @@
             }
             var templateContent = '<table class="'+ (this.showSeconds ? 'show-seconds' : '') +' '+ (this.showMeridian ? 'show-meridian' : '') +'">'+
                                        '<tr>'+
-                                           '<td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>'+
+                                           '<td><a href="#" data-action="incrementHour"><i class="icon-arrow-up"></i></a></td>'+
                                            '<td class="separator">&nbsp;</td>'+
-                                           '<td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>'+
+                                           '<td><a href="#" data-action="incrementMinute"><i class="icon-arrow-up"></i></a></td>'+
                                            (this.showSeconds ? 
                                                '<td class="separator">&nbsp;</td>'+
-                                               '<td><a href="#" data-action="incrementSecond"><i class="icon-chevron-up"></i></a></td>'
+                                               '<td><a href="#" data-action="incrementSecond"><i class="icon-arrow-up"></i></a></td>'
                                            : '') +
                                            (this.showMeridian ? 
                                                '<td class="separator">&nbsp;</td>'+
-                                               '<td class="meridian-column"><a href="#" data-action="toggleMeridian"><i class="icon-chevron-up"></i></a></td>'
+                                               '<td class="meridian-column"><a href="#" data-action="toggleMeridian"><i class="icon-arrow-up"></i></a></td>'
                                            : '') +
                                        '</tr>'+
                                        '<tr>'+
@@ -723,16 +723,16 @@
                                            : '') +
                                        '</tr>'+
                                        '<tr>'+
-                                           '<td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>'+
+                                           '<td><a href="#" data-action="decrementHour"><i class="icon-arrow-down"></i></a></td>'+
                                            '<td class="separator"></td>'+
-                                           '<td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>'+
+                                           '<td><a href="#" data-action="decrementMinute"><i class="icon-arrow-down"></i></a></td>'+
                                            (this.showSeconds ? 
                                                 '<td class="separator">&nbsp;</td>'+
-                                                '<td><a href="#" data-action="decrementSecond"><i class="icon-chevron-down"></i></a></td>' 
+                                                '<td><a href="#" data-action="decrementSecond"><i class="icon-arrow-down"></i></a></td>' 
                                            : '') +
                                            (this.showMeridian ? 
                                                 '<td class="separator">&nbsp;</td>'+
-                                                '<td><a href="#" data-action="toggleMeridian"><i class="icon-chevron-down"></i></a></td>'
+                                                '<td><a href="#" data-action="toggleMeridian"><i class="icon-arrow-down"></i></a></td>'
                                            : '') +
                                        '</tr>'+
                                    '</table>';

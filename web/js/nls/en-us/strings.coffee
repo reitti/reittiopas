@@ -12,6 +12,17 @@ define ->
   highFlooredLong: "Non-low-floor vehicle"
   routeTo: 'Directions to here'
   routeFrom: 'Directions from here'
+  warning: 'Oh snap'
+  geolocationError: 'We were unable to locate you.'
+  geolocating: 'Determining your location…'
+  favorites: 'Favorites'
+  add: 'Add'
+  newFavorite: 'New favourite'
+  removeFavorite: 'Remove favourite'
+  editFavorites: 'Edit favourites'
+  noFavorites: 'No favourites'
+  areYouSure: 'Are you sure?'
+  ready: 'Ready'
   transportType:
     walk: 'Walk'
     1: 'Bus'

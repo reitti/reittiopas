@@ -19,11 +19,10 @@ Technologies
 * Vertx
 * Coffeescript
 * Backbone.js
-
-+ various other JavaScript libraries. See `lib` and `web/lib`.
+* various other JavaScript libraries. See `lib` and `web/lib`.
 
 Other Materials
 ===============
 
-* Walker and eye icons from [Glyphish](http://www.glyphish.com/). Licensed under a Creative Commons Attribution license.
 * Transport mode icons from HSL
+* Other icons by [Icomoon](http://icomoon.io/). Licensed under a Creative Commons Attribution-ShareAlike license.

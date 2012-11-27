@@ -3,139 +3,139 @@
 @animationDuration: 0.2s;
 
 .transition(@prop: all, @time: 1s, @ease: linear){
-    -webkit-transition: @prop @time @ease;
-    -moz-transition: @prop @time @ease;
-    -o-transition: @prop @time @ease;
-    -ms-transition: @prop @time @ease;
-    transition: @prop @time @ease;
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
 }
 
 .route-graph {
-    position: relative;
-    height: @graphHeight;
+  position: relative;
+  height: @graphHeight;
 
-    li {
-        position: absolute;
-        top: 0;
-        height: @barHeight + 4px;
-        font-size: 12px;
-        color: black;
-    }
+  li {
+    position: absolute;
+    top: 0;
+    height: @barHeight + 4px;
+    font-size: 12px;
+    color: black;
+  }
 
-    .hidden {
-        opacity: 0;
-        top: -100px;
-    }
+  .hidden {
+    opacity: 0;
+    top: -100px;
+  }
 
-    .leg-bar {
-        height: @barHeight;
-        padding: 2px;
-        margin-right: 1px;
-        vertical-align: middle;
-    }
+  .leg-bar {
+    height: @barHeight;
+    padding: 2px;
+    margin-right: 1px;
+    vertical-align: middle;
+  }
 
-    i {
-        position: absolute;
-        display: block;
-        background-image: url('../img/vehicles_tiny.png');
-        width: 16px;
-        height: 16px;
-        margin: -8px 0 0 -9px;
-        top: 50%;
-        left: 50%;
-    }
+  i {
+    position: absolute;
+    display: block;
+    background-image: url('../img/vehicles_tiny.png');
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -9px;
+    top: 50%;
+    left: 50%;
+  }
 
 // Bus
-    .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-25, .leg-26, .leg-36, .leg-38, .leg-39 {
-        .leg-bar {
-            background-color: #1b76bc;
-        }
-        i {
-            background-position: -2px -2px;
-        }
+  .leg-1, .leg-3, .leg-4, .leg-5, .leg-8, .leg-21, .leg-22, .leg-23, .leg-24, .leg-25, .leg-26, .leg-36, .leg-38, .leg-39 {
+    .leg-bar {
+      background-color: #1b76bc;
     }
+    i {
+      background-position: -2px -2px;
+    }
+  }
 
 // Tram
-    .leg-2 {
-        .leg-bar {
-            background-color: #1a9b63;
-        }
-        i {
-            background-position: 18px -22px;
-        }
+  .leg-2 {
+    .leg-bar {
+      background-color: #1a9b63;
     }
+    i {
+      background-position: 18px -22px;
+    }
+  }
 
 // Metro
-    .leg-6 {
-        .leg-bar {
-            background-color: #ec6128;
-        }
-        i {
-            background-position: -2px -22px;
-        }
+  .leg-6 {
+    .leg-bar {
+      background-color: #ec6128;
     }
+    i {
+      background-position: -2px -22px;
+    }
+  }
 
 // Ferry
-    .leg-7 {
-        .leg-bar {
-            background-color: #17b9e8;
-        }
-        i {
-            background-position: -2px 18px;
-        }
+  .leg-7 {
+    .leg-bar {
+      background-color: #17b9e8;
     }
+    i {
+      background-position: -2px 18px;
+    }
+  }
 
 // Train
-    .leg-12 {
-        .leg-bar {
-            background-color: #b51c23;
-        }
-        i {
-            background-position: 18px -2px;
-        }
+  .leg-12 {
+    .leg-bar {
+      background-color: #b51c23;
     }
-
-    .leg-walk {
-        .leg-bar {
-            background-color: #1e74fc;
-        }
-        i {
-            background-position: 18px 18px;
-        }
+    i {
+      background-position: 18px -2px;
     }
+  }
 
-    .leg-info {
-        opacity: 0;
-        left: 25px;
-        right: 0;
-        text-align: left;
-        line-height: 100%;
-
-        .times {
-            position: absolute;
-            left: 1%;
-            width: 24%;
-        }
-        .transport {
-            position: absolute;
-            left: 25%;
-            width: 25%;
-        }
-        .arrow {
-            position: absolute;
-            left: 50%;
-            width: 5%;
-        }
-        .destination {
-            position: absolute;
-            left: 55%;
-            width: 45%;
-        }
+  .leg-walk {
+    .leg-bar {
+      background-color: #1e74fc;
     }
-
-    .leg-indicator {
-        opacity: 1;
+    i {
+      background-position: 18px 18px;
     }
+  }
+
+  .leg-info {
+    opacity: 0;
+    left: 25px;
+    right: 0;
+    text-align: left;
+    line-height: 100%;
+
+    .times {
+      position: absolute;
+      left: 1%;
+      width: 24%;
+    }
+    .transport {
+      position: absolute;
+      left: 25%;
+      width: 25%;
+    }
+    .arrow {
+      position: absolute;
+      left: 50%;
+      width: 5%;
+    }
+    .destination {
+      position: absolute;
+      left: 55%;
+      width: 45%;
+    }
+  }
+
+  .leg-indicator {
+    opacity: 1;
+  }
 
     .floor-indicator {
         color: #777;
@@ -146,52 +146,52 @@
 
 // "Retina" images
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    .route-graph {
-        i {
-            background-image: url('../img/vehicles_tiny@2x.png');
-            width: 16px;
-            height: 16px;
-            background-size: 40px 60px;
-        }
+  .route-graph {
+    i {
+      background-image: url('../img/vehicles_tiny@2x.png');
+      width: 16px;
+      height: 16px;
+      background-size: 40px 60px;
     }
+  }
 }
-
 
 // Add CSS transitions on non-mobile devices
 @media only screen and (min-width: 768px) {
-    .leg-info {
-        &:hover {
-            background-color: #ddd;
-        }
-        &.selected {
-            background-color: #ccc;
-        }
+  .leg-info {
+    &:hover {
+      background-color: #ddd;
     }
-    .route-graph {
-        .transition(all, @animationDuration, ease-out);
-        li {
-            .transition(all, @animationDuration, ease-out);
-        }
-        .leg-indicator {
-            .transition(all, @animationDuration, ease-out);
-        }
+    &.selected {
+      background-color: #ccc;
     }
+  }
+
+  .route-graph {
+    .transition(all, @animationDuration, ease-out);
+    li {
+      .transition(all, @animationDuration, ease-out);
+    }
+    .leg-indicator {
+      .transition(all, @animationDuration, ease-out);
+    }
+  }
 
 }
 
 .expanded {
-    .leg-info {
-        opacity: 1;
-    }
-    .leg-indicator {
-        opacity: 0;
-    }
+  .leg-info {
+    opacity: 1;
+  }
+  .leg-indicator {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 767px) {
-    .route-graph {
-        li {
-            font-size: 10px;
-        }
+  .route-graph {
+    li {
+      font-size: 10px;
     }
+  }
 }

@@ -105,7 +105,6 @@ define ['moment'], (moment) ->
       {longitude: lng, latitude: lat} = location.coords
       24.152104 < lng < 25.535784 and 59.99907 < lat < 60.446654
 
-
     # Memoizes functions that do asynchronous work, and pass their results to a callback
     # function given as the last argument.
     @asyncMemoize: (f) ->
@@ -139,16 +138,3 @@ define ['moment'], (moment) ->
 
     @toPercentage: (num) ->
       "#{num * 100}%"
-
-    @isNativeDateInputSupported: () ->
-      @isNativeInputSupported 'date'
-
-    @isNativeTimeInputSupported: () ->
-      @isNativeInputSupported 'time'
-
-    @isNativeInputSupported: (type) ->
-      input = document.createElement('input')
-      input.setAttribute 'type', type
-      input.type isnt 'text'     
-
-

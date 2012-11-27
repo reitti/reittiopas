@@ -1,139 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="x-timezone-offset" content="{{timezoneOffset}}">
-    <title>Ihan hyvä reittiopas</title>
-    <link rel="stylesheet" href="/css/app.css">
-    <script type="text/javascript">
-      // Define the Google Maps API key
-      window.gmapsKey = (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk');
-    </script>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-35197816-1']);
-      _gaq.push(['_setDomainName', 'ihanhyväreittiopas.fi']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="x-timezone-offset" content="{{timezoneOffset}}">
+  <title>Ihan hyvä reittiopas</title>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="text/javascript">
+    // Define the Google Maps API key
+    window.gmapsKey = (window.location.host === 'localhost' ? '' : '&key=AIzaSyDZj9_A4WUDGph6cKf2A7VsFbDz6Pb7QBk');
   </script>
-  </head>
-  <body>
-    <div id="controls">
-      <div id="search">
-        <form class="form clearfix">
-          <div id="transport-types" class="control-group">
-            <div class="btn-group" data-toggle="buttons-checkbox">
-              <button type="button" id="bus" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.bus}}">
-                <i class="icon-bus"></i>
-              </button>
-              <button type="button" id="tram" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.tram}}">
-                <i class="icon-tram"></i>
-              </button>
-              <button type="button" id="metro" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.metro}}">
-                <i class="icon-metro"></i>
-              </button>
-              <button type="button" id="train" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.train}}">
-                <i class="icon-train"></i>
-              </button>
-              <button type="button" id="ferry" class="btn btn-small"
-                      title="{{strings.transportTypeSelector.ferry}}">
-                <i class="icon-ferry"></i>
-              </button>
-            </div>
-          </div>
-          <div class="control-group full-width-fix">
-            <label for="from" class="hide">{{strings.from}}</label>
-            <input type="text" class="input-full" name="from" id="from" autocomplete="off"
-                   placeholder="{{strings.from}}">
-          </div>
-          <div class="control-group full-width-fix">
-            <label for="to" class="hide">{{strings.to}}</label>
-            <input type="text" class="input-full" name="to" id="to" autocomplete="off"
-                   placeholder="{{strings.to}}">
-          </div>
-          <div class="controls controls-row" id="time-settings">
-            <div class="controls-row">
-              <input type="time" name="time" id="time" class="pull-left"/>
-              <input type="date" name="date" id="date" class="pull-left"/>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35197816-1']);
+    _gaq.push(['_setDomainName', 'ihanhyväreittiopas.fi']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+<div id="controls">
+  <div id="bookmarks" class="popover fade left in" style="display: none;"></div>
+  <div id="search">
+    <form class="form clearfix">
+      <div id="transport-types" class="control-group">
+        <div class="btn-group" data-toggle="buttons-checkbox">
+          <button type="button" id="bus" class="btn btn-small"
+                  title="{{strings.transportTypeSelector.bus}}" rel="tooltip" data-placement="bottom">
+            <i class="icon-bus"></i>
+          </button>
+          <button type="button" id="tram" class="btn btn-small"
+                  title="{{strings.transportTypeSelector.tram}}" rel="tooltip" data-placement="bottom">
+            <i class="icon-tram"></i>
+          </button>
+          <button type="button" id="metro" class="btn btn-small"
+                  title="{{strings.transportTypeSelector.metro}}" rel="tooltip" data-placement="bottom">
+            <i class="icon-metro"></i>
+          </button>
+          <button type="button" id="train" class="btn btn-small"
+                  title="{{strings.transportTypeSelector.train}}" rel="tooltip" data-placement="bottom">
+            <i class="icon-train"></i>
+          </button>
+          <button type="button" id="ferry" class="btn btn-small"
+                  title="{{strings.transportTypeSelector.ferry}}" rel="tooltip" data-placement="bottom">
+            <i class="icon-ferry"></i>
+          </button>
+        </div>
+      </div>
+      <div id="error-message"></div>
+      <div class="control-group full-width-fix">
+        <div id="loading-indicator"></div>
+        <label for="from" class="hide">{{strings.from}}</label>
 
-              <div class="pull-left">
-                <label class="radio">
-                  <input type="radio" name="time-type" value="departure" class="input-small" id="time-type-departure"
-                         name="time-type" checked>
-                  {{strings.departureTime}}
-                </label>
-                <label class="radio">
-                  <input type="radio" name="time-type" value="arrival" class="input-small" id="time-type-arrival"
-                         name="time-type">
-                  {{strings.arrivalTime}}
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="control-group">
-            <button type="submit" class="btn btn-success pull-right"
-                    data-loading-text="{{strings.findingRoutes}}">
-              <i class="icon-search icon-white"></i>&nbsp;
-              {{strings.findRoutes}}
-            </button>
-          </div>
-        </form>
+        <div class="input-append">
+          <input type="text" class="input-full" name="from" id="from" autocomplete="off"
+                 placeholder="{{strings.from}}">
+          <button id="toggle-geolocation" title="{{strings.automaticGeolocation}}" type="button" class="btn"
+                  tabindex="-1" rel="tooltip" data-placement="right">
+            <i class="icon-location"></i>
+          </button>
+        </div>
       </div>
-      <div id="blank-slate" class="hero-unit" {{#if blankSlateHidden}} style="display: none;" {{/if}}>
-        {{#if blankSlateActive}}
-          <button class="close">&times;</button>
-          <h1>{{strings.blankSlate.theTitle}}</h1>
-          <p>{{strings.blankSlate.thePitch}}</p>
-          <p class="example">
-            {{strings.blankSlate.example}}:
-            <a class="example-route" href="#">{{strings.blankSlate.theRoute}}</a>.
-          </p>
-          <p>{{strings.blankSlate.theCoverage}}</p>
-        {{/if}}
+      <div class="control-group full-width-fix">
+        <label for="to" class="hide">{{strings.to}}</label>
+
+        <div class="input-append">
+          <input type="text" class="input-full" name="to" id="to" autocomplete="off"
+                 placeholder="{{strings.to}}">
+          <button id="toggle-bookmarks" title="{{strings.favorites}}" type="button" class="btn" tabindex="-1"
+                  rel="tooltip" data-placement="right">
+            <i class="icon-star"></i>
+          </button>
+        </div>
       </div>
-      <ul id="routes" class="nav nav-list"></ul>
-      <ul class="links">
-        <li><a href="?">Suomeksi</a></li>
-        <li>-</li>
-        <li><a href="?locale=en-US">In English</a></li>
-      </ul>
-      <ul class="links">
-        <li><a href="http://apps4finland.fi/2012/10/01/sovellus-ihan-hyva-reittiopas/">{{strings.competitionEntry}}</a></li>
-        <li>-</li>
-        <li><a href="javascript:UserVoice.showPopupWidget();">{{strings.feedback}}</a></li>
-        <li>-</li>
-        <li><a href="https://github.com/reitti/reittiopas">{{strings.sourceCode}}</a></li>
-      </ul>
-      <div class="fb-wrap"></div>
-    </div>
-    <div id="streetview-wrap" class="hidden-phone" style="display: none;">
-        <div id="streetview"></div>
-    </div>
-    <div id="map-wrap" class="hidden-phone">
-      <div id="map"></div>
-    </div>
-    <script src="/js/lib/require.js"></script>
-    <script> 
-      window.appLang = '{{locale}}';
-      require({locale: window.appLang.toLowerCase()}, ['/js/main.js']);
-    </script>
-    <script type="text/javascript">
-      var uvOptions = {};
-      (function() {
-        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/id7kaaKwg7QK5TOwrPg.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-      })();
-    </script>
-  </body>
+      <div class="controls controls-row" id="time-settings">
+        <div class="controls-row">
+          <input type="time" name="time" id="time" class="pull-left"/>
+          <input type="date" name="date" id="date" class="pull-left"/>
+
+          <div class="pull-left">
+            <label class="radio">
+              <input type="radio" name="time-type" value="departure" class="input-small"
+                     id="time-type-departure"
+                     name="time-type" checked>
+              {{strings.departureTime}}
+            </label>
+            <label class="radio">
+              <input type="radio" name="time-type" value="arrival" class="input-small"
+                     id="time-type-arrival"
+                     name="time-type">
+              {{strings.arrivalTime}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="control-group">
+        <button type="submit" class="btn btn-success pull-right"
+                data-loading-text="{{strings.findingRoutes}}">
+          <i class="icon-search icon-white"></i>&nbsp;
+          {{strings.findRoutes}}
+        </button>
+      </div>
+    </form>
+  </div>
+  <div id="blank-slate" class="hero-unit" {{#if blankSlateHidden}} style="display: none;" {{/if}}>
+    {{#if blankSlateActive}}
+    <button class="close">&times;</button>
+    <h1>{{strings.blankSlate.theTitle}}</h1>
+
+    <p>{{strings.blankSlate.thePitch}}</p>
+
+    <p class="example">
+      {{strings.blankSlate.example}}:
+      <a class="example-route" href="#">{{strings.blankSlate.theRoute}}</a>.
+    </p>
+
+    <p>{{strings.blankSlate.theCoverage}}</p>
+    {{/if}}
+  </div>
+  <ul id="routes" class="nav nav-list"></ul>
+  <ul class="links">
+    <li><a href="?">Suomeksi</a></li>
+    <li>-</li>
+    <li><a href="?locale=en-US">In English</a></li>
+  </ul>
+  <ul class="links hidden-phone">
+    <li><a href="http://apps4finland.fi/2012/10/01/sovellus-ihan-hyva-reittiopas/">{{strings.competitionEntry}}</a>
+    </li>
+    <li>-</li>
+    <li><a href="javascript:UserVoice.showPopupWidget();">{{strings.feedback}}</a></li>
+    <li>-</li>
+    <li><a href="https://github.com/reitti/reittiopas">{{strings.sourceCode}}</a></li>
+  </ul>
+  <div class="fb-wrap"></div>
+</div>
+<div id="streetview-wrap" class="hidden-phone" style="display: none;">
+  <div id="streetview"></div>
+</div>
+<div id="map-wrap" class="hidden-phone">
+  <div id="map"></div>
+</div>
+<script src="/js/lib/require.js"></script>
+<script>
+  window.appLang = '{{locale}}';
+  require({locale:window.appLang.toLowerCase()}, ['/js/main.js']);
+</script>
+<script type="text/javascript">
+  var uvOptions = {};
+  (function () {
+    var uv = document.createElement('script');
+    uv.type = 'text/javascript';
+    uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/id7kaaKwg7QK5TOwrPg.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(uv, s);
+  })();
+</script>
+</body>
 </html>
