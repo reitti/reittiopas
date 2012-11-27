@@ -48,11 +48,11 @@ define [
     initDateTimePickers: (date) ->
       date = @initializationTime if date is 'now'
       $('#time').val(Utils.formatTimeForHumans(date))
-      unless Modernizr.inputtypes.time
+      unless Modernizr.inputtypes.time and Modernizr.touch
         $('#time').timepicker(defaultTime: 'value', showMeridian: false)
       formattedDate = Utils.formatDateForHTML5Input(date)
       $('#date').val(formattedDate)
-      unless Modernizr.inputtypes.date
+      unless Modernizr.inputtypes.date and Modernizr.touch
         $('#date').datepicker(format: 'yyyy-mm-dd', weekStart: 1, language: Utils.language()).datepicker('setValue', formattedDate)
 
     searchRoutes: (event) ->
