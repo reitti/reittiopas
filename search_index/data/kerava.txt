@@ -1,13 +1,33 @@
+Ollkärrintie|25.30149,60.36719
+Lehtikuusentie|25.32083,60.36874
+Ollkärrintie|25.30137,60.36774
+Sommarnäsintie|25.2972,60.37126
+Sommarnäsintie|25.29759,60.37035
+Vanha Kuninkaantie|25.33506,60.37098
+Lillängintie|25.32784,60.37008
+Herralantie|25.33821,60.37261
+Lugnnäsintie|25.34357,60.37479
+Notkotie|25.35395,60.37556
+Björkbacka|25.29479,60.39298
+Jokitörmä|25.29097,60.391
+Lindnäs|25.29797,60.39608
+Björkbacka|25.29688,60.39338
+Rajaveräjänmäki|25.26856,60.39906
+Jokitörmä|25.29158,60.39076
+Rajaveräjänmäki|25.26948,60.39868
+Lindnäs|25.29887,60.39634
 Kantokatu|25.09869,60.39091
 Kantokatu|25.09755,60.391
 Kannisto|25.09484,60.39068
-Kannisto|25.09295,60.39059
-Mäyräkorventie|25.08957,60.38921
-Mäyräkorventie|25.0891,60.38845
-Marttilanpolku|25.08958,60.38513
-Marttilanpolku|25.08938,60.3851
 Marttila|25.08743,60.38419
 Marttila|25.08716,60.38372
+Marttilanpolku|25.08958,60.38513
+Marttilanpolku|25.08938,60.3851
+Mäyräkorventie|25.08957,60.38921
+Mäyräkorventie|25.0891,60.38845
+Kannisto|25.09295,60.39059
+Koivikko|25.08163,60.37708
+Koivikko|25.08155,60.37722
 Lehmuskatu|25.0887,60.38226
 Lehmuskatu|25.0886,60.38233
 Savionaalloppi|25.09478,60.37496
@@ -15,172 +35,603 @@ Savion asema|25.09546,60.38055
 Savion asema|25.09536,60.38066
 Mäkitie|25.08635,60.37925
 Käpytie|25.08745,60.38032
-Koivikko|25.08163,60.37708
-Koivikko|25.08155,60.37722
-Virpitie|25.08016,60.37598
 Virpitie|25.07952,60.37554
 Nurmikatu|25.1012,60.39306
 Angervontie|25.0933,60.37139
 Tuijantie|25.09115,60.36877
-Kerava/VR|25.10598,60.40468
-Kerava/VR|25.10636,60.40464
+Virpitie|25.08016,60.37598
+Lammelantie|25.15223,60.3429
+Länsitie|25.17762,60.3584
+Länsitie|25.17638,60.35856
+Lammelantie|25.15225,60.34292
+Johanneberg|25.18086,60.35993
+Kuckubacka|25.16869,60.35703
+Kuckubacka|25.16723,60.3572
+Svartböle|25.15891,60.35452
+Paisbackantie|25.15225,60.34684
+Paisbackantie|25.15311,60.34729
+Svartböle|25.15718,60.35449
+Träskomossen|25.14366,60.34877
+Träskomossen|25.14182,60.34888
+Viirilä|25.13657,60.32346
+Viirilä|25.1374,60.32426
+Myyras|25.13309,60.32912
+Peltotie|25.12525,60.33975
+Myyras|25.13404,60.32962
+Myyraksensuo|25.12172,60.32739
+Näkinkuja|25.12507,60.33712
+Myyraksensuo|25.12071,60.32802
+Laineentie|25.13625,60.4129
+Kaskela|25.1488,60.42378
+Falkbergintie|25.25344,60.27599
+Falkbergintie|25.25491,60.27604
+Sälgkulla|25.25499,60.2814
+Sälgkulla|25.25699,60.28123
+Lönnholmintie|25.26413,60.28939
+Lönnholmintie|25.26502,60.28945
+Mågsintie|25.26923,60.30488
+Hampträskintie|25.26607,60.29873
+Hampträskintie|25.26766,60.29784
+Vanha Immersbyntie|25.26514,60.2935
+Vanha Immersbyntie|25.26532,60.2943
+Solåkerintie|25.27351,60.31297
+Solåkerintie|25.27374,60.31369
+Immersbyn puro|25.27606,60.30908
+Immersbyn puro|25.27471,60.30873
+Mågsintie|25.27004,60.30483
+Kilta|25.08488,60.40946
+Sirkushevoset|25.096,60.40457
+Uimala|25.0907,60.40746
+Lilla svartviken|25.48234,60.24609
+Ösundintie|25.47088,60.24637
+Ösundintie|25.4696,60.24669
+Sandvikintie|25.46021,60.24446
+Lilla svartviken|25.48302,60.24541
+Sandvikintie|25.46098,60.24415
+Kitö|25.44846,60.23716
+Kyläkirkko|25.20185,60.47105
+Widegård|25.21013,60.47333
+Kyläkirkko|25.20369,60.47167
+Norra Paipis skola|25.21284,60.47091
+Widegård|25.21139,60.47341
+Björkmontie|25.21675,60.46824
+Norra Paipis skola|25.21413,60.47106
+Lintumetsä|25.1896,60.4696
+Lintumetsä|25.19139,60.46928
+Fågelnäs|25.19649,60.47061
+Fågelnäs|25.19743,60.47024
+Harjus|25.16974,60.47011
+Lindebontie|25.15754,60.47043
+Rajakulma|25.15313,60.47015
+Harjus|25.17139,60.46965
+Sysitie|25.14532,60.39715
+Terästie|25.14512,60.40003
+Sorsakorventie|25.14548,60.39432
+Harkkotie|25.14491,60.39609
+Terästie|25.1452,60.4001
+Laineentie|25.13659,60.4133
+Auratie|25.14665,60.39214
+Sorsakorventie|25.14529,60.39415
+Auratie|25.14634,60.39164
+Metsärinne|25.14048,60.40851
+Metsärinne|25.14112,60.40798
+Keinukalliontie|25.14439,60.38618
+Keinukalliontie|25.14572,60.38642
+Ratsastuskoulu|25.14493,60.38805
+Levonmäentie|25.14521,60.38884
+Levonmäentie|25.14576,60.38965
+Annantie|25.14512,60.40669
 Kaskitie|25.13668,60.41085
-Kaskitie|25.13688,60.41092
 Moukaritie|25.14068,60.4028
-Moukaritie|25.14004,60.40252
+Kaskitie|25.13688,60.41092
 Ahjon koulu|25.14017,60.40055
-Ahjon koulu|25.13935,60.40087
+Moukaritie|25.14004,60.40252
 Vaihdekatu|25.13579,60.40229
+Ahjon koulu|25.13935,60.40087
 Vaihdekatu|25.13575,60.40239
 Päivölä|25.13488,60.40502
-Päivölä|25.13303,60.40562
-Etelä-Kaskela|25.13959,60.40598
-Ahjonsilta|25.14059,60.40554
 Etelä-Kaskela|25.14283,60.40645
+Ahjonsilta|25.14059,60.40554
+Etelä-Kaskela|25.13959,60.40598
+Päivölä|25.13303,60.40562
 Etelä-Kaskela|25.14171,60.40684
-Laineentie|25.13659,60.4133
-Terästie|25.1452,60.4001
-Terästie|25.14512,60.40003
-Sysitie|25.14532,60.39715
-Harkkotie|25.14491,60.39609
-Sorsakorventie|25.14548,60.39432
-Sorsakorventie|25.14529,60.39415
-Auratie|25.14665,60.39214
-Auratie|25.14634,60.39164
-Levonmäentie|25.14576,60.38965
-Levonmäentie|25.14521,60.38884
-Ratsastuskoulu|25.14493,60.38805
-Keinukalliontie|25.14572,60.38642
-Keinukalliontie|25.14439,60.38618
-Metsärinne|25.14112,60.40798
-Metsärinne|25.14048,60.40851
-Annantie|25.14512,60.40669
-Savio/VR|25.0969,60.38057
-Savio/VR|25.09773,60.3804
-Keravan as. l.3 tulo|25.105,60.40443
-Keravan as. l.4 tulo|25.10494,60.40434
-Keravan as. l.1 tulo|25.105,60.40444
-Keravan as. l.2 tulo|25.10494,60.40434
-Puuvalonaukio|25.10171,60.40116
-Taksiasema|25.10519,60.40509
-Keravan as. lait. 2|25.10494,60.40434
-Jurvalanraitti|25.11788,60.4015
-Taksiasema|25.10519,60.40509
-Taksiasema|25.10519,60.40509
-Keravan as. lait. 3|25.105,60.40444
-Kotopellonkatu|25.11659,60.4059
-Kotopellonkatu|25.115,60.40565
-Porvoonkatu|25.11215,60.405
-Lapilan koulu|25.11861,60.40403
-Porvoonkatu|25.11062,60.40475
-Sibeliuksentie|25.11154,60.40034
-Paasikivenkatu|25.10447,60.40713
-Sampola|25.11056,60.40166
-Sampola|25.11015,60.40156
-Asemansilta|25.10726,60.40314
-Asemansilta|25.10603,60.40329
-Keravan as. lait. 1|25.105,60.40445
-Paasikivenkatu|25.10434,60.40696
-Keravanaukio|25.10141,60.40346
-Keravanaukio|25.1012,60.40346
-Tori|25.09889,60.40206
-Tori|25.09875,60.40212
-Keravan as. lait. 4|25.10494,60.40434
-Sirkushevoset|25.09687,60.4041
-Nikonkatu|25.10327,60.39893
-Nikonkatu|25.10362,60.3989
+Paljonkitie|25.2606,60.32627
+Brudbrinken|25.26424,60.3481
+Manniksentie|25.2636,60.34066
+Brudbrinken|25.26244,60.34747
+Manniksentie|25.26234,60.3393
+Norrkulla|25.26457,60.33298
+Högåsantie|25.26406,60.33002
+Högåsantie|25.26276,60.32911
+Norrkulla|25.26562,60.33361
+Eskos|25.26504,60.32392
+Eskos|25.26571,60.32265
+Brobölen mäki|25.2669,60.35428
+Smedjeberget|25.26795,60.35211
+Brobölen mäki|25.26855,60.35354
+Lill-Bengts|25.27033,60.32003
+Odd Fellows|25.26943,60.35272
+Gesterby paloasema|25.2789,60.33453
+Lill-Bengts|25.27077,60.31883
+Gesterbyn paloasema|25.27978,60.33503
+Fredsbackantie|25.21679,60.47544
+Björkmontie|25.21618,60.4672
+Fredsbackantie|25.21774,60.47534
+Mosantie|25.21798,60.4611
+Mosantie|25.2188,60.4614
+Bastnäsintie|25.22568,60.47585
+Bastnäsintie|25.22674,60.47546
+Laggnäsintie|25.3057,60.33933
+Tärskogintie|25.35499,60.32908
+Tärskogintie|25.35567,60.32946
+Nynäsintie|25.34546,60.33349
+Nynäsintie|25.34565,60.33274
+Österbäcken|25.29636,60.34325
+Österbäcken|25.29836,60.3436
+Korpitie|25.28572,60.34604
+Korpitie|25.28697,60.3456
+Ritamäentie|25.31386,60.33808
+Laggnäsintie|25.30686,60.33871
+Ritamäentie|25.31479,60.33794
+Tarpoilantie|25.32249,60.33621
+Tarpoilantie|25.32267,60.33613
+Gesterby skola|25.27786,60.33313
+Peltomäenkatu|25.11095,60.39079
+Sementtitehtaankatu|25.10991,60.38732
+Sementtitehtaankatu|25.10914,60.38619
+Kumitehtaankatu|25.10798,60.38125
+Kumitehtaankatu|25.10894,60.38229
+Myllynummentie|25.10693,60.37996
+Savionaalloppi|25.09514,60.37496
+Karhuntassu|25.10361,60.37491
+Myllynummentie|25.10598,60.37916
+Karhuntassu|25.10238,60.37493
+Nurmikatu|25.10139,60.39264
+Angervontie|25.09374,60.37184
+Tuijantie|25.09159,60.36908
 Jurvalanraitti|25.1191,60.40176
 Veräjäkuja|25.11249,60.39932
 Veräjäkuja|25.11187,60.39855
 Sibeliuksentie|25.11,60.4003
-Ollilantie|25.11139,60.39549
-Ollilantie|25.11131,60.39441
 Peltomäenkatu|25.11097,60.39162
-Peltomäenkatu|25.11095,60.39079
-Sementtitehtaankatu|25.10991,60.38732
-Sementtitehtaankatu|25.10914,60.38619
-Kumitehtaankatu|25.10894,60.38229
-Kumitehtaankatu|25.10798,60.38125
-Savionaalloppi|25.09514,60.37496
-Myllynummentie|25.10693,60.37996
-Myllynummentie|25.10598,60.37916
-Karhuntassu|25.10361,60.37491
-Karhuntassu|25.10238,60.37493
-Nurmikatu|25.10139,60.39264
-Savionaalloppi|25.09516,60.37501
-Angervontie|25.09374,60.37184
-Tuijantie|25.09159,60.36908
-Sirkushevoset|25.096,60.40457
-Uimala|25.0907,60.40746
-Kilta|25.08488,60.40946
-Laineentie|25.13625,60.4129
-Kaskela|25.1488,60.42378
-Käenkatu|25.10773,60.41089
+Ollilantie|25.11131,60.39441
+Ollilantie|25.11139,60.39549
+Nikonkatu|25.10362,60.3989
+Sefferinsuontie|25.36406,60.32449
+Sefferinsuontie|25.36401,60.32505
+Kvarnängintie|25.37242,60.32324
+Grönkulla|25.37208,60.30477
+Pohjoinen Boxintie|25.37844,60.32068
+Salkoftintie|25.36596,60.30153
+Salkoftintie|25.36345,60.30112
+Grönkulla|25.37154,60.30405
+Kvarnängintie|25.37241,60.32389
+Poikiksentie|25.3779,60.30735
+Pohjoinen Boxintie|25.37896,60.32003
+Poikiksentie|25.3795,60.30735
+Box|25.38799,60.31182
+Kiviaidantie|25.39439,60.31396
+Kiviaidantie|25.39606,60.31397
+Boxin paloasema|25.39457,60.30304
+Lekmäentie|25.40253,60.31691
+Boxin paloasema|25.39593,60.30302
+Box|25.38908,60.31246
+Box|25.39008,60.31171
+Nybondas|25.39182,60.30942
+Nybondas|25.39274,60.30948
+Box skola|25.3941,60.30623
+Box skola|25.39346,60.30553
+Boxin Shell|25.38767,60.31133
+Nevaksen tienhaara|25.40657,60.29667
+Kilpilahdentie|25.42363,60.32361
+Lekmäentie|25.40426,60.31691
+Nevaksen tienhaara|25.40599,60.29762
+Kilpilahdentie|25.42665,60.32401
+Hangelbyn paloasema|25.36495,60.29064
+Hangelbyn paloasema|25.36434,60.29034
+Olofs|25.36707,60.28721
+Olofs|25.36886,60.28671
+Jontas|25.37127,60.2824
+Jontas|25.37114,60.28181
+Meriläntie|25.37273,60.27987
+Meriläntie|25.37367,60.27978
+Rantatie|25.38262,60.27684
+Rantatie|25.38361,60.27605
+Paratiisintie|25.48138,60.27652
+Paratiisintie|25.48135,60.27562
+Kärrbyn tienhaara|25.46987,60.28842
+Joutsimies|25.43062,60.29053
+Sprängmanintie|25.42344,60.29264
+Tallängen|25.49543,60.25861
+Djupvikintie|25.49159,60.25681
+Kärrbyn tienhaara|25.46931,60.28898
+Kringelmalm|25.45178,60.28898
+Kringelmalm|25.45013,60.28914
+Joutsimies|25.43156,60.28978
+Tallängen|25.49457,60.25854
+Kitön tienhaara|25.49758,60.26717
+Byarsborg|25.49791,60.27547
+Kitön tienhaara|25.49805,60.26729
+Kitön silta|25.49056,60.24912
+Djupvikintie|25.49096,60.25647
+Mjölkvik|25.49116,60.25179
+Mjölkvik|25.49191,60.25226
+Kitön silta|25.49161,60.2491
+Lentomajakka|25.4917,60.25484
+Lentomajakka|25.4927,60.25465
+Djupvikintie|25.49879,60.26436
+Djupvikintie|25.49876,60.26444
+Kärrbyn tienhaara|25.47548,60.28605
+Kärrbyn tienhaara|25.47511,60.28649
+Byarsborg|25.49936,60.27564
+Sprängmanintie|25.42374,60.29185
+Hangelby|25.35504,60.29684
+Hangelby|25.35472,60.29732
+Bergåsantie|25.35822,60.29823
+Bergåsantie|25.35882,60.29897
+Söderk. kouluk. l. 4|25.32752,60.30094
+Sipoonlahden koulu|25.3407,60.29891
+Pyykuja|25.34681,60.27767
+Metsokuja|25.35012,60.28031
+Hiirihaukankuja|25.34283,60.28066
+Kallbäck|25.32759,60.29803
+Söderkulla|25.3314,60.29803
+Linda|25.33066,60.29923
+Sippoonl. levähd.al.|25.33177,60.28651
+Sipoonl. levähd.al.|25.33134,60.28709
+Söderk. kouluk. l. 2|25.32676,60.301
+Söderk. kouluk. l. 1|25.32671,60.30078
+Linda|25.33033,60.29919
+Söderkulla|25.32966,60.29831
+Kallbäck|25.32455,60.29709
+Kallbäck|25.32286,60.29694
+Kallbäck|25.32299,60.29761
+Neiti Miilin tie|25.3412,60.29742
+Sipoonlahden koulu|25.3407,60.29892
+Stor-Rösintie|25.33949,60.28103
+Neiti Miilin tie|25.33998,60.29805
+Stor-Rösintie|25.33941,60.28174
+Getnäsintie|25.33694,60.28351
+Getnäsintie|25.33766,60.28413
+Hansas|25.29588,60.30333
+Hansas|25.29511,60.3046
+Pilvijärventie|25.28715,60.30867
+Pilvijärventie|25.28602,60.30997
+Torpanmäki|25.31998,60.29864
+Torpanmäki|25.31979,60.29951
+Söderkullan kartano|25.31025,60.30129
+Söderkullan kartano|25.30836,60.30184
+Kirkkoniityntie|25.27192,60.37338
+Mehuasema|25.2922,60.37228
+Mehuasema|25.29156,60.37298
+Laaksosuontie|25.28532,60.37384
+Laaksosuontie|25.28392,60.37457
+Uudensillantie|25.28254,60.37381
+Uudensillantie|25.2818,60.37401
+Itäinen Jokipuisto|25.27871,60.37309
+Itäinen Jokipuisto|25.27739,60.37348
+Savio/VR|25.0969,60.38057
+Savio/VR|25.09773,60.3804
+Söderkulla|25.33136,60.29826
 Palosenkatu|25.10508,60.42331
-Palosenkatu|25.10483,60.42321
-Untola|25.09427,60.40588
 Uimala|25.09113,60.40746
 Metsolantie|25.08922,60.40935
+Palosenkatu|25.10483,60.42321
+Untola|25.09427,60.40588
+Käenkatu|25.10773,60.41089
+Ritakatu|25.09163,60.41643
+Vasamakatu|25.09471,60.41408
+Palosenpolku|25.10429,60.42569
+Ritakatu|25.09203,60.41618
+Virrenkulma|25.10095,60.42855
+Palosenpolku|25.10431,60.42558
+Ilmarisentie|25.0829,60.41262
+Ilmarisentie|25.08319,60.41233
+Uunitie|25.08144,60.4145
+Kaukonpolku|25.09736,60.40826
+Kaukonpolku|25.09777,60.40774
+Kilta|25.08347,60.40978
+Sepontie|25.08438,60.40999
+Vasamakatu|25.09428,60.41426
+Suomelantie|25.09594,60.4112
+Suomelantie|25.09603,60.4107
+Pihkaniitty|25.10192,60.42156
+Sammontie|25.08081,60.41648
+Ylikeravantie|25.08612,60.41865
+Uunitie|25.08157,60.41462
+Sammontie|25.08067,60.41638
+Kalevan koulu|25.0891,60.41955
+Ylikeravantie|25.08654,60.41868
+Kalevan koulu|25.08885,60.41959
+Pihkaniitty|25.09927,60.42186
+Vellamontie|25.10631,60.4085
+Majavankierros|25.10123,60.42022
+Majavankierros|25.10159,60.41974
+Kuovinkatu|25.10289,60.41712
+Kuovinkatu|25.10261,60.41635
+Kurkela|25.10426,60.41371
+Kurkela|25.1052,60.41352
+Käenkatu|25.10795,60.41123
 Terv.keskus|25.08768,60.40895
 Vellamontie|25.10732,60.40891
-Vellamontie|25.10631,60.4085
-Käenkatu|25.10795,60.41123
-Kurkela|25.1052,60.41352
-Kurkela|25.10426,60.41371
-Kuovinkatu|25.10261,60.41635
-Kuovinkatu|25.10289,60.41712
-Majavankierros|25.10159,60.41974
-Majavankierros|25.10123,60.42022
-Pihkaniitty|25.09927,60.42186
-Pihkaniitty|25.10192,60.42156
-Kalevan koulu|25.0891,60.41955
-Kalevan koulu|25.08885,60.41959
-Ylikeravantie|25.08654,60.41868
-Ylikeravantie|25.08612,60.41865
-Sammontie|25.08081,60.41648
-Sammontie|25.08067,60.41638
-Uunitie|25.08157,60.41462
-Uunitie|25.08144,60.4145
-Ilmarisentie|25.08319,60.41233
-Ilmarisentie|25.0829,60.41262
-Sepontie|25.08438,60.40999
-Kilta|25.08347,60.40978
-Kaukonpolku|25.09777,60.40774
-Kaukonpolku|25.09736,60.40826
-Suomelantie|25.09603,60.4107
-Suomelantie|25.09594,60.4112
-Vasamakatu|25.09428,60.41426
-Vasamakatu|25.09471,60.41408
-Ritakatu|25.09163,60.41643
-Ritakatu|25.09203,60.41618
-Palosenpolku|25.10429,60.42569
-Palosenpolku|25.10431,60.42558
-Virrenkulma|25.10095,60.42855
-Lahdentie|25.12763,60.42435
-Nuorisovankila|25.1295,60.42357
-Ojalantie|25.12829,60.42273
-Lahdentie|25.12816,60.42376
-Koivulantie|25.12011,60.42408
-Koivulantie|25.12042,60.42406
-Tervahaudankatu|25.11725,60.40933
-Tervahaudankatu|25.11753,60.41014
+Storören|25.23314,60.26192
+Storören|25.23495,60.26139
+Sopukka|25.24053,60.26154
+Sopukka|25.24065,60.26198
+Kasvihuoneet|25.24516,60.26494
+Katrineholm|25.25961,60.26243
+Katrineholm|25.26335,60.26214
+Majvik|25.25619,60.26192
+Majvik|25.25378,60.26242
+Haavistontie|25.25066,60.27003
+Haavistontie|25.24912,60.26984
+Kasvihuoneet|25.2449,60.26439
+Vesterbacka|25.26804,60.26327
+Ahtelantie|25.28528,60.27432
+Stuvunäsintie|25.27301,60.26553
+Vesterbacka|25.26941,60.26457
+Gumbostrand|25.29399,60.25615
+Hedåsen|25.28544,60.26287
+Särkilammentie|25.28486,60.26955
+Haapaniementie|25.28781,60.2588
+Haapaniementie|25.28756,60.25943
+Bergkullantie|25.28773,60.26426
+Ahtelantie|25.2874,60.27515
+Västerskog|25.2796,60.27
+Västerskog|25.28087,60.26983
+Katajakallio|25.27497,60.26732
+Katajakallio|25.2769,60.26776
+Särkilammentie|25.28502,60.27033
+Solbergintie|25.23481,60.45173
+Solbergintie|25.23358,60.45221
+Honkala|25.22566,60.45547
+Honkala|25.22595,60.45631
+Hommanäsintie|25.24385,60.4438
+Götbacka|25.2415,60.44827
+Götbacka|25.23965,60.44833
+Solbackantie|25.24309,60.44052
+Solbackantie|25.24395,60.44123
+Haversbackantie|25.24824,60.43711
+Jungfrustenintie|25.25031,60.47008
+Jungfrustenintie|25.25062,60.46968
+Koulumäki|25.25352,60.43106
+Hommanäsintie|25.24575,60.444
+Haversbackantie|25.24753,60.43632
+Lampetas|25.25494,60.42621
+Brusaksentie|25.25406,60.4228
+Käsiksentie|25.25519,60.42008
+Lampetas|25.25401,60.42629
+Ketunarontie|25.26236,60.47016
+Hemgård|25.2633,60.41424
+Wessmanin tupa|25.25888,60.41583
+Ketunarontie|25.26122,60.47046
+Käsiksentie|25.2545,60.419
+Wessmanin tupa|25.25775,60.41564
+Koulumäki|25.25494,60.4308
+Kålbackantie|25.26799,60.40976
+Hemgård|25.2626,60.41227
+Kålbackantie|25.26709,60.40908
+Brusaksentie|25.25556,60.42173
+Kerava/VR|25.10636,60.40464
+Kerava/VR|25.10598,60.40468
+Högbacka|25.33326,60.41914
+Högbacka|25.33278,60.41986
+Laukkoskentie|25.33836,60.42532
+Laukkoskentie|25.33883,60.42486
+Kotivalli|25.33083,60.41577
+Kotivalli|25.32987,60.41589
+Holstaksentie|25.32917,60.41311
+Holstaksentie|25.32812,60.41296
+Brantaksentie|25.32233,60.41073
+Annanbackantie|25.31893,60.40868
+Brantaksentie|25.32196,60.41026
+Linnantie|25.31509,60.40677
+Linnantie|25.31505,60.40702
+Broaksentie|25.30327,60.40525
+Broaksentie|25.30678,60.40601
+Annanbackantie|25.31814,60.4088
+Viljan|25.29963,60.4026
+Viljan|25.29838,60.4022
+Lahdentie|25.12815,60.38598
+Keinukallio|25.13528,60.38645
+Leppäkorventie|25.12828,60.36058
+Jokivarsi|25.12882,60.37176
+Perkaustie|25.12673,60.37911
+Perkaustie|25.12701,60.38067
+Keravantie|25.12616,60.38567
+Jokivarsi|25.12891,60.37064
+Keinukallio|25.13719,60.3867
+Lahdentie|25.12459,60.38642
+Norrskogen|25.27356,60.39436
+Norrskogen|25.27438,60.39397
+Viljatie|25.2803,60.38763
+Kartanontie|25.27879,60.38412
+Pohjanniityntie|25.27575,60.3904
+Pohjanniityntie|25.27563,60.39136
+Kartanontie|25.27747,60.38368
+Nikkilän kartano|25.28257,60.38627
+Nikkilän kartano|25.28085,60.38608
+Kassivikintie|25.39248,60.25633
+Linnäsintie|25.39349,60.26139
+Lisebergintie|25.39394,60.26435
+Kassivikintie|25.39356,60.25606
+Lisebergintie|25.39272,60.26475
+Linnäsintie|25.39262,60.26134
+Kalkkiranta|25.39204,60.25324
+Nikolsbergantie|25.39143,60.25882
+Salpar skola|25.3918,60.27205
+Nikolsbergantie|25.39067,60.25943
+Salpar skola|25.39091,60.2723
+Nuottakodantie|25.39421,60.26754
+Nuottakodantie|25.39348,60.26725
+Joensuu|25.31119,60.2924
+Joensuu|25.31299,60.29242
+Labbniityntie|25.29279,60.30033
+Labbniityntie|25.2932,60.29977
+Knaperbacka|25.302,60.2873
+Hitåntie|25.30677,60.29025
+Alvallantie|25.29809,60.28438
+Knaperbacka|25.30163,60.2858
+Vaakkola|25.29293,60.27964
+Alvallantie|25.29849,60.28365
+Ingman|25.29127,60.30102
+Vaakkola|25.29117,60.27921
+Ingman|25.29129,60.30155
+Hitåntie|25.30887,60.29056
+Mårsbacka|25.22557,60.3948
+Ahlgrenin mutka|25.23434,60.38118
+Albackantie|25.23489,60.39106
+Albackantie|25.23402,60.39075
+Ahlgrenin mutka|25.23368,60.38081
+Antmäki|25.23015,60.38631
+Antmäki|25.23017,60.3869
+Mårsbackantie|25.21084,60.39912
+Kotimäki|25.19728,60.37767
+Afrikantie|25.21764,60.3758
+Mårsbackantie|25.21152,60.3984
+Isoniitty|25.22018,60.39362
+Afrikantie|25.21783,60.37513
+Mårsbacka|25.22438,60.39475
+Isoniitty|25.2197,60.39326
+Hakatie|25.20533,60.36127
+Kotimäki|25.19853,60.37707
+Norkon|25.19535,60.36014
+Norkon|25.19338,60.36044
+Johanneberg|25.18203,60.35987
 Postlarinkatu|25.11773,60.41532
+Tervahaudankatu|25.11753,60.41014
+Tervahaudankatu|25.11725,60.40933
+Koivulantie|25.12042,60.42406
+Koivulantie|25.12011,60.42408
+Lahdentie|25.12816,60.42376
+Ojalantie|25.12829,60.42273
 Postlarinkatu|25.1177,60.41611
+Nuorisovankila|25.12945,60.42345
+Siikiläntie|25.11148,60.42588
+Tukkilantie|25.11484,60.42439
+Tukkilantie|25.1153,60.42386
 Kytömaantie|25.11785,60.41879
 Kytömaantie|25.11757,60.41952
-Tukkilantie|25.1153,60.42386
-Tukkilantie|25.11484,60.42439
-Siikiläntie|25.11148,60.42588
-Lahdentie|25.12459,60.38642
-Keinukallio|25.13719,60.3867
-Jokivarsi|25.12891,60.37064
-Keinukallio|25.13528,60.38645
-Lahdentie|25.12815,60.38598
-Keravantie|25.12616,60.38567
-Perkaustie|25.12701,60.38067
-Perkaustie|25.12673,60.37911
-Jokivarsi|25.12882,60.37176
-Leppäkorventie|25.12828,60.36058
+Lahdentie|25.12763,60.42435
+Nybacka|25.22194,60.36449
+Kuninkaantie|25.2158,60.362
+Kuninkaantie|25.21277,60.36171
+Hakatie|25.20658,60.36081
+Kulmatie|25.2606,60.35054
+Kulmatie|25.26215,60.35067
+Katajamäentie|25.26061,60.36356
+Katajamäentie|25.26179,60.36337
+Laulas|25.22775,60.36766
+Laulas|25.22919,60.36763
+Nybacka|25.22343,60.36487
+Broböle|25.26441,60.35456
+Broböle|25.26701,60.35584
+Semtu|25.1789,60.40613
+Mårtensby skola|25.19358,60.40153
+Mårtensby skola|25.19234,60.40189
+Semtu|25.18069,60.40566
+Talman koulu|25.17363,60.41001
+Talman koulu|25.17305,60.41024
+Kuusisaarentie|25.15172,60.40785
+Kuusisaarentie|25.15223,60.40747
+Hiekkakuoppa|25.15716,60.40875
+Vanikontie|25.15628,60.40808
+Ruotsinojantie|25.15767,60.40826
+Hiekkakuoppa|25.16461,60.41088
+Nygårdintie|25.17074,60.41306
+Nygårdintie|25.17106,60.41241
+Satotalma|25.17121,60.40704
+Norantie|25.17193,60.39799
+Talman koulu|25.17312,60.41086
+Hiekkamalmintie|25.15827,60.39439
+Hiekkakuoppa|25.16446,60.41038
+Keravan as. l.3 tulo|25.105,60.40443
+Jurvalanraitti|25.11788,60.4015
+Keravan as. lait. 2|25.10494,60.40434
+Taksiasema|25.10519,60.40509
+Taksiasema|25.10519,60.40509
+Keravan as. lait. 3|25.105,60.40444
+Keravan as. l.4 tulo|25.10494,60.40434
+Keravan as. l.2 tulo|25.10494,60.40434
+Keravan as. l.1 tulo|25.105,60.40444
+Taksiasema|25.10519,60.40509
+Puuvalonaukio|25.10171,60.40116
+Asemansilta|25.10726,60.40314
+Sampola|25.11015,60.40156
+Sampola|25.11056,60.40166
+Paasikivenkatu|25.10447,60.40713
+Sibeliuksentie|25.11154,60.40034
+Porvoonkatu|25.11062,60.40475
+Lapilan koulu|25.11861,60.40403
+Porvoonkatu|25.11215,60.405
+Kotopellonkatu|25.115,60.40565
+Kotopellonkatu|25.11659,60.4059
+Sirkushevoset|25.09687,60.4041
+Keravan as. lait. 4|25.10494,60.40434
+Keravanaukio|25.1012,60.40346
+Keravanaukio|25.10141,60.40346
+Tori|25.09875,60.40212
+Tori|25.09889,60.40206
+Asemansilta|25.10603,60.40329
+Paasikivenkatu|25.10434,60.40696
+Keravan as. lait. 1|25.105,60.40445
+Havutie|25.1689,60.38928
+Kostamo|25.19832,60.40075
+Kostamo|25.19913,60.40034
+Logistiikkakeskus|25.16508,60.38286
+Neulasniitty|25.15705,60.39255
+Bastukärr|25.16549,60.38379
+Pihkatie|25.16361,60.39185
+Bastukärr|25.16546,60.38326
+Kuntala|25.26701,60.37537
+Nikkilän la-as. l. 6|25.26965,60.3799
+Kuntala|25.26851,60.37579
+Jussaksentie|25.26879,60.37813
+Kuntala|25.26701,60.37538
+Nikkilän terv.asema|25.26673,60.37672
+Nikkilän terv.asema|25.26601,60.3772
+Urheilutie|25.26301,60.37231
+Urheilutie|25.26284,60.37162
+Nikkilän koulukeskus|25.26196,60.37342
+Suursuontie|25.25951,60.37635
+Kirkkoniityntie|25.26935,60.37321
+Jussaksentie|25.2693,60.37792
+Nikkilän la-as. l. 2|25.26973,60.38003
+Nikkilän la-as. l. 3|25.26969,60.38
+Kaskiniitynkuja|25.27236,60.37725
+Kaskiniitynkuja|25.27265,60.37652
+Nikonkatu|25.10327,60.39893
+Metsätie|25.24878,60.37495
+Metsätie|25.24932,60.37521
+Lival|25.23776,60.37893
+Lival|25.23766,60.37814
+Nikkilän la-as. l. 1|25.26975,60.38007
+Nikkilän la-as. l. 4|25.26969,60.37997
+Kappalaisentie|25.24144,60.37101
+Kappalaisentie|25.23982,60.37125
+Vanha kirkko|25.25855,60.37044
+Vanha kirkko|25.25928,60.37021
+Martinkyläntien th|25.2517,60.37382
+Martinkyläntien th|25.25055,60.37383
+Suursuontie|25.25806,60.37638
+Nikkilän koulukeskus|25.26229,60.37347
+Hindsby|25.24632,60.33949
+Hindsby|25.2456,60.33984
+Prästbackantie|25.25715,60.34717
+Prästbackantie|25.25771,60.34764
+Puromäki|25.24883,60.34023
+Paljonkitie|25.26,60.32523
+Stellberginmäki|25.24778,60.33662
+Stellberginmäki|25.24776,60.33662
+Ampumarata|25.36484,60.36428
+Lugnnäsintie|25.34405,60.3744
+Notkotie|25.35424,60.37515
+Vanha Kuninkaantie|25.33742,60.37062
+Herralantie|25.33782,60.37193
+Lehtikuusentie|25.32232,60.36846
+Lillängintie|25.3298,60.36986
+Savijärven kartano|25.30652,60.36743
+Ampumarata|25.36534,60.36364
 Cazze optikko|25.1014499,60.4029526
 Herkkumökki|25.108280739999998,60.4032479
 Kanervatie|
@@ -288,7 +739,6 @@ Palopolku|
 Martinkyläntie|
 Postlarinkuja|
 Senioripuisto|25.094034111111107,60.40875797777778
-Vanha Kino|25.0989522,60.4028985
 St1 Kerava Santaniitynkatu|25.1116016,60.399104
 Juho-Kusti|25.10434860769231,60.405653015384615
 Sammontie|
@@ -301,10 +751,10 @@ Sementtitehtaankatu|
 Savuhovi Oy|25.122908244444446,60.42655546666666
 Anttila Kerava|25.10410408888889,60.40269251111111
 Varpukatu|
-Keravan Taide- ja museokeskus Sinkka|25.108619779999998,60.400895219999995
+Keravan Taide- ja museokeskus Sinkka|25.108654780000002,60.400895160000005
 Kalevanraitti|
 Dressman|25.1013465,60.4005803
-Keravan kartano|25.1196877,60.4100084
+Keravan kartano|25.1195836,60.4101045
 D|25.1021325,60.4030769
 Marjatantie|
 Varjakontie|
@@ -335,7 +785,7 @@ SR-rauta|25.14304398095238,60.405975985714285
 Männistöntie|
 Killan koulu|25.082586733333326,60.404424011111104
 Jäspilänkuja|
-Helluntaiseurakunta|25.108212754545455,60.402105145454556
+Helluntaiseurakunta|25.108182858823533,60.40215156470588
 Ritakuja|
 Marttilankatu|
 Saviontaival|
@@ -395,10 +845,12 @@ Palokorvenkuja|
 Karhunkuja|
 Puuverstas|25.13197838,60.42462596
 Vehkalantie|
+Café Mia|25.1087123,60.3915752
 Kirjosiivenkuja|
 Keinukallion frisbeegolfrata|25.1402066,60.3834993
 Rihmakuja|
 Latvatie|
+Jysk|25.1095422,60.3907224
 Savion lähiliikuntapaikka|25.09441428,60.38275212
 Naavapuiston päiväkoti|25.088478300000002,60.385274499999994
 Kovasintie|
@@ -448,6 +900,7 @@ Ritvakuja|
 Ompelimo Silkki-Nahka Ylänkö|25.0998518,60.4026967
 Huhtakuja|
 Asemantie|
+Ahjon grilli|25.14607882,60.40095074
 Parturikeskus|25.0984981,60.4028272
 Galleria Alli|25.10383193846154,60.404716046153844
 Metsämyllynpolku|
@@ -548,7 +1001,7 @@ Kankurinkatu|
 Salavapuiston leikkipaikka|25.09366036,60.381976959999996
 Nyyrikinkuja|
 Ketunkorventie|
-Skippie's Bar|25.10932924,60.40256488
+Skippie's Bar|25.109269599999998,60.402564899999994
 Vipusentie|
 Sudenkuja|
 Ylikeravantie|
@@ -609,6 +1062,7 @@ Mahlapolku|
 Keskuspuiston leikkipaikka|25.103368433333333,60.406682644444444
 Pörkiöntie|
 Kalevan koulu|25.08813134,60.42001788
+Ramon Pizza Kebab|25.0979858,60.4022387
 Nikkarin Pysäköinti|25.09820135714286,60.4057897
 Pahkakuja|
 Alasintie|
@@ -661,7 +1115,6 @@ Seurakuntakeskus|25.11312594736842,60.40115728947369
 Panimokuja|
 Sirkunpolku|
 Metsolantie|
-Keravan museo|25.1086223,60.4007824
 Laukkatie|
 Hirvenkuja|
 Mönkäreenmäki|
@@ -683,7 +1136,7 @@ Kurkelanniityn leikkipaikka|25.10690392,60.415445840000004
 Jurvalanpolku|
 Kalevan päiväkoti|25.094383266666668,60.41670154444445
 Naavakatu|
-Musiikkikeskus MultiKulti|25.10960837142857,60.4023239
+Musiikkikeskus MultiKulti|25.109533814285715,60.40234195714286
 Kultasepänkatu|
 Kerava Areena|25.107638785714286,60.413988519047635
 Keravan Cityseurakunta|25.104632,60.404964
@@ -787,7 +1240,6 @@ Horsmatie|
 Kalliotie|
 Ratatie|
 Hiidenkiventie|
-Keravan lounas|25.1087123,60.3915752
 Sonera Kauppa Kerava|25.1022348,60.402583
 Ritarinkuja|
 Killan Kievari|25.0846994,60.4088741
@@ -829,7 +1281,7 @@ Toukolantie|
 Lapilan kartano|25.11446547777778,60.40375657777778
 Uunitie|
 Myrtinojantie|
-Kurkelan koirapuisto|25.103771324999997,60.4144956
+Kurkelan koirapuisto|25.103766337499998,60.4144811125
 Talvikinkatu|
 Jussilantie|
 Kaskitie|
@@ -890,6 +1342,7 @@ Uudenmaan Herkku Oy|25.0998132,60.4036934
 Keskustan hammashoitola|25.0997086,60.4021932
 Turskatie|
 Kenkäkauppa Mekka|25.112715,60.3892738
+Tarjoustalo|25.1102281,60.3906769
 Salavapuisto|25.09408428,60.381542409999994
 Luotolantie|
 Keravan kuvataidekoulu|25.10289520769231,60.40433503846153
@@ -949,7 +1402,6 @@ Harkkotie|
 Aleksintorin auto|25.1086339,60.3975178
 Karhipolku|
 Timanttiset - Keravan kello|25.1021652,60.4029751
-Keravan Torin Pizza-Kebab|25.0979858,60.4022387
 Savion koulu|25.0956249,60.3830586
 Sikakorvenpolku|
 HOK-Elannon hautaustoimisto|25.1004834,60.4030703
@@ -1012,7 +1464,6 @@ Vetehisenpolku|
 Kivisillantie|
 Kultasiivenkuja|
 Keravan ratsastuskeskus|25.144861105882352,60.38767167647058
-Ahjon elintarvike ja grillikioski|25.14607882,60.40095074
 Piilo-ommel|25.0988499,60.4037373
 Asemansilta|
 Hiussalonki|25.1074499,60.4008136
@@ -1045,7 +1496,6 @@ Style & Beauty Julia|25.0998802,60.4037795
 Nurmikatu|
 Kanniston lämpökeskus|25.09355278,60.391425520000006
 Seljankuja|
-Keravan taidemuseo|25.1086555,60.4009082
 Honkakuja|
 Taikatie|
 Sinisiivenkuja|
