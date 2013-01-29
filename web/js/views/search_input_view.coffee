@@ -3,7 +3,7 @@ define ['jquery', 'underscore', 'backbone', 'bootstrap', 'plugins/select_range']
 
     initialize: () ->
       @$el.typeahead
-        source: @getTypeaheadAddresses
+        source: _.throttle @getTypeaheadAddresses, 200
         updater: (item) =>
           _.defer @afterTypeahead
           item
